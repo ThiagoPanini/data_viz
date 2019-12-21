@@ -1,0 +1,10 @@
+[MUSIC] Hello and welcome to the second module
+which is exploring and navigating Tableau. In the last model I
+introduced you to Tableau and you were able to do your
+first visualization. In this module I want to really examine
+the different tools that Tableau has within their interface. It will make things a lot easier
+if you can really identify and memorize what each tool is for as you can
+begin to work quicker with your projects. For this module you will navigate the
+Tableau Public workspace while doing some visualization. We'll tackle rows,
+columns, and mark shelves. In addition, you will use the show
+me button to make some quick and dramatic visual changes. So let's get started.

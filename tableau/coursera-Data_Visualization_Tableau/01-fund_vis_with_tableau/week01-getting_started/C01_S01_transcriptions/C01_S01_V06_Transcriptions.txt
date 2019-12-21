@@ -1,0 +1,54 @@
+[MUSIC] Welcome back. After all of the preliminaries,
+it's time for the fun part, the first visualization
+we're going to do in this course. I don't want you to worry about
+some of the details for now. We'll delve into those later. What I want you to do is follow along. You could always pause it or even go back
+a little bit if you miss out on something, but don't worry too much about it. Just watch and replicate. From your web browser,
+go to the URL shown on the screen. Make sure you type it in exactly as it's
+written there, otherwise it won't work. If you need to,
+feel free to pause the video so that you can make sure that you have
+it onscreen before you continue. Click on the Download Workbook in
+the upper right-hand side of the website, as shown in the screen in front of you. Again, make sure that you have it
+downloaded fully before continuing so that we're able to be on the same page. The file will download. Depending on your browser setting,
+you will either be able to open the file immediately, or you'll have
+to open it from your saved location. In either case, make sure you open it in
+Tableau Public and come back to the video. Once opening Tableau Public, I want you to drag the country
+field away like I'm doing. I'll show you here a few times so
+that your screen will look just like mine. The reason the country field is there in
+the document is because Tableau Public won't allow me to save a file without
+at least a little visualization. So this is just giving
+a small visualization so that you all could download it. And I want to drag it away so
+that it's a completely blank slate, and we could start from there. Now we'll go very slowly so you can
+replicate exactly what I'm doing here. But if I'm going too fast,
+which sometimes happens, just hit the pause button on
+the screen and then you can catch up. You can even go backwards and
+see something that you may have missed. But the goal of this is really just
+to see how quickly we can actually do a meaningful visualization with
+data that we already have. Okay, now let's do this. The first thing we're going
+to do is to set up our map. I'm grabbing the longitude field with my
+mouse and dragging it to the column shelf. Next, I'll grab the latitude field and
+drag it to the row shelf. If you make a mistake, just click on
+the back arrow as seen on the screen. That undoes the last action that you did. Again, you're dragging the longitude
+field to the column shelf and the latitude to the rows shelf. Drag the country field and
+drop it over the map. To do this, click on the country field and
+hold the left mouse button down, drag it over, and
+just let go of the mouse button. Look for the folder that says development. Click on the folder and
+expand the options as I'm doing. Select the CO2 emissions field. Drag it and drop it on the color button,
+as I'm doing here. On my screen, it seems to show
+that the higher the CO2 emissions, the greener the color. That doesn't make sense,
+since CO2 is a type of pollution. So we need to change the color of the map,
+for sure. To edit the color,
+I'm going to just click on color and edit the color to an orange color range instead
+of the green that I have on my screen. Now I'm going to add a filter. Let's do a filter on years so
+that we can highlight specific years instead of showing all
+the years In one map. What you do is you right-click
+on years and say show filter. Then you go all the way
+to the right-hand side, you click on the little arrow, and
+then select the single value list so that we can see the years and
+how things change from year to year. We're going to be using this dataset
+a fair bit in our exploration of data visualization. This first example is just
+a taste of what we will see. It'll be exciting to see all of the
+different ways we can look at the data to allows us to answer questions and
+discover interesting insights. And we'll be doing this for
+the next several classes, so stay tuned. And we're going to do even
+more advanced visualizations, more advanced dashboards,
+more advanced story boards. So stay tuned.

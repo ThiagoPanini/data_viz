@@ -1,0 +1,60 @@
+[MUSIC] Welcome back. This lesson is going to walk you
+through importing visualizations from Tableau Public's website into our version
+Tableau Public that we previously installed on our computer. You can pull any visualization
+from the Tableau Public website onto your computer version. Today we're going to download
+the visualization that replicates John Snow's 1854 cholera study,
+which I showed you in the first module. Let's dive in! This is a very well designed visualization
+that combines a historical context of epidemiology and public health, with the
+design principles needed to tell a story. It isn't an extremely difficult project,
+from a statistical point of view, but much thought clearly went into
+the original design in 1854. As well as the redesign
+done very recently. The visualization is assembled as a story. For data people, a story is a way to
+explain your data in a systematic way. This visualization starts with a
+hypothesis that cholera isn't transmitted through the air as was
+widely assumed in The 1800s. I want you to click on
+the collecting the data tab in this visualization and you'll see the sort of schematic of the door to
+door sampling that was done in 1854. Now, click on mapping the results. That's a tab there. It describes the process,
+that you as a data visualization expert, after completing this specialization,
+of course, and others go through in thinking through how best to show
+the data to tell the right story. He showed all of the deaths from cholera,
+and added the locations of the water
+pumps in the neighborhood. Because of data visualization,
+specifically, in this case, mapping, you can see in the tab labeled
+Snow's Analysis Focus on Broad Street, that there is a pocket of
+deaths around one water pump. This is an example of both the data driven
+and as an actionable visualization. It's data driven because there are
+specific elements of the location of wells and homes along with the number
+of baths in each of the homes. It's actionable because Snow
+could then take your irrefutable evidence and get the government to
+immediately shut down the well. Let's now download this
+into our own computer. Scroll down on the website and you'll see download on the bottom
+right of the visualization. When you click download you
+will get options that you see on the screen as well. Click on Tableau Workbook, then choose Tableau Public as the app
+use to download the Workbook. Your computer will then
+open Tableau Public and the visualization will be
+displayed as shown on the screen. What you'll see, Is definitely not how it
+looks on the web site, but it's more or less that way. That's because Tableau hasn't
+opened the file for editing. On the left-hand side, you will see
+a list of the Dashboards and Worksheets. If you double-click on, for example, Map of Outbreak, you will
+see that particular visualization. Below that, you will see a section
+labeled Navigator, and one labeled Story. Don't worry too much about these yet, we'll learn all about
+them in a future lesson. Now I want you to click on
+the Cholera Cases tab at the very bottom. This is called a worksheet and is where all your visualization
+are first going to be created. Here you see what the author did. He use the geography field as the column
+and row to represent latitude and longitude. Then he dragged the number of deaths
+at address to both color and size to highlight larger
+numbers of deaths. Finally I want you to click on the little
+icon to the right of the dimensions text at the upper left area. It opens the Underlying data that's
+used to illustrate the visualization. As you can see, there's latitude and longitude represented as decimals and
+thus shows exactly the location, the spatial location,
+where those dots are supposed to go. And there are other data fields,
+including the number of deaths. That sort of illustrate the issue. Now, I want you to spend some
+time navigating with the tabs and other aspects of the work space. Don't worry about messing
+up the visualization. It won't be saved, so you can take
+away the stuff and put it back in, add some other things if you want. You don't have to worry about
+it messing up on the website. This is in your own computer. And this is just how, this is just
+to get you to see how it's done. But in the next lesson we're going to go
+through the specifics of the workspace. Again just please make
+sure you go through, navigate some of these things
+understand where it's coming from and then we're going to go through
+the specifics of the workspace. I'll see you there, thanks.

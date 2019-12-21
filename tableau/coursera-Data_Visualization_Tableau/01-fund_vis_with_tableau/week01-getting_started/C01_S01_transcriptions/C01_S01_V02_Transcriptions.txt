@@ -1,0 +1,8 @@
+[MUSIC] Hello, and welcome to the first
+module in this course. Data visualization is an essential
+toolkit to everyone's career. It gives you that edge when
+presenting your results. But sometimes it's not intuitive. So, to get us started
+in building this skill, we will discuss why we visualize data? And define common terminology. Also, within this module, we will
+identify what types of software options are available to do visualizations. You will install the Tableau Public
+software on your computer and do your first visualization. I'm so excited to have you join me for
+this, so let's get started. [MUSIC]

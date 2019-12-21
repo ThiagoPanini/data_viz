@@ -1,0 +1,73 @@
+[MUSIC] Welcome back! For the next three lessons, you'll
+be doing some hands-on exploring and navigating through Tableau Public. You'll create a visualization
+of mobile phone usage, and assess how different categories of data
+behave as you input and change settings. I'd like to encourage you
+to explore on your own and share what you discover as you work
+your way through these lessons. We'll begin by explaining some very
+important Tableau Public limitations that will directly affect how you manage
+your files and protect data privacy. You'll then see how to use the helpful
+describe feature to assess information. As you begin the following lesson, you'll start building a visualization
+on mobile phone usage. You'll learn some specifics about shelves. I'll tell you about a quick and
+easy way to use the undo feature. Then you'll get to modify data and illustrate different visualizations
+on separate worksheets. Finally, in the last lesson,
+you'll work with other important places on the Tableau Public workspace,
+including control properties like type, color, size, and shape, and
+the very important Show Me button. These lessons will be intense, hands on
+explorations of the Tableau workspace. It may be frustrating at first, but you'll be a stronger user of
+the software after you're done. So let's get started. First of all,
+as I mentioned in the very first lesson, there are some notable
+limitations with Tableau Public. The first significant limitation is that
+you cannot save your file to your local computer. The reason, I suppose, from Tableau's perspective, is that they
+want your visualization to be public. But from your perspective, it means
+you cannot save your files offline and you must be connected in
+some way to the Internet. If you're not connected
+to the Internet and your computer crashes,
+then you lose all unsaved changes. The other significant Tableau Public
+limitation is that all of the data that you import into Tableau Public is
+fully available for anyone to use. If you have any information that can
+identify someone, it should be removed before importing into Tableau Public so
+that the data are fully anonymous. When I talk more about data prep, I'll show you how to prepare your data in
+Excel so that it is in fact anonymous. There are a couple of other limitations
+that are less important to worry about, but still worth thinking about. One is that there are fewer ways to
+connect the data in Tableau Public. Other Tableau versions
+like Tableau Desktop can directly connect to virtually any
+data source that you can think of. Tableau Public, however,
+is limited just a few. It is free, after all. It doesn't really matter too much, because
+it can connect to Microsoft Excel, and Excel can connect to almost anything. Sometimes it just takes an extra step,
+but it is an extra step. Well, having gotten all
+of that out the way, let's start looking at
+some of the workspace. Let's use the map visualization
+that we used earlier. The URL where it's located is
+on the screen in front of you. Please pause the recording until you
+have it so that it's easy to access. You should be on Sheet 1 with a bunch
+of pictures of countries shown. First, let's drag the Country
+field off the Rows shelf for now. On the left-hand side,
+you'll see data in two categories, Dimensions and Measures. Dimensions help to categorize the data. Measures help to determine
+the scale of a category. Next to each field,
+you'll see either a hash sign, a paper clip, an ABC symbol,
+a small globe, or a hash sign with an equal
+sign in front of it. There are also folders. When you click on them like I'm
+doing here, other fields show up. In this case,
+there are mostly fields with hash signs. Let's look at an example. Let's look at the field called
+Population Total in the Population folder. This field has a hash sign next to it. That means, plain and
+simply, that it is a number. We also know that it's a number because
+of where it's placed in the Tableau workspace. That is, it's a measure. But what else can we
+learn about this field? Using your mouse,
+right-click on the population total, scroll all the way down to where
+it says Describe, and click. You'll see a lot of information here. For example, the role is what's
+called a continuous measure. That means that the field
+can take on any number. We also see in this box information about
+where the data were originally sourced. Click on the Load button,
+then scroll down. You'll see a summary of the data
+ranges from about 18 or 19,000 to 1.3 billion. Now, click on Close. It's a good idea to do that for
+other fields as well, and we're going to go through two more. Now let's go to one of the Dimensions,
+and right click on Region. Click on Describe, then click on Load. We see that there are six
+possible values that categorizes a country into
+one of six possible regions. And that's what I was going to show you. So now you can click on Close. Let's look at one more. Right-click on Year, then click
+on Describe and load the domain. We see that the data
+are from 2000 to 2012. So this is a pretty good amount of
+data that we're working with here. That's really great, because I'll be
+using this data set to illustrate some of the cool things we can learn
+from data through visualization, and having a large number of years
+really helps in that regard. We'll continue our exploration of
+the Tableau workspace in the next video.

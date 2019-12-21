@@ -1,0 +1,36 @@
+[MUSIC] Hi everyone, my name is Govind Acharya and I'd like to welcome you to
+the Fundamentals of Visualization. This is the first course with
+the data visualization and storytelling specialization brought
+to you by UC Davis Extension. I'm very excited to be a part of this. And I hope you will get
+a lot out of this course. I've been working in data analytics and
+visualization for over a decade in industry,
+higher education, and the nonprofit world. For both industry and higher education,
+I developed diversity dashboards and profiles to allow senior leaders to
+examine gaps in hiring and admission. In the nonprofit sector, I use data visualization to identify
+potential fundraising opportunities, that were not evident from
+simply looking at spreadsheets. A famous American baseball player and
+coach, Yogi Berra, once said that,
+you can see a lot by looking. And, he's so right. This is what data
+visualization is all about. It's taking a bunch of numbers and
+texts and transforming them into something
+our brain can process. This specialization will be a hands on
+examination of data visualization and storytelling. We're going to assume that you're new
+to the field of data visualization. But once you've completed the various
+courses within the specialization, you'll have a solid base that
+you can use with in your career. This particular courses been
+broken into four modules. In the first module, we're going to
+identify what types of software options are available to do visualizations and
+define common terminology. You will install Tableau Public
+software on your own computer and do a visualization. In the second module, you will
+navigate and practice the nuts and bolts of Tableau Public. It's a pretty intuitive piece of software,
+but it's important for us to be on the same page with the basics. The third module is being taught
+by my colleague Suk Brar. Suk has over ten years of
+experience in statistical and predictive analysis, data forecasting,
+and data visualization. He brings with him a unique perspective, as he has worked in various
+industries throughout his career. In that module you will prepare and
+import data into Tableau Public. In the final module of this course
+I want to take a step back and help you think about how to
+contextualize your questions so that the data visualizations
+can answer those questions. You will be able to determine how your
+visualization will address the who, what, and how of a data context. Again, I'm really excited
+you're taking this course and I think that you'll learn a lot. So let's dive right in and get started.

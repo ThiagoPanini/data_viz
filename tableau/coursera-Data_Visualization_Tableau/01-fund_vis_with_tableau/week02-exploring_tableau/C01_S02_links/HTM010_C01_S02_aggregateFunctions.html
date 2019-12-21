@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<!-- saved from url=(0101)https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_aggregate_create.htm -->
+<html lang="en-us" class=" cookies geolocation localstorage touchevents"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="x-ua-compatible" content="ie=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="section" content="Support"><meta name="subsection" content="Product Help"><meta name="breadcrumb_l1_text" content="Support"><meta name="breadcrumb_l1_url" content="http://www.tableau.com/en-us/support"><meta name="breadcrumb_l2_text" content="Product Help"><meta name="breadcrumb_l2_url" content="http://www.tableau.com/en-us/support/help"><meta name="product_applies_to" content="AppliesTo.Desktop,AppliesTo.Online,AppliesTo.Public,AppliesTo.Server"><title>Aggregate Functions in Tableau - Tableau</title> <script type="text/javascript" src="./HTM010_C01_S02_aggregateFunctions_files/3feb6adf13"></script><script src="./HTM010_C01_S02_aggregateFunctions_files/nr-spa-11.download"></script><script type="text/javascript" async="" src="./HTM010_C01_S02_aggregateFunctions_files/elqCfg.mi.download"></script><script type="text/javascript" async="" src="./HTM010_C01_S02_aggregateFunctions_files/6si.min.j.download"></script><script async="" src="./HTM010_C01_S02_aggregateFunctions_files/uwt.js.download"></script><script type="text/javascript" async="" src="./HTM010_C01_S02_aggregateFunctions_files/insight.m.download"></script><script src="./HTM010_C01_S02_aggregateFunctions_files/378938312282541" async=""></script><script async="" src="./HTM010_C01_S02_aggregateFunctions_files/fbevents..download"></script><script type="text/javascript" async="" src="./HTM010_C01_S02_aggregateFunctions_files/analytics.download"></script><script async="" src="./HTM010_C01_S02_aggregateFunctions_files/gtm.js.download"></script><script type="text/javascript"> window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if('function'==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t('ee'),a=t(23),s={};try{o=localStorage.getItem('__nr_flags').split(','),console&&'function'==typeof console.log&&(s.console=!0,o.indexOf('dev')!==-1&&(s.dev=!0),o.indexOf('nr_dev')!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on('internal-error',function(t){r(t.stack)}),s.dev&&i.on('fn-err',function(t,e,n){r(n.stack)}),s.dev&&(r('NR AGENT IN DEVELOPMENT MODE'),r('flags: '+a(s,function(t,e){return t}).join(', ')))},{}],2:[function(t,e,n){function r(t,e,n,r,s){try{p?p-=1:o(s||new UncaughtException(t,e,n),!0)}catch(f){try{i('ierr',[f,c.now(),!0])}catch(d){}}return'function'==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||'Uncaught error with no additional information',this.sourceURL=e,this.line=n}function o(t,e){var n=e?null:c.now();i('err',[t,n])}var i=t('handle'),a=t(24),s=t('ee'),c=t('loader'),f=t('gos'),u=window.onerror,d=!1,l='nr@seenError',p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){'stack'in h&&(t(13),t(12),'addEventListener'in window&&t(6),c.xhrWrappable&&t(14),d=!0)}s.on('fn-start',function(t,e,n){d&&(p+=1)}),s.on('fn-err',function(t,e,n){d&&!n[l]&&(f(n,l,function(){return!0}),this.thrown=!0,o(n))}),s.on('fn-end',function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on('internal-error',function(t){i('ierr',[t,c.now(),!0])})},{}],3:[function(t,e,n){t('loader').features.ins=!0},{}],4:[function(t,e,n){function r(){M++,j=y.hash,this[u]=x.now()}function o(){M--,y.hash!==j&&i(0,!0);var t=x.now();this[h]=~~this[h]+t-this[u],this[d]=t}function i(t,e){E.emit('newURL',[''+y,e])}function a(t,e){t.on(e,function(){this[e]=x.now()})}var s='-start',c='-end',f='-body',u='fn'+s,d='fn'+c,l='cb'+s,p='cb'+c,h='jsTime',m='fetch',v='addEventListener',w=window,y=w.location,x=t('loader');if(w[v]&&x.xhrWrappable){var g=t(10),b=t(11),E=t(8),R=t(6),O=t(13),C=t(7),P=t(14),T=t(9),L=t('ee'),S=L.get('tracer');t(16),x.features.spa=!0;var j,M=0;L.on(u,r),L.on(l,r),L.on(d,o),L.on(p,o),L.buffer([u,d,'xhr-done','xhr-resolved']),R.buffer([u]),O.buffer(['setTimeout'+c,'clearTimeout'+s,u]),P.buffer([u,'new-xhr','send-xhr'+s]),C.buffer([m+s,m+'-done',m+f+s,m+f+c]),E.buffer(['newURL']),g.buffer([u]),b.buffer(['propagate',l,p,'executor-err','resolve'+s]),S.buffer([u,'no-'+u]),T.buffer(['new-jsonp','cb-start','jsonp-error','jsonp-end']),a(P,'send-xhr'+s),a(L,'xhr-resolved'),a(L,'xhr-done'),a(C,m+s),a(C,m+'-done'),a(T,'new-jsonp'),a(T,'jsonp-end'),a(T,'cb-start'),E.on('pushState-end',i),E.on('replaceState-end',i),w[v]('hashchange',i,!0),w[v]('load',i,!0),w[v]('popstate',function(){i(0,M>1)},!0)}},{}],5:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t('ee'),i=t('handle'),a=t(13),s=t(12),c='learResourceTimings',f='addEventListener',u='resourcetimingbufferfull',d='bstResource',l='resource',p='-start',h='-end',m='fn'+p,v='fn'+h,w='bstTimer',y='pushState',x=t('loader');x.features.stn=!0,t(8);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=x.now())}),o.on(v,function(t,e){var n=t[0];n instanceof g&&i('bst',[n,e,this.bstStart,x.now()])}),a.on(m,function(t,e,n){this.bstStart=x.now(),this.bstType=n}),a.on(v,function(t,e){i(w,[e,this.bstStart,x.now(),this.bstType])}),s.on(m,function(){this.bstStart=x.now()}),s.on(v,function(t,e){i(w,[e,this.bstStart,x.now(),'requestAnimationFrame'])}),o.on(y+p,function(t){this.time=x.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i('bstHist',[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance['c'+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance['c'+c]()},!1):window.performance[f]('webkit'+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance['webkitC'+c]()},!1)),document[f]('scroll',r,{passive:!0}),document[f]('keypress',r,!1),document[f]('click',r,!1)}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],'-',i)}function i(t,e){return t[1]}var a=t('ee').get('events'),s=t(26)(a,!0),c=t('gos'),f=XMLHttpRequest,u='addEventListener',d='removeEventListener';e.exports=a,'getPrototypeOf'in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+'-start',function(t,e){var n=t[1],r=c(n,'nr@wrapped',function(){function t(){if('function'==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,'function':n}[typeof n];return e?s(e,'fn-',null,e.name||'anonymous'):n});this.wrapped=t[1]=r}),a.on(d+'-start',function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];'function'==typeof r&&(t[e]=function(){var t=r.apply(this,arguments);return o.emit(n+'start',arguments,t),t.then(function(e){return o.emit(n+'end',[null,e],t),e},function(e){throw o.emit(n+'end',[e],t),e})})}var o=t('ee').get('fetch'),i=t(23);e.exports=o;var a=window,s='fetch-',c=s+'body-',f=['arrayBuffer','blob','json','text','formData'],u=a.Request,d=a.Response,l=a.fetch,p='prototype';u&&d&&l&&(i(f,function(t,e){r(u[p],e,c),r(d[p],e,c)}),r(a,'fetch',s),o.on(s+'end',function(t,e){var n=this;if(e){var r=e.headers.get('content-length');null!==r&&(n.rxSize=r),o.emit(s+'done',[null,e],n)}else o.emit(s+'done',[t],n)}))},{}],8:[function(t,e,n){var r=t('ee').get('history'),o=t(26)(r);e.exports=r,o.inPlace(window.history,['pushState','replaceState'],'-')},{}],9:[function(t,e,n){function r(t){function e(){c.emit('jsonp-end',[],l),t.removeEventListener('load',e,!1),t.removeEventListener('error',n,!1)}function n(){c.emit('jsonp-error',[],l),c.emit('jsonp-end',[],l),t.removeEventListener('load',e,!1),t.removeEventListener('error',n,!1)}var r=t&&'string'==typeof t.nodeName&&'script'===t.nodeName.toLowerCase();if(r){var o='function'==typeof t.addEventListener;if(o){var a=i(t.src);if(a){var u=s(a),d='function'==typeof u.parent[u.key];if(d){var l={};f.inPlace(u.parent,[u.key],'cb-',l),t.addEventListener('load',e,!1),t.addEventListener('error',n,!1),c.emit('new-jsonp',[t.src],l)}}}}}function o(){return'addEventListener'in window}function i(t){var e=t.match(u);return e?e[1]:null}function a(t,e){var n=t.match(l),r=n[1],o=n[3];return o?a(o,e[r]):e[r]}function s(t){var e=t.match(d);return e&&e.length>=3?{key:e[2],parent:a(e[1],window)}:{key:t,parent:window}}var c=t('ee').get('jsonp'),f=t(26)(c);if(e.exports=c,o()){var u=/[?&](?:callback|cb)=([^&#]+)/,d=/(.*)\.([^.]+)/,l=/^(\w+)(\.|$)(.*)$/,p=['appendChild','insertBefore','replaceChild'];f.inPlace(HTMLElement.prototype,p,'dom-'),f.inPlace(HTMLHeadElement.prototype,p,'dom-'),f.inPlace(HTMLBodyElement.prototype,p,'dom-'),c.on('dom-start',function(t){r(t[0])})}},{}],10:[function(t,e,n){var r=t('ee').get('mutation'),o=t(26)(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,'fn-')):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],11:[function(t,e,n){function r(t){var e=a.context(),n=s(t,'executor-',e),r=new f(n);return a.context(r).getCtx=function(){return e},a.emit('new-promise',[r,e],e),r}function o(t,e){return e}var i=t(26),a=t('ee').get('promise'),s=i(a),c=t(23),f=NREUM.o.PR;e.exports=a,f&&(window.Promise=r,['all','race'].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){a.emit('propagate',[null,!o],i),o=o||!t}}var o=!1;c(n,function(e,n){Promise.resolve(n).then(r('all'===t),r(!1))});var i=e.apply(f,arguments),s=f.resolve(i);return s}}),['resolve','reject'].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&a.emit('propagate',[t,!0],n),n}}),f.prototype['catch']=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),c(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),a.on('executor-start',function(t){t[0]=s(t[0],'resolve-',this),t[1]=s(t[1],'resolve-',this)}),a.on('executor-err',function(t,e,n){t[1](n)}),s.inPlace(f.prototype,['then'],'then-',o),a.on('then-start',function(t,e){this.promise=e,t[0]=s(t[0],'cb-',this),t[1]=s(t[1],'cb-',this)}),a.on('then-end',function(t,e,n){this.nextPromise=n;var r=this.promise;a.emit('propagate',[r,!0],n)}),a.on('cb-end',function(t,e,n){a.emit('propagate',[n,!0],this.nextPromise)}),a.on('propagate',function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=a.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return''+f})},{}],12:[function(t,e,n){var r=t('ee').get('raf'),o=t(26)(r),i='equestAnimationFrame';e.exports=r,o.inPlace(window,['r'+i,'mozR'+i,'webkitR'+i,'msR'+i],'raf-'),r.on('raf-start',function(t){t[0]=o(t[0],'fn-')})},{}],13:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],'fn-',null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],'fn-',this,n)}var i=t('ee').get('timer'),a=t(26)(i),s='setTimeout',c='setInterval',f='clearTimeout',u='-start',d='-';e.exports=i,a.inPlace(window,[s,'setImmediate'],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,'clearImmediate'],f+d),i.on(c+u,r),i.on(s+u,o)},{}],14:[function(t,e,n){function r(t,e){d.inPlace(e,['onreadystatechange'],'fn-',s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit('xhr-resolved',[],t)),d.inPlace(t,y,'fn-',s)}function i(t){x.push(t),h&&(b?b.then(a):v?v(a):(E=-E,R.data=E))}function a(){for(var t=0;t<x.length;t++)r([],x[t]);x.length&&(x=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t('ee'),u=f.get('xhr'),d=t(26)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,v=l.SI,w='readystatechange',y=['onload','onerror','onabort','onloadstart','onloadend','onprogress','ontimeout'],x=[];e.exports=u;var g=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit('new-xhr',[e],e),e.addEventListener(w,o,!1)}catch(n){try{u.emit('internal-error',[n])}catch(r){}}return e};if(c(p,g),g.prototype=p.prototype,d.inPlace(g.prototype,['open','send'],'-xhr-',s),u.on('send-xhr-start',function(t,e){r(t,e),i(e)}),u.on('open-xhr-start',r),h){var b=m&&m.resolve();if(!v&&!m){var E=1,R=document.createTextNode(E);new h(a).observe(R,{characterData:!0})}}else f.on('fn-end',function(t){t[0]&&t[0].type===w||a()})},{}],15:[function(t,e,n){function r(){var t=window.NREUM,e=t.info.accountID||null,n=t.info.agentID||null,r=t.info.trustKey||null,i='btoa'in window&&'function'==typeof window.btoa;if(!e||!n||!i)return null;var a={v:[0,1],d:{ty:'Browser',ac:e,ap:n,id:o.generateCatId(),tr:o.generateCatId(),ti:Date.now()}};return r&&e!==r&&(a.d.tk=r),btoa(JSON.stringify(a))}var o=t(21);e.exports={generateTraceHeader:r}},{}],16:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<p;r++)t.removeEventListener(l[r],this.listener,!1);e.aborted||(n.duration=s.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):a(this,t),n.cbTime=this.cbTime,d.emit('xhr-done',[t],t),c('xhr',[e,n,this.startTime]))}}function o(t,e){var n=t.responseType;if('json'===n&&null!==e)return e;var r='arraybuffer'===n||'blob'===n||'json'===n?t.response:t.responseText;return v(r)}function i(t,e){var n=f(e),r=t.params;r.host=n.hostname+':'+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}function a(t,e){t.params.status=e.status;var n=o(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader('X-NewRelic-App-Data');r&&(t.params.cat=r.split(', ').pop())}t.loadCaptureCalled=!0}var s=t('loader');if(s.xhrWrappable){var c=t('handle'),f=t(17),u=t(15).generateTraceHeader,d=t('ee'),l=['load','error','abort','timeout'],p=l.length,h=t('id'),m=t(20),v=t(19),w=window.XMLHttpRequest;s.features.xhr=!0,t(14),d.on('new-xhr',function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,t.addEventListener('load',function(n){a(e,t)},!1),m&&(m>34||m<10)||window.opera||t.addEventListener('progress',function(t){e.lastSize=t.loaded},!1)}),d.on('open-xhr-start',function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),d.on('open-xhr-end',function(t,e){'loader_config'in NREUM&&'xpid'in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader('X-NewRelic-ID',NREUM.loader_config.xpid);var n=!1;if('init'in NREUM&&'distributed_tracing'in NREUM.init&&(n=!!NREUM.init.distributed_tracing.enabled),n&&this.sameOrigin){var r=u();r&&e.setRequestHeader('newrelic',r)}}),d.on('send-xhr-start',function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=v(r);i&&(n.txSize=i)}this.startTime=s.now(),this.listener=function(t){try{'abort'!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),('load'!==t.type||o.called===o.totalCbs&&(o.onloadCalled||'function'!=typeof e.onload))&&o.end(e)}catch(n){try{d.emit('internal-error',[n])}catch(r){}}};for(var a=0;a<p;a++)e.addEventListener(l[a],this.listener,!1)}),d.on('xhr-cb-time',function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&'function'==typeof n.onload||this.end(n)}),d.on('xhr-load-added',function(t,e){var n=''+h(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),d.on('xhr-load-removed',function(t,e){var n=''+h(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),d.on('addEventListener-end',function(t,e){e instanceof w&&'load'===t[0]&&d.emit('xhr-load-added',[t[1],t[2]],e)}),d.on('removeEventListener-end',function(t,e){e instanceof w&&'load'===t[0]&&d.emit('xhr-load-removed',[t[1],t[2]],e)}),d.on('fn-start',function(t,e,n){e instanceof w&&('onload'===n&&(this.onload=!0),('load'===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=s.now()))}),d.on('fn-end',function(t,e){this.xhrCbStart&&d.emit('xhr-cb-time',[s.now()-this.xhrCbStart,this.onload,e],e)})}},{}],17:[function(t,e,n){e.exports=function(t){var e=document.createElement('a'),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split('://');!r.port&&o[1]&&(r.port=o[1].split('/')[0].split('@').pop().split(':')[1]),r.port&&'0'!==r.port||(r.port='https'===o[0]?'443':'80'),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],'/'!==r.pathname.charAt(0)&&(r.pathname='/'+r.pathname);var i=!e.protocol||':'===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],18:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[f.now()].concat(s(arguments)),e?null:this,n),e?void 0:this}}var i=t('handle'),a=t(23),s=t(24),c=t('ee').get('tracer'),f=t('loader'),u=NREUM;'undefined'==typeof window.newrelic&&(newrelic=u);var d=['setPageViewName','setCustomAttribute','setErrorHandler','finished','addToTrace','inlineHit','addRelease'],l='api-',p=l+'ixn-';a(d,function(t,e){u[e]=o(l+e,!0,'api')}),u.addPageAction=o(l+'addPageAction',!0),u.setCurrentRouteName=o(l+'routeName',!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,o='function'==typeof e;return i(p+'tracer',[f.now(),t,n],r),function(){if(c.emit((o?'':'no-')+'fn-start',[f.now(),r,o],n),o)try{return e.apply(this,arguments)}catch(t){throw c.emit('fn-err',[arguments,this,t],n),t}finally{c.emit('fn-end',[f.now()],n)}}}};a('actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get'.split(','),function(t,e){h[e]=o(p+e)}),newrelic.noticeError=function(t,e){'string'==typeof t&&(t=new Error(t)),i('err',[t,f.now(),!1,e])}},{}],19:[function(t,e,n){e.exports=function(t){if('string'==typeof t&&t.length)return t.length;if('object'==typeof t){if('undefined'!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if('undefined'!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!('undefined'!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],20:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],21:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var o,i='xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx',a='',s=0;s<i.length;s++)o=i[s],'x'===o?a+=t().toString(16):'y'===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&Uint8Array&&(e=r.getRandomValues(new Uint8Array(31)));for(var o=[],i=0;i<16;i++)o.push(t().toString(16));return o.join('')}e.exports={generateUuid:r,generateCatId:o}},{}],22:[function(t,e,n){function r(t,e){if(!o)return!1;if(t!==o)return!1;if(!e)return!0;if(!i)return!1;for(var n=i.split('.'),r=e.split('.'),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf('Chrome')===-1&&s.indexOf('Chromium')===-1&&(o='Safari',i=c[1])}e.exports={agent:o,version:i,match:r}},{}],23:[function(t,e,n){function r(t,e){var n=[],r='',i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],24:[function(t,e,n){function r(t,e,n){e||(e=0),'undefined'==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],25:[function(t,e,n){e.exports={exists:'undefined'!=typeof window.performance&&window.performance.timing&&'undefined'!=typeof window.performance.timing.navigationStart}},{}],26:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t('ee'),i=t(24),a='nr@original',s=Object.prototype.hasOwnProperty,c=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s='function'==typeof n?n(r,a):n||{}}catch(f){l([f,'',[r,a,o],s])}u(e+'start',[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(e+'err',[r,a,d],s),d}finally{u(e+'end',[r,a,c],s)}}return r(t)?t:(e||(e=''),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o='');var a,s,c,f='-'===o.charAt(0);for(c=0;c<e.length;c++)s=e[c],a=t[s],r(a)||(t[s]=n(a,f?s+o:o,i,s))}function u(n,r,o){if(!c||e){var i=c;c=!0;try{t.emit(n,r,o,e)}catch(a){l([a,n,r,o])}c=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){l([r])}for(var o in t)s.call(t,o)&&(e[o]=t[o]);return e}function l(e){try{t.emit('internal-error',e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function n(n,r,o,i){if(!l.aborted||i){t&&t(n,r,o);for(var a=e(o),s=m(n),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[x[n]];return d&&d.push([g,n,r,a]),a}}function p(t,e){y[t]=m(t).concat(e)}function h(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return y[t]||[]}function v(t){return d[t]=d[t]||o(n)}function w(t,e){f(t,function(t,n){e=e||'feature',x[n]=e,e in u||(u[e]=[])})}var y={},x={},g={on:p,addEventListener:p,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s='nr@context',c=t('gos'),f=t(23),u={},d={},l=e.exports=o();l.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t('ee').get('handle');e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||'object'!==e&&'function'!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i='nr@id',a=t('gos');e.exports=r},{}],loader:[function(t,e,n){function r(){if(!E++){var t=b.info=NREUM.info,e=p.getElementsByTagName('script')[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(x,function(e,n){t[e]||(t[e]=n)}),c('mark',['onload',a()+b.offset],null,'api');var n=p.createElement('script');n.src='https://'+t.agent,e.parentNode.insertBefore(n,e)}}function o(){'complete'===p.readyState&&i()}function i(){c('mark',['domContent',a()+b.offset],null,'api')}function a(){return R.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t('handle'),f=t(23),u=t('ee'),d=t(22),l=window,p=l.document,h='addEventListener',m='attachEvent',v=l.XMLHttpRequest,w=v&&v.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:v,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var y=''+location,x={beacon:'bam.nr-data.net',errorBeacon:'bam.nr-data.net',agent:'js-agent.newrelic.com/nr-spa-1123.min.js'},g=v&&w&&w[h]&&!/CriOS/.test(navigator.userAgent),b=e.exports={offset:s,now:a,origin:y,features:{},xhrWrappable:g,userAgent:d};t(18),p[h]?(p[h]('DOMContentLoaded',i,!1),l[h]('load',r,!1)):(p[m]('onreadystatechange',o),l[m]('onload',r)),c('mark',['firstbyte',s],null,'api');var E=0,R=t(25)},{}]},{},['loader',2,16,5,3,4]); ;NREUM.info={beacon:'bam.nr-data.net',errorBeacon:'bam.nr-data.net',licenseKey:'3feb6adf13',applicationID:'360656905',sa:1} </script> <script type="text/javascript">(function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? String.fromCharCode(38) + 'l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-BVCN');</script><script type="text/javascript">var _elqQ = _elqQ || [];
+      _elqQ.push(['elqSetSiteId', '840']);
+      _elqQ.push(['elqTrackPageView']);
+      (function() {
+        function async_load() {
+          var s = document.createElement('script');
+          s.type = 'text/javascript';
+          s.async = true;
+          s.src = 'https://img.en25.com/i/elqCfg.min.js';
+          var x = document.getElementsByTagName('script')[0];
+          x.parentNode.insertBefore(s, x);
+        }
+        if (window.addEventListener) window.addEventListener('DOMContentLoaded', async_load, false);
+        else if (window.attachEvent) window.attachEvent('onload', async_load);
+      })();</script><link href="./HTM010_C01_S02_aggregateFunctions_files/app.css" rel="stylesheet"><style type="text/css">.resize-observer[data-v-b329ee4c]{position:absolute;top:0;left:0;z-index:-1;width:100%;height:100%;border:none;background-color:transparent;pointer-events:none;display:block;overflow:hidden;opacity:0}.resize-observer[data-v-b329ee4c] object{display:block;position:absolute;top:0;left:0;height:100%;width:100%;overflow:hidden;pointer-events:none;z-index:-1}</style></head><body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-BVCN" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="app" class="wrapper"><header class="container--full-width"><div class="container--centered"><div class="header__mobile-menu"><div aria-label="Open mobile menu" role="button" tabindex="0" class="mobile-menu__toggle-btn"><div tabindex="-1" class="mobile-menu__icon-wrapper"><span class="mobile-menu__icon"></span></div></div></div><div class="header__logo"><a href="https://www.tableau.com/en-us/"><img src="./HTM010_C01_S02_aggregateFunctions_files/tableau-logo.png" alt="Tableau" class="header__logo__img"></a></div><div class="header__search"><div class="search-header"><form role="search" class="search-form"><div aria-label="Open search" role="button" tabindex="0" class="search-form__btn-wrapper"><span tabindex="-1" class="search-form__open-btn icon--med icon--search"></span></div> <input aria-label="Search input" type="search" placeholder="Search all help" class="search-form__input" style="display: none;"> <span aria-label="Close search" role="button" tabindex="-1" class="search-form__close-btn icon--med icon--close-window" style="display: none;"></span></form></div></div></div></header><div class="container--full-width subheader print-hidden content-only-hidden"><div class="container--centered"><h4 class="heading--subheader">Tableau Desktop and Web Authoring Help</h4></div></div><div class="container--full-width nav--breadcrumbs"><div class="container--centered"><div><nav aria-label="Breadcrumb" class="breadcrumb-links"><ol><li><a href="https://www.tableau.com/en-us/support/help"><span class="icon--med icon--arrow-left"></span>
+        Tableau Help
+      </a></li><li><a href="https://help.tableau.com/current/pro/desktop/en-us/default.htm"><!---->
+        Tableau Desktop and Web Authoring Help
+      </a></li><li><a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields.htm"><!---->
+        ...
+      </a></li><li><a href="https://help.tableau.com/current/pro/desktop/en-us/functions.htm"><!---->
+        Functions
+      </a></li><li><a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_aggregate_create.htm" aria-current="page"><!---->
+        Aggregate Functions
+      </a></li></ol></nav></div></div></div><div class="section--main container--full-width"><div class="container--centered"><nav role="navigation" class="nav-side nav-side--left"><div class="menu-tree__container"><div class="menu-tree"><span class="heading--nav">
+      Contents
+    </span> <ul role="tree" class="link-list--menu menu-tree__list"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/default.htm" class="">
+    Tableau Desktop and Web Authoring Help
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/whatsnew_desktop.htm" class="">
+    What's New in Tableau
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/gettingstarted_overview.htm" class="">
+    Get Started
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/getstarted_buildmanual_ex1basic.htm" class="">
+    Build a Basic View to Explore Your Data
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/environ_st.htm" class="">
+    Tour the Tableau Environment
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/environment_startpage.htm" class="">
+    Start Page
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/environment_datasource_page.htm" class="">
+    Data Source Page
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/environment_workspace.htm" class="">
+    The Tableau Workspace
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/datafields_understanddatawindow.htm" class="">
+    Work with Data Fields in the Data Pane
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/multipleconnections_navigateconnections.htm" class="">
+    Navigate Data Sources in the Data Pane
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/startpage_workspace_navigate_between.htm" class="">
+    Navigate Between the Start Page and Workspace
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/environ_workspace_analytics_pane.htm" class="">
+    Apply Advanced Analysis to the View (Analytics Pane)
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/buildmanual_shelves.htm" class="">
+    Shelves and Cards (Columns, Rows, Marks, Filters, Pages, Legends)
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/view_parts.htm" class="">
+    Parts of the View
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/environ_workbooksandsheets.htm" class="">
+    Workbooks and Sheets
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/environ_workbooksandsheets_workbooks.htm" class="">
+    Create or Open Workbooks
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/environ_workbooksandsheets_sheets_organize.htm" class="">
+    Navigate and Organize Sheets
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/environ_workspace_reorganize.htm" class="">
+    Reorganize your Workspace
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/environ_filesandfolders.htm" class="">
+    Files Types and Folders
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/workbook_language.htm" class="">
+    Language and Locale
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/tips_visualcues.htm" class="">
+    Helpful Visual Cues in Tableau 
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/concepts.htm" class="">
+    Tableau Concepts
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/datafields_typesandroles.htm" class="">
+    Field Types: Dimensions and Measures, Blue and Green
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/datafields_typesandroles_datatypes.htm" class="">
+    Data Types
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/order_of_operations.htm" class="">
+    Tableau's Order of Operations
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_aggregation.htm" class="">
+    Data Aggregation in Tableau
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/sign_in_server.htm" class="">
+    Sign in to Tableau Server or Tableau Online
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/what_chart_example.htm" class="">
+    What Chart is Right for You?
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/perf_checklist.htm" class="">
+    Tableau Workbook Performance Checklist
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/data.htm" class="">
+    Connect to and Prepare Data
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/basicconnectoverview.htm" class="">
+    Connect to Your Data
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/exampleconnections_overview.htm" class="">
+    Supported Connectors
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_excel.htm" class="">
+    Microsoft Excel
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/data_tips.htm" class="">
+    Tips for Working with Your Data
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_text.htm" class="">
+    Text File
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_access.htm" class="">
+    Microsoft Access
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_json.htm" class="">
+    JSON&nbsp;File
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_pdf.htm" class="">
+    PDF File
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_spatial_files.htm" class="">
+    Spatial File
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_statfile.htm" class="">
+    Statistical File
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/statfile_char_encoding.htm" class="">
+    User-defined Encodings
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_extract.htm" class="">
+    Other Files
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_tableauserver.htm" class="">
+    Tableau Server or Tableau Online
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_actianmatrix.htm" class="">
+    Actian Matrix
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_vectorwise.htm" class="">
+    Actian Vectorwise
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_alibaba_analyticdb.htm" class="">
+    Alibaba AnalyticDB for MySQL
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_alibaba_data_lake_analytics.htm" class="">
+    Alibaba Data Lake Analytics
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_alibaba_maxcompute.htm" class="">
+    Alibaba MaxCompute
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_amazonathena.htm" class="">
+    Amazon Athena
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_amazonaurora.htm" class="">
+    Amazon Aurora
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_amazonemr.htm" class="">
+    Amazon EMR Hadoop Hive
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_amazonredshift.htm" class="">
+    Amazon Redshift
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_anaplan.htm" class="">
+    Anaplan
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_apachedrill.htm" class="">
+    Apache Drill
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_asterdata.htm" class="">
+    Aster Database
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_azure_sql_dw.htm" class="">
+    Azure SQL&nbsp;Data Warehouse
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_box.htm" class="">
+    Box
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_hadoop.htm" class="">
+    Cloudera Hadoop
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_databricks.htm" class="">
+    Databricks
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_denodo.htm" class="">
+    Denodo
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_dropbox.htm" class="">
+    Dropbox
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_exasolution.htm" class="">
+    Exasol
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_firebird.htm" class="">
+    Firebird
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_googleads.htm" class="">
+    Google&nbsp;Ads
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_googleanalytics.htm" class="">
+    Google Analytics
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_googlebigquery.htm" class="">
+    Google BigQuery
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_googlecloudsql.htm" class="">
+    Google Cloud SQL
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_googledrive.htm" class="">
+    Google Drive
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_googlesheets.htm" class="">
+    Google Sheets
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_hortonworkshadoop.htm" class="">
+    Hortonworks Hadoop Hive
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_biginsights.htm" class="">
+    IBM BigInsights
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_db2.htm" class="">
+    IBM DB2
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_netezza.htm" class="">
+    IBM PDA (Netezza)
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_quickbooksonline.htm" class="">
+    Intuit QuickBooks Online
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_kognitio.htm" class="">
+    Kognitio
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_kyvos.htm" class="">
+    Kyvos
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_linkedin_sales_navigator.htm" class="">
+    LinkedIn Sales Navigator
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_maprhadoop.htm" class="">
+    MapR Hadoop Hive
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_mariadb.htm" class="">
+    MariaDB
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_marketo.htm" class="">
+    Marketo
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_marklogic.htm" class="">
+    MarkLogic
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_memsql.htm" class="">
+    MemSQL
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_msas.htm" class="">
+    Microsoft Analysis Services
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_powerpivot.htm" class="">
+    Microsoft PowerPivot
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_sqlserver.htm" class="">
+    Microsoft SQL Server
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_monetdb.htm" class="">
+    MonetDB
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_mongodb.htm" class="">
+    MongoDB BI Connector
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_mysql.htm" class="">
+    MySQL
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_odata.htm" class="">
+    OData
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_onedrive.htm" class="">
+    OneDrive
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_oracle.htm" class="">
+    Oracle
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_eloqua.htm" class="">
+    Oracle Eloqua
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_essbase.htm" class="">
+    Oracle Essbase
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_greenplum.htm" class="">
+    Pivotal Greenplum
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_postgresql.htm" class="">
+    PostgreSQL
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_presto.htm" class="">
+    Presto
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_progress.htm" class="">
+    Progress OpenEdge
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_qubole.htm" class="">
+    Qubole Presto
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_salesforce.htm" class="">
+    Salesforce
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_splunk.htm" class="">
+    Splunk
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_saphana.htm" class="">
+    SAP HANA
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_sapbw.htm" class="">
+    SAP NetWeaver Business Warehouse
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_sybasease.htm" class="">
+    SAP Sybase ASE
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_sybaseiq.htm" class="">
+    SAP Sybase IQ
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_servicenow.htm" class="">
+    ServiceNow ITSM
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_sharepoint_lists.htm" class="">
+    SharePoint Lists
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_snowflake.htm" class="">
+    Snowflake
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_sparksql.htm" class="">
+    Spark SQL
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_teradata.htm" class="">
+    Teradata
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_teradata_olap.htm" class="">
+    Teradata OLAP Connector
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_ciscoinfoserver.htm" class="">
+    TIBCO Data Virtualization (Cisco Information Server)
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_vertica.htm" class="">
+    Vertica
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_connector_sdk.htm" class="">
+    Connector Plugin
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_web_data_connector.htm" class="">
+    Web Data Connector
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_otherdatabases_jdbc.htm" class="">
+    Other Databases (JDBC)
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_otherdatabases.htm" class="">
+    Other Databases (ODBC)
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/odbc_tableau.htm" class="">
+    Tableau and ODBC
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/odbc_customize.htm" class="">
+    Customize and Tune ODBC Connections
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/odbc_capabilities.htm" class="">
+    Tableau Capability Customizations Reference
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/odbc_sql.htm" class="">
+    ODBC/SQL Customizations Reference
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/clipboard_datasource.htm" class="">
+    Create a Data Source with Clipboard Data
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/connect_basic_initialsql.htm" class="">
+    Run Initial SQL
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/datasource_prepare.htm" class="">
+    Set Up Data Sources
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/datasource_plan.htm" class="">
+    Plan the Data Source
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/joining_tables.htm" class="">
+    Join Your Data
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/joins_assume_refinteg.htm" class="">
+    Assume Referential Integrity
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/multiple_connections.htm" class="">
+    Blend Your Data
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/multipleconnections_edit_primary_aliases.htm" class="">
+    Alias Field Values Using Data Blending
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/multipleconnections_create_primary_group.htm" class="">
+    Bring a Field into the Primary Data Source
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/multipleconnections_troubleshooting.htm" class="">
+    Troubleshoot Data Blending
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/multipleconnections_summarydata.htm" class="">
+    Blend on Summary Data
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/union.htm" class="">
+    Union Your Data
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/customsql.htm" class="">
+    Connect to a Custom SQL Query
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/connect_basic_stored_procedures.htm" class="">
+    Use a Stored Procedure
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/datasource_recommended.htm" class="">
+    Use Recommended Data Sources and Tables
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/data_dateparse.htm" class="">
+    Convert a Field to a Date Field
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/pivot.htm" class="">
+    Pivot Data from Columns to Rows
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/data_interpreter.htm" class="">
+    Clean Your Data with Data Interpreter
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/split.htm" class="">
+    Split a Field into Multiple Fields
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/filtering_datasource.htm" class="">
+    Filter Data from Data Sources
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/data_clean_adm.htm" class="">
+    Understand Field Type Detection and Naming Improvements
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/extracting_data.htm" class="">
+    Extract Your Data
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/extracting_upgrade.htm" class="">
+    Extract Upgrade to .hyper Format
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/extracting_refresh.htm" class="">
+    Refresh Extracts
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/extracting_addfromfile.htm" class="">
+    Add Data to Extracts
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/extracting_optimize.htm" class="">
+    Materialize Calculations in Your Extracts
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/extracting_push.htm" class="">
+    Update Server Data Sources That Are Using Extracts
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/extracting_TDE.htm" class="">
+    Tableau Data Extract Command-Line Utility
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/extracting_TDE_API.htm" class="">
+    Tableau Hyper API
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/supported_datasources.htm" class="">
+    Manage Data Sources
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/howto_connect.htm" class="">
+    Edit Data Sources
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/refreshing_data.htm" class="">
+    Refresh Data Sources
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/connect_basic_replace.htm" class="">
+    Replace Data Sources
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/export_connection.htm" class="">
+    Export Data Sources
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/upgrading_connection.htm" class="">
+    Upgrade Data Sources
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/close_connection.htm" class="">
+    Close Data Sources
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/cubes.htm" class="">
+    Working with Cube Data Sources
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/filtering_calculation.htm" class="">
+    Create Slicing Filters
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_calculatedmember.htm" class="">
+    How to Create a Calculated Member
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/buildmanual_multidimensional.htm" class="">
+    Multidimensional Hierarchies
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/buildmanual_multidimensional_drilldown.htm" class="">
+    Drill Down and Up in a Hierarchy
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/buildmanual_multidimensional_perfectpivot.htm" class="">
+    Perfect Pivoting
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/buildmanual_multidimensional_uniquevalues.htm" class="">
+    Define Unique Values
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/buildmanual_multidimensional_utilitydimension.htm" class="">
+    Utility Dimensions
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li></ul></li></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-down"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/design_and_analyze.htm" class="selected">
+    Build Charts and Analyze Data
+  </a> <ul role="group" aria-expanded="true" class="link-list--menu menu-tree__list"><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/ask_data.htm" class="">
+    Automatically Build Views with Ask Data
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/ask_data_phrases.htm" class="">
+    Supported Analytical Functions for Ask Data
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/ask_data_optimize.htm" class="">
+    Optimize Data for Ask Data
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/ask_data_enable.htm" class="">
+    Enable Ask Data for Data Sources
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/datafields_dwfeatures.htm" class="">
+    Organize and Customize Fields in the Data Pane
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/datafields_fieldproperties.htm" class="">
+    Edit Default Settings and Properties for Fields
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/datafields_fieldproperties_aliases_ex1editing.htm" class="">
+    Create Aliases to Rename Members in the View
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/datafields_typesandroles_convertdisctocont.htm" class="">
+    Convert Fields Between Discrete and Continuous
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/datafields_typesandroles_convertdimtomeas.htm" class="">
+    Convert a Measure to a Dimension
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/qs_hierarchies.htm" class="">
+    Create Hierarchies
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/sortgroup_groups_creating.htm" class="">
+    Group Data
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/sortgroup_groups_editing.htm" class="">
+    Color a View Using Groups
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/sortgroup_groups.htm" class="">
+    Correct Data Errors or Combine Dimension Members by Grouping Your Data
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/sortgroup_sets_create.htm" class="">
+    Create Sets
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/sortgroup_sets_topn.htm" class="">
+    Create Sets for Top N and Others
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/parameters_create.htm" class="">
+    Create Parameters
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/changing-views-using-parameters.htm" class="">
+    Use Parameters to Make Views More Interactive
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/parameters_ex1parameters.htm" class="">
+    Example – Add a Parameter to a Map View
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/parameters_swap.htm" class="">
+    Example – Swap Measures Using Parameters
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/dates.htm" class="">
+    Customize Date and Time Fields
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/date_properties.htm" class="">
+    Date Properties for a Data Source
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/dates_levels.htm" class="">
+    Change Date Levels
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/dates_custom.htm" class="">
+    Custom Dates
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/dates_fiscal.htm" class="">
+    Fiscal Dates
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/dates_perfectpivot.htm" class="">
+    Perfect Pivoting with Dates
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/dates_custom_date_formats.htm" class="">
+    Custom Date Formats
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/dates_calendar.htm" class="">
+    ISO-8601 Week-Based Calendar
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/dates_custom_date_formats_week.htm" class="">
+    Using Week-Based Placeholders in Custom Date Formats
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/dates_continuous.htm" class="">
+    Continuous Dates
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/building_overview.htm" class="">
+    Build Data Views from Scratch
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/buildmanual_dragging.htm" class="">
+    Start Building a Viz by Dragging Fields to the View
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/multiple_measures.htm" class="">
+    Use Axes and Multiple Measures in a View
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/datafields_understanddatawindow_meavalues.htm" class="">
+    Measure Values and Measure Names
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/datafields_specialvalues.htm" class="">
+    Handling Null and Other Special Values
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/missing_values.htm" class="">
+    Show or Hide Missing Values or Empty Rows and Columns
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/buildauto_showme.htm" class="">
+    Use Show Me to Start a View
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/add_detail.htm" class="">
+    Add Visual Detail
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/buildmanual_shelves.htm" class="">
+    About the Marks Card
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/viewparts_marks_marktypes.htm" class="">
+    Change the Type of Marks 
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/viewparts_marks_markproperties.htm" class="">
+    Control the Appearance of Marks
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/annotations_marklabels_showhideworksheet.htm" class="">
+    Show and Hide Mark Labels
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/move_marks.htm" class="">
+    Move Marks
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/viewparts_marks_stacking.htm" class="">
+    Stack Marks
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/viewparts_marks_markproperties_color.htm" class="">
+    Color Palettes and Effects
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/viewparts_marks_markproperties_color_ex1.htm" class="">
+    Example – Multiple Fields on Color
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li></ul></li></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/simplify_sort.htm" class="">
+    Filter and Sort Data
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/filtering.htm" class="">
+    Filter Data 
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/filter_across_datasources.htm" class="">
+    Filter Data Across Multiple Data Sources
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/qs_relative_dates.htm" class="">
+    Create Relative Date Filters
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/filtering_context.htm" class="">
+    Improve Performance with Context Filters
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/filtering_global.htm" class="">
+    Apply Filters to Multiple Worksheets
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/sortgroup_sorting_computed_howto.htm" class="">
+    Sort Data
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/showcase_insights.htm" class="">
+    Showcase Insights
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_totals_grandtotal_turnon.htm" class="">
+    Show Totals
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/annotations_annotations_add.htm" class="">
+    Add Annotations
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/viz_in_tooltip.htm" class="">
+    Create Views in Tooltips (Viz in Tooltip)
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/actions.htm" class="">
+    Add Interactivity using Actions
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/actions_filter.htm" class="">
+    Filter Actions
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/actions_highlight.htm" class="">
+    Highlight Actions
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/actions_highlight_selectmarks.htm" class="">
+    Select Marks to Highlight
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/actions_highlight_colorlegend.htm" class="">
+    Color Legend Highlighting
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/actions_highlight_highlighter.htm" class="">
+    Highlight Data Points in Context
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/actions_highlight_toolbar.htm" class="">
+    Highlight Toolbar Button
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/actions_highlight_advanced.htm" class="">
+    Create Advanced Highlight Actions
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/actions_url.htm" class="">
+    URL Actions
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/actions_parameters.htm" class="">
+    Parameter Actions
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/actions_sets.htm" class="">
+    Set Actions
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/actions_running.htm" class="">
+    Running Actions
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/actions_dashboards.htm" class="">
+    Actions and Dashboards
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/actions_fieldvalues.htm" class="">
+    Use Field and Filter Values in Actions
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/actions_fieldvalues_url.htm" class="">
+    Use Field and Filter Values in URLs
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/actions_fieldvalues_names.htm" class="">
+    Use Field and Filter Values in Action Names
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/dataview_examples.htm" class="">
+    Build Common Chart Types
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/qs_area_charts.htm" class="">
+    Build an Area Chart
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/buildexamples_bar.htm" class="">
+    Build a Bar Chart
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/buildexamples_boxplot.htm" class="">
+    Build a Box Plot
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/qs_bullet_graphs.htm" class="">
+    Build a Bullet Graph
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/buildexamples_density.htm" class="">
+    Build with Density Marks (Heatmap)
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/buildexamples_gantt.htm" class="">
+    Build a Gantt Chart
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/buildexamples_highlight.htm" class="">
+    Build a Highlight Table
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/buildexamples_histogram.htm" class="">
+    Build a Histogram
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/buildexamples_line.htm" class="">
+    Build a Line Chart
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/buildexamples_bubbles.htm" class="">
+    Build a Packed Bubble Chart
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/buildexamples_pie.htm" class="">
+    Build a Pie Chart
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/buildexamples_scatter.htm" class="">
+    Build a Scatter Plot
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/buildexamples_text.htm" class="">
+    Build a Text Table
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/buildexamples_treemap.htm" class="">
+    Build a Treemap
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/qs_combo_charts.htm" class="">
+    Build Combination Charts
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/analytics_howtos.htm" class="">
+    Build Advanced Chart Types
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/calcs_add_calculated_column.htm" class="">
+    Add a Calculated Column to a View
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/calculating_z_scores.htm" class="">
+    Calculate Z-scores
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/kpi.htm" class="">
+    Visualize Key Progress Indicators
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/pareto.htm" class="">
+    Create a Pareto Chart
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/population_pyramid.htm" class="">
+    Create a Population Pyramid
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/co_occurrence.htm" class="">
+    Create a Co-Occurrence Visualization Using a Parameter and a Set
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/benford.htm" class="">
+    Visualize Benford's Law
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_bins.htm" class="">
+    Create Bins from a Continuous Measure
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/accessibility_overview.htm" class="">
+    Build Data Views for Accessibility
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/accessibility_best_practice.htm" class="">
+    Best Practices for Designing Accessible Views
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/accessibility_create_view.htm" class="">
+    Create Accessible Views
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/access_keyboard_navigation.htm" class="">
+    Keyboard Access for Embedded Views
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/maps.htm" class="">
+    Maps and Geographic Data Analysis
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/buildexamples_maps.htm" class="">
+    Get Started Tutorial
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/maps_build.htm" class="">
+    Mapping Concepts
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/maps_workspace.htm" class="">
+    The Mapping Workspace
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/maps_data.htm" class="">
+    Work with Location Data
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_spatial_files.htm" class="">
+    Connect to Spatial Files
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/maps_spatial_sql.htm" class="">
+    Connect to Spatial Data in a Database
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/maps_spatial_join.htm" class="">
+    Join Spatial Files in Tableau
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/custom_geocoding.htm" class="">
+    Plot Unrecognized Locations on a Map
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/maps_customgeocode_schemaini.htm" class="">
+    Create a schema.ini File
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/maps_customgeocode_ex_datablend.htm" class="">
+    Blend Geographic Data
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/maps_customgeocode_datablend.htm" class="">
+    Custom Geocoding vs Data Blending
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/maps_geographicroles.htm" class="">
+    Assign Geographic Roles
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/maps_editlocation.htm" class="">
+    Edit Unknown or Ambiguous Locations
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/maps_build2.htm" class="">
+    Build Maps
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/maps_howto_simple.htm" class="">
+    Simple Maps
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/maps_shapefiles.htm" class="">
+    Maps from Spatial Files
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/maps_howto_symbol.htm" class="">
+    Maps that Show Quantitative Values 
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/maps_howto_pointdistribution.htm" class="">
+    Maps that Highlight Visual Clusters of Data
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/maps_howto_choropleth.htm" class="">
+    Maps that Show Ratio or Aggregated Data
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/maps_howto_flow.htm" class="">
+    Maps that Show a Path Over Time 
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/maps_howto_heatmap.htm" class="">
+    Maps that Show Density or Trends
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/maps_howto_origin_destination.htm" class="">
+    Maps that Show Paths Between Origins and Destinations
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/maps_dualaxis.htm" class="">
+    Dual Axis (Layered) Maps
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/maps_howto_filledpiechart.htm" class="">
+    Filled Maps with Pie Charts 
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/maps_customize.htm" class="">
+    Customize Maps
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/maps_options.htm" class="">
+    Customize How a Map Looks
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/maps_custom_territories.htm" class="">
+    Create Territories on a Map
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/maps_customize_interaction.htm" class="">
+    Customize How People Interact with a Map
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/maps_mapsources.htm" class="">
+    Select Background Maps
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/maps_mapsources_mapbox.htm" class="">
+    Use Mapbox Maps
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/maps_mapsources_wms.htm" class="">
+    Use WMS Servers
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/maps_mapsources_export.htm" class="">
+    Save a Map Source
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/maps_mapsources_import.htm" class="">
+    Import a Map Source
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/maps_explore.htm" class="">
+    Explore Data in Maps
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/maps_mapsearch.htm" class="">
+    Search for Locations in Your Map
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/maps_measure_distance.htm" class="">
+    Measure Distances Between Data Points and Locations in a Map
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/maps_offline.htm" class="">
+    Map Image Storing  
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/bkimages.htm" class="">
+    Use Background Images 
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/bkimages_maps.htm" class="">
+    Add Images of Google Maps and OpenStreetMap  as Background Images in Tableau
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/bkimages_coordinates.htm" class="">
+    Find Background Image Coordinates
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-down"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/analyze.htm" class="selected">
+    Analyze Data
+  </a> <ul role="group" aria-expanded="true" class="link-list--menu menu-tree__list"><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-down"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields.htm" class="selected">
+    Create Calculated Fields
+  </a> <ul role="group" aria-expanded="true" class="link-list--menu menu-tree__list"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_create.htm" class="">
+    Get Started with Calculations
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_formulas.htm" class="">
+    Create a Simple Calculated Field
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_understand.htm" class="">
+    Understanding Calculations
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_understand_types.htm" class="">
+    Types of Calculations
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_understand_which.htm" class="">
+    Choosing the Right Calculation Type
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_understand_formulas.htm" class="">
+    Tips for Learning How to Create Calculations
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_bestpractices.htm" class="">
+    Best Practices for Creating Calculations
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/functions_operators.htm" class="">
+    Formatting Calculations
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-down"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/functions.htm" class="selected">
+    Functions
+  </a> <ul role="group" aria-expanded="true" class="link-list--menu menu-tree__list"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/functions_functions_number.htm" class="">
+    Number Functions
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/functions_functions_string.htm" class="">
+    String Functions
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/functions_functions_date.htm" class="">
+    Date Functions
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/functions_functions_typeconversion.htm" class="">
+    Type Conversion
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/functions_functions_logical.htm" class="">
+    Logical Functions
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem" aria-current="page"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_aggregate_create.htm" class="selected">
+    Aggregate Functions
+  </a> <ul role="group" aria-expanded="true" class="link-list--menu menu-tree__list"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/functions_functions_passthrough.htm" class="">
+    Pass-Through Functions (RAWSQL)
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/functions_functions_user.htm" class="">
+    User Functions
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/functions_functions_tablecalculation.htm" class="">
+    Table Calculation Functions
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/functions_functions_spatial.htm" class="">
+    Spatial Functions
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/functions_functions_additional.htm" class="">
+    Additional Functions
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/format_fields.htm" class="">
+    FORMAT() Function Workarounds in Tableau
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/functions_all_categories.htm" class="">
+    All Functions (Categorical)
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/functions_all_alphabetical.htm" class="">
+    All Functions (Alphabetical)
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_tablecalculations.htm" class="">
+    Table Calculations
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_tablecalculations_definebasic_runningtotal.htm" class="">
+    Table Calculation Types
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_tablecalculations_quick.htm" class="">
+    Quick Table Calculations
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_tablecalculations_custom.htm" class="">
+    Customize Table Calculations
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_lod.htm" class="">
+    Level of Detail Expressions
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_lod_overview.htm" class="">
+    Overview: Level of Detail Expressions
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_lod_tablescoped.htm" class="">
+    Table-Scoped Level of Detail Expressions
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_lod_fixed.htm" class="">
+    FIXED Level of Detail Expressions
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_lod_include.htm" class="">
+    INCLUDE Level of Detail Expressions
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_lod_exclude.htm" class="">
+    EXCLUDE Level of Detail Expressions
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_lod_replication.htm" class="">
+    Reconcile Level of Detail Expressions with the View Level of Detail
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_lod_filters.htm" class="">
+    Filters and Level of Detail Expressions
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_lod_constraints.htm" class="">
+    Data Source Constraints for Level of Detail Expressions
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_tips.htm" class="">
+    Tips for Working with Calculated Fields
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_adhoc.htm" class="">
+    Ad-Hoc Calculations
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_ex2spotlighting.htm" class="">
+    Spotlighting Using Calculations
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/trends.htm" class="">
+    Spot Trends
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/reference_lines.htm" class="">
+    Add Reference Lines, Bands, Distributions, and Boxes
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/trendlines_add.htm" class="">
+    Show Trend Lines
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/inspectdata_droplines.htm" class="">
+    Drop Lines
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_percentages_options.htm" class="">
+    Calculate Percentages
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/clustering.htm" class="">
+    Find Clusters in Data
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/forecasting.htm" class="">
+    Forecast Data
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/forecast_how_it_works.htm" class="">
+    How Forecasting Works in Tableau
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/forecast_create.htm" class="">
+    Create a Forecast
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/forecast_no_date.htm" class="">
+    Forecasting When No Date is in the View
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/forecast_field_results.htm" class="">
+    Forecast Field Results
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/forecast_options.htm" class="">
+    Configure Forecast Options
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/forecast_describe.htm" class="">
+    Review Forecast Descriptions
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/forecast_troubleshoot.htm" class="">
+    Troubleshoot Forecasting
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/forecast_resolve_errors.htm" class="">
+    Resolve Forecasting Errors
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/r_connection_manage.htm" class="">
+    Pass Expressions to External Services
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/r_connection_troubleshoot.htm" class="">
+    Troubleshoot External Service Connections
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/data_explore_analyze_interact.htm" class="">
+    Explore and Inspect Data in a View
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/explain_data.htm" class="">
+    Inspect a View with Explain Data
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/inspectdata_view_tools.htm" class="">
+    View Toolbar
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/inspectdata_selectiontools.htm" class="">
+    Select Marks
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/inspectdata_pan_zoom.htm" class="">
+    Pan and Zoom
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/inspectdata_undo.htm" class="">
+    Undo and Redo
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/inspectdata_summary.htm" class="">
+    Summary Card
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/inspectdata_viewdata.htm" class="">
+    View Underlying Data
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/inspectdata_describe.htm" class="">
+    Describing the View
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/dashboards.htm" class="">
+    Create Dashboards
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/dashboards_best_practices.htm" class="">
+    Best Practices for Effective Dashboards
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/dashboards_create.htm" class="">
+    Create a Dashboard
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/starters.htm" class="">
+    Dashboard Starters for Cloud-based Data
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/dashboards_organize_floatingandtiled.htm" class="">
+    Size and Lay Out Your Dashboard
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/dashboards_refine.htm" class="">
+    Refine Your Dashboard
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/dashboards_sheet_selector.htm" class="">
+    Create a View-Selection Menu
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/formatting_rebrand.htm" class="">
+    Rebrand a Dashboard
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/dashboards_dsd_create.htm" class="">
+    Create Dashboard Layouts for Different Devices
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/accessibility_dashboards.htm" class="">
+    Build Accessible Dashboards
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/environ_workbooksandsheets_sheets_hideshow.htm" class="">
+    Manage Sheets in Dashboards and Stories
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/dashboard_extensions.htm" class="">
+    Use Dashboard Extensions
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/stories.htm" class="">
+    Create Stories
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/story_workspace.htm" class="">
+    The Story Workspace
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/story_best_practices.htm" class="">
+    Best Practices for Telling Great Stories
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/story_create.htm" class="">
+    Create a Story
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/story_example.htm" class="">
+    Example – A Story That Examines a Trend
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/formatting.htm" class="">
+    Format Worksheets and Workbooks
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/visual_best_practices.htm" class="">
+    Visual Best Practices
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/formatting_workbook.htm" class="">
+    Format at the Workbook Level
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/formatting_worksheet.htm" class="">
+    Format at the Worksheet Level
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/formatting_editaxes.htm" class="">
+    Edit Axes
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/formatting_specific.htm" class="">
+    Format Text and Numbers
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/formatting_fonts_beta.htm" class="">
+    Format Text
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/formatting_create_custom_fonts.htm" class="">
+    Use Custom Fonts
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/formatting_specific_titlecaption.htm" class="">
+    Format Titles, Captions, Tooltips and Legends
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/formatting_specific_fields.htm" class="">
+    Format Fields and Field Labels
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/formatting_specific_numbers.htm" class="">
+    Format Numbers and Null Values
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/formatting_resizetable.htm" class="">
+    Resize Tables and Cells
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/formatting_tableoptions.htm" class="">
+    Define Table Structure
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/formatting_create_custom_colors.htm" class="">
+    Create Custom Color Palettes
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/performance_tips.htm" class="">
+    Optimize Workbook Performance
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/perf_data.htm" class="">
+    Know Your Data at the Database Level
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/perf_extracts.htm" class="">
+    Test Your Data and Use Extracts
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/perf_join_blend.htm" class="">
+    Create Efficient Joins and Blends
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/perf_build_view.htm" class="">
+    Design for Performance While You Build a View
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/perf_filter.htm" class="">
+    Filter Your Data Carefully
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/perf_efficient_calcs.htm" class="">
+    Create Efficient Calculations
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/perf_visualization.htm" class="">
+    Make Visualizations Faster
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/perf_record_create_desktop.htm" class="">
+    Record and Analyze Workbook Performance
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/perf_reduce_upload_times.htm" class="">
+    Reduce Upload Times to Tableau Server
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/queries_autoupdates.htm" class="">
+    Turn off Automatic Updates to Boost Performance
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/save_savework.htm" class="">
+    Save Work
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/save_savework_packagedworkbooks.htm" class="">
+    Packaged Workbooks
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/publish_workbooks_tableaupublic.htm" class="">
+    Save Workbooks to Tableau Public
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/save_revert.htm" class="">
+    Revert a Workbook to the Last Saved Version
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/save_export_image.htm" class="">
+    Export Views
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/save_export_data.htm" class="">
+    Export Data
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/copy_b_wkbks.htm" class="">
+    Copy Information Between Workbooks
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/printing.htm" class="">
+    Print Tableau Views
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/publish_overview.htm" class="">
+    Publish Data Sources and Workbooks
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/publish_workbooks_prepare.htm" class="">
+    Prepare for Publishing a Workbook
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/publish_workbooks_share.htm" class="">
+    Simple Steps to Publish a Workbook
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/publish_workbooks_howto.htm" class="">
+    Comprehensive Steps to Publish a Workbook
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/publish_version_compatibility.htm" class="">
+    Workbook Version Compatibility
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/publish_datasources_about.htm" class="">
+    Best Practices for Published Data Sources
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/publish_datasources.htm" class="">
+    Publish a Data Source
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/publish_workbooks_permissions_add.htm" class="">
+    Set Permissions as You Publish a Data Source or Workbook
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/publishing_sharing_authentication.htm" class="">
+    Set Credentials for Accessing Your Published Data
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/publish_tableau_online_ip_authorization.htm" class="">
+    Authorize Access to Cloud Data Published to Tableau&nbsp;Online
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/qs_refresh_local_data.htm" class="">
+    Use Tableau Bridge to Keep Tableau Online Data Fresh
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/publish_workbooks_schedules.htm" class="">
+    Schedule Extract Refreshes as You Publish a Workbook
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/publish_userfilters.htm" class="">
+    Restrict Access at&nbsp;the Data Row Level
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/publish_userfilters_create.htm" class="">
+    Create a User Filter and Secure it for Publishing
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/web_author_home.htm" class="">
+    Use Tableau on the Web
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/web_author_overview.htm" class="">
+    What can I do with a Tableau site?
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/navigating.htm" class="">
+    Tour Your Tableau site
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/getstarted_web_authoring.htm" class="">
+    Getting Started with Web Authoring
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/creator_connect.htm" class="">
+    Creators: Connect to Data on the Web
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/creator_data_prep.htm" class="">
+    Creators: Prepare Data on the Web
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/publish_datasource_on_web.htm" class="">
+    Creators: Publish a Data Source on the Web
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/web_author_build_view.htm" class="">
+    Edit Views on the Web
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/views_manage.htm" class="">
+    Explore and Manage Web Items
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/viewer_tut.htm" class="">
+    What Can I Do with a Tableau Web View?
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/data_explore_analyze_interact.htm" class="">
+    Explore and Analyze Data in a View
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/inspectdata_view_tools.htm" class="">
+    View Toolbar
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/inspectdata_selectiontools.htm" class="">
+    Select Marks
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/inspectdata_pan_zoom.htm" class="">
+    Pan and Zoom
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/inspectdata_undo.htm" class="">
+    Undo and Redo
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/inspectdata_viewdata.htm" class="">
+    View Underlying Data
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/tags.htm" class="">
+    Tag Content
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/search.htm" class="">
+    Search Your Tableau Site
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/favorites.htm" class="">
+    Mark Favorites
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/qs_content_page.htm" class="">
+    Manage Web Items
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/qs_revision_history.htm" class="">
+    Work with Content Revisions
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/refresh.htm" class="">
+    Refresh Data or Pause Updates
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/customview.htm" class="">
+    Use Custom Views
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/recommendations.htm" class="">
+    Discover Recommended Views
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/useracct.htm" class="">
+    Change Your Account Settings
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/manage_stored_credentials.htm" class="">
+    Manage Saved Credentials
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/share_collaborate.htm" class="">
+    Share and Collaborate on the Web
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/shareworkbooks.htm" class="">
+    Share Web Content
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/subscribe_user.htm" class="">
+    Subscribe to Views
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/data_alerts.htm" class="">
+    Send Data-Driven Alerts
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/comment.htm" class="">
+    Comment on Views
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/embed_landing.htm" class="">
+    Embed Views and Dashboards
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/embed.htm" class="">
+    Embed Views into Webpages
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/embed_code.htm" class="">
+    Writing Embed Code
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/embed_list.htm" class="">
+    Parameters for Embed Code
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/embed_filter_add.htm" class="">
+    Add Filters to Embed Code
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/embed_structure.htm" class="">
+    How View URLs Are Structured
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/embed_loadorder.htm" class="">
+    Control Load Order for Multiple Embedded Views
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/embed_dashboard.htm" class="">
+    Embed Dashboards
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/embed_code_custom_view.htm" class="">
+    Embed Code for Custom Views
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/embed_ex_wiki.htm" class="">
+    Embed Views into Wikis
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/embed_ex_img.htm" class="">
+    Embed Images of Tableau Server Views
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/embed_ex_SP.htm" class="">
+    Embed Tableau Server Views into SharePoint (Active Directory Authentication)
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/embed_ex_trustedauth.htm" class="">
+    Embed Tableau Server Views into SharePoint (Local Authentication)
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/link_view.htm" class="">
+    Link to a PNG, PDF, or CSV of a View
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/export.htm" class="">
+    Download Views or Workbooks
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/server_desktop_web_edit_differences.htm" class="">
+    Web Authoring and Tableau Desktop Feature Comparison
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><span class="menu-tree__list__icon icon--sm icon--chevron-right"></span> <a href="https://help.tableau.com/current/pro/desktop/en-us/reference_overview.htm" class="">
+    Install or Upgrade
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/auto_update.htm" class="">
+    Turn Product Updates Off or On
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/license_subscriptions_enterprise.htm" class="">
+    Manage Licenses
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/shortcut.htm" class="">
+    Keyboard Shortcuts
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li><li role="treeitem"><!----> <a href="https://help.tableau.com/current/pro/desktop/en-us/copyright.htm" class="">
+    Copyright
+  </a> <ul role="group" class="link-list--menu menu-tree__list" style="display: none;"></ul></li></ul></div> <div class=""></div></div></nav><article role="main"><nav class="nav-center"><div aria-hidden="true" class="menu-heading-links--static"><div class="menu-heading-links--static__title"><span aria-expanded="false" aria-label="Expand" role="button" class="icon--med menu-heading-links--static__icon icon--chevron-right2-link"></span> <span class="heading--nav">In this article</span></div> <div class="menu-heading-links--static__content"><div style="display: none;"><ul class="link-list--menu menu-links"><li class=""><a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_aggregate_create.htm#why-use-aggregate-functions" class="">
+        Why use aggregate functions
+      </a></li><li class=""><a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_aggregate_create.htm#aggregate-functions-available-in-tableau" class="">
+        Aggregate functions available in Tableau
+      </a></li><li class=""><a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_aggregate_create.htm#create-an-aggregate-calculation" class="">
+        Create an aggregate calculation
+      </a></li><li class=""><a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_aggregate_create.htm#rules-for-aggregate-calculations" class="">
+        Rules for aggregate calculations
+      </a></li><li class=""><a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_aggregate_create.htm#see-also" class="">
+        See also
+      </a></li></ul></div></div></div></nav><h1>Aggregate Functions in Tableau</h1><div class="caption article__tags content-only-hidden"><span class="article__tags--version">Version: 2019.4</span> <span class="article__tags--applies-to">Applies to: Tableau Desktop, Tableau Online, Tableau Public, Tableau Server</span></div><div id="content-body"><p>This article introduces aggregate functions and their uses in Tableau. It also demonstrates how to create an aggregate calculation using an example.</p> <div><h2 id="why-use-aggregate-functions" class=""><a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_aggregate_create.htm#" aria-hidden="true" tabindex="-1" class="heading-item__link print-hidden"><span class="icon--med-lg icon--arrow-up heading-item__icon"></span></a> <a name="Why"></a>Why use aggregate functions</h2> <!----></div> <p>Aggregate functions allow you to summarize or change the granularity of your data. </p> <p>For example, you might want to know exactly how many orders your store had for a particular year. You can use the COUNTD function to summarize the exact number of orders your company had, and then break the visualization down by year. </p> <p>The calculation might look something like this:</p> <p class="example"><code>COUNTD(Order ID)</code></p> <p>The visualization might look something like this:</p> <p><img src="./HTM010_C01_S02_aggregateFunctions_files/aggregate_func.png"></p> <div><h2 id="aggregate-functions-available-in-tableau" class=""><a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_aggregate_create.htm#" aria-hidden="true" tabindex="-1" class="heading-item__link print-hidden"><span class="icon--med-lg icon--arrow-up heading-item__icon"></span></a> <a name="Types"></a>Aggregate functions available in Tableau</h2> <!----></div> <p><b>Aggregations and floating-point arithmetic</b>: The results of some aggregations may not always be exactly as expected. For example, you may find that the Sum function returns a value such as -1.42e-14 for a column of numbers that you know should sum to exactly 0. This happens because the Institute of Electrical and Electronics Engineers (IEEE) 754 floating-point standard requires that numbers be stored in binary format, which means that numbers are sometimes rounded at extremely fine levels of precision. You can eliminate this potential distraction by using the ROUND function (see <a href="https://help.tableau.com/current/pro/desktop/en-us/functions_functions_number.htm" class="MCXref xref">Number Functions</a>) or by formatting the number to show fewer decimal places.</p> <table cellspacing="0" class="TableStyle-Basic-Border" style="width: 100%;"><colgroup><col class="TableStyle-Basic-Border-Column-Column1" style="width: 15%;"> <col class="TableStyle-Basic-Border-Column-Column1" style="width: 17%;"> <col class="TableStyle-Basic-Border-Column-Column1"></colgroup><tbody><tr class="TableStyle-Basic-Border-Body-Body1"><td class="TableStyle-Basic-Border-BodyE-Column1-Body1"><h4>Function</h4></td> <td class="TableStyle-Basic-Border-BodyE-Column1-Body1"><h4>Syntax</h4></td> <td class="TableStyle-Basic-Border-BodyD-Column1-Body1"><h4>Definition</h4></td></tr> <tr class="TableStyle-Basic-Border-Body-Body1"><td class="TableStyle-Basic-Border-BodyE-Column1-Body1" style="font-weight: bold;"><p>ATTR</p></td> <td class="TableStyle-Basic-Border-BodyE-Column1-Body1"><p><code>ATTR(expression)</code></p></td> <td class="TableStyle-Basic-Border-BodyD-Column1-Body1"><p>Returns the value of the expression if it has a single value for all rows. Otherwise returns an asterisk. Null values are ignored.</p></td></tr> <tr class="TableStyle-Basic-Border-Body-Body1"><td class="TableStyle-Basic-Border-BodyE-Column1-Body1" style="font-weight: bold;"><p>AVG</p></td> <td class="TableStyle-Basic-Border-BodyE-Column1-Body1"><p><code>AVG(expression)</code></p></td> <td class="TableStyle-Basic-Border-BodyD-Column1-Body1"><p>Returns the average
+of all the values in the expression. AVG can be used with numeric fields
+only. Null values are ignored.</p></td></tr> <tr class="TableStyle-Basic-Border-Body-Body1"><td class="TableStyle-Basic-Border-BodyE-Column1-Body1" style="font-weight: bold;"><p>COLLECT </p></td> <td class="TableStyle-Basic-Border-BodyE-Column1-Body1"><p><code>COLLECT (spatial)</code></p></td> <td class="TableStyle-Basic-Border-BodyD-Column1-Body1"><p>An aggregate calculation that combines the values in the argument field. Null values are ignored. </p> <p><b>Note</b>: The COLLECT function can only be used with spatial fields.</p> <p>Example:</p> <p class="example"><code>COLLECT ([Geometry])</code></p></td></tr> <tr class="TableStyle-Basic-Border-Body-Body1"><td class="TableStyle-Basic-Border-BodyE-Column1-Body1" style="font-weight: bold;"><p data-mc-conditions="">CORR</p></td> <td class="TableStyle-Basic-Border-BodyE-Column1-Body1"><p data-mc-conditions=""><code>CORR(expression 1, expression2)</code></p></td> <td class="TableStyle-Basic-Border-BodyD-Column1-Body1"><p data-mc-conditions="">Returns the Pearson correlation coefficient of two expressions.</p> <p data-mc-conditions="">The Pearson correlation measures the linear relationship between two variables. Results range from -1 to +1 inclusive, where 1 denotes an exact positive linear relationship, as when a positive change in one variable implies a positive change of corresponding magnitude in the other, 0 denotes no linear relationship between the variance, and −1 is an exact negative relationship.</p> <p data-mc-conditions="">CORR is available with the following data sources:</p> <ul><li data-mc-conditions="" value="1">Tableau data extracts (you can create an extract from any data source)</li> <li data-mc-conditions="" value="2">Cloudera Hive</li> <li data-mc-conditions="" value="3">EXASolution</li> <li data-mc-conditions="" value="4">Firebird (version 3.0 and later)</li> <li data-mc-conditions="" value="5">Google BigQuery</li> <li data-mc-conditions="" value="6">Hortonworks Hadoop Hive</li> <li value="7">IBM PDA (Netezza)</li> <li data-mc-conditions="" value="8">Oracle</li> <li data-mc-conditions="" value="9">PostgreSQL</li> <li data-mc-conditions="" value="10">Presto</li> <li data-mc-conditions="" value="11">SybaseIQ</li> <li data-mc-conditions="" value="12">Teradata</li> <li data-mc-conditions="" value="13">Vertica</li></ul> <p data-mc-conditions="">For other data sources, consider either extracting the data or using WINDOW_CORR. See <a href="https://help.tableau.com/current/pro/desktop/en-us/functions_functions_tablecalculation.htm" class="MCXref xref">Table Calculation Functions</a>.</p> <p data-mc-conditions="" class="note"><b>Note</b>: The square of a CORR result is equivalent to the R-Squared value for a linear trend line model. See <a href="https://help.tableau.com/current/pro/desktop/en-us/trendlines_add.htm#Terms" class="MCXref xref">Trend Line Model Terms</a>. </p> <p data-mc-conditions="">Example:</p> <p data-mc-conditions="">You can use CORR to visualize correlation in a disaggregated scatter plot. The way to do this is to use a table-scoped level of detail expression. For example:</p> <p data-mc-conditions="" class="example"><code>{CORR(Sales, Profit)}</code></p> <p data-mc-conditions="">With a level of detail expression, the correlation is run over all rows. If you used a formula like <code>CORR(Sales, Profit)</code> (without the surrounding brackets to make it a level of detail expression), the view would show the correlation of each individual point in the scatter plot with each other point, which is undefined.</p> <p data-mc-conditions="">See <a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_lod.htm#Table" class="MCXref xref">Table-Scoped</a></p></td></tr> <tr class="TableStyle-Basic-Border-Body-Body1"><td class="TableStyle-Basic-Border-BodyE-Column1-Body1" style="font-weight: bold;"><p>COUNT</p></td> <td class="TableStyle-Basic-Border-BodyE-Column1-Body1"><p><code>COUNT(expression)</code></p></td> <td class="TableStyle-Basic-Border-BodyD-Column1-Body1"><p>Returns the number of
+items in a group. Null values are not counted.</p></td></tr> <tr class="TableStyle-Basic-Border-Body-Body1"><td class="TableStyle-Basic-Border-BodyE-Column1-Body1" style="font-weight: bold;"><p>COUNTD</p></td> <td class="TableStyle-Basic-Border-BodyE-Column1-Body1"><p><code>COUNTD(expression)</code></p></td> <td class="TableStyle-Basic-Border-BodyD-Column1-Body1">Returns the number
+of distinct items in a group. Null values are not counted. <span data-mc-conditions="Product.desktoppro" class="ph">This function is not available in the following cases: workbooks created before Tableau Desktop 8.2 that use Microsoft Excel or text file data sources, workbooks that use the legacy connection, and workbooks that use Microsoft Access data sources. Extract your
+data into an extract file to use this function. See <a href="https://help.tableau.com/current/pro/desktop/en-us/extracting_data.htm" class="MCXref xref">Extract Your Data</a>.</span></td></tr> <tr class="TableStyle-Basic-Border-Body-Body1"><td class="TableStyle-Basic-Border-BodyE-Column1-Body1" style="font-weight: bold;"><p data-mc-conditions="">COVAR</p></td> <td class="TableStyle-Basic-Border-BodyE-Column1-Body1"><p data-mc-conditions=""><code>COVAR(expression 1, expression2)</code></p></td> <td class="TableStyle-Basic-Border-BodyD-Column1-Body1"><p data-mc-conditions="">Returns the <i>sample covariance</i> of two expressions.</p> <p data-mc-conditions="">Covariance quantifies how two variables change together. A positive covariance indicates that the variables tend to move in the same direction, as when larger values of one variable tend to correspond to larger values of the other variable, on average. Sample covariance uses the number of non-null data points n - 1 to normalize the covariance calculation, rather than n, which is used by the population covariance (available with the COVARP function). Sample covariance is the appropriate choice when the data is a random sample that is being used to estimate the covariance for a larger population.</p> <p data-mc-conditions="">COVAR is available with the following data sources:</p> <ul><li data-mc-conditions="" value="1">Tableau data extracts (you can create an extract from any data source)</li> <li data-mc-conditions="" value="2">Cloudera Hive</li> <li data-mc-conditions="" value="3">EXASolution</li> <li data-mc-conditions="" value="4">Firebird (version 3.0 and later)</li> <li data-mc-conditions="" value="5">Google BigQuery</li> <li data-mc-conditions="" value="6">Hortonworks Hadoop Hive</li> <li value="7">IBM PDA (Netezza)</li> <li data-mc-conditions="" value="8">Oracle</li> <li data-mc-conditions="" value="9">PostgreSQL</li> <li data-mc-conditions="" value="10">Presto</li> <li data-mc-conditions="" value="11">SybaseIQ</li> <li data-mc-conditions="" value="12">Teradata</li> <li data-mc-conditions="" value="13">Vertica</li></ul> <p data-mc-conditions="">For other data sources, consider either extracting the data or using WINDOW_COVAR. See <a href="https://help.tableau.com/current/pro/desktop/en-us/functions_functions_tablecalculation.htm" class="MCXref xref">Table Calculation Functions</a>.</p> <p data-mc-conditions="">If expression1 and expression2 are the same—for example, COVAR([profit], [profit])—COVAR returns a value that indicates how widely values are distributed.</p> <p data-mc-conditions="" class="note"><b>Note</b>: The value of COVAR(X, X) is equivalent to the value of VAR(X) and also to the value of STDEV(X)^2. </p> <p data-mc-conditions="">Example:</p> <p data-mc-conditions="">The following formula returns the sample covariance of <span class="uicontrol">Sales</span> and <span class="uicontrol">Profit</span>.</p> <p data-mc-conditions="" class="example"><code>COVAR([Sales], [Profit])</code></p></td></tr> <tr class="TableStyle-Basic-Border-Body-Body1"><td class="TableStyle-Basic-Border-BodyE-Column1-Body1" style="font-weight: bold;"><p data-mc-conditions="">COVARP</p></td> <td class="TableStyle-Basic-Border-BodyE-Column1-Body1"><p data-mc-conditions=""><code>COVARP(expression 1, expression2)</code></p></td> <td class="TableStyle-Basic-Border-BodyD-Column1-Body1"><p data-mc-conditions="">Returns the <i>population covariance</i> of two expressions.</p> <p data-mc-conditions="">Covariance quantifies how two variables change together. A positive covariance indicates that the variables tend to move in the same direction, as when larger values of one variable tend to correspond to larger values of the other variable, on average. Population covariance is sample covariance multiplied by (n-1)/n, where n is the total number of non-null data points. Population covariance is the appropriate choice when there is data available for all items of interest as opposed to when there is only a random subset of items, in which case sample covariance (with the COVAR function) is appropriate.</p> <p data-mc-conditions="">COVARP is available with the following data sources:</p> <ul><li data-mc-conditions="" value="1">Tableau data extracts (you can create an extract from any data source)</li> <li data-mc-conditions="" value="2">Cloudera Hive</li> <li data-mc-conditions="" value="3">EXASolution</li> <li data-mc-conditions="" value="4">Firebird (version 3.0 and later)</li> <li data-mc-conditions="" value="5">Google BigQuery</li> <li data-mc-conditions="" value="6">Hortonworks Hadoop Hive</li> <li value="7">IBM PDA (Netezza)</li> <li data-mc-conditions="" value="8">Oracle</li> <li data-mc-conditions="" value="9">PostgreSQL</li> <li data-mc-conditions="" value="10">Presto</li> <li data-mc-conditions="" value="11">SybaseIQ</li> <li data-mc-conditions="" value="12">Teradata</li> <li data-mc-conditions="" value="13">Vertica</li></ul> <p data-mc-conditions="">For other data sources, consider either extracting the data or using WINDOW_COVARP. See <a href="https://help.tableau.com/current/pro/desktop/en-us/functions_functions_tablecalculation.htm" class="MCXref xref">Table Calculation Functions</a>.</p> <p data-mc-conditions="">If expression1 and expression2 are the same—for example, COVARP([profit], [profit])—COVARP returns a value that indicates how widely values are distributed.</p> <p data-mc-conditions="" class="note"><b>Note</b>: The value of COVARP(X, X) is equivalent to the value of VARP(X) and also to the value of STDEVP(X)^2. </p> <p data-mc-conditions="">Example:</p> <p data-mc-conditions="">The following formula returns the population covariance of <span class="uicontrol">Sales</span> and <span class="uicontrol">Profit</span>.</p> <p data-mc-conditions="" class="example"><code>COVARP([Sales], [Profit])</code></p></td></tr> <tr class="TableStyle-Basic-Border-Body-Body1"><td class="TableStyle-Basic-Border-BodyE-Column1-Body1" style="font-weight: bold;"><p>MAX</p></td> <td class="TableStyle-Basic-Border-BodyE-Column1-Body1"><p><code>MAX(expression)</code></p></td> <td class="TableStyle-Basic-Border-BodyD-Column1-Body1"><p>Returns the maximum of
+an expression across all records.  If the expression is a string value,
+this function returns the last value where last is defined by alphabetical
+order.  </p></td></tr> <tr class="TableStyle-Basic-Border-Body-Body1"><td class="TableStyle-Basic-Border-BodyE-Column1-Body1" style="font-weight: bold;"><p>MEDIAN</p></td> <td class="TableStyle-Basic-Border-BodyE-Column1-Body1"><p><code>MEDIAN(expression)</code></p></td> <td class="TableStyle-Basic-Border-BodyD-Column1-Body1"><p>Returns the median of
+an expression across all records. Median can only be used with numeric fields.&nbsp;Null values are ignored. This function is not available for workbooks created before Tableau Desktop 8.2 or that use legacy connections. It is also not available for connections using any of the following data sources:</p> <ul><li value="1">Access</li> <li value="2">Amazon Redshift</li> <li value="3">Cloudera Hadoop</li> <li value="4">HP Vertica</li> <li value="5">IBM DB2</li> <li value="6">IBM PDA (Netezza)</li> <li value="7">Microsoft SQL Server</li> <li value="8">MySQL</li> <li value="9">SAP HANA</li> <li value="10">Teradata</li></ul> <p data-mc-conditions="Product.desktoppro">For other data source types, you can extract your
+data into an extract file to use this function. See <a href="https://help.tableau.com/current/pro/desktop/en-us/extracting_data.htm" class="MCXref xref">Extract Your Data</a>.</p></td></tr> <tr class="TableStyle-Basic-Border-Body-Body1"><td class="TableStyle-Basic-Border-BodyE-Column1-Body1" style="font-weight: bold;"><p>MIN</p></td> <td class="TableStyle-Basic-Border-BodyE-Column1-Body1"><p><code>MIN(expression)</code></p></td> <td class="TableStyle-Basic-Border-BodyD-Column1-Body1"><p>Returns the minimum of
+an expression across all records. If the expression is a string value,
+this function returns the first value where first is defined by
+alphabetical order.</p></td></tr> <tr class="TableStyle-Basic-Border-Body-Body1"><td class="TableStyle-Basic-Border-BodyE-Column1-Body1" style="font-weight: bold;"><p>PERCENTILE</p></td> <td class="TableStyle-Basic-Border-BodyE-Column1-Body1"><p><code>PERCENTILE(expression, number)</code></p></td> <td class="TableStyle-Basic-Border-BodyD-Column1-Body1"><p>Returns the percentile value from the given expression corresponding to the specified number. The number must be between 0 and 1 (inclusive)—for example, 0.66, and must be a numeric constant. </p> <p>This function is available for the following data sources. </p> <ul><li value="1"><p>Non-legacy  Microsoft Excel and Text File connections.</p></li> <li value="2"><p>Extracts and extract-only data source types (for example, Google Analytics,  OData, or Salesforce).</p></li> <li value="3"><p>Sybase IQ 15.1 and later data sources.</p></li> <li value="4"><p>Oracle 10 and later data sources.</p></li> <li value="5"><p>Cloudera Hive and Hortonworks Hadoop Hive data sources.</p></li> <li value="6"><p>EXASolution 4.2 and later data sources.</p></li></ul> <p data-mc-conditions="Product.desktoppro">For other data source types, you can extract your
+data into an extract file to use this function. See <a href="https://help.tableau.com/current/pro/desktop/en-us/extracting_data.htm" class="MCXref xref">Extract Your Data</a>.</p></td></tr> <tr class="TableStyle-Basic-Border-Body-Body1"><td class="TableStyle-Basic-Border-BodyE-Column1-Body1" style="font-weight: bold;"><p>STDEV</p></td> <td class="TableStyle-Basic-Border-BodyE-Column1-Body1"><p><code>STDEV(expression)</code></p></td> <td class="TableStyle-Basic-Border-BodyD-Column1-Body1"><p>Returns the statistical
+standard deviation of all values in the given expression based on
+a sample of the population.</p></td></tr> <tr class="TableStyle-Basic-Border-Body-Body1"><td class="TableStyle-Basic-Border-BodyE-Column1-Body1" style="font-weight: bold;"><p>STDEVP</p></td> <td class="TableStyle-Basic-Border-BodyE-Column1-Body1"><p><code>STDEVP(expression)</code></p></td> <td class="TableStyle-Basic-Border-BodyD-Column1-Body1"><p>Returns the statistical
+standard deviation of all values in the given expression based on
+a biased population.</p></td></tr> <tr class="TableStyle-Basic-Border-Body-Body1"><td class="TableStyle-Basic-Border-BodyE-Column1-Body1" style="font-weight: bold;"><p>SUM</p></td> <td class="TableStyle-Basic-Border-BodyE-Column1-Body1"><p><code>SUM(expression)</code></p></td> <td class="TableStyle-Basic-Border-BodyD-Column1-Body1"><p>Returns the sum of all
+values in the expression. SUM can be used with numeric fields only. Null
+values are ignored.</p></td></tr> <tr class="TableStyle-Basic-Border-Body-Body1"><td class="TableStyle-Basic-Border-BodyE-Column1-Body1" style="font-weight: bold;"><p>VAR</p></td> <td class="TableStyle-Basic-Border-BodyE-Column1-Body1"><p><code>VAR(expression)</code></p></td> <td class="TableStyle-Basic-Border-BodyD-Column1-Body1"><p>Returns the statistical
+variance of all values in the given expression based on a sample
+of the population.</p></td></tr> <tr class="TableStyle-Basic-Border-Body-Body1"><td class="TableStyle-Basic-Border-BodyB-Column1-Body1" style="font-weight: bold;"><p>VARP</p></td> <td class="TableStyle-Basic-Border-BodyB-Column1-Body1"><p><code>VARP(expression)</code></p></td> <td class="TableStyle-Basic-Border-BodyA-Column1-Body1"><p>Returns the statistical
+variance of all values in the given expression on the entire population.</p></td></tr></tbody></table> <br> <div><h2 id="create-an-aggregate-calculation" class=""><a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_aggregate_create.htm#" aria-hidden="true" tabindex="-1" class="heading-item__link print-hidden"><span class="icon--med-lg icon--arrow-up heading-item__icon"></span></a> <a name="Create"></a>Create an aggregate calculation</h2> <!----></div> <p>Follow along with the steps below to learn how to create an aggregate calculation.</p> <ol><li value="1"><p>In Tableau Desktop, connect to the <b>Sample - Superstore</b> saved data source, which comes with Tableau.</p></li> <li value="2"><p>Navigate to a worksheet and select <span class="uicontrol">Analysis </span>&gt; <span class="uicontrol">Create Calculated Field</span>.</p></li> <li value="3"><p>In the calculation editor that opens, do the following:</p> <ul><li value="1"><p>Name the calculated field <span class="uicontrol">Margin</span>.</p></li> <li value="2"><p>Enter the following formula:</p> <p class="example"><code>IIF(SUM([Sales]) !=0,
+SUM([Profit])/SUM([Sales]), 0)</code></p> <p><b>Note</b>: You can use the function reference to find and add aggregate functions and other functions (like the logical IIF function in this example) to the calculation formula. For more information, see <a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_tips.htm#functions" class="MCXref xref">Use the functions reference in the calculation editor</a>. </p></li> <li value="3"><p>When finished, click <span class="uicontrol">OK</span>.</p></li></ul> <p>The new aggregate calculation appears under <b>Measures</b> in the <b>Data</b> pane. Just like your other fields, you can use it in one or more visualizations. </p> <p class="note"><b>Note</b>: Aggregation calculations are always measures. </p> <p>When <span class="uicontrol">Margin</span> is placed on a shelf or card in the worksheet, its
+name is changed to <span class="uicontrol">AGG(Margin)</span>, which
+indicates that it is an aggregate calculation and cannot be aggregated any further. </p> <p><img alt="A graphic depicting what happens when you place an aggregate
+calculation on a shelf. The field displays the AGG prefix." src="./HTM010_C01_S02_aggregateFunctions_files/calc_agg8.png" style="text-align: left;"></p></li></ol> <div><h2 id="rules-for-aggregate-calculations" class=""><a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_aggregate_create.htm#" aria-hidden="true" tabindex="-1" class="heading-item__link print-hidden"><span class="icon--med-lg icon--arrow-up heading-item__icon"></span></a> <a name="Rules"></a>Rules for aggregate calculations</h2> <!----></div> <p>The rules that apply to aggregate calculations are as follows:</p> <ul><li value="1"><p>For any aggregate calculation, you cannot combine an aggregated value and a disaggregated value. For example, SUM(Price)*[Items] is not a valid expression because SUM(Price) is aggregated and Items is not. However, SUM(Price*Items) and SUM(Price)*SUM(Items) are both valid.</p></li> <li value="2"><p>Constant terms in an expression act as aggregated or disaggregated values as appropriate. For example: SUM(Price*7) and SUM(Price)*7 are both valid expressions.</p></li> <li value="3"><p>All of the functions can be evaluated on aggregated values. However, the arguments to any given function must either all be aggregated or all disaggregated. For example: MAX(SUM(Sales),Profit) is not a valid expression because Sales is aggregated and Profit is not. However, MAX(SUM(Sales),SUM(Profit)) is a valid expression.</p></li> <li value="4"><p>The result of an aggregate calculation is always a measure.</p></li> <li value="5"><p>Like predefined aggregations, aggregate calculations are computed correctly for grand totals. Refer to Grand Totals for more information.</p></li></ul> <div><h2 id="see-also" class=""><a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_aggregate_create.htm#" aria-hidden="true" tabindex="-1" class="heading-item__link print-hidden"><span class="icon--med-lg icon--arrow-up heading-item__icon"></span></a> See also</h2> <!----></div> <p><a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_understand_types.htm#Aggregate" target="_blank">Understanding Calculations: Aggregate Calculations</a></p> <p><a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_aggregation.htm" target="_blank" class="MCXref xref">Data Aggregation in Tableau</a></p> <p><a href="https://help.tableau.com/current/pro/desktop/en-us/functions.htm" class="MCXref xref">Functions in Tableau</a></p> <p><a href="https://help.tableau.com/current/pro/desktop/en-us/functions_all_categories.htm" target="_blank" class="MCXref xref">Tableau Functions (by Category)</a></p> <p><a href="https://help.tableau.com/current/pro/desktop/en-us/functions_all_alphabetical.htm" class="MCXref xref">Tableau Functions (Alphabetical)</a></p></div><div class="article__footer--back-to-top text--centered print-hidden"><a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_aggregate_create.htm#" class="text--caps"><span class="icon--med icon--arrow-up"></span> Back to top</a></div><div class="feedback-form-container print-hidden content-only-hidden"><div class="loading-overlay"><!----> <form aria-labelledby="feedback-form__title" class="feedback-form clearfix"><div class="feedback-form__contents--collapsed"><span id="feedback-form__title" class="feedback-form__title">
+          Was this article helpful?
+        </span> <div class="feedback-form__button-group"><button name="feedback-form-btn-yes" type="button" class="feedback-form__button feedback-form__button--secondary">
+            Yes
+          </button> <button name="feedback-form-btn-no" type="button" class="feedback-form__button feedback-form__button--secondary">
+            No
+          </button></div></div> <!----></form></div> <!----> <!----></div></article><nav class="nav-side nav-side--right"><div aria-hidden="true" class="menu-heading-links--scrollable nav-side--fixed" style="bottom: 0px;"><span class="heading--nav">
+    In this article
+  </span> <div><ul class="link-list--menu menu-links"><li class=""><a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_aggregate_create.htm#why-use-aggregate-functions" class="">
+        Why use aggregate functions
+      </a></li><li class=""><a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_aggregate_create.htm#aggregate-functions-available-in-tableau" class="">
+        Aggregate functions available in Tableau
+      </a></li><li class=""><a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_aggregate_create.htm#create-an-aggregate-calculation" class="">
+        Create an aggregate calculation
+      </a></li><li class=""><a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_aggregate_create.htm#rules-for-aggregate-calculations" class="selected">
+        Rules for aggregate calculations
+      </a></li><li class=""><a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_aggregate_create.htm#see-also" class="">
+        See also
+      </a></li></ul></div></div></nav></div></div><div aria-hidden="true" class="feedback-button-floating" style=""><!----> <div class="feedback-button-floating__icon-wrapper"><span class="icon--xxl icon--feedback feedback-button-floating__icon"></span></div></div><footer class="container--full-width"><div class="container--centered"><div class="footer__links text--caps"><ul><li><a href="https://www.tableau.com/en-us/legal">Legal</a></li><li><a href="https://www.tableau.com/en-us/privacy">Privacy</a></li></ul></div><div class="footer__copyright text--caps">© 2003-2019 Tableau Software. All rights reserved</div></div></footer></div><script type="text/javascript">var TabHelp = TabHelp || {}; TabHelp.PageData = { name: "calculations_calculatedfields_aggregate_create.htm" };</script> <script type="text/javascript" src="./HTM010_C01_S02_aggregateFunctions_files/toc.js.download"></script><script type="text/javascript" src="./HTM010_C01_S02_aggregateFunctions_files/vendor.js.download"></script><script type="text/javascript" src="./HTM010_C01_S02_aggregateFunctions_files/app.js.download"></script>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","378938312282541");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=378938312282541&amp;ev=PageView&amp;noscript=1"></noscript>
+
+
+<script type="text/javascript" id="">_linkedin_data_partner_id="4478";</script><script type="text/javascript" id="">(function(){var b=document.getElementsByTagName("script")[0],a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src="https://snap.licdn.com/li.lms-analytics/insight.min.js";b.parentNode.insertBefore(a,b)})();</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=4478&amp;fmt=gif">
+</noscript>
+
+<script type="text/javascript" id="">!function(d,e,f,a,b,c){d.twq||(a=d.twq=function(){a.exe?a.exe.apply(a,arguments):a.queue.push(arguments)},a.version="1.1",a.queue=[],b=e.createElement(f),b.async=!0,b.src="//static.ads-twitter.com/uwt.js",c=e.getElementsByTagName(f)[0],c.parentNode.insertBefore(b,c))}(window,document,"script");twq("init","nucqf");twq("track","PageView");</script>
+
+<script type="text/javascript" id="">window._6si=window._6si||[];window._6si.push(["setToken","7de4a2f5ee5804353e4d7b724b9f2ef5"]);window._6si.push(["setEndpoint","b.6sc.co"]);window._6si.push(["enableCompanyDetails",!0]);window._6si.push(["setEpsilonKey","80606f4ef9ec210a1976cc499eb5573ff4ff8e3b"]);(function(){var a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src="https://j.6sc.co/6si.min.js";var c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(a,c)})();
+(function(){var a=0,c=15,e=250,f=null,d=function(){if(f=window._storagePopulated){var b=JSON.parse(window.localStorage.getItem("_6senseCompanyDetails"));"object"===typeof b&&b.company&&(b={sixSense:b,event:"6Sense"},dataLayer.push(b))}else a+=1,a<c&&window.setTimeout(d,e)};d()})();</script><script src="./HTM010_C01_S02_aggregateFunctions_files/adsct" type="text/javascript"></script></body></html>

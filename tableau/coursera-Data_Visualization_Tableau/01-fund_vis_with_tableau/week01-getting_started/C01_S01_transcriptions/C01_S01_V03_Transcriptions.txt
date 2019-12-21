@@ -1,0 +1,64 @@
+[MUSIC] Hello. In this lesson, we're going to answer the
+questions, what is data visualization and why do we do it? I want you to be able to
+articulate three specific ways visualization can aid
+in business analytics. But first,
+we need to ensure we all recognize and can define the basic terminologies of data
+visualization and business analytics. I'll touch on the key terms in this
+lesson but I've also included a couple of readings that are essential to
+help you define other terms. Great, let's dive in. What is data visualization and
+why do we do it? Simply put, data visualization is
+using pictures to represent data. It's been around for hundreds of years,
+but recent technological advances have made it easy to summarize large
+volumes of data very quickly. For example, one can take 50 years of
+crime data in the United States and illustrate patterns and relationships
+across time, geography and types of crime. In theory, it could have been
+done before we had computers, but now we can churn through millions
+of rows of data in seconds. Plus, we can have interactivity that
+wasn't possible in those iconic and historic visualizations. Business analytics is about asking
+questions and using statistical and quantitative tools for explanatory and
+predictive analysis that answer questions. Data visualization is at its heart
+a business analytics tool because it lends itself well to what's called
+data-driven or fact-based decision making. Decision makers can click
+through visualizations and drill down to the details that
+they need really quickly. If a decision maker can't drill down and the information isn't readily available,
+they'll have to ask the analyst for more information, which could take
+weeks or months before it's compiled. Why should we do data visualization when
+the same information might be available in say, Excel tables or in spreadsheets? The first reason is that it just
+looks nicer, but more importantly, we can't really process data or
+see insights using just spreadsheets. This is a phenomenon known as
+the picture superiority effect. For example, suppose you were
+given a spreadsheet like this. Let's see if you can find
+the five highest revenue product regions from the data here. You can even pause the video and
+see if you can do it. Even if you were able to find those five,
+I'm sure it wasn't that easy. But, if I as an analyst decided
+to add just a smallest amount of color using Excel's very simple and
+straightforward conditional formatting, all of a sudden, it's completely evident. All with the click of a button and
+you've provided the decision maker the information very quickly and easily. But this is just for small amounts of information that
+gets compiled into spreadsheets. But what about the large amount
+of information that we get from a wide variety of sources
+in every field imaginable? This large amount of data has
+spun off a specialization around what is known as big data. The premise of big data isn't
+that it's just a lot of rows and columns in a data table but
+it's actually something very different. To be real big data in the way that it
+is commonly understood by professionals, data must be of three components. One, increasing in volume, two, increasing at a very high velocity and
+three, with a lot of variety. Big data also drops the assumption of
+statistics to uncover relationships that may seem arbitrary, but after it's been
+analyzed through a computational process known as machine learning, the
+relationships begin to gather structure. The wind map that you see on
+the screen is an example of one way that big data can be visualized. Another example of big data is real time
+monitoring of credit card transactions. When you use a credit card in a certain
+way that may be unusual, you may received a text message or a phone call asking you
+to confirm if the transaction is valid. That's because big credit card companies
+have analyzed patterns of use and can predict what a fraudulent
+transaction is and what it isn't. There are times when big data and data
+visualization get conflated with other essential terms, for example,
+business intelligence. Business intelligence, which is widely
+known as BI, is a set of tools and techniques that data from various
+databases gets stored in data warehouses. And gets converted into meaningful
+information through the use of queries and reports that are often
+developed by IT professionals. Ideally, analysts will take
+information stored in various formats by the IT professionals and coax it into data visualizations that
+could be used for decision making. That's enough of the terminology for now. In the next lesson, we'll be looking
+at some software options for doing data visualizations. Make sure you review the readings
+to get more familiar with The terminology that I touched upon and with other terminology you'll hear
+around data visualization and analytics. Until next time, bye.

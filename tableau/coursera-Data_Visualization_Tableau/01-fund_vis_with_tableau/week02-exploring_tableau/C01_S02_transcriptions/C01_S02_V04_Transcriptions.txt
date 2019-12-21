@@ -1,0 +1,48 @@
+[MUSIC] We're going to continue our survey
+of the Tableau workspace, so let's just get into it. The best way to learn an app or
+software in general is to use it. So we'll go through the process
+of doing some visualizations, that way we can have some of
+the details in the Tableau work space. So first,
+let's drag the longitude field to columns. Now let's drag the latitude
+field to the rows. What you should see is an unfilled
+map like you see on the screen here. There's a reason why I'm showing
+a math visualization here. Longitude and latitude are used in
+geography in the same way as rows and columns in data. Columns go up and down. Rows go left to right. How you place the data fields will
+determine how the visualizations show up. It's not always intuitive at first. So I encourage you to mess around as
+you're doing your own visualizations to ensure that you're getting the
+visualizations in the way that you want and need. The nice thing about Tableau is that
+there is the all important undo feature. In Windows you can use
+the standard Ctrl+Z shortcut to go back to what you had before. But you can also click the left arrow
+as I'm demonstrating on the screen. And often, because you're doing a lot
+of manipulation with your mouse, using the left arrow is probably
+what you're used to most. But just know that you do have
+in Windows the Ctrl+Z option. When you place fields on a row or column shelf, it matters if the field
+is a dimension or a measure. A dimension will be placed on a shelf
+as is with Tableau splitting them into categories. With measures, Tableau will do
+a calculation automatically. And add that based on any
+dimensions that were added. Let's see an example. Click on the new worksheet button below. A new worksheet pops up. You can add unlimited numbers of
+worksheets here to test different ways to do visualizations without messing up
+the ones that you've already done. New worksheets are Intended to
+illustrate different visualizations, different ways of looking at things, different types of experiments on
+the data, just testing out things. That's what the different
+worksheets are for. So feel free to have tons of worksheets
+as you're going through and learning. Now, let's add a year to the row shelf by
+dragging the years field over to rows. Then click on the development
+folder if it's not all ready opened and
+drag the GDP field to the columns Notice that for Years,
+Tableau keeps the field as Years. That's because it's a dimension. But for the GDP field which is considered
+a measure, Tableau calculates an average. In this case, an average is appropriate,
+but it's not always the case. Sometimes Tableau might calculate a sum or
+account. Tableau is trying to
+interpret the data for you. Sometimes it gets it wrong,
+sometimes it gets it right. You just have to make sure
+that what it's doing is right. Otherwise, you can change it,
+which I'll show you in a future video. Tableau shows the data as a line chart but
+it looks really weird. How can we fix this? It's easy, we simply have to
+click on the swap fills button. Watch carefully as I
+press the swap button. The swap button allows me to easily fix
+how the visualization is displayed. Now it's displayed in a way that's
+similar to other line charts. There's so
+much to learn in the Tableau workspace, so we're going to continue our exploration
+of the workspace in the next video. My recommendation is to keep everything
+the same and join me there immediately so that we can just continue our exploration. See you then.

@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<!-- saved from url=(0102)https://www.datasciencecentral.com/profiles/blogs/visualizations-comparing-tableau-spss-r-excel-matlab -->
+<html lang="en" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml" data-cf-welcome-bar-visibility="visible"><head data-layout-view="default" class="xj_layout_head"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<script type="text/javascript" async="" src="./HTM005_C01_S01_comparingVisTools_files/ec.js.download"></script><script src="./HTM005_C01_S01_comparingVisTools_files/amp4ad.download"></script><script type="text/javascript" async="" src="./HTM005_C01_S01_comparingVisTools_files/analyt.download"></script><script src="./HTM005_C01_S01_comparingVisTools_files/720347215081901" async=""></script><script async="" src="./HTM005_C01_S01_comparingVisTools_files/fbeven.download"></script><script type="text/javascript" async="" src="./HTM005_C01_S01_comparingVisTools_files/analyt.download"></script><script src="./HTM005_C01_S01_comparingVisTools_files/pubads.download"></script><script src="./HTM005_C01_S01_comparingVisTools_files/sdk.js.download" async="" crossorigin="anonymous"></script><script type="text/javascript" async="" src="./HTM005_C01_S01_comparingVisTools_files/atrk.j.download"></script><script id="twitter-wjs" src="./HTM005_C01_S01_comparingVisTools_files/widget.download"></script><script async="" src="./HTM005_C01_S01_comparingVisTools_files/gtm.js.download"></script><script src="./HTM005_C01_S01_comparingVisTools_files/gRKYsE.download"></script><script src="./HTM005_C01_S01_comparingVisTools_files/AfFpuH.download"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T5W4WQ');</script>
+
+
+<title>Visualizations: Comparing Tableau, SPSS, R, Excel, Matlab, JS, Python, SAS - Data Science Central</title>
+<link rel="icon" href="https://www.datasciencecentral.com/favicon.ico" type="image/x-icon">
+<link rel="SHORTCUT ICON" href="https://www.datasciencecentral.com/favicon.ico" type="image/x-icon">
+<meta name="description" content="Here we ask you to identify which tool was used to produce the following 18 charts: 4 were done with R, 3 with SPSS, 5 with Excel, 2 with Tableau, 1 with Matla…">
+<meta name="title" content="Visualizations: Comparing Tableau, SPSS, R, Excel, Matlab, JS, Python, SAS">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.datasciencecentral.com/profiles/blogs/visualizations-comparing-tableau-spss-r-excel-matlab">
+<meta property="og:title" content="Visualizations: Comparing Tableau, SPSS, R, Excel, Matlab, JS, Python, SAS">
+<meta property="og:image" content="http://storage.ning.com/topology/rest/1.0/file/get/1994759?profile=original">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Visualizations: Comparing Tableau, SPSS, R, Excel, Matlab, JS, Python, SAS">
+<meta name="twitter:description" content="Here we ask you to identify which tool was used to produce the following 18 charts: 4 were done with R, 3 with SPSS, 5 with Excel, 2 with Tableau, 1 with Matla…">
+<meta name="twitter:image" content="http://storage.ning.com/topology/rest/1.0/file/get/1994759?profile=original">
+<link rel="image_src" href="https://storage.ning.com/topology/rest/1.0/file/get/1994759?profile=original">
+<script type="text/javascript">
+    djConfig = { preventBackButtonFix: false, isDebug: false }
+ning = {"CurrentApp":{"premium":true,"iconUrl":"https:\/\/storage.ning.com\/topology\/rest\/1.0\/file\/get\/2751248758?profile=UPSCALE_150x150","url":"httpsdatasciencecentral.ning.com","domains":["datasciencecentral.com"],"online":true,"privateSource":true,"id":"datasciencecentral","appId":"6448529","description":"Welcome to Data Science Central. The Community of and for Data Scientist","name":"Data Science Central","owner":"2edcolrgc4o4b","createdDate":"2011-10-05T21:11:40.055Z","runOwnAds":false,"category":{"Predictive":null,"Business":null,"Data":null,"Analytics":null,"Mining":null,"R":null,"Intelligence":null,"Big":null,"Modeling":null,"Science":null,"Integration":null,"Visualization":null},"tags":["Predictive","Business","Data","Analytics","Mining","R","Intelligence","Big","Modeling","Science","Integration","Visualization"]},"CurrentProfile":null,"maxFileUploadSize":7};
+        (function(){
+            if (!window.ning) { return; }
+
+            var age, gender, rand, obfuscated, combined;
+
+            obfuscated = document.cookie.match(/xgdi=([^;]+)/);
+            if (obfuscated) {
+                var offset = 100000;
+                obfuscated = parseInt(obfuscated[1]);
+                rand = obfuscated / offset;
+                combined = (obfuscated % offset) ^ rand;
+                age = combined % 1000;
+                gender = (combined / 1000) & 3;
+                gender = (gender == 1 ? 'm' : gender == 2 ? 'f' : 0);
+                ning.viewer = {"age":age,"gender":gender};
+            }
+        })();
+
+        if (window.location.hash.indexOf('#!/') == 0) {
+        window.location.replace(window.location.hash.substr(2));
+    }
+    window.xg = window.xg || {};
+xg.captcha = {
+    'shouldShow': false,
+    'siteKey': '6Ldf3AoUAAAAALPgNx2gcXc8a_5XEcnNseR6WmsT'
+};
+xg.addOnRequire = function(f) { xg.addOnRequire.functions.push(f); };
+xg.addOnRequire.functions = [];
+xg.addOnFacebookLoad = function (f) { xg.addOnFacebookLoad.functions.push(f); };
+xg.addOnFacebookLoad.functions = [];
+xg._loader = {
+    p: 0,
+    loading: function(set) {  this.p++; },
+    onLoad: function(set) {
+                this.p--;
+        if (this.p == 0 && typeof(xg._loader.onDone) == 'function') {
+            xg._loader.onDone();
+        }
+    }
+};
+xg._loader.loading('xnloader');
+if (window.bzplcm) {
+    window.bzplcm._profileCount = 0;
+    window.bzplcm._profileSend = function() { if (window.bzplcm._profileCount++ == 1) window.bzplcm.send(); };
+}
+xg._loader.onDone = function() {
+            if(window.bzplcm)window.bzplcm.start('ni');
+        xg.shared.util.parseWidgets();    var addOnRequireFunctions = xg.addOnRequire.functions;
+    xg.addOnRequire = function(f) { f(); };
+    try {
+        if (addOnRequireFunctions) { dojo.lang.forEach(addOnRequireFunctions, function(onRequire) { onRequire.apply(); }); }
+    } catch (e) {
+        if(window.bzplcm)window.bzplcm.ts('nx').send();
+        throw e;
+    }
+    if(window.bzplcm) { window.bzplcm.stop('ni'); window.bzplcm._profileSend(); }
+};
+window.xn = { track: { event: function() {}, pageView: function() {}, registerCompletedFlow: function() {}, registerError: function() {}, timer: function() { return { lapTime: function() {} }; } } };</script>
+<meta name="medium" content="blog"><link rel="alternate" type="application/atom+xml" title="Tim Matteson&#39;s Posts - Data Science Central" href="https://www.datasciencecentral.com/profiles/blog/feed?user=2edcolrgc4o4b&amp;xn_auth=no"><link rel="alternate" type="application/atom+xml" title="Comments - Visualizations: Comparing Tableau, SPSS, R, Excel, Matlab, JS, Python, SAS - Data Science Central" href="https://www.datasciencecentral.com/profiles/comment/feed?attachedTo=6448529%3ABlogPost%3A311168&amp;xn_auth=no">
+<style type="text/css" media="screen,projection">
+@import url(https://static.ning.com/socialnetworkmain/widgets/index/css/common-982.min.css?xn_version=1478925779);
+@import url(https://static.ning.com/socialnetworkmain/widgets/profiles/css/component.min.css?xn_version=467783652);
+
+</style>
+<style type="text/css" media="screen,projection">
+@import url(https://storage.ning.com/topology/rest/1.0/file/get/1256566118?profile=original&xn_version=201912110541);
+
+</style>
+<style type="text/css" media="screen,projection">
+@import url(https://static.ning.com/socialnetworkmain/widgets/index/css/icon/icons-369.min.css?xn_version=3991738700);
+@import url(https://static.ning.com/socialnetworkmain/widgets/index/css/link-hover.min.css?xn_version=4067210475);
+@import url(https://storage.ning.com/topology/rest/1.0/file/get/725694922?profile=original&xn_version=201912110541);
+
+</style>
+<!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="https://static.ning.com/socialnetworkmain/widgets/index/css/common-ie6.min.css?xn_version=463104712" />
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="https://static.ning.com/socialnetworkmain/widgets/index/css/common-ie7.css?xn_version=2712659298" />
+<![endif]-->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.datasciencecentral.com/profiles/blog/rsd">
+<link rel="preload" href="./HTM005_C01_S01_comparingVisTools_files/f.txt" as="script"><script type="text/javascript" src="./HTM005_C01_S01_comparingVisTools_files/f.txt"></script><link rel="preload" href="./HTM005_C01_S01_comparingVisTools_files/f(1).txt" as="script"><script type="text/javascript" src="./HTM005_C01_S01_comparingVisTools_files/f(1).txt"></script><script src="https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019121002.js" async=""></script><script type="text/javascript" src="./HTM005_C01_S01_comparingVisTools_files/jquery.download"></script><script type="text/javascript" src="https://static.ning.com/socialnetworkmain/widgets/lib/js/jquery/jquery.iframe-transport.js?xn_version=201912110541"></script><script type="text/javascript" src="https://static.ning.com/socialnetworkmain/widgets/lib/js/jquery/jquery.fileupload.js?xn_version=201912110541"></script><script type="text/javascript" src="./HTM005_C01_S01_comparingVisTools_files/upload.download"></script><script type="text/javascript" src="https://storage.ning.com/topology/rest/1.0/file/get/3672515027?profile=original&amp;r=1571662548"></script><script type="text/javascript" src="https://storage.ning.com/topology/rest/1.0/file/get/3672515949?profile=original&amp;r=1571661348"></script><meta name="viewport" content="width=device-width, initial-scale=1"><style>
+        html {
+          position: relative;
+          top: 56px;
+        }
+      </style><style>
+      cloudflare-app[app="welcome-bar"] {
+        background-color: #ffffff;
+        color: #000000;
+      }
+
+      @media (max-width: 768px) {
+        cloudflare-app[app="welcome-bar"][data-style="prominent"] .alert-cta-button,
+        cloudflare-app[app="welcome-bar"][data-style="prominent"] .alert-cta-button:hover,
+        cloudflare-app[app="welcome-bar"][data-style="prominent"] .alert-cta-button:active {
+          color: #000000;
+        }
+      }
+
+      @media (min-width: 768px) {
+        cloudflare-app[app="welcome-bar"][data-style="prominent"] .alert-cta-button,
+        cloudflare-app[app="welcome-bar"][data-style="prominent"] .alert-cta-button:hover,
+        cloudflare-app[app="welcome-bar"][data-style="prominent"] .alert-cta-button:active {
+          background-color: #3c79a7 !important;
+          color: #ffffff !important;
+        }
+      }
+    </style><link rel="stylesheet" href="data:text/css;charset=utf-8;base64,Y2xvdWRmbGFyZS1hcHBbYXBwPSJsZWFkLWJveCJdLApjbG91ZGZsYXJlLWFwcFthcHA9ImxlYWQtYm94Il0gKiB7CiAgYm94LXNpemluZzogYm9yZGVyLWJveDsKfQoKY2xvdWRmbGFyZS1hcHBbYXBwPSJsZWFkLWJveCJdIHsKICBkaXNwbGF5OiBub25lOwogIGZvbnQtc2l6ZTogMTJweDsKICBwb3NpdGlvbjogZml4ZWQ7CiAgei1pbmRleDogMTAwMDA7Cn0KCmNsb3VkZmxhcmUtYXBwW2FwcD0ibGVhZC1ib3giXS5jZi1pbnZhbGlkIGNmLWRpYWxvZy1jb250ZW50LXRpdGxlLApjbG91ZGZsYXJlLWFwcFthcHA9ImxlYWQtYm94Il0uY2YtaW52YWxpZCBjZi1kaWFsb2ctY2xvc2UtYnV0dG9uLApjbG91ZGZsYXJlLWFwcFthcHA9ImxlYWQtYm94Il0uY2YtaW52YWxpZCBjZi1zaWdudXAtdGV4dCwKY2xvdWRmbGFyZS1hcHBbYXBwPSJsZWFkLWJveCJdLmNmLWludmFsaWQgaW5wdXRbdHlwZT0ic3VibWl0Il0gewogIC13ZWJraXQtZmlsdGVyOiBibHVyKDJweCk7CiAgICAgICAgICBmaWx0ZXI6IGJsdXIoMnB4KTsKfQoKY2xvdWRmbGFyZS1hcHBbYXBwPSJsZWFkLWJveCJdW2RhdGEtdmlzaWJpbGl0eT0idmlzaWJsZSJdIHsKICBkaXNwbGF5OiBibG9jazsKfQoKY2xvdWRmbGFyZS1hcHBbYXBwPSJsZWFkLWJveCJdW2RhdGEtZ29hbD0ic2lnbnVwU3VjY2VzcyJdIHsKICB0ZXh0LWFsaWduOiBsZWZ0Owp9CgpjbG91ZGZsYXJlLWFwcFthcHA9ImxlYWQtYm94Il1bZGF0YS1nb2FsPSJzaWdudXBTdWNjZXNzIl0gY2YtZGlhbG9nLWNvbnRlbnQtdGV4dCB7CiAgZGlzcGxheTogLW1zLWZsZXhib3g7CiAgZGlzcGxheTogZmxleDsKICAtbXMtZmxleC1mbG93OiBjb2x1bW47CiAgICAgIGZsZXgtZmxvdzogY29sdW1uOwogIC1tcy1mbGV4LXBhY2s6IGxlZnQ7CiAgICAgIGp1c3RpZnktY29udGVudDogbGVmdDsKfQoKY2xvdWRmbGFyZS1hcHBbYXBwPSJsZWFkLWJveCJdW2RhdGEtZ29hbD0ic2lnbnVwU3VjY2VzcyJdIGNmLXNpZ251cC10ZXh0IHsKICBkaXNwbGF5OiBibG9jazsKfQoKY2xvdWRmbGFyZS1hcHBbYXBwPSJsZWFkLWJveCJdW2RhdGEtZm9ybT0ic3VibWl0dGluZyJdIGNmLWRpYWxvZywKY2xvdWRmbGFyZS1hcHBbYXBwPSJsZWFkLWJveCJdW2RhdGEtZ29hbD0ic3VibWl0dGluZyJdIGlucHV0W3R5cGU9InN1Ym1pdCJdIHsKICBjdXJzb3I6IHdhaXQ7Cn0KCmNsb3VkZmxhcmUtYXBwW2FwcD0ibGVhZC1ib3giXSBjZi1kaWFsb2cgewogIGN1cnNvcjogZGVmYXVsdDsKICBkaXNwbGF5OiBibG9jazsKICB6LWluZGV4OiAyMDAwNTsKfQoKY2xvdWRmbGFyZS1hcHBbYXBwPSJsZWFkLWJveCJdIC5jZi1icmFuZGluZywKY2xvdWRmbGFyZS1hcHBbYXBwPSJsZWFkLWJveCJdIC5jZi1icmFuZGluZzphY3RpdmUsCmNsb3VkZmxhcmUtYXBwW2FwcD0ibGVhZC1ib3giXSAuY2YtYnJhbmRpbmc6dmlzaXRlZCB7CiAgY29sb3I6ICMxMTEgIWltcG9ydGFudDsKICB0ZXh0LWRlY29yYXRpb246IG5vbmUgIWltcG9ydGFudDsKICB0ZXh0LWluZGVudDogMCAhaW1wb3J0YW50OwogIHBhZGRpbmc6IDAgIWltcG9ydGFudDsKICBmb250LXNpemU6IC44NWVtICFpbXBvcnRhbnQ7CiAgLW1zLWZsZXg6IDEgMCBhdXRvICFpbXBvcnRhbnQ7CiAgICAgIGZsZXg6IDEgMCBhdXRvICFpbXBvcnRhbnQ7CiAgd2lkdGg6IDEwMCUgIWltcG9ydGFudDsKICBkaXNwbGF5OiAtbXMtZmxleGJveCAhaW1wb3J0YW50OwogIGRpc3BsYXk6IGZsZXggIWltcG9ydGFudDsKICAtbXMtZmxleC1wYWNrOiBlbmQgIWltcG9ydGFudDsKICAgICAganVzdGlmeS1jb250ZW50OiBmbGV4LWVuZCAhaW1wb3J0YW50OwogIG1hcmdpbjogMCAhaW1wb3J0YW50OwogIGN1cnNvcjogcG9pbnRlciAhaW1wb3J0YW50OwogIC1tcy1mbGV4LWFsaWduOiBiYXNlbGluZSAhaW1wb3J0YW50OwogICAgICBhbGlnbi1pdGVtczogYmFzZWxpbmUgIWltcG9ydGFudDsKfQoKY2xvdWRmbGFyZS1hcHBbYXBwPSJsZWFkLWJveCJdIC5jZi1icmFuZGluZzpob3ZlciB7CiAgY29sb3I6ICMxMTEgIWltcG9ydGFudDsKICB0ZXh0LWRlY29yYXRpb246IG5vbmUgIWltcG9ydGFudDsKfQoKY2xvdWRmbGFyZS1hcHBbYXBwPSJsZWFkLWJveCJdIC5jZi1icmFuZGluZzo6YmVmb3JlIHsKICBjb250ZW50OiAiUG93ZXJlZCBieSI7CiAgbWFyZ2luLXJpZ2h0OiAuNWVtOwogIGZvbnQtd2VpZ2h0OiAzMDA7CiAgZm9udC1mYW1pbHk6ICJPcGVuIFNhbnMiLCBIZWx2ZXRpY2EsIEFyaWFsLCBzYW5zLXNlcmlmOwp9CgpjbG91ZGZsYXJlLWFwcFthcHA9ImxlYWQtYm94Il0gLmNmLWJyYW5kaW5nID4gc3ZnIHsKICBoZWlnaHQ6IC43ZW07CiAgd2lkdGg6IGF1dG87Cn0KCkBtZWRpYSAobWF4LXdpZHRoOiA3NjhweCkgewogIGNsb3VkZmxhcmUtYXBwW2FwcD0ibGVhZC1ib3giXSB7CiAgICBib3R0b206IDA7CiAgICBsZWZ0OiAwOwogICAgcmlnaHQ6IDA7CiAgfQoKICBjbG91ZGZsYXJlLWFwcFthcHA9ImxlYWQtYm94Il0gY2YtZGlhbG9nLWNvbnRlbnQgewogICAgYm9yZGVyLXRvcDogMXB4IHNvbGlkICNkY2RjZGM7CiAgfQoKICBjbG91ZGZsYXJlLWFwcFthcHA9ImxlYWQtYm94Il0gLmNmLWJyYW5kaW5nIHsKICAgIC1tcy1mbGV4LXBhY2s6IGNlbnRlciAhaW1wb3J0YW50OwogICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyICFpbXBvcnRhbnQ7CiAgfQp9CgpjbG91ZGZsYXJlLWFwcFthcHA9ImxlYWQtYm94Il0gY2YtZGlhbG9nLWNvbnRlbnQgewogIGRpc3BsYXk6IGJsb2NrOwogIGJhY2tncm91bmQ6ICNmZmY7CiAgY29sb3I6ICMzMzM7CiAgbGluZS1oZWlnaHQ6IDEuNjU7CiAgbWF4LXdpZHRoOiAxMDAlOwogIHBvc2l0aW9uOiByZWxhdGl2ZTsKfQoKQG1lZGlhIChtaW4td2lkdGg6IDc2OHB4KSB7CiAgY2xvdWRmbGFyZS1hcHBbYXBwPSJsZWFkLWJveCJdIGNmLWRpYWxvZyB7CiAgICBwYWRkaW5nOiAxZW07CiAgfQoKICBjbG91ZGZsYXJlLWFwcFthcHA9ImxlYWQtYm94Il0gY2YtZGlhbG9nLWNvbnRlbnQgewogICAgYm9yZGVyLXJhZGl1czogMnB4OwogICAgYm94LXNoYWRvdzogMCAwIDAgMXB4IHJnYmEoMCwgMCwgMCwgLjEpLCAwIDVweCAyMHB4IHJnYmEoMCwgMCwgMCwgLjEpOwogICAgd2lkdGg6IDMyZW07CiAgfQoKICBjbG91ZGZsYXJlLWFwcFthcHA9ImxlYWQtYm94Il1bZGF0YS1wb3NpdGlvbn49InRvcCJdIHsKICAgIHRvcDogMDsKICB9CgogIGNsb3VkZmxhcmUtYXBwW2FwcD0ibGVhZC1ib3giXVtkYXRhLXBvc2l0aW9ufj0iYm90dG9tIl0gewogICAgYm90dG9tOiAwOwogIH0KCiAgY2xvdWRmbGFyZS1hcHBbYXBwPSJsZWFkLWJveCJdW2RhdGEtcG9zaXRpb25+PSJsZWZ0Il0gewogICAgbGVmdDogMDsKICB9CgogIGNsb3VkZmxhcmUtYXBwW2FwcD0ibGVhZC1ib3giXVtkYXRhLXBvc2l0aW9ufj0icmlnaHQiXSB7CiAgICByaWdodDogMDsKICB9Cn0KCmNsb3VkZmxhcmUtYXBwW2FwcD0ibGVhZC1ib3giXSBjZi1kaWFsb2ctY29udGVudCwKY2xvdWRmbGFyZS1hcHBbYXBwPSJsZWFkLWJveCJdIGNmLWRpYWxvZy1jb250ZW50ICogewogIGZvbnQtZmFtaWx5OiBpbmhlcml0Owp9CgpjbG91ZGZsYXJlLWFwcFthcHA9ImxlYWQtYm94Il0gY2YtZGlhbG9nLWNvbnRlbnQtdGV4dCwKY2xvdWRmbGFyZS1hcHBbYXBwPSJsZWFkLWJveCJdIGlucHV0W3R5cGU9ImVtYWlsIl0gewogIGNvbG9yOiBpbmhlcml0Owp9CgpjbG91ZGZsYXJlLWFwcFthcHA9ImxlYWQtYm94Il0gY2YtZGlhbG9nLWNvbnRlbnQtdGV4dCB7CiAgZGlzcGxheTogYmxvY2s7CiAgcGFkZGluZzogMWVtOwogIC13ZWJraXQtZm9udC1zbW9vdGhpbmc6IGFudGlhbGlhc2VkOwp9CgpjbG91ZGZsYXJlLWFwcFthcHA9ImxlYWQtYm94Il0gY2Ytc2lnbnVwLXRleHQgewogIGRpc3BsYXk6IGJsb2NrOwogIG9wYWNpdHk6IC44OwogIGxpbmUtaGVpZ2h0OiAxLjU7Cn0KCkBtZWRpYSAobWF4LXdpZHRoOiA0ODBweCkgewogIGNsb3VkZmxhcmUtYXBwW2FwcD0ibGVhZC1ib3giXSBjZi1kaWFsb2ctY29udGVudC10ZXh0IHsKICAgIHBhZGRpbmc6IDFlbTsKICB9Cn0KCmNsb3VkZmxhcmUtYXBwW2FwcD0ibGVhZC1ib3giXSBjZi1kaWFsb2ctY29udGVudC10ZXh0ID4gKiB7CiAgdGV4dC1pbmRlbnQ6IDA7CiAgbWFyZ2luOiAxZW0gMDsKfQoKY2xvdWRmbGFyZS1hcHBbYXBwPSJsZWFkLWJveCJdIGNmLWRpYWxvZy1jb250ZW50LXRleHQgYSB7CiAgdGV4dC1kZWNvcmF0aW9uOiBub25lOwogIGZvbnQtd2VpZ2h0OiBib2xkOwp9CgpjbG91ZGZsYXJlLWFwcFthcHA9ImxlYWQtYm94Il0gY2YtZGlhbG9nLWNvbnRlbnQtdGV4dCA+ICo6Zmlyc3QtY2hpbGQgewogIG1hcmdpbi10b3A6IDA7Cn0KCmNsb3VkZmxhcmUtYXBwW2FwcD0ibGVhZC1ib3giXSBjZi1kaWFsb2ctY29udGVudC10ZXh0ID4gKjpsYXN0LWNoaWxkIHsKICBtYXJnaW4tYm90dG9tOiAwOwp9CgpjbG91ZGZsYXJlLWFwcFthcHA9ImxlYWQtYm94Il0gY2YtZGlhbG9nLWNvbnRlbnQtdGl0bGUgewogIGRpc3BsYXk6IGJsb2NrOwogIGZvbnQtc2l6ZTogMS41ZW07CiAgZm9udC13ZWlnaHQ6IGJvbGQ7CiAgbGluZS1oZWlnaHQ6IDEuMzsKICBtYXJnaW46IDA7CiAgcGFkZGluZy1yaWdodDogMmVtOwp9CgpjbG91ZGZsYXJlLWFwcFthcHA9ImxlYWQtYm94Il0gY2YtZGlhbG9nLWNsb3NlLWJ1dHRvbiB7CiAgLXdlYmtpdC1mb250LXNtb290aGluZzogYW50aWFsaWFzZWQ7CiAgZGlzcGxheTogYmxvY2s7CiAgcG9zaXRpb246IGFic29sdXRlOwogIGZvbnQtc2l6ZTogMS4yNWVtOwogIGhlaWdodDogMmVtOwogIGxpbmUtaGVpZ2h0OiAyOwogIHJpZ2h0OiAuNGVtOwogIHRvcDogLjRlbTsKICB3aWR0aDogMmVtOwogIGZvbnQtZmFtaWx5OiBBcmlhbCwgc2Fucy1zZXJpZjsKICB0ZXh0LWFsaWduOiBjZW50ZXI7CiAgY3Vyc29yOiBwb2ludGVyOwogIHotaW5kZXg6IDIwMDA3OwogIGJvcmRlci1yYWRpdXM6IDNweDsKICBjb2xvcjogcmdiYSgwLCAwLCAwLCAuOCk7Cn0KCmNsb3VkZmxhcmUtYXBwW2FwcD0ibGVhZC1ib3giXSBjZi1kaWFsb2ctY2xvc2UtYnV0dG9uOmhvdmVyIHsKICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIC4xKTsKICBjb2xvcjogIzAwMDsKfQoKY2xvdWRmbGFyZS1hcHBbYXBwPSJsZWFkLWJveCJdIGNmLWRpYWxvZy1jbG9zZS1idXR0b246OmFmdGVyIHsKICBjb250ZW50OiAiXDI3MTUiOwogIGRpc3BsYXk6IGJsb2NrOwp9CgpjbG91ZGZsYXJlLWFwcFthcHA9ImxlYWQtYm94Il0gaW5wdXRbdHlwZT0ic3VibWl0Il0gewogIGJvcmRlci1yYWRpdXM6IDAuMTg3NWVtOwogIGJvcmRlcjogMXB4IHNvbGlkIHRyYW5zcGFyZW50OwogIGJveC1zaGFkb3c6IG5vbmU7CiAgY29sb3I6ICNmZmY7CiAgY3Vyc29yOiBwb2ludGVyOwogIGZvbnQ6IGluaGVyaXQ7CiAgZm9udC13ZWlnaHQ6IGJvbGQ7CiAgLW1zLWZsZXg6IDAgMCBhdXRvOwogICAgICBmbGV4OiAwIDAgYXV0bzsKICBtYXJnaW4tbGVmdDogMWVtOwogIG1heC13aWR0aDogMTZlbTsKICBvdmVyZmxvdzogaGlkZGVuOwogIHBhZGRpbmc6IC42ZW0gMWVtOwogIGhlaWdodDogMi44ZW07CiAgbGluZS1oZWlnaHQ6IDE7CiAgcG9zaXRpb246IHJlbGF0aXZlOwogIHRleHQtb3ZlcmZsb3c6IGVsbGlwc2lzOwogIHdoaXRlLXNwYWNlOiBub3dyYXA7CiAgd2lkdGg6IGF1dG87Cn0KCmNsb3VkZmxhcmUtYXBwW2FwcD0ibGVhZC1ib3giXSBpbnB1dFt0eXBlPSJzdWJtaXQiXTpkaXNhYmxlZCB7CiAgb3BhY2l0eTogMC43OwogIGN1cnNvcjogbm90LWFsbG93ZWQ7Cn0KCmNsb3VkZmxhcmUtYXBwW2FwcD0ibGVhZC1ib3giXSBpbnB1dFt0eXBlPSJlbWFpbCJdIHsKICAtd2Via2l0LWFwcGVhcmFuY2U6IG5vbmU7CiAgLW1vei1hcHBlYXJhbmNlOiBub25lOwogICAgICAgYXBwZWFyYW5jZTogbm9uZTsKICBmb250OiBpbmhlcml0OwogIHdpZHRoOiAxMDAlOwogIC13ZWJraXQtdGFwLWhpZ2hsaWdodC1jb2xvcjogdHJhbnNwYXJlbnQ7CiAgdGV4dC1yZW5kZXJpbmc6IG9wdGltaXplTGVnaWJpbGl0eTsKICBiYWNrZ3JvdW5kOiAjZmZmOwogIGNvbG9yOiBpbmhlcml0OwogIGJvcmRlcjogMXB4IHNvbGlkIHJnYmEoMCwgMCwgMCwgLjE4KTsKICBib3JkZXItdG9wLWNvbG9yOiByZ2JhKDAsIDAsIDAsIC4yNCk7CiAgcGFkZGluZzogLjZlbSAxZW07CiAgaGVpZ2h0OiAyLjhlbTsKICBsaW5lLWhlaWdodDogMTsKICBib3gtc2hhZG93OiBub25lOwogIGJvcmRlci1yYWRpdXM6IC4xODc1ZW07Cn0KCmNsb3VkZmxhcmUtYXBwW2FwcD0ibGVhZC1ib3giXSBpbnB1dFt0eXBlPSJlbWFpbCJdOm5vdCg6Zm9jdXMpIHsKICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIC4wMik7Cn0KCmNsb3VkZmxhcmUtYXBwW2FwcD0ibGVhZC1ib3giXSBpbnB1dFt0eXBlPSJlbWFpbCJdOnBsYWNlaG9sZGVyIHsKICBjb2xvcjogcmdiYSgwLCAwLCAwLCAuNSk7Cn0KCmNsb3VkZmxhcmUtYXBwW2FwcD0ibGVhZC1ib3giXS5jZi1pbnZhbGlkIGlucHV0W3R5cGU9J2VtYWlsJ10sCmNsb3VkZmxhcmUtYXBwW2FwcD0ibGVhZC1ib3giXS5jZi1pbnZhbGlkIGlucHV0W3R5cGU9J2VtYWlsJ106aG92ZXIgewogIGNvbG9yOiAjZjE2OTc1OwogIGJhY2tncm91bmQ6ICNmZmY2Zjc7CiAgYm9yZGVyLWNvbG9yOiBjdXJyZW50Q29sb3I7CiAgdGV4dC1hbGlnbjogY2VudGVyOwp9CgpjbG91ZGZsYXJlLWFwcFthcHA9ImxlYWQtYm94Il0uY2YtaW52YWxpZCBpbnB1dFt0eXBlPSdlbWFpbCddOmRpc2FibGVkOjotd2Via2l0LWlucHV0LXBsYWNlaG9sZGVyIHsKICBjb2xvcjogI2I3MTkyNzsKICB0ZXh0LWFsaWduOiBjZW50ZXI7Cn0KCmNsb3VkZmxhcmUtYXBwW2FwcD0ibGVhZC1ib3giXS5jZi1pbnZhbGlkIGlucHV0W3R5cGU9J2VtYWlsJ106ZGlzYWJsZWQ6LW1zLWlucHV0LXBsYWNlaG9sZGVyIHsKICBjb2xvcjogI2I3MTkyNzsKICB0ZXh0LWFsaWduOiBjZW50ZXI7Cn0KCmNsb3VkZmxhcmUtYXBwW2FwcD0ibGVhZC1ib3giXS5jZi1pbnZhbGlkIGlucHV0W3R5cGU9J2VtYWlsJ106ZGlzYWJsZWQ6OnBsYWNlaG9sZGVyIHsKICBjb2xvcjogI2I3MTkyNzsKICB0ZXh0LWFsaWduOiBjZW50ZXI7Cn0KCmNsb3VkZmxhcmUtYXBwW2FwcD0ibGVhZC1ib3giXSBpbnB1dFt0eXBlPSJlbWFpbCJdOmZvY3VzIHsKICBvdXRsaW5lOiBub25lOwp9CgpjbG91ZGZsYXJlLWFwcFthcHA9ImxlYWQtYm94Il0gZm9ybSB7CiAgd2lkdGg6IDEwMCU7CiAgbWFyZ2luOiAuNWVtIDA7CiAgLW1zLWZsZXgtYWxpZ246IGNlbnRlcjsKICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjsKICBkaXNwbGF5OiAtbXMtZmxleGJveDsKICBkaXNwbGF5OiBmbGV4OwogIC1tcy1mbGV4LXBhY2s6IGp1c3RpZnk7CiAgICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjsKfQovKgogIFNwZWNpZmljaXR5IHRvIGNvbWJhdCB0aGluZ3MgbGlrZSB0aGlzIChmcm9tIENOTi5jb20gYXMgb2YgNi82LzE2KToKCiAgYm9keSA+IDpub3QoLm5hdikgewogICAgLXdlYmtpdC10cmFuc2Zvcm06IG5vbmUgIWltcG9ydGFudDsKICAgIHRyYW5zZm9ybTogbm9uZSAhaW1wb3J0YW50OwogIH0KKi8KaHRtbCA+IGJvZHkgPiBjbG91ZGZsYXJlLWFwcFthcHA9IndlbGNvbWUtYmFyIl0gewogIGRpc3BsYXk6IGJsb2NrOwogIGRpc3BsYXk6IC13ZWJraXQtYm94OwogIGRpc3BsYXk6IC1tcy1mbGV4Ym94OwogIGRpc3BsYXk6IGZsZXg7CiAgLXdlYmtpdC1ib3gtYWxpZ246IGNlbnRlcjsKICAgICAgLW1zLWZsZXgtYWxpZ246IGNlbnRlcjsKICAgICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7CiAgLXdlYmtpdC1ib3gtcGFjazoganVzdGlmeTsKICAgICAgLW1zLWZsZXgtcGFjazoganVzdGlmeTsKICAgICAgICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjsKICBmb250LXNpemU6IDE2cHg7CiAgbWluLWhlaWdodDogMi41ZW07CiAgbGluZS1oZWlnaHQ6IDE7CiAgb3ZlcmZsb3c6IGhpZGRlbjsKICBwb3NpdGlvbjogZml4ZWQ7CiAgdG9wOiAwOwogIGxlZnQ6IDA7CiAgcmlnaHQ6IDA7CiAgLXdlYmtpdC1mb250LXNtb290aGluZzogYW50aWFsaWFzZWQ7CiAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTsKICAtd2Via2l0LXVzZXItc2VsZWN0OiBub25lOwogIC13ZWJraXQtdHJhbnNmb3JtOiB0cmFuc2xhdGUzZCgwLCAtMzAwJSwgMCk7CiAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZTNkKDAsIC0zMDAlLCAwKTsKfQoKaHRtbCA+IGJvZHkgPiBjbG91ZGZsYXJlLWFwcFthcHA9IndlbGNvbWUtYmFyIl06OmJlZm9yZSB7CiAgY29udGVudDogIiI7CiAgcG9zaXRpb246IGFic29sdXRlOwogIHRvcDogMDsKICBsZWZ0OiAwOwogIHJpZ2h0OiAwOwogIGJvdHRvbTogMDsKICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIC4wNSk7CiAgLXdlYmtpdC10cmFuc2Zvcm06IHRyYW5zbGF0ZTNkKC0xMDAlLCAwLCAwKTsKICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlM2QoLTEwMCUsIDAsIDApOwp9CgpodG1sID4gYm9keSA+IGNsb3VkZmxhcmUtYXBwW2FwcD0id2VsY29tZS1iYXIiXVtkYXRhLXNsaWRlLWFuaW1hdGlvbl06OmJlZm9yZSB7CiAgdHJhbnNpdGlvbjogLXdlYmtpdC10cmFuc2Zvcm0gZWFzZS1vdXQgOHM7CiAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIGVhc2Utb3V0IDhzOwogIHRyYW5zaXRpb246IHRyYW5zZm9ybSBlYXNlLW91dCA4cywgLXdlYmtpdC10cmFuc2Zvcm0gZWFzZS1vdXQgOHM7Cn0KCmh0bWwgPiBib2R5ID4gY2xvdWRmbGFyZS1hcHBbYXBwPSJ3ZWxjb21lLWJhciJdW2RhdGEtc2xpZGUtYW5pbWF0aW9uPSJjb21wbGV0ZSJdOjpiZWZvcmUgewogIC13ZWJraXQtdHJhbnNmb3JtOiB0cmFuc2xhdGUzZCgwLCAwLCAwKTsKICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlM2QoMCwgMCwgMCk7Cn0KCmh0bWxbZGF0YS1jZi13ZWxjb21lLWJhci12aXNpYmlsaXR5PSJ2aXNpYmxlIl0gPiBib2R5ID4gY2xvdWRmbGFyZS1hcHBbYXBwPSJ3ZWxjb21lLWJhciJdIHsKICAtd2Via2l0LXRyYW5zZm9ybTogdHJhbnNsYXRlM2QoMCwgMCwgMCkgIWltcG9ydGFudDsKICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlM2QoMCwgMCwgMCkgIWltcG9ydGFudDsKfQoKY2xvdWRmbGFyZS1hcHBbYXBwPSJ3ZWxjb21lLWJhciJdIGFsZXJ0LW1lc3NhZ2UgewogIGRpc3BsYXk6IC13ZWJraXQtYm94OwogIGRpc3BsYXk6IC1tcy1mbGV4Ym94OwogIGRpc3BsYXk6IGZsZXg7CiAgLXdlYmtpdC1ib3gtZmxleDogMTsKICAgICAgLW1zLWZsZXg6IDEgMSBhdXRvOwogICAgICAgICAgZmxleDogMSAxIGF1dG87CiAgLXdlYmtpdC1ib3gtcGFjazogY2VudGVyOwogICAgICAtbXMtZmxleC1wYWNrOiBjZW50ZXI7CiAgICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjsKfQoKY2xvdWRmbGFyZS1hcHBbYXBwPSJ3ZWxjb21lLWJhciJdIGFsZXJ0LW1lc3NhZ2UtY29udGVudCB7CiAgZGlzcGxheTogLXdlYmtpdC1ib3g7CiAgZGlzcGxheTogLW1zLWZsZXhib3g7CiAgZGlzcGxheTogZmxleDsKICAtd2Via2l0LWJveC1hbGlnbjogY2VudGVyOwogICAgICAtbXMtZmxleC1hbGlnbjogY2VudGVyOwogICAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjsKICBmb250LXNpemU6IDEuMWVtOwogIGxpbmUtaGVpZ2h0OiAxLjI7CiAgZm9udC13ZWlnaHQ6IDUwMDsKICBtYXgtd2lkdGg6IDcwMHB4Owp9CgpAZm9udC1mYWNlIHsKICBmb250LWZhbWlseTogImNmYXBwcy13ZWxjb21lLWJhci1pY29ucyI7CiAgZm9udC1zdHlsZTogbm9ybWFsOwogIGZvbnQtd2VpZ2h0OiBub3JtYWw7CiAgc3JjOiB1cmwoZGF0YTphcHBsaWNhdGlvbi94LWZvbnQtd29mZjtjaGFyc2V0PXV0Zi04O2Jhc2U2NCxkMDlHUms5VVZFOEFBQU9nQUFvQUFBQUFCWHdBQVFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQkRSa1lnQUFBQTlBQUFBTUFBQUFEUktqY3BUMFpHVkUwQUFBRzBBQUFBR2dBQUFCeHpDYzJlVDFNdk1nQUFBZEFBQUFCSUFBQUFZSURLQlNsamJXRndBQUFDR0FBQUFEY0FBQUZDQUEwaTRXaGxZV1FBQUFKUUFBQUFMd0FBQURZRHR0WVdhR2hsWVFBQUFvQUFBQUFnQUFBQUpBYXRBZWhvYlhSNEFBQUNvQUFBQUFnQUFBQUlBL29BQUcxaGVIQUFBQUtvQUFBQUJnQUFBQVlBQWxBQWJtRnRaUUFBQXJBQUFBRFlBQUFCc0VuQkIxcHdiM04wQUFBRGlBQUFBQllBQUFBZy81MEFaM2ljWTJSZ1lXRmdaR1RrU1UxTVR5M1N6VXpPenl0bVlHUmlZR1J3L0NIRDlFT1crWWNFU3c4UFl3UVA4MGNlRmprdUJwWU9EZm51YmppRGg3Mjc1TWVrWHgyc01neGQvRElNREFJeURMMkNNZ3djTWd3bmhSaVlRY2J3TWtnd0tCZGxwbWVVSkdla2xoWGw1eUZaaEd3bkF3TmpPd01USTZPQ2VmZkhYendmR1Q5Ky9QQ1IrYVBZOTZPL2J2dyt5dmJ4WDVIb0w1NFAvM2pZK1g1TSt0RWkraWY4eDR5QWlCOWFmMUwvQVBHeFVGYStIeE5GdWtXN2ViZ0FPa1pHbzNpY1kyQmdZR1FBZ2dzRkRva2crcUxQc1hrd0dnQkVZZ2JsQUFCNG5HTmdadnpMT0lHQmxZR0QxWmgxSmdNRG94eUVacjdPa01Za3hBQUVyQXdRME1DQUNnTFNYRk1ZSEJTc0ZLelkwdjZsTWV4Zy9zSWdEaFJtaEN0UUFFSkdBRVE5QzI5NG5HTmdZR0JtZ0dBWkJrWUdFTEFCOGhqQmZCWUdCU0ROQW9SQXZvTFYvLzhROHY1eHFFb0dSallHR0hONEFpSThCd0NZNGdjTkFIaWNZMkJrWUdBQTRpM1A3MnJIODl0OFplRG1ZQUNCaXo3SDVpSG8veThaL3pGL0FYSTVHSmhBb2dCcWR3MUNBSGljWTJCa1lHRCs4djhsd3c3R3Z3d00vLzh6L21NQWlxQUFKZ0RBaHdlWEFmMEFBQUg5QUFBQUFGQUFBQUlBQUhpY2pZKzlEY0l3RUlWZklFSGlSNVNJMGdVU2xTTTdBZ29Hb0tTa1I4aUswc1NTd3d5TXdCaU13UUNNd1FEVVBKc3JLQ2l3ZFBaM2QrOStER0NDS3pMRWsyR011WEFQQll4d0gwdGNoSE5xN3NJRitTazh3RGliVXBubFEwWm1xU3B5RHlNc2hQdllZeU9jVTNNVExzZ1A0UUg1QlljamF0NEJHZzFPOEdqUkFlNVl1NkNiazIvcGZNVWxza3YrT2IwaDFTdFVLUGtQaFMzdGQ5ZFB6bEtsc2FKVkpJczEyL24ydlBPaGRxb3FqZHFxcituMHJORXJYUmxMNFQvYkhsSytZejVtNDd5NEZ3NHVkSTF2bFMzTlgzM2VFaEJETW5pY1kyQm1BSVAvc3hqU2dCUWpBeG9BQUM2cUFnUUFBQT09KSBmb3JtYXQoIndvZmYiKTsKfQoKY2xvdWRmbGFyZS1hcHBbYXBwPSJ3ZWxjb21lLWJhciJdIC5hbGVydC1jdGEtYnV0dG9uIHsKICBkaXNwbGF5OiAtd2Via2l0LWJveCAhaW1wb3J0YW50OwogIGRpc3BsYXk6IC1tcy1mbGV4Ym94ICFpbXBvcnRhbnQ7CiAgZGlzcGxheTogZmxleCAhaW1wb3J0YW50OwogIC13ZWJraXQtYm94LWFsaWduOiBjZW50ZXIgIWltcG9ydGFudDsKICAgICAgLW1zLWZsZXgtYWxpZ246IGNlbnRlciAhaW1wb3J0YW50OwogICAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlciAhaW1wb3J0YW50OwogIGJvcmRlcjogMCAhaW1wb3J0YW50OwogIGJveC1zaGFkb3c6IG5vbmUgIWltcG9ydGFudDsKICBjdXJzb3I6IHBvaW50ZXIgIWltcG9ydGFudDsKICBkaXNwbGF5OiBpbmxpbmUtYmxvY2sgIWltcG9ydGFudDsKICAtd2Via2l0LWJveC1mbGV4OiAwICFpbXBvcnRhbnQ7CiAgICAgIC1tcy1mbGV4OiAwIDAgYXV0byAhaW1wb3J0YW50OwogICAgICAgICAgZmxleDogMCAwIGF1dG8gIWltcG9ydGFudDsKICBmb250LXNpemU6IC44NWVtICFpbXBvcnRhbnQ7CiAgZm9udC13ZWlnaHQ6IGJvbGQgIWltcG9ydGFudDsKICBoZWlnaHQ6IGF1dG8gIWltcG9ydGFudDsKICBsZXR0ZXItc3BhY2luZzogLjA4ZW07CiAgbGluZS1oZWlnaHQ6IC45NSAhaW1wb3J0YW50OwogIG1heC13aWR0aDogMTZlbSAhaW1wb3J0YW50OwogIG9wYWNpdHk6IC44NTsKICBvdmVyZmxvdzogdmlzaWJsZSAhaW1wb3J0YW50OwogIHBvc2l0aW9uOiByZWxhdGl2ZSAhaW1wb3J0YW50OwogIHRleHQtZGVjb3JhdGlvbjogbm9uZSAhaW1wb3J0YW50OwogIHRleHQtaW5kZW50OiAuMDhlbTsKICB0ZXh0LW92ZXJmbG93OiBlbGxpcHNpcyAhaW1wb3J0YW50OwogIHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2UgIWltcG9ydGFudDsKICB3aGl0ZS1zcGFjZTogbm93cmFwICFpbXBvcnRhbnQ7CiAgd2lkdGg6IGF1dG8gIWltcG9ydGFudDsKfQoKY2xvdWRmbGFyZS1hcHBbYXBwPSJ3ZWxjb21lLWJhciJdIC5hbGVydC1jdGEtYnV0dG9uOjphZnRlciB7CiAgY29sb3I6IGluaGVyaXQgIWltcG9ydGFudDsKICBjb250ZW50OiAiXDIwM0EiOwogIGRpc3BsYXk6IGlubGluZS1ibG9jayAhaW1wb3J0YW50OwogIGZvbnQtZmFtaWx5OiAiY2ZhcHBzLXdlbGNvbWUtYmFyLWljb25zIjsKICBmb250LXNpemU6IDEuM2VtICFpbXBvcnRhbnQ7CiAgZm9udC1zdHlsZTogbm9ybWFsOwogIGZvbnQtd2VpZ2h0OiBpbmhlcml0OwogIGxpbmUtaGVpZ2h0OiAuOCAhaW1wb3J0YW50OwogIG1hcmdpbi10b3A6IC0xcHggIWltcG9ydGFudDsKICBtYXJnaW4tdG9wOiBhdXRvICFpbXBvcnRhbnQ7CiAgcGFkZGluZy1sZWZ0OiAuM2VtICFpbXBvcnRhbnQ7CiAgcG9zaXRpb246IGFic29sdXRlOwogIGxlZnQ6IDEwMCU7Cn0KCmNsb3VkZmxhcmUtYXBwW2FwcD0id2VsY29tZS1iYXIiXSBhbGVydC1kaXNtaXNzIHsKICBjdXJzb3I6IHBvaW50ZXI7CiAgY29sb3I6IHJnYmEoMTAsIDEwLCAxMCwgLjI1KTsKICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7CiAgLXdlYmtpdC1ib3gtZmxleDogMDsKICAgICAgLW1zLWZsZXg6IDAgMCBhdXRvOwogICAgICAgICAgZmxleDogMCAwIGF1dG87CiAgZm9udC1mYW1pbHk6ICJIZWx2ZXRpY2EgTmV1ZSIsIEhlbHZldGljYSwgQXJpYWwsIHNhbnMtc2VyaWY7CiAgZm9udC1zaXplOiAyZW07CiAgZm9udC13ZWlnaHQ6IDMwMDsKICBoZWlnaHQ6IDFlbTsKICBsaW5lLWhlaWdodDogLjc1ZW07CiAgbWFyZ2luOiAwIC4yZW07CiAgLXdlYmtpdC11c2VyLXNlbGVjdDogbm9uZTsKICAgICAtbW96LXVzZXItc2VsZWN0OiBub25lOwogICAgICAtbXMtdXNlci1zZWxlY3Q6IG5vbmU7CiAgICAgICAgICB1c2VyLXNlbGVjdDogbm9uZTsKICB3aWR0aDogLjllbTsKfQoKY2xvdWRmbGFyZS1hcHBbYXBwPSJ3ZWxjb21lLWJhciJdIGFsZXJ0LWRpc21pc3M6aG92ZXIgewogIGNvbG9yOiByZ2JhKDEwLCAxMCwgMTAsIC41KTsKfQoKaHRtbCA+IGJvZHkgPiBjbG91ZGZsYXJlLWFwcFthcHA9IndlbGNvbWUtYmFyIl1bZGF0YS1zdHlsZT0ic2xpbSJdIHsKICBmb250LXNpemU6IC45MmVtOwogIG1pbi1oZWlnaHQ6IDIuMmVtOwp9CgpodG1sID4gYm9keSA+IGNsb3VkZmxhcmUtYXBwW2FwcD0id2VsY29tZS1iYXIiXVtkYXRhLXN0eWxlPSJwcm9taW5lbnQiXSAuYWxlcnQtY3RhLWJ1dHRvbiB7CiAgYm9yZGVyLXJhZGl1czogLjE1ZW07Cn0KCkBtZWRpYSAobWluLXdpZHRoOiA3NjhweCkgewogIGNsb3VkZmxhcmUtYXBwW2FwcD0id2VsY29tZS1iYXIiXSB7CiAgICBwYWRkaW5nOiAuNWVtIDA7CiAgfQoKICBjbG91ZGZsYXJlLWFwcFthcHA9IndlbGNvbWUtYmFyIl1bZGF0YS1zdHlsZT0icHJvbWluZW50Il0gLmFsZXJ0LWN0YS1idXR0b24gewogICAgcGFkZGluZzogLjY1ZW0gMS43NWVtIC42ZW0gLjllbSAhaW1wb3J0YW50OwogIH0KCiAgY2xvdWRmbGFyZS1hcHBbYXBwPSJ3ZWxjb21lLWJhciJdW2RhdGEtc3R5bGU9InByb21pbmVudCJdIC5hbGVydC1jdGEtYnV0dG9uOjphZnRlciB7CiAgICBsZWZ0OiBhdXRvOwogIH0KCiAgY2xvdWRmbGFyZS1hcHBbYXBwPSJ3ZWxjb21lLWJhciJdIC5hbGVydC1jdGEtYnV0dG9uIHsKICAgIG1hcmdpbi1sZWZ0OiAxZW07CiAgfQp9CgpAbWVkaWEgKG1heC13aWR0aDogNzY4cHgpIHsKICBodG1sID4gYm9keSA+IGNsb3VkZmxhcmUtYXBwW2FwcD0id2VsY29tZS1iYXIiXSB7CiAgICAtd2Via2l0LWJveC1hbGlnbjogY2VudGVyOwogICAgICAgIC1tcy1mbGV4LWFsaWduOiBjZW50ZXI7CiAgICAgICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7CiAgICBmb250LXNpemU6IC45MmVtOwogICAgbWluLWhlaWdodDogMi4yZW07CiAgICBwYWRkaW5nOiAuNWVtIDAgLjVlbSAuNWVtOwogIH0KCiAgY2xvdWRmbGFyZS1hcHBbYXBwPSJ3ZWxjb21lLWJhciJdIC5hbGVydC1jdGEtYnV0dG9uIHsKICAgIG1hcmdpbi10b3A6IC41ZW07CiAgICBkaXNwbGF5OiBibG9jayAhaW1wb3J0YW50OwogICAgLXdlYmtpdC1ib3gtZmxleDogMDsKICAgICAgICAtbXMtZmxleDogMCAwIGF1dG87CiAgICAgICAgICAgIGZsZXg6IDAgMCBhdXRvOwogIH0KCiAgY2xvdWRmbGFyZS1hcHBbYXBwPSJ3ZWxjb21lLWJhciJdIGFsZXJ0LW1lc3NhZ2UtY29udGVudCB7CiAgICAtd2Via2l0LWJveC1vcmllbnQ6IHZlcnRpY2FsICFpbXBvcnRhbnQ7CiAgICAtd2Via2l0LWJveC1kaXJlY3Rpb246IG5vcm1hbCAhaW1wb3J0YW50OwogICAgICAgIC1tcy1mbGV4LWZsb3c6IGNvbHVtbiBub3dyYXAgIWltcG9ydGFudDsKICAgICAgICAgICAgZmxleC1mbG93OiBjb2x1bW4gbm93cmFwICFpbXBvcnRhbnQ7CiAgICAtd2Via2l0LWJveC1hbGlnbjogc3RhcnQgIWltcG9ydGFudDsKICAgICAgICAtbXMtZmxleC1hbGlnbjogc3RhcnQgIWltcG9ydGFudDsKICAgICAgICAgICAgYWxpZ24taXRlbXM6IGZsZXgtc3RhcnQgIWltcG9ydGFudDsKICB9Cn0KCg=="><link rel="prefetch" href="https://tpc.googlesyndication.com/safeframe/1-0-37/html/container.html"><script charset="utf-8" src="./HTM005_C01_S01_comparingVisTools_files/button.download"></script><style type="text/css">.mceToolbar {display: none}</style></head>
+<body>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T5W4WQ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div class="xj_before_content"><div id="fb-root" class=" fb_reset"><script src="https://connect.facebook.net/en_US/sdk.js" async=""></script><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div><iframe name="fb_xdm_frame_https" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="./HTM005_C01_S01_comparingVisTools_files/xd_arbiter.html" style="border: none;"></iframe></div></div></div>
+<script>
+  window.fbAsyncInit = function () {
+    FB.init({
+      appId      : '259683271111061', 
+      status     : true,   
+      cookie     : true,   
+      xfbml      : true, 
+      version    : 'v2.3'  
+    });
+    var n = xg.addOnFacebookLoad.functions.length;
+    for (var i = 0; i < n; i++) {
+      xg.addOnFacebookLoad.functions[i]();
+    }
+    xg.addOnFacebookLoad = function (f) { f(); };
+    xg.addOnFacebookLoad.functions = [];
+  };
+  (function() {
+    var e = document.createElement('script');
+    e.src = document.location.protocol + '//connect.facebook.net/en_US/sdk.js';
+    e.async = true;
+    document.getElementById('fb-root').appendChild(e);
+  })();
+</script> <div id="xn_bar">
+<div id="xn_bar_menu">
+<div id="xn_bar_menu_branding">
+</div>
+<div id="xn_bar_menu_more">
+<form id="xn_bar_menu_search" method="GET" action="https://www.datasciencecentral.com/page/search">
+<fieldset>
+<input type="text" name="q" id="xn_bar_menu_search_query" value="Search Data Science Central" _hint="Search Data Science Central" accesskey="4" class="text xj_search_hint">
+<a id="xn_bar_menu_search_submit" href="https://www.datasciencecentral.com/profiles/blogs/visualizations-comparing-tableau-spss-r-excel-matlab#" onclick="document.getElementById(&#39;xn_bar_menu_search&#39;).submit();return false">Search</a>
+</fieldset>
+</form>
+</div>
+<ul id="xn_bar_menu_tabs">
+<li><a href="https://www.datasciencecentral.com/main/authorization/signUp?target=https%3A%2F%2Fwww.datasciencecentral.com%2Fprofiles%2Fblogs%2Fvisualizations-comparing-tableau-spss-r-excel-matlab">Sign Up</a></li>
+<li><a href="https://www.datasciencecentral.com/main/authorization/signIn?target=https%3A%2F%2Fwww.datasciencecentral.com%2Fprofiles%2Fblogs%2Fvisualizations-comparing-tableau-spss-r-excel-matlab">Sign In</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="xg_theme" data-layout-pack="brutus">
+<div id="xg_themebody">
+<div id="xg_ad_above_header" class="xg_ad xj_ad_above_header dy-displaynone">
+</div>
+<div id="xg_head">
+<div id="xg_masthead">
+<h1 id="xg_sitename" class="xj_site_name"><a id="application_name_header_link" href="https://www.datasciencecentral.com/"><img src="./HTM005_C01_S01_comparingVisTools_files/dsc_logo_rm.png" alt="Data Science Central"></a></h1>
+<p id="xg_sitedesc" class="xj_site_desc"></p>
+</div>
+<div id="xg_navigation" class="xj_navigation"><ul>
+<li dojotype="SubTabHover" id="xg_tab_xn54" class="xg_subtab"><a href="https://www.datasciencecentral.com/"><span>Home</span></a><div class="xg_subtab" style="display:none;position:absolute;"><ul class="xg_subtab" style="display:block;"><li style="list-style:none !important;display:block;text-align:left;"><a href="https://www.datasciencecentral.com/page/most-popular-content-on-dsc" style="float:none;"><span>Top Content</span></a></li><li style="list-style:none !important;display:block;text-align:left;"><a href="https://www.datasciencecentral.com/page/editorial-guidelines" style="float:none;"><span>Editorial Guidelines</span></a></li><li style="list-style:none !important;display:block;text-align:left;"><a href="https://www.datasciencecentral.com/page/user-agreement" style="float:none;"><span>User Agreement</span></a></li><li style="list-style:none !important;display:block;text-align:left;"><a href="https://www.datasciencecentral.com/page/cookie-policy" style="float:none;"><span>Cookie Policy</span></a></li></ul></div></li><li id="xg_tab_xn22" class="xg_subtab"><a href="https://www.datasciencecentral.com/page/search?q=AI"><span>AI</span></a></li><li id="xg_tab_xn52" class="xg_subtab"><a href="https://www.datasciencecentral.com/page/search?q=Machine+Learning"><span>ML</span></a></li><li id="xg_tab_xn31" class="xg_subtab"><a href="https://www.datasciencecentral.com/page/search?q=Deep+Learning"><span>DL</span></a></li><li id="xg_tab_profile" class="xg_subtab"><a href="https://www.analyticbridge.datasciencecentral.com/" target="_blank"><span>Analytics</span></a></li><li id="xg_tab_xn50" class="xg_subtab"><a href="https://www.statisticshowto.datasciencecentral.com/" target="_blank"><span>Statistics</span></a></li><li id="xg_tab_xn40" class="xg_subtab"><a href="https://www.bigdatanews.datasciencecentral.com/" target="_blank"><span>Big Data</span></a></li><li id="xg_tab_xn32" class="xg_subtab"><a href="https://www.datavizualization.datasciencecentral.com/" target="_blank"><span>DataViz</span></a></li><li id="xg_tab_xn26" class="xg_subtab"><a href="https://www.hadoop360.datasciencecentral.com/" target="_blank"><span>Hadoop</span></a></li><li id="xg_tab_xn53" class="xg_subtab"><a href="https://www.datasciencecentral.com/video/video/listTagged?tag=DSC+Podcast+Series"><span>Podcasts</span></a></li><li id="xg_tab_xn28" class="xg_subtab"><a href="https://www.datasciencecentral.com/video/video/listFeatured"><span>Webinars</span></a></li><li id="xg_tab_xn49" class="xg_subtab"><a href="https://www.datasciencecentral.com/forum"><span>Forums</span></a></li><li id="xg_tab_xn3" class="xg_subtab"><a href="https://www.analytictalent.datasciencecentral.com/" target="_blank"><span>Jobs</span></a></li><li dojotype="SubTabHover" id="xg_tab_xn25" class="xg_subtab"><a href="https://www.datasciencecentral.com/profiles/blogs/check-out-our-dsc-newsletter"><span>Membership</span></a><div class="xg_subtab" style="display:none;position:absolute;"><ul class="xg_subtab" style="display:block;"><li style="list-style:none !important;display:block;text-align:left;"><a href="https://www.datasciencecentral.com/page/most-popular-content-on-dsc" style="float:none;"><span>Top Content</span></a></li><li style="list-style:none !important;display:block;text-align:left;"><a href="https://www.datasciencecentral.com/group/resources/forum/topics/selection-of-best-articles-from-our-past-weekly-digests" style="float:none;"><span>Archives</span></a></li></ul></div></li><li id="xg_tab_xn51" class="xg_subtab"><a href="https://www.datasciencecentral.com/groups/group/list"><span>Groups</span></a></li><li id="xg_tab_xn35" class="xg_subtab"><a href="https://www.datasciencecentral.com/page/search"><span>Search</span></a></li><li id="xg_tab_xn18" class="xg_subtab"><a href="https://www.datasciencecentral.com/page/contact-us"><span>Contact</span></a></li></ul>
+</div>
+</div>
+<div id="xg_ad_below_header" class="xg_ad xj_ad_below_header">
+<div class="xg_module module-plain  html_module module_text xg_reset" data-module_name="text">
+<div class="xg_module_body xg_user_generated">
+<center><script async="async" src="./HTM005_C01_S01_comparingVisTools_files/gpt.js.download" type="text/javascript">
+</script> <script type="text/javascript">
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script> <script type="text/javascript">
+  googletag.cmd.push(function() {   
+googletag.defineSlot('/2672641/Bottom_Leaderboard', [728, 90], 'div-gpt-ad-1512428902846-0').addService(googletag.pubads());
+    googletag.defineSlot('/2672641/Box_Ad_Blog', [300, 250], 'div-gpt-ad-1512428902846-2').addService(googletag.pubads());
+    googletag.defineSlot('/2672641/Box_Ad_Forum', [300, 250], 'div-gpt-ad-1512428902846-3').addService(googletag.pubads());
+    googletag.defineSlot('/2672641/Skyscraper', [160, 600], 'div-gpt-ad-1512428902846-6').addService(googletag.pubads());
+    googletag.defineSlot('/2672641/Square_Box', [220, 220], 'div-gpt-ad-1512428902846-7').addService(googletag.pubads());
+    googletag.defineSlot('/2672641/Top_Leaderboard', [728, 90], 'div-gpt-ad-1512428902846-8').addService(googletag.pubads());
+    googletag.enableServices();
+  });
+</script> 
+<div id="div-gpt-ad-1512428902846-8" style="height:90px; width:728px;" data-google-query-id="CKH314-cuOYCFaQG1Aodad8OOw"><div id="google_ads_iframe_/2672641/Top_Leaderboard_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/2672641/Top_Leaderboard_0" title="3rd party ad content" name="google_ads_iframe_/2672641/Top_Leaderboard_0" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" data-google-container-id="1" src="./HTM005_C01_S01_comparingVisTools_files/saved_reso.html"></iframe></div></div>
+<br></center>
+<center><a href="https://www.datasciencecentral.com/profiles/blogs/check-out-our-dsc-newsletter">Subscribe to DSC Newsletter</a></center>
+</div>
+</div>
+</div>
+<div id="xg" class="xg_widget_profiles xg_widget_profiles_blog xg_widget_profiles_blog_show">
+<div id="xg_body">
+<div class="xj_notifications"></div>
+<div class="xg_column xg_span-16" id="column1">
+<div id="xg_canvas" class="xj_canvas">
+<ul class="navigation easyclear"><li><a href="https://www.datasciencecentral.com/profiles/blog/list">All Blog Posts</a></li><li><a href="https://www.datasciencecentral.com/profiles/blog/list?my=1">My Blog</a></li><li class="right  xg_lightborder navbutton"><a href="https://www.datasciencecentral.com/profiles/blog/new" class="xg_sprite xg_sprite-add">Add</a></li></ul>
+<div class="xg_module xg_blog xg_blog_detail xg_blog_mypage xg_module_with_dialog">
+<div class="xg_headline xg_headline-img xg_headline-2l">
+<div class="ib"><span class="xg_avatar"><a class="fn url" href="https://www.datasciencecentral.com/profile/2edcolrgc4o4b" title="Tim Matteson"><span class="table_img dy-avatar dy-avatar-64 "><img class="photo photo" src="./HTM005_C01_S01_comparingVisTools_files/1245603432.jpeg" alt=""></span></a></span></div>
+<div class="tb"><h1>Visualizations: Comparing Tableau, SPSS, R, Excel, Matlab, JS, Python, SAS</h1>
+<ul class="navigation byline">
+<li><a class="nolink">Posted by </a><a href="https://www.datasciencecentral.com/profile/2edcolrgc4o4b">Tim Matteson</a><a class="nolink"> on January 7, 2018 at 9:00am</a></li>
+<li><a class="xg_sprite xg_sprite-view" href="https://www.datasciencecentral.com/profiles/blog/list?user=2edcolrgc4o4b">View Blog</a></li>
+</ul>
+</div>
+</div>
+<div class="xg_module_body">
+<div class="postbody">
+<div class="xg_user_generated">
+<p style="box-sizing: border-box; margin: 0px 0px 1em; padding: 0px; border: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: inherit; line-height: 15.6000003814697px; vertical-align: baseline; text-decoration: inherit; color: #615857; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;">Here we ask you to identify which tool was used to produce the following 18 charts: 4 were done with R, 3 with SPSS, 5 with Excel, 2 with Tableau, 1 with Matlab, 1 with Python, 1 with SAS, and 1 with JavaScript. The solution, including for each chart a link to the webpage where it is explained in detail (many times with source code included)<span class="Apple-converted-space">&nbsp;</span><a href="https://www.datasciencecentral.com/page/member" target="_blank" rel="nofollow noopener" style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: normal; font-variant: inherit; font-weight: normal; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: none; color: #3c78a7; text-transform: none;">can be found here</a>. You need to be a DSC member to access the page with the solution:<span class="Apple-converted-space">&nbsp;</span><a href="https://www.datasciencecentral.com/profiles/blogs/check-out-our-dsc-newsletter" target="_blank" rel="nofollow noopener" style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: normal; font-variant: inherit; font-weight: normal; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: none; color: #3c78a7; text-transform: none;">you can sign-up here</a>.</p>
+<p style="box-sizing: border-box; margin: 0px 0px 1em; padding: 0px; border: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: inherit; line-height: 15.6000003814697px; vertical-align: baseline; text-decoration: inherit; color: #615857; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;">How do you score? Would this be a good job interview question?</p>
+<p style="box-sizing: border-box; margin: 0px 0px 1em; padding: 0px; border: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: inherit; line-height: 15.6000003814697px; vertical-align: baseline; text-decoration: inherit; color: #615857; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;"><strong style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: bold; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: inherit;">Chart 1</strong></p>
+<p style="box-sizing: border-box; margin: 0px 0px 1em; padding: 0px; border: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: inherit; line-height: 15.6000003814697px; vertical-align: baseline; text-decoration: inherit; color: #615857; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;"><a href="./HTM005_C01_S01_comparingVisTools_files/untitled1.png" target="_self" style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: normal; font-variant: inherit; font-weight: normal; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: none; color: #3c78a7; text-transform: none;"><img src="./HTM005_C01_S01_comparingVisTools_files/untitled1.png" class="align-full" style="box-sizing: border-box; margin: 1em 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: inherit; max-width: 100%; clear: both; display: block;" width="377"></a></p>
+<p style="box-sizing: border-box; margin: 0px 0px 1em; padding: 0px; border: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: inherit; line-height: 15.6000003814697px; vertical-align: baseline; text-decoration: inherit; color: #615857; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;"><strong style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: bold; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: inherit;">Chart 2</strong></p>
+<p style="box-sizing: border-box; margin: 0px 0px 1em; padding: 0px; border: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: inherit; line-height: 15.6000003814697px; vertical-align: baseline; text-decoration: inherit; color: #615857; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;"><strong style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: bold; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: inherit;"><a href="./HTM005_C01_S01_comparingVisTools_files/untitled2.png" target="_self" style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: normal; font-variant: inherit; font-weight: normal; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: none; color: #3c78a7; text-transform: none;"><img src="./HTM005_C01_S01_comparingVisTools_files/untitled2.png" class="align-full" style="box-sizing: border-box; margin: 1em 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: inherit; max-width: 100%; clear: both; display: block;" width="476"></a></strong></p>
+<p style="box-sizing: border-box; margin: 0px 0px 1em; padding: 0px; border: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: inherit; line-height: 15.6000003814697px; vertical-align: baseline; text-decoration: inherit; color: #615857; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;"><strong style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: bold; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: inherit;">Chart 3</strong></p>
+<p style="box-sizing: border-box; margin: 0px 0px 1em; padding: 0px; border: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: inherit; line-height: 15.6000003814697px; vertical-align: baseline; text-decoration: inherit; color: #615857; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;"><a href="./HTM005_C01_S01_comparingVisTools_files/untitled3.png" target="_self" style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: normal; font-variant: inherit; font-weight: normal; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: none; color: #3c78a7; text-transform: none;"><img src="./HTM005_C01_S01_comparingVisTools_files/untitled3.png" class="align-full" style="box-sizing: border-box; margin: 1em 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: inherit; max-width: 100%; clear: both; display: block;" width="508"></a></p>
+<p style="box-sizing: border-box; margin: 0px 0px 1em; padding: 0px; border: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: inherit; line-height: 15.6000003814697px; vertical-align: baseline; text-decoration: inherit; color: #615857; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;"><strong style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: bold; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: inherit;">Chart 4</strong></p>
+<p style="box-sizing: border-box; margin: 0px 0px 1em; padding: 0px; border: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: inherit; line-height: 15.6000003814697px; vertical-align: baseline; text-decoration: inherit; color: #615857; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;"><a href="./HTM005_C01_S01_comparingVisTools_files/untitled4.png" target="_self" style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: normal; font-variant: inherit; font-weight: normal; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: none; color: #3c78a7; text-transform: none;"><img src="./HTM005_C01_S01_comparingVisTools_files/untitled4.png" class="align-full" style="box-sizing: border-box; margin: 1em 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: inherit; max-width: 100%; clear: both; display: block;" width="613"></a></p>
+<p style="box-sizing: border-box; margin: 0px 0px 1em; padding: 0px; border: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: inherit; line-height: 15.6000003814697px; vertical-align: baseline; text-decoration: inherit; color: #615857; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;"><strong style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: bold; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: inherit;">Chart 5</strong></p>
+<p style="box-sizing: border-box; margin: 0px 0px 1em; padding: 0px; border: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: inherit; line-height: 15.6000003814697px; vertical-align: baseline; text-decoration: inherit; color: #615857; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;"><a href="./HTM005_C01_S01_comparingVisTools_files/untitled5.png" target="_self" style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: normal; font-variant: inherit; font-weight: normal; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: none; color: #3c78a7; text-transform: none;"><img src="./HTM005_C01_S01_comparingVisTools_files/untitled5.png" class="align-full" style="box-sizing: border-box; margin: 1em 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: inherit; max-width: 100%; clear: both; display: block;" width="750"></a></p>
+<p style="box-sizing: border-box; margin: 0px 0px 1em; padding: 0px; border: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: inherit; line-height: 15.6000003814697px; vertical-align: baseline; text-decoration: inherit; color: #615857; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;"><strong style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: bold; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: inherit;">Chart 6</strong></p>
+<p style="box-sizing: border-box; margin: 0px 0px 1em; padding: 0px; border: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: inherit; line-height: 15.6000003814697px; vertical-align: baseline; text-decoration: inherit; color: #615857; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;"><a href="./HTM005_C01_S01_comparingVisTools_files/untitled6.png" target="_self" style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: normal; font-variant: inherit; font-weight: normal; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: none; color: #3c78a7; text-transform: none;"><img src="./HTM005_C01_S01_comparingVisTools_files/untitled6.png" class="align-full" style="box-sizing: border-box; margin: 1em 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: inherit; max-width: 100%; clear: both; display: block;" width="427"></a></p>
+<p style="box-sizing: border-box; margin: 0px 0px 1em; padding: 0px; border: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: inherit; line-height: 15.6000003814697px; vertical-align: baseline; text-decoration: inherit; color: #615857; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;"><strong style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: bold; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: inherit;">Chart 7</strong></p>
+<p style="box-sizing: border-box; margin: 0px 0px 1em; padding: 0px; border: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: inherit; line-height: 15.6000003814697px; vertical-align: baseline; text-decoration: inherit; color: #615857; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;"><a href="./HTM005_C01_S01_comparingVisTools_files/untitled7.png" target="_self" style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: normal; font-variant: inherit; font-weight: normal; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: none; color: #3c78a7; text-transform: none;"><img src="./HTM005_C01_S01_comparingVisTools_files/untitled7.png" class="align-full" style="box-sizing: border-box; margin: 1em 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: inherit; max-width: 100%; clear: both; display: block;" width="577"></a></p>
+<p style="box-sizing: border-box; margin: 0px 0px 1em; padding: 0px; border: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: inherit; line-height: 15.6000003814697px; vertical-align: baseline; text-decoration: inherit; color: #615857; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;"><strong style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: bold; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: inherit;">Chart 8</strong></p>
+<p style="box-sizing: border-box; margin: 0px 0px 1em; padding: 0px; border: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: inherit; line-height: 15.6000003814697px; vertical-align: baseline; text-decoration: inherit; color: #615857; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;"><a href="./HTM005_C01_S01_comparingVisTools_files/untitled8.png" target="_self" style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: normal; font-variant: inherit; font-weight: normal; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: none; color: #3c78a7; text-transform: none;"><img src="./HTM005_C01_S01_comparingVisTools_files/untitled8.png" class="align-full" style="box-sizing: border-box; margin: 1em 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: inherit; max-width: 100%; clear: both; display: block;" width="492"></a></p>
+<p style="box-sizing: border-box; margin: 0px 0px 1em; padding: 0px; border: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: inherit; line-height: 15.6000003814697px; vertical-align: baseline; text-decoration: inherit; color: #615857; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;"><strong style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: bold; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: inherit;">Chart 9</strong></p>
+<p style="box-sizing: border-box; margin: 0px 0px 1em; padding: 0px; border: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: inherit; line-height: 15.6000003814697px; vertical-align: baseline; text-decoration: inherit; color: #615857; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;"><a href="./HTM005_C01_S01_comparingVisTools_files/untitled9.png" target="_self" style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: normal; font-variant: inherit; font-weight: normal; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: none; color: #3c78a7; text-transform: none;"><img src="./HTM005_C01_S01_comparingVisTools_files/untitled9.png" class="align-full" style="box-sizing: border-box; margin: 1em 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: inherit; max-width: 100%; clear: both; display: block;" width="747"></a></p>
+<p style="box-sizing: border-box; margin: 0px 0px 1em; padding: 0px; border: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: inherit; line-height: 15.6000003814697px; vertical-align: baseline; text-decoration: inherit; color: #615857; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;"><strong style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: bold; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: inherit;">Chart 10</strong></p>
+<p style="box-sizing: border-box; margin: 0px 0px 1em; padding: 0px; border: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: inherit; line-height: 15.6000003814697px; vertical-align: baseline; text-decoration: inherit; color: #615857; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;"><a href="./HTM005_C01_S01_comparingVisTools_files/untitled10.png" target="_self" style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: normal; font-variant: inherit; font-weight: normal; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: none; color: #3c78a7; text-transform: none;"><img src="./HTM005_C01_S01_comparingVisTools_files/untitled10.png" class="align-full" style="box-sizing: border-box; margin: 1em 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: inherit; max-width: 100%; clear: both; display: block;" width="527"></a></p>
+<p style="box-sizing: border-box; margin: 0px 0px 1em; padding: 0px; border: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: inherit; line-height: 15.6000003814697px; vertical-align: baseline; text-decoration: inherit; color: #615857; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;"><strong style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: bold; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: inherit;">Chart 11</strong></p>
+<p style="box-sizing: border-box; margin: 0px 0px 1em; padding: 0px; border: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: inherit; line-height: 15.6000003814697px; vertical-align: baseline; text-decoration: inherit; color: #615857; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;"><a href="./HTM005_C01_S01_comparingVisTools_files/untitled11.png" target="_self" style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: normal; font-variant: inherit; font-weight: normal; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: none; color: #3c78a7; text-transform: none;"><img src="./HTM005_C01_S01_comparingVisTools_files/untitled11.png" class="align-full" style="box-sizing: border-box; margin: 1em 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: inherit; max-width: 100%; clear: both; display: block;" width="491"></a></p>
+<p style="box-sizing: border-box; margin: 0px 0px 1em; padding: 0px; border: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: inherit; line-height: 15.6000003814697px; vertical-align: baseline; text-decoration: inherit; color: #615857; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;"><strong style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: bold; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: inherit;">Chart 12</strong></p>
+<p style="box-sizing: border-box; margin: 0px 0px 1em; padding: 0px; border: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: inherit; line-height: 15.6000003814697px; vertical-align: baseline; text-decoration: inherit; color: #615857; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;"><a href="./HTM005_C01_S01_comparingVisTools_files/untitled12.png" target="_self" style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: normal; font-variant: inherit; font-weight: normal; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: none; color: #3c78a7; text-transform: none;"><img src="./HTM005_C01_S01_comparingVisTools_files/untitled12.png" class="align-full" style="box-sizing: border-box; margin: 1em 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: inherit; max-width: 100%; clear: both; display: block;" width="713"></a></p>
+<p style="box-sizing: border-box; margin: 0px 0px 1em; padding: 0px; border: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: inherit; line-height: 15.6000003814697px; vertical-align: baseline; text-decoration: inherit; color: #615857; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;"><strong style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: bold; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: inherit;">Chart 13</strong></p>
+<p style="box-sizing: border-box; margin: 0px 0px 1em; padding: 0px; border: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: inherit; line-height: 15.6000003814697px; vertical-align: baseline; text-decoration: inherit; color: #615857; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;"><a href="./HTM005_C01_S01_comparingVisTools_files/untitled13.png" target="_self" style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: normal; font-variant: inherit; font-weight: normal; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: none; color: #3c78a7; text-transform: none;"><img src="./HTM005_C01_S01_comparingVisTools_files/untitled13.png" class="align-full" style="box-sizing: border-box; margin: 1em 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: inherit; max-width: 100%; clear: both; display: block;" width="592"></a></p>
+<p style="box-sizing: border-box; margin: 0px 0px 1em; padding: 0px; border: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: inherit; line-height: 15.6000003814697px; vertical-align: baseline; text-decoration: inherit; color: #615857; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;"><strong style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: bold; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: inherit;">Chart 14</strong></p>
+<p style="box-sizing: border-box; margin: 0px 0px 1em; padding: 0px; border: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: inherit; line-height: 15.6000003814697px; vertical-align: baseline; text-decoration: inherit; color: #615857; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;"><a href="./HTM005_C01_S01_comparingVisTools_files/untitled14.png" target="_self" style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: normal; font-variant: inherit; font-weight: normal; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: none; color: #3c78a7; text-transform: none;"><img src="./HTM005_C01_S01_comparingVisTools_files/untitled14.png" class="align-full" style="box-sizing: border-box; margin: 1em 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: inherit; max-width: 100%; clear: both; display: block;" width="602"></a></p>
+<p style="box-sizing: border-box; margin: 0px 0px 1em; padding: 0px; border: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: inherit; line-height: 15.6000003814697px; vertical-align: baseline; text-decoration: inherit; color: #615857; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;"><strong style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: bold; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: inherit;">Chart 15</strong></p>
+<p style="box-sizing: border-box; margin: 0px 0px 1em; padding: 0px; border: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: inherit; line-height: 15.6000003814697px; vertical-align: baseline; text-decoration: inherit; color: #615857; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;"><a href="./HTM005_C01_S01_comparingVisTools_files/Capture15.gif" target="_self" style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: normal; font-variant: inherit; font-weight: normal; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: none; color: #3c78a7; text-transform: none;"><img src="./HTM005_C01_S01_comparingVisTools_files/Capture15.gif" class="align-full" style="box-sizing: border-box; margin: 1em 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: inherit; max-width: 100%; clear: both; display: block;" width="110"></a></p>
+<p style="box-sizing: border-box; margin: 0px 0px 1em; padding: 0px; border: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: inherit; line-height: 15.6000003814697px; vertical-align: baseline; text-decoration: inherit; color: #615857; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;"><strong style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: bold; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: inherit;">Chart 16</strong></p>
+<p style="box-sizing: border-box; margin: 0px 0px 1em; padding: 0px; border: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: inherit; line-height: 15.6000003814697px; vertical-align: baseline; text-decoration: inherit; color: #615857; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;"><a href="./HTM005_C01_S01_comparingVisTools_files/untitled16.png" target="_self" style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: normal; font-variant: inherit; font-weight: normal; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: none; color: #3c78a7; text-transform: none;"><img src="./HTM005_C01_S01_comparingVisTools_files/untitled16.png" class="align-full" style="box-sizing: border-box; margin: 1em 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: inherit; max-width: 100%; clear: both; display: block;" width="599"></a></p>
+<p style="box-sizing: border-box; margin: 0px 0px 1em; padding: 0px; border: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: inherit; line-height: 15.6000003814697px; vertical-align: baseline; text-decoration: inherit; color: #615857; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;"><strong style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: bold; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: inherit;">Chart 17</strong></p>
+<p style="box-sizing: border-box; margin: 0px 0px 1em; padding: 0px; border: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: inherit; line-height: 15.6000003814697px; vertical-align: baseline; text-decoration: inherit; color: #615857; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;"><a href="./HTM005_C01_S01_comparingVisTools_files/untitled17.png" target="_self" style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: normal; font-variant: inherit; font-weight: normal; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: none; color: #3c78a7; text-transform: none;"><img src="./HTM005_C01_S01_comparingVisTools_files/untitled17.png" class="align-full" style="box-sizing: border-box; margin: 1em 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: inherit; max-width: 100%; clear: both; display: block;" width="567"></a></p>
+<p style="box-sizing: border-box; margin: 0px 0px 1em; padding: 0px; border: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: inherit; line-height: 15.6000003814697px; vertical-align: baseline; text-decoration: inherit; color: #615857; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;"><strong style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: bold; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: inherit;">Chart 18</strong></p>
+<p style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: inherit; line-height: 15.6000003814697px; vertical-align: baseline; text-decoration: inherit; color: #615857; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;"><a href="./HTM005_C01_S01_comparingVisTools_files/untitled18.png" target="_self" style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: normal; font-variant: inherit; font-weight: normal; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: none; color: #3c78a7; text-transform: none;"><img src="./HTM005_C01_S01_comparingVisTools_files/untitled18.png" class="align-full" style="box-sizing: border-box; margin: 1em 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline; text-decoration: inherit; max-width: 100%; clear: both; display: block;" width="609"></a></p>
+<p style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: inherit; line-height: 15.6000003814697px; vertical-align: baseline; text-decoration: inherit; color: #615857; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;"></p>
+<p style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: inherit; line-height: 15.6000003814697px; vertical-align: baseline; text-decoration: inherit; color: #615857; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;"><span class="font-size-4"><b>DSC Resources</b></span></p>
+<ul>
+<li>Career:&nbsp;<a href="http://www.analyticbridge.com/group/analyticscourses/forum">Training</a>&nbsp;|&nbsp;<a href="http://www.analyticbridge.com/group/books/forum">Books</a>&nbsp;|&nbsp;<a href="https://www.datasciencecentral.com/profiles/blogs/data-science-cheat-sheet">Cheat Sheet</a>&nbsp;|&nbsp;<a href="https://www.datasciencecentral.com/group/data-science-apprenticeship/forum/topics/our-data-science-apprenticeship-is-now-live">Apprenticeship</a>&nbsp;|&nbsp;<a href="https://www.datasciencecentral.com/group/data-science-certification">Certification</a>&nbsp;|&nbsp;<a href="http://www.analyticbridge.com/group/salary-trends-and-reports/forum">Salary Surveys</a>&nbsp;|&nbsp;<a href="http://careers.analytictalent.com/jobs/search/results">Jobs</a></li>
+<li>Knowledge:&nbsp;<a href="https://www.datasciencecentral.com/group/resources/forum">Research</a>&nbsp;|&nbsp;<a href="https://www.datasciencecentral.com/group/resources/forum/topics/best-kept-secret-about-data-science-competitions">Competitions</a>&nbsp;|&nbsp;<a href="https://www.datasciencecentral.com/video/video/listFeatured">Webinars</a>&nbsp;|&nbsp;<a href="https://www.datasciencecentral.com/profiles/blogs/my-data-science-book">Our Book</a>&nbsp;|&nbsp;<a href="https://www.datasciencecentral.com/page/member">Members Only</a>&nbsp;|&nbsp;<a href="https://www.google.com/cse/publicurl?cx=007889287169707156432:04zouenp6u0">Search DSC</a></li>
+<li>Buzz:&nbsp;<a href="http://www.bigdatanews.com/group/bdn-daily-press-releases">Business News</a>&nbsp;|&nbsp;<a href="https://www.datasciencecentral.com/group/announcements/forum">Announcements</a>&nbsp;|&nbsp;<a href="https://www.datasciencecentral.com/events/">Events</a>&nbsp;|&nbsp;<a href="https://www.datasciencecentral.com/page/news-feeds">RSS Feeds</a></li>
+<li>Misc:&nbsp;<a href="http://www.analyticbridge.com/page/links">Top Links</a>&nbsp;|&nbsp;<a href="http://www.analyticbridge.com/group/codesnippets">Code Snippets</a>&nbsp;|&nbsp;<a href="https://www.datasciencecentral.com/group/resources/forum/topics/comprehensive-list-of-data-science-resources">External Resources</a>&nbsp;|&nbsp;<a href="https://www.datasciencecentral.com/group/resources/forum/topics/the-best-of-our-weekly-digests">Best Blogs</a>&nbsp;|&nbsp;<a href="https://www.datasciencecentral.com/profiles/blogs/check-out-our-dsc-newsletter">Subscribe</a>&nbsp;|&nbsp;<a href="https://www.datasciencecentral.com/group/resources/forum/topics/free-stuff-for-data-science-publishers-authors-bloggers-professor">For Bloggers</a></li>
+</ul>
+<p style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: inherit; line-height: 15.6000003814697px; vertical-align: baseline; text-decoration: inherit; color: #615857; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;"><b>Additional Reading</b></p>
+<ul>
+<li><a href="http://www.hadoop360.com/blog/50-articles-about-hadoop-and-related-topics">50 Articles about Hadoop and Related Topics</a></li>
+<li><a href="https://www.datasciencecentral.com/profiles/blogs/10-modern-statistical-concepts-discovered-by-data-scientists">10 Modern Statistical Concepts Discovered by Data Scientists</a></li>
+<li><a href="https://www.datasciencecentral.com/forum/topics/most-popular-data-science-keywords-on-dsc">Top data science keywords on DSC</a></li>
+<li><a href="https://www.datasciencecentral.com/profiles/blogs/4-easy-steps-to-becoming-a-data-scientist">4 easy steps to becoming a data scientist</a></li>
+<li><a href="https://www.datasciencecentral.com/profiles/blogs/13-new-trends-in-big-data-and-data-science">13 New Trends in Big Data and Data Science</a></li>
+<li><a href="https://www.datasciencecentral.com/profiles/blogs/22-tips-for-better-data-science">22 tips for better data science</a></li>
+<li><a href="https://www.datasciencecentral.com/profiles/blogs/17-analytic-disciplines-compared">Data Science Compared to 16 Analytic Disciplines</a></li>
+<li><a href="https://www.datasciencecentral.com/profiles/blogs/tutorial-how-to-detect-spurious-correlations-and-how-to-find-the-">How to detect spurious correlations, and how to find the real ones</a></li>
+<li><a href="https://www.datasciencecentral.com/profiles/blogs/17-short-tutorials-all-data-scientists-should-read-and-practice">17 short tutorials all data scientists should read (and practice)</a></li>
+<li><a href="https://www.datasciencecentral.com/profiles/blogs/six-categories-of-data-scientists">10 types of data scientists</a></li>
+<li><a href="https://www.datasciencecentral.com/profiles/blogs/66-job-interview-questions-for-data-scientists">66 job interview questions for data scientists</a></li>
+<li><a href="https://www.datasciencecentral.com/profiles/blogs/high-level-versus-low-level-data-science">High versus low-level data science</a></li>
+</ul>
+<p style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: inherit; line-height: 15.6000003814697px; vertical-align: baseline; text-decoration: inherit; color: #615857; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;"><span>Follow us on Twitter:&nbsp;</span><a href="https://www.twitter.com/datasciencectrl">@DataScienceCtrl</a><span>&nbsp;|&nbsp;</span><a href="https://www.twitter.com/analyticbridge">@AnalyticBridge</a></p> </div>
+</div><div id="insideblog">
+<div class="dscAdAppear" zsrc="PGNlbnRlcj48YnIgLz48IS0tIC8yNjcyNjQxL0JveF9BZF9CbG9nIC0tPg0KPGRpdiBpZD0nZGl2LWdwdC1hZC0xNTEyNDI4OTAyODQ2LTInIHN0eWxlPSdoZWlnaHQ6MjUwcHg7IHdpZHRoOjMwMHB4Oyc+DQo8c2NyaXB0Pg0KZ29vZ2xldGFnLmNtZC5wdXNoKGZ1bmN0aW9uKCkgeyBnb29nbGV0YWcuZGlzcGxheSgnZGl2LWdwdC1hZC0xNTEyNDI4OTAyODQ2LTInKTsgfSk7DQo8L3NjcmlwdD4NCjwvZGl2PjxiciAvPg0KPC9jZW50ZXI+"></div>
+<hr class="red">
+<p><span style="font-size: 11pt;"><strong>Most Popular Content on DSC</strong></span></p>
+<p><span style="font-size: 11pt;">To not miss this type of content in the future,&nbsp;<a href="https://www.datasciencecentral.com/profiles/blogs/check-out-our-dsc-newsletter">subscribe</a>&nbsp;to our newsletter.</span></p>
+<ul>
+<li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/profiles/blogs/free-book-statistics-new-foundations-toolbox-and-machine-learning" target="_blank">Book: Statistics -- New Foundations, Toolbox, and Machine Learning Recipes</a></span></li>
+<li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/profiles/blogs/free-book-classification-and-regression-in-a-weekend" target="_blank">Book: Classification and Regression In a Weekend - With Python</a></span></li>
+<li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/profiles/blogs/fee-book-applied-stochastic-processes" target="_blank">Book: Applied Stochastic Processes</a></span></li>
+<li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/profiles/blogs/long-range-correlation-in-time-series-tutorial-and-case-study" target="_blank">Long-range Correlations in Time Series: Modeling, Testing, Case Study</a></span></li>
+<li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/profiles/blogs/how-to-automatically-determine-the-number-of-clusters-in-your-dat" target="_blank">How to Automatically Determine the Number of Clusters in your Data</a></span></li>
+<li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/profiles/blogs/new-data-science-cheat-sheet" target="_blank">New Machine Learning Cheat Sheet</a> | <a href="https://www.datasciencecentral.com/profiles/blogs/data-science-cheat-sheet" target="_blank">Old one</a></span></li>
+<li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/profiles/blogs/confidence-intervals-without-pain" target="_blank">Confidence Intervals Without Pain - With Resampling</a></span></li>
+<li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/profiles/blogs/advanced-machine-learning-with-basic-excel" target="_blank">Advanced Machine Learning with Basic Excel</a></span></li>
+<li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/profiles/blogs/decomposition-of-statistical-distributions-using-mixture-models-a" target="_blank">New Perspectives on Statistical Distributions and Deep Learning</a></span></li>
+<li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/profiles/blogs/fascinating-new-results-in-the-theory-of-randomness" target="_blank">Fascinating New Results in the Theory of Randomness</a></span></li>
+<li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/profiles/blogs/feature-selection-based-on-predictive-power" target="_blank">Fast Combinatorial Feature Selection</a></span></li>
+</ul>
+<p><span style="font-size: 11pt;"><strong>Other popular resources</strong></span></p>
+<ul>
+<li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/profiles/blogs/comprehensive-repository-of-data-science-and-ml-resources" target="_blank">Comprehensive Repository of Data Science and ML Resources</a>
+</span></li><li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/page/search?q=statistical+concepts" target="_blank">Statistical Concepts Explained in Simple English</a>
+</span></li><li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/page/search?q=in+one+pictures" target="_blank">Machine Learning Concepts Explained in One Picture</a>
+</span></li><li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/profiles/blogs/100-data-science-interview-questions-and-answers" target="_blank">100 Data Science Interview Questions and Answers</a>
+</span></li><li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/page/search?q=cheat+sheets" target="_blank">Cheat Sheets</a> |
+<a href="https://www.datasciencecentral.com/profiles/blogs/21-curated-blogs-about-deep-learning-and-data-science" target="_blank">Curated Articles</a> |
+<a href="https://www.datasciencecentral.com/page/search?q=Python" target="_blank">Search</a> |
+<a href="http://www.analytictalent.com/" target="_blank">Jobs</a> |
+<a href="https://www.datasciencecentral.com/page/search?q=courses" target="_blank">Courses</a></span></li>
+<li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/profiles/blog/new" target="_blank">Post a Blog</a> |
+<a href="https://www.datasciencecentral.com/forum/topic/new" target="_blank">Forum Questions</a> |
+<a href="https://www.datasciencecentral.com/page/search?q=books" target="_blank">Books</a> |
+<a href="https://www.datasciencecentral.com/page/search?q=salary" target="_blank">Salaries</a> |
+<a href="https://www.bigdatanews.datasciencecentral.com/group/bdn-daily-press-releases/forum" target="_blank">News</a>
+</span></li>
+</ul>
+<p><span style="font-size: 11pt;"><strong>Archives:</strong></span> <span style="font-size: 11pt;"><a href="https://www.analyticbridge.datasciencecentral.com/page/links" target="_blank">2008-2014</a> |
+<a href="https://www.datasciencecentral.com/group/resources/forum/topics/selection-of-best-articles-from-our-past-weekly-digests" target="_blank">2015-2016</a> |
+<a href="https://www.datasciencecentral.com/page/previous-digests" target="_blank">2017-2019</a> |
+<a href="https://www.analyticbridge.datasciencecentral.com/group/data-science/forum/topics/data-science-e-book-first-draft-available-for-download" target="_blank">Book 1</a> |
+<a href="https://www.datasciencecentral.com/profiles/blogs/my-data-science-book" target="_blank">Book 2</a> |
+<a href="https://www.datasciencecentral.com/profiles/blogs/older-data-science-articles-still-of-great-value-today" target="_blank">More</a>
+</span></p>
+<p><span style="font-size: 11pt;"><strong>Follow us</strong></span>:<span style="font-size: 11pt;"><span>&nbsp;</span><a href="https://twitter.com/DataScienceCtrl">Twitter</a><span>&nbsp;</span>|<span>&nbsp;</span><a href="https://www.facebook.com/DataScienceCentralCommunity/">Facebook</a></span></p>
+</div>
+<div class="left-panel">
+<script>xg.addOnRequire(function () { xg.post('/main/viewcount/update?xn_out=json', {key: '6448529:BlogPost:311168', x: '4674c75'}); });</script> <p class="small dy-clear view-count-container">
+<span class="view-count-label">Views:</span> <span class="view-count">246507</span></p>
+<p class="small object-detail" id="tagsList" style="display:none">Tags:<br></p>
+<div class="likebox likebox-ning">
+<div class="ning-like">
+<div class="xg_lightborder like-button like-button-1">
+<a data-content-id="6448529:BlogPost:311168" data-content-type="BlogPost" data-sign-up-url="https://www.datasciencecentral.com/main/authorization/signUp?target=https%3A%2F%2Fwww.datasciencecentral.com%2Fprofiles%2Fblogs%2Fvisualizations-comparing-tableau-spss-r-excel-matlab" data-like-url="/main/like/like" data-unlike-url="/main/like/unlike" data-track="{&quot;category&quot;:&quot;Likes&quot;,&quot;action&quot;:&quot;Like&quot;,&quot;label&quot;:&quot;&quot;}" data-page-type="detail" class="xg_sprite" href="https://www.datasciencecentral.com/profiles/blogs/visualizations-comparing-tableau-spss-r-excel-matlab#">
+Like </a>
+</div>
+<div class="like-count">
+<a href="https://www.datasciencecentral.com/profiles/blogs/visualizations-comparing-tableau-spss-r-excel-matlab#" class="view-liked" _id="6448529:BlogPost:311168">41 members like this</a>
+</div>
+</div>
+</div>
+<p class="share-links clear"><a class="xg_sprite xg_sprite-share" href="https://www.datasciencecentral.com/main/sharing/share?id=6448529%253ABlogPost%253A311168">Share</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<span class="xg_tweet">
+<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" style="position: static; visibility: visible; width: 60px; height: 20px;" title="Twitter Tweet Button" src="./HTM005_C01_S01_comparingVisTools_files/tweet_butt.html" data-url="https://www.datasciencecentral.com/profiles/blogs/visualizations-comparing-tableau-spss-r-excel-matlab"></iframe>
+</span>
+<a class="post_to_facebook xj_post_to_facebook_stream dy-displaynone" href="https://www.facebook.com/share.php?u=https%3A%2F%2Fwww.datasciencecentral.com%2Fprofiles%2Fblogs%2Fvisualizations-comparing-tableau-spss-r-excel-matlab%3Fxg_source%3Dfacebook&amp;t=Visualizations%3A%20Comparing%20Tableau%2C%20SPSS%2C%20R%2C%20Excel%2C%20Matlab%2C%20JS%2C%20Python%2C%20SAS%20on%20Data%20Science%20Central" _args="{&quot;name&quot;:&quot;Visualizations: Comparing Tableau, SPSS, R, Excel, Matlab, JS, Python, SAS on Data Science Central&quot;,&quot;href&quot;:&quot;https:\/\/www.datasciencecentral.com\/profiles\/blogs\/visualizations-comparing-tableau-spss-r-excel-matlab?xg_source=facebook&quot;,&quot;media&quot;:[{&quot;type&quot;:&quot;image&quot;,&quot;src&quot;:&quot;http:\/\/storage.ning.com\/topology\/rest\/1.0\/file\/get\/1994759?profile=original&quot;,&quot;href&quot;:&quot;https:\/\/www.datasciencecentral.com\/profiles\/blogs\/visualizations-comparing-tableau-spss-r-excel-matlab?xg_source=facebook&quot;},{&quot;type&quot;:&quot;image&quot;,&quot;src&quot;:&quot;http:\/\/storage.ning.com\/topology\/rest\/1.0\/file\/get\/1994781?profile=original&quot;,&quot;href&quot;:&quot;https:\/\/www.datasciencecentral.com\/profiles\/blogs\/visualizations-comparing-tableau-spss-r-excel-matlab?xg_source=facebook&quot;},{&quot;type&quot;:&quot;image&quot;,&quot;src&quot;:&quot;http:\/\/storage.ning.com\/topology\/rest\/1.0\/file\/get\/1994797?profile=original&quot;,&quot;href&quot;:&quot;https:\/\/www.datasciencecentral.com\/profiles\/blogs\/visualizations-comparing-tableau-spss-r-excel-matlab?xg_source=facebook&quot;},{&quot;type&quot;:&quot;image&quot;,&quot;src&quot;:&quot;http:\/\/storage.ning.com\/topology\/rest\/1.0\/file\/get\/1994828?profile=original&quot;,&quot;href&quot;:&quot;https:\/\/www.datasciencecentral.com\/profiles\/blogs\/visualizations-comparing-tableau-spss-r-excel-matlab?xg_source=facebook&quot;},{&quot;type&quot;:&quot;image&quot;,&quot;src&quot;:&quot;http:\/\/storage.ning.com\/topology\/rest\/1.0\/file\/get\/1994859?profile=original&quot;,&quot;href&quot;:&quot;https:\/\/www.datasciencecentral.com\/profiles\/blogs\/visualizations-comparing-tableau-spss-r-excel-matlab?xg_source=facebook&quot;},{&quot;type&quot;:&quot;image&quot;,&quot;src&quot;:&quot;http:\/\/storage.ning.com\/topology\/rest\/1.0\/file\/get\/1994892?profile=original&quot;,&quot;href&quot;:&quot;https:\/\/www.datasciencecentral.com\/profiles\/blogs\/visualizations-comparing-tableau-spss-r-excel-matlab?xg_source=facebook&quot;},{&quot;type&quot;:&quot;image&quot;,&quot;src&quot;:&quot;http:\/\/storage.ning.com\/topology\/rest\/1.0\/file\/get\/1994911?profile=original&quot;,&quot;href&quot;:&quot;https:\/\/www.datasciencecentral.com\/profiles\/blogs\/visualizations-comparing-tableau-spss-r-excel-matlab?xg_source=facebook&quot;},{&quot;type&quot;:&quot;image&quot;,&quot;src&quot;:&quot;http:\/\/storage.ning.com\/topology\/rest\/1.0\/file\/get\/1994935?profile=original&quot;,&quot;href&quot;:&quot;https:\/\/www.datasciencecentral.com\/profiles\/blogs\/visualizations-comparing-tableau-spss-r-excel-matlab?xg_source=facebook&quot;},{&quot;type&quot;:&quot;image&quot;,&quot;src&quot;:&quot;http:\/\/storage.ning.com\/topology\/rest\/1.0\/file\/get\/1994954?profile=original&quot;,&quot;href&quot;:&quot;https:\/\/www.datasciencecentral.com\/profiles\/blogs\/visualizations-comparing-tableau-spss-r-excel-matlab?xg_source=facebook&quot;},{&quot;type&quot;:&quot;image&quot;,&quot;src&quot;:&quot;http:\/\/storage.ning.com\/topology\/rest\/1.0\/file\/get\/1994983?profile=original&quot;,&quot;href&quot;:&quot;https:\/\/www.datasciencecentral.com\/profiles\/blogs\/visualizations-comparing-tableau-spss-r-excel-matlab?xg_source=facebook&quot;},{&quot;type&quot;:&quot;image&quot;,&quot;src&quot;:&quot;http:\/\/storage.ning.com\/topology\/rest\/1.0\/file\/get\/1995007?profile=original&quot;,&quot;href&quot;:&quot;https:\/\/www.datasciencecentral.com\/profiles\/blogs\/visualizations-comparing-tableau-spss-r-excel-matlab?xg_source=facebook&quot;},{&quot;type&quot;:&quot;image&quot;,&quot;src&quot;:&quot;http:\/\/storage.ning.com\/topology\/rest\/1.0\/file\/get\/1995038?profile=original&quot;,&quot;href&quot;:&quot;https:\/\/www.datasciencecentral.com\/profiles\/blogs\/visualizations-comparing-tableau-spss-r-excel-matlab?xg_source=facebook&quot;},{&quot;type&quot;:&quot;image&quot;,&quot;src&quot;:&quot;http:\/\/storage.ning.com\/topology\/rest\/1.0\/file\/get\/1995065?profile=original&quot;,&quot;href&quot;:&quot;https:\/\/www.datasciencecentral.com\/profiles\/blogs\/visualizations-comparing-tableau-spss-r-excel-matlab?xg_source=facebook&quot;},{&quot;type&quot;:&quot;image&quot;,&quot;src&quot;:&quot;http:\/\/storage.ning.com\/topology\/rest\/1.0\/file\/get\/1995094?profile=original&quot;,&quot;href&quot;:&quot;https:\/\/www.datasciencecentral.com\/profiles\/blogs\/visualizations-comparing-tableau-spss-r-excel-matlab?xg_source=facebook&quot;},{&quot;type&quot;:&quot;image&quot;,&quot;src&quot;:&quot;http:\/\/storage.ning.com\/topology\/rest\/1.0\/file\/get\/1995192?profile=original&quot;,&quot;href&quot;:&quot;https:\/\/www.datasciencecentral.com\/profiles\/blogs\/visualizations-comparing-tableau-spss-r-excel-matlab?xg_source=facebook&quot;},{&quot;type&quot;:&quot;image&quot;,&quot;src&quot;:&quot;http:\/\/storage.ning.com\/topology\/rest\/1.0\/file\/get\/1995230?profile=original&quot;,&quot;href&quot;:&quot;https:\/\/www.datasciencecentral.com\/profiles\/blogs\/visualizations-comparing-tableau-spss-r-excel-matlab?xg_source=facebook&quot;},{&quot;type&quot;:&quot;image&quot;,&quot;src&quot;:&quot;http:\/\/storage.ning.com\/topology\/rest\/1.0\/file\/get\/1995263?profile=original&quot;,&quot;href&quot;:&quot;https:\/\/www.datasciencecentral.com\/profiles\/blogs\/visualizations-comparing-tableau-spss-r-excel-matlab?xg_source=facebook&quot;},{&quot;type&quot;:&quot;image&quot;,&quot;src&quot;:&quot;http:\/\/storage.ning.com\/topology\/rest\/1.0\/file\/get\/1995289?profile=original&quot;,&quot;href&quot;:&quot;https:\/\/www.datasciencecentral.com\/profiles\/blogs\/visualizations-comparing-tableau-spss-r-excel-matlab?xg_source=facebook&quot;}],&quot;actionLink&quot;:{&quot;text&quot;:&quot;Full Post&quot;,&quot;href&quot;:&quot;https:\/\/www.datasciencecentral.com\/profiles\/blogs\/visualizations-comparing-tableau-spss-r-excel-matlab?xg_source=facebook&quot;},&quot;description&quot;:&quot;Here we ask you to identify which tool was used to produce the following 18 charts: 4 were done with R, 3 with SPSS, 5 with Excel, 2 with Tableau, 1 with Matlab, 1 with Python, 1 with SAS, and 1 with JavaScript. The solution, including for each chart a link to the webpage where it is explained in detail (many times with source code included)\u00a0can be found here. You need to be a DSC member to access the page with the solution:\u00a0you can sign-up here.\nHow do you score? Would this be a good job interview question?\nChart 1\n\nChart 2\n\nChart 3\n\nChart 4\n\nChart 5\n\nChart 6\n\nChart 7\n\nChart 8\n\nChart 9\n\nChart 10\n\nChart 11\n\nChart 12\n\nChart 13\n\nChart 14\n\nChart 15\n\nChart 16\n\nChart 17\n\nChart 18\n\n\nDSC Resources\n\nCareer:\u00a0Training\u00a0|\u00a0Books\u00a0|\u00a0Cheat Sheet\u00a0|\u00a0Apprenticeship\u00a0|\u00a0Certification\u00a0|\u00a0Salary Surveys\u00a0|\u00a0Jobs\nKnowledge:\u00a0Research\u00a0|\u00a0Competitions\u00a0|\u00a0Webinars\u00a0|\u00a0Our Book\u00a0|\u00a0Members Only\u00a0|\u00a0Search DSC\nBuzz:\u00a0Business News\u00a0|\u00a0Announcements\u00a0|\u00a0Events\u00a0|\u00a0RSS Feeds\nMisc:\u00a0Top Links\u00a0|\u00a0Code Snippets\u00a0|\u00a0External Resources\u00a0|\u00a0Best Blogs\u00a0|\u00a0Subscribe\u00a0|\u00a0For Bloggers\n\nAdditional Reading\n\n50 Articles about Hadoop and Related Topics\n10 Modern Statistical Concepts Discovered by Data Scientists\nTop data science keywords on DSC\n4 easy steps to becoming a data scientist\n13 New Trends in Big Data and Data Science\n22 tips for better data science\nData Science Compared to 16 Analytic Disciplines\nHow to detect spurious correlations, and how to find the real ones\n17 short tutorials all data scientists should read (and practice)\n10 types of data scientists\n66 job interview questions for data scientists\nHigh versus low-level data science\n\nFollow us on Twitter:\u00a0@DataScienceCtrl\u00a0|\u00a0@AnalyticBridge&quot;,&quot;log&quot;:{&quot;module&quot;:&quot;profiles&quot;,&quot;page&quot;:&quot;blog&quot;,&quot;action&quot;:&quot;show&quot;},&quot;private&quot;:false,&quot;user&quot;:null,&quot;contentId&quot;:null,&quot;display&quot;:false,&quot;userMessage&quot;:&quot;&quot;,&quot;pageId&quot;:null,&quot;text&quot;:&quot;Facebook&quot;}">Facebook</a>
+</p><div class="likebox">
+<div class="facebook-like" data-content-type="BlogPost" data-content-id="6448529:BlogPost:311168" data-page-type="detail">
+<fb:like href="https://www.datasciencecentral.com/xn/detail/6448529:BlogPost:311168" layout="button_count" show_faces="false" width="450"></fb:like>
+</div>
+</div>
+<p></p> </div>
+<ul class="pagination smallpagination">
+<li class="left"><a href="https://www.datasciencecentral.com/profiles/blogs/enterprise-ai-landscape-infographic" title="Enterprise AI Landscape - Infographic">&lt; Previous Post</a></li> </ul>
+</div>
+</div>
+<div class="xg_module">
+<div class="xg_module_body">
+<p id="add-comment">Comment</p>
+<div class="comment-join">
+<h3>You need to be a member of Data Science Central to add comments!</h3>
+<p><a href="https://www.datasciencecentral.com/main/authorization/signUp?target=https%3A%2F%2Fwww.datasciencecentral.com%2Fprofiles%2Fblogs%2Fvisualizations-comparing-tableau-spss-r-excel-matlab">Join Data Science Central</a></p>
+</div>
+</div>
+<div class="xg_module_body" id="comments" _numcomments="8" _scrollto="">
+<dl _id="6448529:Comment:825838" id="c_977" class="comment vcard xg_lightborder">
+<dt>
+<a name="first_comment"></a><a name="comment-6448529_Comment_825838" id="comment-6448529_Comment_825838"></a>
+<span class="xg_avatar"><a class="fn url" href="https://www.datasciencecentral.com/profile/CarlHollins" title="Carl Hollins"><span class="table_img dy-avatar dy-avatar-48 "><img class="photo photo" src="./HTM005_C01_S01_comparingVisTools_files/1660270194.png" alt=""></span></a></span> Comment by <a href="https://www.datasciencecentral.com/profile/CarlHollins" class="fn url">Carl Hollins</a> on May 16, 2019 at 1:22pm </dt>
+<dd>
+<div class="xg_user_generated"><p>You asked if this would be a good interview question. My question for you is what would the afternoon answer prove? An answer would show that one can differentiate color and styling among the many choices of visualisation.&nbsp;</p>
+<p>Is it of prime importance to know how the look of Bokeh, plotly, ggplot,&nbsp; matplotlib , Tableau &amp;&nbsp; Excel differ? As for an interview question I would prefer to hear: How can we improve the message being delivered? Or what are the strengths of these "initial" visualisations?&nbsp;</p>
+<p></p></div> </dd>
+</dl>
+<dl _id="6448529:Comment:723503" id="c_1fb" class="comment vcard xg_lightborder">
+<dt>
+<a name="comment-6448529_Comment_723503" id="comment-6448529_Comment_723503"></a>
+<span class="xg_avatar"><a class="fn url" href="https://www.datasciencecentral.com/profile/MaryLCottingham" title="Mary L Cottingham"><span class="table_img dy-avatar dy-avatar-48 "><img class="photo photo" src="./HTM005_C01_S01_comparingVisTools_files/Yahoo_Avata.png" alt=""></span></a></span> Comment by <a href="https://www.datasciencecentral.com/profile/MaryLCottingham" class="fn url">Mary L Cottingham</a> on May 21, 2018 at 7:23am </dt>
+<dd>
+<div class="xg_user_generated"><p>Based on the title of the article, I was actually expecting to the same data set cut with the various tools and a discussion of the merits/detriments of them&nbsp;(which I was VERY&nbsp;interested in reading)&nbsp;&nbsp;rather than a graphics pop quiz.&nbsp; That said,&nbsp;there are 2 apps&nbsp;I would add to this gallery: Microsoft Power BI and Esri Insights for ArcGIS.</p>
+<p>I think it is a bad interview question.&nbsp;It tells me nothing about the candidate's skill using any of them.</p></div> </dd>
+</dl>
+<dl _id="6448529:Comment:713026" id="c_2e9" class="comment vcard xg_lightborder">
+<dt>
+<a name="comment-6448529_Comment_713026" id="comment-6448529_Comment_713026"></a>
+<span class="xg_avatar"><a class="fn url" href="https://www.datasciencecentral.com/profile/MattSandy" title="Matt Sandy"><span class="table_img dy-avatar dy-avatar-48 "><img class="photo photo" src="./HTM005_C01_S01_comparingVisTools_files/1284480951.jpeg" alt=""></span></a></span> Comment by <a href="https://www.datasciencecentral.com/profile/MattSandy" class="fn url">Matt Sandy</a> on April 15, 2018 at 5:12pm </dt>
+<dd>
+<div class="xg_user_generated"><p>I pretty much stick to R + JS for reproducibility, and Tableau for one-offs. It would certainly be a weird, unhelpful question if the prospect has no interest in other languages and can get the same results in their language(s) of choice.&nbsp;</p></div> </dd>
+</dl>
+<dl _id="6448529:Comment:650723" id="c_454" class="comment vcard xg_lightborder">
+<dt>
+<a name="comment-6448529_Comment_650723" id="comment-6448529_Comment_650723"></a>
+<span class="xg_avatar"><a class="fn url" href="https://www.datasciencecentral.com/profile/JamesDavidHolland" title="James David Holland"><span class="table_img dy-avatar dy-avatar-48 "><img class="photo photo" src="./HTM005_C01_S01_comparingVisTools_files/genericavat.png" alt=""></span></a></span> Comment by <a href="https://www.datasciencecentral.com/profile/JamesDavidHolland" class="fn url">James David Holland</a> on November 17, 2017 at 10:49am </dt>
+ <dd>
+<div class="xg_user_generated"><p>Fun post and neat quiz - but I don't see any value of it as an interview question.&nbsp;&nbsp;</p></div> </dd>
+</dl>
+<dl _id="6448529:Comment:500823" id="c_e1e" class="comment vcard xg_lightborder">
+<dt>
+<a name="comment-6448529_Comment_500823" id="comment-6448529_Comment_500823"></a>
+<span class="xg_avatar"><a class="fn url" href="https://www.datasciencecentral.com/profile/MichelleHomes" title="Michelle Homes"><span class="table_img dy-avatar dy-avatar-48 "><img class="photo photo" src="./HTM005_C01_S01_comparingVisTools_files/1247466164.jpeg" alt=""></span></a></span> Comment by <a href="https://www.datasciencecentral.com/profile/MichelleHomes" class="fn url">Michelle Homes</a> on December 20, 2016 at 11:43am </dt>
+<dd>
+<div class="xg_user_generated"><p>And the very talented Robert Allison has reproduced all 18 graphs in SAS. Check them out and the associated code in his blog post <a rel="nofollow" href="http://blogs.sas.com/content/sastraining/2016/12/20/graphs-comparing-r-excel-tableau-spss-matlab-js-python-and-sas/" target="_blank">http://blogs.sas.com/content/sastraining/2016/12/20/graphs-comparin...</a></p></div> </dd>
+</dl>
+<dl _id="6448529:Comment:499115" id="c_dea" class="comment vcard xg_lightborder">
+<dt>
+<a name="comment-6448529_Comment_499115" id="comment-6448529_Comment_499115"></a>
+<span class="xg_avatar"><a class="fn url" href="https://www.datasciencecentral.com/profile/JarrellDunson" title="Jarrell Dunson"><span class="table_img dy-avatar dy-avatar-48 "><img class="photo photo" src="./HTM005_C01_S01_comparingVisTools_files/genericavat.png" alt=""></span></a></span> Comment by <a href="https://www.datasciencecentral.com/profile/JarrellDunson" class="fn url">Jarrell Dunson</a> on December 16, 2016 at 3:52am </dt>
+<dd>
+<div class="xg_user_generated"><p>According to the 2016 Gartner BI report, Qlik and Microsoft BI are two of the top three visualization tools(the third is Tableau)...in your next report, can you consider included these also?.. &nbsp;I use Qlik ...and it has a lot of capability...</p></div> </dd>
+</dl>
+<dl _id="6448529:Comment:383834" id="c_15a" class="comment vcard xg_lightborder">
+<dt>
+<a name="comment-6448529_Comment_383834" id="comment-6448529_Comment_383834"></a>
+<span class="xg_avatar"><a class="fn url" href="https://www.datasciencecentral.com/profile/MaxGalka" title="Max Galka"><span class="table_img dy-avatar dy-avatar-48 "><img class="photo photo" src="./HTM005_C01_S01_comparingVisTools_files/1128392818.jpeg" alt=""></span></a></span> Comment by <a href="https://www.datasciencecentral.com/profile/MaxGalka" class="fn url">Max Galka</a> on February 6, 2016 at 12:35pm </dt>
+<dd>
+<div class="xg_user_generated"><p>Great post. Most surprising, and in my opinion most valuable to know, is #12,</p></div> </dd>
+</dl>
+<dl _id="6448529:Comment:311900" id="c_bcd" class="comment vcard xg_lightborder last-child">
+<dt>
+<a name="last_comment"></a><a name="comment-6448529_Comment_311900" id="comment-6448529_Comment_311900"></a>
+<span class="xg_avatar"><a class="fn url" href="https://www.datasciencecentral.com/profile/MuhammadJaved404" title="Muhammad Javed"><span class="table_img dy-avatar dy-avatar-48 "><img class="photo photo" src="./HTM005_C01_S01_comparingVisTools_files/1097253211.jpeg" alt=""></span></a></span> Comment by <a href="https://www.datasciencecentral.com/profile/MuhammadJaved404" class="fn url">Muhammad Javed</a> on August 18, 2015 at 4:47am </dt>
+<dd>
+<div class="xg_user_generated"><p>awsome visualization, &nbsp;I found <a rel="nofollow" href="http://www.chartexpo.com/" target="_blank">www.chartexpo.com</a> as promising javascript chart library. You can take look</p>
+<p></p></div> </dd>
+</dl>
+</div>
+<div class="xg_module_foot" id="xj_comments_footer">
+<p class="left">
+<a class="xg_icon xg_icon-rss" href="https://www.datasciencecentral.com/profiles/comment/feed?attachedTo=6448529%3ABlogPost%3A311168&amp;xn_auth=no">RSS</a>
+</p>
+</div>
+</div>
+<input type="hidden" id="incrementViewCountEndpoint" value="https://www.datasciencecentral.com/profiles/blog/incrementViewCount?id=6448529%3ABlogPost%3A311168&amp;xn_out=json">
+</div>
+</div>
+<div class="xg_column xg_span-5 xg_last" id="column2">
+<div class="xj_user_info"> <div class="xg_module" id="xg_module_account">
+<div class="xg_module_body xg_signup xg_lightborder">
+<p>Welcome to<br>Data Science Central</p>
+<p class="last-child"><big><strong><a href="https://www.datasciencecentral.com/main/authorization/signUp?target=https%3A%2F%2Fwww.datasciencecentral.com%2Fprofiles%2Fblogs%2Fvisualizations-comparing-tableau-spss-r-excel-matlab">Sign Up</a></strong></big><br>or <a href="https://www.datasciencecentral.com/main/authorization/signIn?target=https%3A%2F%2Fwww.datasciencecentral.com%2Fprofiles%2Fblogs%2Fvisualizations-comparing-tableau-spss-r-excel-matlab" style="white-space:nowrap">Sign In</a></p>
+<div class="xg_external_signup xg_lightborder xj_signup">
+<p class="dy-small">Or sign in with:</p>
+<ul class="providers">
+<li>
+<a onclick="xg.index.authorization.social.openAuthWindow(
+                    &#39;https://auth.ning.com/socialAuth/facebook?edfm=qiNdZkucNDyCv8Emb%2FHow8WJF7dcMEgUcqA%2FE9q1DEm9bz3fXUM2HocbmTJa5cGcCEmYUJGf07I9cTF08pJGpLU8i1ZV8mebaXHSea0ioBDrJGGWn5zgwbVjLMTRBg0jKwkn4x%2FDTIPd7ash97j3p%2F2UO1YjuOyryFrdXuh91tc%3D&amp;callback=https%3A%2F%2Fwww.datasciencecentral.com%2Fmain%2Fauthorization%2FprocessExternalAuth%3Ftarget%3Dhttps%253A%252F%252Fwww.datasciencecentral.com%252Fprofiles%252Fblogs%252Fvisualizations-comparing-tableau-spss-r-excel-matlab%26source%3DsignUp%26provider%3Dfacebook%26close%3D1&#39;
+                    ); return false;" href="https://auth.ning.com/socialAuth/facebook?edfm=Kk8SZr7jYpRpj%2BVcNTb0dL0dd%2Flh3tS7n7cvyIBkc3XfSnHCu51CTCrcTfeRscuM%2BWtl8h2NUzRw1OhItqgZAEd6xbtHIs8jSTAnAXHMzQfrPa%2Bf8JekTOuFxTMqAxUDjwXLp82G%2F9OlNOYX9gxIsZdPRJNeRq4xxTUG0n70B64%3D&amp;callback=https%3A%2F%2Fwww.datasciencecentral.com%2Fmain%2Fauthorization%2FprocessExternalAuth%3Ftarget%3Dhttps%253A%252F%252Fwww.datasciencecentral.com%252Fprofiles%252Fblogs%252Fvisualizations-comparing-tableau-spss-r-excel-matlab%26source%3DsignUp%26provider%3Dfacebook">
+<span class="mini-service mini-service-facebook" title="Facebook"></span>
+</a>
+</li>
+<li>
+<a onclick="xg.index.authorization.social.openAuthWindow(
+                    &#39;https://auth.ning.com/socialAuth/twitter?edfm=FaCun%2FWLQY9ApFoDIppB%2BzVMdv748178BH4OtU3p3wzYyWOsTS4c%2BxMNIFJ7ZS6FMmnMOPtXvAdDioe20wPL47azf9cGfCVKcSYk4wfwxnXrRkecXJHcxEOIjXxMJv04FptOXAN97DcVVbIevsr4v8pEo3O1eWiyWuAiSwe%2BEgutdxEox04LhhJYw3qqI89I&amp;callback=https%3A%2F%2Fwww.datasciencecentral.com%2Fmain%2Fauthorization%2FprocessExternalAuth%3Ftarget%3Dhttps%253A%252F%252Fwww.datasciencecentral.com%252Fprofiles%252Fblogs%252Fvisualizations-comparing-tableau-spss-r-excel-matlab%26source%3DsignUp%26provider%3Dtwitter%26close%3D1&#39;
+                ); return false;" href="https://auth.ning.com/socialAuth/twitter?edfm=X9BjYqUTTz5Ua9u%2BAUvXpGQgjZeYnyTQXTieEobdLIGQ3qyybh5x2yhKYZ1fJD6CHwiUVwBL8boFFc9GvAyipZbVw1OOz62yM%2Bb7UR6poA6DGhzoDLC5x9Jq8mwJv2ejebHOR4rkfr32SpTCCGuu8lESNwekFH0Cj%2F7qYyq72YO%2Fo5FaIBRhaDVy9bmAQDW3&amp;callback=https%3A%2F%2Fwww.datasciencecentral.com%2Fmain%2Fauthorization%2FprocessExternalAuth%3Ftarget%3Dhttps%253A%252F%252Fwww.datasciencecentral.com%252Fprofiles%252Fblogs%252Fvisualizations-comparing-tableau-spss-r-excel-matlab%26source%3DsignUp%26provider%3Dtwitter">
+<span class="mini-service mini-service-twitter" title="Twitter"></span>
+</a>
+</li>
+<li>
+<a onclick="xg.index.authorization.social.openAuthWindow(
+                    &#39;https://auth.ning.com/socialAuth/google?edfm=ySHuJQtNdWpW6SjGqYJrpTdbyqD4Y22fkXikyXUSF2NTWCulZ7WvoMZ2r2L4XkgJLCY%2FEYAbCceldcS88cEjI7BWdKmkxl25S1db3GskgQIamKR2JW9yRssyf1HG6%2Bma5kqfZ67ebD8e6k%2FtiZ5SSWsjwKYSjMhuXRfNkoYwpsLaLKJ59cupTOM19c97slXIF5jP%2FT0J%2FIDP73Tu6PKnTKSNON3yVUgC3md%2FGmCE2ec%3D&amp;callback=https%3A%2F%2Fwww.datasciencecentral.com%2Fmain%2Fauthorization%2FprocessExternalAuth%3Ftarget%3Dhttps%253A%252F%252Fwww.datasciencecentral.com%252Fprofiles%252Fblogs%252Fvisualizations-comparing-tableau-spss-r-excel-matlab%26source%3DsignUp%26provider%3Dgoogle%26close%3D1&#39;
+                ); return false;" href="https://auth.ning.com/socialAuth/google?edfm=90v%2BUuou7oeH2jdIhctsxnrnje03QSEmWEYrSwyDibw3Rzkyxo5RVeOQjemrLU%2FPoKQqyJPfPWcYkudp8ycSJdHyCBxrbLqaWXMMr1SPUbe2gmOoyD7wlna3qLeQoZxyBvOm3gMoQLax4zSuWRSSSO%2Fhaanf5B4YPcOb46AYVvDuF26TLbAyQCOFIjp6BiGlRHI7TplJVlUKISmR5RY6%2FuCjsSaaID0mBjX%2BqC8BZbg%3D&amp;callback=https%3A%2F%2Fwww.datasciencecentral.com%2Fmain%2Fauthorization%2FprocessExternalAuth%3Ftarget%3Dhttps%253A%252F%252Fwww.datasciencecentral.com%252Fprofiles%252Fblogs%252Fvisualizations-comparing-tableau-spss-r-excel-matlab%26source%3DsignUp%26provider%3Dgoogle">
+<span class="mini-service mini-service-google" title="Google"></span>
+</a>
+</li>
+<li>
+<a onclick="xg.index.authorization.social.openAuthWindow(
+                    &#39;https://auth.ning.com/socialAuth/yahoo?edfm=jPCNxSds1gJhiYv2MqHNa237qAAh79m%2Fdn5PM59C4HjqyEgpcX620Nbk3tLHfHvz8I5Gf263oN5i%2By6lKf6IWw%3D%3D&amp;callback=https%3A%2F%2Fwww.datasciencecentral.com%2Fmain%2Fauthorization%2FprocessExternalAuth%3Ftarget%3Dhttps%253A%252F%252Fwww.datasciencecentral.com%252Fprofiles%252Fblogs%252Fvisualizations-comparing-tableau-spss-r-excel-matlab%26source%3DsignUp%26provider%3Dyahoo%26close%3D1&#39;
+                ); return false;" href="https://auth.ning.com/socialAuth/yahoo?edfm=ZSmz%2BTBo%2Bd19y%2B30RBO8%2BndC4p3Kh5KlwZT%2F%2FPqHOZmwhxY%2F775bLYWFfQtyQ9%2FD%2B8Rg6QwrwwoDjhCGfZNCZQ%3D%3D&amp;callback=https%3A%2F%2Fwww.datasciencecentral.com%2Fmain%2Fauthorization%2FprocessExternalAuth%3Ftarget%3Dhttps%253A%252F%252Fwww.datasciencecentral.com%252Fprofiles%252Fblogs%252Fvisualizations-comparing-tableau-spss-r-excel-matlab%26source%3DsignUp%26provider%3Dyahoo">
+<span class="mini-service mini-service-yahoo" title="Yahoo!"></span>
+</a>
+</li>
+<li>
+<a onclick="xg.index.authorization.social.openAuthWindow(
+                    &#39;https://auth.ning.com/socialAuth/linkedin?edfm=0kxz176BSfha2yJYeZjLgt9cFsf5NkKJLwF3uTvDxzjZO%2FHMDTAU3UEkNHg4JWxocHym5%2FUhxLnxQZbY5MFlvRMjJsoFsofS58RJkvS97kscCY3ySADgx90dAyoyLdDFB8kiVZyWrRtkItq246DZpA%3D%3D&amp;callback=https%3A%2F%2Fwww.datasciencecentral.com%2Fmain%2Fauthorization%2FprocessExternalAuth%3Ftarget%3Dhttps%253A%252F%252Fwww.datasciencecentral.com%252Fprofiles%252Fblogs%252Fvisualizations-comparing-tableau-spss-r-excel-matlab%26source%3DsignUp%26provider%3Dlinkedin%26close%3D1&#39;
+                ); return false;" href="https://auth.ning.com/socialAuth/linkedin?edfm=RD6HwddeDd0tpONPJxdgMQO9aULTe7gqBglbtndDdQoJFkN9AEMjkNpSWby6QBqBUIZCxte0jUjgmh8mvLiiTWoq0l%2F1CFn%2FF5UeChe72Cal%2Fm7nX5uioVyvFqaFvGIjcbKUdzhb4zY45rN44Y19Dw%3D%3D&amp;callback=https%3A%2F%2Fwww.datasciencecentral.com%2Fmain%2Fauthorization%2FprocessExternalAuth%3Ftarget%3Dhttps%253A%252F%252Fwww.datasciencecentral.com%252Fprofiles%252Fblogs%252Fvisualizations-comparing-tableau-spss-r-excel-matlab%26source%3DsignUp%26provider%3Dlinkedin">
+<span class="mini-service mini-service-linkedin" title="LinkedIn"></span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="xj_sidebar_content"><div class="xg_module html_module module_text xg_reset" data-module_name="text">
+<div class="xg_module_body xg_user_generated">
+<center>
+<div id="div-gpt-ad-1512428902846-6" style="height:600px; width:160px;" data-google-query-id="CKib2I-cuOYCFcgGuQYdnFgCOw"><div id="google_ads_iframe_/2672641/Skyscraper_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/2672641/Skyscraper_0" title="3rd party ad content" name="google_ads_iframe_/2672641/Skyscraper_0" width="160" height="600" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" data-google-container-id="2" src="./HTM005_C01_S01_comparingVisTools_files/save(1).html"></iframe></div></div>
+</center>
+</div>
+</div>
+<div class="xg_module html_module module_text xg_reset" data-module_name="text">
+<div class="xg_module_head"><h2>Resources</h2></div>
+<div class="xg_module_body xg_user_generated">
+<ul>
+<li><a href="https://www.datasciencecentral.com/profiles/blogs/check-out-our-dsc-newsletter" target="_self">Subscribe to DSC Newsletter</a></li>
+<li><a href="https://www.datasciencecentral.com/profiles/blogs/new-books-and-resources-for-dsc-members">Free Books</a><br>
+<a href="https://www.datasciencecentral.com/forum"></a></li>
+<li><a href="https://www.datasciencecentral.com/forum">Forum Discussions</a><br>
+<a href="https://www.datasciencecentral.com/page/search?q=cheat+sheets"></a></li>
+<li><a href="https://www.datasciencecentral.com/page/search?q=cheat+sheets">Cheat Sheets</a><br>
+<a href="https://analytictalent.com/"></a></li>
+<li><a href="https://www.analytictalent.datasciencecentral.com/">Jobs</a></li>
+<li><a href="https://www.datasciencecentral.com/page/search?q=one+picture" target="_blank" rel="noopener">Search DSC</a></li>
+<li><a href="https://twitter.com/DataScienceCtrl" target="_self">DSC on Twitter</a></li>
+<li><a href="https://www.facebook.com/DataScienceCentralCommunity/" target="_blank" rel="noopener">DSC on Facebook</a></li>
+</ul>
+</div>
+</div>
+<div class="xg_module html_module module_text xg_reset" data-module_name="text">
+<div class="xg_module_body xg_user_generated">
+<center>
+<div id="div-gpt-ad-1512428902846-7" style="height:220px; width:220px;" data-google-query-id="CK6b1Y-cuOYCFSEGuQYd62UFOQ"><div id="google_ads_iframe_/2672641/Square_Box_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/2672641/Square_Box_0" title="3rd party ad content" name="google_ads_iframe_/2672641/Square_Box_0" width="220" height="220" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" data-google-container-id="3" data-load-complete="true" src="./HTM005_C01_S01_comparingVisTools_files/save(2).html"></iframe></div></div>
+</center>
+</div>
+</div>
+<div class="xg_module module_video" data-module_name="video">
+<div class="xg_module_head">
+<h2>Videos</h2>
+</div>
+<div class="xg_module_body body_large">
+<ul class="clist">
+<li>
+<div class="ib">
+<a href="https://www.datasciencecentral.com/video/dsc-webinar-series-ml-ai-models-continuous-integration-deployme-1">
+<img src="./HTM005_C01_S01_comparingVisTools_files/upload-stor.jpg" alt="DSC Webinar Series: ML/AI Models: Continuous Integration &amp; Deployment" width="136">
+</a>
+</div>
+<div class="tb">
+<h3><a href="https://www.datasciencecentral.com/video/dsc-webinar-series-ml-ai-models-continuous-integration-deployme-1">
+DSC Webinar Series: ML/AI Models: Continuous Integration &amp; Deployment </a></h3>
+<p class="xg_lightfont">
+Added by <a class="xg_lightfont" href="https://www.datasciencecentral.com/profile/2edcolrgc4o4b">Tim Matteson</a> <span class="reactions">
+<a href="https://www.datasciencecentral.com/video/dsc-webinar-series-ml-ai-models-continuous-integration-deployme-1#comments" data-page-type="detail" class="xg_sprite xg_sprite-comment">0 <span class="details">Comments</span></a>
+<a href="https://www.datasciencecentral.com/video/dsc-webinar-series-ml-ai-models-continuous-integration-deployme-1" data-content-id="6448529:Video:914196" data-content-type="Video" data-sign-up-url="https://www.datasciencecentral.com/main/authorization/signUp?target=https%3A%2F%2Fwww.datasciencecentral.com%2Fprofiles%2Fblogs%2Fvisualizations-comparing-tableau-spss-r-excel-matlab" data-page-type="detail" class="xg_sprite like-link-1 like-link">
+0 <span class="details">Likes</span>
+</a>
+</span>
+</p>
+</div>
+</li>
+</ul><ul class="clist"> <li>
+<div class="ib">
+<a href="https://www.datasciencecentral.com/video/dsc-webinar-series-edge-computing-with-real-time-analytics-at">
+<img src="./HTM005_C01_S01_comparingVisTools_files/uploa(1).jpg" alt="DSC Webinar Series: Edge Computing with Real-time Analytics at Scale" width="136">
+</a>
+</div>
+<div class="tb">
+<h3><a href="https://www.datasciencecentral.com/video/dsc-webinar-series-edge-computing-with-real-time-analytics-at">
+DSC Webinar Series: Edge Computing with Real-time Analytics at Scale </a></h3>
+<p class="xg_lightfont">
+Added by <a class="xg_lightfont" href="https://www.datasciencecentral.com/profile/2edcolrgc4o4b">Tim Matteson</a> <span class="reactions">
+<a href="https://www.datasciencecentral.com/video/dsc-webinar-series-edge-computing-with-real-time-analytics-at#comments" data-page-type="detail" class="xg_sprite xg_sprite-comment">0 <span class="details">Comments</span></a>
+<a href="https://www.datasciencecentral.com/video/dsc-webinar-series-edge-computing-with-real-time-analytics-at" data-content-id="6448529:Video:914389" data-content-type="Video" data-sign-up-url="https://www.datasciencecentral.com/main/authorization/signUp?target=https%3A%2F%2Fwww.datasciencecentral.com%2Fprofiles%2Fblogs%2Fvisualizations-comparing-tableau-spss-r-excel-matlab" data-page-type="detail" class="xg_sprite like-link-1 like-link">
+0 <span class="details">Likes</span>
+</a>
+</span>
+</p>
+</div>
+</li>
+</ul><ul class="clist"> <li>
+<div class="ib">
+<a href="https://www.datasciencecentral.com/video/dsc-webinar-series-how-bank-of-america-uses-data-prep-for-faster">
+<img src="./HTM005_C01_S01_comparingVisTools_files/uploa(2).jpg" alt="DSC Webinar Series: How Bank of America Uses Data Prep for Faster Reporting" width="136">
+</a>
+</div>
+<div class="tb">
+<h3><a href="https://www.datasciencecentral.com/video/dsc-webinar-series-how-bank-of-america-uses-data-prep-for-faster">
+DSC Webinar Series: How Bank of America Uses Data Prep for Faster Reporting </a></h3>
+<p class="xg_lightfont">
+Added by <a class="xg_lightfont" href="https://www.datasciencecentral.com/profile/2edcolrgc4o4b">Tim Matteson</a> <span class="reactions">
+<a href="https://www.datasciencecentral.com/video/dsc-webinar-series-how-bank-of-america-uses-data-prep-for-faster#comments" data-page-type="detail" class="xg_sprite xg_sprite-comment">0 <span class="details">Comments</span></a>
+<a href="https://www.datasciencecentral.com/video/dsc-webinar-series-how-bank-of-america-uses-data-prep-for-faster" data-content-id="6448529:Video:913900" data-content-type="Video" data-sign-up-url="https://www.datasciencecentral.com/main/authorization/signUp?target=https%3A%2F%2Fwww.datasciencecentral.com%2Fprofiles%2Fblogs%2Fvisualizations-comparing-tableau-spss-r-excel-matlab" data-page-type="detail" class="xg_sprite like-link-1 like-link">
+1 <span class="details">Like</span>
+</a>
+</span>
+</p>
+</div>
+</li>
+</ul><ul class="clist"> </ul>
+</div>
+<div class="xg_module_foot">
+<ul>
+<li class="left"><a class="xg_sprite xg_sprite-add" href="https://www.datasciencecentral.com/video/video/chooseUploader">Add Videos</a></li>
+<li class="right"><a href="https://www.datasciencecentral.com/video/video">View All</a></li>
+<li class="right video-facebook-share" style="display:none; margin-right:10px;"><a target="_blank" href="https://www.facebook.com/share.php?u=https%3A%2F%2Fwww.datasciencecentral.com%2Fvideo%2Fvideo%3Ffrom%3Dfb"><img src="./HTM005_C01_S01_comparingVisTools_files/facebook.gif" alt="Facebook"></a></li>
+<script>
+                        xg.addOnRequire(function () {
+                            x$('.module_video').mouseover(function () { x$(this).find('.video-facebook-share').show(); })
+                                    .mouseout(function () { x$(this).find('.video-facebook-share').hide(); });
+                        });
+                    </script>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="xg_foot">
+<div id="xg_footcontent">
+<div class="xj_foot_content"><p class="left">
+© 2019 &nbsp; Data Science Central&nbsp;® &nbsp;
+Powered by<a class="poweredBy-logo" href="https://www.ning.com/" title="" alt="" rel="dofollow">
+<img class="poweredbylogo" width="87" height="15" src="./HTM005_C01_S01_comparingVisTools_files/Ning_MM_foo.png" title="Ning Website Builder" alt="Website builder | Create website | Ning.com">
+</a> </p>
+<p class="right xg_lightfont">
+<a href="https://www.datasciencecentral.com/main/embeddable/list">Badges</a> &nbsp;|&nbsp;
+<a href="https://www.datasciencecentral.com/main/authorization/signUp?target=https%3A%2F%2Fwww.datasciencecentral.com%2Fmain%2Findex%2Freport" dojotype="PromptToJoinLink" _joinprompttext="Please sign up or sign in to complete this step." _hassignup="true" _signinurl="https://www.datasciencecentral.com/main/authorization/signIn?target=https%3A%2F%2Fwww.datasciencecentral.com%2Fmain%2Findex%2Freport">Report an Issue</a> &nbsp;|&nbsp;
+<a href="https://www.datasciencecentral.com/main/authorization/privacyPolicy?previousUrl=https%3A%2F%2Fwww.datasciencecentral.com%2Fprofiles%2Fblogs%2Fvisualizations-comparing-tableau-spss-r-excel-matlab">Privacy Policy</a> &nbsp;|&nbsp;
+<a href="https://www.datasciencecentral.com/main/authorization/termsOfService?previousUrl=https%3A%2F%2Fwww.datasciencecentral.com%2Fprofiles%2Fblogs%2Fvisualizations-comparing-tableau-spss-r-excel-matlab">Terms of Service</a>
+</p>
+</div>
+</div>
+</div>
+<div id="xg_ad_below_footer" class="xg_ad xj_ad_below_footer">
+<div class="xg_module module-plain  html_module module_text xg_reset" data-module_name="text">
+<div class="xg_module_body xg_user_generated">
+<center>
+<div id="div-gpt-ad-1512428902846-0" style="height:90px; width:728px;" data-google-query-id="CPCq2I-cuOYCFSQFuQYdn5sBPQ"><div id="google_ads_iframe_/2672641/Bottom_Leaderboard_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/2672641/Bottom_Leaderboard_0" title="3rd party ad content" name="google_ads_iframe_/2672641/Bottom_Leaderboard_0" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" data-google-container-id="4" src="./HTM005_C01_S01_comparingVisTools_files/save(3).html"></iframe></div></div>
+<br></center>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="xj_after_content"><div id="xj_baz17246" class="xg_theme"></div>
+<div id="xg_overlay" style="display: none; top: 56px;" data-cfapps-welcome-bar-adjusted-fixed-element-original-top="0">
+<!--[if lte IE 6.5]><iframe></iframe><![endif]-->
+</div>
+<!--googleoff: all--><noscript>
+	<style type="text/css" media="screen">
+        #xg { position:relative;top:120px; }
+        #xn_bar { top:120px; }
+	</style>
+	<div class="errordesc noscript">
+		<div>
+            <h3><strong>Hello, you need to enable JavaScript to use Data Science Central.</strong></h3>
+            <p>Please check your browser settings or contact your system administrator.</p>
+			<img src="/xn_resources/widgets/index/gfx/jstrk_off.gif" alt="" height="1" width="1" />
+		</div>
+	</div>
+</noscript><!--googleon: all-->
+<script type="text/javascript" src="./HTM005_C01_S01_comparingVisTools_files/core.m.download"></script> <script>
+            var sources = ["https:\/\/static.ning.com\/socialnetworkmain\/widgets\/lib\/js\/jquery\/jquery.ui.widget.js?xn_version=201912110541","https:\/\/static.ning.com\/socialnetworkmain\/widgets\/lib\/js\/jquery\/jquery.iframe-transport.js?xn_version=201912110541","https:\/\/static.ning.com\/socialnetworkmain\/widgets\/lib\/js\/jquery\/jquery.fileupload.js?xn_version=201912110541","https:\/\/storage.ning.com\/topology\/rest\/1.0\/file\/get\/3720015022?profile=original&r=1574169797","https:\/\/storage.ning.com\/topology\/rest\/1.0\/file\/get\/3672515027?profile=original&r=1571662548","https:\/\/storage.ning.com\/topology\/rest\/1.0\/file\/get\/3672515949?profile=original&r=1571661348"];
+            var numSources = sources.length;
+                        var heads = document.getElementsByTagName('head');
+            var node = heads.length > 0 ? heads[0] : document.body;
+            var onloadFunctionsObj = {};
+
+            var createScriptTagFunc = function(source) {
+                var script = document.createElement('script');
+                
+                script.type = 'text/javascript';
+                                var currentOnLoad = function() {xg._loader.onLoad(source);};
+                if (script.readyState) { //for IE (including IE9)
+                    script.onreadystatechange = function() {
+                        if (script.readyState == 'complete' || script.readyState == 'loaded') {
+                            script.onreadystatechange = null;
+                            currentOnLoad();
+                        }
+                    }
+                } else {
+                   script.onerror = script.onload = currentOnLoad;
+                }
+
+                script.src = source;
+                node.appendChild(script);
+            };
+
+            for (var i = 0; i < numSources; i++) {
+                                xg._loader.loading(sources[i]);
+                createScriptTagFunc(sources[i]);
+            }
+        </script>
+<script type="text/javascript">
+if (!ning._) {ning._ = {}}
+ning._.compat = { encryptedToken: "<empty>" }
+ning._.CurrentServerTime = "2019-12-15T17:52:23+00:00";
+ning._.probableScreenName = "";
+ning._.domains = {
+    base: 'ning.com',
+    ports: { http: '80', ssl: '443' }
+};
+ning.loader.version = '201912110541'; // DEP-191211_1:0 33
+djConfig.parseWidgets = false;
+</script>
+<script type="text/javascript">
+        xg.token = '';
+xg.canTweet = false;
+xg.cdnHost = 'static.ning.com';
+xg.version = '201912110541';
+xg.useMultiCdn = true;
+xg.staticRoot = 'socialnetworkmain';
+xg.xnTrackHost = null;
+    xg.cdnDefaultPolicyHost = 'static';
+    xg.cdnPolicy = [];
+xg.global = xg.global || {};
+xg.global.currentMozzle = 'profiles';
+xg.global.userCanInvite = false;
+xg.global.requestBase = '';
+xg.global.locale = 'en_US';
+xg.num_thousand_sep = ",";
+xg.num_decimal_sep = ".";
+(function() {
+    dojo.addOnLoad(function() {
+        if(window.bzplcm) { window.bzplcm.ts('hr'); window.bzplcm._profileSend(); }
+            });
+            ning.loader.require('xg.profiles.blog.show', 'xg.index.like.likeButton', 'xg.shared.PostToFacebookStreamLink', 'xg.index.facebookLike', 'xg.index.like.desktopLike', function() { xg._loader.onLoad('xnloader'); });
+    })();    </script>
+
+<script async="" src="./HTM005_C01_S01_comparingVisTools_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-27452860-1');
+</script>
+
+<script type="text/javascript">
+xg.addOnRequire(function() {
+    document.getElementById('xn_bar_menu_search').action = 'https://www.datasciencecentral.com/page/search';
+});
+
+</script>
+
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"QpAKm1aMp4Z352", domain:"datasciencecentral.com",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=QpAKm1aMp4Z352" style="display:none" height="1" width="1" alt="" /></noscript>
+
+
+<link href="./HTM005_C01_S01_comparingVisTools_files/style020170.css" rel="stylesheet" type="text/css">
+<script src="./HTM005_C01_S01_comparingVisTools_files/script.download"></script>
+
+
+<script src="./HTM005_C01_S01_comparingVisTools_files/as.js.download"></script>
+
+
+<script src="https://cdn.datasciencecentral.com/js/script020171208141034-13-16.js"></script>
+
+
+<style>
+/* hr rounded red border */
+hr.red {
+    height: 1px;
+    color: #FF0000;
+    background-color: #FF0000;
+    border: none;
+}
+</style>
+<div id="tmp_insideblog" style="display:none;">
+<div class="dscAdAppear" zsrc="PGNlbnRlcj48YnIgLz48IS0tIC8yNjcyNjQxL0JveF9BZF9CbG9nIC0tPg0KPGRpdiBpZD0nZGl2LWdwdC1hZC0xNTEyNDI4OTAyODQ2LTInIHN0eWxlPSdoZWlnaHQ6MjUwcHg7IHdpZHRoOjMwMHB4Oyc+DQo8c2NyaXB0Pg0KZ29vZ2xldGFnLmNtZC5wdXNoKGZ1bmN0aW9uKCkgeyBnb29nbGV0YWcuZGlzcGxheSgnZGl2LWdwdC1hZC0xNTEyNDI4OTAyODQ2LTInKTsgfSk7DQo8L3NjcmlwdD4NCjwvZGl2PjxiciAvPg0KPC9jZW50ZXI+"></div>
+<hr class="red">
+<p><span style="font-size: 11pt;"><strong>Most Popular Content on DSC</strong></span></p>
+<p><span style="font-size: 11pt;">To not miss this type of content in the future,&nbsp;<a href="https://www.datasciencecentral.com/profiles/blogs/check-out-our-dsc-newsletter">subscribe</a>&nbsp;to our newsletter.</span></p>
+<ul>
+<li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/profiles/blogs/free-book-statistics-new-foundations-toolbox-and-machine-learning" target="_blank">Book: Statistics -- New Foundations, Toolbox, and Machine Learning Recipes</a></span></li>
+<li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/profiles/blogs/free-book-classification-and-regression-in-a-weekend" target="_blank">Book: Classification and Regression In a Weekend - With Python</a></span></li>
+<li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/profiles/blogs/fee-book-applied-stochastic-processes" target="_blank">Book: Applied Stochastic Processes</a></span></li>
+<li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/profiles/blogs/long-range-correlation-in-time-series-tutorial-and-case-study" target="_blank">Long-range Correlations in Time Series: Modeling, Testing, Case Study</a></span></li>
+<li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/profiles/blogs/how-to-automatically-determine-the-number-of-clusters-in-your-dat" target="_blank">How to Automatically Determine the Number of Clusters in your Data</a></span></li>
+<li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/profiles/blogs/new-data-science-cheat-sheet" target="_blank">New Machine Learning Cheat Sheet</a> | <a href="https://www.datasciencecentral.com/profiles/blogs/data-science-cheat-sheet" target="_blank">Old one</a></span></li>
+<li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/profiles/blogs/confidence-intervals-without-pain" target="_blank">Confidence Intervals Without Pain - With Resampling</a></span></li>
+<li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/profiles/blogs/advanced-machine-learning-with-basic-excel" target="_blank">Advanced Machine Learning with Basic Excel</a></span></li>
+<li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/profiles/blogs/decomposition-of-statistical-distributions-using-mixture-models-a" target="_blank">New Perspectives on Statistical Distributions and Deep Learning</a></span></li>
+<li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/profiles/blogs/fascinating-new-results-in-the-theory-of-randomness" target="_blank">Fascinating New Results in the Theory of Randomness</a></span></li>
+<li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/profiles/blogs/feature-selection-based-on-predictive-power" target="_blank">Fast Combinatorial Feature Selection</a></span></li>
+</ul>
+<p><span style="font-size: 11pt;"><strong>Other popular resources</strong></span></p>
+<ul>
+<li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/profiles/blogs/comprehensive-repository-of-data-science-and-ml-resources" target="_blank">Comprehensive Repository of Data Science and ML Resources</a>
+</span></li><li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/page/search?q=statistical+concepts" target="_blank">Statistical Concepts Explained in Simple English</a>
+</span></li><li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/page/search?q=in+one+pictures" target="_blank">Machine Learning Concepts Explained in One Picture</a>
+</span></li><li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/profiles/blogs/100-data-science-interview-questions-and-answers" target="_blank">100 Data Science Interview Questions and Answers</a>
+</span></li><li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/page/search?q=cheat+sheets" target="_blank">Cheat Sheets</a> |
+<a href="https://www.datasciencecentral.com/profiles/blogs/21-curated-blogs-about-deep-learning-and-data-science" target="_blank">Curated Articles</a> |
+<a href="https://www.datasciencecentral.com/page/search?q=Python" target="_blank">Search</a> |
+<a href="http://www.analytictalent.com/" target="_blank">Jobs</a> |
+<a href="https://www.datasciencecentral.com/page/search?q=courses" target="_blank">Courses</a></span></li>
+<li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/profiles/blog/new" target="_blank">Post a Blog</a> |
+<a href="https://www.datasciencecentral.com/forum/topic/new" target="_blank">Forum Questions</a> |
+<a href="https://www.datasciencecentral.com/page/search?q=books" target="_blank">Books</a> |
+<a href="https://www.datasciencecentral.com/page/search?q=salary" target="_blank">Salaries</a> |
+<a href="https://www.bigdatanews.datasciencecentral.com/group/bdn-daily-press-releases/forum" target="_blank">News</a>
+</span></li>
+</ul>
+<p><span style="font-size: 11pt;"><strong>Archives:</strong></span> <span style="font-size: 11pt;"><a href="https://www.analyticbridge.datasciencecentral.com/page/links" target="_blank">2008-2014</a> |
+<a href="https://www.datasciencecentral.com/group/resources/forum/topics/selection-of-best-articles-from-our-past-weekly-digests" target="_blank">2015-2016</a> |
+<a href="https://www.datasciencecentral.com/page/previous-digests" target="_blank">2017-2019</a> |
+<a href="https://www.analyticbridge.datasciencecentral.com/group/data-science/forum/topics/data-science-e-book-first-draft-available-for-download" target="_blank">Book 1</a> |
+<a href="https://www.datasciencecentral.com/profiles/blogs/my-data-science-book" target="_blank">Book 2</a> |
+<a href="https://www.datasciencecentral.com/profiles/blogs/older-data-science-articles-still-of-great-value-today" target="_blank">More</a>
+</span></p>
+<p><span style="font-size: 11pt;"><strong>Follow us</strong></span>:<span style="font-size: 11pt;"><span>&nbsp;</span><a href="https://twitter.com/DataScienceCtrl">Twitter</a><span>&nbsp;</span>|<span>&nbsp;</span><a href="https://www.facebook.com/DataScienceCentralCommunity/">Facebook</a></span></p>
+</div>
+<script type="text/javascript">
+if (typeof(x$) != 'undefined') {
+x$(".xg_widget_profiles_blog_show .xg_blog .postbody").after('<div id="insideblog"></div>');
+var t_insideblogCode = document.getElementById('tmp_insideblog');
+var insideblogCode = document.getElementById('insideblog');
+insideblogCode.innerHTML = t_insideblogCode.innerHTML;
+}
+</script>
+
+
+<div id="tmp_insideforum" style="display:none;">
+<div class="dscAdAppear" zsrc="PGNlbnRlcj48YnIgLz48IS0tIC8yNjcyNjQxL0JveF9BZF9Gb3J1bSAtLT4NCjxkaXYgaWQ9J2Rpdi1ncHQtYWQtMTUxMjQyODkwMjg0Ni0zJyBzdHlsZT0naGVpZ2h0OjI1MHB4OyB3aWR0aDozMDBweDsnPg0KPHNjcmlwdD4NCmdvb2dsZXRhZy5jbWQucHVzaChmdW5jdGlvbigpIHsgZ29vZ2xldGFnLmRpc3BsYXkoJ2Rpdi1ncHQtYWQtMTUxMjQyODkwMjg0Ni0zJyk7IH0pOw0KPC9zY3JpcHQ+DQo8L2Rpdj48YnIgLz4NCjwvY2VudGVyPg=="></div>
+<hr class="red">
+<p><span style="font-size: 12pt;"><strong>Most popular articles</strong></span></p><p>
+</p><ul>
+<li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/profiles/blogs/new-books-and-resources-for-dsc-members">Free Book and Resources for DSC Members</a></span></li>
+<li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/profiles/blogs/decomposition-of-statistical-distributions-using-mixture-models-a">New Perspectives on Statistical Distributions and Deep Learning</a></span></li>
+<li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/profiles/blogs/data-science-wizardry">Time series, Growth Modeling and Data Science Wizardy</a></span></li>
+<li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/page/search?q=statistical+concepts">Statistical Concepts Explained in Simple English</a></span></li>
+<li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/page/search?q=in+one+pictures">Machine Learning Concepts Explained in One Picture</a></span></li>
+<li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/profiles/blogs/comprehensive-repository-of-data-science-and-ml-resources">Comprehensive Repository of Data Science and ML Resources</a></span></li>
+<li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/profiles/blogs/advanced-machine-learning-with-basic-excel">Advanced Machine Learning with Basic Excel</a></span></li>
+<li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/profiles/blogs/difference-between-machine-learning-data-science-ai-deep-learning">Difference between ML, Data Science, AI, Deep Learning, and Statistics</a></span></li>
+<li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/profiles/blogs/my-data-science-machine-learning-and-related-articles">Selected Business Analytics, Data Science and ML articles</a></span></li>
+<li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/profiles/blogs/how-to-automatically-determine-the-number-of-clusters-in-your-dat">How to Automatically Determine the Number of Clusters in your Data</a></span></li>
+<li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/profiles/blogs/fascinating-new-results-in-the-theory-of-randomness">Fascinating New Results in the Theory of Randomness</a></span></li>
+<li><span style="font-size: 11pt;">
+<a href="http://careers.analytictalent.com/jobs/products">Hire a Data Scientist</a> |
+<a href="https://www.datasciencecentral.com/page/search?q=Python">Search DSC</a> |
+<a href="http://www.analytictalent.com/">Find a Job</a></span></li>
+<li><span style="font-size: 11pt;"><a href="https://www.datasciencecentral.com/profiles/blog/new">Post a Blog</a> |
+<a href="https://www.datasciencecentral.com/forum/topic/new">Forum Questions</a></span></li>
+</ul>
+</div>
+<script type="text/javascript">
+if (typeof(x$) != 'undefined') {
+x$(".xg_widget_forum_topic_show div.discussion div.description").after('<div id="insideforum"></div>');
+var t_insideforumCode = document.getElementById('tmp_insideforum');
+var insideforumCode = document.getElementById('insideforum');
+insideforumCode.innerHTML = t_insideforumCode.innerHTML;
+}
+</script>
+
+
+<link rel="stylesheet" type="text/css" href="./HTM005_C01_S01_comparingVisTools_files/cookieconse.css">
+<script src="./HTM005_C01_S01_comparingVisTools_files/cookie.download"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#000000"
+    },
+    "button": {
+      "background": "transparent",
+      "text": "#f1d600",
+      "border": "#f1d600"
+    }
+  },
+  "position": "top",
+  "target": "_blank",
+  "static": true,
+  "cookie.name": "cookieconsent_dsc",
+  "domain": "datasciencecentral.com",
+  "content": {
+  "dismiss": "OK, Got it!",
+    "message": "We use cookies to ensure that we give you the best possible experience. By continuing to browse the site you are agreeing to our use of cookies.",
+    "href": "https://www.datasciencecentral.com/page/cookie-policy"
+  }
+})});
+</script>
+<style>@media screen and (min-device-width : 385px) { .cc-window.cc-floating { max-width: none; flex-direction: row; } .cc-floating .cc-message { width: 100%; margin-bottom: 0px; } .cc-window.cc-floating .cc-compliance { margin-top: -5px; float: right; } .cc-link { padding-left: 0px; } .cc-window.cc-floating .cc-compliance { min-width: 100px; } .cc-bottom { bottom: 0; } }</style>
+
+
+<script>
+x$('li:contains("Block all emails from")').hide();
+</script>
+
+
+<script>
+x$(document).ready(function(){
+  var dashbrd = x$( "#xj_admin_menu_link" ).length
+  var pathNameLoc = window.location.pathname;
+  var pathNameSplit = pathNameLoc.split('/');
+if (dashbrd == 1) {
+x$('input.radio').removeClass('disabled').removeAttr('disabled'); //allow admins to change privacy
+};
+if (dashbrd == 0  && pathNameSplit[2] == 'blog' && pathNameSplit[3] == 'new'){
+x$('fieldset.nolegend fieldset').hide(); }; //for new blog privacy
+if (dashbrd == 0  && pathNameSplit[2] == 'blogs' && pathNameSplit[4] == 'edit') {
+  x$('#post_delete').hide(); }; //for blog remove
+if (dashbrd == 0  && pathNameSplit[1] == 'video') {
+  x$('li').has('.xg_sprite-close').hide(); }; //for videos remove
+if (dashbrd == 0  && pathNameSplit[1] == 'events') {
+  x$('li').has('.xg_sprite-close').hide(); }; //for events remove
+if (dashbrd == 0  && pathNameSplit[1] == 'profiles' && pathNameSplit[2] == 'blogs') {
+  x$('#deleteBlogPostLink').hide(); }; //for blog remove
+if (dashbrd == 0  && pathNameSplit[1] == 'forum' && pathNameSplit[2] == 'topics') {
+    x$('li').has('.xg_sprite-close').hide(); };  // for forum remove
+if (dashbrd == 0  && pathNameSplit[2] == 'settings' && pathNameSplit[3] == 'editProfileInfo'){
+x$('input#fullname').css('pointer-events','none');
+x$('#post_form input.disabled.radio').removeAttr('disabled').removeClass('disabled');
+x$('a.action-opposite').on('click', function () {
+  setTimeout(function(){
+x$('#dialog_additional_checkbox').removeAttr('checked');
+x$('p').has('#dialog_additional_checkbox').hide(); 
+    }, 100);
+});};}); // for profile edit
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        if (!dataLayer) {
+            return;
+        }
+        var handler = function (event) {
+            var element = event.currentTarget;
+            if (element.hasAttribute('data-track-disable')) {
+                return;
+            }
+            var options = JSON.parse(element.getAttribute('data-track'));
+            dataLayer.push({
+                'event'         : 'trackEvent',
+                'eventType'     : 'googleAnalyticsNetwork',
+                'eventCategory' : options && options.category || '',
+                'eventAction'   : options && options.action || '',
+                'eventLabel'    : options && options.label || '',
+                'eventValue'    : options && options.value || ''
+            });
+        };
+        var elements = document.querySelectorAll('[data-track]');
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].addEventListener('click', handler);
+        }
+    });
+</script>
+</div>
+
+
+<cloudflare-app app="lead-box" data-goal="cta" data-position="right bottom" data-product-id="pro" style="z-index: 10001;" data-visibility="visible">
+      <cf-dialog>
+        <cf-dialog-content>
+          <cf-dialog-close-button role="button"></cf-dialog-close-button>
+
+          <cf-dialog-content-text>
+            
+    <cf-dialog-content-title>ML vs Holt-Winters Forecasting - Jan 14</cf-dialog-content-title>
+
+    <form>
+      Machine Learning is all the rage, but when does it make sense to use it for forecasting? How do statistical forecasting methods compare? In this latest DSC webinar, we will show you how the Holt-Winters forecasting algorithm works.
+
+      <input type="submit" value="Register today">
+    </form>
+  
+
+            
+          </cf-dialog-content-text>
+        </cf-dialog-content>
+      </cf-dialog>
+    <style>
+      cloudflare-app[app="lead-box"] input[type="submit"] {
+        background: #3c79a7;
+      }
+
+      cloudflare-app[app="lead-box"] input[type="email"]:focus {
+        border-color: #3c79a7;
+      }
+    </style></cloudflare-app><cloudflare-app app="welcome-bar" data-style="prominent" style="z-index: 20008;"><alert-message><alert-message-content>New Books and Resources for DSC Members<a class="alert-cta-button" href="https://www.datasciencecentral.com/profiles/blogs/new-books-and-resources-for-dsc-members">See full list</a></alert-message-content></alert-message><alert-dismiss role="button">×</alert-dismiss></cloudflare-app><iframe scrolling="no" frameborder="0" allowtransparency="true" src="./HTM005_C01_S01_comparingVisTools_files/widget_ifr.html" title="Twitter settings iframe" style="display: none;"></iframe>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","720347215081901");fbq("set","agent","tmgoogletagmanager","720347215081901");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=720347215081901&amp;ev=PageView&amp;noscript=1"></noscript>
+</body></html>

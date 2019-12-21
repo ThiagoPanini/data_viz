@@ -1,0 +1,25 @@
+[MUSIC] Hello, in the last lesson, I gave you
+a brief overview of the different apps for doing visualizations. I spent a fair bit of time
+talking about Tableau. That's the software we're going to use
+because it has the right mix of being easy to use and also being very powerful
+for the things that it is made to do. Other apps like Excel, Python or R can do
+many things well, but visualization and storytelling is not their strength
+in the way it is for Tableau. So we're going to use Tableau Public for
+the remaining lessons and courses. But first we do need to get it
+installed on your computer and have you register for an account. Let's get started. To install Tableau Public,
+go to your browser and enter the URL you see on the screen. It's public.tableau.com/s/. Scroll down a bit and
+enter your email address in the box. Then click on Download the App. When it's done downloading,
+open the downloaded file and install. Once Tableau Public has installed
+on your computer, open it, if it's not already open, and navigate to
+where it says, open from Tableau Public. That should appear on the right hand
+side of the Tableau Public space. Click on the Open from Tableau text and
+a dialog box will pop up. Now assuming that you don't have
+a Tableau Public log in already, click on the Create one now for free text. And when you do that, another dialog box will appear called
+the Tableau Public Registration. Fill out all of the information, and make sure that you check the terms and
+conditions on the bottom of the screen. So you may have to scroll
+down to actually do that. But make sure you check that. Once you send that off to Tableau,
+you will need to check your email. Tableau will send you an email
+asking you to verify the account, you click on the link in
+the email that you get. Then your account will be created, and you will be all set with
+a Tableau Public account. And in the next video,
+we're just going to go right in to it. We're going to do our first visualization. So see you soon.

@@ -1,0 +1,72 @@
+[MUSIC] So we're still working in the same
+space as in the last video. I want you to double-click on
+the worksheet tab we just created, and type in Line Chart of World GDP. Navigate to the other worksheet. Let's rename this World Map. We should have Latitude in the Rows shelf
+and Longitude in the Columns shelf. We see the Country field here,
+but what should we do with it? This is where the Marks
+shelf becomes important. With your mouse, click and
+drag the Country field to the Marks shelf, and drop it exactly how I'm
+doing it on the screen. I'm repeating it a few times just so that
+you know what I'm doing in the process. The map should change colors. On my screen it's blue, but
+it could depend on the computer and the display resolution. Having taken care of the Country field and
+putting it where it belongs, let's click and drag the Mobile Phone
+Usage field over to the Marks shelf and drop it over the Color button. You should see a change
+to graduated colors. I want to take a moment to
+explain what is happening when you add information
+to the Marks shelf. The Mark shelf is the spot where you drag
+fields to control properties like type, color, size, and shape. You can add the same field to another
+button to get more information. If we take the field Mobile Phone Usage,
+the same field I was doing with the color, click and drag it to the Label button and
+drop it there, we'll get values. I mean, it's frankly pretty ugly and
+not necessary so we could drag it away like this. However, the value of this is to actually be able to add more texture to your
+information and to your visualization by using the same fields in different
+ways to get different visualizations. So let's take a peek at
+the attributes of one of the fields, specifically the Year field. Right-click and follow along. It looks like it ranges from 2000 to 2012. That's a really nice range. But at the moment what you see on
+the screen is all of the years combined in an average. That doesn't make any sense intuitively or
+otherwise. It's just plain wrong. So this is a good opportunity to
+introduce what's called the filter. I want you to right-click
+on the Year field. You see a bunch of choices we'll explore
+over the time that we're together, but for now,
+I want you to click on the Show Filter. Now on the right-hand side, the Year
+shows up as a bunch of check marks. Just hover over the Filter
+as you see on the screen. Click on the down arrow and
+select Single value list. Now only one Year is shown at
+a time unless you select All. You could then click on each of the years
+to notice that the color shading changes as you click the years. My aim is to show you the workspace. However, as someone who does
+visualizations for a living and has been doing it for a long time, I could tell you that there's some
+issues with how this shading is done. There's something going on there, and
+I would have to delve into it more. It will need to be fixed, but we're
+not going to get into that right now. But maybe when the video is done,
+you could always take a moment and see if you can fix the issues yourself,
+because I think you could probably do it. I'd like to show you one more thing
+in our survey of the workspace. It's really important,
+it's called the Show Me button. Just click on that. It opens up a list of possible
+other visualizations besides a map. I want you to click on the heat map,
+which is in the top middle row. To show you some of the flexibility
+with the Tableau workspace, I'm going to drag the Year field
+away from the Filter, like so. Hmm, that's very interesting. I'm going to make the Columns and
+Rows a bit bigger, so that it's a bit more visible. Next, I'm increasing the Size
+of the boxes a bit, for a bit of an aesthetic improvement. Let's find the field called Regions. Let's right-click on that and
+click on Show filter. Again, change the Filter to a list
+as we did with Year previously. What you're seeing, as I'm going through
+a very basic visualization, is each of the pieces of the Tableau workspace
+get coordinated into a visualization. I started this visualization with a map,
+but now it's not a map at all. I'm going to leave you with this. The purpose of this lesson is to
+give you a short, but intense, look at the Tableau workspace. There's going to be some readings and links that will help you to learn
+more about the Tableau workspace. But in doing so,
+we went through some visualizations, and saw there are different ways
+to show the same information. We'll be spending a lot of time
+determining which way is better, but this should whet your appetite. In addition, as you noticed, it's often
+easier to learn about the Tableau workspace, and
+frankly any other type of program, by actually doing the thing
+that you need to be doing. Whether in Tableau it's visualizations, or
+in Python whether it's programming some cool new thing, doing it often
+helps you to learn the program. It's frustrating at first, but
+you'll actually be a stronger person, stronger programmer, stronger user
+of the software after you're done. My colleague, Sikh Brar, will actually be
+going through how to do the data preps. I'm not going to be doing that,
+however I'm going to come back and actually discuss the context
+of visualization. Funnily enough, you're actually
+not going to be needing Tableau or any other software in that particular
+section of the course, but it's going to be talking about the context,
+which is actually extremely important. So stay tuned, and thank you so
+much for joining me.

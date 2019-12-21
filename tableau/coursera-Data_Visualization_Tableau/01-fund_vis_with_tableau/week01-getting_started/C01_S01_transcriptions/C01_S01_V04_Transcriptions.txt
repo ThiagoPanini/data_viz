@@ -1,0 +1,68 @@
+[MUSIC] Welcome back. Because there are so many data visualization tools out there,
+it can get rather confusing. In this lesson, we're going to examine the
+types of technology tools used to do data visualization. We will be using the public
+version of Tableau for our course. But keep in mind the things
+you will learn in this course are very much software neutral. So it doesn't actually matter
+what piece of software you use. First, let's look at the apps that
+everyone has some passing familiarity with, which is Microsoft Excel. For the versions beginning in 2010,
+Microsoft included a tool called PowerPivot that allows
+advanced data connections and improved pivoting capabilities far beyond
+of what was on offer before in Excel, which was the standard pivot tables. If you don't see it immediately
+available in your version of Excel, check the add-ins and
+see if it's activated. There's a real learning curve for
+the tool called PowerPivot. But it is in fact a very powerful
+option for those who are tied into the Microsoft architecture,
+especially through SharePoint and PowerBI. If you don't have those products, then
+sharing it across teams will still have the same limitations as before with Excel,
+when you were using standard pivot tables. However, you have much
+improved data connections in ways that simply
+were impossible before. Secondly, when you're searching for
+data visualizations on the web, you often run across either Python or
+R as data visualization tools. For machine learning and big data, which
+we sort of defined in the last lesson, those are possibly good options. But I would strongly
+caution you to learn and become an expert in either Excel or
+Tableau before diving into Python or R. Even though both of this
+products are free, they are both incredibly difficult and overwhelming to
+learn if you're a beginner in this area. It will be very frustrating for
+you unless you're a strong programmer. That being said, both Python and R are in
+fact tools that are extremely powerful. And once programmed,
+can process unstructured data and big data much more quickly and efficiently
+than any other tool out there today. Finally, we come to Tableau's products. They're different flavors of the software,
+which can be confusing to a lot of people. So I'm going to go over them one by one so
+that you have a sense of them. First is Tableau Public. That's the software we're going
+to be using in the course. It's free but
+it has a notable limitations. First of all, all of the information, including your raw data
+are stored in the Tableau cloud. And can be downloaded by anyone,
+with no controls possible. That means you have to be extra careful
+with your data before it's saved. The other caveat is that
+the files cannot be saved locally. You have to save it to the cloud. If you have data that's not anonymized in
+any way, you'll have to prep it ahead of time in Excel or some other program
+before importing it into Tableau Public. Because once the data
+are imported into Tableau, it becomes a public document that
+can be downloaded by anyone. Tableau Desktop, on the other hand,
+which is not free, can connect to an amazing array of data sources and
+has very strong security for your data. It's the full version of Tableau. And you can get data from your own
+data sources, from your own databases, your own data warehouses, SQL Server, Google Analytics, Oracle,
+Amazon Web Services. Virtually any data source can be
+connected through Tableau Desktop. And it really is a very powerful tool
+if you can get a copy of that license. Tableau Server allows the most flexibility
+of all of the Tableau products. But it is only available to those
+who can support a server that is dedicated to Tableau. As such, there's a very large
+financial investment for an organization having this version. But if your organization does, count
+yourself lucky because you could harness the full capability of the software in
+ways that no other version can have. For example,
+you can control how others see your data, even when it's embedded
+on a public website. Then you can have more
+secure access to data and prevent people from
+downloading those data sets. And the final type of Tableau
+product is called Tableau Online. Tableau Online is intended to be
+a way to allow control of your data when embedding data visualizations. But it doesn't require a large
+investment of money into a server. The disadvantage of this approach is that
+in order to view the visualization online, the viewer needs a Tableau Online
+account as well. So visualizations produced with Tableau
+Online cannot be shared with the public like it can with Tableau Server or
+Tableau Public, unless you save it as
+a Tableau Public file. Whatever piece of software or app you
+choose, you can be assured that this course and this specialization
+can address your needs. So say tuned for
+the other parts of the class.
