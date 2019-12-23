@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>TDE or Live? When to Use Tableau Data Extracts (or not) | Drawing with Numbers</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="http://drawingwithnumbers.artisart.org/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="http://drawingwithnumbers.artisart.org/wp-content/themes/twentytwelve/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//secure.gravatar.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Drawing with Numbers &raquo; Feed" href="http://drawingwithnumbers.artisart.org/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Drawing with Numbers &raquo; Comments Feed" href="http://drawingwithnumbers.artisart.org/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Drawing with Numbers &raquo; TDE or Live? When to Use Tableau Data Extracts (or not) Comments Feed" href="http://drawingwithnumbers.artisart.org/tde-or-live-when-to-use-tableau-data-extracts/feed/" />
+		<script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=-8pgeFKRpefkVmwGcndJGzK-25ThjxLMZWl8oopSXzvLrivUpQWjbhqjHnIcY2CVlGoutAIhJtkRxxo3Gh-k_j29oSYnp2jNqu0pDGoQIXF83o6ND2xCnDtlAcqQwkCsfPRpIyLPGNPuurTKjvRaNA" charset="UTF-8"></script><script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/drawingwithnumbers.artisart.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.1.4"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='http://drawingwithnumbers.artisart.org/wp-includes/css/dist/block-library/style.min.css?ver=5.1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='parent-style-css'  href='http://drawingwithnumbers.artisart.org/wp-content/themes/twentytwelve/style.css?ver=5.1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='child-style-css'  href='http://drawingwithnumbers.artisart.org/wp-content/themes/twentytwelve-child/style.css?ver=5.1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-style-css'  href='http://drawingwithnumbers.artisart.org/wp-content/themes/twentytwelve-child/style.css?ver=5.1.4' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentytwelve-ie-css'  href='http://drawingwithnumbers.artisart.org/wp-content/themes/twentytwelve/css/ie.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='social-logos-css'  href='http://drawingwithnumbers.artisart.org/wp-content/plugins/jetpack/_inc/social-logos/social-logos.min.css?ver=1' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css'  href='http://drawingwithnumbers.artisart.org/wp-content/plugins/jetpack/css/jetpack.css?ver=7.2.2' type='text/css' media='all' />
+<script type='text/javascript' src='http://drawingwithnumbers.artisart.org/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://drawingwithnumbers.artisart.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var related_posts_js_options = {"post_heading":"h4"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://drawingwithnumbers.artisart.org/wp-content/plugins/jetpack/_inc/build/related-posts/related-posts.min.js?ver=20190204'></script>
+<link rel='https://api.w.org/' href='http://drawingwithnumbers.artisart.org/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://drawingwithnumbers.artisart.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://drawingwithnumbers.artisart.org/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='At the Level &#8211; Unlocking the Mystery Part 2: Rank Functions' href='http://drawingwithnumbers.artisart.org/at-the-level-unlocking-the-mystery-part-2-rank-functions-in-tableau/' />
+<link rel='next' title='An Exploration of Custom Color Palettes' href='http://drawingwithnumbers.artisart.org/an-exploration-of-custom-color-palettes/' />
+<meta name="generator" content="WordPress 5.1.4" />
+<link rel="canonical" href="http://drawingwithnumbers.artisart.org/tde-or-live-when-to-use-tableau-data-extracts/" />
+<link rel='shortlink' href='https://wp.me/p2DARH-Mr' />
+<link rel="alternate" type="application/json+oembed" href="http://drawingwithnumbers.artisart.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fdrawingwithnumbers.artisart.org%2Ftde-or-live-when-to-use-tableau-data-extracts%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://drawingwithnumbers.artisart.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fdrawingwithnumbers.artisart.org%2Ftde-or-live-when-to-use-tableau-data-extracts%2F&#038;format=xml" />
+
+<link rel='dns-prefetch' href='//v0.wordpress.com'/>
+<link rel='dns-prefetch' href='//jetpack.wordpress.com'/>
+<link rel='dns-prefetch' href='//s0.wp.com'/>
+<link rel='dns-prefetch' href='//s1.wp.com'/>
+<link rel='dns-prefetch' href='//s2.wp.com'/>
+<link rel='dns-prefetch' href='//public-api.wordpress.com'/>
+<link rel='dns-prefetch' href='//0.gravatar.com'/>
+<link rel='dns-prefetch' href='//1.gravatar.com'/>
+<link rel='dns-prefetch' href='//2.gravatar.com'/>
+<link rel='dns-prefetch' href='//widgets.wp.com'/>
+	<style type="text/css" id="twentytwelve-header-css">
+			.site-header h1 a,
+		.site-header h2 {
+			color: #f47200;
+		}
+		</style>
+	
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="TDE or Live? When to Use Tableau Data Extracts (or not)" />
+<meta property="og:url" content="http://drawingwithnumbers.artisart.org/tde-or-live-when-to-use-tableau-data-extracts/" />
+<meta property="og:description" content="I recently answered a question for a new Tableau user on when to use a Tableau Data Extract (TDE) vs. a live connection, here&#8217;s a cleaned-up version of my notes: Why Use a Tableau Data Extrac…" />
+<meta property="article:published_time" content="2016-01-05T20:25:45+00:00" />
+<meta property="article:modified_time" content="2016-01-05T20:25:45+00:00" />
+<meta property="og:site_name" content="Drawing with Numbers" />
+<meta property="og:image" content="https://s0.wp.com/i/blank.jpg" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:creator" content="@jonathandrummey" />
+<meta name="twitter:text:title" content="TDE or Live? When to Use Tableau Data Extracts (or not)" />
+<meta name="twitter:card" content="summary" />
+
+<!-- End Jetpack Open Graph Tags -->
+</head>
+
+<body class="post-template-default single single-post postid-3003 single-format-standard custom-font-enabled">
+<div id="page" class="hfeed site">
+	<header id="masthead" class="site-header" role="banner">
+		<hgroup>
+			<h1 class="site-title"><a href="http://drawingwithnumbers.artisart.org/" title="Drawing with Numbers" rel="home">Drawing with Numbers</a></h1>
+			<h2 class="site-description">Thoughts on data visualization and Tableau</h2>
+		</hgroup>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">Menu</button>
+			<a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
+			<div class="menu-main-menu-container"><ul id="menu-main-menu" class="nav-menu"><li id="menu-item-310" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-310"><a href="http://drawingwithnumbers.artisart.org/category/tips-and-techniques/">Tips and Techniques</a>
+<ul class="sub-menu">
+	<li id="menu-item-927" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-927"><a href="http://drawingwithnumbers.artisart.org/category/tableau-v8-the-kraken/">Tableau v8 &#8211; The Kraken</a></li>
+	<li id="menu-item-1667" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1667"><a href="http://drawingwithnumbers.artisart.org/category/grand-totals-2/">Grand Totals and Subtotals</a>
+	<ul class="sub-menu">
+		<li id="menu-item-1673" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1673"><a href="http://drawingwithnumbers.artisart.org/customizing-grand-totals-part-1/">Customizing Grand Totals – Part 1</a></li>
+		<li id="menu-item-1672" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1672"><a href="http://drawingwithnumbers.artisart.org/customizing-grand-totals-part-2/">Customizing Grand Totals – Part 2</a></li>
+		<li id="menu-item-1671" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1671"><a href="http://drawingwithnumbers.artisart.org/customizing-grand-totals-part-3/">Customizing Grand Totals – Part 3</a></li>
+		<li id="menu-item-1669" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1669"><a href="http://drawingwithnumbers.artisart.org/customizing-grand-totals-in-tableau-v8-the-stacking-snag/">Customizing Grand Totals in Tableau v8 – The Stacking Snag</a></li>
+		<li id="menu-item-1670" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1670"><a href="http://drawingwithnumbers.artisart.org/learning-something-new-every-day-annotating-subtotals/">Annotating Subtotals</a></li>
+		<li id="menu-item-1668" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1668"><a href="http://drawingwithnumbers.artisart.org/tableau-8-1-two-pass-totals/">Tableau 8.1 Two Pass Totals</a></li>
+	</ul>
+</li>
+	<li id="menu-item-2278" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2278"><a href="http://drawingwithnumbers.artisart.org/category/at-the-level-2/">At the Level</a></li>
+</ul>
+</li>
+<li id="menu-item-40" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-40"><a href="http://drawingwithnumbers.artisart.org/category/visualizations/">Visualizations</a></li>
+<li id="menu-item-2633" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2633"><a href="http://drawingwithnumbers.artisart.org/wiki/tableau/">Tableau Wiki</a>
+<ul class="sub-menu">
+	<li id="menu-item-2634" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2634"><a href="http://drawingwithnumbers.artisart.org/wiki/tableau/basics/">Basics</a></li>
+	<li id="menu-item-2635" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2635"><a href="http://drawingwithnumbers.artisart.org/wiki/tableau/preparing-data/">Preparing Data</a></li>
+	<li id="menu-item-2636" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2636"><a href="http://drawingwithnumbers.artisart.org/wiki/tableau/design/">Design</a></li>
+	<li id="menu-item-2650" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2650"><a href="http://drawingwithnumbers.artisart.org/wiki/tableau/conditional-formatting/">Conditional Formatting</a></li>
+	<li id="menu-item-2637" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2637"><a href="http://drawingwithnumbers.artisart.org/wiki/tableau/dimensions-and-measures/">Dimensions and Measures</a></li>
+	<li id="menu-item-2638" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2638"><a href="http://drawingwithnumbers.artisart.org/wiki/tableau/aggregations/">Aggregations</a></li>
+	<li id="menu-item-2666" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2666"><a href="http://drawingwithnumbers.artisart.org/wiki/tableau/level-of-detail-lod-expressions/">Level of Detail (LOD) Expressions</a></li>
+	<li id="menu-item-2639" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2639"><a href="http://drawingwithnumbers.artisart.org/wiki/tableau/padding-and-working-with-null-or-missing-values/">Padding and Working with Null or Missing Values</a></li>
+	<li id="menu-item-2640" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2640"><a href="http://drawingwithnumbers.artisart.org/wiki/tableau/table-calculations/">Table Calculations</a></li>
+	<li id="menu-item-2641" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2641"><a href="http://drawingwithnumbers.artisart.org/wiki/tableau/filtering-and-hiding/">Filtering and Hiding</a></li>
+	<li id="menu-item-2642" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2642"><a href="http://drawingwithnumbers.artisart.org/wiki/tableau/sorting-and-top-n/">Sorting and Top N</a></li>
+	<li id="menu-item-2643" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2643"><a href="http://drawingwithnumbers.artisart.org/wiki/tableau/sets/">Sets</a></li>
+	<li id="menu-item-2644" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2644"><a href="http://drawingwithnumbers.artisart.org/wiki/tableau/bins/">Bins</a></li>
+	<li id="menu-item-2645" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2645"><a href="http://drawingwithnumbers.artisart.org/wiki/tableau/parameters/">Parameters</a></li>
+	<li id="menu-item-2646" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2646"><a href="http://drawingwithnumbers.artisart.org/wiki/tableau/analyses/">Analyses</a></li>
+	<li id="menu-item-336" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-336"><a href="http://drawingwithnumbers.artisart.org/category/unexpected-results-2/">Unexpected Results</a></li>
+	<li id="menu-item-2647" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2647"><a href="http://drawingwithnumbers.artisart.org/wiki/tableau/statistics/">Statistics and R</a></li>
+	<li id="menu-item-2649" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2649"><a href="http://drawingwithnumbers.artisart.org/wiki/tableau/tricks-miscellaneous-techniques/">Tricks + Miscellaneous Techniques</a></li>
+	<li id="menu-item-2648" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2648"><a href="http://drawingwithnumbers.artisart.org/wiki/tableau/sql-hacks/">SQL Hacks</a></li>
+	<li id="menu-item-2651" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2651"><a href="http://drawingwithnumbers.artisart.org/wiki/tableau/chart-types/">Chart Types</a>
+	<ul class="sub-menu">
+		<li id="menu-item-2652" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2652"><a href="http://drawingwithnumbers.artisart.org/wiki/tableau/formatting-bar-charts-and-gantt-charts/">Formatting Bar Charts and Gantt Charts</a></li>
+		<li id="menu-item-2653" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2653"><a href="http://drawingwithnumbers.artisart.org/wiki/tableau/mapping/">Mapping</a></li>
+	</ul>
+</li>
+	<li id="menu-item-2654" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2654"><a href="http://drawingwithnumbers.artisart.org/wiki/tableau/output-and-export/">Output and Export</a></li>
+	<li id="menu-item-2655" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2655"><a href="http://drawingwithnumbers.artisart.org/wiki/tableau/dashboards/">Dashboards</a></li>
+	<li id="menu-item-2656" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2656"><a href="http://drawingwithnumbers.artisart.org/wiki/tableau/security/">Security</a></li>
+	<li id="menu-item-2657" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2657"><a href="http://drawingwithnumbers.artisart.org/wiki/tableau/tableau-server/">Tableau Server</a></li>
+	<li id="menu-item-2658" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2658"><a href="http://drawingwithnumbers.artisart.org/wiki/tableau/performance/">Performance</a></li>
+</ul>
+</li>
+<li id="menu-item-2660" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2660"><a href="http://drawingwithnumbers.artisart.org/links/">Link List</a></li>
+</ul></div>		</nav><!-- #site-navigation -->
+
+			</header><!-- #masthead -->
+
+	<div id="main" class="wrapper">
+	<div id="primary" class="site-content">
+		<div id="content" role="main">
+
+			
+				
+	<article id="post-3003" class="post-3003 post type-post status-publish format-standard hentry category-tips-and-techniques tag-data-extract tag-extract tag-extracts tag-incremental-refresh tag-live-connection tag-refresh tag-tableau-data-extract tag-tableau-data-extracts tag-tde tag-tdes tag-tds tag-tdsx">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">TDE or Live? When to Use Tableau Data Extracts (or not)</h1>
+										<div class="comments-link">
+					<a href="http://drawingwithnumbers.artisart.org/tde-or-live-when-to-use-tableau-data-extracts/#comments">15 Replies</a>				</div><!-- .comments-link -->
+					</header><!-- .entry-header -->
+
+				<div class="entry-content">
+			<p>I recently answered a question for a new Tableau user on when to use a Tableau Data Extract (TDE) vs. a live connection, here&#8217;s a cleaned-up version of my notes:</p>
+<h2>Why Use a Tableau Data Extract?</h2>
+<p>My preference is to first consider using a live connection because extracting data adds another step to the data delivery chain. However there are many situations where that isn&#8217;t a workable solution, so Tableau has created Tableau Data Extracts to support situations where a <span style="text-decoration: underline;">live connection</span> to the source is:</p>
+<ol>
+<li><strong>Not possible</strong>. Sometimes a Tableau viz can&#8217;t have live connection to a production system, for example when you want to share a viz with someone not inside your premises. The extract can be published (whether in a viz or as a published data source) to Tableau Server or Online, or saved in a Tableau packaged workbook (TWBX) or packaged datasource (TDSX), or sent &#8220;naked&#8221; as a TDE file.</li>
+<li><strong>Too slow</strong>. There are a number of variations on this:
+<ol>
+<li>For example a production system is on a slow network connection so a TDE can be created locally and only have to go over the slow network.</li>
+<li>Because data extracts are highly optimized for queries they can be much, much faster than a live connection. I regularly see 100x improvement in load times using Tableau data extracts over MS Access, to the degree that my muscle memory is tuned to making an extract as the first thing I do after connecting to an Access-based source.
+<p>Note that older posts (prior to the release of Tableau v8.2) on extracts will talk about them being faster than raw Excel/text connections because at the time the &#8220;legacy&#8221; aka MS JET engine was used. That is no longer the case with the <a href="http://www.tableau.com/new-features/8.2">new Excel/text connector</a>.  The new connector takes advantage of Tableau&#8217;s data extract (data engine) technology to create a data extract in the background, that&#8217;s why the first connection can be slow and then creating an extract can be instantaneous.</li>
+<li>The Tableau queries to the live connection might slow down operational queries too much, so having Tableau only query at scheduled extract refresh times is preferable.</li>
+<li>Data volumes could be such that millions of records per week of raw data that would be too slow to run live Tableau queries on might be aggregated in a TDE down to dozens or hundreds per week based on some set of categories/dimensions in the data.</li>
+</ol>
+</li>
+<li><strong>Unable to handle the record volumes</strong>. MS Excel is limited to 1M records, MS Access tops out anywhere in the 100s of thousands to couple M records depending on the complexity of the table, etc. whereas a TDE can potentially handle <span style="text-decoration: underline;">billions</span> of records. Another case is situations where the data is stored in multiple tables (potentially across multiple data bases) and a UNION query is used to generate a result that is too big for a live connection but fine for a TDE.</li>
+<li><strong>Exposing too much data</strong>. There are four cases where extracts can effectively improve security by reducing what data is made available:
+<ol>
+<li>We can create extract filters on TDEs so only the necessary records are included.</li>
+<li>We can set up the extract to only include fields used in the workbook, in other words we can exclude columns from the extract.</li>
+<li>Extracts can be configured to aggregate the data and therefore hide record-level detail.</li>
+<li>For file-based sources when we include the files in a TWBX it&#8217;s the whole file, so for an Excel file that means that every worksheet in that file is included in the TWBX. If we extract the data then only the necessary data for the workbook is in the TDE.</li>
+</ol>
+</li>
+<li><strong>Unable to handle the data volumes</strong>. A related case is that since a TDE is highly compressed it can be a lot smaller than the original uncompressed source. I&#8217;ve seen people use TDEs instead of file-based sources to make distribution of packaged workbooks easier.</li>
+<li><strong>Not supporting certain calculations</strong>. Tableau data extracts have generally supported more functions than any particular data source (with the exception of RAWSQL functions). One example is that in the &#8220;old days&#8221; before Tableau 8.2 with the new Excel/text connector we were stuck with the MS Jet engine for connecting with Excel &amp; text files and that couldn&#8217;t handle COUNTD(), MEDIAN(), In/Out of Sets among other drawbacks, so we&#8217;d create an extract. Another example is that currently not all sources support the Level of Detail Expressions introduced in v9.0 and again we can work around that by creating an extract.</li>
+<li><strong>Unable to handle the complexity</strong>. There are various computations (such as using top and conditional filters, nested calculated fields, etc.) that TDEs can handle in combined ways that some data sources can&#8217;t. For example MS Access databases are one of my main data sources and in some Tableau worksheets if I switch from the TDE to the live connection the MS JET engine gives me a &#8220;query too complex&#8221; error.</li>
+<li><strong>Actually a situation where multiple file-based sources needed to be put together</strong>&#8230;with TDEs it&#8217;s possible to add data to an extract from multiple file-based sources, which can be handy when you are integrating data from various producers at different times. Tableau is working on improving this: At the 2015 Tableau Conference they demoed a feature for creating federated queries across multiple data sources (including server-based sources, other TDEs, etc.). From what I saw Tableau will be able to do this in a live connection, however I&#8217;m guessing that we&#8217;ll often want to be using TDEs for performance reasons.</li>
+</ol>
+<h2>Other Features of Tableau Data Extracts</h2>
+<p>A few other advantages of TDEs are:</p>
+<ul>
+<li><strong>Materialized expressions</strong>. Tableau will &#8220;materialize&#8221; record-level calculations that use only fields from a single data source and are not dependent on run-time values &#8212; i.e. not using TODAY(), NOW(), USERNAME(), ISMEMBEROF(), or a parameter &#8212; as fully indexed &amp; compressed fields in an extract. This can improve performance in many cases, for example when splitting name or address fields and/or creating datetime fields out of strings.</li>
+<li><strong>Access to cloud-based data sources</strong>. In order to make cloud-based sources such as Salesforce.com, Google Analytics, oData, and the Tableau Web Data Connectors useful for the kinds of at-the-speed-of-thought analytics that Tableau enables we have to use Tableau data extracts. Other cloud-based sources such as Amazon Redshift, Google BigQuery, and Microsoft Azure can be used as a live connection or extracted as needed.</li>
+<li><strong>Option to publish to Tableau Public</strong>. For performance reasons we can only use TDEs when publishing to Tableau Public.</li>
+</ul>
+<h2>TDE Limitations</h2>
+<p>However, Tableau Data Extracts do have some limitations and there are cases when they are not suitable or more difficult to work with than a live connection:</p>
+<ol>
+<li>TDEs are by definition not a live connection to the source. This means that Tableau Data Extracts are not usable if you&#8217;re needing &#8220;real-time&#8221; data in your Tableau viz. Also if the refresh time of a TDE is more than the desired data refresh time then TDEs aren&#8217;t really feasible.</li>
+<li>Tableau Data Extracts can&#8217;t be created from OLAP sources such as Oracle Essbase or SSAS. They can be created from SAP BW cubes, however.</li>
+<li>Changing the data structure of the underlying data can require rebuilding the entire TDE, which may not be very easy, take too much time, become impossible if the file-based source you used for an incremental append is no longer available, etc.</li>
+<li>Tableau&#8217;s support for incremental loads, slowly changing dimensions, and updates to existing rows is minimal to non-existent.</li>
+<li>Tableau Data Extracts do not support RAWSQL functions, nor can we use Custom SQL on an already-created extract. One use case for RAWSQL is when the underlying data source supports a given function and Tableau does not yet support that feature for that source.</li>
+<li>TDEs can become too slow to refresh and/or queries on them become too slow based on the data structure, here are some known factors:
+<ol>
+<li>many rows (anywhere from millions to billions)</li>
+<li>many columns (when they get into the hundreds)</li>
+<li>lots relatively non-compressible (high-cardinality) columns</li>
+<li>many complex materialized expressions
+<p>So a billion-row extract might be plenty fast and a million-row extract on a complex data structure might be too slow, your best bet is to do your own testing.</li>
+</ol>
+</li>
+<li> As of this writing (January 2016) I haven&#8217;t heard of anyone else being licensed to read from TDEs so the only pieces of software that can read from TDEs are Tableau Desktop, Tableau Reader, Tableau Server, Tableau Online, and Tableau Public. There&#8217;s no published API for reading TDEs and trying to save large CSVs from a Tableau worksheet is likely to run into out-of-memory problems so if you&#8217;re looking for more permanent storage for data so you can get at it later you&#8217;re likely to want to look elsewhere.</li>
+<li>Refreshing TDEs puts more and more load onto Tableau Server and that can impact delivering visualizations, so doing the work to make the underlying source fast enough to use a live connection may be preferable to the extra hardware &amp; configuration needed to make the TDE refresh fast enough.</li>
+<li>TDEs don&#8217;t include user-level security, those have to be set up higher up in the stack in the Tableau Server data source and/or Tableau workbooks that use the TDE, which means there&#8217;s extra work to prevent unauthorized users from getting access to the data in the Tableau views and the TDE itself. It may be better to implement that security in the raw data source (which I know makes my DBAs happy because they get to retain control).</li>
+</ol>
+<p>To eliminate and/or work around the performance limitations of TDEs I see people doing one or more of the following:</p>
+<ol>
+<li>Read <a href="http://www.tableau.com/learn/whitepapers/designing-efficient-workbooks">Designing Efficient Workbooks</a> by <a href="http://blog.databender.net/">Alan Eldridge</a> and implementing the suggestions there, it&#8217;s the [insert holy-book-of-your-choice metaphor here] for Tableau performance tuning.</li>
+<li>Create multiple data sources on the same underlying data, the basic distinction is using a fast &amp; lightweight TDE for the high-level views and then the detail reached via drill-down (i.e. Filter Actions) is stored in a big, relatively slower TDE or live connection.</li>
+<li>Use ETL tools such as <a href="http://alteryx.com/">Alteryx</a> or <a href="http://trifacta.com/">Trifacta</a> to pre-compute, pre-aggregate, and transform the data to make it fast in Tableau (and potentially use a TDE).</li>
+<li>Do the necessary performance tuning in the existing data source fast enough to use as a live connection.</li>
+<li>Deal with high volume/high performance requirements by creating a new data source whether that be a tuned datamart/data warehouse/data lake or using something like Teradata, Vertica, Hadoop, Exasol, etc.</li>
+</ol>
+<h2>Conclusion</h2>
+<p>Thanks to Brian Bickell for <a href="https://www.interworks.com/blog/bbickell/2014/04/29/extract-or-not-extract-7-guidelines-tableau-data-extracts">To Extract or Not to Extract</a> (published 2014-04-29) and Tom Brown for <a href="http://www.theinformationlab.co.uk/2011/01/20/tableau-extracts-what-why-how-etc/">Tableau Extracts</a> (published 2011-01-20), those posts helped validate and round-out bits that I&#8217;d missed. Also thanks to Alan Eldridge for <a href="http://www.tableau.com/learn/whitepapers/designing-efficient-workbooks">Designing Efficient Workbooks</a>, it&#8217;s on my &#8220;must read&#8221; list of Tableau resources. If you have other pros &amp; cons of extracts, please let me know!</p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow noopener noreferrer" data-shared="sharing-twitter-3003" class="share-twitter sd-button share-icon no-text" href="http://drawingwithnumbers.artisart.org/tde-or-live-when-to-use-tableau-data-extracts/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow noopener noreferrer" data-shared="sharing-facebook-3003" class="share-facebook sd-button share-icon no-text" href="http://drawingwithnumbers.artisart.org/tde-or-live-when-to-use-tableau-data-extracts/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-tumblr"><a rel="nofollow noopener noreferrer" data-shared="" class="share-tumblr sd-button share-icon no-text" href="http://drawingwithnumbers.artisart.org/tde-or-live-when-to-use-tableau-data-extracts/?share=tumblr" target="_blank" title="Click to share on Tumblr"><span></span><span class="sharing-screen-reader-text">Click to share on Tumblr (Opens in new window)</span></a></li><li class="share-linkedin"><a rel="nofollow noopener noreferrer" data-shared="sharing-linkedin-3003" class="share-linkedin sd-button share-icon no-text" href="http://drawingwithnumbers.artisart.org/tde-or-live-when-to-use-tableau-data-extracts/?share=linkedin" target="_blank" title="Click to share on LinkedIn"><span></span><span class="sharing-screen-reader-text">Click to share on LinkedIn (Opens in new window)</span></a></li><li class="share-pinterest"><a rel="nofollow noopener noreferrer" data-shared="sharing-pinterest-3003" class="share-pinterest sd-button share-icon no-text" href="http://drawingwithnumbers.artisart.org/tde-or-live-when-to-use-tableau-data-extracts/?share=pinterest" target="_blank" title="Click to share on Pinterest"><span></span><span class="sharing-screen-reader-text">Click to share on Pinterest (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow noopener noreferrer" data-shared="" class="share-reddit sd-button share-icon no-text" href="http://drawingwithnumbers.artisart.org/tde-or-live-when-to-use-tableau-data-extracts/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-print"><a rel="nofollow noopener noreferrer" data-shared="" class="share-print sd-button share-icon no-text" href="http://drawingwithnumbers.artisart.org/tde-or-live-when-to-use-tableau-data-extracts/#print" target="_blank" title="Click to print"><span></span><span class="sharing-screen-reader-text">Click to print (Opens in new window)</span></a></li><li class="share-email"><a rel="nofollow noopener noreferrer" data-shared="" class="share-email sd-button share-icon no-text" href="http://drawingwithnumbers.artisart.org/tde-or-live-when-to-use-tableau-data-extracts/?share=email" target="_blank" title="Click to email this to a friend"><span></span><span class="sharing-screen-reader-text">Click to email this to a friend (Opens in new window)</span></a></li><li class="share-end"></li></ul></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-38989177-3003-5e00d6cecff54' data-src='https://widgets.wp.com/likes/#blog_id=38989177&amp;post_id=3003&amp;origin=drawingwithnumbers.artisart.org&amp;obj_id=38989177-3003-5e00d6cecff54' data-name='like-post-frame-38989177-3003-5e00d6cecff54'><h3 class="sd-title">Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height: 55px;'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div>
+<div id='jp-relatedposts' class='jp-relatedposts' >
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div><!-- .entry-content -->
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="http://drawingwithnumbers.artisart.org/category/tips-and-techniques/" rel="category tag">Tips and Techniques</a> and tagged <a href="http://drawingwithnumbers.artisart.org/tag/data-extract/" rel="tag">data extract</a>, <a href="http://drawingwithnumbers.artisart.org/tag/extract/" rel="tag">extract</a>, <a href="http://drawingwithnumbers.artisart.org/tag/extracts/" rel="tag">extracts</a>, <a href="http://drawingwithnumbers.artisart.org/tag/incremental-refresh/" rel="tag">incremental refresh</a>, <a href="http://drawingwithnumbers.artisart.org/tag/live-connection/" rel="tag">live connection</a>, <a href="http://drawingwithnumbers.artisart.org/tag/refresh/" rel="tag">refresh</a>, <a href="http://drawingwithnumbers.artisart.org/tag/tableau-data-extract/" rel="tag">tableau data extract</a>, <a href="http://drawingwithnumbers.artisart.org/tag/tableau-data-extracts/" rel="tag">Tableau data extracts</a>, <a href="http://drawingwithnumbers.artisart.org/tag/tde/" rel="tag">TDE</a>, <a href="http://drawingwithnumbers.artisart.org/tag/tdes/" rel="tag">TDEs</a>, <a href="http://drawingwithnumbers.artisart.org/tag/tds/" rel="tag">TDS</a>, <a href="http://drawingwithnumbers.artisart.org/tag/tdsx/" rel="tag">TDSX</a> on <a href="http://drawingwithnumbers.artisart.org/tde-or-live-when-to-use-tableau-data-extracts/" title="3:25 pm" rel="bookmark"><time class="entry-date" datetime="2016-01-05T15:25:45-05:00">January 5, 2016</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="http://drawingwithnumbers.artisart.org/author/Jonathan%20Drummey/" title="View all posts by Jonathan Drummey" rel="author">Jonathan Drummey</a></span></span>.								</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+
+				<nav class="nav-single">
+					<h3 class="assistive-text">Post navigation</h3>
+					<span class="nav-previous"><a href="http://drawingwithnumbers.artisart.org/at-the-level-unlocking-the-mystery-part-2-rank-functions-in-tableau/" rel="prev"><span class="meta-nav">&larr;</span> At the Level &#8211; Unlocking the Mystery Part 2: Rank Functions</a></span>
+					<span class="nav-next"><a href="http://drawingwithnumbers.artisart.org/an-exploration-of-custom-color-palettes/" rel="next">An Exploration of Custom Color Palettes <span class="meta-nav">&rarr;</span></a></span>
+				</nav><!-- .nav-single -->
+
+				
+<div id="comments" class="comments-area">
+
+	
+			<h2 class="comments-title">
+			15 thoughts on &ldquo;<span>TDE or Live? When to Use Tableau Data Extracts (or not)</span>&rdquo;		</h2>
+
+		<ol class="commentlist">
+				<li class="comment even thread-even depth-1" id="li-comment-20130">
+		<article id="comment-20130" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt='' src='http://2.gravatar.com/avatar/8b0f17f047627fa389a46f3e1a3be866?s=44&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/8b0f17f047627fa389a46f3e1a3be866?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn">Lee</b> </cite><a href="http://drawingwithnumbers.artisart.org/tde-or-live-when-to-use-tableau-data-extracts/#comment-20130"><time datetime="2016-01-05T15:58:44-05:00">January 5, 2016 at 3:58 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>A very timely and concise listing of the pros\cons of a TDE.  Thanks for the efforts&#8230;.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='/tde-or-live-when-to-use-tableau-data-extracts/?replytocom=20130#respond' data-commentid="20130" data-postid="3003" data-belowelement="comment-20130" data-respondelement="respond" aria-label='Reply to Lee'>Reply</a> <span>&darr;</span>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-20131">
+		<article id="comment-20131" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt='' src='https://i1.wp.com/pbs.twimg.com/profile_images/511921375708082176/M07d1Mwy_normal.jpeg?resize=44%2C44' srcset='http://0.gravatar.com/avatar/f11921981029c2ac4a1b0f7ad744b0b2?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn"><a href='http://twitter.com/VizPainter' rel='external nofollow' class='url'>Joshua Milligan (@VizPainter)</a></b> </cite><a href="http://drawingwithnumbers.artisart.org/tde-or-live-when-to-use-tableau-data-extracts/#comment-20131"><time datetime="2016-01-05T17:13:10-05:00">January 5, 2016 at 5:13 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Another, relatively minor use for extracts is to create an aggregated extract. This can improve performance in some cases (as long as detail is not needed for analysis) and (especially before LOD calcs) allows for the creation of secondary sources to solve mis-matched granularity problems via blending.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='/tde-or-live-when-to-use-tableau-data-extracts/?replytocom=20131#respond' data-commentid="20131" data-postid="3003" data-belowelement="comment-20131" data-respondelement="respond" aria-label='Reply to Joshua Milligan (@VizPainter)'>Reply</a> <span>&darr;</span>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-20132">
+		<article id="comment-20132" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt='' src='http://1.gravatar.com/avatar/4992f634a9726c94cc7d5c2b571c04ff?s=44&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/4992f634a9726c94cc7d5c2b571c04ff?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn"><a href='http://mixpixviz.blogspot.com/' rel='external nofollow' class='url'>Michael Mixon</a></b> </cite><a href="http://drawingwithnumbers.artisart.org/tde-or-live-when-to-use-tableau-data-extracts/#comment-20132"><time datetime="2016-01-05T19:38:37-05:00">January 5, 2016 at 7:38 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>A really nice summary of the pros and cons of TDEs.  At our organization, live connections to any database that isn&#8217;t a desktop &#8220;database&#8221; like Access or Excel isn&#8217;t permitted, so we rely very heavily on TDEs to optimize our Tableau experience.  Prior to our purchase of an Alteryx license last month, we had to generate our TDEs via a very slow and error-prone Custom SQL union of multiple Excel files extracted from our data warehouse via Business Objects.  Best case it would take ~4 hours to refresh the TDE every day, but more often than not the initial refresh would fail and then we&#8217;d have to kick off another one, resulting in about a 6-7 hour wait time for a refreshed TDE.  With Alteryx we&#8217;ve been able to get that refresh time down to approx. 1.5 hours, with the largest portion of that now being the time it takes Business Objects to generate the Excel files.  I&#8217;m hoping to convince our IT department to let us point Alteryx at the data warehouse directly and simply add in the Business Objects universe logic into our Alteryx workflow, but I&#8217;m not holding my breath on that one. 🙂</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='/tde-or-live-when-to-use-tableau-data-extracts/?replytocom=20132#respond' data-commentid="20132" data-postid="3003" data-belowelement="comment-20132" data-respondelement="respond" aria-label='Reply to Michael Mixon'>Reply</a> <span>&darr;</span>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-20133">
+		<article id="comment-20133" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt='' src='http://1.gravatar.com/avatar/75ae8d0ab1fa599512ed7b8af7626f57?s=44&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/75ae8d0ab1fa599512ed7b8af7626f57?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn">Chris</b> </cite><a href="http://drawingwithnumbers.artisart.org/tde-or-live-when-to-use-tableau-data-extracts/#comment-20133"><time datetime="2016-01-06T09:44:17-05:00">January 6, 2016 at 9:44 am</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Nice post &#8211; thanks for taking the time to aggregate a lot of this.</p>
+<p>Chris</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='/tde-or-live-when-to-use-tableau-data-extracts/?replytocom=20133#respond' data-commentid="20133" data-postid="3003" data-belowelement="comment-20133" data-respondelement="respond" aria-label='Reply to Chris'>Reply</a> <span>&darr;</span>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-20169">
+		<article id="comment-20169" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt='' src='http://2.gravatar.com/avatar/22dfd233b273a61f5c8b1359a023a6f8?s=44&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/22dfd233b273a61f5c8b1359a023a6f8?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn">Marc McD</b> </cite><a href="http://drawingwithnumbers.artisart.org/tde-or-live-when-to-use-tableau-data-extracts/#comment-20169"><time datetime="2016-01-11T10:12:06-05:00">January 11, 2016 at 10:12 am</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>We&#8217;re just getting started here at my organization on Tableau &#8211; only 1 Desktop license and trying to figure out how to distribute dashboards to the business.  This tip allows me to have Tableau Reader installed on users machines so they can interact with the content.  Thanks!</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='/tde-or-live-when-to-use-tableau-data-extracts/?replytocom=20169#respond' data-commentid="20169" data-postid="3003" data-belowelement="comment-20169" data-respondelement="respond" aria-label='Reply to Marc McD'>Reply</a> <span>&darr;</span>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-20177">
+		<article id="comment-20177" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt='' src='http://1.gravatar.com/avatar/7c2e1b8a7f5dafdab40536d7c6743f31?s=44&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/7c2e1b8a7f5dafdab40536d7c6743f31?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn">Sean</b> </cite><a href="http://drawingwithnumbers.artisart.org/tde-or-live-when-to-use-tableau-data-extracts/#comment-20177"><time datetime="2016-01-12T04:40:43-05:00">January 12, 2016 at 4:40 am</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>A great article on the pros and cons.  If you find that the cons outweigh the pros of TDE, then take a look at Exasol&#8217;s Tableau Turbo which was specifically designed to help Tableau users overcome the limitations of TDEs.  <a href="http://www.exasol.com/en/solutions/business/tableau/" rel="nofollow">http://www.exasol.com/en/solutions/business/tableau/</a></p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='/tde-or-live-when-to-use-tableau-data-extracts/?replytocom=20177#respond' data-commentid="20177" data-postid="3003" data-belowelement="comment-20177" data-respondelement="respond" aria-label='Reply to Sean'>Reply</a> <span>&darr;</span>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-20694">
+		<article id="comment-20694" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt='' src='http://0.gravatar.com/avatar/9ea3307835d30242fb1f1f96edab00ce?s=44&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/9ea3307835d30242fb1f1f96edab00ce?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn">Matt Lutton</b> </cite><a href="http://drawingwithnumbers.artisart.org/tde-or-live-when-to-use-tableau-data-extracts/#comment-20694"><time datetime="2016-04-29T14:10:25-05:00">April 29, 2016 at 2:10 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Currently, a TDE is also required for publishing workbooks with local file types to Tableau Online &#8212; although I&#8217;m not sure if that will change anytime soon.</p>
+<p>The currently supported live connections for Tableau Online are listed here:<br />
+<a href="https://onlinehelp.tableau.com/current/online/en-us/to_publish.htm#live-connection" rel="nofollow">https://onlinehelp.tableau.com/current/online/en-us/to_publish.htm#live-connection</a></p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='/tde-or-live-when-to-use-tableau-data-extracts/?replytocom=20694#respond' data-commentid="20694" data-postid="3003" data-belowelement="comment-20694" data-respondelement="respond" aria-label='Reply to Matt Lutton'>Reply</a> <span>&darr;</span>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-20733">
+		<article id="comment-20733" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt='' src='http://2.gravatar.com/avatar/8191a7fb848fc39b7cefed66e4b5a696?s=44&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/8191a7fb848fc39b7cefed66e4b5a696?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn">Tim Terrell</b> </cite><a href="http://drawingwithnumbers.artisart.org/tde-or-live-when-to-use-tableau-data-extracts/#comment-20733"><time datetime="2016-05-12T15:17:10-05:00">May 12, 2016 at 3:17 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Are extracts encrypted?  If not, I would think they could be a problem for the health care industry that has requirements around protecting patient privacy.  If they are not encrypted, I would think live connections would be preferable to the possibility of an extract with patient data living on a laptop computer.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='/tde-or-live-when-to-use-tableau-data-extracts/?replytocom=20733#respond' data-commentid="20733" data-postid="3003" data-belowelement="comment-20733" data-respondelement="respond" aria-label='Reply to Tim Terrell'>Reply</a> <span>&darr;</span>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+	<ol class="children">
+	<li class="comment byuser comment-author-JonathanDrummey bypostauthor even depth-2" id="li-comment-20735">
+		<article id="comment-20735" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt='' src='http://1.gravatar.com/avatar/d5ca8ae7f275b3cb849a704a83a83d4f?s=44&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/d5ca8ae7f275b3cb849a704a83a83d4f?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn"><a href='http://drawingwithnumbers.artisart.org' rel='external nofollow' class='url'>Jonathan Drummey</a></b> <span>Post author</span></cite><a href="http://drawingwithnumbers.artisart.org/tde-or-live-when-to-use-tableau-data-extracts/#comment-20735"><time datetime="2016-05-12T21:59:30-05:00">May 12, 2016 at 9:59 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Hi Tim,</p>
+<p>Extracts are not encrypted. Where extracts live depends on how the environment has been configured and what permissions have been given. At one end of the spectrum is a Tableau Packaged Workbook (.twbx) file that is essentially a zip file with the workbook&#8217;s metadata and a TDE that is not secured and non-encrypted, and any Tableau Desktop install could connect to it and read the data. At the other end of the spectrum would be an extract that has been published to Tableau Server or Tableau Online where only allowed users have permissions to access the underlying data. I&#8217;ve seen both ends of the spectrum in healthcare, the level of governance and control from organization to organization (or even department to department) has huge variation.</p>
+<p>Jonathan</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='/tde-or-live-when-to-use-tableau-data-extracts/?replytocom=20735#respond' data-commentid="20735" data-postid="3003" data-belowelement="comment-20735" data-respondelement="respond" aria-label='Reply to Jonathan Drummey'>Reply</a> <span>&darr;</span>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+	</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="pingback odd alt thread-even depth-1" id="comment-20754">
+		<p>Pingback: <a href='http://www.joseuzcategui.com/2016/05/15/tableau-tde-vs-live-db-connection/' rel='external nofollow' class='url'>Tableau TDE Vs Live DB Connection | Jose Uzcategui</a> </p>
+	</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-21138">
+		<article id="comment-21138" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt='' src='http://0.gravatar.com/avatar/9fac5816fab5d7b7470e150cbad252c1?s=44&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/9fac5816fab5d7b7470e150cbad252c1?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn">Remy Rosenbaum</b> </cite><a href="http://drawingwithnumbers.artisart.org/tde-or-live-when-to-use-tableau-data-extracts/#comment-21138"><time datetime="2016-10-13T14:44:57-05:00">October 13, 2016 at 2:44 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Great post! One solution that companies use to live connect Tableau to large data sources is to add a query acceleration layer on the database. This lets you live-connect to your data while maintaining interactive speed. This is especially important when you want to run Tableau on data stored in Hadoop. Jethro is one example of a company that does this. After installing it, you just point Tableau to Jethro as the data source. No need to use/ maintain extracts.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='/tde-or-live-when-to-use-tableau-data-extracts/?replytocom=21138#respond' data-commentid="21138" data-postid="3003" data-belowelement="comment-21138" data-respondelement="respond" aria-label='Reply to Remy Rosenbaum'>Reply</a> <span>&darr;</span>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+	<ol class="children">
+	<li class="comment byuser comment-author-JonathanDrummey bypostauthor odd alt depth-2" id="li-comment-21140">
+		<article id="comment-21140" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt='' src='http://1.gravatar.com/avatar/d5ca8ae7f275b3cb849a704a83a83d4f?s=44&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/d5ca8ae7f275b3cb849a704a83a83d4f?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn"><a href='http://drawingwithnumbers.artisart.org' rel='external nofollow' class='url'>Jonathan Drummey</a></b> <span>Post author</span></cite><a href="http://drawingwithnumbers.artisart.org/tde-or-live-when-to-use-tableau-data-extracts/#comment-21140"><time datetime="2016-10-13T14:52:11-05:00">October 13, 2016 at 2:52 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Hi Remy, that&#8217;s a nice point. For the more general reader, I&#8217;d also like to point out that Remy posted from a jethro.io address so I think Remy has some self-interest here. 🙂</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='/tde-or-live-when-to-use-tableau-data-extracts/?replytocom=21140#respond' data-commentid="21140" data-postid="3003" data-belowelement="comment-21140" data-respondelement="respond" aria-label='Reply to Jonathan Drummey'>Reply</a> <span>&darr;</span>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+	</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="pingback even thread-even depth-1" id="comment-21574">
+		<p>Pingback: <a href='https://discoveringanalysis.wordpress.com/2017/04/01/sharing-1/' rel='external nofollow' class='url'>Sharing #1 &#8211; Discovering Analysis</a> </p>
+	</li><!-- #comment-## -->
+	<li class="pingback odd alt thread-odd thread-alt depth-1" id="comment-21859">
+		<p>Pingback: <a href='http://www.thedatadiaries.com/tde-or-live-when-to-use-tableau-data-extracts-or-not/' rel='external nofollow' class='url'>TDE or Live? When to Use Tableau Data Extracts (or not) | The Data Diaries</a> </p>
+	</li><!-- #comment-## -->
+	<li class="pingback even thread-even depth-1" id="comment-21992">
+		<p>Pingback: <a href='http://www.dataarchitect.cloud/the-switch-to-self-service-marketing-analytics-at-zulily-best-practices-for-using-tableau-with-bigquery/' rel='external nofollow' class='url'>The switch to self-service marketing analytics at zulily: best practices for using Tableau with BigQuery &#8211; Cloud Data Architect</a> </p>
+	</li><!-- #comment-## -->
+		</ol><!-- .commentlist -->
+
+		
+		
+	
+	
+		<div id="respond" class="comment-respond">
+							<h3 id="reply-title" class="comment-reply-title">Please add your thoughts and perspectives					<small><a rel="nofollow" id="cancel-comment-reply-link" href="/tde-or-live-when-to-use-tableau-data-extracts/#respond" style="display:none;">Cancel reply</a></small>
+				</h3>
+						<form id="commentform" class="comment-form">
+				<iframe title="Comment Form" src="http://jetpack.wordpress.com/jetpack-comment/?blogid=38989177&#038;postid=3003&#038;comment_registration=0&#038;require_name_email=1&#038;stc_enabled=1&#038;stb_enabled=1&#038;show_avatars=1&#038;avatar_default=mystery&#038;greeting=Please+add+your+thoughts+and+perspectives&#038;greeting_reply=Leave+a+Reply+to+%25s&#038;color_scheme=light&#038;lang=en_US&#038;jetpack_version=7.2.2&#038;show_cookie_consent=10&#038;has_cookie_consent=0&#038;sig=4924700d0c3c62f916cea0134b10f31f82454404#parent=http%3A%2F%2Fdrawingwithnumbers.artisart.org%2Ftde-or-live-when-to-use-tableau-data-extracts%2F" style="width:100%; height: 430px; border:0;" name="jetpack_remote_comment" class="jetpack_remote_comment" id="jetpack_remote_comment" sandbox="allow-same-origin allow-top-navigation allow-scripts allow-forms allow-popups"></iframe>
+									<!--[if !IE]><!-->
+					<script>
+						document.addEventListener('DOMContentLoaded', function () {
+							var commentForms = document.getElementsByClassName('jetpack_remote_comment');
+							for (var i = 0; i < commentForms.length; i++) {
+								commentForms[i].allowTransparency = false;
+								commentForms[i].scrolling = 'no';
+							}
+						});
+					</script>
+					<!--<![endif]-->
+							</form>
+		</div>
+
+		
+		<input type="hidden" name="comment_parent" id="comment_parent" value="" />
+
+		
+</div><!-- #comments .comments-area -->
+			
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+
+			<div id="secondary" class="widget-area" role="complementary">
+			<aside id="search-2" class="widget widget_search"><h3 class="widget-title">Search</h3><form role="search" method="get" id="searchform" class="searchform" action="http://drawingwithnumbers.artisart.org/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			</form></aside>		<aside id="recent-posts-3" class="widget widget_recent_entries">		<h3 class="widget-title">Recent Posts</h3>		<ul>
+											<li>
+					<a href="http://drawingwithnumbers.artisart.org/parameter-actions-using-a-parameter-a-data-source/">Parameter Actions: Using a parameter as a data source</a>
+									</li>
+											<li>
+					<a href="http://drawingwithnumbers.artisart.org/creating-a-dynamic-range-parameter-in-tableau/">Creating a Dynamic Range &#8220;Parameter&#8221; in Tableau</a>
+									</li>
+											<li>
+					<a href="http://drawingwithnumbers.artisart.org/using-a-filter-action-as-a-parameter/">Using a Filter Action as a Parameter</a>
+									</li>
+											<li>
+					<a href="http://drawingwithnumbers.artisart.org/creating-lists-of-values-for-tableau-from-text-excel-sources/">Creating Lists of Values for Tableau from Text &#038; Excel Sources</a>
+									</li>
+											<li>
+					<a href="http://drawingwithnumbers.artisart.org/text-wrapping-within-tableau-panes/">Text Wrapping within Tableau Panes</a>
+									</li>
+					</ul>
+		</aside><aside id="text-3" class="widget widget_text"><h3 class="widget-title">About Jonathan</h3>			<div class="textwidget"><div id=myfeed><p>I'm a father of an eight year-old who loves math and gymnastics. I'm also a husband, consultant for <a href="http://datablick.com/">DataBlick</a>, Tableau <a href="http://tableausoftware.com/ZenMasters">Zen Master</a> and <a href="http://www.tableau.com/about/blog/2015/4/introducing-tableau-ambassadors-38675">Forum Ambassador</a>, former massage therapist, somatic experiencing practitioner, writer, and meditator. My not-so-visual blog about parenting is at <a href="http://nowpapa.wordpress.com">http://nowpapa.wordpress.com/</a>.<br /><a href="http://twitter.com/jonathandrummey" title="@jonathandrummey"><img src="http://drawingwithnumbers.artisart.org/wp-content/uploads/files/somicro/twitter.png" height="20" width="20" alt="@jonathandrummey"></a> <a href="http://www.linkedin.com/in/jonathandrummey" title="Jonathan @ LinkedIn"><img src="http://drawingwithnumbers.artisart.org/wp-content/uploads/files/somicro/linkedin.png" height="20" width="20" alt="Jonathan @ LinkedIn"></a> <a href="https://plus.google.com/114523841892404322313" title="Jonathan @ Google+"><img src="http://drawingwithnumbers.artisart.org/wp-content/uploads/files/somicro/gplus2.png" height="20" width="20" alt="Jonathan @ Google+"></a>
+<a href="mailto:jonathan.drummey@gmail.com" title="jonathan.drummey@gmail.com"><img src="http://drawingwithnumbers.artisart.org/wp-content/uploads/files/somicro/email.png" height="20" width="20" alt="email"></a></p></div></div>
+		</aside><aside id="twitter_timeline-2" class="widget widget_twitter_timeline"><h3 class="widget-title">Twitter</h3><a class="twitter-timeline" data-width="225" data-height="300" data-theme="light" data-link-color="#f96e5b" data-border-color="#e8e8e8" data-tweet-limit="3" data-lang="EN" data-partner="jetpack" data-chrome="noheader nofooter noscrollbar transparent" data-widget-id="310460993148960769" href="https://twitter.com/310460993148960769">My Tweets</a></aside><aside id="tag_cloud-3" class="widget widget_tag_cloud"><h3 class="widget-title">Tags</h3><div class="tagcloud"><a href="http://drawingwithnumbers.artisart.org/tag/aggregation/" class="tag-cloud-link tag-link-543 tag-link-position-1" style="font-size: 12.666666666667pt;" aria-label="aggregation (8 items)">aggregation</a>
+<a href="http://drawingwithnumbers.artisart.org/tag/attr/" class="tag-cloud-link tag-link-20 tag-link-position-2" style="font-size: 8pt;" aria-label="attr() (4 items)">attr()</a>
+<a href="http://drawingwithnumbers.artisart.org/tag/bar-charts/" class="tag-cloud-link tag-link-557 tag-link-position-3" style="font-size: 8pt;" aria-label="bar charts (4 items)">bar charts</a>
+<a href="http://drawingwithnumbers.artisart.org/tag/blend/" class="tag-cloud-link tag-link-553 tag-link-position-4" style="font-size: 9.4933333333333pt;" aria-label="blend (5 items)">blend</a>
+<a href="http://drawingwithnumbers.artisart.org/tag/blending/" class="tag-cloud-link tag-link-554 tag-link-position-5" style="font-size: 14.346666666667pt;" aria-label="blending (10 items)">blending</a>
+<a href="http://drawingwithnumbers.artisart.org/tag/color/" class="tag-cloud-link tag-link-393 tag-link-position-6" style="font-size: 9.4933333333333pt;" aria-label="color (5 items)">color</a>
+<a href="http://drawingwithnumbers.artisart.org/tag/conditional-formatting/" class="tag-cloud-link tag-link-549 tag-link-position-7" style="font-size: 8pt;" aria-label="conditional formatting (4 items)">conditional formatting</a>
+<a href="http://drawingwithnumbers.artisart.org/tag/custom-sql/" class="tag-cloud-link tag-link-24 tag-link-position-8" style="font-size: 11.733333333333pt;" aria-label="custom SQL (7 items)">custom SQL</a>
+<a href="http://drawingwithnumbers.artisart.org/tag/dashboard/" class="tag-cloud-link tag-link-195 tag-link-position-9" style="font-size: 10.8pt;" aria-label="dashboard (6 items)">dashboard</a>
+<a href="http://drawingwithnumbers.artisart.org/tag/data/" class="tag-cloud-link tag-link-209 tag-link-position-10" style="font-size: 9.4933333333333pt;" aria-label="data (5 items)">data</a>
+<a href="http://drawingwithnumbers.artisart.org/tag/data-blend/" class="tag-cloud-link tag-link-227 tag-link-position-11" style="font-size: 9.4933333333333pt;" aria-label="data blend (5 items)">data blend</a>
+<a href="http://drawingwithnumbers.artisart.org/tag/data-blending/" class="tag-cloud-link tag-link-164 tag-link-position-12" style="font-size: 15.093333333333pt;" aria-label="data blending (11 items)">data blending</a>
+<a href="http://drawingwithnumbers.artisart.org/tag/data-preparation/" class="tag-cloud-link tag-link-466 tag-link-position-13" style="font-size: 10.8pt;" aria-label="data preparation (6 items)">data preparation</a>
+<a href="http://drawingwithnumbers.artisart.org/tag/densification/" class="tag-cloud-link tag-link-582 tag-link-position-14" style="font-size: 10.8pt;" aria-label="densification (6 items)">densification</a>
+<a href="http://drawingwithnumbers.artisart.org/tag/design/" class="tag-cloud-link tag-link-26 tag-link-position-15" style="font-size: 16.96pt;" aria-label="design (14 items)">design</a>
+<a href="http://drawingwithnumbers.artisart.org/tag/domain-padding/" class="tag-cloud-link tag-link-555 tag-link-position-16" style="font-size: 11.733333333333pt;" aria-label="domain padding (7 items)">domain padding</a>
+<a href="http://drawingwithnumbers.artisart.org/tag/excel/" class="tag-cloud-link tag-link-38 tag-link-position-17" style="font-size: 14.346666666667pt;" aria-label="Excel (10 items)">Excel</a>
+<a href="http://drawingwithnumbers.artisart.org/tag/filtering/" class="tag-cloud-link tag-link-560 tag-link-position-18" style="font-size: 8pt;" aria-label="filtering (4 items)">filtering</a>
+<a href="http://drawingwithnumbers.artisart.org/tag/filters/" class="tag-cloud-link tag-link-586 tag-link-position-19" style="font-size: 12.666666666667pt;" aria-label="filters (8 items)">filters</a>
+<a href="http://drawingwithnumbers.artisart.org/tag/formatting/" class="tag-cloud-link tag-link-548 tag-link-position-20" style="font-size: 11.733333333333pt;" aria-label="formatting (7 items)">formatting</a>
+<a href="http://drawingwithnumbers.artisart.org/tag/grand-totals/" class="tag-cloud-link tag-link-541 tag-link-position-21" style="font-size: 11.733333333333pt;" aria-label="grand totals (7 items)">grand totals</a>
+<a href="http://drawingwithnumbers.artisart.org/tag/granularity/" class="tag-cloud-link tag-link-166 tag-link-position-22" style="font-size: 9.4933333333333pt;" aria-label="granularity (5 items)">granularity</a>
+<a href="http://drawingwithnumbers.artisart.org/tag/healthcare/" class="tag-cloud-link tag-link-22 tag-link-position-23" style="font-size: 9.4933333333333pt;" aria-label="healthcare (5 items)">healthcare</a>
+<a href="http://drawingwithnumbers.artisart.org/tag/kraken/" class="tag-cloud-link tag-link-134 tag-link-position-24" style="font-size: 9.4933333333333pt;" aria-label="kraken (5 items)">kraken</a>
+<a href="http://drawingwithnumbers.artisart.org/tag/lod/" class="tag-cloud-link tag-link-498 tag-link-position-25" style="font-size: 9.4933333333333pt;" aria-label="lod (5 items)">lod</a>
+<a href="http://drawingwithnumbers.artisart.org/tag/lod-expressions/" class="tag-cloud-link tag-link-503 tag-link-position-26" style="font-size: 9.4933333333333pt;" aria-label="lod expressions (5 items)">lod expressions</a>
+<a href="http://drawingwithnumbers.artisart.org/tag/mapping/" class="tag-cloud-link tag-link-576 tag-link-position-27" style="font-size: 16.4pt;" aria-label="mapping (13 items)">mapping</a>
+<a href="http://drawingwithnumbers.artisart.org/tag/maps/" class="tag-cloud-link tag-link-191 tag-link-position-28" style="font-size: 13.6pt;" aria-label="maps (9 items)">maps</a>
+<a href="http://drawingwithnumbers.artisart.org/tag/measure-names/" class="tag-cloud-link tag-link-33 tag-link-position-29" style="font-size: 8pt;" aria-label="measure names (4 items)">measure names</a>
+<a href="http://drawingwithnumbers.artisart.org/tag/measure-values/" class="tag-cloud-link tag-link-34 tag-link-position-30" style="font-size: 8pt;" aria-label="measure values (4 items)">measure values</a>
+<a href="http://drawingwithnumbers.artisart.org/tag/padding/" class="tag-cloud-link tag-link-556 tag-link-position-31" style="font-size: 8pt;" aria-label="padding (4 items)">padding</a>
+<a href="http://drawingwithnumbers.artisart.org/tag/parameters/" class="tag-cloud-link tag-link-544 tag-link-position-32" style="font-size: 10.8pt;" aria-label="parameters (6 items)">parameters</a>
+<a href="http://drawingwithnumbers.artisart.org/tag/partitioning/" class="tag-cloud-link tag-link-550 tag-link-position-33" style="font-size: 10.8pt;" aria-label="partitioning (6 items)">partitioning</a>
+<a href="http://drawingwithnumbers.artisart.org/tag/rank/" class="tag-cloud-link tag-link-232 tag-link-position-34" style="font-size: 9.4933333333333pt;" aria-label="rank (5 items)">rank</a>
+<a href="http://drawingwithnumbers.artisart.org/tag/server/" class="tag-cloud-link tag-link-271 tag-link-position-35" style="font-size: 13.6pt;" aria-label="server (9 items)">server</a>
+<a href="http://drawingwithnumbers.artisart.org/tag/sorting/" class="tag-cloud-link tag-link-546 tag-link-position-36" style="font-size: 10.8pt;" aria-label="sorting (6 items)">sorting</a>
+<a href="http://drawingwithnumbers.artisart.org/tag/table-calcs/" class="tag-cloud-link tag-link-385 tag-link-position-37" style="font-size: 9.4933333333333pt;" aria-label="table calcs (5 items)">table calcs</a>
+<a href="http://drawingwithnumbers.artisart.org/tag/table-calculations/" class="tag-cloud-link tag-link-542 tag-link-position-38" style="font-size: 22pt;" aria-label="table calculations (27 items)">table calculations</a>
+<a href="http://drawingwithnumbers.artisart.org/tag/text-table/" class="tag-cloud-link tag-link-32 tag-link-position-39" style="font-size: 10.8pt;" aria-label="text table (6 items)">text table</a>
+<a href="http://drawingwithnumbers.artisart.org/tag/tips/" class="tag-cloud-link tag-link-390 tag-link-position-40" style="font-size: 9.4933333333333pt;" aria-label="tips (5 items)">tips</a>
+<a href="http://drawingwithnumbers.artisart.org/tag/totals/" class="tag-cloud-link tag-link-11 tag-link-position-41" style="font-size: 10.8pt;" aria-label="totals (6 items)">totals</a>
+<a href="http://drawingwithnumbers.artisart.org/tag/tricks/" class="tag-cloud-link tag-link-569 tag-link-position-42" style="font-size: 12.666666666667pt;" aria-label="tricks (8 items)">tricks</a>
+<a href="http://drawingwithnumbers.artisart.org/tag/union/" class="tag-cloud-link tag-link-28 tag-link-position-43" style="font-size: 10.8pt;" aria-label="union (6 items)">union</a>
+<a href="http://drawingwithnumbers.artisart.org/tag/v8/" class="tag-cloud-link tag-link-163 tag-link-position-44" style="font-size: 10.8pt;" aria-label="v8 (6 items)">v8</a>
+<a href="http://drawingwithnumbers.artisart.org/tag/zen/" class="tag-cloud-link tag-link-45 tag-link-position-45" style="font-size: 9.4933333333333pt;" aria-label="zen (5 items)">zen</a></div>
+</aside><aside id="archives-2" class="widget widget_archive"><h3 class="widget-title">Archives</h3>		<label class="screen-reader-text" for="archives-dropdown-2">Archives</label>
+		<select id="archives-dropdown-2" name="archive-dropdown" onchange='document.location.href=this.options[this.selectedIndex].value;'>
+			
+			<option value="">Select Month</option>
+				<option value='http://drawingwithnumbers.artisart.org/2019/04/'> April 2019 &nbsp;(1)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2018/02/'> February 2018 &nbsp;(1)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2018/01/'> January 2018 &nbsp;(2)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2017/12/'> December 2017 &nbsp;(1)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2017/10/'> October 2017 &nbsp;(1)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2017/07/'> July 2017 &nbsp;(1)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2017/04/'> April 2017 &nbsp;(1)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2017/03/'> March 2017 &nbsp;(3)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2016/11/'> November 2016 &nbsp;(2)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2016/10/'> October 2016 &nbsp;(1)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2016/08/'> August 2016 &nbsp;(2)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2016/07/'> July 2016 &nbsp;(3)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2016/06/'> June 2016 &nbsp;(1)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2016/02/'> February 2016 &nbsp;(2)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2016/01/'> January 2016 &nbsp;(2)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2015/12/'> December 2015 &nbsp;(2)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2015/11/'> November 2015 &nbsp;(4)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2015/10/'> October 2015 &nbsp;(1)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2015/08/'> August 2015 &nbsp;(2)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2015/07/'> July 2015 &nbsp;(4)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2015/06/'> June 2015 &nbsp;(2)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2015/05/'> May 2015 &nbsp;(2)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2015/04/'> April 2015 &nbsp;(3)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2015/03/'> March 2015 &nbsp;(1)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2015/01/'> January 2015 &nbsp;(6)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2014/12/'> December 2014 &nbsp;(20)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2014/11/'> November 2014 &nbsp;(1)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2014/10/'> October 2014 &nbsp;(20)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2014/09/'> September 2014 &nbsp;(1)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2014/08/'> August 2014 &nbsp;(2)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2014/07/'> July 2014 &nbsp;(1)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2014/06/'> June 2014 &nbsp;(3)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2014/04/'> April 2014 &nbsp;(1)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2014/03/'> March 2014 &nbsp;(1)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2014/02/'> February 2014 &nbsp;(1)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2014/01/'> January 2014 &nbsp;(2)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2013/12/'> December 2013 &nbsp;(5)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2013/11/'> November 2013 &nbsp;(3)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2013/10/'> October 2013 &nbsp;(1)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2013/09/'> September 2013 &nbsp;(1)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2013/08/'> August 2013 &nbsp;(3)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2013/07/'> July 2013 &nbsp;(2)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2013/06/'> June 2013 &nbsp;(1)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2013/05/'> May 2013 &nbsp;(3)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2013/04/'> April 2013 &nbsp;(3)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2013/03/'> March 2013 &nbsp;(3)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2013/02/'> February 2013 &nbsp;(3)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2013/01/'> January 2013 &nbsp;(4)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2012/12/'> December 2012 &nbsp;(1)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2012/11/'> November 2012 &nbsp;(1)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2012/10/'> October 2012 &nbsp;(7)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2012/09/'> September 2012 &nbsp;(3)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2012/08/'> August 2012 &nbsp;(3)</option>
+	<option value='http://drawingwithnumbers.artisart.org/2012/07/'> July 2012 &nbsp;(2)</option>
+
+		</select>
+		</aside><aside id="blog_subscription-3" class="widget widget_blog_subscription jetpack_subscription_widget"><h3 class="widget-title">Subscribe via Email</h3>
+            <form action="#" method="post" accept-charset="utf-8" id="subscribe-blog-blog_subscription-3">
+				                    <div id="subscribe-text"><p>Enter your email address to subscribe to this blog and receive notifications of new posts by email.</p>
+</div>                    <p id="subscribe-email">
+                        <label id="jetpack-subscribe-label"
+                               class="screen-reader-text"
+                               for="subscribe-field-blog_subscription-3">
+							Email Address                        </label>
+                        <input type="email" name="email" required="required" class="required"
+                               value=""
+                               id="subscribe-field-blog_subscription-3"
+                               placeholder="Email Address"/>
+                    </p>
+
+                    <p id="subscribe-submit">
+                        <input type="hidden" name="action" value="subscribe"/>
+                        <input type="hidden" name="source" value="http://drawingwithnumbers.artisart.org/tde-or-live-when-to-use-tableau-data-extracts/"/>
+                        <input type="hidden" name="sub-type" value="widget"/>
+                        <input type="hidden" name="redirect_fragment" value="blog_subscription-3"/>
+						                        <button type="submit"
+	                        		                    	                        name="jetpack_subscriptions_widget"
+	                    >
+	                        Subscribe                        </button>
+                    </p>
+				            </form>
+		
+</aside><aside id="text-7" class="widget widget_text"><h3 class="widget-title">RSS Feeds</h3>			<div class="textwidget"><div id=myfeed><p><a href="http://drawingwithnumbers.artisart.org/feed/" title="Blog Posts RSS"><img src="http://drawingwithnumbers.artisart.org/wp-content/uploads/files/somicro/rss.png" height="20" width="20" alt="Blog Posts RSS">Blog Posts RSS</a><br \>
+<a href="http://drawingwithnumbers.artisart.org/comments/feed/" title="Blog Comments RSS"><img src="http://drawingwithnumbers.artisart.org/wp-content/uploads/files/somicro/rss.png" height="20" width="20" alt="Blog Comments RSS">Blog Comments RSS</a><br \>
+<a href="http://drawingwithnumbers.artisart.org/category/wiki/feed/" title="Wiki RSS"><img src="http://drawingwithnumbers.artisart.org/wp-content/uploads/files/somicro/rss.png" height="20" width="20" alt="Wiki RSS">Wiki RSS</a></p></div></div>
+		</aside><aside id="top-posts-2" class="widget widget_top-posts"><h3 class="widget-title">Top Posts &amp; Pages</h3><ul class='widgets-list-layout no-grav'>
+					<li>
+												<a href="http://drawingwithnumbers.artisart.org/tde-or-live-when-to-use-tableau-data-extracts/" title="TDE or Live? When to Use Tableau Data Extracts (or not)" class="bump-view" data-bump-view="tp">
+							<img width="40" height="40" src="http://1.gravatar.com/avatar/d5ca8ae7f275b3cb849a704a83a83d4f?s=40&#038;d=mm&#038;r=g" class='widgets-list-layout-blavatar' alt="TDE or Live? When to Use Tableau Data Extracts (or not)" data-pin-nopin="true" />
+						</a>
+						<div class="widgets-list-layout-links">
+							<a href="http://drawingwithnumbers.artisart.org/tde-or-live-when-to-use-tableau-data-extracts/" class="bump-view" data-bump-view="tp">
+								TDE or Live? When to Use Tableau Data Extracts (or not)							</a>
+						</div>
+												</li>
+										<li>
+												<a href="http://drawingwithnumbers.artisart.org/parameter-actions-using-a-parameter-a-data-source/" title="Parameter Actions: Using a parameter as a data source" class="bump-view" data-bump-view="tp">
+							<img width="40" height="40" src="https://i2.wp.com/drawingwithnumbers.artisart.org/wp-content/uploads/2019/04/responsive-irs-1.gif?resize=40%2C40" class='widgets-list-layout-blavatar' alt="Parameter Actions: Using a parameter as a data source" data-pin-nopin="true" />
+						</a>
+						<div class="widgets-list-layout-links">
+							<a href="http://drawingwithnumbers.artisart.org/parameter-actions-using-a-parameter-a-data-source/" class="bump-view" data-bump-view="tp">
+								Parameter Actions: Using a parameter as a data source							</a>
+						</div>
+												</li>
+										<li>
+												<a href="http://drawingwithnumbers.artisart.org/wiki/tableau/padding-and-working-with-null-or-missing-values/" title="Padding and Working with Null or Missing Values" class="bump-view" data-bump-view="tp">
+							<img width="40" height="40" src="http://1.gravatar.com/avatar/d5ca8ae7f275b3cb849a704a83a83d4f?s=40&#038;d=mm&#038;r=g" class='widgets-list-layout-blavatar' alt="Padding and Working with Null or Missing Values" data-pin-nopin="true" />
+						</a>
+						<div class="widgets-list-layout-links">
+							<a href="http://drawingwithnumbers.artisart.org/wiki/tableau/padding-and-working-with-null-or-missing-values/" class="bump-view" data-bump-view="tp">
+								Padding and Working with Null or Missing Values							</a>
+						</div>
+												</li>
+										<li>
+												<a href="http://drawingwithnumbers.artisart.org/customizing-grand-totals-part-1/" title="Customizing Grand Totals - Part 1" class="bump-view" data-bump-view="tp">
+							<img width="40" height="40" src="https://i2.wp.com/drawingwithnumbers.artisart.org/wp-content/uploads/2012/08/Screen-Shot-2012-08-01-at-6.17.56-AM.png?resize=40%2C40" class='widgets-list-layout-blavatar' alt="Customizing Grand Totals - Part 1" data-pin-nopin="true" />
+						</a>
+						<div class="widgets-list-layout-links">
+							<a href="http://drawingwithnumbers.artisart.org/customizing-grand-totals-part-1/" class="bump-view" data-bump-view="tp">
+								Customizing Grand Totals - Part 1							</a>
+						</div>
+												</li>
+										<li>
+												<a href="http://drawingwithnumbers.artisart.org/creating-a-dynamic-parameter-with-a-tableau-data-blend/" title="Creating a Dynamic &quot;Parameter&quot; with a Tableau Data Blend" class="bump-view" data-bump-view="tp">
+							<img width="40" height="40" src="https://i2.wp.com/drawingwithnumbers.artisart.org/wp-content/uploads/2013/08/2013-08-01-16_57_25-Tableau-dynamic-parameter-from-blend-v5.png?resize=40%2C40" class='widgets-list-layout-blavatar' alt="Creating a Dynamic &quot;Parameter&quot; with a Tableau Data Blend" data-pin-nopin="true" />
+						</a>
+						<div class="widgets-list-layout-links">
+							<a href="http://drawingwithnumbers.artisart.org/creating-a-dynamic-parameter-with-a-tableau-data-blend/" class="bump-view" data-bump-view="tp">
+								Creating a Dynamic &quot;Parameter&quot; with a Tableau Data Blend							</a>
+						</div>
+												</li>
+										<li>
+												<a href="http://drawingwithnumbers.artisart.org/creating-a-dynamic-range-parameter-in-tableau/" title="Creating a Dynamic Range &quot;Parameter&quot; in Tableau" class="bump-view" data-bump-view="tp">
+							<img width="40" height="40" src="https://i2.wp.com/drawingwithnumbers.artisart.org/wp-content/uploads/2018/02/Screen-Shot-2018-02-03-at-4.31.47-PM.png?resize=40%2C40" class='widgets-list-layout-blavatar' alt="Creating a Dynamic Range &quot;Parameter&quot; in Tableau" data-pin-nopin="true" />
+						</a>
+						<div class="widgets-list-layout-links">
+							<a href="http://drawingwithnumbers.artisart.org/creating-a-dynamic-range-parameter-in-tableau/" class="bump-view" data-bump-view="tp">
+								Creating a Dynamic Range &quot;Parameter&quot; in Tableau							</a>
+						</div>
+												</li>
+										<li>
+												<a href="http://drawingwithnumbers.artisart.org/customizing-grand-totals-part-2/" title="Customizing Grand Totals - Part 2" class="bump-view" data-bump-view="tp">
+							<img width="40" height="40" src="https://i0.wp.com/drawingwithnumbers.artisart.org/wp-content/uploads/2012/08/putting-grand-total-together.png?resize=40%2C40" class='widgets-list-layout-blavatar' alt="Customizing Grand Totals - Part 2" data-pin-nopin="true" />
+						</a>
+						<div class="widgets-list-layout-links">
+							<a href="http://drawingwithnumbers.artisart.org/customizing-grand-totals-part-2/" class="bump-view" data-bump-view="tp">
+								Customizing Grand Totals - Part 2							</a>
+						</div>
+												</li>
+										<li>
+												<a href="http://drawingwithnumbers.artisart.org/older-but-still-useful-conditional-formatting/" title="Older But Still Useful - Conditional Formatting" class="bump-view" data-bump-view="tp">
+							<img width="40" height="40" src="https://i1.wp.com/drawingwithnumbers.artisart.org/wp-content/uploads/2012/10/Screen-Shot-2012-10-25-at-6.03.37-AM.png?resize=40%2C40" class='widgets-list-layout-blavatar' alt="Older But Still Useful - Conditional Formatting" data-pin-nopin="true" />
+						</a>
+						<div class="widgets-list-layout-links">
+							<a href="http://drawingwithnumbers.artisart.org/older-but-still-useful-conditional-formatting/" class="bump-view" data-bump-view="tp">
+								Older But Still Useful - Conditional Formatting							</a>
+						</div>
+												</li>
+										<li>
+												<a href="http://drawingwithnumbers.artisart.org/formatting-time-durations/" title="Formatting Time Durations in Tableau" class="bump-view" data-bump-view="tp">
+							<img width="40" height="40" src="https://i1.wp.com/drawingwithnumbers.artisart.org/wp-content/uploads/2014/07/flickr-4750765479-original-e1406743559750.jpg?resize=40%2C40" class='widgets-list-layout-blavatar' alt="Formatting Time Durations in Tableau" data-pin-nopin="true" />
+						</a>
+						<div class="widgets-list-layout-links">
+							<a href="http://drawingwithnumbers.artisart.org/formatting-time-durations/" class="bump-view" data-bump-view="tp">
+								Formatting Time Durations in Tableau							</a>
+						</div>
+												</li>
+										<li>
+												<a href="http://drawingwithnumbers.artisart.org/bars-and-lines/" title="Bars and Lines" class="bump-view" data-bump-view="tp">
+							<img width="40" height="40" src="https://i2.wp.com/drawingwithnumbers.artisart.org/wp-content/uploads/2013/01/1.-Stacked-Bars-and-Lines-via-Discrete.png?resize=40%2C40" class='widgets-list-layout-blavatar' alt="Bars and Lines" data-pin-nopin="true" />
+						</a>
+						<div class="widgets-list-layout-links">
+							<a href="http://drawingwithnumbers.artisart.org/bars-and-lines/" class="bump-view" data-bump-view="tp">
+								Bars and Lines							</a>
+						</div>
+												</li>
+					</ul>
+</aside><aside id="twitter_timeline-3" class="widget widget_twitter_timeline"><h3 class="widget-title">@HelpMeDataBlick tweets</h3><a class="twitter-timeline" data-width="225" data-height="300" data-theme="light" data-link-color="#f96e5b" data-border-color="#e8e8e8" data-tweet-limit="3" data-lang="EN" data-partner="jetpack" data-chrome="noheader nofooter noscrollbar transparent" data-widget-id="668486762436673536" href="https://twitter.com/668486762436673536">My Tweets</a></aside>		</div><!-- #secondary -->
+		</div><!-- #main .wrapper -->
+	<footer id="colophon" role="contentinfo">
+		<div class="site-info">
+						<a href="https://wordpress.org/" title="Semantic Personal Publishing Platform">Proudly powered by WordPress</a>
+		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+	<div style="display:none">
+	<div class="grofile-hash-map-8b0f17f047627fa389a46f3e1a3be866">
+	</div>
+	<div class="grofile-hash-map-507ff1cff935fa811aa8fcffe7da7dae">
+	</div>
+	<div class="grofile-hash-map-4992f634a9726c94cc7d5c2b571c04ff">
+	</div>
+	<div class="grofile-hash-map-75ae8d0ab1fa599512ed7b8af7626f57">
+	</div>
+	<div class="grofile-hash-map-22dfd233b273a61f5c8b1359a023a6f8">
+	</div>
+	<div class="grofile-hash-map-7c2e1b8a7f5dafdab40536d7c6743f31">
+	</div>
+	<div class="grofile-hash-map-9ea3307835d30242fb1f1f96edab00ce">
+	</div>
+	<div class="grofile-hash-map-8191a7fb848fc39b7cefed66e4b5a696">
+	</div>
+	<div class="grofile-hash-map-d5ca8ae7f275b3cb849a704a83a83d4f">
+	</div>
+	<div class="grofile-hash-map-9fac5816fab5d7b7470e150cbad252c1">
+	</div>
+	</div>
+
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"http:\/\/drawingwithnumbers.artisart.org\/tde-or-live-when-to-use-tableau-data-extracts\/":3003};
+	</script>
+							<div id="sharing_email" style="display: none;">
+		<form action="/tde-or-live-when-to-use-tableau-data-extracts/" method="post">
+			<label for="target_email">Send to Email Address</label>
+			<input type="email" name="target_email" id="target_email" value="" />
+
+			
+				<label for="source_name">Your Name</label>
+				<input type="text" name="source_name" id="source_name" value="" />
+
+				<label for="source_email">Your Email Address</label>
+				<input type="email" name="source_email" id="source_email" value="" />
+
+						<input type="text" id="jetpack-source_f_name" name="source_f_name" class="input" value="" size="25" autocomplete="off" title="This field is for validation and should not be changed" />
+			
+			<img style="float: right; display: none" class="loading" src="http://drawingwithnumbers.artisart.org/wp-content/plugins/jetpack/modules/sharedaddy/images/loading.gif" alt="loading" width="16" height="16" />
+			<input type="submit" value="Send Email" class="sharing_send" />
+			<a rel="nofollow" href="#cancel" class="sharing_cancel" role="button">Cancel</a>
+
+			<div class="errors errors-1" style="display: none;">
+				Post was not sent - check your email addresses!			</div>
+
+			<div class="errors errors-2" style="display: none;">
+				Email check failed, please try again			</div>
+
+			<div class="errors errors-3" style="display: none;">
+				Sorry, your blog cannot share posts by email.			</div>
+		</form>
+	</div>
+<script type='text/javascript' src='https://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201952'></script>
+<script type='text/javascript' src='https://secure.gravatar.com/js/gprofiles.js?ver=2019Decaa'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://drawingwithnumbers.artisart.org/wp-content/plugins/jetpack/modules/wpgroho.js?ver=5.1.4'></script>
+<script type='text/javascript' src='http://drawingwithnumbers.artisart.org/wp-includes/js/comment-reply.min.js?ver=5.1.4'></script>
+<script type='text/javascript' src='http://drawingwithnumbers.artisart.org/wp-content/themes/twentytwelve/js/navigation.js?ver=20140711'></script>
+<script type='text/javascript' src='http://drawingwithnumbers.artisart.org/wp-content/plugins/jetpack/_inc/build/twitter-timeline.min.js?ver=4.0.0'></script>
+<script type='text/javascript' src='http://drawingwithnumbers.artisart.org/wp-includes/js/wp-embed.min.js?ver=5.1.4'></script>
+<script type='text/javascript' src='http://drawingwithnumbers.artisart.org/wp-content/plugins/jetpack/_inc/build/postmessage.min.js?ver=7.2.2'></script>
+<script type='text/javascript' src='http://drawingwithnumbers.artisart.org/wp-content/plugins/jetpack/_inc/build/jquery.jetpack-resize.min.js?ver=7.2.2'></script>
+<script type='text/javascript' src='http://drawingwithnumbers.artisart.org/wp-content/plugins/jetpack/_inc/build/likes/queuehandler.min.js?ver=7.2.2'></script>
+<script async="async" type='text/javascript' src='http://drawingwithnumbers.artisart.org/wp-content/plugins/akismet/_inc/form.js?ver=4.1.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var sharing_js_options = {"lang":"en","counts":"1","is_stats_active":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://drawingwithnumbers.artisart.org/wp-content/plugins/jetpack/_inc/build/sharedaddy/sharing.min.js?ver=7.2.2'></script>
+<script type='text/javascript'>
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-twitter', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-facebook', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-tumblr', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomtumblr', 'menubar=1,resizable=1,width=450,height=450' );
+				return false;
+			});
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-linkedin', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomlinkedin', 'menubar=1,resizable=1,width=580,height=450' );
+				return false;
+			});
+</script>
+	<iframe src='https://widgets.wp.com/likes/master.html?ver=201952#ver=201952' scrolling='no' id='likes-master' name='likes-master' style='display:none;'></iframe>
+	<div id='likes-other-gravatars'><div class="likes-text"><span>%d</span> bloggers like this:</div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+	
+		<!--[if IE]>
+		<script type="text/javascript">
+			if ( 0 === window.location.hash.indexOf( '#comment-' ) ) {
+				// window.location.reload() doesn't respect the Hash in IE
+				window.location.hash = window.location.hash;
+			}
+		</script>
+		<![endif]-->
+		<script type="text/javascript">
+			(function () {
+				var comm_par_el = document.getElementById( 'comment_parent' ),
+					comm_par = ( comm_par_el && comm_par_el.value ) ? comm_par_el.value : '',
+					frame = document.getElementById( 'jetpack_remote_comment' ),
+					tellFrameNewParent;
+
+				tellFrameNewParent = function () {
+					if ( comm_par ) {
+						frame.src = "http://jetpack.wordpress.com/jetpack-comment/?blogid=38989177&postid=3003&comment_registration=0&require_name_email=1&stc_enabled=1&stb_enabled=1&show_avatars=1&avatar_default=mystery&greeting=Please+add+your+thoughts+and+perspectives&greeting_reply=Leave+a+Reply+to+%25s&color_scheme=light&lang=en_US&jetpack_version=7.2.2&show_cookie_consent=10&has_cookie_consent=0&sig=4924700d0c3c62f916cea0134b10f31f82454404#parent=http%3A%2F%2Fdrawingwithnumbers.artisart.org%2Ftde-or-live-when-to-use-tableau-data-extracts%2F" + '&replytocom=' + parseInt( comm_par, 10 ).toString();
+					} else {
+						frame.src = "http://jetpack.wordpress.com/jetpack-comment/?blogid=38989177&postid=3003&comment_registration=0&require_name_email=1&stc_enabled=1&stb_enabled=1&show_avatars=1&avatar_default=mystery&greeting=Please+add+your+thoughts+and+perspectives&greeting_reply=Leave+a+Reply+to+%25s&color_scheme=light&lang=en_US&jetpack_version=7.2.2&show_cookie_consent=10&has_cookie_consent=0&sig=4924700d0c3c62f916cea0134b10f31f82454404#parent=http%3A%2F%2Fdrawingwithnumbers.artisart.org%2Ftde-or-live-when-to-use-tableau-data-extracts%2F";
+					}
+				};
+
+				
+				if ( 'undefined' !== typeof addComment ) {
+					addComment._Jetpack_moveForm = addComment.moveForm;
+
+					addComment.moveForm = function ( commId, parentId, respondId, postId ) {
+						var returnValue = addComment._Jetpack_moveForm( commId, parentId, respondId, postId ),
+							cancelClick, cancel;
+
+						if ( false === returnValue ) {
+							cancel = document.getElementById( 'cancel-comment-reply-link' );
+							cancelClick = cancel.onclick;
+							cancel.onclick = function () {
+								var cancelReturn = cancelClick.call( this );
+								if ( false !== cancelReturn ) {
+									return cancelReturn;
+								}
+
+								if ( ! comm_par ) {
+									return cancelReturn;
+								}
+
+								comm_par = 0;
+
+								tellFrameNewParent();
+
+								return cancelReturn;
+							};
+						}
+
+						if ( comm_par == parentId ) {
+							return returnValue;
+						}
+
+						comm_par = parentId;
+
+						tellFrameNewParent();
+
+						return returnValue;
+					};
+				}
+
+				
+				// Do the post message bit after the dom has loaded.
+				document.addEventListener( 'DOMContentLoaded', function () {
+					var iframe_url = "http:\/\/jetpack.wordpress.com";
+					if ( window.postMessage ) {
+						if ( document.addEventListener ) {
+							window.addEventListener( 'message', function ( event ) {
+								var origin = event.origin.replace( /^http:\/\//i, 'https://' );
+								if ( iframe_url.replace( /^http:\/\//i, 'https://' ) !== origin ) {
+									return;
+								}
+								jQuery( frame ).height( event.data );
+							});
+						} else if ( document.attachEvent ) {
+							window.attachEvent( 'message', function ( event ) {
+								var origin = event.origin.replace( /^http:\/\//i, 'https://' );
+								if ( iframe_url.replace( /^http:\/\//i, 'https://' ) !== origin ) {
+									return;
+								}
+								jQuery( frame ).height( event.data );
+							});
+						}
+					}
+				})
+
+			})();
+		</script>
+
+		<script type='text/javascript' src='https://stats.wp.com/e-201952.js' async='async' defer='defer'></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:7.2.2',blog:'38989177',post:'3003',tz:'-5',srv:'drawingwithnumbers.artisart.org'} ]);
+	_stq.push([ 'clickTrackerInit', '38989177', '3003' ]);
+</script>
+</body>
+</html>

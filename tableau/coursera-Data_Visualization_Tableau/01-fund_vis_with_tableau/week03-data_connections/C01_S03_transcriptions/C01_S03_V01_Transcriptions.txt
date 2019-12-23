@@ -1,0 +1,23 @@
+[MUSIC] Hello, my name is Sut Brar. I will be teaching
+the lessons in this module. I have a background in research and
+statistics, and I've been in the analytics industry for
+over ten years. Throughout the analytics industry,
+data visualization has become a very important aspect of
+analytics and has been growing rapidly. More recently, software like Tableau has made it much
+easier to create data visualizations and has given analysts another very important
+tool to use when analyzing data. So what are data connections in
+Tableau and why are they important? Data connections allow Tableau
+access to your data so you can create beautiful and
+interactive dashboards. Making the correct data connections is
+very important in Tableau because data can be stored in various types,
+like Microsoft Excel, text files, or statistical files or in various locations
+such as your computer or on a server. Understanding what type of file stores
+your data and where the data is located will dictate what type of data
+connection you will need to make. In this module we'll focus on
+preparing you data for import and how to connect to different types
+of data using Tableau Public. Then, we will distinguish between a live
+data connection and a data extract. After that, we'll identify the types of
+data that Tableau Public can and cannot connect to and look at the ways to get
+around the limitations of Tableau Public. Finally, we'll use Tableau's data source
+section to connect to different data sources and merge multiple sources of
+data together using common variables. Okay, let's get started.

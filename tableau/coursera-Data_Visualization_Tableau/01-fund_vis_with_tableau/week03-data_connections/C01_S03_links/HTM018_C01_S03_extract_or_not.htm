@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"ec7f1b9e71",applicationID:"266263659"};window.NREUM||(NREUM={}),__nr_require=function(n,e,t){function r(t){if(!e[t]){var i=e[t]={exports:{}};n[t][0].call(i.exports,function(e){var i=n[t][1][e];return r(i||e)},i,i.exports)}return e[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(n,e,t){function r(){}function i(n,e,t){return function(){return o(n,[u.now()].concat(f(arguments)),e?null:this,t),e?void 0:this}}var o=n("handle"),a=n(4),f=n(5),c=n("ee").get("tracer"),u=n("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(n,e){s[e]=i(d+e,!0,"api")}),s.addPageAction=i(d+"addPageAction",!0),s.setCurrentRouteName=i(d+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(n,e){var t={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),n,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return e.apply(this,arguments)}catch(n){throw c.emit("fn-err",[arguments,this,n],t),n}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(n,e){m[e]=i(l+e)}),newrelic.noticeError=function(n,e){"string"==typeof n&&(n=new Error(n)),o("err",[n,u.now(),!1,e])}},{}],2:[function(n,e,t){function r(n,e){var t=n.getEntries();t.forEach(function(n){"first-paint"===n.name?a("timing",["fp",Math.floor(n.startTime)]):"first-contentful-paint"===n.name&&a("timing",["fcp",Math.floor(n.startTime)])})}function i(n){if(n instanceof c&&!s){var e,t=Math.round(n.timeStamp);e=t>1e12?Date.now()-t:f.now()-t,s=!0,a("timing",["fi",t,{type:n.type,fid:e}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var o,a=n("handle"),f=n("loader"),c=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){o=new PerformanceObserver(r);try{o.observe({entryTypes:["paint"]})}catch(u){}}if("addEventListener"in document){var s=!1,p=["click","keydown","mousedown","pointerdown","touchstart"];p.forEach(function(n){document.addEventListener(n,i,!1)})}}},{}],3:[function(n,e,t){function r(n,e){if(!i)return!1;if(n!==i)return!1;if(!e)return!0;if(!o)return!1;for(var t=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],4:[function(n,e,t){function r(n,e){var t=[],r="",o=0;for(r in n)i.call(n,r)&&(t[o]=e(r,n[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],5:[function(n,e,t){function r(n,e,t){e||(e=0),"undefined"==typeof t&&(t=n?n.length:0);for(var r=-1,i=t-e||0,o=Array(i<0?0:i);++r<i;)o[r]=n[e+r];return o}e.exports=r},{}],6:[function(n,e,t){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(n,e,t){function r(){}function i(n){function e(n){return n&&n instanceof r?n:n?c(n,f,o):o()}function t(t,r,i,o){if(!d.aborted||o){n&&n(t,r,i);for(var a=e(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(n,e){h[n]=v(n).concat(e)}function m(n,e){var t=h[n];if(t)for(var r=0;r<t.length;r++)t[r]===e&&t.splice(r,1)}function v(n){return h[n]||[]}function g(n){return p[n]=p[n]||i(t)}function w(n,e){u(n,function(n,t){e=e||"feature",y[t]=e,e in s||(s[e]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:e,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var f="nr@context",c=n("gos"),u=n(4),s={},p={},d=e.exports=i();d.backlog=s},{}],gos:[function(n,e,t){function r(n,e,t){if(i.call(n,e))return n[e];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(n,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return n[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(n,e,t){function r(n,e,t,r){i.buffer([n],r),i.emit(n,e,t)}var i=n("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(n,e,t){function r(n){var e=typeof n;return!n||"object"!==e&&"function"!==e?-1:n===window?0:a(n,o,function(){return i++})}var i=1,o="nr@id",a=n("gos");e.exports=r},{}],loader:[function(n,e,t){function r(){if(!x++){var n=E.info=NREUM.info,e=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(n&&n.licenseKey&&n.applicationID&&e))return s.abort();u(y,function(e,t){n[e]||(n[e]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=l.createElement("script");t.src="https://"+n.agent,e.parentNode.insertBefore(t,e)}}function i(){"complete"===l.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=n("handle"),u=n(4),s=n("ee"),p=n(3),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1158.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=e.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};n(1),n(2),l[m]?(l[m]("DOMContentLoaded",o,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",i),d[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=n(6)},{}],"wrap-function":[function(n,e,t){function r(n){return!(n&&n instanceof Function&&n.apply&&!n[a])}var i=n("ee"),o=n(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;e.exports=function(n,e){function t(n,e,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){d([u,"",[r,a,i],f])}s(e+"start",[r,a,i],f);try{return c=n.apply(a,r)}catch(p){throw s(e+"err",[r,a,p],f),p}finally{s(e+"end",[r,a,c],f)}}return r(n)?n:(e||(e=""),nrWrapper[a]=n,p(n,nrWrapper),nrWrapper)}function u(n,e,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<e.length;c++)f=e[c],a=n[f],r(a)||(n[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||e){var o=c;c=!0;try{n.emit(t,r,i,e)}catch(a){d([a,t,r,i])}c=o}}function p(n,e){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(n);return t.forEach(function(t){Object.defineProperty(e,t,{get:function(){return n[t]},set:function(e){return n[t]=e,e}})}),e}catch(r){d([r])}for(var i in n)f.call(n,i)&&(e[i]=n[i]);return e}function d(e){try{n.emit("internal-error",e)}catch(t){}}return n||(n=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+	
+				<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+		            <link rel="shortcut icon" type="image/x-icon" href="https://interworks.com/wp-content/uploads/2017/08/foundation-dark.png">
+            <link rel="apple-touch-icon" href="https://interworks.com/wp-content/uploads/2017/08/foundation-dark.png"/>
+        
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="pingback" href="https://interworks.com/xmlrpc.php" />
+
+	<link type="text/css" media="all" href="https://interworks.com/wp-content/uploads/autoptimize/css/autoptimize_b0cfa3e18763b87f210c8ab931ba0507.css" rel="stylesheet" /><title>To Extract or Not to Extract? - 7 Guidelines for Tableau Data Extracts | InterWorks</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v12.3 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+<link rel="canonical" href="https://interworks.com/blog/bbickell/2014/04/29/extract-or-not-extract-7-guidelines-tableau-data-extracts/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="To Extract or Not to Extract? - 7 Guidelines for Tableau Data Extracts | InterWorks" />
+<meta property="og:description" content="Fine-tuning the performance of your Tableau Server environment can seem at times to be more alchemy than science, particularly with the ever-changing diversity of the needs and requirements of your user base. That is little consolation for an administrator tasked with ensuring an efficiently running..." />
+<meta property="og:url" content="https://interworks.com/blog/bbickell/2014/04/29/extract-or-not-extract-7-guidelines-tableau-data-extracts/" />
+<meta property="og:site_name" content="InterWorks" />
+<meta property="article:publisher" content="https://www.facebook.com/interworks/" />
+<meta property="article:tag" content="Tableau" />
+<meta property="article:tag" content="Tableau Tips" />
+<meta property="article:section" content="Data" />
+<meta property="article:published_time" content="2014-04-29T05:08:00+00:00" />
+<meta property="article:modified_time" content="2018-04-13T00:14:35+00:00" />
+<meta property="og:updated_time" content="2018-04-13T00:14:35+00:00" />
+<meta property="og:image" content="https://interworks.com/wp-content/uploads/sites/default/files/blog/u143/Data%20Connection.png" />
+<meta property="og:image:secure_url" content="https://interworks.com/wp-content/uploads/sites/default/files/blog/u143/Data%20Connection.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Fine-tuning the performance of your Tableau Server environment can seem at times to be more alchemy than science, particularly with the ever-changing diversity of the needs and requirements of your user base. That is little consolation for an administrator tasked with ensuring an efficiently running..." />
+<meta name="twitter:title" content="To Extract or Not to Extract? - 7 Guidelines for Tableau Data Extracts | InterWorks" />
+<meta name="twitter:site" content="@interworks" />
+<meta name="twitter:image" content="https://interworks.com/wp-content/uploads/sites/default/files/blog/u143/Data%20Connection.png" />
+<meta name="twitter:creator" content="@brianbickell" />
+<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://interworks.com/#website","url":"https://interworks.com/","name":"InterWorks","potentialAction":{"@type":"SearchAction","target":"https://interworks.com/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"ImageObject","@id":"https://interworks.com/blog/bbickell/2014/04/29/extract-or-not-extract-7-guidelines-tableau-data-extracts/#primaryimage","url":"/wp-content/uploads/sites/default/files/blog/u143/Data%20Connection.png"},{"@type":"WebPage","@id":"https://interworks.com/blog/bbickell/2014/04/29/extract-or-not-extract-7-guidelines-tableau-data-extracts/#webpage","url":"https://interworks.com/blog/bbickell/2014/04/29/extract-or-not-extract-7-guidelines-tableau-data-extracts/","inLanguage":"en-US","name":"To Extract or Not to Extract? - 7 Guidelines for Tableau Data Extracts | InterWorks","isPartOf":{"@id":"https://interworks.com/#website"},"primaryImageOfPage":{"@id":"https://interworks.com/blog/bbickell/2014/04/29/extract-or-not-extract-7-guidelines-tableau-data-extracts/#primaryimage"},"datePublished":"2014-04-29T05:08:00+00:00","dateModified":"2018-04-13T00:14:35+00:00","author":{"@id":"https://interworks.com/#/schema/person/38c75545652f455279663b3df0af04a0"}},{"@type":["Person"],"@id":"https://interworks.com/#/schema/person/38c75545652f455279663b3df0af04a0","name":"Brian Bickell","image":{"@type":"ImageObject","@id":"https://interworks.com/#authorlogo","url":"https://secure.gravatar.com/avatar/13af281fabc2feb4f0cf3e2d8a153c53?s=96&d=mm&r=g","caption":"Brian Bickell"},"description":"Brian is a man whose life has been defined by his obsessions. While other people might dabble in hobbies, Brian is the kind of person who becomes entirely consumed by them. Whenever something catches his attention, he is prone to finding out just how far he can go with it. Collecting, competitive video gaming and, most recently, cycling have all caught his attention. Each of these fixations has changed his life in significant ways.\u00a0\r\n\r\nBrian discovered his love of cycling after getting around the Google campus by bike. That feeling stayed with him as he returned home and purchased his first bicycle. In just one year\u2019s time, he had begun racing competitively on both road and gravel, completed multiple century rides, toured across Oklahoma by bike and lost 120 pounds along the way.\r\n\r\nThis persistence has also shown itself in Brian\u2019s career. After receiving a computer science degree from Oklahoma State University, he began his career at InterWorks. He began as a software developer, became a database administrator and moved onward through the ranks of the Business Intelligence Team, eventually becoming a principal consultant. Brian now spends most of his time at work assisting clients in understanding the ways InterWorks can help them better utilize the data their organization produces. That is, when he\u2019s not daydreaming about his next race.","sameAs":["https://twitter.com/http://www.twitter.com/brianbickell"]}]}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//interworks.com' />
+<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="InterWorks &raquo; Feed" href="https://interworks.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="InterWorks &raquo; Comments Feed" href="https://interworks.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="InterWorks &raquo; To Extract or Not to Extract? &#8211; 7 Guidelines for Tableau Data Extracts Comments Feed" href="https://interworks.com/blog/bbickell/2014/04/29/extract-or-not-extract-7-guidelines-tableau-data-extracts/feed/" />
+<!-- This site uses the Google Analytics by MonsterInsights plugin v7.9.0 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+<script type="text/javascript" data-cfasync="false">
+	var mi_version         = '7.9.0';
+	var mi_track_user      = true;
+	var mi_no_track_reason = '';
+	
+	var disableStr = 'ga-disable-UA-6095304-1';
+
+	/* Function to detect opted out users */
+	function __gaTrackerIsOptedOut() {
+		return document.cookie.indexOf(disableStr + '=true') > -1;
+	}
+
+	/* Disable tracking if the opt-out cookie exists. */
+	if ( __gaTrackerIsOptedOut() ) {
+		window[disableStr] = true;
+	}
+
+	/* Opt-out function */
+	function __gaTrackerOptout() {
+	  document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+	  window[disableStr] = true;
+	}
+	
+	if ( mi_track_user ) {
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+		__gaTracker('create', 'UA-6095304-1', 'auto');
+		__gaTracker('set', 'forceSSL', true);
+		__gaTracker('set', 'anonymizeIp', true);
+		__gaTracker('send','pageview');
+	} else {
+		console.log( "" );
+		(function() {
+			/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+			var noopfn = function() {
+				return null;
+			};
+			var noopnullfn = function() {
+				return null;
+			};
+			var Tracker = function() {
+				return null;
+			};
+			var p = Tracker.prototype;
+			p.get = noopfn;
+			p.set = noopfn;
+			p.send = noopfn;
+			var __gaTracker = function() {
+				var len = arguments.length;
+				if ( len === 0 ) {
+					return;
+				}
+				var f = arguments[len-1];
+				if ( typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function' ) {
+					console.log( 'Not running function __gaTracker(' + arguments[0] + " ....) because you are not being tracked. " + mi_no_track_reason );
+					return;
+				}
+				try {
+					f.hitCallback();
+				} catch (ex) {
+
+				}
+			};
+			__gaTracker.create = function() {
+				return new Tracker();
+			};
+			__gaTracker.getByName = noopnullfn;
+			__gaTracker.getAll = function() {
+				return [];
+			};
+			__gaTracker.remove = noopfn;
+			window['__gaTracker'] = __gaTracker;
+					})();
+		}
+</script>
+<!-- / Google Analytics by MonsterInsights -->
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/interworks.com\/wp-includes\/js\/wp-emoji-release.min.js"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='jquery-ui-css'  href='//ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/themes/base/jquery-ui.css' type='text/css' media='all' />
+
+
+
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+#rs-demo-id {}
+</style>
+
+
+
+
+
+
+
+
+<style id='bridge-stylesheet-inline-css' type='text/css'>
+   .postid-3272.disabled_footer_top .footer_top_holder, .postid-3272.disabled_footer_bottom .footer_bottom_holder { display: none;}
+
+
+</style>
+
+<link rel='stylesheet' id='bridge-style-dynamic-css'  href='https://interworks.com/wp-content/themes/bridge/css/style_dynamic_callback.php' type='text/css' media='all' />
+
+<link rel='stylesheet' id='bridge-style-dynamic-responsive-css'  href='https://interworks.com/wp-content/themes/bridge/css/style_dynamic_responsive_callback.php' type='text/css' media='all' />
+
+<link rel='stylesheet' id='bridge-style-handle-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Raleway%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%2C300italic%2C400italic%2C700italic&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='vc_lte_ie9-css'  href='https://interworks.com/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css' type='text/css' media='screen' />
+<![endif]-->
+
+
+
+
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/jquery/jquery-migrate.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,exe,js,pdf,ppt,tgz,zip,xls","inbound_paths":"[]","home_url":"https:\/\/interworks.com","hash_tracking":"false"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://interworks.com/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend.min.js'></script>
+<script type='text/javascript'>
+var mejsL10n = {"language":"en","strings":{"mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen-off":"Turn off Fullscreen","mejs.fullscreen-on":"Go Fullscreen","mejs.download-video":"Download Video","mejs.fullscreen":"Fullscreen","mejs.time-jump-forward":["Jump forward 1 second","Jump forward %1 seconds"],"mejs.loop":"Toggle Loop","mejs.play":"Play","mejs.pause":"Pause","mejs.close":"Close","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.time-skip-back":["Skip back 1 second","Skip back %1 seconds"],"mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.mute-toggle":"Mute Toggle","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.ad-skip":"Skip ad","mejs.ad-skip-info":["Skip in 1 second","Skip in %1 seconds"],"mejs.source-chooser":"Source Chooser","mejs.stop":"Stop","mejs.speed-rate":"Speed Rate","mejs.live-broadcast":"Live Broadcast","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+</script>
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/mediaelement/mediaelement-migrate.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://interworks.com/wp-content/uploads/autoptimize/js/autoptimize_single_3768924076a4e52562990e40c11050c0.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/uploads/autoptimize/js/autoptimize_single_8ff1c89f24a8ca6f91f77389a0b70449.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/uploads/autoptimize/js/autoptimize_single_80a2d68f866dadc95c3b5475743d4e77.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/themes/interworks/js/geo.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/uploads/autoptimize/js/autoptimize_single_6fac09f8b4078b3393d9565d79e965fc.js'></script>
+<meta name="generator" content="Powered by LayerSlider 6.8.4 - Multi-Purpose, Responsive, Parallax, Mobile-Friendly Slider Plugin for WordPress." />
+<!-- LayerSlider updates and docs at: https://layerslider.kreaturamedia.com -->
+<link rel='https://api.w.org/' href='https://interworks.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://interworks.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://interworks.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='shortlink' href='https://interworks.com/?p=3272' />
+<link rel="alternate" type="application/json+oembed" href="https://interworks.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Finterworks.com%2Fblog%2Fbbickell%2F2014%2F04%2F29%2Fextract-or-not-extract-7-guidelines-tableau-data-extracts%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://interworks.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Finterworks.com%2Fblog%2Fbbickell%2F2014%2F04%2F29%2Fextract-or-not-extract-7-guidelines-tableau-data-extracts%2F&#038;format=xml" />
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+<meta name="generator" content="Powered by Slider Revolution 5.4.8.3 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+
+<!-- BEGIN Typekit Fonts for WordPress -->
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'lfv7urn',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+<!-- END Typekit Fonts for WordPress -->
+
+<script type="text/javascript">function setREVStartSize(e){									
+						try{ e.c=jQuery(e.c);var i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;
+							if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})					
+						}catch(d){console.log("Failure at Presize of Slider:"+d)}						
+					};</script>
+<noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
+
+<body class="post-template-default single single-post postid-3272 single-format-standard bridge-core-1.0.5  qode_popup_menu_push_text_top footer_responsive_adv qode-child-theme-ver-1.0.0 qode-theme-ver-18.1 qode-theme-bridge qode_header_in_grid wpb-js-composer js-comp-ver-6.0.2 vc_responsive" itemscope itemtype="http://schema.org/WebPage">
+
+
+
+
+<div class="wrapper">
+	<div class="wrapper_inner">
+
+    
+		<!-- Google Analytics start -->
+				<!-- Google Analytics end -->
+
+		
+	<header class=" scroll_header_top_area light fixed scrolled_not_transparent page_header">
+	<div class="header_inner clearfix">
+		<form role="search" action="https://interworks.com/" class="qode_search_form_3" method="get">
+	    <div class="container">
+        <div class="container_inner clearfix">
+							                <div class="form_holder_outer">
+                    <div class="form_holder">
+
+                        <input type="text" placeholder="Search" name="s" class="qode_search_field" autocomplete="off" />
+                        <div class="qode_search_close">
+                            <a href="#">
+								<i class="qode_icon_font_awesome fa fa-times " ></i>                            </a>
+                        </div>
+                    </div>
+                </div>
+								        </div>
+    </div>
+</form>		<div class="header_top_bottom_holder">
+			
+			<div class="header_bottom clearfix" style=' background-color:rgba(39, 41, 46, 0.8);' >
+								<div class="container">
+					<div class="container_inner clearfix">
+																				<div class="header_inner_left">
+																	<div class="mobile_menu_button">
+		<span>
+			<i class="qode_icon_font_awesome fa fa-bars " ></i>		</span>
+	</div>
+								
+									<a href="javascript:void(0)" class="popup_menu normal qode_popup_menu_push_text_top">
+		<span class="popup_menu_inner"><i class="line">&nbsp;</i></span>	</a>
+								<div class="logo_wrapper" >
+	<div class="q_logo">
+		<a itemprop="url" href="https://interworks.com/" >
+             <img itemprop="image" class="normal" src="https://interworks.com/wp-content/uploads/2017/08/white-logo.svg" alt="Logo"> 			 <img itemprop="image" class="light" src="https://interworks.com/wp-content/uploads/2017/08/white-logo.svg" alt="Logo"/> 			 <img itemprop="image" class="dark" src="https://interworks.com/wp-content/uploads/2017/08/white-logo.svg" alt="Logo"/> 			 <img itemprop="image" class="sticky" src="https://interworks.com/wp-content/uploads/2017/08/white-logo.svg" alt="Logo"/> 			 <img itemprop="image" class="mobile" src="https://interworks.com/wp-content/uploads/2017/08/white-logo.svg" alt="Logo"/> 			 <img itemprop="image" class="popup" src="https://interworks.com/wp-content/uploads/2017/08/white-logo.svg" alt="Logo"/> 		</a>
+	</div>
+	</div>															</div>
+															<div class="header_inner_right">
+									<div class="side_menu_button_wrapper right">
+																														<div class="side_menu_button">
+												<a class="search_button search_covers_header normal" href="javascript:void(0)">
+		<i class="qode_icon_font_awesome fa fa-search " ></i>	</a>
+
+												
+																					</div>
+									</div>
+								</div>
+							
+							
+							<nav class="main_menu drop_down right">
+								<ul id="menu-primary" class=""><li id="nav-menu-item-955" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  has_sub narrow"><a href="https://interworks.com/work/" class=""><i class="menu_icon blank fa"></i><span>Work</span><span class="plus"></span></a>
+<div class="second"><div class="inner"><ul>
+	<li id="nav-menu-item-5605" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://interworks.com/work/infrastructure/" class=""><i class="menu_icon blank fa"></i><span>Infrastructure</span><span class="plus"></span></a></li>
+	<li id="nav-menu-item-6770" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://interworks.com/work/data-management/" class=""><i class="menu_icon blank fa"></i><span>Data Management</span><span class="plus"></span></a></li>
+	<li id="nav-menu-item-5153" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://interworks.com/work/analytics/" class=""><i class="menu_icon blank fa"></i><span>Analytics</span><span class="plus"></span></a></li>
+	<li id="nav-menu-item-5204" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://interworks.com/work/enablement/" class=""><i class="menu_icon blank fa"></i><span>Enablement</span><span class="plus"></span></a></li>
+	<li id="nav-menu-item-9746" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://interworks.com/work/strategy/" class=""><i class="menu_icon blank fa"></i><span>Strategy</span><span class="plus"></span></a></li>
+</ul></div></div>
+</li>
+<li id="nav-menu-item-5366" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  has_sub narrow"><a href="https://interworks.com/people/" class=""><i class="menu_icon blank fa"></i><span>People</span><span class="plus"></span></a>
+<div class="second"><div class="inner"><ul>
+	<li id="nav-menu-item-5522" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://interworks.com/people/team/" class=""><i class="menu_icon blank fa"></i><span>The Team</span><span class="plus"></span></a></li>
+	<li id="nav-menu-item-1170" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://interworks.com/people/locations/" class=""><i class="menu_icon blank fa"></i><span>Locations</span><span class="plus"></span></a></li>
+	<li id="nav-menu-item-5235" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://interworks.com/people/careers/" class=""><i class="menu_icon blank fa"></i><span>Careers</span><span class="plus"></span></a></li>
+</ul></div></div>
+</li>
+<li id="nav-menu-item-954" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  has_sub narrow"><a href="https://interworks.com/community/" class=""><i class="menu_icon blank fa"></i><span>Community</span><span class="plus"></span></a>
+<div class="second"><div class="inner"><ul>
+	<li id="nav-menu-item-957" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://interworks.com/blog/" class=""><i class="menu_icon blank fa"></i><span>Blog</span><span class="plus"></span></a></li>
+	<li id="nav-menu-item-6915" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://interworks.com/community/events/" class=""><i class="menu_icon blank fa"></i><span>Events</span><span class="plus"></span></a></li>
+	<li id="nav-menu-item-31972" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://interworks.com/community/webinars/" class=""><i class="menu_icon blank fa"></i><span>Webinars</span><span class="plus"></span></a></li>
+	<li id="nav-menu-item-6846" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://interworks.com/community/case-studies/" class=""><i class="menu_icon blank fa"></i><span>Case Studies</span><span class="plus"></span></a></li>
+	<li id="nav-menu-item-6757" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://interworks.com/community/partners/" class=""><i class="menu_icon blank fa"></i><span>Our Partners</span><span class="plus"></span></a></li>
+	<li id="nav-menu-item-6919" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://interworks.com/community/viz-gallery/" class=""><i class="menu_icon blank fa"></i><span>Viz Gallery</span><span class="plus"></span></a></li>
+</ul></div></div>
+</li>
+<li id="nav-menu-item-959" class="teal-round menu-item menu-item-type-post_type menu-item-object-page  narrow"><a href="https://interworks.com/contact/" class=""><i class="menu_icon blank fa"></i><span>Get In Touch</span><span class="plus"></span></a></li>
+</ul>							</nav>
+														<nav class="mobile_menu">
+	<ul id="menu-primary-1" class=""><li id="mobile-menu-item-955" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  has_sub"><a href="https://interworks.com/work/" class=""><span>Work</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span>
+<ul class="sub_menu">
+	<li id="mobile-menu-item-5605" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://interworks.com/work/infrastructure/" class=""><span>Infrastructure</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+	<li id="mobile-menu-item-6770" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://interworks.com/work/data-management/" class=""><span>Data Management</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+	<li id="mobile-menu-item-5153" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://interworks.com/work/analytics/" class=""><span>Analytics</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+	<li id="mobile-menu-item-5204" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://interworks.com/work/enablement/" class=""><span>Enablement</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+	<li id="mobile-menu-item-9746" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://interworks.com/work/strategy/" class=""><span>Strategy</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+</ul>
+</li>
+<li id="mobile-menu-item-5366" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  has_sub"><a href="https://interworks.com/people/" class=""><span>People</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span>
+<ul class="sub_menu">
+	<li id="mobile-menu-item-5522" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://interworks.com/people/team/" class=""><span>The Team</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+	<li id="mobile-menu-item-1170" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://interworks.com/people/locations/" class=""><span>Locations</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+	<li id="mobile-menu-item-5235" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://interworks.com/people/careers/" class=""><span>Careers</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+</ul>
+</li>
+<li id="mobile-menu-item-954" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  has_sub"><a href="https://interworks.com/community/" class=""><span>Community</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span>
+<ul class="sub_menu">
+	<li id="mobile-menu-item-957" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://interworks.com/blog/" class=""><span>Blog</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+	<li id="mobile-menu-item-6915" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://interworks.com/community/events/" class=""><span>Events</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+	<li id="mobile-menu-item-31972" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://interworks.com/community/webinars/" class=""><span>Webinars</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+	<li id="mobile-menu-item-6846" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://interworks.com/community/case-studies/" class=""><span>Case Studies</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+	<li id="mobile-menu-item-6757" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://interworks.com/community/partners/" class=""><span>Our Partners</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+	<li id="mobile-menu-item-6919" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://interworks.com/community/viz-gallery/" class=""><span>Viz Gallery</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+</ul>
+</li>
+<li id="mobile-menu-item-959" class="teal-round menu-item menu-item-type-post_type menu-item-object-page "><a href="https://interworks.com/contact/" class=""><span>Get In Touch</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+</ul></nav>																				</div>
+					</div>
+									</div>
+			</div>
+		</div>
+</header>    <div class="popup_menu_holder_outer">
+        <div class="popup_menu_holder " >
+            <div class="popup_menu_holder_inner">
+                <nav class="popup_menu">
+					<ul id="menu-mobile-menu" class=""><li id="popup-menu-item-6903" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://interworks.com/work/" class=""><span>Work</span></a></li>
+<li id="popup-menu-item-6901" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://interworks.com/people/" class=""><span>People</span></a></li>
+<li id="popup-menu-item-6902" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://interworks.com/community/" class=""><span>Community</span></a></li>
+<li id="popup-menu-item-10375" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://interworks.com/blog/" class=""><span>Blog</span></a></li>
+<li id="popup-menu-item-10376" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://interworks.com/community/events/" class=""><span>Events</span></a></li>
+</ul>                </nav>
+				            </div>
+        </div>
+    </div>
+	
+	
+    
+    
+    <div class="content ">
+        <div class="content_inner  ">
+    			<div class="title_outer title_without_animation"    data-height="400">
+				<div class="title title_size_small  position_center  has_fixed_background " style="background-size:1980px auto;background-image:url(https://interworks.com/wp-content/uploads/2018/02/photo-by-dan-gold-unsplash-297904.jpg);height:400px;">
+					<div class="image not_responsive"><img itemprop="image" src="https://interworks.com/wp-content/uploads/2018/02/photo-by-dan-gold-unsplash-297904.jpg" alt="&nbsp;" /> </div>
+
+							<div class="title_overlay" style="background-image:url('https://interworks.com/wp-content/uploads/2017/08/gradient.png');"></div>
+										<div class="title_holder"  style="padding-top:75px;height:325px;">
+					<div class="container">
+						<div class="container_inner clearfix">
+								<div class="title_subtitle_holder" >
+                                                                									<div class="title_subtitle_holder_inner">
+																										<h1 >
+
+										<!-- custom title data -->
+																					<span>To Extract or Not to Extract? &#8211; 7 Guidelines for Tableau Data Extracts</span>
+										
+										<!-- end custom title data -->
+
+									</h1>
+									
+																																			</div>
+								                                                            </div>
+						</div>
+					</div>
+				</div>
+								</div>
+			</div>
+<!-- test print  -->										<div class="container teal-triangle-bg">
+						
+															<div class="blog_single blog_holder">
+						
+				<div class="post_image" style="background: url(/wp-content/themes/interworks/images/default.jpg) no-repeat bottom center #1abbb4; background-size: cover;">
+				<div class="dark-overlay">
+					<div class="title_overlay" style="background:url('/wp-content/themes/interworks/images/gradient2.png') no-repeat center center; background-size: cover; width: 100%; height: 100%;">
+						<div class="dark-gradient">
+							<div class="grid_section fh">
+								<div class="section_inner clearfix profile-info">
+									<div class="blog-title-wrapper">
+										<a class="blog-cat" href="/blog/data"><span class="cat">Data</span></a>										<h1 class="blog-title">To Extract or Not to Extract? &#8211; 7 Guidelines for Tableau Data Extracts</h1>
+										<div class="author-meta">
+
+											<div class="am-wrap"><div class="headshot"><a href="https://interworks.com/people/brian-bickell/"><img src="https://interworks.com/wp-content/uploads/2019/01/BrianB-150x150.jpg"></a></div><div class="am-meta"><div class="post-date">April 29, 2014</div><div class="author"> by <a href="https://interworks.com/people/brian-bickell/">Brian Bickell</a></div></div></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	 	 <div class="container_inner clearfix" >
+		<article id="post-3272" class="post-3272 post type-post status-publish format-standard hentry category-data tag-tableau tag-tableau-tips">
+			<div class="post_content_holder">
+
+				<div class="post_text">
+					<div class="post_text_inner">
+
+						<div class="blog-primary content-area">
+							
+																					<p>Fine-tuning the performance of your Tableau Server environment can seem at times to be more alchemy than science, particularly with the ever-changing diversity of the needs and requirements of your user base. That is little consolation for an administrator tasked with ensuring an efficiently running system at peak usage.</p>
+<p>There are things you can do that can help. One of those is determining how you can best access your data. Should you connect live? Or, should you use a Tableau Data Extract (*.tde)? </p>
+<p>As always, Tableau is only as fast as your data source.</p>
+<p>Obviously, there are no hard and fast rules on exactly how to set up an enterprise deployment. Requirements vary considerably from system to system. Is the data large and/or wide? How many users are there? How many of those users will need top performance at the same time?</p>
+<p>Even so, there are valuable questions that you can ask to help determine whether using a data extract is the most efficient solution for your requirements and how you can get the most from an extract.</p>
+<h2>1. Performance</h2>
+<p>There is a little bit of a balancing act in regards to your hardware requirements depending on how you access your data. A live connection does not require a lot of storage space within a Tableau deployment, but you’re relying on the speed of that data source not to be a bottleneck for performance.</p>
+<p>On the other hand, data extracts require storage, potentially a great deal of storage depending on the specific characteristics of your data. In addition, you’ll also require faster disks for processing within your Tableau Server environment.</p>
+<p>You can load test several different scenarios to determine which initial configuration best suits your performance requirements and cost parameters.</p>
+<h2>2. Optimizing Your Extract</h2>
+<p>When you create a data extract, one of the options you can select is to optimize your extract. This can assist the extract in performing more quickly. Optimizing means that Tableau will look at your data for any calculated fields and then pre-calculate those in the data extract. This improves performance because each calculation does not need to be re-computed locally each time that field is accessed.</p>
+<p>If your data source has calculated fields, particularly complex calculations or a wide usage, then you should test to see if an optimized data extract can improve performance over a live connection.</p>
+<h2>3. Data Source Type</h2>
+<p>If your data source is a large text file or Excel file, you will find immediate benefits from creating a data extract. This is because the queries running in those files are slow. There’s no amount of optimization in your deployment that can fix the performance inadequacies in these types of files. </p>
+<p><img src="/wp-content/uploads/sites/default/files/blog/u143/Data%20Connection.png" alt="Data Connection" width="414" height="315" /> </p>
+<p>The reason you’ll find that performance has improved is that text and Excel data are extracted from the source files and loaded into the Tableau high-performance columnar data engine, specifically designed for visual analytics.</p>
+<h2>4. Filters</h2>
+<p>As you extract data into a Tableau Data Extract, you can actually begin the process of preparing your data for analysis. In the <strong>Extract</strong> options under <strong>Data</strong> > <strong>Extract</strong>, you’ll be prompted to add<strong> Filters</strong> to your data extract.</p>
+<p>While the data source may be very large, you may not need to entire dataset to complete the analysis required. Filters can help pare down a very large data source into only the essential records, thus creating a streamlined data sub-set.</p>
+<p>Smaller data extracts require less computing power. </p>
+<h2>5. Portable Data</h2>
+<p>Using a Tableau Data Extract also has the added benefit of portability. Data extracts can provide offline access to your data if they reside on your computer. By combining your extract with Tableau Desktop, you have a self-contained analytics workhorse.</p>
+<p>Even if there is no performance improvement in using a data extract, it still may present value in allowing your end users offline access by creating ad hoc extracts to facilitate their travel or special circumstances.</p>
+<h2>6. Incremental Extracts</h2>
+<p>If you have decided to use a data extract, you have two options for refreshing the data. The first is a full extract, which rewrites the existing data extract in the Tableau Data Engine with a new file from the data source. The other option, though, could be more efficient depending on your configuration.</p>
+<p>Incremental extracts append new records that have been added since the last extract was created. This can be particularly useful if your data extract must be refreshed daily, for instance. You can do this by selecting the <strong>Incremental Refresh</strong> checkbox in the <strong>Data Extract</strong> dialog box.</p>
+<h2>7. Adding a File to an Extract</h2>
+<p>Finally, the last tip on how to leverage a data extract for efficiency and performance is how to add rows from a separate file. This allows you to append data from a different data source into your data extract. </p>
+<p>For instance, you might have a legacy data source with historical information on sales or inventory, but the new performance is located in a different data source. Tableau can facilitate this situation with the <strong>Add Data From File</strong> command. You’ll need to make sure that your fields marry appropriately across the two files.</p>
+<h2>Conclusion</h2>
+<p>The real skill in building a Tableau environment that runs efficiently and smoothly is knowing the types of questions to ask. With the right questions in mind, you can begin to test and prepare your deployment for optimal performance. </p>
+<p>If you have questions for us, we’d love to help.</p>
+																				</div>
+						<div id="blog-sidebar" class="">
+							<div id="bs-wrapper">
+								<div class="widget qode_latest_posts_widget"><h3 class="blog-sb-title">The Latest</h3>
+<div class='latest_post_holder image_in_box  ' >
+    <ul>
+    
+        <li class="clearfix">
+            <div class="latest_post"  >
+                <div class="latest_post_image clearfix">
+                    <a itemprop="url" href="https://interworks.com/blog/interworks/2019/12/20/pyd96-ironviz/">
+                                                <img itemprop="image" src="https://interworks.com/wp-content/uploads/2019/12/PYD95wide-150x150.png" alt="" />
+                    </a>
+                </div>
+
+
+                <div class="latest_post_text">
+                    <div class="latest_post_inner">
+                        <div class="latest_post_text_inner">
+                            <h5 itemprop="name" class="latest_post_title entry_title"><a itemprop="url" href="https://interworks.com/blog/interworks/2019/12/20/pyd96-ironviz/">PYD96 &#8211; Iron Viz with Lindsey Poulter, Hesham Eissa and Joshua Smith</a></h5>
+                            
+                            <span class="post_infos">
+                                                                    <span class="date_hour_holder">
+                                        <span itemprop="dateCreated" class="date entry_date updated">20 December, 2019 <meta itemprop="interactionCount" content="UserComments: 0"/></span>
+                                    </span>
+                                
+                                
+                                
+                                
+                                                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        
+        <li class="clearfix">
+            <div class="latest_post"  >
+                <div class="latest_post_image clearfix">
+                    <a itemprop="url" href="https://interworks.com/blog/chastie/2019/12/20/zero-to-snowflake-importing-data-with-code-via-snowsql/">
+                                                <img itemprop="image" src="https://interworks.com/wp-content/uploads/2019/12/zero_snowflake_data_code_SQL_blog_header-01-150x150.png" alt="" />
+                    </a>
+                </div>
+
+
+                <div class="latest_post_text">
+                    <div class="latest_post_inner">
+                        <div class="latest_post_text_inner">
+                            <h5 itemprop="name" class="latest_post_title entry_title"><a itemprop="url" href="https://interworks.com/blog/chastie/2019/12/20/zero-to-snowflake-importing-data-with-code-via-snowsql/">Zero to Snowflake: Importing Data with Code via SnowSQL</a></h5>
+                            
+                            <span class="post_infos">
+                                                                    <span class="date_hour_holder">
+                                        <span itemprop="dateCreated" class="date entry_date updated">20 December, 2019 <meta itemprop="interactionCount" content="UserComments: 0"/></span>
+                                    </span>
+                                
+                                
+                                
+                                
+                                                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        
+        <li class="clearfix">
+            <div class="latest_post"  >
+                <div class="latest_post_image clearfix">
+                    <a itemprop="url" href="https://interworks.com/blog/aavey/2019/12/19/chapter-one-how-the-interworks-book-club-began/">
+                                                <img itemprop="image" src="https://interworks.com/wp-content/uploads/2019/12/bookclub_chapter1_blog_header-01-150x150.png" alt="" />
+                    </a>
+                </div>
+
+
+                <div class="latest_post_text">
+                    <div class="latest_post_inner">
+                        <div class="latest_post_text_inner">
+                            <h5 itemprop="name" class="latest_post_title entry_title"><a itemprop="url" href="https://interworks.com/blog/aavey/2019/12/19/chapter-one-how-the-interworks-book-club-began/">Chapter One: How the InterWorks Book Club Began</a></h5>
+                            
+                            <span class="post_infos">
+                                                                    <span class="date_hour_holder">
+                                        <span itemprop="dateCreated" class="date entry_date updated">19 December, 2019 <meta itemprop="interactionCount" content="UserComments: 0"/></span>
+                                    </span>
+                                
+                                
+                                
+                                
+                                                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        
+        <li class="clearfix">
+            <div class="latest_post"  >
+                <div class="latest_post_image clearfix">
+                    <a itemprop="url" href="https://interworks.com/blog/interworks/2019/12/18/going-behind-the-lens-interworks-summit-2019/">
+                                                <img itemprop="image" src="https://interworks.com/wp-content/uploads/2019/12/Summitblog-4-of-14-1.jpg" alt="" />
+                    </a>
+                </div>
+
+
+                <div class="latest_post_text">
+                    <div class="latest_post_inner">
+                        <div class="latest_post_text_inner">
+                            <h5 itemprop="name" class="latest_post_title entry_title"><a itemprop="url" href="https://interworks.com/blog/interworks/2019/12/18/going-behind-the-lens-interworks-summit-2019/">Going Behind the Lens at InterWorks Summit 2019</a></h5>
+                            
+                            <span class="post_infos">
+                                                                    <span class="date_hour_holder">
+                                        <span itemprop="dateCreated" class="date entry_date updated">18 December, 2019 <meta itemprop="interactionCount" content="UserComments: 0"/></span>
+                                    </span>
+                                
+                                
+                                
+                                
+                                                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        
+    </ul>
+</div></div><div class="blog-sb-item"><h3 class="blog-sb-title">Related</h3>						<div class="post no_image">
+			                <div class="text">
+			                    <a itemprop="url" href="https://interworks.com/blog/interworks/2019/12/20/pyd96-ironviz/" > PYD96 &#8211; Iron Viz with Lindsey Poulter, Hesham Eissa and Joshua Smith </a>
+			                </div>
+						</div>
+                						<div class="post no_image">
+			                <div class="text">
+			                    <a itemprop="url" href="https://interworks.com/blog/interworks/2019/12/10/pyd95-spell-o-l-by-keith-dykstra/" > PYD95 &#8211; Spell-O-L Viz by Keith Dykstra </a>
+			                </div>
+						</div>
+                						<div class="post no_image">
+			                <div class="text">
+			                    <a itemprop="url" href="https://interworks.com/blog/tkau/2019/12/04/considerations-for-a-tableau-server-to-tableau-online-migration/" > Considerations for a Tableau Server to Tableau Online Migration </a>
+			                </div>
+						</div>
+                						<div class="post no_image">
+			                <div class="text">
+			                    <a itemprop="url" href="https://interworks.com/blog/geisenmenger/2019/12/04/one-hour-dashboard-challenge-danish-economy/" > One-Hour Dashboard Challenge: Danish Economy </a>
+			                </div>
+						</div>
+                						<div class="post no_image">
+			                <div class="text">
+			                    <a itemprop="url" href="https://interworks.com/blog/jstein/2019/12/03/from-sydney-to-las-vegas-a-tc19-whirlwind/" > From Sydney to Las Vegas: A TC19 Whirlwind </a>
+			                </div>
+						</div>
+                </div>							</div>
+															<div class="single_tags clearfix">
+									<div class="tags_text">
+										<!-- <h5></h5> -->
+										<a href="https://interworks.com/blog/channel/tableau/" rel="tag">Tableau</a><a href="https://interworks.com/blog/channel/tableau-tips/" rel="tag">Tableau Tips</a>									</div>
+								</div>
+													</div>
+					</div>
+				</div>
+			</div>
+
+
+    	</article>
+													
+<div id="disqus_thread"></div>
+						                        </div>
+						<div class="angled both author-section">
+						    <div class="grid_section">
+						        <div class="section_inner clearfix iw-dark">
+									<h2 class="more-about">More About the Author</h2>
+									<div class="am-wrap"><div class="headshot"><a href="https://interworks.com/people/brian-bickell/"><img src="https://interworks.com/wp-content/uploads/2019/01/BrianB-150x150.jpg"></a></div><div class="am-meta"><h2 class="normalcase">Brian Bickell</h2><div class="author-job">Principal | Data Practice Lead</div><div class="user-twitter user-social-link"><a href="http://www.twitter.com/brianbickell" target="_blank">Twitter</a></div><div class="user-google-plus user-social-link"><a href="https://plus.google.com/102051051878561201594" target="_blank">Google+</a></div></div></div>									<div class="author-blog-section clearfix">
+										<div class="author-blog">											<a href="https://interworks.com/blog/bbickell/2019/10/25/interworks-earns-snowflake-asia-pacific-partner-of-the-year-award/" title="InterWorks Earns Snowflake Asia-Pacific Partner of the Year Award">InterWorks Earns Snowflake Asia-Pacific Partner of the Year Award</a>
+											Snowflake is very much a global data warehousing company these days, as evidenced by their recent Snowflake Summit World Tour. San ...										</div><div class="author-blog">											<a href="https://interworks.com/blog/bbickell/2015/09/29/tableau-drivers-ed-building-partnership/" title="Tableau Driver&#8217;s Ed: Building a Partnership">Tableau Driver&#8217;s Ed: Building a Partnership</a>
+											Tableau Driver&#8217;s Ed is a new blog series in which we explain InterWorks&#8217; unique take on Tableau Drive, a new methodology ...										</div>									</div>
+									<p class="more"><a href="https://interworks.com/people/brian-bickell/">See more from this author &rarr;</a></p>
+								</div>
+							</div>
+						</div>
+
+                    					</div>
+                                 </div>
+
+		
+	</div>
+</div>
+
+
+
+	<footer >
+		<div class="footer_inner clearfix">
+				<div class="footer_top_holder">
+            			<div class="footer_top">
+								<div class="container">
+					<div class="container_inner">
+			
+						<!-- CUSTOM SOCIAL FOOTER AREA -->
+						<div id="social-footer">
+							<span class='q_social_icon_holder circle_social' data-color=#27292e data-hover-background-color=#666666 data-hover-color=#27292e><a itemprop='url' href='https://facebook.com/interworks' target='_blank'><span class='fa-stack ' style='background-color: #ffffff;border-width: 0px;margin: 0px 20px 0px 0px;font-size: 15px;'><i class="qode_icon_font_awesome fa fa-facebook " style="color: #27292e;font-size: 15px;" ></i></span></a></span><span class='q_social_icon_holder circle_social' data-color=#27292e data-hover-background-color=#666666 data-hover-color=#27292e><a itemprop='url' href='https://twitter.com/interworks' target='_blank'><span class='fa-stack ' style='background-color: #ffffff;margin: 0px 20px 0px 0px;font-size: 15px;'><i class="qode_icon_font_awesome fa fa-twitter " style="color: #27292e;font-size: 15px;" ></i></span></a></span><span class='q_social_icon_holder circle_social' data-color=#27292e data-hover-background-color=#666666 data-hover-color=#27292e><a itemprop='url' href='https://plus.google.com/+Interworks' target='_blank'><span class='fa-stack ' style='background-color: #ffffff;margin: 0px 20px 0px 0px;font-size: 15px;'><i class="qode_icon_font_awesome fa fa-google-plus " style="color: #27292e;font-size: 15px;" ></i></span></a></span><span class='q_social_icon_holder circle_social' data-color=#27292e data-hover-background-color=#666666 data-hover-color=#27292e><a itemprop='url' href='https://www.linkedin.com/company/204575/' target='_blank'><span class='fa-stack ' style='background-color: #ffffff;margin: 0px 20px 0px 0px;font-size: 15px;'><i class="qode_icon_font_awesome fa fa-linkedin " style="color: #27292e;font-size: 15px;" ></i></span></a></span><span class='q_social_icon_holder circle_social' data-color=#27292e data-hover-background-color=#666666 data-hover-color=#27292e><a itemprop='url' href='https://www.instagram.com/interworks/' target='_blank'><span class='fa-stack ' style='background-color: #ffffff;margin: 0px 20px 0px 0px;font-size: 15px;'><i class="qode_icon_font_awesome fa fa-instagram " style="color: #27292e;font-size: 15px;" ></i></span></a></span><div class="widget_text social-footer-item"><div class="textwidget custom-html-widget"><a id="open-nl-signup" href="#">Stay Connected</a></div></div>						</div>
+						<!-- END -->
+						
+										<div id="nav_menu-3" class="widget widget_nav_menu"><div class="menu-primary-container"><ul id="menu-primary-2" class="menu"><li id="menu-item-955" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-955"><a href="https://interworks.com/work/">Work</a>
+<ul class="sub-menu">
+	<li id="menu-item-5605" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5605"><a href="https://interworks.com/work/infrastructure/">Infrastructure</a></li>
+	<li id="menu-item-6770" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6770"><a href="https://interworks.com/work/data-management/">Data Management</a></li>
+	<li id="menu-item-5153" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5153"><a href="https://interworks.com/work/analytics/">Analytics</a></li>
+	<li id="menu-item-5204" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5204"><a href="https://interworks.com/work/enablement/">Enablement</a></li>
+	<li id="menu-item-9746" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9746"><a href="https://interworks.com/work/strategy/">Strategy</a></li>
+</ul>
+</li>
+<li id="menu-item-5366" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5366"><a href="https://interworks.com/people/">People</a>
+<ul class="sub-menu">
+	<li id="menu-item-5522" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5522"><a href="https://interworks.com/people/team/">The Team</a></li>
+	<li id="menu-item-1170" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1170"><a href="https://interworks.com/people/locations/">Locations</a></li>
+	<li id="menu-item-5235" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5235"><a href="https://interworks.com/people/careers/">Careers</a></li>
+</ul>
+</li>
+<li id="menu-item-954" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-954"><a href="https://interworks.com/community/">Community</a>
+<ul class="sub-menu">
+	<li id="menu-item-957" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-957"><a href="https://interworks.com/blog/">Blog</a></li>
+	<li id="menu-item-6915" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6915"><a href="https://interworks.com/community/events/">Events</a></li>
+	<li id="menu-item-31972" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31972"><a href="https://interworks.com/community/webinars/">Webinars</a></li>
+	<li id="menu-item-6846" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6846"><a href="https://interworks.com/community/case-studies/">Case Studies</a></li>
+	<li id="menu-item-6757" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6757"><a href="https://interworks.com/community/partners/">Our Partners</a></li>
+	<li id="menu-item-6919" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6919"><a href="https://interworks.com/community/viz-gallery/">Viz Gallery</a></li>
+</ul>
+</li>
+<li id="menu-item-959" class="teal-round menu-item menu-item-type-post_type menu-item-object-page menu-item-959"><a href="https://interworks.com/contact/">Get In Touch</a></li>
+</ul></div></div>									</div>
+				</div>
+							</div>
+					</div>
+							<div class="footer_bottom_holder">
+                                    <div style="background-color: #444e63;height: 1px" class="footer_bottom_border in_grid"></div>
+                								<div class="container">
+					<div class="container_inner">
+									<div class="footer_bottom">
+				<div class="menu-footer-bottom-container"><ul id="menu-footer-bottom" class="menu"><li id="menu-item-5666" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5666"><a href="http://interworks.com/support">Support</a></li>
+<li id="menu-item-1171" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1171"><a href="https://interworks.com/people/locations/">Locations</a></li>
+<li id="menu-item-1175" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1175"><a href="https://interworks.com/privacy-policy/">Privacy Policy</a></li>
+<li id="menu-item-1173" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1173"><a href="https://interworks.com/terms-conditions/">Terms &#038; Conditions</a></li>
+<li id="menu-item-5665" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5665"><a href="https://www.google.com/adwords/thirdpartypartners/">Working with Third-Parties</a></li>
+<li id="menu-item-32344" class="impressum menu-item menu-item-type-custom menu-item-object-custom menu-item-32344"><a href="#">Impressum</a></li>
+</ul></div>			</div>
+									</div>
+			</div>
+						</div>
+				</div>
+	</footer>
+		
+</div>
+</div>
+<div id="newsletter-overlay">
+	
+                <div class='gf_browser_unknown gform_wrapper' id='gform_wrapper_7' ><div id='gf_7' class='gform_anchor' tabindex='-1'></div><form method='post' enctype='multipart/form-data' target='gform_ajax_frame_7' id='gform_7'  action='/blog/bbickell/2014/04/29/extract-or-not-extract-7-guidelines-tableau-data-extracts#gf_7'>
+                        <div class='gform_heading'>
+                            <h3 class='gform_title'>Subscribe to our newsletter</h3>
+                        </div>
+                        <div class='gform_body'><ul id='gform_fields_7' class='gform_fields top_label form_sublabel_below description_below'><li id='field_7_3'  class='gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_7_3' >Email<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_text'><input name='input_3' id='input_7_3' type='text' value='' class='large'     aria-required="true" aria-invalid="false" /></div></li><li id='field_7_1'  class='gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_7_1' >First Name<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_text'><input name='input_1' id='input_7_1' type='text' value='' class='large'     aria-required="true" aria-invalid="false" /></div></li><li id='field_7_2'  class='gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_7_2' >Last Name<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_text'><input name='input_2' id='input_7_2' type='text' value='' class='large'     aria-required="true" aria-invalid="false" /></div></li><li id='field_7_4'  class='gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_7_4' >Company<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_text'><input name='input_4' id='input_7_4' type='text' value='' class='large'     aria-required="true" aria-invalid="false" /></div></li><li id='field_7_11'  class='gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label'  >Email Format<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_radio'><ul class='gfield_radio' id='input_7_11'><li class='gchoice_7_11_0'><input name='input_11' type='radio' value='HTML' checked='checked' id='choice_7_11_0'    /><label for='choice_7_11_0' id='label_7_11_0'>HTML</label></li><li class='gchoice_7_11_1'><input name='input_11' type='radio' value='Plain Text'  id='choice_7_11_1'    /><label for='choice_7_11_1' id='label_7_11_1'>Plain Text</label></li></ul></div></li><li id='field_7_12'  class='gfield gfield_html gfield_html_formatted gfield_no_follows_desc field_sublabel_below field_description_below gfield_visibility_visible' ><div class="disclaimer">I understand that InterWorks will use the data provided for the purpose of communication and the administration my request. InterWorks will never disclose or sell any personal data except where required to do so by law. Finally, I understand that future communications related topics and events may be sent from InterWorks, but I can opt-out at any time.</div></li><li id='field_7_6'  class='gfield gform_hidden field_sublabel_below field_description_below gfield_visibility_visible' ><input name='input_6' id='input_7_6' type='hidden' class='gform_hidden'  aria-invalid="false" value='' /></li><li id='field_7_7'  class='gfield gform_hidden field_sublabel_below field_description_below gfield_visibility_visible' ><input name='input_7' id='input_7_7' type='hidden' class='gform_hidden'  aria-invalid="false" value='' /></li><li id='field_7_8'  class='gfield gform_hidden field_sublabel_below field_description_below gfield_visibility_visible' ><input name='input_8' id='input_7_8' type='hidden' class='gform_hidden'  aria-invalid="false" value='' /></li><li id='field_7_9'  class='gfield gform_hidden field_sublabel_below field_description_below gfield_visibility_visible' ><input name='input_9' id='input_7_9' type='hidden' class='gform_hidden'  aria-invalid="false" value='' /></li><li id='field_7_10'  class='gfield gform_hidden field_sublabel_below field_description_below gfield_visibility_visible' ><input name='input_10' id='input_7_10' type='hidden' class='gform_hidden'  aria-invalid="false" value='To Extract or Not to Extract? - 7 Guidelines for Tableau Data Extracts' /></li><li id='field_7_13'  class='gfield gform_validation_container field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_7_13' >Comments</label><div class='ginput_container'><input name='input_13' id='input_7_13' type='text' value='' /></div><div class='gfield_description' id='gfield_description__13'>This field is for validation purposes and should be left unchanged.</div></li>
+                            </ul></div>
+        <div class='gform_footer top_label'> <input type='submit' id='gform_submit_button_7' class='gform_button button' value='Subscribe'  onclick='if(window["gf_submitting_7"]){return false;}  window["gf_submitting_7"]=true;  ' onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_7"]){return false;} window["gf_submitting_7"]=true;  jQuery("#gform_7").trigger("submit",[true]); }' /> <input type='hidden' name='gform_ajax' value='form_id=7&amp;title=1&amp;description=&amp;tabindex=0' />
+            <input type='hidden' class='gform_hidden' name='is_submit_7' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='7' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_7' value='WyJbXSIsImNhNDI2YzY5YzFmZjQ3NDZiODJhNThmNWM0M2Y5OTQyIl0=' />
+            <input type='hidden' class='gform_hidden' name='gform_target_page_number_7' id='gform_target_page_number_7' value='0' />
+            <input type='hidden' class='gform_hidden' name='gform_source_page_number_7' id='gform_source_page_number_7' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div>
+                <iframe style='display:none;width:0px;height:0px;' src='about:blank' name='gform_ajax_frame_7' id='gform_ajax_frame_7'>This iframe contains the logic required to handle Ajax powered Gravity Forms.</iframe>
+                <script type='text/javascript'>jQuery(document).ready(function($){gformInitSpinner( 7, 'https://interworks.com/wp-content/plugins/gravityforms/images/spinner.gif' );jQuery('#gform_ajax_frame_7').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_7');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_7').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_7').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_7').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_7').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ jQuery(document).scrollTop(jQuery('#gform_wrapper_7').offset().top - mt); }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_7').val();gformInitSpinner( 7, 'https://interworks.com/wp-content/plugins/gravityforms/images/spinner.gif' );jQuery(document).trigger('gform_page_loaded', [7, current_page]);window['gf_submitting_7'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}setTimeout(function(){jQuery('#gform_wrapper_7').replaceWith(confirmation_content);jQuery(document).scrollTop(jQuery('#gf_7').offset().top - mt);jQuery(document).trigger('gform_confirmation_loaded', [7]);window['gf_submitting_7'] = false;}, 50);}else{jQuery('#gform_7').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger('gform_post_render', [7, current_page]);} );} );</script><script type='text/javascript'> jQuery(document).bind('gform_post_render', function(event, formId, currentPage){if(formId == 7) {} } );jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit){} );</script><script type='text/javascript'> jQuery(document).ready(function(){jQuery(document).trigger('gform_post_render', [7, 1]) } ); </script></div>
+<div class="gdpr">
+	<div class="inner-gdpr"><p>InterWorks uses cookies to allow us to better understand how the site is used. By continuing to use this site, you consent to this policy. <a target="_blank" class="gdpr-review" href="/privacy-policy">Review Policy</a> <a class="gdpr-accept" href="#">OK</a></p></div>
+</div>
+
+<div id="impressum-overlay">
+	<div class="inner-impressum">
+		<span class="impressum-close">&times;</span>
+		<p>
+			Interworks GmbH<br>
+			Ratinger Straße 9<br>
+			40213 Düsseldorf<br>
+			Germany<br>
+			Geschäftsführer: Mel Stephenson
+		</p>
+		<p>
+			Kontaktaufnahme: <a href="mailto:markus@interworks.eu">markus@interworks.eu</a><br>
+			Telefon: +49 (0)211 5408 5301<br>
+		</p>
+		<p>
+			Amtsgericht Düsseldorf HRB 79752<br>
+			UstldNr: DE 313 353 072
+		</p>
+	</div>
+</div>
+<!-- <div class="q_message  with_icon" style="background-color: #1abbb4;"><div class="q_message_inner"><div class="q_message_icon_holder"><div class="q_message_icon"><div class="q_message_icon_inner"><i class="fa fa-thumbs-o-up fa-lg" style=""></i></div></div></div>
+<a href="#" class="close"><i class="fa fa-times" style=""></i></a><div class="message_text_holder"><div class="message_text" style="height: 26px;">
+	<div class="message_text_inner">We received your submission! An InterWorks represnative will be in contact.</div></div></div></div></div><br /><br /> -->
+<script type="text/javascript">
+<!--
+piCId = '3551';
+piAId = '323471';
+
+piHostname = 'pi.pardot.com';
+
+(function() {
+	function async_load(){
+		var s = document.createElement('script'); s.type = 'text/javascript';
+		s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+		var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+	}
+	if(window.attachEvent) { window.attachEvent('onload', async_load); }
+	else { window.addEventListener('load', async_load, false); }
+})();
+-->
+</script><link rel='stylesheet' id='hljstheme-css'  href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css' type='text/css' media='all' />
+
+
+
+
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/jquery/ui/core.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/jquery/ui/widget.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/jquery/ui/tabs.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var countVars = {"disqusShortname":"interworks"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://interworks.com/wp-content/uploads/autoptimize/js/autoptimize_single_b460f3e81ba63bfac78933670036ac69.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var embedVars = {"disqusConfig":{"integration":"wordpress 3.0.17"},"disqusIdentifier":"3272 http:\/\/interworks.preview.interworks.com\/extract-or-not-extract-7-guidelines-tableau-data-extracts\/","disqusShortname":"interworks","disqusTitle":"To Extract or Not to Extract? \u2013 7 Guidelines for Tableau Data Extracts","disqusUrl":"https:\/\/interworks.com\/blog\/bbickell\/2014\/04\/29\/extract-or-not-extract-7-guidelines-tableau-data-extracts\/","postId":"3272"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://interworks.com/wp-content/uploads/autoptimize/js/autoptimize_single_1a9c911d327fadb77428511c07bc5a76.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js' defer='defer'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js' defer='defer'></script>
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/jquery/ui/accordion.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/jquery/ui/position.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/jquery/ui/menu.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/wp-sanitize.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/wp-a11y.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var uiAutocompleteL10n = {"noResults":"No results found.","oneResult":"1 result found. Use up and down arrow keys to navigate.","manyResults":"%d results found. Use up and down arrow keys to navigate.","itemSelected":"Item selected."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/jquery/ui/autocomplete.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/jquery/ui/button.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/jquery/ui/datepicker.min.js'></script>
+<script type='text/javascript'>
+jQuery(document).ready(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"MM d, yy","firstDay":1,"isRTL":false});});
+</script>
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/jquery/ui/mouse.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/jquery/ui/resizable.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/jquery/ui/draggable.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/jquery/ui/dialog.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/jquery/ui/droppable.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/jquery/ui/progressbar.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/jquery/ui/selectable.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/jquery/ui/sortable.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/jquery/ui/slider.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/jquery/ui/spinner.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/jquery/ui/tooltip.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/jquery/ui/effect.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/jquery/ui/effect-blind.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/jquery/ui/effect-bounce.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/jquery/ui/effect-clip.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/jquery/ui/effect-drop.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/jquery/ui/effect-explode.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/jquery/ui/effect-fade.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/jquery/ui/effect-fold.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/jquery/ui/effect-highlight.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/jquery/ui/effect-pulsate.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/jquery/ui/effect-size.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/jquery/ui/effect-scale.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/jquery/ui/effect-shake.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/jquery/ui/effect-slide.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/jquery/ui/effect-transfer.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/uploads/autoptimize/js/autoptimize_single_eae574630691cbf72e5796b9d7572260.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/themes/bridge/js/plugins/modernizr.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/uploads/autoptimize/js/autoptimize_single_72f19f5f564a43b1175f9ce86981987c.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/hoverIntent.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/uploads/autoptimize/js/autoptimize_single_d5b41c85347745f9b6a2275abd5ad84b.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/uploads/autoptimize/js/autoptimize_single_6d86e8c33e221a30c409dd9510bc66b1.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/uploads/autoptimize/js/autoptimize_single_da79e5d89801c31d6c4fc14c4b4b2331.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/plugins/js_composer/assets/lib/prettyphoto/js/jquery.prettyPhoto.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/uploads/autoptimize/js/autoptimize_single_c8cc66a2ffc63efc356237634245fbb3.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/plugins/js_composer/assets/lib/bower/flexslider/jquery.flexslider-min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/mediaelement/wp-mediaelement.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/themes/bridge/js/plugins/infinitescroll.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/uploads/autoptimize/js/autoptimize_single_f556337e0f81cf84d8e083a0a0c07ea4.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/jquery/jquery.form.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/themes/bridge/js/plugins/waypoints.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/themes/bridge/js/plugins/jplayer.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/uploads/autoptimize/js/autoptimize_single_4d0379f34605a637fc1fe32344a29096.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/uploads/autoptimize/js/autoptimize_single_3637fe9df875e14939193bc389e1a249.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/themes/bridge/js/plugins/Chart.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/uploads/autoptimize/js/autoptimize_single_38ade284e1c3428a4f273a5d7d253946.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/uploads/autoptimize/js/autoptimize_single_b069611efe4105113881d6eda1ea9765.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/uploads/autoptimize/js/autoptimize_single_9838d1a5b6ef93abeecb76ae6308505f.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/themes/bridge/js/plugins/jquery.multiscroll.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/themes/bridge/js/plugins/jquery.justifiedGallery.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/uploads/autoptimize/js/autoptimize_single_417dc6f4e0f100a3c3be578d7f6f4174.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/themes/bridge/js/plugins/jquery.sticky-kit.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/themes/bridge/js/plugins/owl.carousel.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/uploads/autoptimize/js/autoptimize_single_f0bd775e1952416ed0f05e43678517a3.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/themes/bridge/js/plugins/jquery.carouFredSel-6.2.1.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/themes/bridge/js/plugins/lemmon-slider.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/themes/bridge/js/plugins/jquery.fullPage.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/themes/bridge/js/plugins/jquery.mousewheel.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/themes/bridge/js/plugins/jquery.touchSwipe.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/plugins/js_composer/assets/lib/bower/isotope/dist/isotope.pkgd.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/themes/bridge/js/plugins/packery-mode.pkgd.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/uploads/autoptimize/js/autoptimize_single_33ce418cee8273af0cfd13c55bf91b05.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/uploads/autoptimize/js/autoptimize_single_9ae82f0efe3e33139fecb89cfee71c08.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/themes/bridge/js/plugins/rangeslider.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/uploads/autoptimize/js/autoptimize_single_3ab5f5c9566d78e5ff0cd9c14558ca28.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/uploads/autoptimize/js/autoptimize_single_31faf3f12dd15a68da9c210bc90b1e32.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/themes/bridge/js/default_dynamic_callback.php'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var QodeAdminAjax = {"ajaxurl":"https:\/\/interworks.com\/wp-admin\/admin-ajax.php"};
+var qodeGlobalVars = {"vars":{"qodeAddingToCartLabel":"Adding to Cart...","page_scroll_amount_for_sticky":""}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://interworks.com/wp-content/themes/bridge/js/default.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/comment-reply.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var qodeLike = {"ajaxurl":"https:\/\/interworks.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://interworks.com/wp-content/themes/bridge/js/plugins/qode-like.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-includes/js/wp-embed.min.js'></script>
+<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js'></script>
+<script type='text/javascript' src='https://interworks.com/wp-content/plugins/gravityforms/js/jquery.json.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2},"base_url":"https:\/\/interworks.com\/wp-content\/plugins\/gravityforms","number_formats":[],"spinnerUrl":"https:\/\/interworks.com\/wp-content\/plugins\/gravityforms\/images\/spinner.gif"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://interworks.com/wp-content/plugins/gravityforms/js/gravityforms.min.js'></script>
+    <style>code.hljs { /*margin: 5px;*/ }</style>
+    <script type="text/javascript">
+    (function($, window) {
+        var init_fn_flag = false;
+        var init_fn = (function() {
+            if (init_fn_flag)
+                return;
+            init_fn_flag = true;
+             hljs.configure({"tabReplace":"    "});
+            $('pre code').each(function(i, block) {
+                hljs.highlightBlock(block);
+            });
+        });
+        $(document).ready(init_fn);
+        $(window).on("load", init_fn);
+    })(jQuery, window);
+    </script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"ec7f1b9e71","applicationID":"266263659","transactionName":"blAAYkNZWhVWBxJRWFcaI1VFUVsIGBcPVlBVUE9GXktA","queueTime":0,"applicationTime":1474,"atts":"QhcDFAtDSRs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

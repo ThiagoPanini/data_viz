@@ -1,0 +1,66 @@
+[MUSIC] In previous lessons we focus on
+preparing your data for import. Connecting to different types
+of data using Tableau Public and distinguishing between a live data
+connection and a data extract. In this lesson we will cover preparing
+your data for Tableau Public. We will identify and demonstrate
+the different types of data that Tableau Public can and cannot connect to. And we will also demonstrate ways to
+get around some of the limitations of Tableau Public. When you first open Tableau Public
+you will be directed to the Tableau Public homepage. On the left side of the screen,
+you will notice that Tableau Public gives you the option to connect
+to an Excel file, a text file, an Access file, or a statistical
+file located on your computer. Or the option to connect to OData or
+web data connector server. The Excel, text, Access, and
+statistical files will be local databases, while the OData connection will allow
+you to connect to an online database To connect to your Excel, text, Access or
+statistical data, click on the file type. So for example, when you click on Excel,
+you will notice that you have the option to connect to a .xls, .xlxsx or xlsm file. When you click on text, you will have the
+option to connect to a character delimate file.csv tab delimate files .tab or
+.tsv, or text files.txt. When you click on Access you will
+have the option to connect to a Microsoft Access database .mdb or
+.accdb. And when you click on Cisco file, you will have the option
+to connect to a SAS file .sas7b.spsfile.save or
+our files .rdata or .rda Let's take some time and
+use Tableau to connect to a data file. For this example, we will use data that
+is stored in a Microsoft Excel file. From the Open file window, navigate to
+where the file is stored and click Open. Tableau Public will import every sheet
+that resides within the Excel Workbook and each sheet will appear under Sheets
+here at the bottom of the worksheet. Similar to tab worksheet file management,
+people come to expect from Excel. Click on the sheet that contains
+the data you would like to analyze and drag it to the Drag Sheets Here area. You now have a visual
+representation of your data and it should look very similar
+to the original Excel data. As you can see,
+each column has a header name and the data type is automatically identified
+by Tableau through the use of icons. An ABC icon represents string data. For example data that includes names. A globe icon represents geographical data. For example data that includes
+states,cities, ZIP codes et cetera. A calendar icon represents dates and
+the pound icon represents numeric data. If Tableau incorrectly
+assigned a data type, you can click on the associated icon and
+choose a correct data type. If everything looks correct
+you can click on Sheet One and begin analyzing your data. [BLANK AUDIO]. If your data resides online you can make a connection through an OData or web data connector. A Tableau web data connector gives you
+a way to connect to data that doesn't already have a connector. Using a web data connector,
+you can create and use a connection to almost any
+data that is accessible over HTTP. This can include internal web services,
+JSON data, XML data, Rest APIs and many other sources. Because you can control
+how the data is retrieved, you can even combine data
+from multiple sources. You create a web data connector by writing
+a webpage that contains JavaScript and optional HTML. Please visit your resources section for more information on web data
+connectors and JavaScript. After you've written a web
+data connector you can share it with other Tableau users by
+publishing it to the Tableau server. To help you create web data connectors, Tableau has created a software
+development kit that concludes templates, example code and a simulator that
+lets you test web data connector. This documentation also includes
+a tutorial that walks you through how to create a web data connector from scratch. At this time Tableau Public can
+only connect to Microsoft Excel, Microsoft Access,
+multiple text file formats, statistical files and Web Data Connectors. All other data sources such as Tableau
+servers, SAS servers, MySQL servers, Amazon Redshift servers, etc at this time
+are not supported by Tableau Public. If you currently have data
+in a data source that is not supported by Tableau Public,
+I would recommend transferring your data into one of the data sources that is
+supported by Tableau Public for analysis. Another limitation of
+Tableau Public is that currently it is limited to working with 10
+million rows of data per workbook. If your data exceeds this limit, I would
+suggest trying to break it into smaller data sets so Tableau Public
+is able to analyze your data. Before we conclude this session,
+I would like you to practice connecting to different data sources and importing your
+data into Tableau Public for analysis. In part four of this module, we will use
+Tableau to connect to different data sources and connecting different
+data sources together. Good luck.

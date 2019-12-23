@@ -1,0 +1,58 @@
+[MUSIC] Welcome back, in the last lesson, we discussed the types of data that
+Tableau Public can and cannot connect to. In this lesson, we will use Tableau Public
+to connect to multiple data sources and merge different data tables together,
+using different types of joins. When your data is located in two or more data sources, such as multiple
+sheets from an Excel workbook or multiple files from different sources, you
+will need to merge or join the data sets together through specific fields to
+access data from all of the data sets. With Tableau,
+you can use multiple data sources for a single worksheet by
+joining multiple tables. One data source is primary,
+while all others are secondary. While there are no set requirements for
+which data set should be primary versus secondary, I recommend making the data
+source with the majority of the data you will be working with
+the primary data source. For the primary data source, Tableau selects a data source of
+the first field you add to the worksheet. The primary data source creates
+relationships with fields of the same name and data type that it finds
+in the other data sources. If you have the same variable in two or
+more databases, make sure the variable name and data type are exactly
+the same across all data sources. Otherwise, Tableau will not be able to
+recognize that the variables are the same across all data sources. You will first want to connect to your
+data and create your data source, or data sources, as we discussed in
+the other lessons of this module. After you select the database,
+double-click or drag a table to the join area
+of the data source page. Then double-click or
+drag another table to the same join area. Tableau will join the data sources
+together by finding similar data fields in all sources. Before we continue, let's take a moment
+to discuss the different types of joins. There are a few different types of
+joins that Tableau will provide. An inner join, left join,
+right join, or a full outer join. Let's talk about each one of these and
+how or why you would use them. An inner join will show the records or
+rows present in both tables, if there is at least one
+match between columns. You will always use an inner join when you
+want to display all of the data that is stored in both of the data sources,
+using a merging variable. A left join returns all of the records or
+rows present in the left table and matching rows from the right table. You would use a left join when you want to
+keep all of the data in the left table and only merge in limited data
+from the table on the right. A right join returns all of the records or
+rows present in the right table and matching rows from the left table. You would use a right join when
+you want to keep all of the data in the right table and only merge in
+limited data from the table on the left. A full outer join were shown all of the
+records or rows present in both left and the right table. You will use a full outer join when you
+wanted display all of the data that is stored within all of
+the tables If the data joined, chosen by Tableau,
+is not the join you wanted, you can simply click on the join
+to open the join dialog box. Add one or more join conditions
+by selecting a field from one of the available tables
+used in the data source, a join operator and
+a field from the added table. Inspect the join condition to
+make sure it reflects how you want to connect the tables. When finished, click the X icon
+to close the join dialogue box. You can delete an unwanted join condition
+by clicking the red X that displays when you hover over the right
+side of the condition. When you have joined tables
+in your data source, the data pane is automatically organized
+to use a group by table command. You can turn this feature off, or
+change how the data pane is sorted, by selecting one of the sort by
+options on the data pane menu. This option is only available if you
+have connected to the database live. If you have imported the data,
+the fields are no longer grouped by table. For additional information on merging
+multiple data sources together, please visit the resources section.

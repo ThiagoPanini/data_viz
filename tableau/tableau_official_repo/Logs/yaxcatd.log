@@ -1,0 +1,54 @@
+yaxcatd (C:\Program Files\Tableau\Tableau 2019.4\bin\yaxcat\yaxcatd.exe) built at b25f0c5 listening on 127.0.0.1:1241 with 4 worker threads.
+2019-12-21T15:52:47-0300 0.054ms; [no ensemble]::ping: 
+2019-12-21T15:52:47-0300 0.016ms; [no ensemble]::ping: 
+2019-12-21T15:52:47-0300 5.927ms; RemoteEnsemble(16 models, 1 columns)::upload_data: 214x1, dt_XYSAZXCOZ3HQUDOTCP2SJNXB
+2019-12-21T15:52:47-0300 39.159ms; RemoteEnsemble(16 models, 1 columns)::simulate_given_values: n = 100, 1 targets, 1x0 givens
+2019-12-21T15:52:47-0300 0.088ms; [no ensemble]::delete_data: dt_XYSAZXCOZ3HQUDOTCP2SJNXB, deleted = yes
+2019-12-21T15:52:47-0300 1.691ms; RemoteEnsemble(16 models, 1 columns)::upload_data: 214x1, dt_ELIH7K6KRYO34VHEP52MVNMV
+2019-12-21T15:52:47-0300 12.504ms; RemoteEnsemble(16 models, 1 columns)::univariate_stat: mean of column 0 given 214x0
+2019-12-21T15:52:47-0300 11.257ms; RemoteEnsemble(16 models, 1 columns)::univariate_stat: variance of column 0 given 214x0
+2019-12-21T15:52:47-0300 0.104ms; [no ensemble]::delete_data: dt_ELIH7K6KRYO34VHEP52MVNMV, deleted = yes
+2019-12-21T15:52:47-0300 1.919ms; RemoteEnsemble(16 models, 1 columns)::upload_data: 214x1, dt_YIYURQGMSOTQWISMSFQ4GYMQ
+2019-12-21T15:52:47-0300 16.101ms; RemoteEnsemble(16 models, 1 columns)::univariate_stat: mean of column 0 given 1x0
+2019-12-21T15:52:48-0300 14.836ms; RemoteEnsemble(16 models, 1 columns)::univariate_stat: variance of column 0 given 1x0
+2019-12-21T15:52:48-0300 9.930ms; RemoteEnsemble(16 models, 1 columns)::univariate_stat: excess kurtosis of column 0 given 1x0
+2019-12-21T15:52:48-0300 0.061ms; [no ensemble]::delete_data: dt_YIYURQGMSOTQWISMSFQ4GYMQ, deleted = yes
+2019-12-21T15:52:48-0300 1.300ms; RemoteEnsemble(16 models, 1 columns)::upload_data: 214x1, dt_RZI3PNCYV4JPMO4YOLDNOOIP
+2019-12-21T15:52:48-0300 6.427ms; RemoteEnsemble(16 models, 1 columns)::univariate_stat: mean of column 0 given 1x0
+2019-12-21T15:52:48-0300 5.873ms; RemoteEnsemble(16 models, 1 columns)::univariate_stat: variance of column 0 given 1x0
+2019-12-21T15:52:48-0300 5.703ms; RemoteEnsemble(16 models, 1 columns)::univariate_stat: excess kurtosis of column 0 given 1x0
+2019-12-21T15:52:48-0300 0.055ms; [no ensemble]::delete_data: dt_RZI3PNCYV4JPMO4YOLDNOOIP, deleted = yes
+2019-12-21T15:52:48-0300 1.202ms; RemoteEnsemble(16 models, 1 columns)::upload_data: 214x1, dt_K5IBNCL7IUPQCERV7NAWUY63
+2019-12-21T15:52:48-0300 9.206ms; RemoteEnsemble(16 models, 1 columns)::univariate_stat: mean of column 0 given 1x0
+2019-12-21T15:52:48-0300 9.708ms; RemoteEnsemble(16 models, 1 columns)::univariate_stat: variance of column 0 given 1x0
+2019-12-21T15:52:48-0300 9.089ms; RemoteEnsemble(16 models, 1 columns)::univariate_stat: excess kurtosis of column 0 given 1x0
+2019-12-21T15:52:48-0300 0.033ms; [no ensemble]::delete_data: dt_K5IBNCL7IUPQCERV7NAWUY63, deleted = yes
+2019-12-21T15:52:48-0300 1.106ms; RemoteEnsemble(16 models, 1 columns)::upload_data: 214x1, dt_OLPHLKMDXVGRBQAX6LFRG53E
+2019-12-21T15:52:48-0300 9.413ms; RemoteEnsemble(16 models, 1 columns)::univariate_stat: mean of column 0 given 1x0
+2019-12-21T15:52:48-0300 9.272ms; RemoteEnsemble(16 models, 1 columns)::univariate_stat: variance of column 0 given 1x0
+2019-12-21T15:52:48-0300 9.225ms; RemoteEnsemble(16 models, 1 columns)::univariate_stat: excess kurtosis of column 0 given 1x0
+2019-12-21T15:52:48-0300 0.052ms; [no ensemble]::delete_data: dt_OLPHLKMDXVGRBQAX6LFRG53E, deleted = yes
+2019-12-21T15:52:48-0300 4.427ms; RemoteEnsemble(16 models, 3 columns)::upload_data: 45796x3, dt_5Y5UVDMTGID7HDFKZ7NH2XJG
+2019-12-21T15:52:48-0300 52.501ms; RemoteEnsemble(16 models, 3 columns)::univariate_stat: mean of column 0 given 214x2
+2019-12-21T15:52:48-0300 0.170ms; RemoteEnsemble(16 models, 3 columns)::univariate_stat: variance of column 0 given 214x2
+2019-12-21T15:52:48-0300 0.146ms; RemoteEnsemble(16 models, 3 columns)::univariate_stat: excess kurtosis of column 0 given 214x2
+2019-12-21T15:52:48-0300 32.851ms; RemoteEnsemble(16 models, 3 columns)::univariate_stat: mean of column 0 given 214x1
+2019-12-21T15:52:48-0300 0.092ms; RemoteEnsemble(16 models, 3 columns)::univariate_stat: variance of column 0 given 214x1
+2019-12-21T15:52:48-0300 0.110ms; RemoteEnsemble(16 models, 3 columns)::univariate_stat: excess kurtosis of column 0 given 214x1
+2019-12-21T15:52:48-0300 0.180ms; [no ensemble]::delete_data: dt_5Y5UVDMTGID7HDFKZ7NH2XJG, deleted = yes
+2019-12-21T15:52:48-0300 0.792ms; RemoteEnsemble(16 models, 3 columns)::upload_data: 1498x3, dt_WLK7LM33AQENFCOWUNPQLEKM
+2019-12-21T15:52:48-0300 54.701ms; RemoteEnsemble(16 models, 3 columns)::univariate_stat: mean of column 0 given 7x2
+2019-12-21T15:52:48-0300 0.101ms; RemoteEnsemble(16 models, 3 columns)::univariate_stat: variance of column 0 given 7x2
+2019-12-21T15:52:48-0300 0.067ms; RemoteEnsemble(16 models, 3 columns)::univariate_stat: excess kurtosis of column 0 given 7x2
+2019-12-21T15:52:48-0300 53.383ms; RemoteEnsemble(16 models, 3 columns)::univariate_stat: mean of column 0 given 7x1
+2019-12-21T15:52:48-0300 0.094ms; RemoteEnsemble(16 models, 3 columns)::univariate_stat: variance of column 0 given 7x1
+2019-12-21T15:52:48-0300 0.055ms; RemoteEnsemble(16 models, 3 columns)::univariate_stat: excess kurtosis of column 0 given 7x1
+2019-12-21T15:52:48-0300 0.041ms; [no ensemble]::delete_data: dt_WLK7LM33AQENFCOWUNPQLEKM, deleted = yes
+2019-12-21T15:52:48-0300 0.787ms; RemoteEnsemble(16 models, 2 columns)::upload_data: 5029x2, dt_RSCEM2YJXP4KXXQFNX32P2RK
+2019-12-21T15:52:48-0300 143.629ms; RemoteEnsemble(16 models, 2 columns)::simulate_given_values: n = 6000, 1 targets, 1x0 givens
+2019-12-21T15:52:48-0300 102.666ms; RemoteEnsemble(16 models, 2 columns)::simulate_given_values: n = 200, 1 targets, 16x1 givens
+2019-12-21T15:52:48-0300 0.857ms; [no ensemble]::delete_data: dt_RSCEM2YJXP4KXXQFNX32P2RK, deleted = yes
+2019-12-21T15:52:48-0300 1.021ms; RemoteEnsemble(16 models, 2 columns)::upload_data: 5029x2, dt_FHCJ4XP46HDOUZUJOUUE5O47
+2019-12-21T15:52:48-0300 20.396ms; RemoteEnsemble(16 models, 2 columns)::simulate_given_values: n = 6000, 1 targets, 1x0 givens
+2019-12-21T15:52:48-0300 59.300ms; RemoteEnsemble(16 models, 2 columns)::simulate_given_values: n = 200, 1 targets, 16x1 givens
+2019-12-21T15:52:48-0300 0.246ms; [no ensemble]::delete_data: dt_FHCJ4XP46HDOUZUJOUUE5O47, deleted = yes

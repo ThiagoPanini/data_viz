@@ -1,0 +1,112 @@
+[MUSIC] Welcome back,
+this is the last lesson in this module. In the previous lessons I'd talked about
+the importance of knowing the who, what, and how of your data. Now I will link data context to
+visualization and story telling. What I'm going to do now
+is provide an example for my own work experience and expertise. And I'd like to really get you to think
+about one from your own expertise, work experience, or interest, as well, as we're going along to be able to get
+the context of data visualization. And what I'm not going to do is actually
+do a visualization on a computer. I'm going to do some pretend
+visualizations on a sheet of paper. And to be able to illustrate how we can
+set up the context to visualization so that we can get to the answer that
+we need based on the question. And we're going to start
+with simply talking about, probably the simplest formula and
+data visualization which is, what is this context
+that we're talking about? And the context is simply
+the question that we need to answer, with the data, which gives us the story. Without the question,
+all of the data that we have can't answer any actual questions. And without data,
+we can't really get to how, or what, the information is that we're
+seeking to develop a story. So you need both,
+both are equally important. And usually in data visualization and
+data analysis in general, we often will have data,
+or we have a question. And we struggle sometimes to
+be able to combine those two to really illustrate the story
+that we are looking at, how do we get to this answer of this
+question, with the data that we have. So it comes to now,
+which is the issue, and this is really the issue that we
+are struggling with at a university, which is often types of
+questions that come up and higher ed, or
+even in high school, or wherever. And education is,
+how can we ensure that the students have success based on the courses
+that they're taking. And so the issue here is,
+for us in this example, is we are concerned about
+the level of success that students who are taking introductory chemistry
+are having in their other classes. So when we're framing that as the issue,
+so I'm just going to write that on my sheet of paper here to
+be able to illustrate this. Notice this is one sentence that's stating just one issue in the sentence. If you feel like there's a second issue,
+or you need a second sentence, don't include it in the single issue
+that we're talking about here. Having defined the issue we
+want to actually be able to demonstrate that there
+is in fact this issue. So we have a before, in this case,
+and then we perhaps have a pilot web based course that allows us
+to look at the data afterwards. So for example, let's say in 2014 there
+was an introductory chemistry course, and we had a certain amount
+of data with exams scores and a certain average exam score and
+a distribution of these exam scores. We then initiated a pilot web based course
+that allowed students who are coming in in the summer to be able to take this
+course to be able to prepare them for introductory chemistry. And then in 2015 we look and
+see if the exam scores are better about the same or
+worse that before. But to demonstrate that we want to be
+able to show you how it looks in 2014, before the introductory pilot
+web based program is initiated. And here I want you to do
+something sort of interesting, I would like you to actually think
+about what type of visualization might illustrate this
+particular piece of the puzzle. How are you going to show the people
+who are making the decision? Some of the evidence about how well
+students were doing in the summer, or in the course before
+the pilot summer course. And the way we're going to do that is, we're going to actually just
+draw a visualization, and we're not going to worry about if it'st he
+right visualization, or if it meets best practices, which we are going to
+talk about in a later course, etc. What I want to do is just think about,
+okay, how would I want to describe and
+show exam scores for this course? And the way I want to do it, and again, this is perhaps not the way
+you are going to do it, is I am just going to draw a very
+small graph here with exam scores, And I'm just going to draw
+a simple histogram which shows the range of exam scores in 2014. In other words, how well students were
+doing before the pilot was initiated. Yours may look quite different, this may
+not even be the best way to show it, but I just wanted to illustrate
+it to get a sense in my head. How I might be able to
+describe the before the pilot. So given that we understand this as an
+issue, which is the incoming students do not seem to be as prepared to succeed
+in intro chemistry as we would like. What are some of the options
+available to us? One of the options could be this
+pilot web based summer program, which I have already spoken about,
+and for purposes of the report, or presentation, or the story,
+I would want to make sure that the reader or
+the decision maker has the context of it. So for example, I would want to talk about how much this
+web based pilot summer course would cost. I would want to describe what it does. For example, what's so
+good about the web based content? What's the faculty interaction? All these things that,
+questions that need to be answered about why we do these web based programs and
+why it might be a good thing. And so we gathered that information up and present some other options
+about what we could be doing. And so, having in fact done this pilot
+summer web based course, we can then see, in fact if it made a difference next
+year Holding everything else constant. And now, what we're going to do is we're going to take this little graph that I drew here and see the, how it looks before
+the web based course and after the web based course. Here I've just simply overlayed
+the 2015 exam scores. Which by the way I don't know
+I'm just illustrating it just to show you how you might be
+able to compare the 2014, the before, and the 2015 after results. And here I'm just showing you that there was a An increase
+in the exam score so that might in fact mean that
+we are in good shape here. That perhaps we need to have the pilot
+web based course for another year. And we need to present that. We need to show that based on
+All of these other issues with the cost etcetera is still
+worth it to be able to do that. If it wasn't, we would want to recommend
+that perhaps it's not worth it, it's what the data show and there are other
+contexts that we may not be getting here. But at least, we can see that with
+the data with the exam scores, at least we have a sense of one piece
+of information that, it is working. So that we're going to have
+a recommendation which is the pilot Study seems to show a success and so we're going to recommend that we
+continue funding for another year. And this recommendation is based
+solely on the data we provide, that we visualize,
+that we set up through our study. There maybe other pieces of
+information that the decision maker has that may not be based on data. It might be based on some other
+factor that's outside of our control. And so they may not choose to actually
+fund for another year but you could be assured by providing this data they'll
+have another piece of information that they'll be able to use, in order to
+ensure student success in this case or whatever it is that you are interested in. And so that is,
+the key to doing data visualizations is to understand the context first. And if that means stepping away from your
+computer and writing it out, then do it. Because if you don't understand the
+context first, your data visualizations are not going to be as crisp,
+concise and clear as they need to be. And we're going to go over this
+particular thing in much more detail in further courses. But at lease you will have a sense of,
+okay, let me just step back, let me write it out, let me sketch it out, maybe
+outline it, and then get into the data. And so that is the key to
+this particular lesson and the key to this course in fact. So, we'll see you next time.

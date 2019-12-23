@@ -1,0 +1,31 @@
+[MUSIC] Welcome back. In the last lesson, we discussed how to connect two primary
+sources of data within Tableau. In this lesson, I will define the two
+primary types of connections for Tableau. A live connection and a data extract. Let's get started. A live data connection means that Tableau
+sends queries to your underlying database and retrieves up to date data whenever
+the Tableau dashboard is updated. A live data connection is best and
+should be used when the live connection between the Tableau dashboard and
+your data is possible. Sometimes your data maybe
+stored on a server and a live connection is not permitted. And when the connection is not slow. Sometimes a live data connection becomes
+very slow when the data is not stored locally on your own computer or when
+the size of the data files is very large. The other type is a Tableau
+data extract connection. Which means that Tableau sends queries
+to your extracted or static database and not the underlying data. Any updates to the underlying database
+will not update the Tableau dashboard. You will have to refresh the Tableau
+extract to get the up-to-date data. TDE should be used when a live
+connection to your data is not possible, when the live data connection is too slow,
+or in such cases where the size of
+the data is extremely large. In general, TDE should be used when your
+data is located on your own computer, a real data feed to your
+dashboard is not needed and when the data size is sufficiently large. For more information on when to use a live
+connection versus a Tableau data extract, please visit the resources section. So when should you use a live connection
+versus a Tableau data extract. Well, it depends. A Tableau data extract is recommended
+when your database is too slow for interactive analytics or
+when you need to be offline and will not always have an internet or
+network connection to your data. A live connection is recommended
+when you have a fast database or when you need up to the minute data. If you would like additional resources on
+the material that we've covered in this lesson, please visit the links below. The Tableau website provide very helpful
+instruction videos including introduction to working with the Tableau Public
+interface, connecting to data, preparing your data for import,
+different types of data connections etc. Now that you have prepared your data for
+import and have connected to different types of data, in the next lesson we will
+prepare your data for Tableau Public.

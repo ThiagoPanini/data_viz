@@ -1,0 +1,7 @@
+[MUSIC] Welcome to the fourth and
+final module of the course. In this module, we'll take on the who,
+what, and how of data visualization. By the end of this module, you will
+be able to define the audience and your relationship to the audience, examine ways to define what you're going
+to do, for example a visualization, and discuss how you are going to
+respond to the who and the what. We will also work through an example
+of the who, what, and how. Let's get started.

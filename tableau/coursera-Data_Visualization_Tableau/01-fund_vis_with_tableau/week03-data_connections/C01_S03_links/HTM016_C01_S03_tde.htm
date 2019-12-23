@@ -1,0 +1,1463 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"c5cd6614c6",applicationID:"45988591"};window.NREUM||(NREUM={}),__nr_require=function(n,e,t){function r(t){if(!e[t]){var i=e[t]={exports:{}};n[t][0].call(i.exports,function(e){var i=n[t][1][e];return r(i||e)},i,i.exports)}return e[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(n,e,t){function r(){}function i(n,e,t){return function(){return o(n,[u.now()].concat(f(arguments)),e?null:this,t),e?void 0:this}}var o=n("handle"),a=n(4),f=n(5),c=n("ee").get("tracer"),u=n("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(n,e){s[e]=i(d+e,!0,"api")}),s.addPageAction=i(d+"addPageAction",!0),s.setCurrentRouteName=i(d+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(n,e){var t={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),n,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return e.apply(this,arguments)}catch(n){throw c.emit("fn-err",[arguments,this,n],t),n}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(n,e){m[e]=i(l+e)}),newrelic.noticeError=function(n,e){"string"==typeof n&&(n=new Error(n)),o("err",[n,u.now(),!1,e])}},{}],2:[function(n,e,t){function r(n,e){var t=n.getEntries();t.forEach(function(n){"first-paint"===n.name?a("timing",["fp",Math.floor(n.startTime)]):"first-contentful-paint"===n.name&&a("timing",["fcp",Math.floor(n.startTime)])})}function i(n){if(n instanceof c&&!s){var e,t=Math.round(n.timeStamp);e=t>1e12?Date.now()-t:f.now()-t,s=!0,a("timing",["fi",t,{type:n.type,fid:e}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var o,a=n("handle"),f=n("loader"),c=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){o=new PerformanceObserver(r);try{o.observe({entryTypes:["paint"]})}catch(u){}}if("addEventListener"in document){var s=!1,p=["click","keydown","mousedown","pointerdown","touchstart"];p.forEach(function(n){document.addEventListener(n,i,!1)})}}},{}],3:[function(n,e,t){function r(n,e){if(!i)return!1;if(n!==i)return!1;if(!e)return!0;if(!o)return!1;for(var t=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],4:[function(n,e,t){function r(n,e){var t=[],r="",o=0;for(r in n)i.call(n,r)&&(t[o]=e(r,n[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],5:[function(n,e,t){function r(n,e,t){e||(e=0),"undefined"==typeof t&&(t=n?n.length:0);for(var r=-1,i=t-e||0,o=Array(i<0?0:i);++r<i;)o[r]=n[e+r];return o}e.exports=r},{}],6:[function(n,e,t){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(n,e,t){function r(){}function i(n){function e(n){return n&&n instanceof r?n:n?c(n,f,o):o()}function t(t,r,i,o){if(!d.aborted||o){n&&n(t,r,i);for(var a=e(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(n,e){h[n]=v(n).concat(e)}function m(n,e){var t=h[n];if(t)for(var r=0;r<t.length;r++)t[r]===e&&t.splice(r,1)}function v(n){return h[n]||[]}function g(n){return p[n]=p[n]||i(t)}function w(n,e){u(n,function(n,t){e=e||"feature",y[t]=e,e in s||(s[e]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:e,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var f="nr@context",c=n("gos"),u=n(4),s={},p={},d=e.exports=i();d.backlog=s},{}],gos:[function(n,e,t){function r(n,e,t){if(i.call(n,e))return n[e];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(n,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return n[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(n,e,t){function r(n,e,t,r){i.buffer([n],r),i.emit(n,e,t)}var i=n("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(n,e,t){function r(n){var e=typeof n;return!n||"object"!==e&&"function"!==e?-1:n===window?0:a(n,o,function(){return i++})}var i=1,o="nr@id",a=n("gos");e.exports=r},{}],loader:[function(n,e,t){function r(){if(!x++){var n=E.info=NREUM.info,e=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(n&&n.licenseKey&&n.applicationID&&e))return s.abort();u(y,function(e,t){n[e]||(n[e]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=l.createElement("script");t.src="https://"+n.agent,e.parentNode.insertBefore(t,e)}}function i(){"complete"===l.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=n("handle"),u=n(4),s=n("ee"),p=n(3),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1158.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=e.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};n(1),n(2),l[m]?(l[m]("DOMContentLoaded",o,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",i),d[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=n(6)},{}],"wrap-function":[function(n,e,t){function r(n){return!(n&&n instanceof Function&&n.apply&&!n[a])}var i=n("ee"),o=n(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;e.exports=function(n,e){function t(n,e,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){d([u,"",[r,a,i],f])}s(e+"start",[r,a,i],f);try{return c=n.apply(a,r)}catch(p){throw s(e+"err",[r,a,p],f),p}finally{s(e+"end",[r,a,c],f)}}return r(n)?n:(e||(e=""),nrWrapper[a]=n,p(n,nrWrapper),nrWrapper)}function u(n,e,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<e.length;c++)f=e[c],a=n[f],r(a)||(n[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||e){var o=c;c=!0;try{n.emit(t,r,i,e)}catch(a){d([a,t,r,i])}c=o}}function p(n,e){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(n);return t.forEach(function(t){Object.defineProperty(e,t,{get:function(){return n[t]},set:function(e){return n[t]=e,e}})}),e}catch(r){d([r])}for(var i in n)f.call(n,i)&&(e[i]=n[i]);return e}function d(e){try{n.emit("internal-error",e)}catch(t){}}return n||(n=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tableau Extracts–What / Why / How etc - The Information Lab</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v12.6.2 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+<link rel="canonical" href="https://www.theinformationlab.co.uk/2011/01/20/tableau-extracts-what-why-how-etc/" />
+<meta property="og:locale" content="en_GB" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Tableau Extracts–What / Why / How etc - The Information Lab" />
+<meta property="og:description" content="An extract in Tableau is a special type of database, optimised for use by Tableau.  Its super fast, portable and a great way to handle large data sets.  But how do you create one, and what creative ways are there to make use of them..." />
+<meta property="og:url" content="https://www.theinformationlab.co.uk/2011/01/20/tableau-extracts-what-why-how-etc/" />
+<meta property="og:site_name" content="The Information Lab" />
+<meta property="article:section" content="All" />
+<meta property="article:published_time" content="2011-01-20T16:18:34+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="An extract in Tableau is a special type of database, optimised for use by Tableau. Its super fast, portable and a great way to handle large data sets. But how do you create one, and what creative ways are there to make use of them..." />
+<meta name="twitter:title" content="Tableau Extracts–What / Why / How etc - The Information Lab" />
+<meta name="twitter:image" content="http://theinfolab.squarespace.com/resource/Windows-Live-Writer-9da63a1f0414_D089-?fileId=10323062" />
+<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.theinformationlab.co.uk/#website","url":"https://www.theinformationlab.co.uk/","name":"The Information Lab","description":"Helping people make sense of data","potentialAction":{"@type":"SearchAction","target":"https://www.theinformationlab.co.uk/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"ImageObject","@id":"https://www.theinformationlab.co.uk/2011/01/20/tableau-extracts-what-why-how-etc/#primaryimage","url":"http://theinfolab.squarespace.com/resource/Windows-Live-Writer-9da63a1f0414_D089-?fileId=10323062"},{"@type":"WebPage","@id":"https://www.theinformationlab.co.uk/2011/01/20/tableau-extracts-what-why-how-etc/#webpage","url":"https://www.theinformationlab.co.uk/2011/01/20/tableau-extracts-what-why-how-etc/","inLanguage":"en-GB","name":"Tableau Extracts\u2013What / Why / How etc - The Information Lab","isPartOf":{"@id":"https://www.theinformationlab.co.uk/#website"},"primaryImageOfPage":{"@id":"https://www.theinformationlab.co.uk/2011/01/20/tableau-extracts-what-why-how-etc/#primaryimage"},"datePublished":"2011-01-20T16:18:34+00:00","dateModified":"2011-01-20T16:18:34+00:00","author":{"@id":"https://www.theinformationlab.co.uk/#/schema/person/c289a5df18feabfe8fdda67bce9a7646"}},{"@type":["Person"],"@id":"https://www.theinformationlab.co.uk/#/schema/person/c289a5df18feabfe8fdda67bce9a7646","name":"Tom Brown","image":{"@type":"ImageObject","@id":"https://www.theinformationlab.co.uk/#authorlogo","url":"https://secure.gravatar.com/avatar/41b845c739a78de27d8226d053a3987a?s=96&d=mm&r=g","caption":"Tom Brown"},"sameAs":[]}]}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//www.theinformationlab.co.uk' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="The Information Lab &raquo; Feed" href="https://www.theinformationlab.co.uk/feed/" />
+<link rel="alternate" type="application/rss+xml" title="The Information Lab &raquo; Comments Feed" href="https://www.theinformationlab.co.uk/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="The Information Lab &raquo; Tableau Extracts–What / Why / How etc Comments Feed" href="https://www.theinformationlab.co.uk/2011/01/20/tableau-extracts-what-why-how-etc/feed/" />
+<!-- This site uses the Google Analytics by MonsterInsights plugin v7.10.0 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+<script type="text/javascript" data-cfasync="false">
+	var mi_version         = '7.10.0';
+	var mi_track_user      = true;
+	var mi_no_track_reason = '';
+	
+	var disableStr = 'ga-disable-UA-27427363-1';
+
+	/* Function to detect opted out users */
+	function __gaTrackerIsOptedOut() {
+		return document.cookie.indexOf(disableStr + '=true') > -1;
+	}
+
+	/* Disable tracking if the opt-out cookie exists. */
+	if ( __gaTrackerIsOptedOut() ) {
+		window[disableStr] = true;
+	}
+
+	/* Opt-out function */
+	function __gaTrackerOptout() {
+	  document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+	  window[disableStr] = true;
+	}
+	
+	if ( mi_track_user ) {
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+		__gaTracker('create', 'UA-27427363-1', 'auto');
+		__gaTracker('set', 'forceSSL', true);
+		__gaTracker('require', 'displayfeatures');
+		__gaTracker('send','pageview');
+	} else {
+		console.log( "" );
+		(function() {
+			/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+			var noopfn = function() {
+				return null;
+			};
+			var noopnullfn = function() {
+				return null;
+			};
+			var Tracker = function() {
+				return null;
+			};
+			var p = Tracker.prototype;
+			p.get = noopfn;
+			p.set = noopfn;
+			p.send = noopfn;
+			var __gaTracker = function() {
+				var len = arguments.length;
+				if ( len === 0 ) {
+					return;
+				}
+				var f = arguments[len-1];
+				if ( typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function' ) {
+					console.log( 'Not running function __gaTracker(' + arguments[0] + " ....) because you are not being tracked. " + mi_no_track_reason );
+					return;
+				}
+				try {
+					f.hitCallback();
+				} catch (ex) {
+
+				}
+			};
+			__gaTracker.create = function() {
+				return new Tracker();
+			};
+			__gaTracker.getByName = noopnullfn;
+			__gaTracker.getAll = function() {
+				return [];
+			};
+			__gaTracker.remove = noopfn;
+			window['__gaTracker'] = __gaTracker;
+					})();
+		}
+</script>
+<!-- / Google Analytics by MonsterInsights -->
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.theinformationlab.co.uk\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.3"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://www.theinformationlab.co.uk/wp-includes/css/dist/block-library/style.min.css?ver=5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='auth0-widget-css'  href='https://www.theinformationlab.co.uk/wp-content/plugins/auth0/assets/css/main.css?ver=5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='style-css'  href='https://www.theinformationlab.co.uk/wp-content/themes/info-lab/assets/css/style.min.css?ver=5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css'  href='https://www.theinformationlab.co.uk/wp-content/plugins/easy-fancybox/css/jquery.fancybox.min.css?ver=1.3.24' type='text/css' media='screen' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,twb,twbx,docx,pptx,xlsx","inbound_paths":"[]","home_url":"https:\/\/www.theinformationlab.co.uk","hash_tracking":"false"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.theinformationlab.co.uk/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend.min.js?ver=7.10.0'></script>
+<script type='text/javascript' src='https://www.theinformationlab.co.uk/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='https://www.theinformationlab.co.uk/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://www.theinformationlab.co.uk/wp-content/themes/info-lab/assets/js/built.min.js?ver=5.3'></script>
+<link rel='https://api.w.org/' href='https://www.theinformationlab.co.uk/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.theinformationlab.co.uk/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.theinformationlab.co.uk/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.3" />
+<link rel='shortlink' href='https://til.bi/2ogwR5O' />
+<link rel="alternate" type="application/json+oembed" href="https://www.theinformationlab.co.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.theinformationlab.co.uk%2F2011%2F01%2F20%2Ftableau-extracts-what-why-how-etc%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.theinformationlab.co.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.theinformationlab.co.uk%2F2011%2F01%2F20%2Ftableau-extracts-what-why-how-etc%2F&#038;format=xml" />
+	<script src="https://use.typekit.net/mlk7qda.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<script src="https://www.theinformationlab.co.uk/wp-content/themes/info-lab/assets/js/modernizr.js"></script>
+	<script src="https://www.theinformationlab.co.uk/wp-content/themes/info-lab/assets/js/jquery.mobile.custom.min.js"></script>
+	<script src="https://www.theinformationlab.co.uk/wp-content/themes/info-lab/assets/js/masonry.pkgd.min.js"></script>
+	<script src="https://www.theinformationlab.co.uk/wp-content/themes/info-lab/assets/js/featherlight.min.js"></script>
+	<!--[if lt IE 10]>
+		<link href="https://www.theinformationlab.co.uk/wp-content/themes/info-lab/assets/css/ie9.css" rel="stylesheet">
+	<![endif]-->
+	<!--[if lt IE 9]>
+		<script src="https://www.theinformationlab.co.uk/wp-content/themes/info-lab/assets/js/respond.min.js"></script>
+		<link href="https://www.theinformationlab.co.uk/wp-content/themes/info-lab/assets/css/ie8.css" rel="stylesheet">
+	<![endif]-->
+	<!--[if lt IE 8]>
+	    <link href="https://www.theinformationlab.co.uk/wp-content/themes/info-lab/assets/css/ie7.css" rel="stylesheet">
+	<![endif]-->
+	<link rel="apple-touch-icon" sizes="57x57" href="https://www.theinformationlab.co.uk/wp-content/themes/info-lab/assets/icons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="https://www.theinformationlab.co.uk/wp-content/themes/info-lab/assets/icons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="https://www.theinformationlab.co.uk/wp-content/themes/info-lab/assets/icons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="https://www.theinformationlab.co.uk/wp-content/themes/info-lab/assets/icons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="https://www.theinformationlab.co.uk/wp-content/themes/info-lab/assets/icons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="https://www.theinformationlab.co.uk/wp-content/themes/info-lab/assets/icons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="https://www.theinformationlab.co.uk/wp-content/themes/info-lab/assets/icons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="https://www.theinformationlab.co.uk/wp-content/themes/info-lab/assets/icons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://www.theinformationlab.co.uk/wp-content/themes/info-lab/assets/icons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="https://www.theinformationlab.co.uk/wp-content/themes/info-lab/assets/icons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://www.theinformationlab.co.uk/wp-content/themes/info-lab/assets/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="https://www.theinformationlab.co.uk/wp-content/themes/info-lab/assets/icons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://www.theinformationlab.co.uk/wp-content/themes/info-lab/assets/icons/favicon-16x16.png">
+	<link rel="manifest" href="https://www.theinformationlab.co.uk/wp-content/themes/info-lab/assets/icons/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="https://www.theinformationlab.co.uk/wp-content/themes/info-lab/assets/icons/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="stylesheet" href="https://www.theinformationlab.co.uk/wp-content/themes/info-lab/assets/css/animate.min.css">
+	<link href="https://www.theinformationlab.co.uk/wp-content/themes/info-lab/assets/css/fontcustom.css" rel="stylesheet" type="text/css">
+	<link href="https://www.theinformationlab.co.uk/wp-content/themes/info-lab/assets/css/font-styles.css" rel="stylesheet" type="text/css">
+	<link href="https://www.theinformationlab.co.uk/wp-content/themes/info-lab/assets/css/til.css" rel="stylesheet" type="text/css">
+	<link href="https://www.theinformationlab.co.uk/wp-content/themes/info-lab/assets/css/featherlight.min.css" rel="stylesheet" type="text/css">
+	<style type='text/css' id='dynamicStyles'></style>
+	<script>
+		var _prum = [['id', '520e28b9abe53d7046000000'],
+             		['mark', 'firstbyte', (new Date()).getTime()]];
+		(function() {
+    		var s = document.getElementsByTagName('script')[0]
+      		  , p = document.createElement('script');
+    		p.async = 'async';
+    		p.src = '//rum-static.pingdom.net/prum.min.js';
+    		s.parentNode.insertBefore(p, s);
+		})();
+	</script>
+</head>
+	<body class="post-template-default single single-post postid-663 single-format-standard">
+		<div class="meta-bar">
+  <!-- <a href="">Information Lab Group Site</a>&nbsp;&nbsp;&nbsp;|&nbsp; -->
+  <div class="dropdown">
+    <a href="#" class="dropdown-toggle" type="button" id="region-select" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="infolab-icon-locations"></span>The Information Lab UK</a>
+    <div class="dropdown-menu " aria-labelledby="region-select">
+    <a class="dropdown-item" href="http://www.theinformationlab.ie">INFORMATION LAB IRELAND</a><a class="dropdown-item" href="http://www.theinformationlab.fr">INFORMATION LAB FRANCE</a><a class="dropdown-item" href="http://www.theinformationlab.de">INFORMATION LAB GERMANY</a><a class="dropdown-item" href="http://www.theinformationlab.nl">INFORMATION LAB NETHERLANDS</a><a class="dropdown-item" href="http://www.theinformationlab.it">INFORMATION LAB ITALY</a><a class="dropdown-item" href="http://www.theinformationlab.lu">INFORMATION LAB LUXEMBOURG</a>    </div>
+  </div>
+  &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="http://www.thedataschool.co.uk">The Data School</a>
+</div>
+<header class="header">
+  <nav role="navigation" class="main-nav">
+    <div class="container">
+      <a href="https://www.theinformationlab.co.uk" class="logo">
+         
+              <img class="large-logo" src="https://www.theinformationlab.co.uk/wp-content/uploads/2016/01/Alteryx-Global-PotY@248.png" alt="The Information Lab" />
+              <img class="small-logo" src="https://www.theinformationlab.co.uk/wp-content/uploads/2016/01/info-lab-logo-small.png" alt="The Information Lab" />
+
+                  </a>
+      <div class="bar-nav-contact hidden">
+        <p><b>T:</b>  08453 888 289<br />
+<b>E:</b>  <a href="mailto:info@theinformationlab.co.uk">info@theinformationlab.co.uk</a></p>
+      </div>
+        
+        <button class="navbar-toggler basic-button " type="button">n</button>
+        <div class="collapse collapsable-main-nav" id="exCollapsingNavbar">
+            <div class="container">
+              <div class="arrow-container"><div class="arrow-up"></div></div>
+              <div class="nav-scroll">
+                <div class="menu-main-menu-container main-menu">
+                  <ul id="menu-main-menu" class="menu">
+
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.theinformationlab.co.uk/">Home</a><span class=""></span>                        
+                        <!-- Check if end of parent item -->
+                                                    </li>                           
+                                                              
+                      <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.theinformationlab.co.uk/how-we-help/">How We Help</a><span class="infolab-icon-how-we-help-1"></span>                        
+                        <!-- Check if end of parent item -->
+                                                              
+                      
+                          <!-- Check if start of submenu -->
+                                                      <ul class="sub-menu">
+                          
+                                                        <li class="menu-item menu-item-type-post_type"><a href="https://www.theinformationlab.co.uk/lab/">The Lab</a></li>
+                           
+                          <!-- Check if end of submenu -->
+                          
+                                                
+                        <!-- Check if end of parent item -->
+                                                              
+                      
+                          <!-- Check if start of submenu -->
+                          
+                                                        <li class="menu-item menu-item-type-post_type"><a href="https://support.theinformationlab.co.uk/support/home">Support</a></li>
+                           
+                          <!-- Check if end of submenu -->
+                                                      </ul>
+                          
+                                                
+                        <!-- Check if end of parent item -->
+                                                    </li>                           
+                                                              
+                      <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.theinformationlab.co.uk/sectors/">Our Favourite Sectors</a><span class="icon-business"></span>                        
+                        <!-- Check if end of parent item -->
+                                                              
+                      
+                          <!-- Check if start of submenu -->
+                                                      <ul class="sub-menu">
+                          
+                                                        <li class="menu-item menu-item-type-post_type"><a href="https://www.theinformationlab.co.uk/alteryx-in-sport/">Alteryx in Sport</a></li>
+                           
+                          <!-- Check if end of submenu -->
+                          
+                                                
+                        <!-- Check if end of parent item -->
+                                                              
+                      
+                          <!-- Check if start of submenu -->
+                          
+                                                        <li class="menu-item menu-item-type-post_type"><a href="https://www.theinformationlab.co.uk/higher-education/">Higher Education</a></li>
+                           
+                          <!-- Check if end of submenu -->
+                                                      </ul>
+                          
+                                                
+                        <!-- Check if end of parent item -->
+                                                    </li>                           
+                                                              
+                      <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.theinformationlab.co.uk/tableau-training/">Training</a><span class="infolab-icon-training"></span>                        
+                        <!-- Check if end of parent item -->
+                                                              
+                      
+                          <!-- Check if start of submenu -->
+                                                      <ul class="sub-menu">
+                          
+                                                        <li class="menu-item menu-item-type-post_type"><a href="https://www.theinformationlab.co.uk/training/tableau-desktop-i/">Tableau Desktop I: Fundamentals</a></li>
+                           
+                          <!-- Check if end of submenu -->
+                          
+                                                
+                        <!-- Check if end of parent item -->
+                                                              
+                      
+                          <!-- Check if start of submenu -->
+                          
+                                                        <li class="menu-item menu-item-type-post_type"><a href="https://www.theinformationlab.co.uk/training/tableau-desktop-ii/">Tableau Desktop II: Intermediate</a></li>
+                           
+                          <!-- Check if end of submenu -->
+                          
+                                                
+                        <!-- Check if end of parent item -->
+                                                              
+                      
+                          <!-- Check if start of submenu -->
+                          
+                                                        <li class="menu-item menu-item-type-post_type"><a href="https://www.theinformationlab.co.uk/training/tableau-accelerated/">Tableau Desktop I &#038; II: Accelerated</a></li>
+                           
+                          <!-- Check if end of submenu -->
+                          
+                                                
+                        <!-- Check if end of parent item -->
+                                                              
+                      
+                          <!-- Check if start of submenu -->
+                          
+                                                        <li class="menu-item menu-item-type-post_type"><a href="https://www.theinformationlab.co.uk/training/tableau-essentials/">Tableau Essentials</a></li>
+                           
+                          <!-- Check if end of submenu -->
+                          
+                                                
+                        <!-- Check if end of parent item -->
+                                                              
+                      
+                          <!-- Check if start of submenu -->
+                          
+                                                        <li class="menu-item menu-item-type-post_type"><a href="https://www.theinformationlab.co.uk/training/alteryx-essentials/">Alteryx Essentials</a></li>
+                           
+                          <!-- Check if end of submenu -->
+                                                      </ul>
+                          
+                                                
+                        <!-- Check if end of parent item -->
+                                                    </li>                           
+                                                              
+                                          </ul>
+
+                    <ul id="menu-main-menu-2" class="menu">
+                      <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.theinformationlab.co.uk/hub/">The Hub</a><span class="infolab-icon-the-hub"></span>                        
+                        <!-- Check if end of parent item -->
+                                                              
+                      
+                          <!-- Check if start of submenu -->
+                                                      <ul class="sub-menu">
+                          
+                                                        <li class="menu-item menu-item-type-post_type"><a href="https://www.theinformationlab.co.uk/category/blog/">Our Blog</a></li>
+                           
+                          <!-- Check if end of submenu -->
+                          
+                                                
+                        <!-- Check if end of parent item -->
+                                                              
+                      
+                          <!-- Check if start of submenu -->
+                          
+                                                        <li class="menu-item menu-item-type-post_type"><a href="https://www.theinformationlab.co.uk/category/books/">Tableau & Alteryx Books</a></li>
+                           
+                          <!-- Check if end of submenu -->
+                          
+                                                
+                        <!-- Check if end of parent item -->
+                                                              
+                      
+                          <!-- Check if start of submenu -->
+                          
+                                                        <li class="menu-item menu-item-type-post_type"><a href="https://www.theinformationlab.co.uk/category/social/">Social Media</a></li>
+                           
+                          <!-- Check if end of submenu -->
+                                                      </ul>
+                          
+                                                
+                        <!-- Check if end of parent item -->
+                                                    </li>                           
+                                                              
+                      <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.theinformationlab.co.uk/events/">Events</a><span class="icon-calendar"></span>                        
+                        <!-- Check if end of parent item -->
+                                                    </li>                           
+                                                              
+                      <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.theinformationlab.co.uk/team/">Our Team</a><span class="icon-bubbles"></span>                        
+                        <!-- Check if end of parent item -->
+                                                              
+                      
+                          <!-- Check if start of submenu -->
+                                                      <ul class="sub-menu">
+                          
+                                                        <li class="menu-item menu-item-type-post_type"><a href="https://www.theinformationlab.co.uk/jobs/">Job Openings</a></li>
+                           
+                          <!-- Check if end of submenu -->
+                                                      </ul>
+                          
+                                                
+                        <!-- Check if end of parent item -->
+                                                    </li>                           
+                                                              
+                      <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.theinformationlab.co.uk/contact/">Our Locations</a><span class="infolab-icon-locations"></span>                        
+                        <!-- Check if end of parent item -->
+                                                    </li>                           
+                                                              
+                                        </ul>
+                </div>
+                <form role="search" method="get" class="search-form" action="https://www.theinformationlab.co.uk/">
+	<input type="search" class="search-field" placeholder="Search …" value="" name="s" title="Search for:" />
+	<input type="submit" class="search-submit basic-button" value="B" />
+</form>                <div id="menu-contact">
+                  <h3>London Office</h3>
+<p><span class="fy4CJe">1st Floor<br />
+</span><span class="fy4CJe">25 Watling Street<br />
+</span><span class="fy4CJe">London<br />
+</span><span class="fy4CJe">EC4M 9BR</span></p>
+<p><b>T:</b>  08453 888 289<br />
+<b>E:</b>  <a href="mailto:info@theinformationlab.co.uk">info@theinformationlab.co.uk</a></p>
+                          <ul id="menu-social">
+                            <li><a class="infolab-icon-facebook" href="https://www.facebook.com/pages/The-Information-Lab/147229922046018"></a></li>
+                            <li><a class="infolab-icon-twitter" href="https://twitter.com/infolabuk"></a></li>
+                            <li><a class="infolab-icon-google-plus" href="https://plus.google.com/b/117018564375259960523/"></a></li>
+                          </ul>
+                        
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </nav>
+  </header>
+		<div id="fullpage" class="">
+			
+	<section class="section fp-auto-height single-post"  data-anchor="tableau-extracts-what-why-how-etc">
+	<!-- THE HUB NAV -->
+	<div class=" homepage-the-hub-nav ">
+				
+					<div class="container">
+						<ul class="filter-group">
+
+												<li>
+														<a class="text-uppercase" href="https://www.theinformationlab.co.uk/category/all/"><span class="infolab-icon-all"></span>All</a>
+								<div class="hub-active-arrow"></div>
+							</li>
+													<li class="hub-active-nav">
+														<a class="text-uppercase" href="https://www.theinformationlab.co.uk/category/blog/"><span class="infolab-icon-reports"></span>Blog</a>
+								<div class="hub-active-arrow"></div>
+							</li>
+													<li>
+														<a class="text-uppercase" href="https://www.theinformationlab.co.uk/category/books/"><span class="infolab-icon-books"></span>Books</a>
+								<div class="hub-active-arrow"></div>
+							</li>
+													<li>
+														<a class="text-uppercase" href="https://www.theinformationlab.co.uk/category/news/"><span class="infolab-icon-news"></span>News</a>
+								<div class="hub-active-arrow"></div>
+							</li>
+													<li>
+														<a class="text-uppercase" href="https://www.theinformationlab.co.uk/category/social/"><span class="infolab-icon-social"></span>Social</a>
+								<div class="hub-active-arrow"></div>
+							</li>
+													<li>
+														<a class="text-uppercase" href="https://www.theinformationlab.co.uk/category/videos/"><span class="infolab-icon-videos"></span>Videos</a>
+								<div class="hub-active-arrow"></div>
+							</li>
+												</ul>
+					</div>
+				
+
+
+	</div>
+
+	<!-- THE HUB CONTENT -->
+	<div class="homepage-the-hub-content">
+		<div class="container">
+			<a class="back-button" href="https://www.theinformationlab.co.uk/the-hub"><< Back</a>
+			<div class="ajax-area">
+				<div class="hub-main-post">
+					<div id="ajax-more" class="hub-main-post-container" >
+						<div class="animated">
+																					<div class="main-post-date"><span>20 January, 2011</span><span>
+													| <a href="https://www.theinformationlab.co.uk/team/#7336">Tom Brown</a>
+						
+							</span></div>
+							<h2>Tableau Extracts–What / Why / How etc</h2>
+														<p><a rel="lightbox" href="http://theinfolab.squarespace.com/resource/Windows-Live-Writer-9da63a1f0414_D089-?fileId=10323061"><img style="background-image: none; margin: 0px 20px 20px 0px; padding-left: 0px; padding-right: 0px; display: inline; float: left; padding-top: 0px; border: 0px;" title="image" src="http://theinfolab.squarespace.com/resource/Windows-Live-Writer-9da63a1f0414_D089-?fileId=10323062" border="0" alt="image" width="112" height="104" align="left" /></a></p>
+<p>&nbsp;</p>
+<p><strong>What&rsquo;s a Tableau Extract?&nbsp; </strong></p>
+<p>An extract in Tableau is a special type of database, optimised for use by Tableau.&nbsp; Its super fast, portable and a great way to handle large data sets.&nbsp; But how do you create one, and what creative ways are there to make use of them?</p>
+<p>&nbsp;</p>
+<h3>Firstly, how do you create and extract?</h3>
+<p>&nbsp;</p>
+<p>This bit is simple, assuming you are using Tableau Desktop.&nbsp; After you have connected to your data, go to the DATA menu and choose EXTRACT DATA &ndash; then accept the defaults on the dialog box (although more on this later).&nbsp; Tableau will as where you want to save the extract &ndash; choose any location to save the file, although Tableau will probably direct you towards &lsquo;My Tableau Repository | Datasources&rsquo; which is just fine too!</p>
+<p>Now wait for the extract to be created, how long you&rsquo;ll wait depends on the database technology you&rsquo;re using, network speed, data volumes that sort of thing.</p>
+<p>You&rsquo;ll know it&rsquo;s done when the data source icon changes &ndash; it will have another database icon behind it, presumably representing a &#8216;copy&rsquo;, which is exactly what an extract is.</p>
+<p><a rel="lightbox" href="http://theinfolab.squarespace.com/resource/Windows-Live-Writer-9da63a1f0414_D089-?fileId=10323064"><img style="background-image: none; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="image" src="http://theinfolab.squarespace.com/resource/Windows-Live-Writer-9da63a1f0414_D089-?fileId=10323065" border="0" alt="image" width="244" height="234" /></a></p>
+<p><strong>So, that&rsquo;s how to create on (well the basics anyway) &ndash; but WHY would you want to?</strong></p>
+<p>&nbsp;</p>
+<h3>Extract reason #1 &ndash; Performance</h3>
+<p>&nbsp;</p>
+<p>Extracts are FAST.&nbsp; They are awesomely fast with a million rows, and they only slow down to &lsquo;amazingly fast&rsquo; with 100 Million rows.&nbsp;</p>
+<p>But extracts are not just for big data sets.&nbsp; Once your familiar with the Tableau interface, even a 1 second delay when using the interface can be annoying &ndash; you get used to the speed and responsiveness quickly.&nbsp; I recommend using extracts for any data set which is anything other than super-responsive.&nbsp;</p>
+<p><strong>For example:</strong></p>
+<p>If you have 50,000 rows in Excel &ndash; its likely to be annoyingly slow.&nbsp; An extract solves this immediately.</p>
+<p>If you&rsquo;re using a Remote SQL server, create an extract over lunch, and you&rsquo;ll have instant response times when you get back.</p>
+<p>&nbsp;</p>
+<h3>Extract reason #2 &ndash; Offline analysis</h3>
+<p>&nbsp;</p>
+<p>Extracts are files that you store on your PC (file extension .tde).&nbsp; So of course you can take one with you on holiday.&nbsp; If you just can&rsquo;t sit by the pool without dreaming about histograms and scatterplots, then extracts could be for you&hellip;</p>
+<p>They work on planes too.</p>
+<p>&nbsp;</p>
+<h3>Extract reason #3 &ndash; Accessing additional functionality</h3>
+<p>&nbsp;</p>
+<p>Some database technologies have restrictions that stop Tableau communicating with them as they would like.&nbsp; The most common problem caused by this (in my experience) is the absence of COUNT DISTINCT when using Excel as a data source.</p>
+<p>To see this in action, connect to an Excel source, and then drag a dimension out using the RIGHT MOUSE BUTTON.&nbsp; When you drop this, you&rsquo;ll get to choose from the following options:</p>
+<p><a rel="lightbox" href="http://theinfolab.squarespace.com/resource/Windows-Live-Writer-9da63a1f0414_D089-?fileId=10323071"><img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="image" src="http://theinfolab.squarespace.com/resource/Windows-Live-Writer-9da63a1f0414_D089-?fileId=10323072" border="0" alt="image" width="324" height="215" /></a></p>
+<p>&nbsp;</p>
+<p>Which is no good for me!!&nbsp; I&rsquo;m trying to get COUNT DISTINCT&hellip;</p>
+<p>But, if I change to an extract&hellip;</p>
+<p><a rel="lightbox" href="http://theinfolab.squarespace.com/resource/Windows-Live-Writer-9da63a1f0414_D089-?fileId=10323073"><img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="image" src="http://theinfolab.squarespace.com/resource/Windows-Live-Writer-9da63a1f0414_D089-?fileId=10323074" border="0" alt="image" width="337" height="238" /></a></p>
+<p>&nbsp;</p>
+<p>Now I get COUNT DISTINCT &ndash; which allows some really insightful visualisations to be built.</p>
+<p>&nbsp;</p>
+<p>The same holds true if you are trying to get a <a href="http://en.wikipedia.org/wiki/Median">MEDIAN</a> value for a measure, this is not available from Excel, so you&rsquo;ll need an extract.</p>
+<p>FROM EXCEL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FROM AN EXTRACT</p>
+<p><a rel="lightbox" href="http://theinfolab.squarespace.com/resource/Windows-Live-Writer-9da63a1f0414_D089-?fileId=10323075"><img style="background-image: none; margin: 0px 20px 0px 0px; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="image" src="http://theinfolab.squarespace.com/resource/Windows-Live-Writer-9da63a1f0414_D089-?fileId=10323077" border="0" alt="image" width="244" height="236" /></a><a rel="lightbox" href="http://theinfolab.squarespace.com/resource/Windows-Live-Writer-9da63a1f0414_D089-?fileId=10323078"><img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="image" src="http://theinfolab.squarespace.com/resource/Windows-Live-Writer-9da63a1f0414_D089-?fileId=10323079" border="0" alt="image" width="217" height="236" /></a></p>
+<p>&nbsp;</p>
+<h3>Extract reason #4 &ndash; Creating packaged workbooks</h3>
+<p>&nbsp;</p>
+<p>Packaged workbooks are a fantastic bit of Tableau functionality, allowing you to created a distributable file which can be an interactive visualisation.&nbsp; This can be opened by users of the FREE Tableau Reader &ndash; which you can <a href="http://theinformationlab.co.uk/software/">download here</a>.</p>
+<p>BUT &ndash; you can&rsquo;t &lsquo;package&rsquo; data which is held on remote servers, so you can&rsquo;t package data from a SQL server, Oracle etc.</p>
+<p>UNLESS you create an extract first.&nbsp; Then you&rsquo;ll have no problems.</p>
+<p>&nbsp;</p>
+<h3>Extract reason #5 &ndash; Publishing to Tableau Public</h3>
+<p>&nbsp;</p>
+<p>You can&rsquo;t use packaged workbooks without extract as described above, but neither can you use <a href="http://www.tableausoftware.com/public">Tableau Public</a>.&nbsp; If you want to publish data to the web, you&rsquo;ll have to use an extract.</p>
+<p>&nbsp;</p>
+<h3>Extract reason #6 &ndash; Data security</h3>
+<p>&nbsp;</p>
+<p>Here&rsquo;s a more subtle use case.&nbsp; Suppose you work at a hospital, and you are REALLY NOT ALLOWED to share patient level information &ndash; yet you want to create a packaged workbook with a data source which does contain this information.&nbsp; What do you do?&nbsp; Here&rsquo;s where the extra functionality of the data extract dialog comes into play.</p>
+<p>When you extract data, you&rsquo;ll see this window.&nbsp; Notice the button at the bottom, this removes all the dimensions and measures which you have NOT used in ANY VIZ from the extract.&nbsp;</p>
+<p><a rel="lightbox" href="http://theinfolab.squarespace.com/resource/Windows-Live-Writer-9da63a1f0414_D089-?fileId=10323080"><img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="image" src="http://theinfolab.squarespace.com/resource/Windows-Live-Writer-9da63a1f0414_D089-?fileId=10323081" border="0" alt="image" width="304" height="288" /></a></p>
+<p>The extract you have then created can be packaged, safe in the knowledge that any fields you did not want to be visible are not even in the extract, so they can&rsquo;t be accessed.</p>
+<p>Using this same dialog, you can restrict the ROWS (rather than columns) which are included in your data set by using the filter section.&nbsp; Consider using a relative date filter for an extract which contains (say) the last 3 weeks of data).</p>
+<p>&nbsp;</p>
+<h3>Extract Reason #7 &ndash; Double aggregations</h3>
+<p>&nbsp;</p>
+<p>This is my personal favourite.</p>
+<p>Suppose you have timesheet data which has one row per employee/day.&nbsp; You want to know the average hours recorded per MONTH.</p>
+<p>To solve this one, you first need to aggregate the data by employee/month, and then produce a view which then averages the data by month (hence the double aggregation).</p>
+<p>Extracts address this problem as they can be used to perform the first level of aggregation, providing a new data source over which to run the Average calculation.</p>
+<p>This step is performed in the extract dialog window, by &lsquo;Aggregating visible dimensions&rsquo;&nbsp; and then rolling up dates to month.</p>
+<p>&nbsp;</p>
+<p><a rel="lightbox" href="http://theinfolab.squarespace.com/resource/Windows-Live-Writer-9da63a1f0414_D089-?fileId=10323082"><img style="background-image: none; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="image" src="http://theinfolab.squarespace.com/resource/Windows-Live-Writer-9da63a1f0414_D089-?fileId=10323084" border="0" alt="image" width="237" height="244" /></a></p>
+<p>&nbsp;</p>
+<p>You can also use this feature to massively reduce the size of the extract file by &#8216;&rsquo;Hiding&rsquo; dimensions in the data window before you take this step.</p>
+<p>&nbsp;</p>
+<p>I&rsquo;m sure there are many more reasons to use extracts &ndash; and that in the future we&rsquo;ll see many more developments in this area from Tableau.</p>
+<p>&nbsp;</p>
+<p>Please drop me a line if you have other uses you think should be on this list.</p>
+
+															<div class="author-meta clearfix">
+									<div class="hidden-xs">
+																																									<img src="https://www.theinformationlab.co.uk/wp-content/uploads/2015/12/team_test-86x86.jpg" alt="" class="img-responsive">
+																			</div>
+									<h4><a href="https://www.theinformationlab.co.uk/team/#7336">Tom Brown</a></h4>
+									<p>London, UK</p>
+								</div>
+														
+<div id="comments" class="comments-area">
+
+	
+	<div class="share">
+		Be a community star, share away!
+		<ul id="footer-social">
+			<li><a class="infolab-icon-facebook" href="http://www.facebook.com/sharer.php?u=https://www.theinformationlab.co.uk/2011/01/20/tableau-extracts-what-why-how-etc/&amp;t=Tableau Extracts–What / Why / How etc" title="Share on Facebook." onclick="javascript:window.open(this.href,
+  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=660,width=600');return false;"></a></li>
+			<li><a class="infolab-icon-twitter" href="http://twitter.com/home/?status=Tableau Extracts–What / Why / How etc - https://www.theinformationlab.co.uk/2011/01/20/tableau-extracts-what-why-how-etc/ on @infolabuk" title="Share via Twitter!" onclick="javascript:window.open(this.href,
+  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"></a></li>
+			<li><a class="infolab-icon-linkedin" href="http://www.linkedin.com/shareArticle?mini=true&amp;title=Tableau Extracts–What / Why / How etc&amp;url=https://www.theinformationlab.co.uk/2011/01/20/tableau-extracts-what-why-how-etc/" title="Share on LinkedIn" onclick="javascript:window.open(this.href,
+  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=580,width=490');return false;"></a></li>
+			<li><a class="infolab-icon-google-plus" href="https://plus.google.com/share?url=https://www.theinformationlab.co.uk/2011/01/20/tableau-extracts-what-why-how-etc/" onclick="javascript:window.open(this.href,
+  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"></a></li>
+    </ul>
+	</div>
+
+			<h3 class="comments-title">
+			27 thoughts on &ldquo;<span>Tableau Extracts–What / Why / How etc</span>&rdquo;		</h3>
+
+		
+		<ol class="comment-list">
+					<li id="comment-57" class="comment even thread-even depth-1 parent">
+			<article id="div-comment-57" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://secure.gravatar.com/avatar/1e6542fa1845a18945377cc912f9a5c7?s=32&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/1e6542fa1845a18945377cc912f9a5c7?s=64&#038;d=mm&#038;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />						<b class="fn">Joe Mako</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://www.theinformationlab.co.uk/2011/01/20/tableau-extracts-what-why-how-etc/#comment-57">
+							<time datetime="2011-01-20T18:17:23+00:00">
+								20 January, 2011 at 6:17 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>That was a great overview of some main point and factors of extracts with the Tableau Data Engine. The discussion on extracts in Tableau could go for quite a while. Here are a couple of other points in regards to extracts:</p>
+<p>a. If you use Custom SQL, the query slowness custom SQL adds (because Tableau cannot write the most efficient queries when it is used) is removed.</p>
+<p>b. When you publish to server, you can schedule the extract, so every interaction will not query a production database, and you can still get semi-live, or as live as you need it data.</p>
+<p>c. It is important to note that the majority of the speed gain is because the extract is a columnar data store (like Vertica or Infobright), and no longer a relational data store. Also just about anything is faster and a better choice than the MS Jet Engine (what Tableau uses to connect to Text/Excel/Access files). Columnar data store are designed to produce fast results aggregating data.</p>
+<p>d. if you create a calculated field  that is not an aggregation (or use a parameter), you will want to Optimize the extract, so the result of the field for each row can be added to the extract to retain fast performance.</p>
+<p>e. The one downside of the new Data Engine is the lack of ability to use pass-through/RAWSQL functions. These are only useful in a select few cases now because custom table calculations and data blending can do most of what is needed, so not a major issue.</p>
+<p>f. an extract will attempt to retain some calculation logic of the original data source. Some databases would see &quot;A&quot;=&quot;a&quot; as a true condition because their string comparison is not case sensitive, while other databases are, and when you create an extract, Tableau will attempt to honor that, at at least retain the values of your calculated fields. This is sometimes a source of confusion.</p>
+<p>g. If you refresh an extract, and the original data source structure has changed, Tableau will update the extract with those changes. This could cause some calculated fields to break, because of field name changes, but you can also add additional columns to your data this way as well.</p>
+<p>I could go on an on about the extract engine, in short, I love it, and use it as early and as often as I can.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='#comment-57' data-commentid="57" data-postid="663" data-belowelement="div-comment-57" data-respondelement="respond" aria-label='Reply to Joe Mako'>Reply</a></div>			</article><!-- .comment-body -->
+		<ol class="children">
+		<li id="comment-67" class="comment odd alt depth-2 parent">
+			<article id="div-comment-67" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://secure.gravatar.com/avatar/c983ff6ce02a13940f6916732581ad00?s=32&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/c983ff6ce02a13940f6916732581ad00?s=64&#038;d=mm&#038;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />						<b class="fn">Chris Stone</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://www.theinformationlab.co.uk/2011/01/20/tableau-extracts-what-why-how-etc/#comment-67">
+							<time datetime="2013-10-10T21:29:19+01:00">
+								10 October, 2013 at 9:29 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Joe,</p>
+<p>I pulled an extract of 950M rows assuming it would be faster to work locally off my machine than through Teradata. It feels like this is taking MUCH longer than just connecting live to the table on the user space. Do you have any insight or suggestions?</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='#comment-67' data-commentid="67" data-postid="663" data-belowelement="div-comment-67" data-respondelement="respond" aria-label='Reply to Chris Stone'>Reply</a></div>			</article><!-- .comment-body -->
+		<ol class="children">
+		<li id="comment-69" class="comment even depth-3">
+			<article id="div-comment-69" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://secure.gravatar.com/avatar/3ae5702e67e62daa1fec24e8c1c5789b?s=32&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/3ae5702e67e62daa1fec24e8c1c5789b?s=64&#038;d=mm&#038;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />						<b class="fn"><a href='http://www.grandlogic.com' rel='external nofollow ugc' class='url'>Sam Taha</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://www.theinformationlab.co.uk/2011/01/20/tableau-extracts-what-why-how-etc/#comment-69">
+							<time datetime="2014-04-01T19:20:19+01:00">
+								1 April, 2014 at 7:20 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>If you pull it into Tableau Desktop it will be slower. You want to load this as a data extract on the Tableau server and make sure your Tableau server has adequate capacity.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='#comment-69' data-commentid="69" data-postid="663" data-belowelement="div-comment-69" data-respondelement="respond" aria-label='Reply to Sam Taha'>Reply</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		<li id="comment-58" class="comment odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-58" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://secure.gravatar.com/avatar/?s=32&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/?s=64&#038;d=mm&#038;r=g 2x' class='avatar avatar-32 photo avatar-default' height='32' width='32' />						<b class="fn">Tom Brown</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://www.theinformationlab.co.uk/2011/01/20/tableau-extracts-what-why-how-etc/#comment-58">
+							<time datetime="2011-01-20T18:25:29+00:00">
+								20 January, 2011 at 6:25 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Wow joe, great comment!!  Longer and more interesting than my original post. But you&#39;re right, extracts have much more to them. </p>
+<p>In my experience many people don&#39;t use them, or appreciate their value for day to day analysis. Hence the post. </p>
+<p>Thanks again</p>
+<p>Tom</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='#comment-58' data-commentid="58" data-postid="663" data-belowelement="div-comment-58" data-respondelement="respond" aria-label='Reply to Tom Brown'>Reply</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+		<li id="comment-59" class="comment even thread-even depth-1">
+			<article id="div-comment-59" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://secure.gravatar.com/avatar/889b1eea5e36548a36e8c41b3c6837f1?s=32&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/889b1eea5e36548a36e8c41b3c6837f1?s=64&#038;d=mm&#038;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />						<b class="fn">Dana</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://www.theinformationlab.co.uk/2011/01/20/tableau-extracts-what-why-how-etc/#comment-59">
+							<time datetime="2011-10-14T10:39:54+01:00">
+								14 October, 2011 at 10:39 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Fantastic post!  Most of my data extracts are around 10 mill records and this is perfect!</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='#comment-59' data-commentid="59" data-postid="663" data-belowelement="div-comment-59" data-respondelement="respond" aria-label='Reply to Dana'>Reply</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+		<li id="comment-60" class="comment odd alt thread-odd thread-alt depth-1 parent">
+			<article id="div-comment-60" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://secure.gravatar.com/avatar/f29c8763d7b93934af56d082f46c96fc?s=32&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/f29c8763d7b93934af56d082f46c96fc?s=64&#038;d=mm&#038;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />						<b class="fn">Andy Holt</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://www.theinformationlab.co.uk/2011/01/20/tableau-extracts-what-why-how-etc/#comment-60">
+							<time datetime="2012-10-15T05:07:04+01:00">
+								15 October, 2012 at 5:07 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>But what about the downside? The loss of table hierarchy within the dimensions and measures windows?<br />
+How do you get around that little issue?</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='#comment-60' data-commentid="60" data-postid="663" data-belowelement="div-comment-60" data-respondelement="respond" aria-label='Reply to Andy Holt'>Reply</a></div>			</article><!-- .comment-body -->
+		<ol class="children">
+		<li id="comment-75" class="comment even depth-2">
+			<article id="div-comment-75" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://secure.gravatar.com/avatar/ac359eab185eeaf226c5be50893e417d?s=32&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/ac359eab185eeaf226c5be50893e417d?s=64&#038;d=mm&#038;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />						<b class="fn">ERBrains</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://www.theinformationlab.co.uk/2011/01/20/tableau-extracts-what-why-how-etc/#comment-75">
+							<time datetime="2015-06-02T07:52:23+01:00">
+								2 June, 2015 at 7:52 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Its a very nice post thank you</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='#comment-75' data-commentid="75" data-postid="663" data-belowelement="div-comment-75" data-respondelement="respond" aria-label='Reply to ERBrains'>Reply</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		<li id="comment-61" class="comment odd alt thread-even depth-1 parent">
+			<article id="div-comment-61" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://secure.gravatar.com/avatar/09ee945f6bd2ff1d1db050be48ad71d4?s=32&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/09ee945f6bd2ff1d1db050be48ad71d4?s=64&#038;d=mm&#038;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />						<b class="fn">Bryan Franklin</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://www.theinformationlab.co.uk/2011/01/20/tableau-extracts-what-why-how-etc/#comment-61">
+							<time datetime="2012-11-15T22:19:24+00:00">
+								15 November, 2012 at 10:19 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>So, here a question for you about extracts.  Let&#8217;s say you have a 100 million row extract and you want it to run on the server&#8230;not your laptop.  Everytime you say &#8220;Use Extract&#8221; it tries to go pull it.  And it tries.  Very hard I might add.</p>
+<p>I want to publish this datasource to the server without actually kicking it off&#8230;until it gets to the server.</p>
+<p>Thoughts?</p>
+<p>Thanks,<br />
+Bryan</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='#comment-61' data-commentid="61" data-postid="663" data-belowelement="div-comment-61" data-respondelement="respond" aria-label='Reply to Bryan Franklin'>Reply</a></div>			</article><!-- .comment-body -->
+		<ol class="children">
+		<li id="comment-62" class="comment even depth-2 parent">
+			<article id="div-comment-62" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://secure.gravatar.com/avatar/09ee945f6bd2ff1d1db050be48ad71d4?s=32&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/09ee945f6bd2ff1d1db050be48ad71d4?s=64&#038;d=mm&#038;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />						<b class="fn">Bryan Franklin</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://www.theinformationlab.co.uk/2011/01/20/tableau-extracts-what-why-how-etc/#comment-62">
+							<time datetime="2012-11-15T22:26:42+00:00">
+								15 November, 2012 at 10:26 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Found It!  </p>
+<p>See below.</p>
+<p><a href="http://www.tumblr.com/tagged/tableau-server?before=1333204498" rel="nofollow ugc">http://www.tumblr.com/tagged/tableau-server?before=1333204498</a></p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='#comment-62' data-commentid="62" data-postid="663" data-belowelement="div-comment-62" data-respondelement="respond" aria-label='Reply to Bryan Franklin'>Reply</a></div>			</article><!-- .comment-body -->
+		<ol class="children">
+		<li id="comment-65" class="comment odd alt depth-3">
+			<article id="div-comment-65" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://secure.gravatar.com/avatar/ddc14aafb2eeb041e8812dacbf3b6f6c?s=32&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/ddc14aafb2eeb041e8812dacbf3b6f6c?s=64&#038;d=mm&#038;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />						<b class="fn">Toby</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://www.theinformationlab.co.uk/2011/01/20/tableau-extracts-what-why-how-etc/#comment-65">
+							<time datetime="2013-01-28T16:48:47+00:00">
+								28 January, 2013 at 4:48 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Dead link.  Always point to the source.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='#comment-65' data-commentid="65" data-postid="663" data-belowelement="div-comment-65" data-respondelement="respond" aria-label='Reply to Toby'>Reply</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+		<li id="comment-66" class="comment byuser comment-author-robin-kennedy even depth-3">
+			<article id="div-comment-66" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://secure.gravatar.com/avatar/87987786d878a1b8ad4abb5cb5709c49?s=32&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/87987786d878a1b8ad4abb5cb5709c49?s=64&#038;d=mm&#038;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />						<b class="fn"><a href='http://www.theinformationlab.co.uk' rel='external nofollow ugc' class='url'>Robin Kennedy</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://www.theinformationlab.co.uk/2011/01/20/tableau-extracts-what-why-how-etc/#comment-66">
+							<time datetime="2013-01-29T12:50:55+00:00">
+								29 January, 2013 at 12:50 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Here&#8217;s an updated link: <a href="http://tableaulove.tumblr.com/post/18945358848/how-to-publish-an-unpopulated-tableau-extract" rel="nofollow ugc">http://tableaulove.tumblr.com/post/18945358848/how-to-publish-an-unpopulated-tableau-extract</a></p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='#comment-66' data-commentid="66" data-postid="663" data-belowelement="div-comment-66" data-respondelement="respond" aria-label='Reply to Robin Kennedy'>Reply</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		<li id="comment-63" class="comment byuser comment-author-robin-kennedy odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-63" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://secure.gravatar.com/avatar/87987786d878a1b8ad4abb5cb5709c49?s=32&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/87987786d878a1b8ad4abb5cb5709c49?s=64&#038;d=mm&#038;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />						<b class="fn"><a href='http://www.theinformationlab.co.uk' rel='external nofollow ugc' class='url'>Robin Kennedy</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://www.theinformationlab.co.uk/2011/01/20/tableau-extracts-what-why-how-etc/#comment-63">
+							<time datetime="2012-11-18T17:26:38+00:00">
+								18 November, 2012 at 5:26 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Good spot, Bryan! That <a href="http://tableaulove.tumblr.com/" rel="nofollow">blog</a> by Russell Christopher has some very useful tips!</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='#comment-63' data-commentid="63" data-postid="663" data-belowelement="div-comment-63" data-respondelement="respond" aria-label='Reply to Robin Kennedy'>Reply</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+		<li id="comment-64" class="pingback even thread-even depth-1">
+			<div class="comment-body">
+				Pingback: <a href='http://www.theinformationlab.co.uk/2012/11/19/why-is-my-tableau-viz-slow/' rel='external nofollow ugc' class='url'>Why is my Tableau viz slow? - The Information Lab</a> 			</div>
+		</li><!-- #comment-## -->
+		<li id="comment-68" class="comment odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-68" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://secure.gravatar.com/avatar/1e1da84d52bb506653cd1880577ccb52?s=32&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/1e1da84d52bb506653cd1880577ccb52?s=64&#038;d=mm&#038;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />						<b class="fn"><a href='http://WWW.tableausoftware.com' rel='external nofollow ugc' class='url'>Larry Hill</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://www.theinformationlab.co.uk/2011/01/20/tableau-extracts-what-why-how-etc/#comment-68">
+							<time datetime="2014-02-07T16:17:58+00:00">
+								7 February, 2014 at 4:17 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Great article! Can you mention limits to importing all data into Tableau Desktop, and, the point at which you would do an extract over importing all data?</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='#comment-68' data-commentid="68" data-postid="663" data-belowelement="div-comment-68" data-respondelement="respond" aria-label='Reply to Larry Hill'>Reply</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+		<li id="comment-70" class="comment even thread-even depth-1">
+			<article id="div-comment-70" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://secure.gravatar.com/avatar/c32b5e9d8375fa72f173d4c69d79590a?s=32&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/c32b5e9d8375fa72f173d4c69d79590a?s=64&#038;d=mm&#038;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />						<b class="fn">Alex</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://www.theinformationlab.co.uk/2011/01/20/tableau-extracts-what-why-how-etc/#comment-70">
+							<time datetime="2014-06-30T05:24:01+01:00">
+								30 June, 2014 at 5:24 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Hi Tom,</p>
+<p>That&#8217;s a great summary of the Tableau data extract feature. </p>
+<p>Thank you so much,</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='#comment-70' data-commentid="70" data-postid="663" data-belowelement="div-comment-70" data-respondelement="respond" aria-label='Reply to Alex'>Reply</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+		<li id="comment-71" class="pingback odd alt thread-odd thread-alt depth-1">
+			<div class="comment-body">
+				Pingback: <a href='http://databoss.starschema.net/generate-initial-extract-tableau-server/' rel='external nofollow ugc' class='url'>How to generate the initial extract with Tableau Server -Databoss</a> 			</div>
+		</li><!-- #comment-## -->
+		<li id="comment-72" class="comment even thread-even depth-1">
+			<article id="div-comment-72" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://secure.gravatar.com/avatar/07653079984d537cfcca140f0378e40b?s=32&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/07653079984d537cfcca140f0378e40b?s=64&#038;d=mm&#038;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />						<b class="fn"><a href='http://www.linkedin.com/pub/chenwei-liu/1b/848/125/' rel='external nofollow ugc' class='url'>Chenwei</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://www.theinformationlab.co.uk/2011/01/20/tableau-extracts-what-why-how-etc/#comment-72">
+							<time datetime="2014-09-30T20:24:57+01:00">
+								30 September, 2014 at 8:24 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Tom,</p>
+<p>It is a great post, very informative! Using extracts is exactly what we need for prototype demo to clients. </p>
+<p>Thank you so much!</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='#comment-72' data-commentid="72" data-postid="663" data-belowelement="div-comment-72" data-respondelement="respond" aria-label='Reply to Chenwei'>Reply</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+		<li id="comment-73" class="comment odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-73" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://secure.gravatar.com/avatar/f008ee8aab920ab8ad2722827fb5a5f7?s=32&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/f008ee8aab920ab8ad2722827fb5a5f7?s=64&#038;d=mm&#038;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />						<b class="fn">Anthony Speziale</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://www.theinformationlab.co.uk/2011/01/20/tableau-extracts-what-why-how-etc/#comment-73">
+							<time datetime="2015-01-21T21:28:28+00:00">
+								21 January, 2015 at 9:28 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Tom,</p>
+<p>&#8220;The extract you have then created can be packaged, safe in the knowledge that any fields you did not want to be visible are not even in the extract, so they can’t be accessed.&#8221;</p>
+<p>I believe it is necessary to clarify this statement from #6 some.  Tableau does not physically remove the fields from the extract, they are simply hidden.  I am unclear if I were to pass the extract off to another, if they&#8217;d have the ability to unhide the columns.  Can anyone clarify?</p>
+<p>The most immediate reference I could find is the first bullet under &#8220;Some General things to keep in mind&#8221;. (Not my blog post!).<br />
+<a href="http://www.tableau.com/tableau-data-extracts-part3" rel="nofollow ugc">http://www.tableau.com/tableau-data-extracts-part3</a></p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='#comment-73' data-commentid="73" data-postid="663" data-belowelement="div-comment-73" data-respondelement="respond" aria-label='Reply to Anthony Speziale'>Reply</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+		<li id="comment-74" class="comment even thread-even depth-1">
+			<article id="div-comment-74" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://secure.gravatar.com/avatar/0990818e52bcb23ab88c2a461a752253?s=32&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/0990818e52bcb23ab88c2a461a752253?s=64&#038;d=mm&#038;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />						<b class="fn"><a href='http://talisma.com' rel='external nofollow ugc' class='url'>amrita</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://www.theinformationlab.co.uk/2011/01/20/tableau-extracts-what-why-how-etc/#comment-74">
+							<time datetime="2015-03-17T12:04:19+00:00">
+								17 March, 2015 at 12:04 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>how many extract can be there in the tableau server ? any specific number?</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='#comment-74' data-commentid="74" data-postid="663" data-belowelement="div-comment-74" data-respondelement="respond" aria-label='Reply to amrita'>Reply</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+		<li id="comment-76" class="comment odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-76" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://secure.gravatar.com/avatar/33b9076c1689d2f328078d01f6de5e99?s=32&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/33b9076c1689d2f328078d01f6de5e99?s=64&#038;d=mm&#038;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />						<b class="fn"><a href='http://TableauExtract' rel='external nofollow ugc' class='url'>Chan</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://www.theinformationlab.co.uk/2011/01/20/tableau-extracts-what-why-how-etc/#comment-76">
+							<time datetime="2015-06-09T22:49:18+01:00">
+								9 June, 2015 at 10:49 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Hi,</p>
+<p>We have a requirement in where the server which is exposed to external users should not connect to internal databases. Can you let me know a way how I can accomplish this. We plan to move the workbook which has extracts from internal prod server to external prod server but not sure how we can refresh the extracts. </p>
+<p>Thanks</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='#comment-76' data-commentid="76" data-postid="663" data-belowelement="div-comment-76" data-respondelement="respond" aria-label='Reply to Chan'>Reply</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+		<li id="comment-77" class="comment even thread-even depth-1">
+			<article id="div-comment-77" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://secure.gravatar.com/avatar/377ed424a4ccb564c9d8fc68783955c2?s=32&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/377ed424a4ccb564c9d8fc68783955c2?s=64&#038;d=mm&#038;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />						<b class="fn">Ragi</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://www.theinformationlab.co.uk/2011/01/20/tableau-extracts-what-why-how-etc/#comment-77">
+							<time datetime="2015-06-26T21:27:25+01:00">
+								26 June, 2015 at 9:27 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Details of extract ?</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='#comment-77' data-commentid="77" data-postid="663" data-belowelement="div-comment-77" data-respondelement="respond" aria-label='Reply to Ragi'>Reply</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+		<li id="comment-78" class="pingback odd alt thread-odd thread-alt depth-1">
+			<div class="comment-body">
+				Pingback: <a href='http://drawingwithnumbers.artisart.org/tde-or-live-when-to-use-tableau-data-extracts/' rel='external nofollow ugc' class='url'>TDE or Live? When to Use Tableau Data Extracts (or not) | Drawing with Numbers</a> 			</div>
+		</li><!-- #comment-## -->
+		<li id="comment-10216" class="comment even thread-even depth-1">
+			<article id="div-comment-10216" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://secure.gravatar.com/avatar/c23e113f270a69cf83cdcacf257d2643?s=32&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/c23e113f270a69cf83cdcacf257d2643?s=64&#038;d=mm&#038;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />						<b class="fn">Milan</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://www.theinformationlab.co.uk/2011/01/20/tableau-extracts-what-why-how-etc/#comment-10216">
+							<time datetime="2016-06-09T04:58:44+01:00">
+								9 June, 2016 at 4:58 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>How to read a tde file in java. Please help</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='#comment-10216' data-commentid="10216" data-postid="663" data-belowelement="div-comment-10216" data-respondelement="respond" aria-label='Reply to Milan'>Reply</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+		<li id="comment-17925" class="comment odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-17925" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://secure.gravatar.com/avatar/7890df6c34be1ea83cb05a6cd7262b9d?s=32&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/7890df6c34be1ea83cb05a6cd7262b9d?s=64&#038;d=mm&#038;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />						<b class="fn">Sophia</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://www.theinformationlab.co.uk/2011/01/20/tableau-extracts-what-why-how-etc/#comment-17925">
+							<time datetime="2016-10-11T22:38:19+01:00">
+								11 October, 2016 at 10:38 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Hi Tom,</p>
+<p>Is there a way to edit the data within the export? </p>
+<p>For instance, if I wanted to share information from your hospital data example, would there be a way to change a female&#8217;s name to &#8220;Jane Doe&#8221; and so on then re-save the extract so it was masking the identity of individuals?</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='#comment-17925' data-commentid="17925" data-postid="663" data-belowelement="div-comment-17925" data-respondelement="respond" aria-label='Reply to Sophia'>Reply</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+		<li id="comment-53883" class="comment even thread-even depth-1">
+			<article id="div-comment-53883" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://secure.gravatar.com/avatar/02167da10ef16053e11ecf7a7e1c209e?s=32&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/02167da10ef16053e11ecf7a7e1c209e?s=64&#038;d=mm&#038;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />						<b class="fn">S.R.Janrao</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://www.theinformationlab.co.uk/2011/01/20/tableau-extracts-what-why-how-etc/#comment-53883">
+							<time datetime="2018-06-26T10:47:00+01:00">
+								26 June, 2018 at 10:47 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>If I want to export cup carbon simulator data in tableau for Analysis then how to do that</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='#comment-53883' data-commentid="53883" data-postid="663" data-belowelement="div-comment-53883" data-respondelement="respond" aria-label='Reply to S.R.Janrao'>Reply</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+		<li id="comment-55988" class="comment odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-55988" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://secure.gravatar.com/avatar/b6013c3e3e00109f3e0b30c7e7dc2fc9?s=32&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/b6013c3e3e00109f3e0b30c7e7dc2fc9?s=64&#038;d=mm&#038;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />						<b class="fn">Anna Tankel</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://www.theinformationlab.co.uk/2011/01/20/tableau-extracts-what-why-how-etc/#comment-55988">
+							<time datetime="2018-09-20T17:41:54+01:00">
+								20 September, 2018 at 5:41 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Super helpful post, thank you! 🙂</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='#comment-55988' data-commentid="55988" data-postid="663" data-belowelement="div-comment-55988" data-respondelement="respond" aria-label='Reply to Anna Tankel'>Reply</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+		<li id="comment-77721" class="comment even thread-even depth-1">
+			<article id="div-comment-77721" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://secure.gravatar.com/avatar/b642b4217b34b1e8d3bd915fc65c4452?s=32&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/b642b4217b34b1e8d3bd915fc65c4452?s=64&#038;d=mm&#038;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />						<b class="fn">J. MAGNOT</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://www.theinformationlab.co.uk/2011/01/20/tableau-extracts-what-why-how-etc/#comment-77721">
+							<time datetime="2019-07-12T17:40:22+01:00">
+								12 July, 2019 at 5:40 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>VERY USEFUL.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='#comment-77721' data-commentid="77721" data-postid="663" data-belowelement="div-comment-77721" data-respondelement="respond" aria-label='Reply to J. MAGNOT'>Reply</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+		</ol><!-- .comment-list -->
+
+		
+	
+	
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2011/01/20/tableau-extracts-what-why-how-etc/#respond" style="display:none;">Cancel reply</a></small></h3><form action="https://www.theinformationlab.co.uk/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate><p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input placeholder="Name"  class="form-control" id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input type="email" placeholder="Email Address" name="email" class="form-control" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='663' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="98c6a6c837" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="140"/></p></form>	</div><!-- #respond -->
+	
+</div><!-- #comments -->
+						</div>
+					</div>
+				</div>
+				<div class="hub-post-list">
+					<div id="ajax-hub" >
+														<a href="https://www.theinformationlab.co.uk/2019/12/11/how-to-create-a-grid-map-using-alteryx-and-tableau/" class="post-small-container animated" data-id="15777">
+								<div style="background:url('') no-repeat left top #fff;
+								-webkit-background-size: cover;
+								-moz-background-size: cover;
+								-o-background-size: cover;
+								background-size: cover;"
+								class="hub-post-single item ajax-single">
+								<div class="background-fader">
+								</div>
+								<div class="post-small-content">
+									<div>
+										<span class="post-small-date">11 December, 2019</span>
+										<h4>
+											How to create a grid map using Alteryx and Tableau?										</h4>
+									</div>
+								</div>
+								<span class="post-small-icon infolab-icon-reports"></span>
+
+							</div>
+							</a>
+
+														<a href="https://www.theinformationlab.co.uk/2019/11/28/chapter-one-part-iii-interpreting-data-with-technology/" class="post-small-container animated" data-id="15505">
+								<div style="background:url('https://www.theinformationlab.co.uk/wp-content/uploads/2019/09/bruno-martins-k1_UO1MGszs-unsplash-335x153.jpg') no-repeat left top #fff;
+								-webkit-background-size: cover;
+								-moz-background-size: cover;
+								-o-background-size: cover;
+								background-size: cover;"
+								class="hub-post-single item ajax-single">
+								<div class="background-fader">
+								</div>
+								<div class="post-small-content">
+									<div>
+										<span class="post-small-date">28 November, 2019</span>
+										<h4>
+											Chapter One Part III: Interpreting Data with Technology										</h4>
+									</div>
+								</div>
+								<span class="post-small-icon infolab-icon-reports"></span>
+
+							</div>
+							</a>
+
+														<a href="https://www.theinformationlab.co.uk/2019/11/27/a-closer-look-at-tc19-devs-on-stage/" class="post-small-container animated" data-id="15747">
+								<div style="background:url('https://www.theinformationlab.co.uk/wp-content/uploads/2019/11/Data-People-335x153.png') no-repeat left top #fff;
+								-webkit-background-size: cover;
+								-moz-background-size: cover;
+								-o-background-size: cover;
+								background-size: cover;"
+								class="hub-post-single item ajax-single">
+								<div class="background-fader">
+								</div>
+								<div class="post-small-content">
+									<div>
+										<span class="post-small-date">27 November, 2019</span>
+										<h4>
+											A Closer look at TC19 Devs On Stage										</h4>
+									</div>
+								</div>
+								<span class="post-small-icon infolab-icon-reports"></span>
+
+							</div>
+							</a>
+
+														<a href="https://www.theinformationlab.co.uk/2019/11/26/how-to-create-a-printable-table-with-multiple-pages/" class="post-small-container animated" data-id="15732">
+								<div style="background:url('https://www.theinformationlab.co.uk/wp-content/uploads/2019/11/image-7-335x153.png') no-repeat left top #fff;
+								-webkit-background-size: cover;
+								-moz-background-size: cover;
+								-o-background-size: cover;
+								background-size: cover;"
+								class="hub-post-single item ajax-single">
+								<div class="background-fader">
+								</div>
+								<div class="post-small-content">
+									<div>
+										<span class="post-small-date">26 November, 2019</span>
+										<h4>
+											How to create a printable table with multiple pages										</h4>
+									</div>
+								</div>
+								<span class="post-small-icon infolab-icon-reports"></span>
+
+							</div>
+							</a>
+
+														<a href="https://www.theinformationlab.co.uk/2019/11/19/5-reasons-why-you-should-join-the-tableau-datadev-hackathons/" class="post-small-container animated" data-id="15701">
+								<div style="background:url('https://www.theinformationlab.co.uk/wp-content/uploads/2019/11/datadev-335x153.png') no-repeat left top #fff;
+								-webkit-background-size: cover;
+								-moz-background-size: cover;
+								-o-background-size: cover;
+								background-size: cover;"
+								class="hub-post-single item ajax-single">
+								<div class="background-fader">
+								</div>
+								<div class="post-small-content">
+									<div>
+										<span class="post-small-date">19 November, 2019</span>
+										<h4>
+											5 Reasons Why You Should Join the Tableau #DataDev Hackathons										</h4>
+									</div>
+								</div>
+								<span class="post-small-icon infolab-icon-reports"></span>
+
+							</div>
+							</a>
+
+														<a href="https://www.theinformationlab.co.uk/2019/11/13/introduction-to-blueprint-blogshots/" class="post-small-container animated" data-id="15697">
+								<div style="background:url('https://www.theinformationlab.co.uk/wp-content/uploads/2019/11/datadev-335x153.png') no-repeat left top #fff;
+								-webkit-background-size: cover;
+								-moz-background-size: cover;
+								-o-background-size: cover;
+								background-size: cover;"
+								class="hub-post-single item ajax-single">
+								<div class="background-fader">
+								</div>
+								<div class="post-small-content">
+									<div>
+										<span class="post-small-date">13 November, 2019</span>
+										<h4>
+											Introduction to Blueprint Blogshots										</h4>
+									</div>
+								</div>
+								<span class="post-small-icon infolab-icon-reports"></span>
+
+							</div>
+							</a>
+
+														<a href="https://www.theinformationlab.co.uk/2019/11/09/tableau-ha-environment-load-balancer-and-postresql/" class="post-small-container animated" data-id="15682">
+								<div style="background:url('https://www.theinformationlab.co.uk/wp-content/uploads/2019/11/datadev-335x153.png') no-repeat left top #fff;
+								-webkit-background-size: cover;
+								-moz-background-size: cover;
+								-o-background-size: cover;
+								background-size: cover;"
+								class="hub-post-single item ajax-single">
+								<div class="background-fader">
+								</div>
+								<div class="post-small-content">
+									<div>
+										<span class="post-small-date">9 November, 2019</span>
+										<h4>
+											Tableau HA environment, load balancer and PostgreSQL										</h4>
+									</div>
+								</div>
+								<span class="post-small-icon infolab-icon-reports"></span>
+
+							</div>
+							</a>
+
+														<a href="https://www.theinformationlab.co.uk/2019/11/07/chord-chart-with-table-calcs-and-lods/" class="post-small-container animated" data-id="15608">
+								<div style="background:url('https://www.theinformationlab.co.uk/wp-content/uploads/2019/11/chord-chart-335x153.png') no-repeat left top #fff;
+								-webkit-background-size: cover;
+								-moz-background-size: cover;
+								-o-background-size: cover;
+								background-size: cover;"
+								class="hub-post-single item ajax-single">
+								<div class="background-fader">
+								</div>
+								<div class="post-small-content">
+									<div>
+										<span class="post-small-date">7 November, 2019</span>
+										<h4>
+											How to build Chord Chart in Tableau with Table Calculations and LODs										</h4>
+									</div>
+								</div>
+								<span class="post-small-icon infolab-icon-reports"></span>
+
+							</div>
+							</a>
+
+														<a href="https://www.theinformationlab.co.uk/2019/11/01/better-tableau-rest-api-security-with-personal-access-tokens/" class="post-small-container animated" data-id="15591">
+								<div style="background:url('https://www.theinformationlab.co.uk/wp-content/uploads/2019/11/personalAccessTokens-335x153.png') no-repeat left top #fff;
+								-webkit-background-size: cover;
+								-moz-background-size: cover;
+								-o-background-size: cover;
+								background-size: cover;"
+								class="hub-post-single item ajax-single">
+								<div class="background-fader">
+								</div>
+								<div class="post-small-content">
+									<div>
+										<span class="post-small-date">1 November, 2019</span>
+										<h4>
+											Better Tableau REST API Security with Personal Access Tokens										</h4>
+									</div>
+								</div>
+								<span class="post-small-icon infolab-icon-reports"></span>
+
+							</div>
+							</a>
+
+														<a href="https://www.theinformationlab.co.uk/2019/10/31/project-griffon-digging-into-custom-views-ish/" class="post-small-container animated" data-id="15577">
+								<div style="background:url('https://www.theinformationlab.co.uk/wp-content/uploads/2019/10/image-54-335x153.png') no-repeat left top #fff;
+								-webkit-background-size: cover;
+								-moz-background-size: cover;
+								-o-background-size: cover;
+								background-size: cover;"
+								class="hub-post-single item ajax-single">
+								<div class="background-fader">
+								</div>
+								<div class="post-small-content">
+									<div>
+										<span class="post-small-date">31 October, 2019</span>
+										<h4>
+											Project Griffon: Digging into Custom Views (ish)										</h4>
+									</div>
+								</div>
+								<span class="post-small-icon infolab-icon-reports"></span>
+
+							</div>
+							</a>
+
+							
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+						<footer id="colophon" class="site-footer section fp-auto-height white" role="contentinfo" data-anchor="footer">
+	<div class="container">
+		<div class="col-md-7">
+			<h3>Keep up to date</h3>
+<p>Every month we publish an email with all the latest Tableau &amp; Alteryx news, tips and tricks as well as the best content from the web. To receive this email simply register your email address.</p>
+<!-- Begin MailChimp Signup Form -->
+<form action="//theinformationlab.us2.list-manage.com/subscribe/post?u=8954cfd70761b8c7fd5d8b528&amp;id=fc1dab699f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="sml_subscribe" target="_blank" novalidate>
+   <div id="footer-form">
+	<p>
+	<span class="enter-email-address">
+		<input type="email" value="" name="EMAIL" class="sml_emailinput" placeholder="Enter Email Address" size="40" id="mce-EMAIL">
+	</span>
+	<input type="submit" value="SUBSCRIBE" name="subscribe" id="mc-embedded-subscribe" class="register-submit basic-button"/>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    	<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8954cfd70761b8c7fd5d8b528_fc1dab699f" tabindex="-1" value=""></div>
+    	</p>
+	<div class="emailerrormessage" id="mce-error-response" style="display:none;padding-bottom:10px;"></div>
+	<div class="emailerrormessage" id="mce-success-response" style="display:none;padding-bottom:10px;"></div>
+   </div>
+</form>
+<script async type='text/javascript' src='https://www.theinformationlab.co.uk/wp-content/themes/info-lab/assets/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='COMPANY';ftypes[3]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<!--End mc_embed_signup-->
+						<p class="complete hidden">Thank you. Your details have been registered.</p>
+						<p class="subscribe-disclaimer">We respect your privacy and promise we’ll never share your details with any third parties.</p>
+									
+		</div>
+		<div id="footer-contact" class="col-md-4 col-lg-offset-1">
+			<a href="https://www.theinformationlab.co.uk" class="logo"><img src="https://www.theinformationlab.co.uk/wp-content/themes/info-lab/assets/img/info-lab-logo-footer.png" alt="The Information Lab" /></a>
+			<p><span class="fy4CJe">1st Floor<br />
+</span><span class="fy4CJe">25 Watling Street<br />
+</span><span class="fy4CJe">London<br />
+</span><span class="fy4CJe">EC4M 9BR</span></p>
+<p><b>T:</b>  08453 888 289<br />
+<b>E:</b>  <a href="mailto:info@theinformationlab.co.uk">info@theinformationlab.co.uk</a></p>
+					<ul id="footer-social">
+                				<li><a class="infolab-icon-facebook" href="https://www.facebook.com/theinformationlab/"></a></li>
+                				<li><a class="infolab-icon-twitter" href="http://www.twitter.com/infolabuk"></a></li>
+                				<li><a class="infolab-icon-google-plus" href="https://plus.google.com/b/117018564375259960523/"></a></li>
+           				 </ul>
+						</div>
+	</div>
+	<div class="site-info">
+		<div class="container">
+			<div class="col-md-7">
+				Copyright © 2019 The Information Lab			</div>
+			<div class="col-lg-4 col-lg-offset-1">
+				<div class="menu-footer-menu-container"><ul id="menu-footer-menu" class="menu"><li id="menu-item-172" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-172"><a href="https://www.theinformationlab.co.uk/cookies/">Cookies |</a></li>
+<li id="menu-item-171" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-171"><a href="https://www.theinformationlab.co.uk/terms-of-use/">Terms Of Use |</a></li>
+<li id="menu-item-170" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-170"><a href="https://www.theinformationlab.co.uk/privacy-policy/">Privacy Policy</a></li>
+</ul></div>			</div>
+		</div>
+	</div><!-- .site-info -->
+</footer><!-- #colophon -->
+			
+		</div>
+		<script>var ajax_location = 'https://www.theinformationlab.co.uk/wp-admin/admin-ajax.php' ; </script>
+		<script type='text/javascript' src='https://www.theinformationlab.co.uk/wp-includes/js/comment-reply.min.js?ver=5.3'></script>
+<script type='text/javascript' src='https://www.theinformationlab.co.uk/wp-content/plugins/easy-fancybox/js/jquery.fancybox.min.js?ver=1.3.24'></script>
+<script type='text/javascript'>
+var fb_timeout, fb_opts={'overlayShow':true,'hideOnOverlayClick':true,'showCloseButton':true,'margin':20,'centerOnScroll':true,'enableEscapeButton':true,'autoScale':true };
+if(typeof easy_fancybox_handler==='undefined'){
+var easy_fancybox_handler=function(){
+jQuery('.nofancybox,a.wp-block-file__button,a.pin-it-button,a[href*="pinterest.com/pin/create"],a[href*="facebook.com/share"],a[href*="twitter.com/share"]').addClass('nolightbox');
+/* YouTube */
+jQuery('a[href*="youtu.be/"],area[href*="youtu.be/"],a[href*="youtube.com/"],area[href*="youtube.com/"]').filter(function(){return this.href.match(/\/(?:youtu\.be|watch\?|embed\/)/);}).not('.nolightbox,li.nolightbox>a').addClass('fancybox-youtube');
+jQuery('a.fancybox-youtube,area.fancybox-youtube,li.fancybox-youtube a').each(function(){jQuery(this).fancybox(jQuery.extend({},fb_opts,{'type':'iframe','width':640,'height':360,'keepRatio':1,'titleShow':false,'titlePosition':'float','titleFromAlt':true,'onStart':function(a,i,o){var splitOn=a[i].href.indexOf("?");var urlParms=(splitOn>-1)?a[i].href.substring(splitOn):"";o.allowfullscreen=(urlParms.indexOf("fs=0")>-1)?false:true;o.href=a[i].href.replace(/https?:\/\/(?:www\.)?youtu(?:\.be\/([^\?]+)\??|be\.com\/watch\?(.*(?=v=))v=([^&]+))(.*)/gi,"https://www.youtube.com/embed/$1$3?$2$4&autoplay=1");}}))});};
+jQuery('a.fancybox-close').on('click',function(e){e.preventDefault();jQuery.fancybox.close()});
+};
+var easy_fancybox_auto=function(){setTimeout(function(){jQuery('#fancybox-auto').trigger('click')},1000);};
+jQuery(easy_fancybox_handler);jQuery(document).on('post-load',easy_fancybox_handler);
+jQuery(easy_fancybox_auto);
+</script>
+<script type='text/javascript' src='https://www.theinformationlab.co.uk/wp-content/plugins/easy-fancybox/js/jquery.mousewheel.min.js?ver=3.1.13'></script>
+<script type='text/javascript' src='https://www.theinformationlab.co.uk/wp-includes/js/wp-embed.min.js?ver=5.3'></script>
+<script async="async" type='text/javascript' src='https://www.theinformationlab.co.uk/wp-content/plugins/akismet/_inc/form.js?ver=4.1.3'></script>
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"c5cd6614c6","applicationID":"45988591","transactionName":"ZgBQN0AEWhBYAExdDF9KcwBGDFsNFhRKVRNBAEA=","queueTime":0,"applicationTime":631,"atts":"SkdTQQgeSR4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

@@ -1,0 +1,44 @@
+[MUSIC] Welcome back. In module three, Sue walked you through
+data preparation and importing. After those steps,
+how much can you tell me about the data? Do you know what the data are? How and when the data were collected? Do you know who will look at it,
+and what they will do with it? These are important questions to answer. In this lesson,
+we're going to focus on these and other questions you'll need to answer
+before you begin to visualize data. >> Obviously, it's good practice to be well versed
+with the data you are working on. But for visualizing your data, it's essential,
+since you are visualizing for an audience. You need to know that the data can show
+certain things and not show other things. Prepping your data isn't a direct
+way to understand your data, but it will help a lot, even if you can
+make the most beautiful visualizations, they mean absolutely nothing
+unless you can explain why you visualized the data
+in the way that you did. Data visualizations are a way to explain
+your data, but you can't just start doing it until you understand
+the context of what you need to show. Furthermore, poorly designed
+data visualizations can absolutely ruin what
+you're trying to convey. The first thing you need to ask
+yourself is, what's the audience? It is your boss or a colleague? Is it a committee? And if it is a committee,
+what kind of a committee? Is it a big group? Is it for hundreds of people? Having defined the decision maker or
+your audience, you need to think about your
+relationship with the audience. If the audience or
+decision maker is your boss, then you need to know what her
+expectations are for the visualizations. Are they a series of iterative drafts? Or is it a final document? If the audience is a committee,
+the questions you have to ask yourself is, are you a member of this committee,
+or are you a guest? These basic questions are by
+no means comprehensive, but I want you to start thinking
+about this in your work. There are two components to the what of
+contextualizing your data visualization. The first is, what do you need your
+audience, boss, or committee to do? This is tough for a lot of people. We might think that
+the audience knows better, but they only know as much as you tell them. Most on a committee may make
+a lot of decisions, but they're trying to make these decisions
+based on the data you and others provide. If you provide unbiased information and
+state your recommendation, you'll be surprised at how often
+your recommendation is heeded. Your recommendation must be based on data,
+however. The second is, how you will communicate
+this need to your audience. This is often decided for
+you depending on the who. If it's a large group, then you'll have
+a lot of control over the presentation, but you can't offer a lot of detail. But if it's all in a written document or email, then you should provide
+a lot of detail, but the audience, the people who receive the email,
+control how they use the information. Finally, after we know the audience and what we need them to do, we can ask
+ourselves, how this will happen? In other words, what data are available to
+support the story we are going to tell? Once you have that,
+then it's time to visualize it. In the next lesson, we'll work through a specific
+example of the who, what, and how. See you there.
