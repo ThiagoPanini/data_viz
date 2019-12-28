@@ -20,6 +20,14 @@ If there is something that delights me is beautiful graphs telling complete stor
       <td>4 Weeks</td>
       <td>Done</td>
     </tr>
+    
+    <tr>
+      <td>Coursera</td>
+      <td>Essential Design Principles for Tableau</td>
+      <td>4 Weeks</td>
+      <td>In progress</td>
+    </tr>
+    
    </table>
    
 - ![#F1F01A](https://placehold.it/15/F1F01A/000000?text=+) `Power BI`
