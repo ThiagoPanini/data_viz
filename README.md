@@ -18,14 +18,14 @@ If there is something that delights me is beautiful graphs telling complete stor
       <td>Coursera</td>
       <td>Fundamentals of Data Visualization with Tableau</td>
       <td>4 Weeks</td>
-      <td><b>Done</b></td>
+      <td>:chart_with_upwards_trend: Done</td>
     </tr>
     
     <tr>
       <td>Coursera</td>
       <td>Essential Design Principles for Tableau</td>
       <td>4 Weeks</td>
-      <td>In progress</td>
+      <td>:black_nib: In progress</td>
     </tr>
     
    </table>
