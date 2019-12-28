@@ -18,7 +18,7 @@ If there is something that delights me is beautiful graphs telling complete stor
       <td>Coursera</td>
       <td>Fundamentals of Data Visualization with Tableau</td>
       <td>4 Weeks</td>
-      <td>Done</td>
+      <td><b>Done</b></td>
     </tr>
     
     <tr>
