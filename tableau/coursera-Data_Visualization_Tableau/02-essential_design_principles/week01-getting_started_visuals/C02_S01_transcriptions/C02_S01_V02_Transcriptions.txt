@@ -1,0 +1,67 @@
+[MUSIC] Hello and thank you for joining me. Getting the most from data visualization
+begins with knowing a few essentials about how the human brain operates,
+both its amazing strengths and some important limitations. Keeping these attributes
+of the brain in mind, along with the design
+approaches to address them, can help make your visualizations
+more useful, engaging, and effective. This lesson will lay the foundations of the relationship between the human
+brain and how to visualize data. Hi, and welcome back. Data visualization pioneer,
+Ben Shneiderman, once said quote, the purpose of
+visualization is insight, not pictures. This means the most
+important transformation that you can make as a designer
+is not turning data into charts. But turning data into something clear and
+meaningful in the minds of your audiences. To do this,
+it helps to develop an awareness for certain aspects of how our brains operate. Although, there's a debate, about exactly
+how much of the human brain's capacity is devoted to visual processing with
+estimates ranging from 30 to 60%. There's no doubt that it's a significant
+part of how we process information. By comparison, touch is about 8% for
+example and hearing is only about 2%. Our brains are wired for
+fast visual processing. For our ancestors this need for speed could tip the balance
+between life and death. The ability to quickly detect and
+decode subtle visual cues, like animal tracks or
+movements in the bushes, could make the difference between
+seeing dinner or being dinner. Although, many of the dangers our
+ancestors faced have receded, our ability to rapidly perceive patterns
+and detect subtle visual queues remains. The impulse to detect, match,
+and make sense of patterns is so strong that many of us do it not only for
+practical purposes, but also as a form of pure play in many games. A core part of data visualization
+design involves repurposing our innate visual abilities to adapt
+to a world that's flooding with data. That's part of your work as
+a visualization designer. And the more you become aware of
+people's visual processing strengths and limitations, the better
+your designs will become. We are often far better at detecting and
+interpreting patterns and features in data if they are presented
+in a well executed visualization rather than a large tabular format. As you can see in these side by side
+examples of a table and corresponding line chart, the visual approach can
+accelerate the process of seeing trends. In some instances,
+data sets can consist of thousands or even millions of rows and columns. So the direct use of only
+tables becomes impossible. Even some common charts and graphs
+get stretched to the breaking point. A key step in unlocking the power of
+data visualization is a process of visual encoding. That is, assigning visual
+attributes such as color or shape to different types of data. This process translate data into
+a visual shorthand that people are good, generally speaking, at decoding. There are many encoding options in the
+visualization toolbox and part of your job is to find the right mix of these options
+and balance to clarify the data for users. Here's a very simple example. Please take a look at
+the string of letters and see if you can find a word that
+begins with P as quickly as you can. Now, let's encode every fourth letter
+with the color purple and a bold font. And everything else will be light gray and
+unbolded. It's a lot easier to see the word
+with those encoding options. But assigning a different color to every
+letter can negate the advantages in coding or even make patterns harder to detect,
+as in this example. As we will learn over
+the course of these lessons, thoughtful visual encoding can make or
+break your visualizations. Now, there are a variety of visual
+cues that pop out at us without conscious effort. These are also sometimes referred
+to as pre-attentive attributes. Please take a look at these
+sets of candy lozenges for pop-out effect examples including color,
+shape, position, and others. You may find that the one
+different element in each set of pop-outs almost
+immediately without any conscience effort even though the difference in the unique
+lozenge can be fairly subtle. In a sense data visualization
+Begins with visual perception, but it certainly doesn't end there. Encoding provides great raw materials for
+display, but you also need to think about
+assembling those elements in ways that truly help people think clearly
+and accurately about what they are seeing. In the example with letters, encoding helps to make some
+of those letters pop out. And then, your brain can decode them and
+make sense of them as the word play. In the next lesson, let's take a look at
+the idea of two systems that drive the way people think and
+how that applies to your design work. Thanks and see you next time.

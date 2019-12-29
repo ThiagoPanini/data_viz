@@ -1,0 +1,71 @@
+[MUSIC] Hello, as I mentioned in the last lesson,
+figuring out which visualization is the right one for
+your data can be challenging. For this lesson, we will discuss the types
+of visualizations that are available to you and you will be able to recognize and identify them when you start
+to do your own visualizations. Let's get started. The first visualization I want to discuss
+is just a simple text visualization and sometimes that one number is really
+all you need, as a visualization. It's very effective if what you're trying
+to show is something very high-level as part of an overall dashboard package, as
+we're going to get into in future courses. This simple text conveys exactly what you
+need and has the information all contained with it, and is quite widely used as
+a KPI or key performance indicator. The next visualization also
+uses a lot of numbers and a lot text, and that is a table. A table is a very effective way
+to convey a lot of information. A two by two table has a lot of power
+in terms of what it can convey and in terms of looking at
+comparisons across categories. If it becomes too big,
+it is much less effective, but a two by two table is perfect for almost
+any need if you can get it to that point. The next example is a sort of
+colorful version of a table, it's called a heat map. It takes information that
+you have in a table and then colors it based on
+a certain set of parameters. For example, it can identify
+the top N in some category or the bottom of some category,
+depending on what you need. Now, moving onto our next example. If you have a lot of information and it's
+in a forum that's sort of a continuous variable and we talked about that in the
+first lesson, which is data could take on any number and you're comparing
+them with another set of numbers. The best way to do that is
+through a scatter plot to see if there's any inferences that you
+can draw in the relationships or the correlations between
+the two variables. You plot them on an x and y-axis,
+and see if there's some sort of connection between the two or
+perhaps there's some sort of clustering that you can find relationships with
+when you're drawing a scatter plot. The line graph is our next example and
+this is a very effective visualization. It is used quite extensively when
+visualizing data across time. So if you have any time variable,
+one of the first things you ought to do i s to do a simple line graph and see how
+well you can see if there's a trend, perhaps you can get into some forecasting
+to see really where the data may be headed in the future things like that can
+very easily be done with a line graph. Another popular visualization
+is one with many flavors. It is called the bar graph. You have either vertical bars or
+horizontal bars. They are really two similar things. Oftentimes, it is based on how much
+information you are trying to convey as to whether you put it in. Horizontal or vertical form. You also have the stacked version of
+a bar graph, which allows you to see clearly if one category is
+substantially bigger than the other. It's nice to be able to display that and
+show that in a stacked format. There's also some fancier versions of a
+bar graph, such as the waterfall graph or some other types of bar graphs which
+allow you to really be able to quickly see the areas and to be able to
+answer questions very quickly and easily. Bar graphs are fundamental
+to visualization. It's the most widely used and
+it's the most useful. I can say that definitively. Bar graphs are the most useful and
+you'll be using them a lot. I will use them a lot in this course. And last but not least, a very
+important visualization is the map and that is very crucial when
+doing spatial analysis. Any type of visualization that
+includes a spatial component. Anything that has geography,
+anything that has latitude and longitude, it really should be displayed on
+a map to be able to ascertain if there's really interesting insights
+you can uncover from spatial analysis. And if you're really
+interested in learning further in this part of visualization,
+my colleague, Nicholas Santos has created
+a specialization in just this area alone. It's called geographic information
+systems using arch GIS. I've listed his intro
+course in your links. There are so many types of
+visualizations that we discussed, but there's also many more types that I
+haven't brought up including popular ones. It didn't bring them up before, because they're not really recommended
+in a best practices format. The one that's most notable, which I'm
+going to show here is the pie chart. The pie chart can actually
+be useful at times, but it gets a bit of a bad representation
+in the visualization world. The tendency as a result is that
+people who want to really follow best practices in visualizations tend to
+avoid the pie chart unless there's some very specific need for it. I've actually included a couple
+of readings that delves into the debate about whether or
+not we should use pie charts at all. We'll stop here. And for the next lesson, we'll do a few of these visualizations
+using our tableau instance. I'll see you there.

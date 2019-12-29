@@ -1,0 +1,15 @@
+[MUSIC] Hello, everyone, and
+welcome to this module. We're going to discuss effective and
+ineffective visuals. Up to this point,
+we have been able to play with data, but how do we know we are choosing
+the right visualization? One of the challenges with doing
+visualizations is actually being able to decide what is the best visualization
+for the type of data that you have. Some visuals are better for
+certain types of data than others. Knowing the intent or
+purpose of a particular visual and its advantages and disadvantages
+will help inform your decision. Upon completing this module,
+you will be able to identify the types of visualizations that
+are available in Tableau, and we'll go through some examples. We'll also discuss the role ethics
+plays in developing a visualization. And trust me when I say, you want to act ethically while
+applying sound design principles. We'll also examine
+an ineffective visualization and figure out how best to improve it. Okay, we're all set, so let's get started. [MUSIC]

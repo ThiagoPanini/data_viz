@@ -1,0 +1,57 @@
+[MUSIC] Welcome back. In the last lesson, we saw how a basic
+awareness of our brain's strengths and limitations can be a useful part
+of the visualizers toolkit. This approach extends beyond pop-out
+effects to higher order considerations. As a data visualization designer, you need
+to think about using design elements to help people both perceive and
+to think about data. So in this lesson, we'll consider two
+fundamental systems of the brain that will have a bearing on design. Let's get started. Hi, in a previous lesson, we briefly touch
+in how visual encoding provides basic building blocks from making data more
+immediately perceptible to people, but perception is only part of the story. As a data visualization designer, you should also consider how your
+designs can help people make clear, accurate interpretations and gain
+useful insights based on what they see. Nobel prize winning psychologist Daniel
+Kahneman suggested that there are two fundamental systems that drive
+how we think and make judgments. As a data visualization designer,
+your job is to leverage both of them. The first system involves
+more automatic and immediate perception, such as noticing an
+unusual pattern of movement in the bushes. This is where visual encoding and
+things like Gestalt Principles which will be touched on
+a future lesson come into play. The second system above slower and
+more deliberate cognition. That is thinking about the meaning
+of certain sensory cues. What interpretations and questions should
+arise from a particular visual pattern. For instance, an analyst might immediately
+notice a single dot sitting alone but nearby to a cluster of other
+dots in a scatter plot. That's system 1. If the analysts spent a few moments
+considering a bad data as a meaningful outlier with further investigation,
+that would be system two. Confronting a large set of
+multidimensional data can be overwhelming for any of us. Your task is to create a way
+to encode that data so that they can be put together like letters
+into words or like Lego bricks into meaningful patterns that work with both or
+perceptual and cognitive systems. Making good choices for
+combining various visual encoding options. For effect, the visualizations
+is both an art and a science. Here's a simple example using color and
+shape. Now you may find that color pops out more
+than shape but the combination of the two encoding options allows for a more
+detailed story to emerge from the pattern. How much more can be added to show
+even more informational depth without overloading the viewer and
+obscuring the meaning, well those are going to be decisions
+you going to need to make. In a trade off of speed versus accuracy
+of perception speed often wins, for the reasons noted earlier in this lesson. In the case of the unknown
+movement in the bushes, the value of instant action
+outweighed accuracy. From a survival point of view,
+it was better to react quickly even if there are many false
+alarms in the process. The brain relies on some shortcuts and
+assumptions to help make our perception rapid, and
+that's a key to good data visualizations. But some of the same mental shortcuts can
+also create false interpretations and provide challenges and present
+challenges for visualization designs. For example, do you see the gradient in that gray bar
+in the middle of the larger gray box? In fact, there isn't a gradient, but
+you immediately perceive it as having a gradient because of
+the background context. Even if you know it's not there,
+you've probably can't help but see that gradient anyway. That's just how your brain works. As designers, you should be aware of
+what effect your design decisions what might have on users' perceptions and
+their resulting interpretations. As we have seen, data visualization
+is as much about the brain and how it works as it is about colors,
+lines and shapes. In later lessons, we will explore
+design strategies that draw from working with systems one and two. As you go through the rest of this course,
+please keep these ideas in the back of your mind as they will lead you down
+the path of good design principles for visualization. Until next time.

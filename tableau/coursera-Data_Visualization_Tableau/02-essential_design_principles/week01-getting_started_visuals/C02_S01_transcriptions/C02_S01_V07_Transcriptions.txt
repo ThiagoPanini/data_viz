@@ -1,0 +1,98 @@
+[MUSIC] Okay, I want to state that this is by for
+the most important lesson in the course, and indeed throughout the specialization. It's about practicing data
+visualization with ethics. Or as Merriam-Webster's
+dictionary defines ethics, rules of behavior based on ideas
+about what is morally good and bad. Ethics and best practices go hand in hand,
+but they are distinct. You could have perfectly excellent ethics
+but poorly designed visualizations. You could also have really
+good design practices but aren't conveying information
+in an ethical way. What we want to accomplish is to
+be able to do both, be ethical and practice effective design practices. There are a few more readings
+that go along with this lesson. Because there's always a debate about what
+the best practices are for visualizations. However, there is less debate
+about the importance of ethics. Although there are some debates around
+where the line should be drawn. For this lesson,
+we will examine a few case studies, so that you can see the role ethics
+can play in data visualization. I'm going to start this lesson
+with a graph from a news broadcast that occurred in the United States. We'll call them Nosy News for
+purposes of this example. Nosy News has a particular point of view
+and that is reflected in this graph. It shows a standard bar chart. Bar charts or bar graphs,
+as I will often say, are very easy for us to use because our eyes tend to
+compare the endpoints of the bars. So I redid this graph in Excel, and
+also did one with a zero baseline. So the issue here is that Nosy News'
+graph has a non-zero baseline and it starts at the bottom. The traditional type of graph
+always starts with a zero baseline. So right there the graph
+is already skewed, and the reason is that it's a standard. You start with zero and
+go up the graph, and that's just the standard that
+has been adopted over time. And so that's a very important
+component when you're doing a bar graph is start at zero. So that people are able to
+compare from that baseline, and don't try to change
+the baseline on people. Because they'll get either confused or
+annoyed that you changed the baseline. So if you look at just the axis
+on the left, the vertical axis, you'll see that the Nosy News' graph
+starts at 34, so that's the bottom number, and goes up to 42% or
+just a 8% difference between the two. Whereas if you look at the 0 baseline,
+the one I did, it starts at 0 and goes up to 40. Now think about why that's important. And I'm going to show you by doing
+a quick bit of math right now. Now let's do a quick bit of math. I'm going to I have this
+formula up on the screen so that you can see the process
+by which I'm going here. And this is a standard way
+to just check your work. I want to do just a quick bit of math. So I wanted you to take the bottom
+of the scale in each graph. So in the Non Baseline graph, it's 34,
+and in the Zero Baseline, it is 0. And I want you to subtract it
+from the graph percentage. For now, it's 1 and 35, so for the column on the left it's 1 on the non-zero
+baseline and 35 on the zero baseline. You do that as well for
+the January 1, 2013, so for the non-0 baseline, it is 5.6. And for the zero baseline it is 39.6. Then you take the difference between them,
+and you can see what's on the screen here. What we get is that
+the non-baseline visual increase implies that the tax would rise by 460%. Instead of 13% as reflected both in
+the zero baseline graph and in reality. So, although it's still
+a 13% increase in taxes, it is reflected correctly in
+the zero baseline graph and is misleading to graph it to
+seem like it's a 460% increase. The way Nosy News portrayed it to their
+audience is misleading to graph and made it seem like it's
+a 460% increase in taxes. Nosy News might argue that they
+are not being unethical at all by changing the scale to bar graph. Rather they are merely trying to reinforce
+the point that they're trying to make. The problem is is that it is misleading
+and your credibility will go out the window when you see issues
+with the graph like we just did. I want to share another example. This is a look at the data from gun deaths after Florida enacted a law that
+permit a gun owners to shoot someone anywhere if the gun owner feels
+that deadly force is needed. If you look at it really
+quickly this graph, you'd assume as most do
+when you look at it. That there must have been a sharp decrease
+in gun deaths since the enactment of the law. But in fact it's the opposite. So you have to check out
+the axis on the left, the y-axis. 0 is at the top, and 1,000 is at
+the bottom, which is the opposite of the way we do graphs, where 0's at
+the bottom, and 1,000 would be at the top. So, in fact, there was a very large increase in
+gun deaths after law was enacted. The thing is, that inverting
+the axis is very misleading, and it is, frankly I think, unethical. Because the average consumer
+of that information, which is likely a newspaper reader or
+it could be an infographic in a TV show. The average consumer of that information should not have to deviate from
+the traditional way of displaying graphs. If there is a deviation it should be
+made clear and not just oon the axis. Because when you look at that graph,
+it looks like a standard graph. If it's an unusual graph, then
+the context is different and people may. And there is going to be
+information there to insure that people aren't conflating it or
+getting the wrong information from it. As I mentioned at the outset of
+the lesson, there are a lot of readings on best practices that I'm
+asking you to take a look at. I do want to touch on one best practice
+that's probably the most widely discussed in sort of the inner circles
+of data visualization that you often get on the Internet. And that is the pie chart. Besides the bar graph, the pie chart is probably the most
+widely used visualization. It looks like at first glance
+a great way to show percentages. There are two readings, in fact,
+that I've assigned that debate this, but I tend to come on the side that really
+wants people to shy away from pie charts. And I'll show you an example why. The reason is that pie charts
+should only be used for only the most narrow circumstances. We could always just go ahead and use a different graph,
+specifically a bar graph for any ways. Here are two simple charts
+using exactly the same data. One is a pie chart and one is a bar graph. So let's look at the pie
+chart Very carefully here. Even with the numbers and
+the labels, doesn't Person A, Person B, and Person C seem to
+have roughly the same percentage, based on the size of the pie slice? Now focus your eyes on the Bar Graph. It's evident very quickly that
+Person A has the highest percentage. And that it's actually
+notably higher than Person C. Even without any strategic use of
+color it's just plainly evident. So yeah, with data labels you could show that one
+pie slice is bigger than the other one. But why bother when you
+can just use a bar graph? So the next lesson is going
+to move from the ethics to what I'm calling ineffective visuals. And again, this is going to be something
+that we're going to be just talking about a lot in the remainder of the course,
+but it'll be good to get really into thinking about what are ineffective
+visuals and what are effective visuals. So stay tuned, thank you. Out there.
+So, stay tuned. Take care.

@@ -1,0 +1,127 @@
+[MUSIC] In the last lesson, I discussed with you
+the various types of visualizations. Tables, bar charts, line graphs,
+maps, pie charts, and scatter plots. For this lesson, you will follow along and create some examples of the more
+popular of these visualizations. We're going to use the sales super store
+dataset that you already connected to in course one. If you weren't with us for course one, check the resources to
+see how to connect to this data. Okay, let's get started. [MUSIC] Before we begin I just
+want to say one caveat, and that is we're not necessarily going
+to be showing you the best, and I'm using air quotes,
+the best way to do visualization. I'm just illustrating the types
+of visualizations you can do to really wet your feet. And actually that will help bend in some
+ways to help you decide what is the best visualization. But I'm not going to talk
+about which is the best for the particular one in
+this particular lesson. We'll be using
+Tableau Public version 10.0. That's the latest version of tableau, so if you've just downloaded it in
+the past few weeks it's not a problem. Otherwise, you can use other versions, but that's the one that we'll be using for
+this lesson. Let's open the Sales Super Store Dataset. Make sure, that if it's not
+available on your tableau instants, that you actually open it from the path
+on your computer where you saved it. So the path that I'm going to go to is
+not necessarily, are definitely won't be frankly the path where you have your
+version of the sales supper store dataset. So when you're following
+along just keep that in mind. Go to connect to a File,
+and click on Excel. Then open the Sale Superstore dataset, you will see the tab marked data
+source below, that means you know that it's been successfully
+imported into your tablet instance. Now I want you to drag the order
+sheet like I'm doing here to where it says Drag sheets here,
+I'm just going to do it again with my mouse just to
+show you what's going on here. Tableau well then think about for a few seconds depending on
+the speed of your computer, and once it's done
+please click on Sheet 1. For our first example,
+we're going to start with the table, also known as a cross tab or
+a cross tabulation. Now I often use these terms
+interchangeably, even though I shouldn't. And I apologize now if I
+keep interchanging them. So if you hear cross tab or
+cross tabulation, I mean table, sorry. Okay, let's do this. Let's drag the category field to the rows. The measure names to columns, and the measure values get dropped
+in as values, this quickly and efficiently summarizes all of
+the measure fields that you see here, in terms of the categories and
+the dataset. Now I'm just going to throw
+in the subcategory field. So that I can get even more detail and
+here it is. It's immediately evident that it
+is already too overwhelming for a big PowerPoint presentation,
+especially a public presentation or something that you're doing for
+a big audience. And that's fundamentally
+the major drawback of a table. It's just not very good
+in a big presentation. And it's likely there will
+be a better way to focus the attention towards
+the data of interest. However, the table is best used when there
+is a mixed audience that will need to view your visualization. Each member of the audience might be
+interested in the specific row or specific set of data. Also there is specific or
+different units of measurements and it sometimes easier to show it in a table. Just because it might look boring or
+plain, doesn't mean it's not an important mode for communicating results even
+in a sort of cutting edge way. It is just as cutting edge,
+and more importantly, just as crucial as any other
+type of visualization. So, please, please, please,
+don't underestimate it's power or purpose in data visualization. One final point on crosstabs, nothing
+compares to showing tables in an appendix, just in case people are curious
+as to the underlying data. It's really helpful for people who do
+like, they delve into the details. And it's appropriate especially if
+you're doing some sort of a fixed type of report,
+a paper report that people print off. What we have on the screen naturally lends
+us of to the next type of visualization which is what I call and
+what most people call the heat map. You can think of the heat map as part of
+the family of tables or cross tabulations but I like to think of heat maps as
+a super tabled, or a souped up table. In other words, it's one that uses our
+sense of color and our sense of how we can focus the eye on different types
+of colors in our presentation. All I'm going to do here is to take
+out everything but the profits, then use the Show Me button, which is on
+the upper right hand corner of the screen, the Show Me button, and
+click on the highlight table. Not the heat map. Why? Because for whatever reason, tableau makes a distinction between
+a heat map and a highlight table. Virtually everyone calls a heat map what
+tableau refers to as a highlight table. So just remember that if you choose
+this different visualization tool, and so the idea is that you want
+to have the highlight table. So click on the highlight table and then you'll see what I am showing
+you in front of your screen as well. What we can see here is that
+the losses are immediately evident, as are the most profitable products. You can see why I say
+it's a souped up table. And while the tables and heat maps, give
+us a lot of information as you can see. Humans are naturally drawn
+to even more visual things. So that means we really
+need to be able to see and understand the information
+in a graph of some sort. Which is why I'm going to now illustrate
+the most important visualization of all, the bar chart. And you noticed I said the most
+important visualization, and that's because it's widely used. We tend to look down upon bar charts
+because they are so widely used, but they're essential and their use can
+illuminate ideas very effectively. So now I want you to
+click on the Show Me tab, again it's on the upper right hand side,
+as you can see, where you see my mouse. And I want you to click on the bar graph,
+wow, even better is when I go ahead and drag the profit measure to color to
+show very quickly the furniture, especially the bookcases and
+tables are loosing money. That wasn't as evident when viewing
+the stuff before, even with the heat map. There are different
+varieties of bar charts. For example, when I click on the Show Me
+tab and then click on the stacked bars. Right here we can see
+something really cool. That the total profit by
+category is highest for technology, and lowest for furniture. It wasn't evident before,
+but this makes it really clear that there's definitely
+a lot more profit in technology. And you can see kind of
+what's happening here. Now I want to show you a scatter plot and
+this is to see if there's any trends or relationships that we can't see yet. For this we need two measures. So let's take category off the sheet and
+add discount. Ugh, my goodness,
+there must be something wrong, why? We only see one dot,
+that makes no sense, right? Yes, it makes no sense. So we need to do something else that isn't
+intuitive and not always easy to find in tableau, so please try to remember
+this when you're doing it on your own. Please go to the Analysis
+menu option above. Does your computer or does your screen have the aggregate
+measures option checked? Just click it and voila. The reason we unchecked the aggregate
+measures here is because we're not wanting to show a summary of the data,
+but in fact, we want to see each data point in order
+to determine whether there's a trend between each and
+every single data point at a given item. But of course, now the scattered
+plot is actually disaggregated and we still really want to be able to
+illustrate things in an aggregated way to allow our eyes to focus on one thing. So for a scatter plot of this sort,
+a trend line is almost always what will be used, so let's do that, click on the
+Analytics tab over on the left hand side. So just follow where my mouse is
+going all the way to the left, and you'll see there's an Analytics tab. I want you to click on that. Drag the trend line to the linear model. We're picking the linear model
+because it's the easiest to interpret. Basically, just a straight
+relationship between the two axis. So we see a line that shows a weak
+negative correlation between discount and profit. The implication here is that
+the deeper the discount the less profitable the sales were. It's very interesting insight actually,
+it shows that there is a point at which giving discounts may sell more but
+it's at the cost of profits, and if you're in a for-profit business,
+profits are what it's all about, right? All right, so I can go on forever
+because this stuff is just so fun, just seeing the different
+types of visualizations, but I just wanted to give you an overview
+of the main types of charts and graphs. We'll be delving into how to choose
+the right graph or chart in the very next lesson, so this lesson goes very
+much hand-in-hand with that one. So we want to make sure that you
+just leave everything on the screen. Just go to next lesson. We'll continue our exploration of data and
+visualization. See you then.

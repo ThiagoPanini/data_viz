@@ -1,0 +1,49 @@
+[MUSIC] Hello, and welcome to
+Essential Design Principles for Tableau, I'm Govind Acharya, and
+thank you for joining me and my colleague Hunter Whitney for the second
+course in the data visualization specialization from UC Davis. For those of you who may not know me,
+I'm a principal analyst for UC Davis. I have over a decade of experience in data
+analytics, statistics, survey research, and visualization across several
+disciplines including higher education, economics, urban planning,
+human rights and development. Creating effective visualizations
+is both an art and a science. In the first module,
+Hunter will present a couple of lessons on how the human brain was built for
+visualizations. This will help provide context for
+the rest of the course. Also in the first module,
+you will identify and be able to create the different types
+of visualizations available in Tableau. You will examine the role ethics
+plays when creating visualizations. And you will learn how to improve
+ineffective visuals by applying some basic tips. In the second module you will discuss
+the concepts of cognitive load, and the principles of visual perception. You will be able to apply
+strategic uses for contrast, and illustrate pre-attentive attributes
+like color to your visualizations. You will learn how to
+declutter your visuals, to ensure you are presenting
+only the necessary information. Now, in module three,
+I've included two sections, design best practices, and
+design and exploratory analysis. In the first section we revisit some
+of the concepts introduced in Module 2. You will learn how to apply
+Gestalt Principles, and how to leverage pre-attentive
+attributes in your visualizations. You will examine the role of
+accessibility and aesthetics, and how it plays into your creations. In the second section we define the ideas
+of exploratory and explanatory analysis. You will be able to normalize
+your data and identify outliers. We will dive into a fun but
+challenging concept on how to construct a control chart to set you up to perform
+more advanced exploratory analysis. For the final module,
+I will let my colleague, Hunter Whitney, introduce himself and explain what you
+will learn in that module with him. Take it away Hunter. >> Thank you, Govind. Hello everyone, and
+thank you for joining us. I'm Hunter Whitney, and for more than
+15 years, I've been an information, interaction and user experience designer. So that's the perspective I
+bring to data visualization. My primary areas of interest are health,
+the life sciences and cyber security. Because these are very data-intensive
+fields, I am interested in how to design effective application and interfaces with
+a more human-centered design approach. In the first module, I'll be laying
+out some foundational concepts for data visualization design. Focusing on the perceptual side of things. Then, in the last module,
+we're going to shift gears a bit. We'll move beyond perception and
+dive into how to design for understanding. That is, putting all of these elements
+together so that the audience interprets the visual as intended, and
+that the visualization addresses the need. Data visualization is both an art and
+a science, and to give a good user experience
+you need to master both. Anyway, I'm excited to be part of
+this course, and I will see you soon. Back to you Govind. >> Thanks Hunter. As you can see,
+we have a lot to cover in this course. We're excited to get started, so
+without further delay, let's begin. [MUSIC]
