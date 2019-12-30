@@ -1,0 +1,80 @@
+[MUSIC] Welcome back, in the last lesson we
+reviewed ethics and visualization. In this lesson, we're going to
+examine two visual examples and determine why they might be ineffective,
+and how we can fix them. The readings on this are pretty fun but
+make a very important point about visualizations and the importance
+of having them be effective. Sometimes when we're doing visualizations,
+we want them to be beautiful. But we should never let that come in
+the way of the need to be effective. The first visual is here. It's about a charity sporting
+event in 2015 published by firm that organize such events. They're attempting to document how
+much money they raised online for cycling walking and
+running charity events. As you look at this visualization, I want you to pause the video in just
+a minute and think about this visual. Among the things to think about is whether
+you consider it to be an effective one, and why or why not. Then hit play when you're ready. Now that you're back,
+I'll give you my take. It's not necessarily better
+then than any other take, but it's one possible critique. First, I want to talk about the data and
+the premises we're missing. The data are problematic, for example, did the company do more cycling
+events that resulted in more fundraising? Or was it that cycling
+events raise more money? That is crucial because if there was only
+two walking events but ten cycling events, then the amount raised per event is very
+different than the total amount raised. Since we don't have that information,
+we'll have to assume that it's fine. But if I were providing
+this analysis to others, I would not be comfortable
+with the lack of data context. What about the graphic itself? It's pretty, and it clearly differentiates
+between the three types of events. But in our readings and previous lessons we will have noted
+that visualization experts are almost uniformly opposed to using 3D
+visualizations to plot two dimensions. So, I'm going to say this
+as clearly as possible, do not use 3D in your visualizations. They aren't really as beautiful
+as one might think, and it really skews our
+perception of the data. In our data, cycling made more
+than running and walking combined. But that's not really how
+it seems in the graphic. I mean, it kind of does,
+but it should be clear. This is in effect a defacto 3D pie chart. Of course it's not a real pie chart but
+it distorts the data in the same way. I think this is an example of visual
+that is very ineffective at conveying the message. Actually, I'm not even sure
+what the message is, but it's not enough to just
+complain about the visual. How should we fix it? Okay, I called this a defacto pie chart. There's also a ton of
+important context missing, and since this was pulled from a website,
+we'll have to make some assumptions. So we're just going to assume that the
+data shown is all that we need and have. I tend to always start with a bar graph
+just to take a quick look at the data. It's simple and effective. From there we can see if we need more. The first bar graph is interesting because
+now it's evident that cycling events raise, by far and away, the most money. In fact, this is almost enough. But there's more insight. With one change, we can show the cycling
+events not only raise lots of money. Those events raise more than running and
+walking combined. Yes, the bar graph isn't as
+fun as a 3D cylinder, but it's much more effective at
+conveying the information. But as you can see, just making a small
+tweak to the bar graph by adding a line to show that, in fact, the bar graph
+is slightly above the 50% mark, we can allow people to very
+quickly see that there is a significant difference between
+cycling events and the other events. Sure, people can calculate it out and
+divide by three or whatever or divide by two, but this allows the reader
+to not have to do that extra math. Let's do one more. Several states in the United States have
+legalized marijuana for recreational use. The result has been increased tax revenue
+and more importantly for our purposes, lots of graphics that use marijuana
+leaves to represent data. It's a fun and enticing way to do it, but is it really a good way
+to explain the data? As with the first example,
+I want you to pause the video and think about the visual. Among the things to think about is whether
+you consider it to be an effective one and why or why not. Then, hit play when you're ready. Now that you're back,
+I'll give you my take. First off, we don't have any information
+about the tax rate in each state. Since those could be quite different,
+it's really not fair to use the marijuana leaf equivalent
+of a bar graph to compare the revenue. A second factor is
+the population of the state and the amount of purchases of
+marijuana in the first month. There are also likely
+very different regulatory rules in place in
+the three different states. These are easily obtainable and it would've been interesting to see the
+tax revenue per ounce of marijuana sold. But we're going to mostly go
+with the data in front of us, the temptation with all marijuana
+data stories in the mainstream media is the desire to use some symbology
+of marijuana to represent the data, either leaf or a marijuana cigarette or
+something like that. I'm going to stay away from that. I'm going to make it boring or what
+some people might call boring but clear. Secondly, unlike with the first one,
+a bar graph sounds intuitive, but it doesn't work as well here. In the end, what I've actually done, and your mileage may vary on this,
+is to create a data table. And I added a column, just for fun,
+to show the consumer tax rate. Taxes are very complicated, but providing
+that information is really essential to contextualizing the information. Of course what I've done eliminates the
+coolness of the marijuana leaf graphic but I think it conveys the information in
+a much more accurate and effective way. I hope that you've enjoyed this module. The next two modules are on
+details of design best practices, which we sort of touched on, a very little
+bit, in one of the previous lessons. As well as the use of pre-attentive
+attributes in data visualization. So I'll see you soon.
