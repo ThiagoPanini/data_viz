@@ -30,6 +30,8 @@ If there is something that delights me is beautiful graphs telling complete stor
     
    </table>
    
+   ---
+   
 - ![#F1F01A](https://placehold.it/15/F1F01A/000000?text=+) `Power BI`
 
     I have to say that my progress on Power BI is running a little bit slower than my progress on Tableau. Meanwhile, I have some good references to share:
