@@ -1,0 +1,96 @@
+[MUSIC] Okay, welcome back. So now that we have discussed the concept
+of pre-attentive attributes in the last lesson, for this lesson we're going to
+be talking about the most important of these, which is color. With color, if we overuse it, we lose
+the ability to focus our audience's attention where we need it to be. It'll basically get dissipated. But if we underuse it, we lose the ability
+to really direct our attention. So it is about trying to
+find the right balance. We're going to go back to Tableau and
+develop some great ways to be able to create some pre-attentive
+attributes using color. What we have here is our sales
+superstore working file. Now you should already have this
+saved somewhere on your computer, but in case you don't, we have a link
+that's available for you to use. The question that we're going to
+answer today is whether or not profit and sales go hand in hand. Regarding the who of the who, what and
+how that we have talked about before is the question was asked
+by the CFO of the company. She doesn't have time to try to
+understand complex visualizations. She understands data very well,
+but is now in meetings all day, and really isn't in a position
+to do a deep dive on the data. What she needs is the ability to
+quickly get at what the issue is, if there is an issue with profit and
+sales from a list of people. I have the final product here. When we create a Tableau visualization or
+any visualization at all, particularly in Excel or Tableau, we should not be
+okay with what's provided as the default. It looks good and that's great, but we
+should make sure that we are a answering the question that we have been
+asked to provide the answer for. Don't create a visualization that forces
+the customer to interpret the visual, otherwise you've simply lost a plot. All right, so
+we're going to do this systematically. This is in a way another lesson in Tableau
+on how to get some of the attributes in place that we need. But it's mostly a way to
+highlight how to incorporate pre-attentive attributes, and specifically
+the pre-attentive attribute of color. So I want you to create a new
+sheet in your Tableau instance, and rename it as pre-attentive color. You can, of course,
+rename it whatever you'd like. But let's just call it
+pre-attentive color, so that we can keep track of
+why we have this worksheet. I'd like you now to drag
+the Sales measure to Columns, like I'm doing here, and
+the Customer Name measure to the Rows. And now let's just sort it by sales. Right now it's sorted by customer name. Let's just sort it by sales. Well that's really interesting. If you look at this, there is one person,
+looks like Sean Miller, he has in sales an incredible
+amount of sales. He has over 25,000. And the second place, Tamara Chand,
+only has less than 20,000. So it's actually a pretty impressive
+how well Sean Miller is doing. Now I want you to drag the Profit Ratio
+measure to the Color mark like so. If you remember, the question that we're
+posing is not who had the highest sales, but who had the highest profit ratio
+in terms of sales, and whether or not profit and sales go hand in hand. So we need to actually have
+that additional measure, which is the profit ratio. Well, well, well,
+Sean Miller sales are definitely not looking quite as awesome as it did before,
+does it? Adding a little bit of
+context certainly helps. Because our job is to be experts on
+the data that we're visualizing, we know what's going on here. We know the story, and
+it is pretty straightforward to figure out that Sean Miller,
+he's not doing anything wrong necessarily. All he's doing is he's giving deeper
+discounts, which is getting more sales, but the result is he's not able to
+break a profit on his products. However, the audience for
+this visualization is not you or me. It's the CFO of the company. And we don't want to
+give this multicolored visualization that's
+going to be all confusing. What we need to do it break it down for
+her so she doesn't have to spend even a minute or
+two to try to figure this out. We want her to be able to
+see it immediately and just know what the answer is. This is where pre-attentive
+attributes come into play, and this is of course specifically
+pre-attentive attributes using color. I want it to be clear to the CFO
+whose profits are less than zero. In other words, who is not making money? That means I only really need two colors, one that highlights the ones
+who aren't making the profit, and the others,
+presumably the ones who are. And so that's it,
+because that's the information. It's either they are making profits or
+they're not. So let's do this. Let's use the color pallet and
+fix the color so that we have a light grey to represent
+those that actually made money, made a profit, and
+red to indicate that there was a loss. So it's irrespective of
+the number of sales. So the color is based on red if
+the profit was less than zero, gray, a very light gray,
+if they made money. So I'm just doing that right now,
+and then we can see the difference. So the only difference now is that the names are a little bit smaller,
+or the gap between them is a little bit bigger in the after
+than they are in the before. So we could just fix that right now. And voila, we can see actually
+that the situation appears to be, the interpretation here is that Sean Miller in particular, but also,
+it looks like Becky Martin and Graham Thornton and Peter Fuller,
+they all made a lot of sales. But sold at a loss, which means they
+gave a lot of discounts out in order to pump up their sales number. While Tamara Chand in particular, but also
+Raymond Bush and Tom Ashbrook and some of those people, made a very large amount of
+profit without having to discount at all. Now I'm not attributing anything about
+Sean Miller versus Tamara Chand. There maybe different circumstances,
+but that's not for us to decide. What we're just saying is
+interpreting the fact that Sean Miller seems to have made a lot
+of sales, yet lost a lot of money too. And so we need to delve into that more,
+but I think this is the initial foray. The CFO probably would get back to me and ask further questions about getting more
+detailed deep dive into the information, but this is a nice way to do
+the high level look at it. This is actually a very
+innovative way to design visuals. It's something that is
+becoming a growing consensus. Having shades of gray,
+preferably lighter, and then a single color to draw attention
+where it needs to be drawn. It really adds that contrast to it. It doesn't work for every circumstance,
+but in the world of visualizations, this is becoming more and more the norm. So I encourage you to really
+think about doing it in this way. As we conclude, I want to just reiterate
+a couple of important pieces here. When we use color or any other
+thing as a pre-attentive attribute, we want to remember three things. One is we want to use this sparingly. Two, we want to use it consistently. And three, we want it designed
+to contrast in color with care. That means we should choose it either as a
+brand or some other very important marker. So I'll see you soon, when we do
+a decluttering of a visualization. It's so exciting. And I'll see you soon.

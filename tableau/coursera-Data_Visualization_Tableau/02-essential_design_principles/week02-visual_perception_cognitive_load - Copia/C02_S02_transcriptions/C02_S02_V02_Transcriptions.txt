@@ -1,0 +1,91 @@
+[MUSIC] Welcome to this lesson. When presenting your visualization
+to your intended audience, your intent is to make the visually
+usable, clear to understand, and effective at answering the question
+they are trying to solve. However, the human brain
+is a powerful tool and is always processing multiple
+things all the time. In terms of visualization, it is our job
+to help lessen the cognitive load and decrease clutter, so that when
+the audience is looking at your visual, they can clearly process it. For this lesson, we are going to
+define the terms of cognitive load and clutter as it is necessary to
+understand these concepts for your basis of all your
+visualization designs. First off,
+let's talk about cognitive load. It seems like a pretty
+intuitive sounding term. The definition is it is the amount
+of mental effort that we use to get the information that we need. For data visualization, we need to learn
+how to minimize the cognitive load while also communicating
+the message accurately. There are three types of cognitive load,
+intrinsic, extraneous, and germane. Intrinsic cognitive load
+is the amount of memory that we need to understand something. So if I'm adding 2 plus 2,
+I could do that while I'm distracted or even while I'm speaking to you right now. But if I have to do long division, there
+is no way I'm going to be able to present this material and
+do that long division at the same time. I'll need to concentrate and
+can't be distracted. Otherwise, it'll take a lot longer,
+or I won't be able to do it at all. The next one is extraneous cognitive load. That is the amount of extra
+brain power that I need to deal with poorly
+designed visualizations. It is the ability to not only
+visually spot the issues but be able to describe them, as well. It is how information is presented, and if it is ineffective, that puts extra
+pressure on our cognitive load. Finally, germane cognitive load is
+a way for the brain to look for patterns to develop context. As with extraneous load,
+it is to help take a cognitive issue and present it in an easy and meaningful way. We'll use these three types of cognitive
+loads instinctively throughout this specialization. Okay, with cognitive load defined,
+let's talk about clutter. As I'm talking here,
+I see a pile of papers on my desk. My desk is cluttered, I have to admit. This stuff is clutter,
+as we know in common parlance. So clutter is definitely one of those
+things that we know when we see it. For data visualization experts like you,
+it's about determining what needs to be in a visualization and doesn't need to be in
+the visualization to reduce the clutter. So to take the desk analogy, most of
+these papers don't have to be on my desk. They can either be recycled or
+filed somewhere else. But they're still here, I need to remove
+those papers and thus reduce the clutter. So having defined both terms,
+we could see that cognitive load and clutter are fully intertwined. The reason we want to reduce clutter is so that we can minimize the cognitive load
+of the reader for the data visualization. If you remember in the last module, we
+talked about ineffective visualizations, and some small ways we can improve them. What I didn't mention at the time
+is a lot of that ineffectiveness or the WTF moments as the website calls, it are actually because of
+the large amounts of clutter. So here's an example of a chart that is
+cluttered, but probably wouldn't be so bad that it would get submitted
+to the website biz.wtf. It's from the United States Department
+of Agriculture, or USDA's, Economic Research Service. They have a renowned set of
+researchers who collect and report on data connected to agriculture. And this is a regular report that the USDA puts out on its website
+on a regular basis. I'd like you to think about why
+this chart might be cluttered? What should be eliminated? What could they do differently to
+show the other elements, if any? So here are what I would consider
+to be clutter in this chart. The first is the bad 3D effect. I think I mentioned several
+times about 3D effect. I like to get rid of those. Let's not do that unless you're
+graphing three dimensionally. The second is dark grid lines. Dark grid lines are really only helpful if it's going to aid in
+the visualization itself. Having dark grid lines really
+ruins what you're trying to actually show the reader,
+which is the visualization itself. So really avoid the dark grid lines. Third is the overuse of bright and
+bold colors. We're actually going to have a big, deep dive into colors and
+how we can use it very strategically. This is not a strategic use. Number four is no apparent sorting. Would be really helpful if we know
+why the data were sorted in that way. And number five is an unhelpful axis. I'm not sure what the axis is there. In the last lesson of this module,
+of this course, we're going to declutter this for
+the USDA. But we have a lot more to
+cover before we get there. Now why do I say not to use
+three-dimensional visualizations? Well, put simply, almost all of our
+visualizations are in two-dimension, so plotting stuff in 3D is
+mathematically just wrong. But less mathematical and
+less theoretical is that 3D bar graphs and other 3D types of visualization tend
+to give a very skewed perspective. When there's a large difference between
+each of the different categories, it might not matter. But why take the chance? Just avoid using 3D visualizations. Now, just because something is cluttered
+doesn't mean it shouldn't be there. That's why when we talk
+about visualization, it's sometimes considered an art form. And this is where it plays in. There are times when redundancy
+might be considered clutter. But it nonetheless helps
+with the cognitive load. There aren't a lot of these. So I want to go over them quickly here,
+so you have them moving forward. One of the fundamental areas where
+redundancy elements might feel like clutter but is necessary for
+cognitive load is when labeling. I believe it's absolutely essential to
+keep the currency symbol, the dollar, euro, pound, whatever domination money
+you need to use, in the visualization. Also, the percent sign is very important,
+so that readers know that it's
+a percentage and not a number. Use commas for
+large numbers and labels, so that it's just easier to read. It will really help make
+things clear when viewing it. Also, if you're visualizing
+very small numbers, make absolutely sure that the scientific
+notation is carried over on each label so that everyone understands
+what's going on there. It seems like a small point, but the goal
+is actually to reduce cognitive load, even though it might, in fact,
+increase the clutter. You never want your visualization
+to be unclear or difficult for your intended audience to understand. Okay, now that we went through this
+topic to help build your baseline, in the next lesson, we're going to
+discuss principles of visual perception. So thank you for joining me,
+and we will see you soon.

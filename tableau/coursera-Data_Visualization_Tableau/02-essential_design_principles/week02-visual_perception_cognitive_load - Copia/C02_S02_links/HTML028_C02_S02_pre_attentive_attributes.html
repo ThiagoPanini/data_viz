@@ -1,0 +1,1444 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow-x: hidden">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+    <meta http-equiv="Cache-control" content="public">
+    <meta name="csrf-token" content="hMh1JqHpRm1e2uEAsWaK0k5w33xUhLZezeOJdWYV"/> 
+            
+    <link rel="preconnect" href="//public-media.interaction-design.org">
+    <link rel="preconnect" href="//cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="//fonts.googleapis.com">
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//www.google.com">
+    <link rel="preconnect" href="//google-analytics.com">
+    <link rel="preconnect" href="//www.google-analytics.com">
+    <link rel="preconnect" href="//www.googletagmanager.com">
+    <link rel="preconnect" href="//googleads.g.doubleclick.net">
+    <link rel="preconnect" href="//stats.g.doubleclick.net">
+    <link rel="preconnect" href="//js-agent.newrelic.com">
+    <link rel="preconnect" href="//bam.nr-data.net">
+        <link rel="preload" as="script" href="https://assets.interaction-design.org/manifest.js?id=ec1ef9a9ddd7d658c668">
+    <link rel="preload" as="script" href="https://assets.interaction-design.org/js/vendor.js?id=073aba85397416611425">
+    <link rel="preload" as="script" href="https://assets.interaction-design.org/js/app.js?id=c1a56e798b18d287ad19">
+    <link rel="preload" as="script" href="//d2wy8f7a9ursnm.cloudfront.net/v6/bugsnag.min.js">    
+        
+    <link rel="icon" type="image/png" sizes="32x32" href="https://public-media.interaction-design.org/images/app/favicon--32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://public-media.interaction-design.org/images/app/favicon--16x16.png">
+    <link rel="icon" href="/favicon.ico" sizes="16x16" type="image/vnd.microsoft.icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/web-app-manifest.json">
+    <link rel="mask-icon" href="https://public-media.interaction-design.org/images/app/safari-pinned-tab.svg" color="#404040">
+    <meta name="apple-mobile-web-app-title" content="UX courses">
+    <meta name="application-name" content="UX courses">
+    <meta name="theme-color" content="#404040">
+    <meta name="msapplication-config" content="/ms-app-browserconfig.xml" />
+    <title>Preattentive Visual Properties and How to Use Them in Information Visualization &#124; Interaction Design Foundation</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700|Roboto+Condensed:400,500,700"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://assets.interaction-design.org/css/app.css?id=b74d26573c1ae34032d5" />
+<script>
+
+(function() {
+    function fontsLoaded() {
+        document.documentElement.classList.add('fonts-loaded');
+        sessionStorage.fontsLoadedFoutWithClassPolyfill = true;
+    }
+
+    function iconsLoaded() {
+        document.documentElement.classList.add('icons-loaded');
+        sessionStorage.iconsLoadedFoutWithClassPolyfill = true;
+    }
+
+    
+    if (sessionStorage.fontsLoadedFoutWithClassPolyfill) {
+        fontsLoaded();
+    }
+    if (sessionStorage.iconsLoadedFoutWithClassPolyfill) {
+        iconsLoaded();
+    }
+
+    if (
+        sessionStorage.fontsLoadedFoutWithClassPolyfill &&
+        sessionStorage.iconsLoadedFoutWithClassPolyfill
+    ) {
+    return;
+    }
+
+
+    
+    if (!("fonts" in document)) {
+        fontsLoaded();
+        iconsLoaded();
+        return;
+    }
+
+    Promise.all([
+        document.fonts.load("1em Roboto"),
+        document.fonts.load("500 1em Roboto"),
+        document.fonts.load("700 1em Roboto"),
+        document.fonts.load("1em Roboto Condensed"),
+        document.fonts.load("500 1em Roboto Condensed"),
+        document.fonts.load("700 1em Roboto Condensed")
+    ]).then(function () {
+        fontsLoaded();
+    });
+
+
+    document.fonts.load('1em FontAwesome','\uf287\uf142\uf0fc').then(function () {
+        iconsLoaded();
+    });
+})();
+</script>
+<link rel="image_src" href="https://public-media.interaction-design.org/images/ux-daily/56d71f914d6af.jpg"/>
+    <meta property="fb:app_id" content="142481353231314"/>
+    <meta property="fb:page_id" content="19975077227"/>
+    <link rel="alternate" type="application/rss+xml" title="Interaction Design Foundation - UX Feed" href="https://www.interaction-design.org/rss/site_news.xml" />
+    <link rel="canonical" href="https://www.interaction-design.org/literature/article/preattentive-visual-properties-and-how-to-use-them-in-information-visualization"/>
+    <meta name="description" content="A preattentive visual property is one which is processed in spatial memory without our conscious action. Learn more about how you can use this in your designs."/>
+
+    
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="The Interaction Design Foundation"/>
+    <meta property="og:title" content="Preattentive Visual Properties and How to Use Them in Information Visualization"/>
+    <meta property="og:description" content="A preattentive visual property is one which is processed in spatial memory without our conscious action. Learn more about how you can use this in your designs."/>
+    <meta property="og:image" content="https://public-media.interaction-design.org/images/ux-daily/56d71f914d6af.jpg"/>
+    <meta property="og:url" content="https://www.interaction-design.org/literature/article/preattentive-visual-properties-and-how-to-use-them-in-information-visualization" />
+
+    <meta name="twitter:label1" value="Topics" />
+    <meta name="twitter:data1" value="Information Visualization, Sensory Memory, Human Memory, Preattentive Visual Properties" />
+        <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@interacting" />
+    <meta name="twitter:creator" content="@interacting" />
+
+    <script>
+    window.csrfToken = "hMh1JqHpRm1e2uEAsWaK0k5w33xUhLZezeOJdWYV";
+    window.currentUser = {"id":"187.57.132.144","email":null,"name":"Guest","slug":null};
+    window.currentUser.isGuest = function() {return true;};
+</script>
+    <script src="//d2wy8f7a9ursnm.cloudfront.net/v6/bugsnag.min.js"></script>
+    <script>
+        window.bugsnagClient = bugsnag({
+            apiKey: '4fc40517cdca4f44ae67a2e4fbe64d04',
+            appVersion: '3.258.11-1-g431f9fd',
+            beforeSend: function (report) {
+                var url = report.request.url;
+
+                // Ignore errors for locally saved files
+                if (window.location.protocol.indexOf('file') > -1) {
+                    return report.ignore();
+                }
+
+                // Ignore errors within browser extensions
+                for (var frame in report.stacktrace) {
+                    var file = frame.file || report.stacktrace[frame].file;
+                    if (file && file.indexOf('moz-extension://') > -1) {
+                        return report.ignore();
+                    }
+                }
+            }
+        });
+        bugsnagClient.user = {
+            id: window.currentUser.id,
+            name: window.currentUser.name,
+            email: window.currentUser.email
+        };
+    </script>
+        </head>
+<body class=" js-layout--default">
+
+<script>
+window.dataLayer = window.dataLayer || [];
+dataLayer = [{"ecommerce":{"impressions":[{"id":34,"name":"Information Visualization","variant":"open","list":"CourseCardsOnArticlePage","position":1}]}}];
+</script>
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KJ8XGB"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KJ8XGB');</script>
+
+
+
+<div class="body-wrap">
+
+    
+    <nav class="navHeader js-navHeader">
+    <div role="alert" class="pageNotification pageNotification--outdatedBrowser in-top-tiny in-bottom-tiny js-pageNotification">
+    <div class="container out-left-none out-right-none">
+        <i class="fa fa-warning"></i>Your browser is outdated.
+        Please <a href="http://outdatedbrowser.com/en" target="_blank" rel="noopener noreferrer nofollow">switch to a modern web browser</a>
+        to improve performance and avoid security risks.
+    </div>
+</div>
+
+    
+            
+        <div class="navHeader__linksBar ">
+            <div class="container">
+                <ul class="inlineList navHeader__linksList">
+                    <li class="inlineList__item"><a tabindex="-1" href="/why-join-idf">Reviews / Why join our community?</a></li>
+<li class="inlineList__item"><a tabindex="-1" href="/corporate">For companies</a></li>
+    <li class="inlineList__item inlineList__item--right">
+        <a tabindex="-1" href="https://www.interaction-design.org/bootcamps/get-a-new-job-in-ux-design">
+            Want a new job in UX?
+        </a>
+    </li>
+    <li class="inlineList__item inlineList__item"><a tabindex="-1" href="/faq">Frequently asked questions</a></li>
+<li class="inlineList__item"><a tabindex="-1" href="/about/contact">Contact</a></li>
+
+
+                </ul>
+            </div>
+        </div>
+    
+    <div class="navHeader__mainBar">
+        <div class="container">
+            <div class="navHeader__mainBarInner">
+                <a class="navHeader__logo" href="/" title="Interaction Design Foundation">
+                    <img width=220 height=72 src="https://public-media.interaction-design.org/images/idf-logo-full-expanded.svg" alt="Interaction Design Foundation"/>
+                </a>
+
+                <div class="navHeader__navigation">
+                    <ul class="inlineList u-text-uppercase">
+                        <li>
+    <a         class="navHeader__link--courses link link--animatedDark"
+       href="/courses"
+       title="User Experience (UX) Courses">UX Courses</a>
+</li>
+<li>
+    <a         class="navHeader__link--community link link--animatedDark"
+       href="/community"
+       title="User Experience (UX) Community">Community</a>
+</li>
+<li>
+    <a         class="navHeader__link--literature link link--animatedDark"
+       href="/literature"
+       title="User Experience (UX) Literature">Literature</a>
+</li>
+<li>
+    <a         class=" link link--animatedDark"
+       href="/about"
+       title="About the Interaction Design Foundation">About IDF</a>
+</li>
+                    </ul>
+                </div>
+                <div class="accountDetails  accountDetails--isGuest   accountDetails--right   ">
+    <div class="accountDetails__inner">
+                    <ul class=" inlineList ">
+                <li class="login accountDetails__loginLink navHeader__loginLink"><a href="/login">Log in</a></li>
+
+                                    
+                    <li class="not-flexible">
+                                                    <a href="/join" data-gtm-cta="headerButton" class="button button--withArrowSmall">
+    <span class="sm:hide">
+        Join our community
+    </span>
+    <span class="sm:show">Join us</span>
+</a>
+                                            </li>
+                            </ul>
+            </div>
+</div>
+            </div>
+        </div>
+    </div>
+</nav>
+    <div class="mobileHeader js-mobileHeader">
+    
+    <div class="mobileHeaderMainNav">
+        <button type="button" class="btn-offcanvas js-open-offcanvas">
+            <span class="fa fa-bars"></span>
+            <span class="visually-hidden">Open menu</span>
+        </button>
+
+        <div class="mobileHeaderMainNav__logo">
+            <a href="/" title="Interaction Design Foundation" tabindex="-1">
+                <img data-src="https://public-media.interaction-design.org/images/idf-logo-full-expanded.svg"
+                        alt="IDF logo"/>
+            </a>
+        </div>
+        <div class="mobileHeaderMainNav__userMenu">
+                                                                        <a class="button" href="/join" data-gtm-cta="headerButton">Join us</a>
+                                                        </div>
+
+    </div>
+</div>
+
+<div class="offCanvas-wrap">
+    <nav class="offCanvas-menu">
+
+        <div class="accountDetails  accountDetails--isGuest    accountDetails--offCanvas   not-flexible ">
+    <div class="accountDetails__inner">
+                    <ul class=" no-bullet out-none ">
+                <li class="login accountDetails__loginLink navHeader__loginLink"><a href="/login">Log in</a></li>
+
+                                    
+                    <li class="not-flexible">
+                                                    <a href="/join" data-gtm-cta="offCanvasMenu" class="button button--withArrowSmall">
+    <span class="sm:hide">
+        Join our community
+    </span>
+    <span class="sm:show">Join us</span>
+</a>
+                                            </li>
+                            </ul>
+            </div>
+</div>
+
+        <ul class="off-canvas-list-main">
+            <li>
+    <a  tabindex="-1"        class=" "
+       href="/courses"
+       title="User Experience (UX) Courses">UX Courses</a>
+</li>
+<li>
+    <a  tabindex="-1"        class=" "
+       href="/community"
+       title="User Experience (UX) Community">Community</a>
+</li>
+<li>
+    <a  tabindex="-1"        class=" "
+       href="/literature"
+       title="User Experience (UX) Literature">Literature</a>
+</li>
+<li>
+    <a  tabindex="-1"        class=" "
+       href="/about"
+       title="About the Interaction Design Foundation">About IDF</a>
+</li>
+        </ul>
+
+        <div class="divider"></div>
+
+        <ul class="inlineList inlineList--vertical off-canvas-list-secondary">
+            <li class="inlineList__item"><a tabindex="-1" href="/why-join-idf">Reviews / Why join our community?</a></li>
+<li class="inlineList__item"><a tabindex="-1" href="/corporate">For companies</a></li>
+    <li class="inlineList__item inlineList__item--right">
+        <a tabindex="-1" href="https://www.interaction-design.org/bootcamps/get-a-new-job-in-ux-design">
+            Want a new job in UX?
+        </a>
+    </li>
+    <li class="inlineList__item inlineList__item"><a tabindex="-1" href="/faq">Frequently asked questions</a></li>
+<li class="inlineList__item"><a tabindex="-1" href="/about/contact">Contact</a></li>
+
+
+        </ul>
+
+        <div class="divider"></div>
+
+        <div class="off-canvas-social">
+            <div class="socialLinks socialLinks--white">
+                <a class="socialLinks__item" href="https://www.facebook.com/interactiondesign.org" target="_blank" rel="noopener" tabindex="-1" aria-label="Facebook page">
+                    <span class="fa-stack">
+                        <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                        <i class="fa fa-facebook fa-stack-1x"></i>
+                    </span>
+                </a>
+
+                <a class="socialLinks__item" href="https://twitter.com/interacting" target="_blank" rel="noopener" tabindex="-1" aria-label="Twitter page">
+                    <span class="fa-stack">
+                        <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                        <i class="fa fa-twitter fa-stack-1x"></i>
+                    </span>
+                </a>
+
+                <a class="socialLinks__item" href="https://www.pinterest.com/ixdfoundation/" target="_blank" rel="noopener" tabindex="-1" aria-label="Pinterest page">
+                    <span class="fa-stack">
+                        <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                        <i class="fa fa-pinterest fa-stack-1x"></i>
+                    </span>
+                </a>
+
+                <a class="socialLinks__item" href="https://www.linkedin.com/company/interaction-design-org-foundation" target="_blank" rel="noopener" tabindex="-1" aria-label="Linkedin page">
+                    <span class="fa-stack">
+                        <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                        <i class="fa fa-linkedin fa-stack-1x"></i>
+                    </span>
+                </a>
+
+                <a class="socialLinks__item" href="https://www.instagram.com/interaction_design_foundation" target="_blank" rel="noopener" tabindex="-1" aria-label="Instagram page">
+                    <span class="fa-stack">
+                        <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                        <i class="fa fa-instagram fa-stack-1x"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+
+
+    </nav>
+
+</div>
+
+    <main class="content-wrapper">
+                    <input type="hidden" id="show-upcoming-courses" value="show">
+    
+        <input type="hidden" id="publication-type" value="article">
+    <input type="hidden" id="publication-id" value="130647">
+
+
+    <section class="uxArticle" data-reasons-number="8
+">
+        <div class="uxArticle__hero">
+            <img src="https://public-media.interaction-design.org/images/ux-daily/56d71f914d6af.jpg" alt="Preattentive Visual Properties and How to Use Them in Information Visualization">
+        </div>
+
+        <h1 class="uxArticle__title">
+            Preattentive Visual Properties and How to Use Them in Information Visualization
+                    </h1>
+
+        <div class="uxArticle__main-meta">
+                        <time class="uxArticle__main-meta"
+                  datetime="2018-10-02 12:00:00">1 year ago</time>
+                        |
+            <span class="uxArticle__main-meta">4 min read</span>
+                    </div>
+
+        <div class="hidePrint">
+            <div class="sharingPanel">
+    <div class="sharingPanel__shares">
+                    <div class="sharingPanel__sharesTotalCount">
+                <span class="sharingPanel__sharesTotalCountNumber">566</span>
+                <span class="sharingPanel__sharesTotalMessage">shares</span>
+            </div>
+                <div class="sharingPanel__services">
+            <div class="sharingPanel__service">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.interaction-design.org/literature/article/preattentive-visual-properties-and-how-to-use-them-in-information-visualization%3Futm_source%3Dfacebook%26utm_medium%3Dshare-button%26utm_campaign%3D%252Fliterature%252Farticle%252Fpreattentive-visual-properties-and-how-to-use-them-in-information-visualization"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="sharingPanel__serviceIcon sharingPanel__serviceIcon--facebook js-shareLink"
+                   title="Facebook share button"></a>
+
+                <div class="sharingPanel__serviceShareCounter">349</div>
+            </div>
+            <div class="sharingPanel__service">
+                <a href="https://twitter.com/share?url=https://www.interaction-design.org/literature/article/preattentive-visual-properties-and-how-to-use-them-in-information-visualization%3Futm_source%3Dtwitter%26utm_medium%3Dshare-button%26utm_campaign%3D%252Fliterature%252Farticle%252Fpreattentive-visual-properties-and-how-to-use-them-in-information-visualization&text=Preattentive+Visual+Properties+and+How+to+Use+Them+in+Information+Visualization&hashtags=ux"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="sharingPanel__serviceIcon sharingPanel__serviceIcon--twitter js-shareLink"
+                   title="Twitter share button"></a>
+
+                <div class="sharingPanel__serviceShareCounter">174</div>
+            </div>
+            <div class="sharingPanel__service">
+                <a href="https://www.linkedin.com/shareArticle?url=https://www.interaction-design.org/literature/article/preattentive-visual-properties-and-how-to-use-them-in-information-visualization%3Futm_source%3Dlinkedin%26utm_medium%3Dshare-button%26utm_campaign%3D%252Fliterature%252Farticle%252Fpreattentive-visual-properties-and-how-to-use-them-in-information-visualization&title=Preattentive+Visual+Properties+and+How+to+Use+Them+in+Information+Visualization"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="sharingPanel__serviceIcon sharingPanel__serviceIcon--linkedin js-shareLink"
+                   title="LinkedIn share button"></a>
+
+                <div class="sharingPanel__serviceShareCounter">43</div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+        </div>
+
+        
+        
+        <div class="uxArticle__content-with-sidebar uxArticleWithSidebar">
+            <div class="uxArticleWithSidebar__content js-publicationContent">
+            
+
+                <article class="uxArticle__rteContent rteContent rteContent--imageFit rteContent--headingSpacing out-bottom-large js-courseAd-area">
+                    <p>A preattentive visual property is one which is processed in spatial memory without our conscious action. In essence it takes less than 500 milliseconds for the eye and the brain to process a preattentive property of any image. This is good news for <a href="/literature/topics/information-visualization" title="What is Information Visualization?">information visualization</a>  designers and graphic designers in more general terms too – it means that these properties can be harnessed to make it easier for a user to understand what is presented through the design and save them from consciously processing all the data presented in short-term memory which requires more effort.
+</p><p>John Tukey, the American mathematician and statistician, said; “The greatest value of a picture is when it forces us to notice what we never expected to see.” By tapping into preattentive properties of visualizations you can help users find what they never expected to see.
+</p><p>Colin Ware, in his book “Information Visualization: Perception for Design” defines the four <a href="/literature/topics/preattentive-visual-properties" title="What is Preattentive Visual Properties?">preattentive visual properties</a>  as follows:
+</p><ul>
+	<li>Color</li>
+	<li>Form</li>
+	<li>Movement</li>
+	<li>Spatial Positioning</li>
+</ul><h2>The Four Preattentive Visual Properties</h2><h3>1. Color</h3><p>Color can be expressed in many different ways. From the RGB (Red, Green, Blue) scale to the CMYK (Cyan, Magenta, Yellow and Key) scale to the HSL (Hue, Saturation and Lightness) scale.
+</p><p>The HSL scale is useful to us when we examine <a href="/literature/topics/color" title="What is Color?">color</a>  in terms of preattentiveness. Hue is a measure of the color that we normally give a name to such as “Red” or “Violet”. Saturation and lightness are a measure of the intensity of colors.
+</p><p>Hues and intensities are preattentively processed and can be used to separate visual elements from their surroundings. This saves the user from having to perform a visual search through data.
+</p><p><img data-src="https://public-media.interaction-design.org/images/uploads/b1c5b4cfbf85e921b327bada20175a27.png" width="559" height="420" style="width: 559px; height: 420px;">
+</p><p><small><i>Author/Copyright holder: SharkD. Copyright terms and licence: CC BY-SA 3.0 </i></small>
+</p><p>The HSL scale can be visually represented itself in 3-dimensions – the idea is to try and demonstrate how saturation and lightness relate to intensity for each hue.
+</p><h2>2. Form</h2><p>Form applies to a set of attributes (listed below) and form can be manipulated to either call attention to a member of the data set or to reduce our attention on it. For example, if you were to manipulate the size of an object you could use that size to indicate its importance in a data set by making it larger. Conversely you could make it smaller and reduce its importance.
+</p><p>Form attributes include:
+</p><ul>
+	<li>Collinearity</li>
+	<li>Curvature</li>
+	<li>Length, breadth and width</li>
+	<li>Marks added to objects</li>
+	<li>Numerosity</li>
+	<li>Shape</li>
+	<li>Size</li>
+	<li>Spatial grouping</li>
+	<li>Spatial orientation</li>
+</ul><p><img data-src="https://public-media.interaction-design.org/images/uploads/1eb0c10e1ee204a5e267621211b30d97.jpg">
+</p><p>In the image above you can see how each form property can be used to call attention to a part of a visualization; you might not realize it but you didn’t even have to think to see these differences – it was all done in your <a href="/literature/topics/sensory-memory" title="What is Sensory Memory?">sensory memory</a>  without conscious effort.
+</p><h2>3. Movement</h2><p>Movement has two sub-attributes flicker and motion. They can be used very effectively to call someone’s attention. However, care should always be taken when employing motion in information visualizations and other designs. This is because the motion can rapidly become annoying or distracting from the rest of the information that is being presented. It’s also a technique which has been over-employed in banner adverts and other forms of web advertising over the years and may be a primary reason for the rise of ad-blocking software.
+</p><p><img data-src="https://public-media.interaction-design.org/images/uploads/cad7f6423945a4378225ee31f8b0dd2a.gif"><span></span>
+</p><p><small><i>Author/Copyright holder: P.Ctnt. Copyright terms and licence: Public Domain.</i></small>
+</p><p>The central traffic light in this GIF flickers to call the user’s attention to the yellow light rather than the red light or green arrow.
+</p><h2>4. Spatial Positioning</h2><p>There are several considerations for spatial positioning including:
+</p><ul>
+	<li><strong>2D positioning</strong> – this is often the best way to deliver data that can be easily recognized and processed visually. It is particularly effective for quantitative data representations.</li>
+	<li><strong>Stereoscopic depth</strong> - we perceive depth by combining the images generated by the left and right eyes in the brain. This depth is preattentively processed. It is possible to recreate stereoscopic depth using two separate cameras set at different angles to a subject and imposing the images over each other.</li>
+	<li><strong>Concave and convex positioning</strong> – this can be created through the use of shading.</li>
+</ul><p><img data-src="https://public-media.interaction-design.org/images/uploads/2aeffd6a02caa03af381839fbc3cc47c.jpg" width="863" height="486" style="width: 863px; height: 486px;">
+</p><p><small><i>Author/Copyright holder: Pixabay. Copyright terms and licence: Free to Use</i></small>
+</p><p>In this image we can see the use of shading to suggest convex/concave properties. These are then preattentively processed in the brain.
+</p><h2>Using Preattentive Properties in Information Visualization Design</h2><p>When you develop an information visualization you must decide which properties will be used to deliver each attribute of the data set. This process is known as <a href="/literature/topics/visual-mapping" title="What is Visual Mapping?">visual mapping</a>. 
+</p><p>Colin Ware indicates that the choice of these four preattentive attributes is the most significant thing that can be done to utilize the science of vision to improve information visualization.
+</p><p>However, there is no universal agreement on which attributes in which combination will be most effective for any given user group. This means that if you intend to use preattentive properties in your designs – you will need to <a href="/literature/topics/test" title="What is Test?">test</a>  them with your user group to see if they deliver the appropriate impact.
+</p><h2>The Take Away</h2><p>Preattentive processing takes place in sensory memory; it requires no conscious effort from the user (or viewer) to do this processing – it’s automated and takes less than 500 milliseconds to complete. This can be very useful in design and in particular in information visualization design because it allows the designer to grab the attention of the user without their input or effort. This in turn allows for increased complexity of data that must be processed in short-term memory.
+</p><h2>References & Where to Learn More:</h2><p>Course: Information Visualization:<br><a href="https://www.interaction-design.org/courses/information-visualization-infovis">https://www.interaction-design.org/courses/information-visualization-infovis</a><br>
+</p><p>Colin Ware. <i>Information Visualization: Perception for Design</i>. Morgan Kaufmann, San Francisco, CA, 2nd edition, 2004.
+</p><p>Find out more about the RGB scale here – <a href="https://en.wikipedia.org/wiki/RGB_color_model">https://en.wikipedia.org/wiki/RGB_color_model</a>
+</p><p>Find out more about the CMYK model here - <a href="https://en.wikipedia.org/wiki/CMYK_color_model">https://en.wikipedia.org/wiki/CMYK_color_model</a>
+</p><p>Find out more about the HSL scale here - <a href="http://www.css3.info/preview/hsl/">http://www.css3.info/preview/hsl/</a>
+</p><p><em>Hero Image: Author/Copyright holder: Marcin Ignac. Copyright terms and licence: CC BY-NC-ND 2.0</em><em></em><br>
+</p>
+                </article>
+
+                <div class="out-top-large">
+                    <div class="tags-widget">
+    <div class="tags-widget__taglist-container out-bottom-small hidePrint">
+        <div class="tags-widget__taglist-header">Topics in this article:</div>
+        <div class="tags-widget__taglist-items">
+                            <a class="button button--secondary tags-widget__taglist-item"
+                    href="/literature/topics/information-visualization">
+                    Information Visualization
+                </a>
+                            <a class="button button--secondary tags-widget__taglist-item"
+                    href="/literature/topics/sensory-memory">
+                    Sensory Memory
+                </a>
+                            <a class="button button--secondary tags-widget__taglist-item"
+                    href="/literature/topics/human-memory">
+                    Human Memory
+                </a>
+                            <a class="button button--secondary tags-widget__taglist-item"
+                    href="/literature/topics/preattentive-visual-properties">
+                    Preattentive Visual Properties
+                </a>
+                    </div>
+    </div>
+
+
+    </div>
+                </div>
+            </div>
+
+            <aside class="uxArticleWithSidebar__sidebar hidePrint">
+                <div class="ux-stick-to-header">
+                                            <div class="uxArticle__upcomingCourses">
+                            <a href="/courses/information-visualization-infovis" title="Information Visualization">
+
+    <div class="card card--course js-card  "
+         data-course-id="34"
+         data-schedule-id="4168"
+         data-close-timestamp="1578873600"
+         data-location-pathname="/courses/information-visualization-infovis"
+         data-gtm-click>
+
+        <div class="card__inner">
+
+            <div class="card__header" data-title=" View course ">
+                <div class="card__headerImage--course">
+                    <img data-src="https://public-media.interaction-design.org/images/courses/course_34--square_thumbnail.jpg"
+                         alt="Information Visualization">
+                </div>
+            </div>
+
+            <div class="card__contents card__body">
+                <div class="card__title truncate-3 js-cardTitle">Information Visualization</div>
+                <div class="flex-between">
+
+                                            
+                        <div class="countdown flexible in-right-small">
+                            <div class="title">
+                                Enrollment Closes In
+                            </div>
+                            <div class="js-countdownClock">
+                                                                    <div class="flex clock">
+    <div class="box clock-item day">
+        <div class="number">2</div>
+        <div class="unit">days</div>
+    </div>
+    </div>
+                                                            </div>
+                        </div>
+
+                        
+                        <div class="card__progressRingWrapper not-flexible" >
+                            
+                            <div class="progressCircular js-progressCircular  progressCircular--hidePercentage  "
+     data-percentage="79"
+     data-latest-shown-progress="0">
+    
+    <svg class="progressCircular__indicatorContainer"
+         width="100%"
+         height="69.734"
+         viewPort="0 0 100 100"
+         version="1.1"
+         xmlns="http://www.w3.org/2000/svg">
+        <circle class="progressCircular__potentialIndicator"
+                r="25"
+                cx="50%"
+                cy="50%"
+                fill="transparent"
+                stroke-dasharray="157.14"
+                stroke-dashoffset="0"></circle>
+        <circle class="progressCircular__filledOutIndicator js-filledOutIndicator"
+                r="25"
+                cx="50%"
+                cy="50%"
+                fill="transparent"
+                stroke-dasharray="157.14"
+                stroke-dashoffset="0"></circle>
+    </svg>
+</div>
+                            <div class="flex-center flex-content-center card__percentage">
+                                <div class="card__percentageNumber"
+                                    data-percentage="79"></div>
+                                <div class="card__percentageUnit">booked</div>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+
+            <div class="card__actions">
+                <div class="card__action card__action--course button button--card js-cardActionText">View course</div>
+            </div>
+
+        </div>
+
+    </div>
+</a>
+                        </div>
+                    
+                    
+                                        <section class="getWeeklyInsightsSidebar js-getWeeklyInsightsSidebar panel hidePrint">
+    <h2 class="getWeeklyInsightsSidebar__header">Get weekly UX insights</h2>
+
+            <div class="getWeeklyInsightsSidebar__description">
+            Join <b>186,578 designers</b> who get useful UX tips from our newsletter.
+        </div>
+    
+    <form class="getWeeklyInsightsSidebar__form js-getWeeklyInsightsSidebar__form" action="/newsletter/subscribe" method="POST" data-abide>
+        <input type="hidden" name="mailing_listID" value="1">
+        <input type="hidden" name="_token" value="hMh1JqHpRm1e2uEAsWaK0k5w33xUhLZezeOJdWYV">
+
+        <div class="getWeeklyInsightsSidebar__input">
+            <input type="email" name="email" placeholder="Your email" title="Get weekly insights form" autocomplete="email" required>
+            <small class="error">A valid email address is required.</small>
+        </div>
+        <div class="getWeeklyInsightsSidebar__button">
+            <button class="button getWeeklyInsightsSidebar__submit" type="submit">Go</button>
+        </div>
+    </form>
+
+</section>
+                </div>
+            </aside>
+        </div>
+
+        <div class="ux-share-panel-bottom u-text-center hidePrint">
+            <div class="ux-share-panel-bottom__header">Make design better: share this article</div>
+            <div class="ux-share-panel-bottom__panel">
+                <div class="sharingPanel">
+    <div class="sharingPanel__shares">
+                <div class="sharingPanel__services">
+            <div class="sharingPanel__service">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.interaction-design.org/literature/article/preattentive-visual-properties-and-how-to-use-them-in-information-visualization%3Futm_source%3Dfacebook%26utm_medium%3Dshare-button%26utm_campaign%3D%252Fliterature%252Farticle%252Fpreattentive-visual-properties-and-how-to-use-them-in-information-visualization"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="sharingPanel__serviceIcon sharingPanel__serviceIcon--facebook js-shareLink"
+                   title="Facebook share button"></a>
+
+                <div class="sharingPanel__serviceShareCounter">349</div>
+            </div>
+            <div class="sharingPanel__service">
+                <a href="https://twitter.com/share?url=https://www.interaction-design.org/literature/article/preattentive-visual-properties-and-how-to-use-them-in-information-visualization%3Futm_source%3Dtwitter%26utm_medium%3Dshare-button%26utm_campaign%3D%252Fliterature%252Farticle%252Fpreattentive-visual-properties-and-how-to-use-them-in-information-visualization&text=Preattentive+Visual+Properties+and+How+to+Use+Them+in+Information+Visualization&hashtags=ux"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="sharingPanel__serviceIcon sharingPanel__serviceIcon--twitter js-shareLink"
+                   title="Twitter share button"></a>
+
+                <div class="sharingPanel__serviceShareCounter">174</div>
+            </div>
+            <div class="sharingPanel__service">
+                <a href="https://www.linkedin.com/shareArticle?url=https://www.interaction-design.org/literature/article/preattentive-visual-properties-and-how-to-use-them-in-information-visualization%3Futm_source%3Dlinkedin%26utm_medium%3Dshare-button%26utm_campaign%3D%252Fliterature%252Farticle%252Fpreattentive-visual-properties-and-how-to-use-them-in-information-visualization&title=Preattentive+Visual+Properties+and+How+to+Use+Them+in+Information+Visualization"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="sharingPanel__serviceIcon sharingPanel__serviceIcon--linkedin js-shareLink"
+                   title="LinkedIn share button"></a>
+
+                <div class="sharingPanel__serviceShareCounter">43</div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+
+    </section>
+    <div class="landing-section island island--fill background-gray-lighter">
+        <section class="ux-related-articles hidePrint">
+    <h1 class="heading heading--sectionHeading">What you should read next</h1>
+    <div class="ux-related-articles__items-with-sidebar">
+        <div class="ux-related-articles__items uxDaily__content">
+                            <a href="/literature/article/information-overload-why-it-matters-and-how-to-combat-it" title="Information Overload, Why it Matters and How to Combat It">
+
+    <div class="card js-card card--article  card--bigArticle   ">
+        <div class="card__inner">
+            <div class="card__header" data-title="Read article">
+                <img                         data-src="https://public-media.interaction-design.org/images/ux-daily/56cec73083edd.jpg"
+                                          alt="Information Overload, Why it Matters and How to Combat It">
+            </div>
+            <div class="card__contents">
+                <h2 class="card__title js-cardTitle truncate-3">Information Overload, Why it Matters and How to Combat It</h2>
+                <p class="card__copy truncate-2 ">
+                    Designers often need to convey information to the users of their designs. Specialists in information visualization design in particular find themselves presenting data over and over again to their users. However, it’s important when developing your designs that you don’t create “information overload” – that is presenting so much data that you le...
+                </p>
+
+                <ul class="card__copy inlineList inlineList--withSeparator u-text-condensed u-text-uppercase sm:hide">
+                    <li>204 shares</li>
+                    <li>5 days ago</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</a>
+                            <a href="/literature/article/how-to-design-an-information-visualization" title="How to Design an Information Visualization">
+
+    <div class="card js-card card--article  card--bigArticle   ">
+        <div class="card__inner">
+            <div class="card__header" data-title="Read article">
+                <img                         data-src="https://public-media.interaction-design.org/images/ux-daily/578c6af5a6115.jpg"
+                                          alt="How to Design an Information Visualization">
+            </div>
+            <div class="card__contents">
+                <h2 class="card__title js-cardTitle truncate-3">How to Design an Information Visualization</h2>
+                <p class="card__copy truncate-2 ">
+                    Designing information visualizations offers you endless possibilities when it comes to end products and it would be impossible to provide step-by-step instructions for all these possibilities. However, it is fair to say that while the end products may vary dramatically – the process by which we reach the best possible end product is consistently...
+                </p>
+
+                <ul class="card__copy inlineList inlineList--withSeparator u-text-condensed u-text-uppercase sm:hide">
+                    <li>243 shares</li>
+                    <li>3 months ago</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</a>
+                            <a href="/literature/article/information-visualization-a-brief-introduction" title="Information Visualization – A Brief Introduction">
+
+    <div class="card js-card card--article  card--bigArticle   ">
+        <div class="card__inner">
+            <div class="card__header" data-title="Read article">
+                <img                         data-src="https://public-media.interaction-design.org/images/ux-daily/56c320e655753.jpg"
+                                          alt="Information Visualization – A Brief Introduction">
+            </div>
+            <div class="card__contents">
+                <h2 class="card__title js-cardTitle truncate-3">Information Visualization – A Brief Introduction</h2>
+                <p class="card__copy truncate-2 ">
+                    Have you ever thought about how much data flows past each of us in an ordinary day? From the newspaper you read at breakfast, to the e-mails you receive throughout the day, to the bank statements generated whenever you withdraw money or spend it, to the conversations we have, and so on?
+There is a tidal wave of data associated with each aspect ...
+                </p>
+
+                <ul class="card__copy inlineList inlineList--withSeparator u-text-condensed u-text-uppercase sm:hide">
+                    <li>251 shares</li>
+                    <li>1 month ago</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</a>
+                            <a href="/literature/article/how-to-visualize-your-qualitative-user-research-results-for-maximum-impact" title="How to Visualize Your Qualitative User Research Results for Maximum Impact">
+
+    <div class="card js-card card--article  card--bigArticle   ">
+        <div class="card__inner">
+            <div class="card__header" data-title="Read article">
+                <img                         data-src="https://public-media.interaction-design.org/images/ux-daily/article_131004_hero_5a32b25514ca99.99475750.png"
+                                          alt="How to Visualize Your Qualitative User Research Results for Maximum Impact">
+            </div>
+            <div class="card__contents">
+                <h2 class="card__title js-cardTitle truncate-3">How to Visualize Your Qualitative User Research Results for Maximum Impact</h2>
+                <p class="card__copy truncate-2 ">
+                    When thinking about visualization of research results, many people will automatically have an image of a graph in mind. Do you have that image, too? You would be right in thinking that many research results benefit from a graph-like visualization, showing trends and anomalies. But this is mainly true for results from quantitative user research. ...
+                </p>
+
+                <ul class="card__copy inlineList inlineList--withSeparator u-text-condensed u-text-uppercase sm:hide">
+                    <li>325 shares</li>
+                    <li>2 weeks ago</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</a>
+                            <a href="/literature/article/visual-mapping-the-elements-of-information-visualization" title="Visual Mapping – The Elements of Information Visualization">
+
+    <div class="card js-card card--article  card--bigArticle   ">
+        <div class="card__inner">
+            <div class="card__header" data-title="Read article">
+                <img                         data-src="https://public-media.interaction-design.org/images/ux-daily/56d72687ceb28.jpg"
+                                          alt="Visual Mapping – The Elements of Information Visualization">
+            </div>
+            <div class="card__contents">
+                <h2 class="card__title js-cardTitle truncate-3">Visual Mapping – The Elements of Information Visualization</h2>
+                <p class="card__copy truncate-2 ">
+                    Information visualization requires mapping data in a visual or occasionally auditory format for the user of the visualization. This can be challenging because while some data has a spatial relationship built in (for example, temperatures in cities around a country) many data sets don’t have a traditional spatial relationship (for example, salari...
+                </p>
+
+                <ul class="card__copy inlineList inlineList--withSeparator u-text-condensed u-text-uppercase sm:hide">
+                    <li>243 shares</li>
+                    <li>4 days ago</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</a>
+                            <a href="/literature/article/how-to-conduct-focus-groups" title="How to Conduct Focus Groups">
+
+    <div class="card js-card card--article  card--bigArticle   ">
+        <div class="card__inner">
+            <div class="card__header" data-title="Read article">
+                <img                         data-src="https://public-media.interaction-design.org/images/ux-daily/57904f0975280.jpg"
+                                          alt="How to Conduct Focus Groups">
+            </div>
+            <div class="card__contents">
+                <h2 class="card__title js-cardTitle truncate-3">How to Conduct Focus Groups</h2>
+                <p class="card__copy truncate-2 ">
+                    Focus groups have long been a popular tool in market research and have become more popular in user research in the recent past too. They consist of a group of between 5 and 10 users who work with a moderator/facilitator/researcher. The moderator will pose questions from a script to the group. Their answers are recorded, sometimes by the moderato...
+                </p>
+
+                <ul class="card__copy inlineList inlineList--withSeparator u-text-condensed u-text-uppercase sm:hide">
+                    <li>140 shares</li>
+                    <li>3 weeks ago</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</a>
+                            <a href="/literature/article/the-properties-of-human-memory-and-their-importance-for-information-visualization" title="The Properties of Human Memory and Their Importance for Information Visualization">
+
+    <div class="card js-card card--article  card--bigArticle   ">
+        <div class="card__inner">
+            <div class="card__header" data-title="Read article">
+                <img                         data-src="https://public-media.interaction-design.org/images/ux-daily/56d2f1d5e2c0a.jpg"
+                                          alt="The Properties of Human Memory and Their Importance for Information Visualization">
+            </div>
+            <div class="card__contents">
+                <h2 class="card__title js-cardTitle truncate-3">The Properties of Human Memory and Their Importance for Information Visualization</h2>
+                <p class="card__copy truncate-2 ">
+                    It is important to know that while neuroscience has progressed dramatically over the last decades; there is no complete understanding of how human memory works. We know, for example, that data in the brain is stored in clusters of neurons but we don’t know how, precisely, it is stored or even how it is encoded. Thus when it comes to understandin...
+                </p>
+
+                <ul class="card__copy inlineList inlineList--withSeparator u-text-condensed u-text-uppercase sm:hide">
+                    <li>664 shares</li>
+                    <li>3 years ago</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</a>
+                            <a href="/literature/article/guidelines-for-good-visual-information-representations" title="Guidelines for Good Visual Information Representations">
+
+    <div class="card js-card card--article  card--bigArticle   ">
+        <div class="card__inner">
+            <div class="card__header" data-title="Read article">
+                <img                         data-src="https://public-media.interaction-design.org/images/ux-daily/56c3333ae122c.jpg"
+                                          alt="Guidelines for Good Visual Information Representations">
+            </div>
+            <div class="card__contents">
+                <h2 class="card__title js-cardTitle truncate-3">Guidelines for Good Visual Information Representations</h2>
+                <p class="card__copy truncate-2 ">
+                    Information visualization is not as easy as it might first appear, particularly when you are examining complex data sets. How do you deliver a “good” representation of the information that you bring out of the data that you are working with?While this may be a subjective area of information visualization and, of course, there are exceptions to t...
+                </p>
+
+                <ul class="card__copy inlineList inlineList--withSeparator u-text-condensed u-text-uppercase sm:hide">
+                    <li>319 shares</li>
+                    <li>5 months ago</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</a>
+                            <a href="/literature/article/how-to-show-hierarchical-data-with-information-visualization" title="How to Show Hierarchical Data with Information Visualization">
+
+    <div class="card js-card card--article  card--bigArticle   ">
+        <div class="card__inner">
+            <div class="card__header" data-title="Read article">
+                <img                         data-src="https://public-media.interaction-design.org/images/ux-daily/56d6bbdb9c633.jpg"
+                                          alt="How to Show Hierarchical Data with Information Visualization">
+            </div>
+            <div class="card__contents">
+                <h2 class="card__title js-cardTitle truncate-3">How to Show Hierarchical Data with Information Visualization</h2>
+                <p class="card__copy truncate-2 ">
+                    Hierarchical data is essentially a specialized form of network data – in that while entities within the dataset do not have dependent relationships; they are all related to each other by the principle of containment. They, unlike standard data networks, do not use the principle of connection.A hierarchy begins with a root entity. This might be t...
+                </p>
+
+                <ul class="card__copy inlineList inlineList--withSeparator u-text-condensed u-text-uppercase sm:hide">
+                    <li>403 shares</li>
+                    <li>1 year ago</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</a>
+                            <a href="/literature/article/information-visualization-who-needs-it" title="Information Visualization – Who Needs It?">
+
+    <div class="card js-card card--article  card--bigArticle   ">
+        <div class="card__inner">
+            <div class="card__header" data-title="Read article">
+                <img                         data-src="https://public-media.interaction-design.org/images/ux-daily/56d009772c4b0.jpg"
+                                          alt="Information Visualization – Who Needs It?">
+            </div>
+            <div class="card__contents">
+                <h2 class="card__title js-cardTitle truncate-3">Information Visualization – Who Needs It?</h2>
+                <p class="card__copy truncate-2 ">
+                    Jesse James Garrett, the information designer, says; &quot;What makes people passionate, pure and simple, is great experiences. If they have great experience with your product and they have great experiences with your service, they’re going to be passionate about your brand, they’re going to be committed to it. That’s how you build that kind of commi...
+                </p>
+
+                <ul class="card__copy inlineList inlineList--withSeparator u-text-condensed u-text-uppercase sm:hide">
+                    <li>295 shares</li>
+                    <li>10 months ago</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</a>
+                    </div>
+
+        <aside class="ux-related-articles__sidebar">
+            <section class="sidebar-widget panel">
+    <div class="panel__inner">
+        <h2 class="sidebar-widget__header heading heading--componentHeading js-componentHeading">Top articles</h2>
+        <ul class="out-bottom-none linkStrip js-linkStrip">
+                            <li class="linkStrip__item ux-top-articles-sidebar__list-item">
+                    <a class="linkStrip__link" href="/literature/article/5-stages-in-the-design-thinking-process" title="5 Stages in the Design Thinking Process">
+                        <div class="textItem">
+                            <span class="textItem__main">5 Stages in the Design Thinking Process</span>
+                            <span class="textItem__complementary u-text-uppercase">144 shares</span>
+                        </div>
+                    </a>
+                </li>
+                            <li class="linkStrip__item ux-top-articles-sidebar__list-item">
+                    <a class="linkStrip__link" href="/literature/article/bad-design-vs-good-design-5-examples-we-can-learn-frombad-design-vs-good-design-5-examples-we-can-learn-from-130706" title="Bad Design vs. Good Design: 5 Examples We can Learn From">
+                        <div class="textItem">
+                            <span class="textItem__main">Bad Design vs. Good Design: 5 Examples We can Learn From</span>
+                            <span class="textItem__complementary u-text-uppercase">215 shares</span>
+                        </div>
+                    </a>
+                </li>
+                            <li class="linkStrip__item ux-top-articles-sidebar__list-item">
+                    <a class="linkStrip__link" href="/literature/article/what-is-design-thinking-and-why-is-it-so-popular" title="What is Design Thinking and Why Is It So Popular?">
+                        <div class="textItem">
+                            <span class="textItem__main">What is Design Thinking and Why Is It So Popular?</span>
+                            <span class="textItem__complementary u-text-uppercase">332 shares</span>
+                        </div>
+                    </a>
+                </li>
+                            <li class="linkStrip__item ux-top-articles-sidebar__list-item">
+                    <a class="linkStrip__link" href="/literature/article/10-great-sites-for-ui-design-patterns" title="10 Great Sites for UI Design Patterns">
+                        <div class="textItem">
+                            <span class="textItem__main">10 Great Sites for UI Design Patterns</span>
+                            <span class="textItem__complementary u-text-uppercase">123 shares</span>
+                        </div>
+                    </a>
+                </li>
+                            <li class="linkStrip__item ux-top-articles-sidebar__list-item">
+                    <a class="linkStrip__link" href="/literature/article/personas-why-and-how-you-should-use-them" title="Personas – A Simple Introduction">
+                        <div class="textItem">
+                            <span class="textItem__main">Personas – A Simple Introduction</span>
+                            <span class="textItem__complementary u-text-uppercase">205 shares</span>
+                        </div>
+                    </a>
+                </li>
+                    </ul>
+    </div>
+</section>
+            <section class="sidebar-widget panel">
+    <div class="panel__inner">
+        <h2 class="sidebar-widget__header heading heading--componentHeading js-componentHeading">Top topics</h2>
+        <ul class="out-bottom-none linkStrip js-linkStrip">
+                            <li class="linkStrip__item ux-top-topics-sidebar__list-item">
+                    <a class="linkStrip__link" href="/literature/topics/ux-design" title="User Experience (UX) Design">
+                        <div class="textItem">
+                            <span class="textItem__main">User Experience (UX) Design</span>
+                        </div>
+                    </a>
+                </li>
+                            <li class="linkStrip__item ux-top-topics-sidebar__list-item">
+                    <a class="linkStrip__link" href="/literature/topics/human-computer-interaction" title="Human-Computer Interaction (HCI)">
+                        <div class="textItem">
+                            <span class="textItem__main">Human-Computer Interaction (HCI)</span>
+                        </div>
+                    </a>
+                </li>
+                            <li class="linkStrip__item ux-top-topics-sidebar__list-item">
+                    <a class="linkStrip__link" href="/literature/topics/ui-design" title="User Interface (UI) Design">
+                        <div class="textItem">
+                            <span class="textItem__main">User Interface (UI) Design</span>
+                        </div>
+                    </a>
+                </li>
+                            <li class="linkStrip__item ux-top-topics-sidebar__list-item">
+                    <a class="linkStrip__link" href="/literature/topics/usability" title="Usability">
+                        <div class="textItem">
+                            <span class="textItem__main">Usability</span>
+                        </div>
+                    </a>
+                </li>
+                            <li class="linkStrip__item ux-top-topics-sidebar__list-item">
+                    <a class="linkStrip__link" href="/literature/topics/design-thinking" title="Design Thinking">
+                        <div class="textItem">
+                            <span class="textItem__main">Design Thinking</span>
+                        </div>
+                    </a>
+                </li>
+                    </ul>
+    </div>
+</section>
+                            <section class="getWeeklyInsightsSidebar js-getWeeklyInsightsSidebar panel hidePrint">
+    <h2 class="getWeeklyInsightsSidebar__header">Get weekly UX insights</h2>
+
+            <div class="getWeeklyInsightsSidebar__description">
+            Subscribe to our newsletter for useful UX tips and resources.
+        </div>
+    
+    <form class="getWeeklyInsightsSidebar__form js-getWeeklyInsightsSidebar__form" action="/newsletter/subscribe" method="POST" data-abide>
+        <input type="hidden" name="mailing_listID" value="1">
+        <input type="hidden" name="_token" value="hMh1JqHpRm1e2uEAsWaK0k5w33xUhLZezeOJdWYV">
+
+        <div class="getWeeklyInsightsSidebar__input">
+            <input type="email" name="email" placeholder="Your email" title="Get weekly insights form" autocomplete="email" required>
+            <small class="error">A valid email address is required.</small>
+        </div>
+        <div class="getWeeklyInsightsSidebar__button">
+            <button class="button getWeeklyInsightsSidebar__submit" type="submit">Go</button>
+        </div>
+    </form>
+
+</section>
+                    </aside>
+
+    </div>
+</section>
+    </div>
+        </main>
+
+    <footer class="footer hidePrint" role="contentinfo">
+
+    <div class="container">
+
+        <div class="footer__inner">
+                            <div class="row out-bottom-large">
+    <img class="footer__logo" data-src="https://public-media.interaction-design.org/images/idf-logo-full-inverse.svg" alt="IDF Logo">
+    <p class="cols-md-7 cols-center out-top-medium">
+        The Interaction Design Foundation is a
+        17-year-old nonprofit community founded in Denmark.
+        <a href="/about">Our mission</a> is to lower the cost of design education.
+    </p>
+</div>
+
+<div class="island island--fill footer__separator"></div>
+
+<div class="wrapper col-md-2 out-bottom-large">
+    <div>
+        <h4 class="h1 u-text-condensed u-text-bold">Connect with us</h4>
+<p class="out-bottom-small">
+    Reach us at <a href="mailto:hello@interaction-design.org">hello@interaction-design.org</a>
+    or through our
+    <a class="u-nowrap" href="/about/contact"
+       title="Contact the Interaction Design Foundation"
+    >online contact form</a>.
+</p>
+
+<div class="socialLinks socialLinks--white">
+    <a class="socialLinks__item" href="https://www.facebook.com/interactiondesign.org" target="_blank" rel="noopener noreferrer">
+        <span class="visually-hidden">Facebook page</span>
+        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                        </span>
+    </a>
+
+    <a class="socialLinks__item" href="https://twitter.com/interacting" target="_blank" rel="noopener noreferrer">
+        <span class="visually-hidden">Twitter page</span>
+        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span>
+    </a>
+
+    <a class="socialLinks__item" href="https://www.pinterest.com/ixdfoundation/" target="_blank" rel="noopener noreferrer">
+        <span class="visually-hidden">Pinterest page</span>
+        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
+                        </span>
+    </a>
+
+    <a class="socialLinks__item" href="https://www.linkedin.com/company/interaction-design-org-foundation" target="_blank" rel="noopener noreferrer">
+        <div class="visually-hidden">Linkedin page</div>
+        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                        </span>
+    </a>
+
+    <a class="socialLinks__item" href="https://www.instagram.com/interaction_design_foundation" target="_blank" rel="noopener">
+        <span class="visually-hidden">Instagram page</span>
+        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                        </span>
+    </a>
+</div>
+
+<p class="out-top-medium">
+    Have questions? Check our <a href="/faq">frequently&nbsp;asked&nbsp;questions</a>.
+</p>
+    </div>
+    <div>
+        <h4 class="h1 u-text-condensed u-text-bold">Get Inspired Weekly</h4>
+<p>
+    Join <span class="js-subscriberCount">186,578</span> designers and get our
+    <a class="u-nowrap" href="/newsletter" title="Design Tips">weekly inspiration and design tips</a> in your inbox.
+</p>
+
+<form action="/newsletter/subscribe" method="POST" data-abide data-test="newsletterSubscription">
+    <input type="hidden" name="_token" id="csrf-token" value="hMh1JqHpRm1e2uEAsWaK0k5w33xUhLZezeOJdWYV"/>
+    <input type="hidden" name="mailing_listID" value="1">
+    <div class="form__field">
+        <div class= "inputGroup">
+            <label for="email-for-subscription" class="visually-hidden">Email</label>
+            <input name="email" type="email" id="email-for-subscription" data-abide-validator="email" placeholder="Your email" autocomplete="email" title="Subscription form" required aria-invalid="false"/>
+            <div class="inputGroup__addon inputGroup__addon--noBorder">
+                <button type="submit" class="button">Subscribe</button>
+            </div>
+        </div>
+        <small class="error">Please write a valid email address.</small>
+    </div>
+</form>
+    </div>
+</div>
+
+<div class="island island--fill footer__separator"></div>
+
+<div class="wrapper col-md-4 footer__sitemapLinks">
+    <div>
+        <h4 class="h1 u-text-condensed u-text-bold">UX Courses</h4>
+        <ul>
+            <li><a href="/courses#beginner-courses">Beginner UX Courses</a></li>
+            <li><a href="/courses#intermediate-courses">Intermediate UX Courses</a></li>
+            <li><a href="/courses#advanced-courses">Advanced UX Courses</a></li>
+        </ul>
+    </div>
+    <div>
+        <h4 class="h1 u-text-condensed u-text-bold">Community</h4>
+        <ul>
+            <li><a href="/community">Local Groups</a></li>
+                            <li>
+                    <a href="https://www.interaction-design.org/bootcamps/get-a-new-job-in-ux-design">
+                        Get a job in UX
+                    </a>
+                </li>
+                    </ul>
+    </div>
+    <div>
+        <h4 class="h1 u-text-condensed u-text-bold">Literature</h4>
+        <ul>
+            <li><a href="/literature/article/overview">UX Daily Articles</a></li>
+            <li><a href="/literature/topics">UX Topics</a></li>
+            <li><a href="/literature/book/overview">IDF UX Books</a></li>
+        </ul>
+    </div>
+    <div>
+        <h4 class="h1 u-text-condensed u-text-bold">About IDF</h4>
+        <ul>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/about/people-behind">The People Behind</a></li>
+            <li><a href="/about/contact">Contact Us</a></li>
+            <li><a href="/about/careers">Careers</a></li>
+        </ul>
+    </div>
+</div>
+                    </div>
+
+    </div>
+    <div class="footer__links">
+    <div class="container">
+        <ul class="inlineList inlineList--center">
+            <li><a href="/about/terms-of-use">Terms of Use / Privacy</a></li>
+            <li class="hideMinimalLayout">
+                <button class="button-link" type="button" data-reveal-id="freeEbookDialog">What is UX Design?</button>
+                            </li>
+                            <li>
+                    <a href="https://www.interaction-design.org/bootcamps/get-a-new-job-in-ux-design">
+                        Want a new job in UX?
+                    </a>
+                </li>
+                    </ul>
+    </div>
+</div>
+</footer>
+
+
+
+</div>
+
+<div class="dialogOverlay" id="dialogOverlay" aria-hidden="true">
+            <script type="text/template" id="roadblockModal_template" >
+    <div
+        id="roadblockModal" class="modal " role="dialog" tabindex="0"
+        aria-hidden="true" aria-labelledby=""
+        
+        
+        
+        
+    >
+                    <button type="button" class="modal__buttonClose js-closeModal" aria-label="Close dialog">×</button>
+        
+        <div class="js-modalContent">
+                            <h2 class="modal__title js-modalTitle">New to UX Design? We're giving you a free ebook!</h2>
+            
+                            <div class="modal__body"><div class="row">
+    <div class="cols-md-4 in-right-none sm:in-none sm:center">
+        
+        <img class="roadblock__productImage"
+             alt="The Basics of User Experience Design"
+             data-src="https://public-media.interaction-design.org/images/book-covers/basics-of-ux-design.png">
+    </div>
+
+    <div class="cols-md-8">
+        <p>
+            Download our free ebook <b><i>The Basics of User Experience Design</i></b> to learn about core concepts in UX design.
+        </p>
+
+        <p class="sm:hide">
+            In 9 chapters, we'll cover: conducting user interviews,
+            design thinking, interaction design, mobile UX design,
+            usability, UX research, and many more!
+        </p>
+
+        <form method="POST" action="/newsletter/subscribe-for-ebook" data-abide>
+            <input type="hidden" name="_token" value="hMh1JqHpRm1e2uEAsWaK0k5w33xUhLZezeOJdWYV">
+            <input type="hidden" name="mailing_listID" value="48">
+            <div class="form__field">
+                <div class="inputGroup">
+                    <input
+                           name="email"
+                           type="email"
+                           placeholder="Enter your email address"
+                           title="Enter your email address"
+                           data-abide-validator="email"
+                           required
+                           autofocus
+                           autocomplete="email">
+                    <div class="inputGroup__addon sm:hide">
+                        <button class="button" type="submit">Download free ebook</button>
+                    </div>
+                </div>
+                <small class="error">A valid email address is required.</small>
+            </div>
+            <div class="out-top-small">
+                <input type="hidden" name="subscribe-newsletter" value="0">
+<div class="checkboxHint">
+    <input type="checkbox" class="checkboxHint__checkbox" name="subscribe-newsletter" value="1"
+    id="n5slK5ujOjYbrwBe"
+    checked  />
+    <label for="n5slK5ujOjYbrwBe">
+        Receive free UX design learning material every week
+    </label>
+    <div class="arrowPointingMessage checkboxHint__message">
+        
+        <img class="in-none image image--tiny" data-src="https://public-media.interaction-design.org/images/free-email-courses/arrow-newsletter-checkbox.svg">
+        <div class="arrowPointingMessage__message">
+            <i>Our ad-free newsletter is followed by <strong>186,578 designers</strong> — sure you don’t want to receive it?</i>
+        </div>
+    </div>
+</div>
+            </div>
+
+            <div class="form__controls">
+                <button class="button button--block sm:show" type="submit">Download free ebook</button>
+            </div>
+        </form>
+    </div>
+</div></div>
+            
+                    </div>
+    </div>
+</script>
+        
+                        <script type="text/template" id="freeEbookDialog_template" >
+    <div
+        id="freeEbookDialog" class="modal " role="dialog" tabindex="0"
+        aria-hidden="true" aria-labelledby=""
+        
+        
+        
+        
+    >
+                    <button type="button" class="modal__buttonClose js-closeModal" aria-label="Close dialog">×</button>
+        
+        <div class="js-modalContent">
+                            <h2 class="modal__title js-modalTitle">New to UX Design? We're giving you a free ebook!</h2>
+            
+                            <div class="modal__body"><div class="row">
+    <div class="cols-md-4 in-right-none sm:in-none sm:center">
+        
+        <img class="roadblock__productImage"
+             alt="The Basics of User Experience Design"
+             data-src="https://public-media.interaction-design.org/images/book-covers/basics-of-ux-design.png">
+    </div>
+
+    <div class="cols-md-8">
+        <p>
+            Download our free ebook <b><i>The Basics of User Experience Design</i></b> to learn about core concepts in UX design.
+        </p>
+
+        <p class="sm:hide">
+            In 9 chapters, we'll cover: conducting user interviews,
+            design thinking, interaction design, mobile UX design,
+            usability, UX research, and many more!
+        </p>
+
+        <form method="POST" action="/newsletter/subscribe-for-ebook" data-abide>
+            <input type="hidden" name="_token" value="hMh1JqHpRm1e2uEAsWaK0k5w33xUhLZezeOJdWYV">
+            <input type="hidden" name="mailing_listID" value="48">
+            <div class="form__field">
+                <div class="inputGroup">
+                    <input
+                           name="email"
+                           type="email"
+                           placeholder="Enter your email address"
+                           title="Enter your email address"
+                           data-abide-validator="email"
+                           required
+                           autofocus
+                           autocomplete="email">
+                    <div class="inputGroup__addon sm:hide">
+                        <button class="button" type="submit">Download free ebook</button>
+                    </div>
+                </div>
+                <small class="error">A valid email address is required.</small>
+            </div>
+            <div class="out-top-small">
+                <input type="hidden" name="subscribe-newsletter" value="0">
+<div class="checkboxHint">
+    <input type="checkbox" class="checkboxHint__checkbox" name="subscribe-newsletter" value="1"
+    id="29zKTzot9vNnFpjd"
+    checked  />
+    <label for="29zKTzot9vNnFpjd">
+        Receive free UX design learning material every week
+    </label>
+    <div class="arrowPointingMessage checkboxHint__message">
+        
+        <img class="in-none image image--tiny" data-src="https://public-media.interaction-design.org/images/free-email-courses/arrow-newsletter-checkbox.svg">
+        <div class="arrowPointingMessage__message">
+            <i>Our ad-free newsletter is followed by <strong>186,578 designers</strong> — sure you don’t want to receive it?</i>
+        </div>
+    </div>
+</div>
+            </div>
+
+            <div class="form__controls">
+                <button class="button button--block sm:show" type="submit">Download free ebook</button>
+            </div>
+        </form>
+    </div>
+</div></div>
+            
+                    </div>
+    </div>
+</script>
+                        <script type="text/template" id="confirmationModal_template" >
+    <div
+        id="confirmationModal" class="modal " role="dialog" tabindex="0"
+        aria-hidden="true" aria-labelledby=""
+        
+        
+        
+        
+    >
+                    <button type="button" class="modal__buttonClose js-closeModal" aria-label="Close dialog">×</button>
+        
+        <div class="js-modalContent">
+            
+                            <div class="modal__body"><h2 class="modal__title js-modalTitle">{title}</h2>
+
+    <div class="modal__body"><p>{message}</p></div>
+
+    <div class="modal__footer"><div class="form__controls">
+            <button class="{confirmButtonClass} js-closeModal js-confirm">{confirmButton}</button>
+            <button class="{cancelButtonClass} js-closeModal js-cancel">{cancelButton}</button>
+        </div></div></div>
+            
+                    </div>
+    </div>
+</script>
+    <script type="text/template" id="customModal_template" >
+    <div
+        id="customModal" class="modal " role="dialog" tabindex="0"
+        aria-hidden="true" aria-labelledby=""
+        
+        
+        
+        
+    >
+                    <button type="button" class="modal__buttonClose js-closeModal" aria-label="Close dialog">×</button>
+        
+        <div class="js-modalContent">
+            
+                            <div class="modal__body"></div>
+            
+                    </div>
+    </div>
+</script>
+    <script type="text/template" id="ajaxModal_template" >
+    <div
+        id="ajaxModal" class="modal " role="dialog" tabindex="0"
+        aria-hidden="true" aria-labelledby=""
+        
+        
+        
+        
+    >
+                    <button type="button" class="modal__buttonClose js-closeModal" aria-label="Close dialog">×</button>
+        
+        <div class="js-modalContent">
+            
+                            <div class="modal__body"></div>
+            
+                    </div>
+    </div>
+</script>
+
+
+<script type="text/template" id="dialogLoader_template">
+    <div class="spinner">
+        <div class="spinner__bowlRing spinner__bowlRing--gray">
+            <div class="spinner__ballHolder">
+                <div class="spinner__ball spinner__ball--gray"></div>
+            </div>
+        </div>
+    </div>
+    <div class="flex-center-contents flex-center in-top-small">Loading...</div>
+</script>
+</div>
+<script src="//cdn.polyfill.io/v2/polyfill.min.js?features=default-3.6,fetch,Array.prototype.find,Array.prototype.includes,Array.prototype.findIndex" nomodule defer></script>
+<script src="https://assets.interaction-design.org/manifest.js?id=ec1ef9a9ddd7d658c668" defer></script>
+<script src="https://assets.interaction-design.org/js/vendor.js?id=073aba85397416611425" defer></script>
+<script src="https://assets.interaction-design.org/js/app.js?id=c1a56e798b18d287ad19" defer></script>
+
+    <script src="https://assets.interaction-design.org/js/components/socialSharing.js?id=bb68c583f7899a3c06c6" defer></script>
+    <script src="https://assets.interaction-design.org/js/components/socialSharing.js?id=bb68c583f7899a3c06c6" defer></script>
+        <script src="https://assets.interaction-design.org/js/pages/__roadblock.js?id=8168159842f0c7a0d7cc" defer></script>
+        <script src="https://assets.interaction-design.org/js/pages/publications/publication.js?id=98ae0e493ffa1a50daeb" defer></script>
+</body>
+</html>

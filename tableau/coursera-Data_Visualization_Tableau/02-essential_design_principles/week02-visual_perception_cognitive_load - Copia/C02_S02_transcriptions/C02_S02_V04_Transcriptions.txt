@@ -1,0 +1,116 @@
+[MUSIC] Welcome back. Colin Ware, who wrote the book
+Information Visualization Perception for Design, talked about a hawk
+flying admits a flock of pigeon. The hawk stands out since it's
+only against a flock of pigeons. But if there were more than
+just pigeons and other types of birds within that flock, then it becomes
+harder and harder to spot only the hawk. This is the same idea with data. We need to make it clear
+what we're showing. We need to make it clear to the reader. If we want the audience to
+see something in our visual, we need to make sure that
+they can actually see it. And so in this lesson I'm going to show
+you contrasting visualizations that have all the information, but
+is too cluttered for the audience to see. After this lesson, you will be
+able to recognize the need for and apply contrast to your visualizations. So, let's have some fun. I worked up a small, fictional data
+set from a comparative study of survey results from six colleges
+across the United States. The survey results are in and there's a weighted index of all
+the questions based on five categories. These five categories are job placement,
+campus life, diversity, advising and
+course availability. The weighted performance
+index is the only data that the survey administrator gave you. In other words, it's a pre-calculated
+metric that summarizes all of the data. The lower the number,
+the worse the performance is. The higher number,
+the better the performance is. It's straightforward to graph the results,
+as I've done. Take a moment and see if you can explain how our
+college is doing versus the others. You can hit pause, take your time, then
+hit play when you're ready to continue. When you quickly look at the chart,
+it looks kind of interesting. And the reason it's interesting is that
+all of the information is in one spot, in one chart. And you can do some comparisons. For example, I can see The X,
+which is college C, and it has almost all of
+its scores below zero. But where is our college? The blue diamond? It's evident in some columns,
+but not in others. So in this case,
+interesting is not effective. But before I going to what
+I think is wrong with this, I actually want to ask you. How do you feel about what I've
+done here with this graph? I've already kind of said,
+is it effective? But think about why. Why is it,
+why am I saying it's not effective? Or why do you disagree? Why do you think maybe it is effective. The next question I have is, does it meet
+the threshold of the Gestalt Principles that we discussed in the last lesson? Now it's okay to say no actually,
+because I agree with you 100%. All of the information is there, but
+it's just very difficult to figure out. Plus, some of the values, and I think
+that's where the issue with the hours, the blue diamond is. Some of the value are very
+similar to others, so I can't tell those that almost
+have the same scores as others. Now I did that on purpose. Remember I said that
+this is a fake data set. And the reason is that I wanted to give
+you an example of a situation where we have all the information. We do have a fairly interesting
+looking graph visualization, it has all the information there. There's some information
+that you can glean. But, there's some major flaws in it. And what I'm going to do here is show you
+an example of how it can be improved. There's more than one way
+it can be improved, but I wanted to show you one way that
+we can improve this to be able to take this information and
+make it useful for the reader. There's a better way. And the better way hardly
+takes any more time. And this is it. But what it does do is take into account
+the importance of how we can use the contrast to be able to identify
+exactly what we need to identify for our needs. And more importantly,
+for the reader's needs. And it takes into account all of the
+research around the Gestalt Principles. All the research around cognitive load,
+all the discussions of trying to eliminate clutter, and
+to minimize that cognitive load. So we're going to be very
+systematic about this. And remember that we should not expect
+the users of this visualization to know the data as well as you do. It's your job to know the data. The user experience must be to get at the
+data quickly so that they can do their job and make decisions based on
+the information you provide. Remember that I said earlier that
+the information was not a raw data, but was indexed to allow
+comparisons across colleges. We often have to deal with data like this. We'd love to have the raw data. But if we're comparing competitors, we will often only be given a small amount
+of information, because they don't want to reveal raw data from other institutions. But because it's index information, we can
+carefully re-index this to meet our needs. Now I should pause here to say that this
+is one possible way to be strategic in the use of contrast. Perhaps you could try your own method. But I'm going to re-index, because
+it's a comparison using another index. So the index was based on a scale
+from negative 1.5 to positive 1.5. So all I did was rescale it so that the lowest you can go is zero and
+the highest you can go is three. I do this by simply adding
+1.5 to every one of the values above so
+that everything is positive. That keeps every measure
+at the same relative level. Now, instead of this sort of
+quasi scatter plot that I did for the previous graph,
+I'm going to use a horizontal bar graph. And the reason I'm using that is that
+is the best graph at really being able to quickly see differences between
+categories of information. Horizontal bar graphs are widely used and
+almost everyone knows how to interpret it. So here it is. But there's really no contrast here. It's all just a bunch of different colors. We want to be strategic
+in the use of contrast. What we want to know is how we,
+in our college, are doing versus the other colleges
+which are A, B, C, D, and E. And so what I did here was
+put the other colleges A, B, C, D, E in gray and
+our college is a green. And so it is very clear now. Our college is in green and
+it's always at the top. It's not ordered based on the largest or
+the smallest or alphabetical order. It's our college. And our college followed by E, D, C, B, A. It doesn't change, no matter the category. And so we can very quickly
+look at how we're doing. But it's still not quite enough. So what I did here was just to
+add some text to help the reader. And say, okay, especially for
+things such as job placement. You could see that our college
+was number one out of six. But if you didn't have that text in there,
+it's a little bit harder to see. You kind of have to really spend
+a lot of time figuring out that we're at number one on that. And so it's just helping the reader
+being able to see what's going on. The text is very important, because if you
+didn't put that in there, as i just said. It's kind of hard to tell, because the
+values are often fairly close together. But it gives you a very quick snap shot. And this allows the consumer of
+the information to say, okay we have this information and we can address it instead
+of saying, what is this data saying? What is it saying? Let me try to figure this out. Instead it's like, okay, we have this
+information, let's move to next step. We can say,
+we're really doing well in job placement. What did we do that we're doing so
+well in job placement on? And in contrast, we can look at course
+availability and say, my goodness, we're in last place. What does that mean? Why is that? How can we improve, if you want
+to improve to get our score up? What can we do to do that? Those are questions that are actionable,
+that someone who is the consumer of the information can
+look at and just very quickly do. Instead of them having to
+figure out from the graph and trying to discern, you know, what is. Are we number one or number two? Just instead, just tell him. And so it really moves us, again,
+into this actionable type of information. And it's so essential. And really, the fundamentals. And it's the fundamental
+aspect of data visualization. So what this graph is
+exactly saying is that we're taking color and we're just adding
+it to the information that we need. And we're doing a very clear carefully. And we're using that bold color to
+differentiate from the other items that we want to show, but
+we don't need to highlight. So we show the other information. We're not hiding that information,
+by no means. We're actually showing that information,
+but it's in the background, as it were. And so this is what we discussed
+about how we should avoid those brightened bold colors or
+too much overusing colors. And we should use it
+strategically instead of just using vivid colors for
+every single college. Instead, we use it just for ours. And the other ones don't have any
+colors at all, which is totally fine. A pre-attentive attribute
+of visualization. So how do we tackle it? And we're going to have a big decluttering
+exercise that we're going to go through. So stay tuned. Thank you.
