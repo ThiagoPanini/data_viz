@@ -1,0 +1,200 @@
+<!doctype html public "-//W3O//DTD W3 HTML 2.0//EN">
+<HTML><HEAD>
+<link rel="stylesheet" href="gallery.css" type="text/css">
+<TITLE>Gallery of Data Visualization - Missed Opportunities and Graphical Failures</TITLE>
+<script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=WYGLG-fIrtl999hUHhf13W1yzIXCuVEqDJ-paVsE5_UxmoJB52tMGc2jMS5wNU--PQMj4ViaPfAwIWwVhlHwNpN6a-xdwZL-TZzjOe6hI_A" charset="UTF-8"></script></HEAD>
+<BODY>
+<!-- new section -->
+
+<center>
+	<img src="icons/dartboard.gif" width=87 height=90 vspace=8 hspace=8 align="center">
+	<b><font color="red" size="+3">Darts</font></b>
+	<img src="icons/dartboard.gif" width=87 height=90 vspace=8 hspace=8 align="center">
+</center>
+
+<h2> <img src="icons/thumbdn.gif" width=25 height=19>
+<A NAME="MissedOpportunities">Missed Opportunities and Graphical Failures</A>
+</h2>
+<div class="precept">
+One virtue of a good graphical display is to allow us to see patterns,
+trends, or other structures which would otherwise be concealed in another
+form of display.
+It may be heartbreaking to find out that some important information
+was there, but the graph maker missed it.
+The story behind the <em>Challenger Disaster</em> is perhaps the most poignant
+ missed opportunity in the history of statistical graphics.
+But such graphical failures often provide useful lessons.
+</div>
+<p>
+
+<table border=1>
+<tr bgcolor="#FFFFC0">
+<th width=160>Picture</th>
+<th>Words</th>
+
+<tr>
+<td><a href="images/nasach.gif"><IMG SRC="icons/nasach.gif" alt="NASA Challenger image"></a>
+</td>
+<td><b>The Challenger Disaster</b> <a href="images/nasach.gif">Full size (451x228)</a> [3K].
+<p>
+The Space Shuttle Challenger exploded shortly after take-off in January 1986.
+Subsequent investigation determined that the cause was failure of the O-ring
+seals used to isolate the fuel supply from burning gases.
+This figure (scanned badly from Wainer, 1995) shows a graph accompanying
+the <cite>Report of the Presidential Commission on the Space Shuttle Challenger
+Accident</cite>, 1986 (vol 1, p. 145) in the aftermath of the disaster.
+<p>
+NASA staff had analysed the data on the relation between ambient temperature
+and number of O-ring failures (out of 6), but they had excluded observations
+where no O-rings failed, believing that they were uninformative.
+Unfortunately, those observations had occurred when the launch temperature
+was relatively warm (65-80 degF). 
+</td>
+</tr>
+
+<tr>
+<td><a href="images/nasa.gif"><IMG SRC="icons/nasa.gif"></a>
+</td>
+<td><b>The Challenger Disaster</b> <a href="images/nasa.gif">Full size (494x424)</a>[4K].
+<p>
+Reanalysis of the O-ring data 
+involved fitting a logistic regression model.
+This
+provides a predicted extrapolation (black curve) of the probability of failure
+to the low (31 degF) temperature at the time of the launch and confidence bands
+on that extrapolation (red curves).
+See also Tappin, L. (1994). "Analyzing data relating to the Challenger disaster".
+<cite>Mathematics Teacher</cite>, 87, 423-426
+<p>
+There's not much data at low temperatures (the confidence band is quite wide),
+but the predicted probability of failure is uncomfortably high.
+Would you take a ride
+on Challenger when the weather is cold?
+<p>
+See also:  Gary McClelland's 
+<a href="http://samiam.colorado.edu/~mcclella/ftep/shuttle.html">Graphs on the Web: Challenger Story</a>, with a Java applet
+
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="images/nasa01.gif"><IMG SRC="images/nasa01.gif" width=160></a><br>
+<a href="images/nasa02.gif"><IMG SRC="images/nasa02.gif" width=160></a>
+</td>
+<td><b>But, what if they had made a better graph?</b> 
+<a href="images/nasa01.gif">Initial graph, full size (525x263)</a>[4K];
+<a href="images/nasa02.gif">Re-designed graph, full size (525x269)</a>[4K].
+<p>
+The original graph was prepared by engineers from the contractor,
+Morton Thiokol, and it is perhaps unreasonable to expect that a
+sophistocated statistical analysis of the data should have been
+carried out, given the time pressure for a launch / no-launch decision.
+<p>
+Nevertheless, it is of interest to ask whether a re-design of the original
+graph might have signalled that something was amiss.  Apart from the
+disasterous blunder of omitting the observations with 0 failures,
+two steps,<br>
+&nbsp;&nbsp;&nbsp;1. drawing a smoothed curve to fit the points (to show the trend)<br>
+&nbsp;&nbsp;&nbsp;2. removing the background grid lines (which obscure the data)<br>
+gives a graph which should have caused any engineer to conclude that
+either (a) the data were wrong, or (b) there were excessive risks
+associated with both high and low temperatures.  [But it is well-known
+that brittleness of the rubber used in the O-rings is inversely
+proportional to (temp)<sup>3</sup>.]
+See also:  Gary McClelland's 
+<a href="http://samiam.colorado.edu/~mcclella/ftep/shuttle.html">Graphs on the Web: Challenger Story</a>, with a Java applet.
+
+</td>
+</tr>
+
+<tr><a name="playfair"></a>
+<td>
+	<a href="images/playfair-wheat1.gif"><img width=160 src="images/playfair-wheat1.gif"></a><br>
+	<a href="images/wheat1.gif"><img width=160 src="images/wheat1.gif"></a><br>
+	<a href="images/wheat-wages-scat.jpg"><img width=160 src="images/wheat-wages-scat.jpg"></a><br>
+</td>
+<td><b>Playfair's Charts, revisited</b> 
+ <a href="images/playfair-wheat1.gif">Prices, wages and reigns, Full size</a> (504x267) [109K];
+ <a href="images/wheat1.gif">Re-drawn as ratios, Full size</a> (800 x 600; 7.3K);
+ <a href="images/wheat-wages-scat.jpg">Re-drawn as scatterplot, Full size</a> (674 x 646; 65K);
+
+<p>
+William Playfair's charts are often considered as examples of graphical
+excellence, but a close examinination shows that this chart must be counted
+as a graphical failure, and also as a graphical sin.
+<p>
+He shows here three time series--- weekly wages (of a "good mechanic"),
+prices (of a quarter of wheat), and reigns of British monarchs.
+The graphical sin is that he used separate scales for wages (0-100)
+and prices (0-30).  The relationship between these two would change
+dramatically if either was re-scaled (e.g., daily or monthly wages).
+<p>
+The graphical failure is both more subtle and profound. Playfair wished to 
+compare wages and prices, and conclude
+from this chart that
+<q><i>never at any former period was wheat so cheap,
+in proportion to mechanical labour, as it is at the
+present time.</i></q>
+<p>
+But, what the graph  actually shows <em>directly</em> is quite different. The strongest
+visual message is that wages remained relatively stable (increasing very slowly up to the reign of Queen Anne and at a
+somewhat greater rate thereafter), while the price of wheat  varied greatly. 
+The inference that wages increased relative to prices toward the end is at best
+indirect and not visually compelling.
+<p>
+The re-drawn version plots the ratio of prices / wages directly, and shows directly
+that that workers became increasingly better off over time, exactly the message he tried, unsuccessfully, to convey.
+Moreover, it shows something more-- the ratio of prices/wages declined, but at a decreasing rate.
+<p>
+Howard Wainer drafted the second revision of Playfair's chart as a scatterplot, but with 
+clusters of time periods and helpful annotations
+to make the message of the graph abundantly clear, even without a figure caption
+(a good test for any presentation graphic).  It's gratifying to be able to teach an old master a thing or
+two sometimes.
+See our paper <cite><a href="/SCS/Papers/NobodysPerfect.pdf">Nobody's Perfect</a></cite>
+appearing in <cite>Chance</cite>, V.17(2).  
+ 
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="images/nyt-04happy-top.jpg"><IMG SRC="images/nyt-04happy-top-sm.jpg" width=160></a>
+</td>
+<td><b>What's wrong with this picture?</b> 
+<a href="images/nyt-04happy-top.jpg">Happiness graph, full size </a>;
+<a href="images/nyt-04happy-full.jpg">Full NYT graphic </a>.
+<p>
+The New York Times is usually a paragon of graphic portrayal of quantitative information.
+Here is one case where they got it wrong, but the reasons are subtle and technical for
+a newspaper graphic designer.
+<p>
+The goal of the graphic was to present results of a poll of happiness 
+from the World Values Survey project of people
+throughout the world in relation to economic status, as measured by GNP per capita.
+The graph carefully identified all the countries in this scatterplot, but then singled
+out a collection with low GNP and high happiness scores, saying <cite>Many countries,
+particularly those in Latin America, had higher marks for happiness than their economic
+situation would predict.</cite>
+<p>
+The main thing that is wrong here is the conclusion, based on the assumption that happiness
+should be linearly related to GNP. But the graph, and most analyses of such data cries out
+for GNP to be re-expressed on a log scale, so that happiness is being linearly related to multiples
+of GNP, rather than to constant increments.
+<p>
+<strong>Skill testing question</strong>:  Without doing the conversion, which countries stand out as unusualy happy
+or unhappy, given their log(GNP)?
+</td>
+</tr>
+
+</table>
+<hr>
+<script language="JavaScript">
+<!--
+        document.write("Updated " + document.lastModified);
+// -->
+</script>
+
+</BODY>
+</HTML>

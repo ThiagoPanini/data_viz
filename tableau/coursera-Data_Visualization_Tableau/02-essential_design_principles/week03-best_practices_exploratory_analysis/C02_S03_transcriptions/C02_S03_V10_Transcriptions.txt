@@ -1,0 +1,95 @@
+[MUSIC] All right. For this final lesson in this mini module,
+we're going to explore data a bit more using visualizations while
+also getting more fluent with Tableau. As I mentioned before,
+we're going to work with Tableau and take on a bit of a challenge but
+it's going to be a lot of fun, so hang in there and let's enjoy this. For this lesson we're going to construct
+something called a control chart. A control chart is a way to see how well
+we're doing based on standard deviations, it's a good way to see if
+things are going okay or if there's a problem we
+should be worried about. It's about finding errors and
+understanding the range of our data. Now, before we dive right in, let me
+tell you briefly about the history of control charts, as I think
+you'll find it very interesting. They were used way back
+before World War II. But they really got going in Japan
+after the war where it has been and was very widely used to minimize
+errors in manufacturing. If something was outside of the norm,
+usually two standard deviations, it's a potential problem and
+it needs to be looked at in detail. So they would actually
+stop the assembly line and try to address the problem
+before they continued. This has been studied in detail and has
+shown as a result Japanese manufacturing became extremely reliable and had that
+competitive edge because they were able to do this very simple thing,
+using these control charts. You can apply a lot of these concepts to
+other types of visualization in your life, and throughout the specialization. Okay, let's do this. We're, again, going to look at profits,
+so if you don't have it open already, please open the sale superstore
+data set that we've used before. Here is what it's going to
+look like when we're all done. Looks pretty cool actually. In our new sheet, drag the order
+date columns and profit rows. Make sure that the date field is
+changed to Month like I'm doing here. So, you should see what almost
+looks like a scatter plot. But it is not a scatter plot. Don't think of it that way. Definitely not a scatter plot. A scatter plot shows
+the relationship between two fields. This type of visualization shows
+us values that lie outside of different standard deviations. So now comes the challenging and fun part. We're going to add information that will
+allow us to examine the data quickly and identify any potential
+issues very quickly. And possible explore new avenues of
+explanatory analysis down the road. So what we're doing now is exploratory. And so to do this we're going to
+introduce what's called a parameter. Now, my colleague is going to do a ton of
+detail and parameters in the next course. So I don't want to go
+into all these details. This is going to do a great job of really
+setting all of this stuff up for you. I'll give you a little primer on it and maybe you can start to
+apply it a little bit. But his explanation will further
+clarify any issues that crop up. So let's go through the steps
+on doing this parameter, so right click, create a parameter, call it
+standard deviations, as I'm doing here. We want to have an integer with
+an allowable range of 1 to 6. And so the parameter, again,
+is named standard deviations. And we're going to set the integer
+with an allowable range of 1 to 6. Hit OK. Then will click the drop down and
+then show parameter control. There's actually nothing setup yet. This is just the parameter itself, but
+we have to feed the parameter information. The information will feed
+in from calculated fields. There are two calculated fields. We're going to call one lower bound and
+we're going to call the other upper bound. And here's the formula for lower bound. I'm going to read it out
+as we're doing it, but it's really important to actually look at it
+here to make sure you get all the nuances, the parenthesis, and
+everything in the right spot. It's the window average
+of the sum of profits. Minus the window standard
+deviations of the sum of profits times the standard deviation. And the standard deviation is
+the name of the parameter. So you're incorporating
+the parameter into the calculousy. Just explain what this formula is saying
+is, we're going to take the average of the summer profits that you see on the
+screen and we're going to subtract it from the standard deviation of what you
+see on the screen and the sum of it, then we're going to multiply
+by the parameter that select. So if we select one, this is the standard
+deviation of the sum of profits. But if it's 2, it's 2 times whatever
+the window of standard deviation is. The upper bound is almost identical,
+but just pay attention here. Instead of subtracting the window average
+from the window standard deviation you're adding them. So it's the window average of
+the sum of profits plus the window standard deviation of the sum
+of profits multiplied by the parameter which is
+called standard deviations. And so now you have two formulas. We click OK two formulas,
+a lower bound and an upper bound. And we're going to put these
+into the visualization. And then we'll have a dual axis. What we're going to do is, we're going to
+drag them into the right side of the visualization and
+make them part of the dual axis. So that this visualization
+is not using the other axis, we're going to change
+their mark types to line. And we created to the axis but
+now we need to do something else. So I double click the right axis and
+then check synchronized axis. So double click on it and
+then check synchronized axis. Now we're going to use that preattentive
+attribute that we learned in the course. And we spend quite a bit of time on. We're going to create
+another calculated field and we're going to call it attributes. And the formula is shown
+here on the screen. It is the sum of profits is
+greater than the upper bound. Or the sum of profits is
+less than the upper bound. So that means, it's basically a flag. If it's above the upper bound or
+below the upper bound, please flag it. Otherwise, don't flag it. So let's do this now. All we do is we drag this attributes
+field to color on the profits mark card. Make sure it's on the profit
+marks card when you add that. So now look at this, this is really cool. So you can change it to standard deviation
+slider and then note the changes in what's outside the standard deviation
+that you select and what's inside. That's really cool. So this is the interactive piece
+of this control chart here. So you may have designed this for
+some sort of manager, maybe someone in the on the factory floor
+that's looking at some of the stuff, and then they can say, look at this. Two standard deviations. And here's some really great profits and
+here's some really bad losses. Or vice versa. Or you could do one standard deviation or
+you could do three standard deviations. You could do more. And so what this is a very cool way
+to very quickly identify an issue with the data and what's going on in
+the world that's causing the data to be maybe a little bit off. So this is what they call control
+chart and I really thank you for joining me in this lesson,
+see you next time.

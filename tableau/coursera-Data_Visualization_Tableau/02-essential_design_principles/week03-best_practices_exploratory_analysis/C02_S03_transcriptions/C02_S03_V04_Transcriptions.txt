@@ -1,0 +1,131 @@
+[MUSIC] Welcome back, these next sets of lessons
+allow us to get into pre-attentive attributes for data visualizations. We're now going to talk about how
+to make visualizations more usable, pr rather more accessible for the reader. When you see a poorly
+designed visualization, who do you think she get to blame. Should we blame some nebulous
+source like the data? Which is often who we blame,
+it's like just the data. The data doesn't show it, but what if someone has trouble
+interpreting a graph that you created? Is it the reader or
+audience that is at fault? Is it basically that the reader just
+doesn't understand what you're trying to tell them? You're right about that, but the answer to who is to blame is
+the person who designed the visualization. If the reader can't understand it, that
+means that the person who designed it, did not do a good job of
+designing the visualization. So when you're doing visualizations
+think through your designs, and take into account the needs of
+the user of the visualization. You're the expert on the data,
+they're not, and that is the focus for this lesson. We'll examine a couple of use cases to
+define the point of reader usability. I want to use an iconic example to explain
+what I mean about this accessibility usability thing, and this iconic
+example is the London Underground map. Before 1933, the map was based on geography,
+it makes a lot of intuitive sense and some of the lines go quite far but
+some of the lines are much shorter. And there was a real problem,
+there are a lot of lines in Central London and there are other lines that were
+very far from Central London and so it actually couldn't
+even be shown on the map. I have it on the screen
+now in front of you, so lines in Central London were squeezed
+together, making it hard to read. But lines further out couldn't
+even be shown on the map. So even though it was in
+a geographic representation, it wasn't actually very good
+at showing geography either. Harry Beck who was an employee for the London Underground in 1933,
+thought about this problem a lot. Passengers wanted to know
+where to transfer to get to where they needed to go. So geographical accuracy ironically
+was not important at all. They just need to know how,
+where their station is versus the other stations
+in the London Underground. So he designed a map to be almost like an electrical schematic
+instead of a traditional map. And now even to this day, this is what
+Londoners use to navigate the subway system, even though
+there's many more lines. It is a map that has nothing
+to do with geography, except in reference to the particular stop versus other particular stops
+in the London Underground. It's a very innovative map, and
+it's iconic you see it even in other countries as an example of
+a way a system should be drawn. The key to why this redesign works is that
+it conveys the information in the way the users need,
+to eliminate clutter and distractions. It's not geographically accurate even
+though it's a map, but it turns out that it doesn't matter, what matters
+is that it's accessible, and usable. So we're going to channel Harry Beck in a
+very small way, to make some modifications to the visualization we were working on in
+the last lesson, so let's go to it now. So let's review the question that we
+had in the last lesson as a refresher. The question that was posed to us is,
+why sales to certain customers, on certain products, aren't profitable
+despite there being a lot of sales. From our last lesson, we as the experts of the data looked
+at discounts as a possible reason. So now we're going to apply
+our expertise about the data towards making our
+visualization accessible. And thus answered a question about whether
+discounts are responsible for this. So let's bring up the tab visualization
+that we just did in the last lesson. The first thing we'll do is right click
+on the scatter pot that we've been working on. There is a bunch of options here, but
+I want you to select duplicate sheet. And once that sheet is duplicated,
+rename it as discounted sales. Just something to identify it because you're going to be working
+with that one a bit. So make sure you're in that sheet,
+called discounted sales. Click on Analysis,
+then click on Aggregate Measures, that will check
+Aggregate Measures in that menu. Because the scatter plot is not aggregate,
+we need to re-aggregate the data, to be able to get a summary to
+test our hypotheses on discounts. Now all you see in front of
+you is a horizontal line, so I wanted you to just
+click the Show Me tab and then click on the cross tab
+just to get you some text. And we're going to be working
+with that for a few minutes. Field, so now we're going to create
+a calculated field called profitloss. And I'm just arbitrarily naming
+it profitloss, one word. Again, this is working towards looking at discounts as a reason why some
+stuff is selling at a loss. So the formula is as follows If
+the profit ratio is less than or equal to zero then the profit
+loss is equal to loss. Otherwise it's profit, so
+again if the profit loss is less than or equal to zero then profit loss is
+equal to loss otherwise it is profit. And now I'll change if it's not
+already that way, make sure. That profit loss is at discrete dimension, it should be a discrete
+dimension variable. The reason is that is because I want
+to see the differences in discounts between sales that we're at a loss
+in sales, that we're profitable. So let's drag the profit ratio and
+sales field away from the visualization. Now, move the discount
+field to measure values, the average discount given to
+the profitable sales was 8%. While those making a loss
+was discounted 47%, in other words selling stuff at
+big discounts tanks profits. Now, it's entirely possible that you
+know they wanted to get rid of it, they just wanted to clear out
+the warehouse for new stuffs. So the context is in important and
+we don't have that context but it's very interesting to
+see this really in action. So how can we show this in a way
+that taps into our iconic or at least short term memory and
+make it thus. Rather accessible and usable, I want to take a second here and
+put in a plug for boring old text. Text is awesome and thoughtfully deployed is essential
+to usability of your visualization. But the way I have the text here is
+a little bit hard to be able to interpret. It uses too much of brain power, so
+I'm going to make some changes to make it more accessible and
+add some texting to help out. So first I want to change the discount
+from a decimal to a percent, just because it's easier for
+us to understand. We're sort of used to seeing
+percentages at for discounts. So we're just going to change that now,
+then I'm going to use the power of Tableau
+here to generate a graph. And all I'm doing is dragging the sum
+of profit field from where it is now to the column shelf and it automatically does something
+interesting, it turns it into a graph. Now take the profitloss field from
+the left and drop it over color. The colors Tableau chooses might be
+different on your screen then on my screen. But we need to change them anyways, so I'm going to choose a light grey for
+profit and red for loss. I want to add some text context to it, remember I said a couple minutes
+ago that text is very important so I want to drag profitloss and
+profit to text. So now click on the label, click on the three dots you see
+in front of me to edit the label. Type in format text to read discount for summer profit of profitloss
+is average discount. And what that is, is just basically
+putting in the field there so that Tableau knows what number to add or
+a text to add, for the particular place
+that the label goes. I'm going to get rid of all the axis
+because we have data labels so we don't need an axis. However, before I do that, I'm going to
+add what's known as a reference line. And this reference line, is simply a way to show an illustration
+that I feel is necessary. So I'm going to put a zero reference
+line so that we know where the zero is 0%, or zero profit rather. And then to the left of it is going to
+be loss, to the right is profit, and so it's a pretty straight
+forward reference line. This may be the first time you've seen a
+reference line, and this is how you do it. You create a reference line here, and you put the information on the graph,
+and now I can remove the axis. So it's a nice way to actually show
+give you a little bit more context. Now I'm going to tweak the location
+of the text just a little bit. Your mileage might vary on how you want to
+tweak it but there you go, and it's done. So what we have done here is
+actually make a presentation that could be a little bit overwhelming to
+someone much more accessible and usable. And the key is that you
+as the data analyst are the ones who are able
+to analyze it and pick out the details that are needed
+to be able to show the decision makers. The information so
+that she can turn around and say okay, what are we going to do with this? What sort of actions if any are we
+going to take on this information. So I'll see you next time, take care, bye. Simply move forward with
+some sort of actionable piece here, so until next time,
+have a good day.

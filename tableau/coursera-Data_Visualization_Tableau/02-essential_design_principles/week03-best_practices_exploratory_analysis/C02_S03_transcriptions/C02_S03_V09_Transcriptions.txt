@@ -1,0 +1,90 @@
+[MUSIC] Hey there. So as I mentioned before, in this lesson,
+we're going to use our Superstore dataset and I want to teach you different ways
+to use Tableau for exploratory analysis. You will also learn some cool
+techniques along the way. At the end of this lesson, you will be
+able to identify outliers in your data. Let's get started.
+[MUSIC] The identification of
+outliers is a crucial, crucial part of exploratory analysis. And even within the genre of outliers, it could take on several
+different types of subgenre. For example, it could be a coding error,
+or someone has input the wrong value and that's sort of what people think
+about when they think of outliers. But it could also be
+an experimental error of some sort. All right, for example, you could
+be collecting data in the lab and the air conditioner goes out of
+commission or something in the heat or summer, for example. Some of that data may be off. Or, it could be something
+very insightful in and of itself and that's really important to
+think about when you're doing outliers. In data mining, for example, there's
+a whole field or maybe sub-field called anomaly detection, which is the study
+of how outliers can offer notable insights that were previously unavailable
+through normal statistical techniques. So outliers are just very important. Some people, when they see outliers
+they're like, it's so annoying, it's so annoying, but in fact outliers
+are important on their own. Even if it's not a coding error,
+it's probably not quite as important, but even then you have to consider it. Perhaps there's some reason why there's
+some systematic coding errors or something like that. So outliers need to be taken into account,
+and this should be at least at a minimum
+known about by the analyst. The analyst should be extremely aware
+about what these outliers are and how to address them. And they could address them in many ways. Well, let's get into the visualizations. First, we're going to bring up
+the Sample Superstore dataset, then go to worksheet one when it's loaded. And we're going to, to first test for outliers in this dataset using
+what's called a strip plot. A strip plot is a very clear
+way to identify outliers in a single variable situation. So you're basically
+taking one variable and then mapping it to see if there
+are any outliers going on there. We are going to test the field Sales, so
+I want you to drag the Sales to Columns, change the measure from Sum to an Average,
+and look for the States field and
+drag it to the Details mark. And so this is the Details mark. We haven't talked about that yet,
+but basically the Details mark allows you to get some extra
+details into your visualization. Now I'd like you to change
+the marks from Automatic to Shape. So it's from Automatic to Shape. Now change the size to a slightly
+larger circle and adjust. It doesn't matter how much,
+just however much you feel. So now we can see it's very evident
+that we have one, maybe two outliers. If you consider that one that's
+closer to the others that we have, it may not be, but let's just say it is. The one that definitely is
+an outlier is Wyoming and I'm finding that out by
+just hovering over it. And the next one is Vermont. And the rest of the 48 or 49,
+if they include the District of Columbia, are bunched really close together. So what does that mean? So if I'm wearing my hat as an analyst
+here, I'm going to speculate and hypothesize and at least think
+about this and then maybe prove it. But my hunch is that because Wyoming and
+Vermont have very small populations. These are states that are just
+tiny in the number, Wyoming's actually big geographically, are there
+probably a very small number of purchase. But, those purchases happen
+to be very expensive ones, so it causes those to be outliers. So my guess is that
+it's not miscoded data, but it's actual, real data. And the reason these outliers
+are happening is because of variations outside of that specific field. Another test I'll do a lot for outliers is something that's very
+well known to statisticians. It's one of the first things you learn
+when you take statistics classes as opposed to other types of data analysis
+classes, and that's called a histogram. So we're going to create a new sheet in
+the same Tableau instance that you just used to strip plot it. And while you're doing that,
+here is the finished product. And what's going on is we
+want to look at the end of it. So a histogram is a visualization that
+uses rectangular bar charts to show distribution of continuous data. In Tableau's terminology,
+it's a way to look at measures, and to evaluate how the measures are doing
+when it's related to others. The first step is that we're
+going to create what's called a bin. A bin is a way to categorize measures for
+easy categorical analysis. So we're going to use Profits this time,
+as opposed to Sales. We're going to use
+Profits as our field and we're going to study it using a histogram. I want you to right-click on Profits and
+then Create the Bins. Tableau will offer defaults, and
+we're just going to accept those defaults. Once you've created the profit bin,
+drag it to Columns. Now drag Profits to the Row field. And so look what's happening here. There's some products that sell at a loss,
+so it's correctly showing negative. But a histogram really
+needs to be scaled at zero. So what we'll do now is go up to the
+SUM(Profit), click and select Edit Shelf. Then change this in the shelf itself
+to the absolute value formula. I'm just putting ABS open parentheses and
+then close parentheses. And there you go. So this is the absolute value, so it's always going to be a positive
+number, a positive or zero number. So it looks finished. It kind of looks like a histogram,
+which has a normal distribution, which is kind of nice with some tails and
+high profit and high loss areas. But, if you hover over it,
+you get extra information. You get more detailed information,
+yet it's clearly wrong. So what we're going to do is we're going
+to just clear that information out, as I'm doing here,
+to make it actually correct. So now we have a histogram. Is there anything interesting here? What I see is that there are a lot of
+items that are bringing in profit and some that aren't. And that's something that will
+certainly need further exploration. So it seems as though there are some
+outliers that certainly merit concern. And perhaps it'd be cause for
+celebration in terms of the profits. For example, you can see here as I hover,
+there's some stuff with some really big losses, where you really need to explore
+that and see what's going on there. There may be some context that's missing,
+but this just identifies and
+flags areas of concern. To sum up, I just want to make sure that everyone
+again knows how important outliers are. And the importance of understanding what
+your outliers in your dataset are and how to address them,
+if you're going to address them. So until next time, I'll see you later.

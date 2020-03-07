@@ -1,0 +1,65 @@
+[MUSIC] Hey, so, while we got a cursory
+look at Gestalt principles and pre attentive attributes
+in the last module, it's purpose was to provide
+you with an overview. This module will examine more in
+depth one of these principles and preattentive attributes. By the end of this lesson you
+will be able to recognize which of the Gestalt principles
+are used in a visualization and why. Let's get started. [MUSIC] First let's talk about Gestalt Principles. Remember in the last module we spent time
+talking about the 6 Gestalt Principles. It was pretty high level and theoretical
+but we're just going to review them here. We're going to bring it down to
+examples and visualization briefly and then really do a very deep dive into one
+of the Gestalt Principles in particular. Just to review, the six
+Gestalt Principles, they are Proximity, things close together tend to be more
+related than things further apart. This is the one that we're going to
+do to deep dive in in just a moment. Second, is the Gestalt
+principle of Similarity. Things that look the same
+tend to be grouped together. The third Gestalt principle is Enclosure. It's when we perceive things to belong
+together when there's a boundary or an appearance of
+a boundary around a group. Closure is the gut feeling that we
+have that we should resolve ambiguity. The resolution of ambiguity works to
+our benefit to eliminate distracting elements from our visualization
+as you can see on the screen. Continuity is when we perceive
+something to be part of a whole, even if they are with another section. In the sketch I drew on the screen,
+I'm no artist. We perceived the wavy
+line to be continuous, even though it is broken
+up by the green rectangle. In this example,
+we don't need a row for each division. Because it's obvious that the departments
+go with the top level division. In fact, we can even save horizontal
+space by indenting the department under each division. Finally, we come to
+the principle of Connection. This is simply the notion that
+a line connects two grouped things. If we look at for example proximity,
+which is one of my favorites, I'd have to say I'm a geography person so I definitely I'm very interested in,
+in the Gestalt principle proximity. It was actually a part of this is
+Tobler's First Law of Geography which states that quote,
+everything is related to everything else, but near things are more
+related than distant things. And so, it's a proximity that Gestalt
+principle is absolutely fundamental to geographical analysis,
+spatial statistics, and other types of fields
+related to geography. It is the basis for
+what's known as spatial interpolation in geographic information systems. Which by the way is offered as
+another course by UC Davis. This particular Gestalt principle
+has fundamental applications, not just in visualization of course,
+but across a wide swath of fields. But it also could be used for example when
+you're doing a categorical scatter plot, and these categorical scatter plots allows you to look and
+see if there's any clustering that occurs based on the scatter plot that you draw. Let's take this proximity principle
+further into a visualization. We're going to go back to the example
+that we saw back in course one. The color M map. You can follow along as I
+bring it up on the screen. The proximity principle implies that there
+are more relationships to things that are closer to each other than there are to
+things that are further from each other. Click on the cholera analysis tab, then Snow's Analysis. Here you see that the proximity
+principle is at play. The darker the red, the more deaths,
+the largest number of deaths occurred right next to the water
+pump that was infested with cholera. Now, click on,
+Mapping the Results as I'm doing here. Then zoom and pan on the map as I'm doing,
+over to the water pumps to the North. If you see here there are no
+cholera deaths at all over there. But as you get closer to the polluted
+pump, the number of deaths rose. And as you get closer and
+closer to those polluted pumps, the numbers of death jump quite starkly. Each of these Gestalt principles
+can be similarly illustrated. Now what I'd like you to do is select
+one of the remaining five principles, locate a visualization or create one that illustrates one
+of these Gestalt principles, and explain why it is the principle and
+why it applies to the one that you chose. You can look for the on Tableau Public or
+some other place. But I think it's important that
+if you're going to do that, you should document the source
+of the visualization. So that we can know
+where it's coming from.

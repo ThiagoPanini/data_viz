@@ -1,0 +1,115 @@
+[MUSIC] Welcome back. I hope you were able to gain
+an understanding of the difference between exploratory and explanatory
+analysis from my colleague Sook. Moving forward, most of what we will
+be discussing is exploratory analysis, since we don't necessarily have an idea
+of the questions we are trying to answer. In this lesson,
+we're going to exam a classic case study. It's called the Anscombe Quartet,
+and it revolutionized data analysis. It was first posited in the early 1970s,
+he stated that you can't just use summary statistics to understand
+the data, you have to visualize it. In a world where we have data sets that
+could be in the trillions of records, Anscombe's argument is
+even more relevant today. It's not to say that summary
+statistics aren't important. They are absolutely essential,
+but you must also visualize it. So we're going to do it with tableau. So this is how it's going
+to look when it's all done. Looks exciting, right? Well, let's get started. These data are available
+to you in the resources. But, let me first introduce it. This are the data that
+Francis Anscombe used. It's a very simple data
+set at first glance. All of the x values are identical, x1, x2, x3 and x4. All of the y values have
+the changes depending on whether it's in y1, y2,y3 or y4. Now the crucial thing is that the summary
+statistics, the average, the variance, the correlation and the linear
+regression slope are all identical. So the mean of x1, x2,
+x3 and x4 are all 9. The means of y1, y2,
+y3, and y4 are all 7.5. And similarly,
+the variance of x are all identical, and the variances of ys are all identical. The correlations of each of those x1 and
+y1, x2, y2, x3, y3, x4, and y4 are all identical, which means it is exactly the same
+regression line for each of the equations. Now, we want to do this in Tableau. This is a Tableau class, so it's very important we do as
+much as we can in Tableau. And it's going to be much easier
+to do the visualizations, data setter cleaned up to
+make it easier for us to use. In this case, we're going to do
+what's called normalizing the data. What that means is that each row
+contains only one piece of information. So, in the data set shown here, it is
+designed to be analyzed using summary statistics in a statistical software
+package like Stata, SAS, R or SPSS. But in Tabeau, it's not intended to be
+a statistical software application. It's a visualization package,
+and thus, normalizing data is essentially done to maximize what
+you can do with data in Tableau. So although I'm going to do
+the visualization in Tableau, I'm going to do the data
+preparation in Excel. Because it's actually much more
+difficult to do it in Tableau and Excel is really made to do
+this data manipulation. Now to do this, I modified the spreadsheet
+and you can do this however you want it. You can do it manually,
+you can do it through cut and paste, but I'm not going to go through this exercise
+because this is not an Excel course. I made the change to the spreadsheets. So now there's a number going down
+the side, and there's an x and y column. So instead of having x1, y1, x2, y2,
+etc., it's the number and then x and y. So it's going down, so
+again, it's normalized. And there's one piece of data element for
+each row. Now this is interesting because
+there are two additional columns that really require explanation. One is called Column and
+one is called a Row. And yes,
+there's a column that I'm naming Rows. Each row is assigned a value,
+either first or second depending on where I want the
+particular chart to go into visualization. And the reason why I
+have those two columns, is because we want to replicate what
+Francis Anscombe did back in 1973. To not only prove a point
+about outliers and the importance of exploratory
+analysis through visualization, but also to give you a little taste about the
+cool tricks that you can do in Tableau. To be able to get visualizations that you
+wouldn't normally be able to do just by doing some of the default choices
+that are available in Tableau. Tableau is powerful enough to be able
+to allow these other innovations, through various calculations, to make
+your visualizations look really cool. Okay so, the data are ready for Tableau. In the last course, you spent some time walking through
+how to import the data from Excel. It's very important that it's just
+really what you're going to be doing most of the time. But this data set, isn't that big,
+it's actually considered tiny. And so, this is an opportunity
+to show you another trick. You need to copy the data from Excel,
+like I'm doing here. Make sure you grab every row and
+column, don't forget anything, just double check, and
+then do the copy in Excel. I usually do Ctrl+V, if you have a PC, but
+you can do it from the drop downs as well. So just copy that information down. If you already haven't done so,
+please open Tableau. Click on the Data menu,
+then click on Paste Data. It will churn, but not for very long, and
+then voila, your data is now in Tableau. It's really cool, because you
+don't have to do the importing, you just paste it in there. And it will work for medium size data,
+and this is perfect for our benefit here. So definitely take advantage of that. If you just need it just to get that
+visualization done, just paste it in. You don't even have to get it
+imported it from an Excel document. However, there are some changes that
+you're going to make to the Excel file, it would be good to do it
+through data connections. Because you pasted the data, Tableau is
+actually trying to guess how you want the information, and
+it puts in a cross tab. It's nice to have that cross tab, maybe,
+but that's not what we want, of course. So drag all the fields away. Another way to do it is you would
+just go up to the drop downs here, and you can just clear the worksheet. We're left with a blank
+canvas to work our magic. And so remember how I said that it's
+odd to have a column named Column, and a column named Row. It is, let's be honest. But what we want to do with these
+is to coax Tableau to do something that we want it to do, and so,
+again, this is really something useful that you could take away and
+use in your own visualization. When you're really thinking about how
+to figure out how to do something, you can often coax it in different ways,
+and this is one way to do it. We're going to move the columns,
+held to the columns, as you can see here, and the rows pill to the rows. And this is what you have so far. It's not much, right? So now move x to columns, then click on
+that pill and change it to dimension. Do the same for y,
+change it to dimension as well. It's starting to look like
+the final product, isn't it? Now we'll do a little
+bit of formatting here. So let's change the marks to a circle. Change the color to orange, and
+enlarge the size of the circle up a bit. We're going to add a trend line here, but I'm going to remove that confidence
+interval that it automatically puts there. Okay, so now look at these four panes. Well I showed you the summary stats,
+and here they are again. These data sets look virtually,
+not just virtually but actually identical, but
+obviously they're not. As evidence through visualization and
+not through summary statistics. The one on the bottom right, for
+example, fits the same exact regression line as the one
+in the upper left. Yet the data sets are very different. The one in the upper left is sort of
+a traditional linear correlation between x and y, but it actually has exactly
+the same correlation as the bottom right. So you remember the adage, which is
+pretty common even outside of stats, is correlation is not causation, and
+this actually shows that very effectively. It basically shows that on the top left,
+it does seem to work. Correlation and
+causation seem to go hand in hand. But the bottom right, and the one above
+of our examples, where the correlation is a very high correlation,
+it's actually the same as another one. And it absolutely does not equal
+causation, and that's a very interesting way to understand and
+really visualize statistics. And trying to intuitively understand
+it which every data analyst should be able to do. I'm assigning a couple of readings on the
+Anscmbe's Quartet and why it's important. But in the meantime bottom line is this, make sure you do exploratory
+work on your data. In the next lesson we're going to show
+more ways about learning your data through exploratory work. So I'll see you there.

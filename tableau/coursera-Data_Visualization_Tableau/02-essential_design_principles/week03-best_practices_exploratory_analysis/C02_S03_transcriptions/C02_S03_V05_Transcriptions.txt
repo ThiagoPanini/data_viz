@@ -1,0 +1,85 @@
+[MUSIC] This lesson is around aesthetics. And the idea behind this is that yeah, we want to make it have all of these
+important features such as pre-attentive. We want to make it nice and usable. We want to make it uncluttered, we want to make sure that there
+is not too much cognitive load. We want to make sure that you're using
+at least one of the Goshal principles. But also, we want to make it look nice. And I think that's very important,
+that the visualization looks nice. But by looking nice I don't mean you have
+to be this artist whose painting this very fancy visualization that
+you don't want to touch. It's just something you want to admire. No, on the contrary you want to bring
+in aesthetics because you want to draw the reader to it. In this lesson we're going to view some
+examples that demonstrate strategic use of color, alignment, and the use of
+white space in data visualizations. As I said before, your visualizations
+don't have to be artistic. It just has to have a certain
+aesthetic to be an aesthetic visualization it needs three
+fundamental components, color, alignment, and
+leveraging of white space. So the first is color and
+we've talk a lot about color but you should used color very intentionally. That is color should be
+use very strategically and sparingly to highlight what you want
+the audience to see in your visual. Next you want to be able to ensure that
+the alignment is how you want it, so you need to pay very careful attention to
+the alignment of the different elements of your visualization on the page to
+ensure that there there is a clean and vertical and horizontal lines. You don't want the alignment to be off
+because that is where people are going to focus on. It's a distraction and then you are going to lose that
+important reattentive attribute piece. Finally and something actually
+I haven't talked much about yet is about leveraging white space. You don't want to make it so
+that the visual takes up all of the room. What you want to do is strategically use
+white space to be able to differentiate aspects of the visuals and
+as way to focus to attention and keep things looking uncluttered. So white space is something that
+really comes into play in aesthetics. White space is often misused. So what happens is that there
+may be too much or too little space between titles and
+data, so it's difficult to be able to draw your eyes' and
+brain's attention to what you really need. And so it's really very artistic and it's difficult to be able to illustrate
+because I think there is some flare and artistic license that you need to be
+able to use to be able to emphasize what you need while also providing all of the
+information in the space that you have. So it's really something that you
+have to keep playing with and tweaking until you are comfortable with
+how much white space you are using. It's a crucial to aesthetics but
+of course it's tricky to be able to give you cut and
+dry ways of thinking about it. So as I just said when we talk about
+aesthetics in general it's very subjective and it's hard to say
+okay I can show you this. Let me show you and like visuals that
+have a certain aesthetic element to it, and we should just discuss it and this is
+something you should really think about. What is it about a particular visual
+that makes it a good visual for the specific of our examples? So let me start with the first one. Our first visual is
+an example of a line graph. And the idea is that we want to be
+able to see how we are doing today versus last year. And whether we'll be able
+to meet some sort of goal. And I think that this you can
+see here is an example of it. And so one thing I want you to think
+about as you're looking at this and maybe applying it to your own
+visualization is what is it about this visual that allows the reader to
+get the information that they need but also has the aesthetic quality to
+it that is recommended by many of the top visualization
+designers in the world today. Okay, so moving to the next example. Here is a horizontal stack bar,
+which is my favorite type of visual. Because I just find it to be so
+easy to understand for everyone. And here is something from
+my field in economics. I know a fair bit about this information. Which is a survey about the priorities in
+development from a development agency. What we can see here is that there is
+a certain aesthetic that the user has in place here to be able to allow
+the audience to get a sense of what are the most important things. What should be the priority
+based on the survey results? In this case, it's very clear. You look at it, and
+it's like boom education, agriculture, rural development, and poverty reduction,
+those are the three most important. But the other stuff are important too,
+and we're going to show those but we're going to put those
+a little bit in the background. And that's something that
+I've talked about before. The reason I find that this
+particular model of visual is so effective is that it allows the reader
+to spend just a second to be able to say this is important,
+I know because it's in blue. The title is in blue, the top three
+are in blue, the bars are in blue. What are the priorities
+based on the survey results? This is exactly the type of thing we
+should see when we're doing visuals for an audience whether it's a PowerPoint
+to 500 people, whether it's 10 people on the conference room or
+whether it's to a colleague down the hall. In other words this is a type of thing
+that audience can just quickly pick up out of blue and say okay well I'm interested other things,
+but let's just take a look here. Yeah, I see there's
+something I'm interested in, like basic infrastructure's only 8%. That's interesting, so
+maybe I'm still going to tackle this, but I'm going to have to
+marshal other evidence to show that we need to be
+tackling basic infrastructure. And so it makes it easy for us to say,
+okay, well, the survey results say education, ag and rural development, and
+poverty reduction's are the biggest. So maybe that's what we should go with. And so we're really telling a story,
+right? As we're going to go over in course four, we're going to be talking about stories,
+in virtually the whole course. We're telling the story here of what the
+survey results that we need to know are. And what we prioritize in the future and
+it's very simple. And so with that thank you for
+joining me here in module three, see you in module four when
+Hunter is going to talk about a more high level look at these things.

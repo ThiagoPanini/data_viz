@@ -1,0 +1,31 @@
+[MUSIC] Hello, so what is exploratory analysis? What is explanatory analysis? Don't worry, by the end of this lesson you will be able
+to define the difference between the two. And you will be up to discuss why they
+are important to data visualization. So let's get started. Exploring your data is a crucial step in understanding what may
+lie within your data. What I mean is, before you can
+actually begin analyzing your data, you will need to explore your data,
+so you can be familiar with it. This is what we call exploratory analysis. It involves digging through your
+data to find relationships and trends without a specific goal in mind. Maybe you have a question
+you need answered, or maybe you have a hypothesis that
+you would like to try and prove. Can this data help you? Okay, let me walk through an example. You need to know where
+your data comes from. How is it labeled? Is it structured or unstructured data? Are there holes in your data? Are you seeing any trends with the data? Any relationships forming as
+you become familiar with it? Knowing these items will make it
+easier for you to analyze your data. When exploring your data, although there
+is no direct process to follow, you should always have a clear understanding of
+what questions you are trying to answer. Knowing which questions you are trying
+to answer will make it much easier for you to choose your variables for analysis, and also determine which
+analyses to use when analyzing the data. In contrast, explanatory analysis is what
+happens when you have something specific you want to show an audience. Explanatory analyses involves
+explaining the outcomes or relationships you may have found
+during your exploratory phase. In other words, when you want or
+need to tell a story with the data. For example, let's assume you have a data
+set of sales orders across the US, over a certain period of time,
+let's say the past 20 years. In the exploratory phase, you can try
+different combinations of variables trying to find associations
+between states, sales personnel, sale orders, etc.,
+over the 20 year period. In the exploratory phase, you find that certain states have
+higher than normal sales orders. Now, in the explanatory phase, you could
+show which states have the highest sales orders, and try to explain why that is. You could show that the states
+with the highest sales orders have the highest population, or that
+the states with the highest sales orders have the most experienced sales personnel. Okay, so now you should be able to
+define the difference of exploratory and explanatory analysis. In the next lesson, we will use a data set to see
+an example of the two within Tableau.

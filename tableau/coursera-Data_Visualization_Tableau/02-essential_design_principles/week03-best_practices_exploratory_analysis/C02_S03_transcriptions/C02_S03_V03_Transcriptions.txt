@@ -1,0 +1,103 @@
+[MUSIC] In the last module we talked
+about pre-attentive attributes. We learned that these are characteristics
+that we add to visualizations to focus the audience's mind on what should
+be the first thing that they see. It's first and
+foremost in our iconic memory. Just to review, iconic memory is what
+the mind sees unconsciously before we're attune to what what we're
+seeing in front of us. My colleague, Hunter, will go into much more detail in
+about this in the last module. But for now, it is why the attributes we're talking
+about are pre-attentive attributes. We saw the classic example of being
+able to identify a specific number from a list of numbers. So let's get started. >> I also gave an analogy from Colin Weir. That analogy's about a flock of birds. If all the birds, except for
+one, is a pigeon, and that one is a hawk,
+we can easily pick out the hawk. Picking our fours here is
+akin to picking out the hawk, from amongst a flock of pigeons. But if that flock of birds have
+not only pigeons, but crows, robins, nuthatches, blue jays,
+any other types of birds and other hawks. All of a sudden,
+it's not easy to find that one hawk you were thinking you were
+going to be able to find. And that's how it might look with
+the same batch of numbers I showed you on the last screen. In other words, with multiple colors,
+it's no longer preattentive. It might still have meaning, but we've lost the plot in our attempt to grab
+the audience in that iconic memory space, that space that we wanted to grab
+the attention of the reader. In our last module as well, we did an
+example of a pre-attentive attribute for visualizations using color. It's the most common, and frankly the most obvious way to
+grab the audience's attention. In the example we're going to work
+through here, we'll use color, but we're going to use some other things
+that we use in pre-attentive attributes, including size and things like that. But we'll also work to
+eliminate distractions. When we're working towards
+focusing our audience's attention, it's important to remember something
+that Cole, Nussbaumer, and Knaflic said. Knaflic is a former employee at Google who
+wrote the book Storytelling with Data. She talks about what we should do to
+focus attention on what needs to happen, and on what the audience needs to see. The first point that she makes is that
+not all data are equally important. Her point is to get rid of
+the non-critical information in some way. The second point is if you don't
+need the details, summarize it. Knaflic's third point is that
+if you eliminate something, will it change anything? So just because something might be cute
+doesn't mean it will be effective. And it probably shouldn't be there. Do you remember my example of
+the marijuana plants that we did recently? In the US we have a saying called KISS,
+or Keep It Simple, Silly, and I think that very much
+applies with regards to a third point. Her final point is that if there is some
+information that does need to be there, but it's not essential, it can still be
+there, but it could be in the background. It doesn't have to have the same level of
+emphasis as the information that is really needed to answer the question at hand. Let's bring up our Superstore dataset and drag Orders to the area that says,
+Drag Sheets Here. It will churn a bit, depending on
+the speed of your computer's processor. Once it's done, please click on sheet one,
+as I'm doing here. Just click on sheet one once. The data has been churned in Tableau. Our hypothetical CFO has
+asked this question. She wants to know why sales to
+certain customers aren't profitable. What's going on? Some of the losses, in fact,
+are quite substantial. There should be a strong correlation
+between sales and profits, right? First, we should test to see if there is
+a correlation and if our hypothesis is correct that there should be
+a correlation between sales and profit. So drag the sales to columns and
+profits to rows. Hm, do you remember what we
+do when we only see one dot? We should see a ton of them,
+but we only see one dot. What's going on here? Well, what we see is that it's aggregate
+measure, and we need to disaggregate it, so we click on Analysis, up above here,
+and then uncheck Aggregate Measures. A-ha! Now, we have a very nice scatter plot,
+but I can't tell very clearly what the relationship
+between the two fields are. It almost looks positive
+just from eyeballing it. There's absolutely no need to guess here. Tableau has a lot of power and
+functionality, and here's a case where it has this. So I want you to click on the Analytics
+tab and drag the trend line to Linear. And so I'm just going to clear
+the confidence intervals now. It's not important. The audience knows that
+a trend line is not exact. This trend line, though,
+is still not that helpful. Yeah, I mean, mathematically, it shows
+that there's a positive relationship between sales and profits, but it's not
+really good enough to show visually. So what we need to do now is we need to go
+through this process of setting it up so that we can make it clear. The first step is that we're going to
+create a simple calculated field. And we're going to call it profit ratio. So just type in what I'm typing here. It's the sum of profit
+divided by the sum of sales. Again, the sum of profit
+divided by the sum of sales. Now drag that newly
+created calculated field, the profit ratio field,
+to the color marks. That's super interesting and very clear. But we can make it even clearer. So I want you to click on Color,
+and then Edit Color. Then check the stepped colors,
+and change that number to 2. So again click on Color, then Edit Color,
+then check Stepped Colors, and change that number, if that
+isn't already a 2, change that to 2. Now I want you to change that dark blue,
+well, I should say it looks dark blue on my screen, so it may be a different
+color that is rendering in Tableau. Mine's a dark blue. I'm going to change
+that to a light gray so it's a nice contrast between
+the positive and negative numbers. In other words,
+the profits and the losses. That's clear, but I want us to go back and
+we should always think about this. We need to review the question. Why sales to certain
+customers aren't profitable? Why is that? And so this is where your job
+as an analyst comes into play. You know the data better than anyone else. You need to help the readers clearly get
+this information without having to search around or
+having to learn the data themselves. Give them this information. Don't make them search around for it. Just give it to them. And here's how we're going to do it for
+this. We will have done exploratory
+analysis of the data that obviously is not in
+this particular lesson. But we will have previously done it in
+their hypothetical example as an analyst. You will have known that customers
+will get discounts on the merchandise. It's widely known. I'm an economist, and you may be too. But it's just very intuitive. If you give discounts, they boost sales. But if you discount the stuff too much,
+you sell a lot of stuff, but if the discounts are too high,
+you sell stuff for a loss, and you don't want to do that unless you're
+clearing inventory or something like that. There may be reasons for it, but
+generally speaking, you want to try and make profits on the stuff that you have. It turns out that we actually
+have the field called Discount. I want you to drag that field
+to the size marks area. [LAUGH] Now, we're talking. This is clear. To summarize what we did here, I started with the pre-attentive
+attributes using color, but there are other things you can do to
+make your visualization pop, of course. Here are some examples that
+I have in this small table. In this case,
+not only did I use color but, of course, when I drag that discount
+field to the size marks area all of a sudden I use a second
+pre-attentive attribute, which is size. And in the very next lesson, we're going to continue making this very
+visualization useable for our audience. So stay tuned.

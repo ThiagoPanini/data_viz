@@ -1,0 +1,14 @@
+[MUSIC] Hello, this next set of lessons will have
+us taking a step back from the high level of understanding of the theory
+of design principles. To actually applying some specific
+techniques of exploratory analysis to enhance your skillset with Tableau. Most of this course is intended to guide
+you at being good at explanatory analysis. But you can't have good
+explanatory analysis without thorough exploratory analysis. So in the first lesson of this mini module
+I've asked my colleague Sukh Barrar to help define the difference of the two. He does a great job of making
+it easy to understand. Then we will examine a classic
+visualization from the 1970s to help provide context as to how
+to begin exploring your data. The final two lessons in this mini module
+will be using the super store data set. To practice different ways to use
+Tableau for exploratory analysis. Specifically, you'll be able to identify
+outliers and construct a control chart. Which is a bit challenging, but
+it's going to be a lot of fun. Okay, let's get started. [MUSIC]

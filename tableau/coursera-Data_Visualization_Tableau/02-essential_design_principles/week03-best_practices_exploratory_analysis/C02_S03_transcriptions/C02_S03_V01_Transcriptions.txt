@@ -1,0 +1,9 @@
+[MUSIC] Welcome back. In this course we have introduced you to
+the concepts of visual perception and cognitive load. Essentially, how and why the brain sees
+and interprets the world visually. Now we are going to expand
+on those concepts and apply them to our data
+visualizations within Tableau. Upon completion of this module,
+you will be able to leverage and apply Gestalt principles and
+pre-attentive attributes in your design. You will be able to identify and
+discuss the role that accessibility and aesthetics will play in your design. Along the way I will provide you tips
+you can apply to your visualization. Okay, let's go. [MUSIC]
