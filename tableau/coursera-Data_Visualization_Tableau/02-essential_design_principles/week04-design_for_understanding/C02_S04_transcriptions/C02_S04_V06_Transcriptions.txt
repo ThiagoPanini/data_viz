@@ -1,0 +1,58 @@
+[MUSIC] Welcome back. When it comes to enabling clear and
+complete interpretations of data, different kinds of connected
+visualizations can make a big difference. There is an old story
+about three blind monks who are standing next to an elephant. One touched the tusk, another an ear,
+and the third touched the tail. Because each of their experiences is
+very different and disconnected, each of them walked away with a very different
+idea of what was right in front of them. There are a few interaction design
+techniques we are going to explore in this lesson, including brushing and
+linking and pivoting, that enable making connections among
+different aspects of the data possible. Essentially, they allow people
+to see the elephant and not just a collection of
+seemingly unrelated parts. Let's take a look. Being able to perceive things from
+different vantage points can be essential for accurately interpreting what you
+are seeing, and that includes data. Remember from the story about the monks
+and the elephant, each of the monks was only able to perceive one aspect of
+the elephant, a tusk, an ear or the tail. They each walked away with a very
+different idea of what was in front of them. You don't want that to happen
+to your audiences when they're looking at your
+data visualizations. You want them to be able to see, so
+to speak, the elephant in the data. Please take a look at these two images. Image A appears to be a circle and
+Image B a separate square. However, if a third related image
+is introduced into the set, you can see that image C is a cylinder and
+that puts a new light onto A and B. You can see that A and
+B are simply two different views. A, from the front on and B, from the top
+down of the third image, the cylinder. Being able to see things from
+different perspectives can make a huge difference in your understanding
+of what you are looking at. By enabling people to see
+the relationships between different views, just as we've seen in the circle,
+square and cylinder, we're better able to understand what
+we're looking at both in the entirety and also the individual component level. This concept is embodied in the way
+that we have coordinated views for data visualization. That is, analyzing a data set by
+looking at it and interacting with it in different but related visualizations
+in a coordinated manner. The different views may contain a mix
+of bar charts, scatter plots, and maps, for example. Common interactions include
+coordinated highlighting and coordinated filtering of data. For example,
+you might select a region on a map or scatter plot to capture some point of
+interest to highlight or filter down and the related points in other views would
+likewise be highlighted or filtered. This select connect type of interaction
+is sometimes referred to as brushing and linking. One other idea I want to briefly
+touch on in this lesson, about seeing data from different
+perspectives, is the idea of pivoting. A basic description of a pivot
+transformation is, viewing a data set in a table and then transforming the columns
+and rows into a new configuration. Sometimes along with some
+statistical summarization as well, that highlight some different
+aspect of the data in the new view. More generically, the idea of pivoting
+can also sometimes be used in describing the action of people analyzing data in
+which they click on a data point of interest in one type of visualization, say
+a node in a network graph, and change or pivot to a different kind of view of
+the selected data, say in a scatter plot. Now as we've seen, sometimes the only way
+to really gain a clear understanding of what you are looking at is to see
+it from different perspectives. If they are designed well, data displays can give your
+audiences the power to do just that. With tools like coordinated highlighting
+and filtering on multiple chart types, people can be more effective analysts and
+data explorers. One of the keys to make
+the designs of this coordination work is to make it apparent and
+easy to do. In the instances where the coordination
+is not technically possible for some views, make those limitations
+apparent to people as well. Thanks and see you next time.

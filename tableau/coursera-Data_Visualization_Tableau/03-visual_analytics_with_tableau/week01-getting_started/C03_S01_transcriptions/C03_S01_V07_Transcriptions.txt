@@ -1,0 +1,79 @@
+[MUSIC] Welcome to this lesson in
+the module on charting. I have put together some guidelines for
+the various charts that tableau offers and ended up having to split
+the lesson into several parts. This really is one large lesson. But before I introduce it,
+let's review what we have learned so far. We've covered the different types
+of charts available in tableau and how to change their colors,
+shapes and sizes. We've also discussed how to
+create dual layer charts and how to use a tableau tooltip. Now in this final set of videos, we will focus on some guidelines you
+consider while creating your charts. After you finish this lessons, you will be
+able to identify questions you should ask before choosing a chart type and determine
+the purpose for your visualization and you will be able to select the best charts
+to visualize what you're trying to say. There's a lot to cover,
+so let's get started. The place you start is with questions. From the outset, ask yourself,
+what am I trying to say? The single most important
+step you can take to make a great visualization is to
+know what you're trying to say. With the amount of data available today, anyone can get lost in a world
+of scatter plots and geocoding. It is vital that your visualization has
+a purpose and that you are selective about what you include in your
+visualization to fulfill that purpose. How do you know if your
+visualization has a purpose? Well, ask some questions to find out. Who is your audience? What questions do they have? What answers do you want to highlight for
+them? What other questions might
+your visualization inspire? What conversations may result? The point is that your viewers should take
+something away from the time they spend with your visualization Your next order of business is to
+choose the right chart type. Once you have a purpose for your
+visualization in mind, it is time to think about what types of analysis will
+help you achieve that purpose. You are looking to gain some
+guidelines that will indicate when to use one kind of chart
+type rather than another. Hopefully, these guidelines will
+help you with these decisions. Choosing the right type of chart or graph
+visualization can be key to conveying the most important insights
+in your data on site. Let's revisit some of the charts
+available in tableau and I will offer some guidelines or best practices
+regarding when to use that type of chart. Let's start with the bar chart. Bar charts are one of the most
+common ways to visualize data. Why? It's quick to compare information
+revealing highs and lows at glance. Bar charts are especially effective when
+you have numerical data that splits nicely into different categories, so you can
+quickly see trends within your data. Here are guidelines for
+when to use bar charts. When comparing data across categories. For example, when you are looking to show
+volume of shirts in different sizes, website traffic by origination site or
+percent of spending by department. Include multiple bar charts on dashboard. This helps the VR quickly compare
+related information instead of flipping through a bunch of spreadsheet or
+slides to answer a question. When adding color to bars,
+it imparts more impact. Showing revenue performance
+with bars is informative, but overlaying color to a profitability
+provides immediate insight. When you can use stacked bars or
+side by side bars. Displaying related data on top of or next
+to each other gives depth to your analysis and addresses multiple questions at once. When you can combine bar charts with maps. Set the map to act as a filter. So when you click on different regions,
+the corresponding bar chart is displayed and when you can
+put bars on both sides of an axis. Plotting both positive and negative data points along a continuous
+axis is an effective way to spot trends. Next, let's look at guidelines
+regarding line charts. Line charts are right
+up there with bars and pie charts as one of the most
+frequently used chart types. Line charts connect individual
+numeric data points. The result is a simple, straightforward
+way to visualize a sequence of values. The primary use of a line chart is to
+display trends over a span of time. Here are guidelines for
+when to use line charts. When viewing trends and data over time. For example, to show how stock prices
+change over a five-year period, displaying website page views during
+a month or revenue growth by quarter. When you can combine a line
+graph with bar charts. A bar chart indicating the volume sold
+per day of a given stock combined with a line graph of the corresponding stock
+price can provide visual queues for further investigation. When it makes sense to
+shade the area underlines. When you have two or more line charts, fill the space under the respective
+chart to create an area chart. This can inform a viewer about
+the relative contribution that line contributes to the whole. Next, let's look at guidelines
+regarding pie charts. Pie charts should be used to show relative
+proportions or percentages of information. That's it. Despite this narrow recommendation for
+when to use pies, they are made with abandon. As a result, they are the most
+commonly misused chart type. If you're trying to compare data,
+leave it to bars or stacked bars. Don't ask your viewer to translate
+pie wedges into relevant data or compare one pie to another. Key points from your data will be missed
+and the reader has to work too hard. Here are guidelines regarding pie charts. Use a pie chart when showing proportions. For example, percentage of
+budget on different departments. Response categories from a survey or a breakdown of how Americans
+spend their leisure time. Limit pie wedge to six. If you have more than six
+proportions to communicate, consider a bar chart
+instead of a pie chart. It becomes too hard to interpret
+the pie pieces meaningfully when the number of wedges exceeds six. Consider overlaying pie charts on maps. Pies can be an interesting way
+to highlight geographical trends in your data. If you choose to use this technique, use pies with only a couple of wedges
+to keep it easy to understand.

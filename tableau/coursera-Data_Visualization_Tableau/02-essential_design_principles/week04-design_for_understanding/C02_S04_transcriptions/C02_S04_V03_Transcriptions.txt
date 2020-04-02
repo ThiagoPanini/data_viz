@@ -1,0 +1,83 @@
+[MUSIC] Welcome back. Now, let's consider a fundamental
+question for any visualization. Is the primary intention to highlight
+something you've already found in the data or perhaps to enable the discovery
+of things, as yet unknown? Where does it fall in the spectrum
+between exploration and explanation? These factors should help guide
+you in your design strategy. If the purpose is exploratory, then the visualization will often need to
+provide users with more direct control and interactivity for
+the analytic process and workflow and those users also probably come with prior
+knowledge about the data they are seeing. For purely explanatory purposes,
+interactivity may not be needed, nor any prior knowledge expected. In this latter case,
+there may not be any workflow at all, depending on the context and users,
+providing either too much or too little detail can also
+be counterproductive. You should recognize that
+simplicity can often be relative. [MUSIC] Along with thinking about key
+characteristics of your audiences, you should also consider the context and purposes for
+which they'll be using the visualizations. For example,
+as we have touched on previously, will the visualization be used to explore
+data or to convincingly explain something already discovered to other people or
+perhaps some combination of both? These factors will help
+guide your design strategy. Please take a look at this graphic. That offers when general framework
+to think about the context of the visualization. If your primary audience's goals fall on
+the exploratory side of the spectrum, then the visualization and associate
+interface should generally offer a fair degree of user control that may include
+interactive elements like filtering, pivoting and zooming, which we'll
+discuss further in a later lesson. The trade off here is that you're asking
+more of your users both in terms of effort, knowledge and
+motivation to find answers. But in the case of the high user control
+group, you might expect them to bring more prior subject matter expertise to the
+table and motivation to look for answers. On the exploratory side of the spectrum, it may be something as simple as making
+a case or statement in an infographic to an audience that has no
+prior subject matter expertise. In that case, basically, it all comes
+down to the clarity of message. The more quickly and
+easily you can convey a point, the better. Open-ended discovery and iterative
+investigation are not the point here, it's more of a once and dunce thing. Does the presentation make any key
+takeaways clear, crisp and compelling? Another related factor
+included in this graphic is the relationship between dynamic
+versus static data visualizations. That is how much or
+little interactivity is there, or the ability to change views by users? A printed infographic, for example is clearly a static or
+a read only visualization. The viewer can do nothing, but see and
+consider what is being presented. On the other hand, a network visualization
+in say, a cybersecurity investigation tool can be highly interactive with all
+kinds of options for users to expand, hide filter. And otherwise,
+modify what the visualization is showing. In this latter case, the user's direct
+engagement with the visualization is necessary to reveal stories in the data. Dynamic visualization has a steeper
+learning curve and static, but that may be exactly whats needed for
+the context. Of course, you can create
+static visualizations that have a lot of complexity and depth for
+people to study and explore. But in general, these days,
+more complex and deep visualizations benefit from
+interactivity at least on some level. Just because you can show a lot of data
+all at once, it doesn't mean you should. On the other hand, you don't want to
+throw the baby out with the bath water when decluttering a visualization. One way to do that is to consider
+the use of progressive disclosure. That is showing things only
+as needed based on factors, such as context, urgency and criticality. In other words, only show the amount
+of data that's useful at a given stage of a use-case or scenario. For example, let's say,
+you're looking at the status monitor for a nuclear power plant. You could display everything that's
+being monitored at the same level of visual hierarchy. That is every system that's
+functioning properly would be displayed exactly the same way,
+as the systems that aren't. A potential problem with this approach is
+that any malfunctioning system indicators may get lost amidst all the dials and
+controls, and visualizations for
+the properly functioning systems. An alternative approach for a system
+monitoring display that helps alert users to problems as quickly and easily as
+possible is to design a view that shows data about something that has surpassed
+a level of criticality with a larger, and more detailed visualization
+while condensing, and summarizing the things that
+are running normally, and properly. Of course, it can be possible to access
+the data about the normally running systems with a little additional effort,
+but only the immediate need is shown in a more obvious and immediate way as
+is represented in this simple example. Now, recall that simplicity
+is often not a simple matter. The level of information presented and
+amount of control, given to users depends on who they are and what they need
+to do in a particular situation. As the head of Apple design, Jonathon Ive puts it,
+simplicity is not the absence of clutter. That's a consequence of simplicity. Simplicity is somehow essentially
+describing the purpose and place of an object, and product. The absence of clutter is just a clutter
+free product, that's not simple. Now in this lesson, we've seen that there's a wide spectrum of
+potential purposes for visualizations and the nature of those purposes shapes
+the direction of what you design. Are you helping people to
+discover unknowns in the data or to present a compelling case for
+something already discovered? Have you designed the visualization with
+the appropriate levels of detail and description to fulfill the purpose? Basically, is the design simple,
+but not simplistic for the need? All of those things need to
+go into your considerations, as a data visualization designer. See you next time.

@@ -1,0 +1,57 @@
+[MUSIC] Next, let's look at guidelines
+regarding histogram charts. Use histograms when you want to see how
+your data are distributed across groups. Say, for example, that you got hundred
+pumpkins and you want to know how many weigh two pounds or less, three to
+five pounds, six to ten pounds, etc. By grouping your data
+into these categories and then plotting them with
+vertical bars along an access. You will see the distribution of your
+pumpkins according to weight and in the process you've created a histogram. At times, you won't necessarily
+know which categorization approach makes sense for your data. You can use histograms to try different
+approaches to make sure you create groups that are balanced in size and
+relevant for your analysis. Here are guidelines regarding histograms. Use histograms to understand
+the distribution of your data. For example, to display the number
+of customers by company size, student performances on an exam,
+or frequency of a product defect. Use histograms to test
+different groupings of data. When you are exploring your data and
+looking for groupings or bins that makes sense. Creating a variety of histograms can help
+you determine the most useful sets data. Add a filter, by offering a way for the viewer to drill down into
+different categories of data. The histogram becomes a useful tool
+to explore many data views quickly. Next, let's look at guidelines
+regarding bullet charts. When you have a goal and want to track progress against it,
+bullet charts are for you. At its heart, a bullet graph
+is a variation of a bar chart. It was designed to replace dashboard
+gauges, meters, and thermometers. Why? Because those images typically don't
+display sufficient information and require valuable dashboard real estate. Here are guidelines
+regarding bullet charts. Use when evaluating performance
+of a metric against a goal. For example, sales quota assessment,
+actual spending versus budget, or performance spectrum,
+comparing great, good, and poor. Use color in a bullet chart to
+illustrate achievement thresholds, including color such as red, yellow,
+green as a backdrop to the primary measure lets a viewer quickly understand how
+performance measures against goals. Add bullets to dashboards for
+summary insights. Combining bullets with other chart types
+into a dashboard, supports productive discussions about where attention
+is needed to accomplish objectives. Next, let’s look at guidelines
+regarding heatmaps. Heatmaps are a great way to compare
+data across two categories using color. The effect is to quickly see where
+the intersection of the categories is strongest and weakest. Here are guidelines regarding heatmaps. We use heatmaps to show
+the relationship between two factors. For example,
+segmentation analysis of target market, product adoption across regions, or sales
+leads by individual sales representatives. Vary the size of squares, by adding
+a size variation for your squares, heat maps let you know the concentration
+of two intersecting factors but at a third element. For example, a heatmap could reveal
+a survey respondents, sports activity preference, and the frequency with which
+they attend the event based on color. While the size of the square could
+reflect the number of respondents in that category. Using something other than squares. When using a heatmap, there are times when
+other types of marks help convey your data in a more impactful way. Next, let's look at guidelines
+regarding highlight tables. Highlight tables take
+heatmaps one step further. In addition to showing how data
+intersects by using color, highlight tables add a number on
+top to provide additional detail. Here are guidelines
+regarding highlight tables. Use to provide detailed
+information on heatmaps. For example, the percent of a market for
+different segments, sales numbers by representatives in a particular region, or
+population of cities in different years. Combine highlight tables
+with other chart types. Combining a line chart with
+a highlight table, for example, lets the viewer understand overall trends
+as well as quickly drill down into a specific cross-sectional data.

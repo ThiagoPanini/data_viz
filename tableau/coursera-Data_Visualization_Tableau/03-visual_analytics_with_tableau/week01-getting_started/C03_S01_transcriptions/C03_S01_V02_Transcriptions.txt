@@ -1,0 +1,16 @@
+[MUSIC] Welcome to this first module where
+we are going to discuss the topic of charting in Tableau. Tableau is a powerful business
+intelligence software that helps people see and understand their data. This module will familiarize you with
+a wide range of powerful ways you can use Tableau to translate data
+into meaningful insights. For this module,
+we will focus on charting. First, we will expand on the various types
+of charts that Tableau allows you to use to explore and explain your data and
+how to choose a appropriate chart for various situations. Then, you will continue to practice
+changing the colors, shapes, and sizes or your chart elements, so you can better
+customize your charts to fit your data. After that, we will focus on
+creating duel layer charts. This lesson will showcase how to overlay
+multiple charts on top of one another. We will also identify the benefits
+of duel axis charting. Then, we will cover a great feature
+of Tableau known as a Tooltip and its benefits. And in our final set of videos,
+we will cover chart guidelines that will help you make choices about when to use
+the various charting possibilities. Okay, let's get started. [MUSIC]

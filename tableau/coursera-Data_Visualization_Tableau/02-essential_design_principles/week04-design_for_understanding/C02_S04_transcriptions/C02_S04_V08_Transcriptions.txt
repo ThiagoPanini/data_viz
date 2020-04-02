@@ -1,0 +1,140 @@
+[MUSIC] Hi, as we have seen from the beginning
+of this course, simple forms of visual encoding can be used to
+tap into both systems one, and two. Although they are a powerful combination
+for enabling analytics with data, our perceptual and cognitive systems
+can also be mislead by visualizations. Even if that is not the creator's intent. As showed you through the Fox News and
+Florida gun visualizations in module two. As visualization designer,
+you need to recognize how to leverage people's perceptual and
+cognitive strengths for analytics, and also be aware of
+how these systems can be fooled. Depending on your design choices, the exact same data displayed in somewhat
+different ways can sometimes lead to dramatically different
+conclusions in your users mind. On the other hand,
+your users may have mental models or biases that may prevent them from
+interpreting data accurately. And part of your job is to help them
+break through those mental roadblocks. Now, I want to tell you a little
+story that illustrates the point I'm just talking about. In World War II, planes like this, the 24 Liberator, were
+being shot down at a very alarming rate. So they decided to protect
+the planes with more armor, which also means adding more weight. So they had to be very careful
+about where they placed that armor. One thought is to go and look at
+the planes that have come back, and see where the bullet holes are and
+then cover those places in the wings and other areas where the bullet holes are. That's a great thought, but
+it's also not the best approach. Can you say why? Well, it turns out that if the plane
+made it back with bullet holes in it, it made it back. So it survived. So by definition, it was able to
+withstand the damage to those areas. The damage to the areas of
+the planes that didn't come back was the catastrophic damage. And that's what needed to be seen and
+understood. That it's not what came back. It's what didn't come back
+that mattered or both. And so that's called survivorship bias. How can a visualization help people
+naturally inclined to think one way, think the reverse about a problem or
+consider the data in a different way? Let's take a look at how that can be done. Perhaps you've heard the phrase
+seeing is believing. Well, sometimes the reverse
+is equally true. What you believe can
+influence what you see. Although systems one and two, which
+you've learned about in previous lessons, perform a powerful combination for
+enabling analytics with data. They can also be mislead by
+a certain design choices. Even if that's not
+the creator's intention. Additionally, people's own beliefs, biases
+and mental models, can distort their interpretation of a visualization
+without them ever realizing it. Data visualization should reveal
+meaningful patterns as accurately and clearly as possible and ideally,
+let the data speak for itself. Part of your job is not to introduce
+distortions to a design and ideally help prevent people from
+unwittingly coming to false conclusion based on their own sets of biases. Your job as a visualization designer is
+to find ways to help clarify the data. So that the users or audiences can look at
+it and come to the correct conclusions. Just having the right data
+is simply not enough, and frankly even presenting it in a correct
+form isn't always enough either. It's really thinking about where users are
+coming from, how much knowledge they have. How good they are at statistics, and
+making design choices that will speak directly to them in the simplest most
+straightforward and complete way possible. Of course, in order to make your case, you
+need to capture the audiences attention. Let's take a look at a few examples. A multi-talented woman
+named Florence Nightingale, who gained fame in the 19th
+century as a nurse and social reformer, was also an early
+experimenter in statistical graphics. She wanted to move her audience
+which included Queen Victoria. With a data visualization that would
+prompt change in the health care system. Her goal was to, as she put it,
+affect through the eyes what we fail to convey to the public
+though their word proof ears. To do this, she tried various approaches. One is called the Bat's Wing Diagram. It shows the mortality rates of
+British soldiers from various causes over two years during the Crimean War. The main point of this visualization was
+to show that soldiers were dying from factors that were non-battle related as a
+much larger rate from the actual fighting. The circle on the right is
+divided into 12 sections, each representing 1 month of
+the year in a clock-wise manner. The length of the radial line in each
+month is proportional to the death rate, but there's a problem here
+that Nightingale caught and addressed quickly with
+subsequent redesigns. Can you explain what that problem is? Well, the gives the impression
+that the shaded area is proportional to the death rate rather than
+the actual case, which is the length of the radial lines, which makes this
+truly a gray area for visualization. Now, as I said, Florence Nightingale
+caught the problem and redesigned the diagram to
+make it more accurate. In Hera-Vision, the areas that are encoded
+in a blue-gray color represent the mortality rates from
+non-battle related causes. While the reddish-pink show
+the battle related mortality. The death rate is
+proportional to the area, rather than the length of the radii,
+as in the earlier back screen version. Now this is a very interesting and
+provocative visualization. And it continues to be
+controversial today. It may not necessarily be the best way to
+represent the information for everyone. There are certainly bar or line charts
+that could do a better technical job but with visually arresting design Nightingale
+hoped she would get through to her audience in a way that the more
+conventional chart types may not have done. It appears that her strategy and
+acceptance of the trade-offs may have worked and they downsized for a less
+critical in this particular incidence. Now there's much more to this story that
+goes beyond the scope of this lesson. That I'd highly recommend you read and
+think about. You can find references
+in the resources area. We've seen how design choices can
+create distortions and understanding. But they can also help counteract
+potential cognitive biases in your audiences, as well. As a visualization designer,
+you might consider and try to anticipate potential biases,
+especially common ones. And when possible, counteract them. Sometimes what might seem intuitive,
+can just be a matter of bias. Recall in the introductory
+video of this lesson. The survivorship bias example
+with attempts to protect Allied Aircraft in World War II. The key in that instance was to
+protect certain areas of the plane that were showing damage
+in the returning craft. The problem was they were forgetting
+about the damage on the ones that were not returning and
+that damage was really critical. How might you design visualizations
+that counter this tendency? Well, one approach is to use
+multiple views of the data to show what is known about damage
+patterns for returning planes. But also suggest and show areas of potential damage
+from the ones that did not return. The places that were not shown
+in the returning planes. At least somehow get their users
+to think about that issue. In doing so, you get to think about
+the problem in a different way, and that different way may make
+the difference between life and death. Let's examine another scenario. Nancy has just been informed by her
+position that she has a positive mammogram, but a positive mammogram
+doesn't necessarily mean Nancy has cancer. And she is wondering what
+exactly her chances are. The physician believes her chances
+are around 80%, but she's incorrect. Why is that? Well, because of the positive result,
+the doctor is already unconsciously tending to lump
+her patient into the cancer category. As a result, she's only selectively
+recalling a study about this issue, and in specific,
+only the first column of the study. So when that comes to mind. That is the column that people
+who have breast cancer. So with the people who have breast cancer,
+the number of people who have a positive mammogram is eight, whereas the people
+who have a negative mammogram is two. So eight out of ten or
+80 % have breast cancer. The problem is, however, the doctor is not
+considering the other column of people who have had a positive mammogram and
+do not have breast cancer. Which is in fact quite
+a substantial number. Here's what the numbers look
+like in a simple diagram. As you can see by looking at all the
+numbers in this context and arranged in a certain way, that out of 103 people
+who tested positive from the mammogram, only 8 have cancer and 95 do not. It's all the same information, but it's
+presented and arranged in a different way. That makes it, hopefully,
+clearer that the chances that Nancy actually has cancer
+are about 8% not 80%. While 8% is not trivial,
+it's certainly much better than 80%. The point of all your efforts as a
+visualization designer is to transform raw data into clear, accurate, and
+meaningful insights in people's minds. There are many ways as process
+to go right or wrong, but ultimately the final transformations
+occur in your audience is minds. Your design choices from
+basic visual encoding options to anticipating encountering
+potential misinterpretations can all have an important impact
+in the success of your work. Well, thanks for joining me in this
+module on design for understanding. As we've learned, the human brain
+is hardwired for visualization. And there is a visual language made up
+of elements such as color, line length, shape, and interactivity that can be combined
+to communicate meaning in your data. Often is the expert use of these basic
+visual design elements that make a visualization go from good to great. It's important to fully consider
+the needs, abilities and your visualization's audience before deciding
+which design elements will suit them. Thanks very much for listening. Goodbye.

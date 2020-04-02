@@ -1,0 +1,14 @@
+[MUSIC] Welcome to the second module where we
+are going to highlight dates in Tableau. Understanding what types of dates
+Tableau allows you to use, and when to use a specific date
+format is very important. Tableau handles discreet and
+continuous dates very differently. Understanding how and when to use both
+discreet and continuous is very important because each type will make
+a huge impact on your analysis. After this module, you will be able
+to differentiate between discreet and continuous dates, and when to use each
+one to explore and explain your data. You will be able to effectively use date
+hierarchies to drill down into your data using the data field. You will also be able to convert
+between discrete and continuous dates. And identify why you would want to
+switch from one date type to the other. And finally, you will be able to create
+dates using calculated fields for those moments when a date
+field is not available.

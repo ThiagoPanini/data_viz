@@ -1,0 +1,217 @@
+[MUSIC] Welcome to the first lesson in the
+Explaining Your Data using Tableau course. In this lesson, we will focus on the various types
+of charts Tableau allows you to use. I will show the different types of charts
+that are available within Tableau and illustrate how to create
+different types of charts. After this lesson,
+you will be able to list the various types of charts in Tableau and explain
+how to create a chart within Tableau. Let me show you what I mean. From the Tableau home page,
+look at the Show Me menu. Here you can see the entire
+selection of chart types. If you mouse over each chat type Tableau
+will offer guidance on which chart type is best suited for
+the data you're trying to present. For example. For stacked bars, Tableau recommends
+one or more dimensions and one or more measures. Chart types that are not
+applicable to your worksheet as it is currently constructed will
+be grayed out and not selectable. Until you have the appropriate combination
+of measures and or dimensions. The different chart types that Tableau
+allows you to use include text tables, which are also cross tabs, heat maps,
+highlight tables, symbol maps, field maps, pie charts, horizontal bar charts, stacked
+bar charts, side by side bar charts. Tree maps, circle views, side by
+side circle views, line charts both continuous and discrete, dual line charts,
+area charts both continuous and discrete, scatter plots,
+histograms, box and whisker plots. Gantt charts, bullet graphs and
+finally pack bubbles. Let's look at each of this in term. First, is the text table. The text table also
+know as the cross tabs, is essentially same view you
+would see from Excel data source. Or by clicking the view data
+button On in the side bar. The mark type is texts. And the data is organized
+simply into rows and columns. While text tables are applicable
+to most data sets. They do not tell a very compelling story. Nor do they highlight important
+pieces of your data without additional formatting on your part. Text tables are not normally recommended as a primary visualization in
+your dashboard or presentation. Consider using them as
+an appendix inclusion for those report consumers that want
+more detail in a traditional format. To create a text table,
+using our superstore dataset, let's drag the region
+to the our row shelf. Then let's also drag our customers
+segment to the real shelf. Let's also drag our older
+date onto the column shelf. And finally, let's add profit. Now you have a close tabs showing
+profit from 2012 through 2015, for each customer segment and
+for each region. The next chart is the heat map. To take a more visual approach
+you showing data than we might typically see in a crosstabs. Let's consider a heat map. A heat map is a great way to compare
+categories using color and size. In this,
+you can compare two different measures. Let me show you what I mean by creating
+a hit map to show profit across years for each customer segment and for each region. To create a heat map using
+our super store data set, let's drag the region to a row shelf. Then let us drag our customer
+segment to the row shelf. Let us also drag our order
+date onto the column shelf. And finally,
+let us add profit to the size mark. As you can see, the size of the square
+indicates the profit volume. You can also click between different
+charts using the Show Me tab. For example,
+to switch back to the text table, all we need to do is click on the text
+table chart on the Show Me tab. The next chart available in
+Tableau is a highlight table. The highlight table allows us to apply
+conditional formatting to a view. Tableau will automatically apply a color
+scheme in either a continuous or stepped array of colors
+from highest to lowest. It is great for comparing a field's
+values within a row or a column. From our heat map, we can click on
+a highlight table in the Show Me menu. The resulting grid is coloured in
+a blue gradient scale from highest, depicted as the darkest, to lowest
+shown as the lightest in profits. Next we have the symbol map. One of the greatest features of Tableau
+software is the ease of utilizing maps for your visualizations. There are two chart types to choose from
+when creating a view with geographic data. Symbol maps Infield maps. Symbol maps are simply maps
+that used a type of mark. Such as a field circle to
+represent a data point. To create a symbol map, let's drag
+the state dimension to our chart area. Tableau automatically understands
+this is a geographic field and produces a simple chart. The field map is another view ideal for
+geographic data. Instead of circles or
+squares to display data points, the field map uses shading on a country or
+state basis to indicate relationships. To create our field map, we can simply click on the Field map from
+our Show Me menu to color in our states. Next is the familiar pie chart. Pie charts are among the most popular. If terribly over use charts
+in business presentations. They are best suited to show proportional
+or percentage relationships. When used in a right circumstance, pie charts can quickly show relative value
+to the other data points in the measure. Most data specialists strongly encourage
+you to use the famous pie chart very selectively. For instance, if your worksheet has
+multiple categories such as all 50 states. They'll find that the pie chart becomes so encumbered with marks that it
+ceases to have much visual value. Next, is the horizontal bar chart. The horizontal bar chart makes quick
+work of information consumption for the report viewer. They can immediately seek comparative
+relationships as well as approximate numeric values. Using our Superstore Data Set,
+let's drag the region to a row shelf. Then let's drag our customer
+segment to the row shelf. And finally, let's add profit. Next we have the stack bar chart. The stack bar chart is great for adding another level of detail
+inside of a horizontal bar chart. You can do this by adding another
+dimension to your horizontal bar chart that will further divide
+the measure into a sub groups. The sub groups are then
+color coded on each bar. From our horizontal bar chart, we can drag product category to
+the color on the marks board. And now, we have our profit
+broken down for each category. Let's turn our attention to
+the side by side bar chart. The side by side bar chart is
+just like the stacked bar chart. Except we've unstacked them and put the bar side by side
+along the horizontal access. To create the side by side bar chart we
+can click on the side by side bar chart from the Show Me menu. The side by side bar chart is a great way
+to compare each region in each category. We can now see which region has the most
+profit within each product category. Next let's look at tree maps. If we click on the tree
+map from the Show Me menu, we see a tree map visualization examining
+profit of product categories by region. Profit is depicted by color and size. The most profitable notes are dark blue. The non profitable segments
+are grouped in light blue or gray. Tree maps are a powerful visualization
+particularly for illustrating hierarchical or tree structure data and
+part to whole relationships. Because of their visual nature tree
+mapping is ideal for legibly showing hundreds or even thousands of items in
+a single visualization simultaneously. Using a tree map you can immediately
+show the landscape of performance with this visualization. This view is very similar to a heat map. But the nodes are gathered by like, kind in the hierarchy of
+dimensions you have defined. Next, let's look at the circle view chart. The circle view is another powerful
+visualization for comparative analysis. If we click on the circle view
+chart on the Show Me menu. We see a chart similar to a stack bar
+chart but with different shapes for each regions. We can drag the region category to size. And now, we see profits for each product category with the size of
+the circle representing the region. Now, let's look at
+the side-by-side circle view. The side-by-side circle view is
+a variant of the circle view. The side-by-side circle allows you to add more measures to be compared next
+to each other for a richer analysis. Next, let's look at line charts. Both continuous and discrete. Tableau presents two options for
+line charts in the Show Me menu. Lines that are continuous and
+lines that are discrete. Continuous fields can have an infinite
+number of values, such as a temperature or a thermometer. Discrete fields on the other hand,
+containing finite amount of values. Such as a number of students in
+each classroom for a school. Tableau gives you a hint on which
+fields are discrete or continuous. Discrete fields are colored blue when
+dragged to the column shelf or row shelf. Whereas continuous fields
+are colored green. The line chart is ideal for when you
+want to illustrate trends over time. To use the line chart,
+you must have a date field. We can drag our order date
+field to the column shelf, our customer segment to the row shelf,
+and the profit to our chart. From the Show Me menu we can
+click on a line chart and we will immediately see the profit
+trend for each customer segment. To compare a cross regions,
+we would use a discrete lines chart type. We can drag the region dimension
+to our column's shelf. And now we can see profit trans for each
+customer segments separated by regions. Next, let's turn our attention
+to the dual line chart. A dual line chart is also
+referred to as a dual axis chart. It is an extension of a line
+chart with one notable exception. It allows more than one
+measure to be represented with two different access ranges. This is done by signing the right and left sides of the vertical
+access with different measures. In this way,
+you can compare two different measures. However, you need to be careful
+using a dual line chart. Even though you can use any
+measure in this chart type. Make sure that there is still a meaningful
+relationship between the two measures. In other words, keep in mind the story
+you want to tell with your visualization. To create a dual line chart,
+let's drag order date to the column shelf, profit to the row shelf, and
+let's also add sales to the row shelf. We now see two separate line charts. To combine these charts, we can click on
+the dual line chart from the Show Me menu. This dual line chart shown here,
+displays profit and sales in a relation to each other. Profit uses the left axis while
+sales uses the right axis. This comparison can highlight important
+relationships between the two fields. To synchronize both axis, we can right-click on the right-hand side
+sales axis, and click on Synchronize Axis. Now, both lines are on the same scale. Next, let's consider area charts,
+both continuous and discrete. Just as with the line chart,
+that Show Me many new offers that area has an option with two versions,
+continuous or discrete. You may wonder when to use either one. The easiest way to think of this is
+that continuous data is measured. Whereas discrete data is counted. For instance, the length of
+an object is a continuous field. It can be any length and
+the number line stretches to infinity. The value can be any value
+in that number line. It is considered continuous,
+since length can be measured. However the number of
+stores in a franchise or the number of employees in the HR
+database would be a discrete number. Since those can only be counted. In Tableau,
+continuous fields are colored green, while discrete fields are colored blue. The area chart is a combination between
+a line graph and a stacked bar chart. It shows relative proportions of totals or
+percentage relationships. By stacking the volume beneath the line, the chart shows a total of the fields as
+well as their relative size to each other. To create an area chart, we can drag
+our order date to the column shelf, segment to the row shelf,
+and finally let that profit. What we see now is a text table. But if we go to our Show Me menu and click on the area chart,
+Tableau will make the adjustment. Let's switch our chart type in the chart
+we have just been referencing from continuous to discrete. And see how it changes our view. We can use the Show Me menu to
+switch to a discrete area chart. Let's click on the discrete area chart. And we can click on
+the date to add quarters. And now, we can compare profits for each
+year and quarter across customer segments. Another useful chart is the scatter plot. The scatter plot is also known as
+the scatter diagram, scatter chart, scatter gram or a scatter graph. A scatter plot is useful to
+compare two different measure for patterns, like the circle view and
+the side by side circle chart. The scatter plot also uses
+symbols to visualize data. The big difference with
+the scatter plot is that both axis in the chart are measures
+rather than dimensions. With one measure on the column shelf and
+another measure on the row shelf. Next up is a histogram. Lets right click on a Profit measure and
+click on Create and then Bins to create a bin field. Let's try the profit Bin field from
+dimension to the column shelf. Let's also drag the profit
+measure on the row shelf. And change the aggregation to count. In the example shown here. I have built a histogram that
+breaks down individual profit into bends of $283 increments. Now let's turn our intention
+to the box and whisker plot. The box and
+whisker plot is also know as the box plot. Compared to the other chart types,
+the box and whisker plot is a bit more complicated. The box represents the values
+between the first and the third quartile known
+as the interquartile range. While the whiskers represent the distances
+between the lowest value to the first quartile and
+the fourth quartile to the highest value. Each quartile has a specific numeric
+value determined from the dataset. You start by determining the median of
+the data set which is the middle number of the data set. Then, the upper and
+the lower quartile are determined. These are simply the medians of
+the upper half of the data and the median of lower half of the data. That forms the box. The maximum of the data set is
+the highest number in the data set. While the minimum of the data set is
+the lowest number in the data set, that forms a whiskers of the plot. Next, let's look at the Gantt chart. The Gantt chart was invented
+back in the 1910's by Mr. Henry Gantt as a way to visualize
+his schedule or progression of time. Since then, the Gantt chart has become a
+staple of project management methodology. Each task can be planned as an individual
+data point with interdependencies on other tasks and resources. You can see how a complicated project
+such as developing a software application could use a tool like this. Next, let's look at the bullet graph. A bullet graph is a very powerful way
+to compare data against historical performance or pre-assigned thresholds. A bullet graph is similar to
+a standard bar graph except that there is a distribution showing progress
+towards a goal behind the bar. Like a standard bar graph a bullet graph
+can be presented either horizontally of vertically. The pack bubbles view is also
+known as a bubbles hurt. It is a means to show relational
+value without regards to axis. The bubbles are packed in as tightly as
+possible to make efficient use of space. To create a packed bubbles chart let's
+drag our region to our column shelf, our customer segment to the row shelf and
+at our profit. From the Show Me menu,
+let's click on the pack bubble's chart. In this pack bubble's chart the
+arrangement of the bubbles is out of our control. But we can't control how big the bubbles
+are by putting a measure on size. In this case I use profit. The key to making pack bubbles
+chart useful is having the right fields in the right places on the marks
+card, specifically on the color, size, and detail shelf. In summary, I have introduced you to the various types
+of charts Tableau allows you to use. I have shown you what
+each is best used for and given you the basic instructions for
+creating these different types of charts. After this lesson, you should now be able to list
+the various types of charts in Tableau. And explain how to create a chart
+in Tableau on a basic level. As with editing skill, you will need
+to practice creating these charts in order to become adept at
+using Tableau in these ways. I encourage you to do so right away to enforce your
+learning that you have just done. Okay, now that you understand
+the different types of charts available within Tableau. I want to move on to show you
+many little modifications and changes you can make with your formatting,
+labeling and other trick. You will see that you're only
+limited by your imagination. That is what we will
+cover in the next lesson. Where we will explore the options for
+colors, shapes and sizes in Tableau.

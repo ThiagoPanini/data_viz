@@ -1,0 +1,12 @@
+[MUSIC] Hello there, welcome to this
+module on table calculations. Table calculations are computations
+that are applied to the values in the entire table and are often
+dependent on the table structure itself. Okay, so what does that mean and
+why would I use them? Table calculations are calculations
+that are performed on data that is already in your table or
+chart, so doing additional calculations
+on top of previous calculations. So for this module,
+you will be able to create new calculated fields to allow you to compare fields,
+apply aggregations, and more. Then, you will be able to use
+quick table calculations and create new calculated fields. You will also be able to customize
+them and apply filters and parameters to your table calculations. We have a lot to cover. So let's get started. [MUSIC]

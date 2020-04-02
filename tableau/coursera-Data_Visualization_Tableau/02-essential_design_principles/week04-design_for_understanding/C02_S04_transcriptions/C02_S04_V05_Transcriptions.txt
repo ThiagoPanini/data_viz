@@ -1,0 +1,103 @@
+[MUSIC] Welcome back. Your data visualization themselves
+are only part of the picture. They exist in a format, such as a highly
+interactive application interface or an infographic poster. Whether it's a dashboard for
+an operations center or a fun facts graphic being shared
+on Facebook, the context of your visualization will have an important
+impact on your design choices. As we have seen in earlier lessons, the level of interactivity can depend on
+whether the primary purpose is to explain the already known or
+uncover meaningful and important unknowns. In this lesson you will need to consider
+the context, potential workflows and interaction design implications of static
+versus interactive visualizations. Let's have a look. Hi, when designing your visualizations
+you will need to consider the context and potential workflows in which
+your designs will be used. If a visualization is static, such as an
+infographic poster, then it's essential to think very carefully about what data
+is and it's not being displayed. Why? Well, because there's no way to
+adjust the view of the final results. However, with interactive visualizations
+and controls like filtering and zooming you have a lot more option. Of course increasing
+the level of interactivity demands more from users
+then a static chart. That is you are requiring people to make
+their own decisions about what data to look at rather than presenting
+them with predetermined views. In many cases this increase level of
+interactivity and user autonomy is essential for the visualization to serve
+its purpose and meet the users goals. Let's explore interactivity for
+visualizations a bit more. Large data sets containing
+complex relationships often generate visualizations
+that are a total mess. For example, network diagrams can quickly
+turn into confusing tangles of lines and shapes that are sometimes jokingly
+referred to as hairballs or balls of spaghetti. This may not be a problem though
+with the inclusion of filtering and zooming controls that can untangle and
+make these messes more manageable. Within our activity, you can begin with
+a big picture view drilled down to a lower level detail and then all
+within the same workflow interface go somewhere else within
+the same visualization. Data visualization pioneer,
+Ben Shneiderman, has a saying or what's sometimes
+referred to as a mantra for this kind of interaction and
+data visualization. Overview first, zoom and
+filter and then details on demand. Now this overview first, zoom and
+filter process can be iterative so a user may dive in and
+zoom out of different levels of detail and resolution in the course
+of their analytic work. Data visualization researcher Colin Ware, has proposed an interesting
+way of thinking about interactive visualizations in terms
+of three interlocking feedback loops. Here's a rough,
+paraphrased description of these loops and some design options and pitfalls that
+I've seen in the course of my own work. The first is direct manipulation
+of graphical objects. The second is exploration and navigation. And the third is problem solving and
+question generation. In your design work, it's good to consider
+making the most of each of these loops and how they interrelate with each
+other in the visualization. Let's look at each a little more closely. Direct manipulation of graphical objects
+is the ability to interact with various visual elements representing
+data within the visualization. The visual elements on the screen can
+actively serve many roles for example, by hovering on or rolling over point
+of interest in a timeline for example. It can provide additional transient,
+detailed information about that spot. Visual elements can also
+act as input mechanisms as well as enhanced display items. One of the examples of this is selecting
+a node in a network diagram to tag and save or to use as the focus in pivot
+point for a new investigation. These kinds of interactions are commonly
+done with clicks, right clicks, and small transient menus. While direct manipulation of
+data is almost a necessity for many purposes there are also some
+pitfalls which I've regularly seen. Being able to interact with visual
+elements should be in the service of getting insights and not testing
+the hand eye dexterity of your users. In some visualizations such stacked
+column charts and bubble graphs for example, it can be extremely difficult to
+precisely select and interact with a data point of interest because it's crowded out
+or covered over by nearby visual elements. Sometimes the issue is that
+the visual element of interest presents only a very small or
+ambiguous selectable target area. Techniques such as outlining
+a particular selected area or highlighting it on rollover can
+be helpful to address this, as well as the ability to zoom in and
+out of a particular spot. Exploration and navigation includes
+the ability for people to easily and effectively find their way through
+a visual information space. That is, does the interface design
+help them enter, orient themselves, and get where they want to go, or discover
+useful pathways ahead and anticipate it? What is the organization
+of the navigation and the different areas of the screen
+that people see and use? One issue here is that it's important for
+people to navigate through an interactive visualization and to keep context
+from the starting point and know what the options are available as
+they move through different pathways. Or if they want to go back to a previous
+point in an analytic process. Things like bread crumbs that show
+a pathway a user has taken is one basic way to help give users context
+as they work through a workflow. Problem solving and question
+generation are two of the primary and ultimate purposes of data visualizations. Do the individual visual elements along
+with the navigation, help or hinder the ability to problem solve or answer
+questions that come up along the way. This is a deep topic that
+extends beyond this lesson. But one of the keys, and
+this may not surprise you to hear from me, is to know and understand the needs and
+goals of your intended audiences. If possible get a problem
+they need to solve. See how they do it currently. Map out a workflow for this process. And then storyboard with
+visualization design sketches to see how those visualizations
+might work in this process. We've only scratched the surface
+of interactive visualizations. You can see there's a lot
+to this fascinating topic. When you are doing your work think about
+the different levels of interaction that you should consider, direct manipulation
+of data representations, navigation and problem solving question generation. Through good design choices, you can
+enable people to immerse themselves in a process like question and answering
+sometimes called dynamic querying and focus on gaining insights rather than
+focusing on distraction in interface or visualization elements. Recall the idea of your work as
+a data visualization designer as being akin to that of an architect. Just as buildings are designed to provide
+structures for people to move through, interactive visualizations
+enable people to navigate or flow through large data sets. Building floor plans and
+layouts that are shaped based on the needs of people in it and the
+purposes of the structure is essential. The visual components and information architecture
+are blueprints of your visualizations, need to support the ability of people
+to walk through a process of discovery. Thanks for listening.

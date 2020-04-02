@@ -1,0 +1,64 @@
+[MUSIC] Hello and welcome back. In the last lesson,
+you were asked to consider the context and potential workflows for your audiences. In this lesson, I want to
+illustrate some considerations for selecting the appropriate charts and
+graphs for your visualizations. In a sense, the core of data visualization
+is revealing relationships among different dimensions in the data. These relationships each have
+corresponding data types and design options associated with them. For example, to show change over time,
+line charts are a simple and effective choice. However, to display relationships and
+categorical data, bar charts work well but line charts don't. Once you know the possibilities for chart
+types to show instead of relationships, you can then decide which one or even multiple appropriate types would
+be best for the specific audience. In this lesson we briefly touch in
+a few examples, let's get started. Welcome back, in the last lesson you
+were asked to consider the context and potential use cases of your
+visualization for your audiences. In this lesson, I want to illustrate
+some visualization approaches to display a few primary kinds of
+data types and relationships. Awareness of these options and how to select the appropriate chart types
+based on data type in a relationship, can be an essential part of
+your visualization design work. In a sense, the core of data visualization is about revealing relationships
+among different dimensions of data. These relationships all have corresponding
+design options associated with them. For example, line charts are good
+at showing change over time, whereas bar charts are meant for
+showing categorical comparisons. Different types of charts are good for
+showing different types of data and kinds of relationships, but not all. You should be aware of
+what options work well for a particular situation and
+just as importantly, what doesn't. Let's begin with a simple
+example to illustrate the point. If you want to visualize, say,
+the proportion of apples versus oranges sold at Francesca's Fruit Stand
+at a particular date. Can you think of a chart
+type that would work, and one that wouldn't in this scenario? Well, a bar chart is one good option, but
+a trend line wouldn't work at all, why? Well, the numbers of apples and
+oranges are discrete data, that is, they are very distinct and
+distinguishable items. It's either an apple or an orange,
+there's no range between the two, there's no spectrum. Another example is,
+if you flip a coin, you can count and compare the number of heads and
+the number of tails, but there's no intermediate heads tails
+range between the two possibilities. So when comparing apples to oranges,
+or heads to tails, think discrete, and think bars,
+among other options. Now let's take a look at another
+type of data called continuous, which is, in a sense,
+the opposite of discrete data. As the name suggests, for continuous data,
+there's a connected range of values. So, for example, there's a popular
+baked good called the Twinkie that has a notoriously long
+shelf life in the package. How long can a Twinkie be safely
+consumed and how can that be shown? That's a very indiscreet question,
+it can be measured and displayed in a line starting
+from the date of manufacture and continuing to some point in
+the distant future in this case. Again, a line is the more appropriate
+choice to show this sort of trajectory. In addition to thinking about data types,
+you need to consider the kinds of relationships you want to display, and
+the best chart choice to do, as we said. In many cases, you'll have more than one
+option to choose from, and that's great. Once you know the possibilities for chart types to show a set of
+relationships, you can decide which one or even multiple appropriate forms
+will be the best for the audience. There are various guidelines that can
+help you find the right chart for the situation but
+let's take a basic example. Here are a few primary types of
+relationships and associated charts. For comparison, column charts are good. For composition, or
+part-to-whole relationships there's stacked columns and tree maps. Correlations, there are scatter plots,
+trends, line charts, ranking, bar charts,
+distributions, histograms and box plots,
+geospatial of course there are maps. There are many, many chart types, the key is to really understand which
+ones will work for the situation. This is only scratching the surface. We'll dive deeper into matching and
+combining chart types and data relationships in Course 3. Visualization designers,
+you really need to start make decisions based on data type,
+the kinds of relationships, and the best option to use for
+your intended audience. Thanks very much, and see you again.

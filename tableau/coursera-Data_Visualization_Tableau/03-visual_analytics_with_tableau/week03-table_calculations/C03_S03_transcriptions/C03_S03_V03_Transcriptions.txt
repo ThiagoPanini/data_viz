@@ -1,0 +1,38 @@
+[MUSIC] In the last lesson, we focused on what
+calculated fields are used for and how to create new fields. In this lesson, I will cover quick table
+calculations and show you how to use this calculations to better tell your story. To take the functionality of
+calculated fields even further, Tableau allows you to do additional
+calculations on your data after Tableau has completed
+a query of the data base. Table calculations address
+data in the cache table and allow you to perform
+calculations on visible results. So, what does that mean? Once our visualization is rendered, we can ask Tableau to literally look
+at the results, numbers, bars or plots. And then do math on those visible results. Most importantly, unlike calculated
+fields that allow you to compare two or more separate measures in your data set, table calculations allow you to
+compare a singular measure to itself. To take the functionality of
+calculated fields even further, Tableau allows you to do additional
+calculations on your data after Tableau has completed
+a query of the data base. Table calculations address
+data in the cache table and allow you to perform
+calculations on visible results. So, what does that mean? Once our visualization is rendered, we can ask Tableau to literally look
+at the results, numbers, bars or plots. And then do math on those visible results. Most importantly, unlike calculated
+fields that allow you to compare two or more separate measures in your data set, table calculations allow you to
+compare a singular measure to itself. Let's begin by opening our
+superstore dataset and on any worksheet, let's drag
+the ship date to the column shelf. And then profit to the rows. Now, if we click on the down
+arrow on our profit field and select Quick Table Calculations,
+we can see a handful of additional calculations that we can use instead
+of using the current SUM function. We can change the sum function
+to a running total, difference, percent difference,
+percent of total, rank, percentile, moving average,
+year to date total, compound growth rate, year over
+year growth or year to date growth. To use any of these functions,
+simply click on the function you need and Tableau will automatically make
+adjustments in the worksheet. For example, if we decide to
+use the running total function, we can now see that our target is showing
+a running total across all years. After this lesson, you should now
+understand what calculated fields are used for, how to create new fields and how to
+use Tableau’s quick table calculations. In the next lesson, we will focus on custom table calculations
+to analyze your data even further. After this lesson, you should now
+understand what calculated fields are used for, how to create new fields and how to
+use Tableau’s quick table calculations. In the next lesson, we will focus on custom table calculations
+to analyze your data even further.

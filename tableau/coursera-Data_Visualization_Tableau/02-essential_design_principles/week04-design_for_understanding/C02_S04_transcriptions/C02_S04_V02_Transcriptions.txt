@@ -1,0 +1,62 @@
+[MUSIC] Welcome back. As you've seen, data visualizations come
+in a wide and expanding range of forms, have many different purposes and
+have diverse sets of potential audiences. Are they analysts who need to comb through
+data to find interesting patterns, trends, and anomalies? Or are they executives who need quick,
+clear, and reliable summaries of about
+some initiative or campaign? One size definitely does not fit all. In this lesson, I'll present a basic
+framework for thinking about audiences, purposes and context for
+your data visualizations. The more you can understand,
+empathize and anticipate the needs of your intended audience and assemble
+the right elements from your toolkit, the more successful your designs will be. The same applies for
+understanding the purpose, the visualization, and
+the types of data being used. Good visualization design means effective
+communication with your audience. It helps to think about the interests,
+needs, skills, and knowledge, and goals of the people who will be
+engaging with your visualizations. There are a few fundamental questions
+to keep in mind at the outset, including, one,
+what are the interests, needs, and goals of your target audience that your
+visualization can address in some way? For example, this can range from general
+curiosity about an issue such as the relationship of life expectancies and personal income levels in
+different parts of the world. To a specific need such as
+seeing a real time alert about a potential hacker
+intrusion to a network. Two, what is the audiences
+expected level of familiarity and subject matter expertise
+with the material? The level of prior knowledge and expectations can have a big impact
+on how they view your visualization. Prior knowledge can sometimes help, and other times hinder, the ability and
+usability of your design. We will examine the role of
+prior knowledge, mental models, and bias further in a future lesson. Three, what is the appropriate level
+of information density and detail that will fit with your target audience's
+subject matter knowledge and needs? Realize that providing too much, or
+too little, detail can sometimes be counterproductive, depending on who's
+looking at the visualization. Four, how much or how little control do users have
+in interacting with visualization? A potential trade-off here is that
+control can require more effort and knowledge from the user. You should recognize that simplicity can
+be relative for different types of users. If for example, your design in meant for
+retail analysts, they may need a tool that can help them uncover
+meaningful patterns and trends in data. In this instance, the emphasis is on
+facilitating the process of exploration. If on the other hand, the user is a sales
+person presenting quarterly returns to executives, the goal is for
+the presentation to convey specific relevant information as
+concisely as possible. It's also important to think
+about the level of detail and scope of information that
+different audiences may need. In the case of the analyst, she may need the ability to easily view
+data in various time scales from say, days to years, whereas a salesperson may
+only need to show quarterly results. These factors can all help
+guide your design strategy. One common technique for
+keeping different kinds of audiences clearly in mind is by
+using what I refer to as personas. These are descriptions of user
+types that capture characteristics, goals, and
+needs of different types of users. For example, there can be a persona
+that represents a retail analyst, and another that represents a salesperson. While personas may not be useful for every design project, they can provide
+useful summaries of important types of people that can help sharpen your
+thinking about targeted design. As we have seen, great data visualizations
+are designed with the needs of their intended audience at the forefront. There are many considerations that can
+guide your design choices when aiming for that target audience. We have touched on some important
+considerations in this lesson. It's all about asking good
+questions at the outset. Now the direction of a design may
+change and evolve over time, but the good questions at the outset can
+result in great results at the end. Creating a persona document
+can be a useful exercise and adjunct for
+capturing the needs of your audiences. The more you can understand and
+anticipate those needs, and draw from your data visualization toolkit,
+the better off you're going to be. See you next time.

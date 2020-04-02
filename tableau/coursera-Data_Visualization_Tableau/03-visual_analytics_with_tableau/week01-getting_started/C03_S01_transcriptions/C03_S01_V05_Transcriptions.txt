@@ -1,0 +1,41 @@
+[MUSIC] Welcome to our third lesson
+within the charting module. In the first two lessons we focused
+on understanding the various charts available for use within Tableau,
+and how to customize our charts. In this lesson we will
+cover dual access charts. After this lesson, you will be able to
+create a dual access chart using Tableau, explain how to synchronize
+axis in a dual axis chart. And discuss appropriate situation
+in which to use a dual axis chart. Let's begin by discussing
+a dual line chart. A dual line chart is also
+referred to as a dual axis chart. It is an extension of the line
+chart with one notable exception. It allows more than one measure
+to be represented with two different access ranges. This is done by signing the right and left sides of the vertical
+access with different measures. In this way,
+you can compare two different measures. However, be careful with this. Even though you can use any
+measure in this chart type, make sure that there is a meaningful
+relationship between the two. In other words, keep in mind the story
+you want to tell with your visualization. Using our Super Store data set, first let's begin by dragging our
+Order Date mentioned to the Columns bar. Then, let's change the date to
+show quarters instead of years. You do this by clicking on
+the arrow on the Order Date field then choosing Quarter. Next, let's drag our Profit
+measure on to the Row bar. Now we are able to see profit for
+each quarter since 2011. Next, let's drag our Sales
+measure onto the Row bar also. That way, we have a split graph showing
+the profits for each quarter, and the total sales for
+each quarter since 2011. To combine these charts,
+let's click on our Show Me charts options. Then let's click on the dual line chart. Now our charts are combined, and
+we can see the left vertical axis shows us profit, while the right
+vertical axis shows us sales. The horizontal axis
+shows us our order date. Now we can compare total profits and
+total sales across quarters since 2011. If we want to take this one step further, we do have the option to
+synchronize our axis. We can do this by right-clicking
+on the right vertical axis and choosing Synchronize Axis. Now we can make the comparison between
+the measures on the same scale. Remember that you still have all of
+the options to customize your chart. We can click on either of
+the charts in the marks card and make any changes to the colors,
+shapes, or sizes that we want. That wraps up our lesson on creating
+dual line charts in Tableau. After this lesson, you should now be able to create
+a dual access chart using Tableau. Explain how to synchronize axis
+in a dual access chart, and discuss the appropriate situation in
+which to use a dual access chart. In part four of this module, we will
+show how to use Tableau's tool tip and explain why it is important. Good luck.

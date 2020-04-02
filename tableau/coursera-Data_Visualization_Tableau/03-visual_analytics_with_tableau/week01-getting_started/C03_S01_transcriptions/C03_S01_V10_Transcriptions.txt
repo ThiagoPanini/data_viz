@@ -1,0 +1,64 @@
+[MUSIC] >> Next, let's look at
+guidelines regarding treemaps. Are you looking to see
+your data at a glance and discover how the different
+pieces relate to the whole? Then treemaps are for you. These charts use a series of rectangles
+nested within other rectangles to show hierarchical data as
+a proportion to the whole. As the name of the chart suggests,
+think of your data as related like a tree. Each branch is given a rectangle, which
+represents how much data it compromises. Each rectangle is then sub-divided into
+smaller rectangles or sub-branches again, based on its proportion to the whole. Through each rectangle size and color,
+you can often see patterns across parts of your data, such as whether a particular
+item is relevant, even across categories. They also make efficient use of space, allowing you to see your
+entire data set at once. Here are guidelines regarding treemaps. Used to showing hierarchical
+data as a proportion of a whole. For example, storage usage across
+computer machines managing the number and priority of technical support cases or
+comparing fiscal budgets between years. Consider coloring the rectangles by
+a category different from how they are structured in the hierarchy. Consider combining
+treemaps with bar charts. In Tableau,
+place another dimension on rows so that each bar in a bar
+chart is also a treemap. This lets you quickly compare items
+through the bars length while allowing you to see the proportional
+relationships within each bar. Next, let's look at guidelines
+regarding box and whisker plots. Box and whisker plots, or box plots, are an important way
+to show distributions of data. The name refers to the two
+parts of the plot. The box, which contains the median
+of the data along with the first and third quartiles, 25% grader and
+less than the median. And the whiskers, which typically represents data within
+1.5 times the inter-quartile range. The difference between the first and
+third quartiles. The whiskers can also be
+used to show the maximum and minimum points within the data. Here are guidelines regarding box and whisker plots used to show
+the distribution of a set of data. For example,
+understanding your data at a glance, seeing how data is skewed towards one end,
+or identifying outliers in your data. Consider hiding the points within the box. This helps a viewer focus on the outliers. Consider comparing box plots
+across categorical dimensions. Box plots are great, allowing you to compare distributions
+between data sets quickly. Regardless of what type of chart you use,
+it is vital to create effective views. Even if you have chosen the best
+chart type or types for your analysis, effective views
+do not always come naturally. Creating effective views requires effort,
+intuition, and attention to detail. This comes by trial and error. Here are some general guidelines to
+help you create effective views. Emphasize the most important data. Many chart types let you put multiple
+measures and dimensions in one view. In scatter plots, for example,
+you can put measures on the X or Y axis, as well as on the marks for
+color, size, or shape. Choosing where to put each measure, depends on what kind of analysis you are
+doing and what you're trying to emphasize. However, a good rule of thumb is to put
+the most important data on the X or Y axis and less important data on color,
+size, or shape. Orient your views for legibility. Rotate your charts and/or labels for
+optimal legibility. Organize your views. Avoid overloading your views. Overloading a view is one of the most
+common mistakes people make in data visualization. Instead of stacking countries,
+departments, and profit into one condensed view,
+break them down into small multiples. Then your user can better see and understand all of the relevant
+information in seconds. Limit the number of colors and
+shapes in a single view. Effective use of color and
+shape can help us see and understand patterns more easily. However, too many colors and shapes in
+one view usually defeats that purpose. That concludes our consideration of
+guidelines to help you choose appropriate chart for your needs. After this lesson, you should now be able
+to identify questions you should ask before choosing a chart type. Determine the purpose for
+your visualization. Recall guidelines to help you
+choose appropriate chart types. And select the best charts to
+visualize what you're trying to say. Before moving on to the next module,
+Tableau dates, I would highly recommend practicing everything you
+have learned in this module. Understanding when to use
+different types of charts. How to customize your chart. And how do best utilize different chart
+features is extremely important in helping to explore and explain your data. Any practice you devote to it will
+pay off in greater effectiveness and providing greater clarity and
+meaning for your users.

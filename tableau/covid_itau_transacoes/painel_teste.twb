@@ -1,0 +1,2598 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20194.19.1010.1202                               -->
+<workbook original-version='18.1' source-build='2019.4.0 (20194.19.1010.1202)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts ignorable='true' predowngraded='true' />
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='transacoes_npc' inline='true' name='federated.0pggmjv1tisirq14nb6ew1d027l7' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='transacoes_npc' name='textscan.0t9251v0ioaso41795xzn1ky411j'>
+            <connection class='textscan' directory='C:/Users/thipa/Desktop/teste/covid_itau_transacoes' filename='transacoes_npc.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0t9251v0ioaso41795xzn1ky411j' name='transacoes_npc.csv' table='[transacoes_npc#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='pt_BR' separator=','>
+            <column datatype='date' name='data_movimento' ordinal='0' />
+            <column datatype='integer' name='mes' ordinal='1' />
+            <column datatype='integer' name='ano' ordinal='2' />
+            <column datatype='integer' name='safra' ordinal='3' />
+            <column datatype='integer' name='agencia' ordinal='4' />
+            <column datatype='string' name='tipo_trans' ordinal='5' />
+            <column datatype='string' name='migravel' ordinal='6' />
+            <column datatype='integer' name='qtd_transacoes' ordinal='7' />
+            <column datatype='string' name='status_atual_agencia' ordinal='8' />
+            <column datatype='string' name='sop_nome' ordinal='9' />
+            <column datatype='string' name='sop_sigla' ordinal='10' />
+            <column datatype='string' name='gso_nome' ordinal='11' />
+            <column datatype='string' name='gso_sigla' ordinal='12' />
+            <column datatype='integer' name='regcom' ordinal='13' />
+            <column datatype='string' name='porte_oper_franq' ordinal='14' />
+            <column datatype='string' name='classificacao' ordinal='15' />
+            <column datatype='integer' name='du_mes' ordinal='16' />
+            <column datatype='integer' name='qtd_jan' ordinal='17' />
+            <column datatype='integer' name='qtd_fev' ordinal='18' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[transacoes_npc.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;pt_BR&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;R$&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;pt_BR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data_movimento</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[data_movimento]</local-name>
+            <parent-name>[transacoes_npc.csv]</parent-name>
+            <remote-alias>data_movimento</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[mes]</local-name>
+            <parent-name>[transacoes_npc.csv]</parent-name>
+            <remote-alias>mes</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ano</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ano]</local-name>
+            <parent-name>[transacoes_npc.csv]</parent-name>
+            <remote-alias>ano</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>safra</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[safra]</local-name>
+            <parent-name>[transacoes_npc.csv]</parent-name>
+            <remote-alias>safra</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>agencia</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[agencia]</local-name>
+            <parent-name>[transacoes_npc.csv]</parent-name>
+            <remote-alias>agencia</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tipo_trans</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tipo_trans]</local-name>
+            <parent-name>[transacoes_npc.csv]</parent-name>
+            <remote-alias>tipo_trans</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>migravel</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[migravel]</local-name>
+            <parent-name>[transacoes_npc.csv]</parent-name>
+            <remote-alias>migravel</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>qtd_transacoes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[qtd_transacoes]</local-name>
+            <parent-name>[transacoes_npc.csv]</parent-name>
+            <remote-alias>qtd_transacoes</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>status_atual_agencia</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[status_atual_agencia]</local-name>
+            <parent-name>[transacoes_npc.csv]</parent-name>
+            <remote-alias>status_atual_agencia</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sop_nome</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sop_nome]</local-name>
+            <parent-name>[transacoes_npc.csv]</parent-name>
+            <remote-alias>sop_nome</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sop_sigla</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sop_sigla]</local-name>
+            <parent-name>[transacoes_npc.csv]</parent-name>
+            <remote-alias>sop_sigla</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gso_nome</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gso_nome]</local-name>
+            <parent-name>[transacoes_npc.csv]</parent-name>
+            <remote-alias>gso_nome</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gso_sigla</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gso_sigla]</local-name>
+            <parent-name>[transacoes_npc.csv]</parent-name>
+            <remote-alias>gso_sigla</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>regcom</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[regcom]</local-name>
+            <parent-name>[transacoes_npc.csv]</parent-name>
+            <remote-alias>regcom</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>porte_oper_franq</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[porte_oper_franq]</local-name>
+            <parent-name>[transacoes_npc.csv]</parent-name>
+            <remote-alias>porte_oper_franq</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>classificacao</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[classificacao]</local-name>
+            <parent-name>[transacoes_npc.csv]</parent-name>
+            <remote-alias>classificacao</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>du_mes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[du_mes]</local-name>
+            <parent-name>[transacoes_npc.csv]</parent-name>
+            <remote-alias>du_mes</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>qtd_jan</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[qtd_jan]</local-name>
+            <parent-name>[transacoes_npc.csv]</parent-name>
+            <remote-alias>qtd_jan</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>qtd_fev</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[qtd_fev]</local-name>
+            <parent-name>[transacoes_npc.csv]</parent-name>
+            <remote-alias>qtd_fev</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='total_trans_m_all' datatype='integer' name='[Calculation_182114345681448964]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF  [Calculation_182114345680334851] &lt; 0  THEN [qtd_transacoes] end' />
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[du_mes]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[migravel]' role='dimension' type='nominal' />
+      <column aggregation='Sum' datatype='integer' name='[safra]' role='dimension' type='ordinal' />
+      <column-instance column='[migravel]' derivation='None' name='[none:migravel:nk]' pivot='key' type='nominal' />
+      <extract count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='pt_BR' class='hyper' dbname='C:/Users/thipa/Desktop/teste/covid_itau_transacoes/transacoes_npc.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='04/02/2020 01:33:06 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='transacoes_npc' increment-value='%null%' refresh-type='create' rows-inserted='713164' timestamp-start='2020-04-02 01:33:06.152' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>data_movimento</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[data_movimento]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>data_movimento</remote-alias>
+              <ordinal>0</ordinal>
+              <family>transacoes_npc.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>65</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>mes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[mes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>mes</remote-alias>
+              <ordinal>1</ordinal>
+              <family>transacoes_npc.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ano</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ano]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ano</remote-alias>
+              <ordinal>2</ordinal>
+              <family>transacoes_npc.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>safra</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[safra]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>safra</remote-alias>
+              <ordinal>3</ordinal>
+              <family>transacoes_npc.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>agencia</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[agencia]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>agencia</remote-alias>
+              <ordinal>4</ordinal>
+              <family>transacoes_npc.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>62131</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tipo_trans</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[tipo_trans]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tipo_trans</remote-alias>
+              <ordinal>5</ordinal>
+              <family>transacoes_npc.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPT_RBR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>migravel</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[migravel]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>migravel</remote-alias>
+              <ordinal>6</ordinal>
+              <family>transacoes_npc.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPT_RBR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>qtd_transacoes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[qtd_transacoes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>qtd_transacoes</remote-alias>
+              <ordinal>7</ordinal>
+              <family>transacoes_npc.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>status_atual_agencia</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[status_atual_agencia]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>status_atual_agencia</remote-alias>
+              <ordinal>8</ordinal>
+              <family>transacoes_npc.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPT_RBR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sop_nome</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[sop_nome]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sop_nome</remote-alias>
+              <ordinal>9</ordinal>
+              <family>transacoes_npc.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPT_RBR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sop_sigla</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[sop_sigla]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sop_sigla</remote-alias>
+              <ordinal>10</ordinal>
+              <family>transacoes_npc.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPT_RBR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gso_nome</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gso_nome]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gso_nome</remote-alias>
+              <ordinal>11</ordinal>
+              <family>transacoes_npc.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPT_RBR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gso_sigla</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gso_sigla]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gso_sigla</remote-alias>
+              <ordinal>12</ordinal>
+              <family>transacoes_npc.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPT_RBR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>regcom</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[regcom]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>regcom</remote-alias>
+              <ordinal>13</ordinal>
+              <family>transacoes_npc.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>porte_oper_franq</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[porte_oper_franq]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>porte_oper_franq</remote-alias>
+              <ordinal>14</ordinal>
+              <family>transacoes_npc.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPT_RBR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>classificacao</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[classificacao]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>classificacao</remote-alias>
+              <ordinal>15</ordinal>
+              <family>transacoes_npc.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPT_RBR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>du_mes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[du_mes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>du_mes</remote-alias>
+              <ordinal>16</ordinal>
+              <family>transacoes_npc.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>qtd_jan</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[qtd_jan]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>qtd_jan</remote-alias>
+              <ordinal>17</ordinal>
+              <family>transacoes_npc.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>qtd_fev</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[qtd_fev]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>qtd_fev</remote-alias>
+              <ordinal>18</ordinal>
+              <family>transacoes_npc.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.50066' measure-ordering='alphabetic' measure-percentage='0.499339' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:migravel:nk]' type='palette'>
+            <map to='#d3d3d3'>
+              <bucket>&quot;N&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;S&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Brazil&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Planilha 10'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='transacoes_npc' name='federated.0pggmjv1tisirq14nb6ew1d027l7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0pggmjv1tisirq14nb6ew1d027l7'>
+            <column-instance column='[qtd_transacoes]' derivation='Avg' name='[avg:qtd_transacoes:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[du_mes]' role='dimension' type='ordinal' />
+            <column-instance column='[du_mes]' derivation='None' name='[none:du_mes:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[safra]' derivation='None' name='[none:safra:ok]' pivot='key' type='ordinal' />
+            <column datatype='integer' name='[qtd_transacoes]' role='measure' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[safra]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:safra:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0pggmjv1tisirq14nb6ew1d027l7].[avg:qtd_transacoes:qk]</rows>
+        <cols>[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:du_mes:ok]</cols>
+      </table>
+      <simple-id uuid='{EF887B66-BA40-4F6D-B52D-E58E41DAF7C1}' />
+    </worksheet>
+    <worksheet name='_bar Perc Trans Atu'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='transacoes_npc' name='federated.0pggmjv1tisirq14nb6ew1d027l7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0pggmjv1tisirq14nb6ew1d027l7'>
+            <column datatype='date' name='[data_movimento]' role='dimension' type='ordinal' />
+            <column-instance column='[data_movimento]' derivation='MDY' name='[md:data_movimento:ok]' pivot='key' type='ordinal' />
+            <column datatype='string' name='[migravel]' role='dimension' type='nominal' />
+            <column-instance column='[migravel]' derivation='None' name='[none:migravel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[qtd_transacoes]' derivation='Sum' name='[pcto:sum:qtd_transacoes:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column datatype='integer' name='[qtd_transacoes]' role='measure' type='quantitative' />
+            <column-instance column='[qtd_transacoes]' derivation='Sum' name='[sum:qtd_transacoes:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0pggmjv1tisirq14nb6ew1d027l7].[md:data_movimento:ok]'>
+            <groupfilter count='1' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='MAX([data_movimento])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[md:data_movimento:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0pggmjv1tisirq14nb6ew1d027l7].[md:data_movimento:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0pggmjv1tisirq14nb6ew1d027l7].[sum:qtd_transacoes:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.0pggmjv1tisirq14nb6ew1d027l7].[pcto:sum:qtd_transacoes:qk]' scope='rows' value='false' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' value='118' />
+            <format attr='text-format' field='[federated.0pggmjv1tisirq14nb6ew1d027l7].[sum:qtd_transacoes:qk]' value='n#,##0,.0K;-#,##0,.0K' />
+            <format attr='text-format' field='[federated.0pggmjv1tisirq14nb6ew1d027l7].[pcto:sum:qtd_transacoes:qk]' value='p0.0%' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:migravel:nk]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:migravel:nk]' value='migravel' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:migravel:nk]' />
+              <text column='[federated.0pggmjv1tisirq14nb6ew1d027l7].[pcto:sum:qtd_transacoes:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontname='Tableau Bold' fontsize='12'>&lt;[federated.0pggmjv1tisirq14nb6ew1d027l7].[pcto:sum:qtd_transacoes:qk]&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0pggmjv1tisirq14nb6ew1d027l7].[sum:qtd_transacoes:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{C435D4D1-99EB-4EEC-88D1-F45E6E7641D1}' />
+    </worksheet>
+    <worksheet name='_bar Perc Trans Old'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='transacoes_npc' name='federated.0pggmjv1tisirq14nb6ew1d027l7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0pggmjv1tisirq14nb6ew1d027l7'>
+            <column aggregation='Sum' datatype='integer' name='[du_mes]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[migravel]' role='dimension' type='nominal' />
+            <column-instance column='[du_mes]' derivation='None' name='[none:du_mes:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[migravel]' derivation='None' name='[none:migravel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[safra]' derivation='None' name='[none:safra:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[qtd_transacoes]' derivation='Sum' name='[pcto:sum:qtd_transacoes:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column datatype='integer' name='[qtd_transacoes]' role='measure' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[safra]' role='dimension' type='ordinal' />
+            <column-instance column='[qtd_transacoes]' derivation='Sum' name='[sum:qtd_transacoes:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:du_mes:ok]'>
+            <groupfilter function='member' level='[none:du_mes:ok]' member='22' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:safra:ok]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:safra:ok]' member='202001' />
+              <groupfilter function='member' level='[none:safra:ok]' member='202002' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:safra:ok]</column>
+            <column>[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:du_mes:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0pggmjv1tisirq14nb6ew1d027l7].[sum:qtd_transacoes:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.0pggmjv1tisirq14nb6ew1d027l7].[pcto:sum:qtd_transacoes:qk]' scope='rows' value='false' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' value='118' />
+            <format attr='text-format' field='[federated.0pggmjv1tisirq14nb6ew1d027l7].[sum:qtd_transacoes:qk]' value='n#,##0,.0K;-#,##0,.0K' />
+            <format attr='text-format' field='[federated.0pggmjv1tisirq14nb6ew1d027l7].[pcto:sum:qtd_transacoes:qk]' value='p0.0%' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:migravel:nk]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:migravel:nk]' value='migravel' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:migravel:nk]' />
+              <text column='[federated.0pggmjv1tisirq14nb6ew1d027l7].[pcto:sum:qtd_transacoes:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontname='Tableau Bold' fontsize='12'>&lt;[federated.0pggmjv1tisirq14nb6ew1d027l7].[pcto:sum:qtd_transacoes:qk]&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0pggmjv1tisirq14nb6ew1d027l7].[sum:qtd_transacoes:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{F4CCEF91-5F48-423A-84E1-4E9E7E711E89}' />
+    </worksheet>
+    <worksheet name='_bn Trans D-1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='transacoes_npc' name='federated.0pggmjv1tisirq14nb6ew1d027l7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0pggmjv1tisirq14nb6ew1d027l7'>
+            <column datatype='date' name='[data_movimento]' role='dimension' type='ordinal' />
+            <column-instance column='[data_movimento]' derivation='MDY' name='[md:data_movimento:ok]' pivot='key' type='ordinal' />
+            <column datatype='integer' name='[qtd_transacoes]' role='measure' type='quantitative' />
+            <column-instance column='[qtd_transacoes]' derivation='Sum' name='[sum:qtd_transacoes:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0pggmjv1tisirq14nb6ew1d027l7].[md:data_movimento:ok]'>
+            <groupfilter count='1' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='MAX([data_movimento])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[md:data_movimento:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0pggmjv1tisirq14nb6ew1d027l7].[md:data_movimento:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' field='[federated.0pggmjv1tisirq14nb6ew1d027l7].[sum:qtd_transacoes:qk]' value='center' />
+            <format attr='text-format' field='[federated.0pggmjv1tisirq14nb6ew1d027l7].[sum:qtd_transacoes:qk]' value='n#,##0,.0K;-#,##0,.0K' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0pggmjv1tisirq14nb6ew1d027l7].[sum:qtd_transacoes:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#e6e6e6' fontsize='12'>&lt;</run>
+                <run bold='true' fontcolor='#e6e6e6' fontsize='12'>[federated.0pggmjv1tisirq14nb6ew1d027l7].[sum:qtd_transacoes:qk]</run>
+                <run bold='true' fontcolor='#e6e6e6' fontsize='12'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{56B60F85-0DB3-47E8-B234-434EE07D8337}' />
+    </worksheet>
+    <worksheet name='_bn Trans D-1 M-All'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='transacoes_npc' name='federated.0pggmjv1tisirq14nb6ew1d027l7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0pggmjv1tisirq14nb6ew1d027l7'>
+            <column aggregation='Sum' datatype='integer' name='[du_mes]' role='dimension' type='ordinal' />
+            <column-instance column='[du_mes]' derivation='None' name='[none:du_mes:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[safra]' derivation='None' name='[none:safra:ok]' pivot='key' type='ordinal' />
+            <column datatype='integer' name='[qtd_transacoes]' role='measure' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[safra]' role='dimension' type='ordinal' />
+            <column-instance column='[qtd_transacoes]' derivation='Sum' name='[sum:qtd_transacoes:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:du_mes:ok]'>
+            <groupfilter function='member' level='[none:du_mes:ok]' member='22' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:safra:ok]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:safra:ok]' member='202001' />
+              <groupfilter function='member' level='[none:safra:ok]' member='202002' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:safra:ok]</column>
+            <column>[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:du_mes:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' field='[federated.0pggmjv1tisirq14nb6ew1d027l7].[sum:qtd_transacoes:qk]' value='center' />
+            <format attr='text-format' field='[federated.0pggmjv1tisirq14nb6ew1d027l7].[sum:qtd_transacoes:qk]' value='n#,##0,.0K;-#,##0,.0K' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0pggmjv1tisirq14nb6ew1d027l7].[sum:qtd_transacoes:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#e6e6e6' fontsize='12'>&lt;</run>
+                <run bold='true' fontcolor='#e6e6e6' fontsize='12'>[federated.0pggmjv1tisirq14nb6ew1d027l7].[sum:qtd_transacoes:qk]</run>
+                <run bold='true' fontcolor='#e6e6e6' fontsize='12'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{A3C6BC7A-FDA6-4EDB-B028-A9667720AF37}' />
+    </worksheet>
+    <worksheet name='_bn Trans D-1 Mig'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='transacoes_npc' name='federated.0pggmjv1tisirq14nb6ew1d027l7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0pggmjv1tisirq14nb6ew1d027l7'>
+            <column datatype='date' name='[data_movimento]' role='dimension' type='ordinal' />
+            <column-instance column='[data_movimento]' derivation='MDY' name='[md:data_movimento:ok]' pivot='key' type='ordinal' />
+            <column datatype='string' name='[migravel]' role='dimension' type='nominal' />
+            <column-instance column='[migravel]' derivation='None' name='[none:migravel:nk]' pivot='key' type='nominal' />
+            <column datatype='integer' name='[qtd_transacoes]' role='measure' type='quantitative' />
+            <column-instance column='[qtd_transacoes]' derivation='Sum' name='[sum:qtd_transacoes:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0pggmjv1tisirq14nb6ew1d027l7].[md:data_movimento:ok]'>
+            <groupfilter count='1' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='MAX([data_movimento])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[md:data_movimento:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:migravel:nk]'>
+            <groupfilter function='member' level='[none:migravel:nk]' member='&quot;S&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0pggmjv1tisirq14nb6ew1d027l7].[md:data_movimento:ok]</column>
+            <column>[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:migravel:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' field='[federated.0pggmjv1tisirq14nb6ew1d027l7].[sum:qtd_transacoes:qk]' value='center' />
+            <format attr='text-format' field='[federated.0pggmjv1tisirq14nb6ew1d027l7].[sum:qtd_transacoes:qk]' value='n#,##0,.0K;-#,##0,.0K' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0pggmjv1tisirq14nb6ew1d027l7].[sum:qtd_transacoes:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#e6e6e6' fontsize='40'>&lt;</run>
+                <run bold='true' fontcolor='#e6e6e6' fontsize='40'>[federated.0pggmjv1tisirq14nb6ew1d027l7].[sum:qtd_transacoes:qk]</run>
+                <run bold='true' fontcolor='#e6e6e6' fontsize='40'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{BDF0489B-CBAF-4E2F-BE45-E479123F7B34}' />
+    </worksheet>
+    <worksheet name='_bn Trans D-1 NaoMig'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='transacoes_npc' name='federated.0pggmjv1tisirq14nb6ew1d027l7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0pggmjv1tisirq14nb6ew1d027l7'>
+            <column datatype='date' name='[data_movimento]' role='dimension' type='ordinal' />
+            <column-instance column='[data_movimento]' derivation='MDY' name='[md:data_movimento:ok]' pivot='key' type='ordinal' />
+            <column datatype='string' name='[migravel]' role='dimension' type='nominal' />
+            <column-instance column='[migravel]' derivation='None' name='[none:migravel:nk]' pivot='key' type='nominal' />
+            <column datatype='integer' name='[qtd_transacoes]' role='measure' type='quantitative' />
+            <column-instance column='[qtd_transacoes]' derivation='Sum' name='[sum:qtd_transacoes:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0pggmjv1tisirq14nb6ew1d027l7].[md:data_movimento:ok]'>
+            <groupfilter count='1' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='MAX([data_movimento])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[md:data_movimento:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:migravel:nk]'>
+            <groupfilter function='member' level='[none:migravel:nk]' member='&quot;N&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0pggmjv1tisirq14nb6ew1d027l7].[md:data_movimento:ok]</column>
+            <column>[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:migravel:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' field='[federated.0pggmjv1tisirq14nb6ew1d027l7].[sum:qtd_transacoes:qk]' value='center' />
+            <format attr='text-format' field='[federated.0pggmjv1tisirq14nb6ew1d027l7].[sum:qtd_transacoes:qk]' value='n#,##0,.0K;-#,##0,.0K' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0pggmjv1tisirq14nb6ew1d027l7].[sum:qtd_transacoes:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#e6e6e6' fontsize='40'>&lt;</run>
+                <run bold='true' fontcolor='#e6e6e6' fontsize='40'>[federated.0pggmjv1tisirq14nb6ew1d027l7].[sum:qtd_transacoes:qk]</run>
+                <run bold='true' fontcolor='#e6e6e6' fontsize='40'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{3AFB556A-4E18-47EE-99E6-637F15DC7DCC}' />
+    </worksheet>
+    <worksheet name='_tbl Tipo Trans 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='transacoes_npc' name='federated.0pggmjv1tisirq14nb6ew1d027l7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0pggmjv1tisirq14nb6ew1d027l7'>
+            <column datatype='date' name='[data_movimento]' role='dimension' type='ordinal' />
+            <column-instance column='[data_movimento]' derivation='MDY' name='[md:data_movimento:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[tipo_trans]' derivation='None' name='[none:tipo_trans:nk]' pivot='key' type='nominal' />
+            <column datatype='integer' name='[qtd_transacoes]' role='measure' type='quantitative' />
+            <column-instance column='[qtd_transacoes]' derivation='Sum' name='[sum:qtd_transacoes:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[tipo_trans]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0pggmjv1tisirq14nb6ew1d027l7].[md:data_movimento:ok]'>
+            <groupfilter count='1' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='MAX([qtd_transacoes])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[md:data_movimento:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0pggmjv1tisirq14nb6ew1d027l7].[md:data_movimento:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#142355' />
+            <format attr='background-color' field='[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:tipo_trans:nk]' value='#142355' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:tipo_trans:nk]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0pggmjv1tisirq14nb6ew1d027l7].[sum:qtd_transacoes:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:tipo_trans:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{9A38E98B-B520-488C-8792-8ECDA0311BFA}' />
+    </worksheet>
+    <worksheet name='_tbl Tipo Trans 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='transacoes_npc' name='federated.0pggmjv1tisirq14nb6ew1d027l7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0pggmjv1tisirq14nb6ew1d027l7'>
+            <column datatype='string' name='[migravel]' role='dimension' type='nominal' />
+            <column-instance column='[migravel]' derivation='None' name='[none:migravel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[tipo_trans]' derivation='None' name='[none:tipo_trans:nk]' pivot='key' type='nominal' />
+            <column datatype='integer' name='[qtd_transacoes]' role='measure' type='quantitative' />
+            <column-instance column='[qtd_transacoes]' derivation='Sum' name='[sum:qtd_transacoes:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[tipo_trans]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:migravel:nk]'>
+            <groupfilter function='member' level='[none:migravel:nk]' member='&quot;S&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:migravel:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#142355' />
+            <format attr='background-color' field='[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:tipo_trans:nk]' value='#142355' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:tipo_trans:nk]' value='#ffffff' />
+            <format attr='display' field='[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:tipo_trans:nk]' value='false' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0pggmjv1tisirq14nb6ew1d027l7].[sum:qtd_transacoes:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:tipo_trans:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{EFF88B88-E66E-4483-8B00-67D471AAF110}' />
+    </worksheet>
+    <worksheet name='_tbl Tipo Trans 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='transacoes_npc' name='federated.0pggmjv1tisirq14nb6ew1d027l7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0pggmjv1tisirq14nb6ew1d027l7'>
+            <column datatype='string' name='[migravel]' role='dimension' type='nominal' />
+            <column-instance column='[migravel]' derivation='None' name='[none:migravel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[tipo_trans]' derivation='None' name='[none:tipo_trans:nk]' pivot='key' type='nominal' />
+            <column-instance column='[qtd_transacoes]' derivation='Sum' name='[pcdf:sum:qtd_transacoes:qk:3]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Relative' ordering-field='' ordering-type='Field' type='PctDiff'>
+                <address>
+                  <value>-1</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column datatype='integer' name='[qtd_transacoes]' role='measure' type='quantitative' />
+            <column datatype='string' name='[tipo_trans]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:migravel:nk]'>
+            <groupfilter function='member' level='[none:migravel:nk]' member='&quot;S&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:migravel:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#142355' />
+            <format attr='background-color' field='[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:tipo_trans:nk]' value='#142355' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:tipo_trans:nk]' value='#ffffff' />
+            <format attr='display' field='[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:tipo_trans:nk]' value='false' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0pggmjv1tisirq14nb6ew1d027l7].[pcdf:sum:qtd_transacoes:qk:3]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:tipo_trans:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{298462A2-9EC5-4C12-9B1B-C9332768D7A8}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard'>
+      <style />
+      <size maxheight='1700' maxwidth='1220' minheight='1700' minwidth='1220' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='99058' id='3' is-centered='0' is-scaled='1' param='C:/Users/thipa/Desktop/teste/covid_itau_transacoes/imagens_tableau/bg_principal.png' type='bitmap' w='98688' x='656' y='471'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='18941' id='5' is-centered='0' is-scaled='1' param='C:/Users/thipa/Desktop/teste/covid_itau_transacoes/imagens_tableau/card01.png' type='bitmap' w='93115' x='2459' y='10882' />
+        <zone h='15647' id='6' is-centered='0' is-scaled='1' param='C:/Users/thipa/Desktop/teste/covid_itau_transacoes/imagens_tableau/card02.png' type='bitmap' w='31393' x='6967' y='11353' />
+        <zone h='7000' id='7' name='_bn Trans D-1 NaoMig' show-title='false' w='21885' x='12131' y='11118' />
+        <zone forceUpdate='true' h='2471' id='8' type='text' w='17787' x='11557' y='16294'>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#c0c0c0'>Transações Não-Migráveis</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run fontalignment='1' fontcolor='#c0c0c0'>22º du mar/20</run>
+          </formatted-text>
+        </zone>
+        <zone h='6941' id='9' name='_bn Trans D-1 Mig' show-title='false' w='22377' x='12131' y='18824' />
+        <zone forceUpdate='true' h='2471' id='10' type='text' w='17377' x='11639' y='23882'>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#c0c0c0'>Transações </run>
+            <run fontalignment='1' fontcolor='#f28e2b'>Migráveis</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run fontalignment='1' fontcolor='#c0c0c0'>22º du mar/20</run>
+          </formatted-text>
+        </zone>
+        <zone h='3647' id='11' is-centered='0' is-scaled='1' param='C:/Users/thipa/Desktop/teste/covid_itau_transacoes/imagens_tableau/circle.png' type='bitmap' w='7623' x='2131' y='10824' />
+        <zone h='9941' id='12' name='_bar Perc Trans Atu' show-title='false' w='9098' x='51148' y='14529' />
+        <zone h='3765' id='13' name='_bar Perc Trans Atu' pane-specification-id='0' param='[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:migravel:nk]' type='color' w='7295' x='60492' y='20412' />
+        <zone h='11765' id='14' name='_bar Perc Trans Old' show-title='false' w='9426' x='38279' y='12529' />
+        <zone forceUpdate='true' h='2471' id='15' type='text' w='14098' x='48852' y='24588'>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#c0c0c0'>% Transações</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run fontalignment='1' fontcolor='#c0c0c0'>22º du mar/20</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='2471' id='16' type='text' w='12377' x='36721' y='24588'>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#c0c0c0'>% Transações</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run fontalignment='1' fontcolor='#c0c0c0'>22º du M-1, M-2</run>
+          </formatted-text>
+        </zone>
+        <zone h='3235' id='17' name='_bn Trans D-1' show-title='false' w='9508' x='52131' y='13235' />
+        <zone h='2882' id='18' name='_bn Trans D-1 M-All' show-title='false' w='8033' x='39508' y='11118' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2050' minheight='2050' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='20' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='99058' id='19' param='vert' type='layout-flow' w='98688' x='656' y='471'>
+                <zone fixed-size='280' h='99058' id='3' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/thipa/Desktop/teste/covid_itau_transacoes/imagens_tableau/bg_principal.png' type='bitmap' w='98688' x='656' y='471'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='62' h='3647' id='11' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/thipa/Desktop/teste/covid_itau_transacoes/imagens_tableau/circle.png' type='bitmap' w='7623' x='2131' y='10824'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='18941' id='5' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/thipa/Desktop/teste/covid_itau_transacoes/imagens_tableau/card01.png' type='bitmap' w='93115' x='2459' y='10882'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='119' h='7000' id='7' is-fixed='true' name='_bn Trans D-1 NaoMig' show-title='false' w='21885' x='12131' y='11118'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='49' h='2882' id='18' is-fixed='true' name='_bn Trans D-1 M-All' show-title='false' w='8033' x='39508' y='11118'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='266' h='15647' id='6' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/thipa/Desktop/teste/covid_itau_transacoes/imagens_tableau/card02.png' type='bitmap' w='31393' x='6967' y='11353'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='200' h='11765' id='14' is-fixed='true' name='_bar Perc Trans Old' show-title='false' w='9426' x='38279' y='12529'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='55' h='3235' id='17' is-fixed='true' name='_bn Trans D-1' show-title='false' w='9508' x='52131' y='13235'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='169' h='9941' id='12' is-fixed='true' name='_bar Perc Trans Atu' show-title='false' w='9098' x='51148' y='14529'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='3765' id='13' name='_bar Perc Trans Atu' pane-specification-id='0' param='[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:migravel:nk]' type='color' w='7295' x='60492' y='20412'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='2471' id='8' type='text' w='17787' x='11557' y='16294'>
+                  <formatted-text>
+                    <run fontalignment='1' fontcolor='#c0c0c0'>Transações Não-Migráveis</run>
+                    <run fontalignment='1'>Æ&#10;</run>
+                    <run fontalignment='1' fontcolor='#c0c0c0'>22º du mar/20</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='118' h='6941' id='9' is-fixed='true' name='_bn Trans D-1 Mig' show-title='false' w='22377' x='12131' y='18824'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='2471' id='10' type='text' w='17377' x='11639' y='23882'>
+                  <formatted-text>
+                    <run fontalignment='1' fontcolor='#c0c0c0'>Transações </run>
+                    <run fontalignment='1' fontcolor='#f28e2b'>Migráveis</run>
+                    <run fontalignment='1'>Æ&#10;</run>
+                    <run fontalignment='1' fontcolor='#c0c0c0'>22º du mar/20</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='2471' id='16' type='text' w='12377' x='36721' y='24588'>
+                  <formatted-text>
+                    <run fontalignment='1' fontcolor='#c0c0c0'>% Transações</run>
+                    <run fontalignment='1'>Æ&#10;</run>
+                    <run fontalignment='1' fontcolor='#c0c0c0'>22º du M-1, M-2</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='2471' id='15' type='text' w='14098' x='48852' y='24588'>
+                  <formatted-text>
+                    <run fontalignment='1' fontcolor='#c0c0c0'>% Transações</run>
+                    <run fontalignment='1'>Æ&#10;</run>
+                    <run fontalignment='1' fontcolor='#c0c0c0'>22º du mar/20</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{969F5968-2F9A-45AF-8BB1-73ACF9A52CE8}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' name='Dashboard'>
+      <viewpoints>
+        <viewpoint name='_bar Perc Trans Atu'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:migravel:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='_bar Perc Trans Old'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='_bn Trans D-1' />
+        <viewpoint name='_bn Trans D-1 M-All' />
+        <viewpoint name='_bn Trans D-1 Mig' />
+        <viewpoint name='_bn Trans D-1 NaoMig' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{9654E73A-DC20-44D9-ABFF-0C733F0434E7}' />
+    </window>
+    <window class='worksheet' name='_bn Trans D-1 NaoMig'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0pggmjv1tisirq14nb6ew1d027l7].[md:data_movimento:ok]</field>
+            <field>[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:du_mes:ok]</field>
+            <field>[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:migravel:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{798B3C5C-1B3C-4215-A9C2-C018E3A2BA7F}' />
+    </window>
+    <window class='worksheet' name='_bn Trans D-1 Mig'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0pggmjv1tisirq14nb6ew1d027l7].[md:data_movimento:ok]</field>
+            <field>[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:du_mes:ok]</field>
+            <field>[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:migravel:nk]</field>
+            <field>[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:safra:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{301E31C8-FC49-459D-B58B-310774E94BA2}' />
+    </window>
+    <window class='worksheet' name='_bn Trans D-1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0pggmjv1tisirq14nb6ew1d027l7].[md:data_movimento:ok]</field>
+            <field>[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:du_mes:ok]</field>
+            <field>[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:migravel:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{38296558-2E08-4608-9F92-4D8BC844ADC3}' />
+    </window>
+    <window class='worksheet' name='_bn Trans D-1 M-All'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0pggmjv1tisirq14nb6ew1d027l7].[md:data_movimento:ok]</field>
+            <field>[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:du_mes:ok]</field>
+            <field>[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:migravel:nk]</field>
+            <field>[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:safra:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A1D848E4-37B3-41D5-A51F-449BA4E1D744}' />
+    </window>
+    <window class='worksheet' name='_bar Perc Trans Atu'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:migravel:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0pggmjv1tisirq14nb6ew1d027l7].[md:data_movimento:ok]</field>
+            <field>[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:migravel:nk]</field>
+            <field>[federated.0pggmjv1tisirq14nb6ew1d027l7].[usr:Calculation_182114345661296640:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{297949FF-881D-4383-9A44-E9D398764DC3}' />
+    </window>
+    <window class='worksheet' name='_bar Perc Trans Old'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:migravel:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0pggmjv1tisirq14nb6ew1d027l7].[md:data_movimento:ok]</field>
+            <field>[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:du_mes:ok]</field>
+            <field>[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:migravel:nk]</field>
+            <field>[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:safra:ok]</field>
+            <field>[federated.0pggmjv1tisirq14nb6ew1d027l7].[usr:Calculation_182114345661296640:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{37395740-6973-4CDA-A0CE-2F2A048EC695}' />
+    </window>
+    <window class='worksheet' name='_tbl Tipo Trans 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0pggmjv1tisirq14nb6ew1d027l7].[md:data_movimento:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B0E07E53-635F-4494-8E95-E2D2CEA0393F}' />
+    </window>
+    <window class='worksheet' name='_tbl Tipo Trans 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0pggmjv1tisirq14nb6ew1d027l7].[md:data_movimento:ok]</field>
+            <field>[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:migravel:nk]</field>
+            <field>[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:safra:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9465A709-B18C-40E0-ACD8-89315CBCD8C1}' />
+    </window>
+    <window class='worksheet' name='_tbl Tipo Trans 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0pggmjv1tisirq14nb6ew1d027l7].[md:data_movimento:ok]</field>
+            <field>[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:migravel:nk]</field>
+            <field>[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:safra:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4B774BE1-88BB-4CB9-82B5-98B367DB9286}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Planilha 10'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:safra:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:Calculation_182114345680334851:ok]</field>
+            <field>[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:du_mes:ok]</field>
+            <field>[federated.0pggmjv1tisirq14nb6ew1d027l7].[none:safra:ok]</field>
+            <field>[federated.0pggmjv1tisirq14nb6ew1d027l7].[yr:data_movimento:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{90F0FC25-D881-4E13-BA97-DA375B106117}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Planilha 10' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='_bar Perc Trans Atu' width='122'>
+      iVBORw0KGgoAAAANSUhEUgAAAHoAAADACAYAAADLCHf3AAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAB4klEQVR4nO3TwQmAQAwAQRXLuf4ruX7OFvyo4M68Qwgs2ddaa+P3jq8P4B1CRwgdIXSE
+      0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE
+      0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXTE+eTyOeeT6/PGGLdnfXSE0BFC
+      RwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFC
+      RwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFC
+      RwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFC
+      RwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFC
+      RwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFC
+      RwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BEX
+      FBsIfvosek8AAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='_bar Perc Trans Old' width='122'>
+      iVBORw0KGgoAAAANSUhEUgAAAHoAAADACAYAAADLCHf3AAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAB4klEQVR4nO3TwQmAQAwAQRXLuf4ruX7OFvyo4M68Qwgs2ddaa+P3jq8P4B1CRwgdIXSE
+      0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE
+      0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXTE+eTyOeeT6/PGGLdnfXSE0BFC
+      RwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFC
+      RwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFC
+      RwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFC
+      RwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFC
+      RwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFC
+      RwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BFCRwgdIXSE0BEX
+      FBsIfvosek8AAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='32' name='_bn Trans D-1' width='84'>
+      iVBORw0KGgoAAAANSUhEUgAAAFQAAAAgCAYAAACM2F8WAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAADwklEQVRoge2Z3ZKiOhRGv4QEA8KI6IXv/3J9063S/IWEJOeiK4yOtuIU2jWnWFXeCCZx
+      sbP3jhLnnMPMZNCfXsD/jVnoxMxCJ2YWOjGz0ImZhU7MLHRiZqETMwudmFnoxMxCJ2YWOjGz
+      0ImZhU7MLHRi2DMHL4oCTdNcvUYIQZ7nCMNweM9ai7qu0bYtjDEAAEopoihCkiSgdNzzt9ai
+      qiq0bQtrLQAgCAIIIc7GUUphv9+DMYbNZgNCyDCGMQYfHx+w1iLLMgghRs39NKHOuUHKGKSU
+      KIpiEODxkrXWWK/Xd6V6EX/ObYxB0zQQQpw9xO8oyxLGGMRxPFom8AKhlFJsNhswdnsqrTWs
+      tUMUcc4BfIn+/PyEUgpt22K5XN6c83g8whgDzjlWq9UwTt/3kFKOivK2bSGlBGMMaZo+8K2f
+      KNRaC2stgiAY9SUYY9hut4MAjxACWmtUVXU34qWUUEqBc448z8/mZYwhSZJR666qCgAeSjPD
+      PA/d/QDGGDjnRguNoujba/5vr3vjdF0HAFgulw+L8JRlib7vEUXRzTV9x9OFSinx9vYG4KsQ
+      +UgZm5eklGiaBpRSLBaLb+9zzqHv+0Hk8XiElBLOORBCIIRAmqYIguDbMbquQ9u2CILg4a3u
+      Ia/819MXhrqu4ZzDarVCHMcX93Vdh6IoYIwBYwxZll2kgmtj+6ocRRHiOAZjDIQQaK1xPB7R
+      9z2EEFiv1wB+V/lTBYQQrFarv4pO4MV9qH/yvrAopc6uO+dQliX2+z2MMUiS5GpevQYhZHjF
+      cQzO+dAGcc6RZRkopdBaX+Rizjl2ux2yLAPwe9v/DT/S2HtBf26OqqpQVdVQoNI0PesNb0EI
+      QRAEsNZelUEpvTuWz5vGGJRlebG+MTxN6K2K7CPztHB0XYe6rhEEAfI8HxWVpxBChhzbtu2F
+      DGMMrLV3xaZpCs45pJSo6/qhNQBPEur7wff396EwAF8tSVmWaJoGhJCzPOUlJElys3DcQggB
+      xhi6rhv6UeCrxy2KAs45hGF4swOglOLXr1+glKKu64u0dI+nVXlCCJRSOBwOV68nSTKcWE63
+      aVEUKIri6mdOC4oxBvv9HmmaDh2Dz9G+wkspzz7POb95MPCEYYg4jlFVFcqyHHVC8zwlQv05
+      fb1eIwzDYYsRQoam+7Qtcc5dHDnvobVG3/cXx0ghBLbbLaIoGuallGK5XCLP89HRnyQJFosF
+      lFIPbf2Xtk1Tcjgc0HUddrvdTy/ljH/y5zutNZRSo7bvq/knhbZtC875qLP5q/kPXGroRP0O
+      Sm8AAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='32' name='_bn Trans D-1 M-All' width='84'>
+      iVBORw0KGgoAAAANSUhEUgAAAFQAAAAgCAYAAACM2F8WAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAADgElEQVRoge2aXXOrIBCGX1ASNZjE5ib//8+1vUhM/AJF4Fx0sGmTNJrRc6ZnfC5FYHnZ
+      XRZHYq21mBkN+q8N+N+YBR2ZWdCRmQUdmVnQkZkFHZlZ0JGZBR2ZWdCRmQUdmVnQkZkFHZlZ
+      0JGZBR2ZWdCR8acc/Hw+o6qqm22EELy8vGCxWNxsb5oGx+MR7nNtkiQIgqDXvEIIFEWBtm1B
+      CAFjDOv1Goyxm3P4vo/dbgdCSNemtcbhcIAxBtvttvfck3motRZa66f7FkWBZ759Z1mG0+mE
+      tm27sZqmweFwQF3XvcfJ8xxaa4Rh2FtMYEIPdYJSSrHb7eD7/aeSUqKua4RhCGstpJS9+1VV
+      BUII1ut11z/LMgghkGUZdrsdKP3Zj4QQkFLC933EcdzbbmBCDzXGwBgDz/MeLuASrTWKooDn
+      eeCcD5pTSglrLVarFaIoAiEElFJsNhswxtC27UMvNcagKAoAAOd8kO3AhIJqrWGtHSxoWZZo
+      2xac80FebYyBUgqU0qsQJYQgDEMAH3nzJ/I8R9u2CIKg6zOEyULeCSqlxOvrK4CPhfm+D875
+      zbzUNA2qqsJyuRy8GK01jDGglMLzvKt2tznOrssDyFHXNYQQ8DxvcKh38zzVqwdRFCGKoi/P
+      tNaoqgqn0wnWWmw2m+4dIQROpxM4508txlrbCXVLLPfcGHPVppTC29tb914cxzc3pQ9/tQ51
+      O79arQB8hp/Lm4yxrm0oTjAn7Hfc81vphzGG/X6P7XYL4DPsn2HSOvQerh50C3d5EwDe399v
+      9knTFMD9etTlamNMV11c4sb3PO+mBwNAGIZd2snzHNvt9u6795j0ULqH80y36Gfr1UsopfB9
+      H8aYqzLLGAMhBADcvUg44jgGYwxSSpRlOdiOSTzUWtvlSc45lstll7/KsuxqRXfwJElyd6w0
+      TSGl7HVTCsMQdV2jLEtQShFFEay1OJ/PUErB930sl8sfx6CUYr1eI01TlGWJxWLxcBMumSzk
+      CSFomqYL1e9wzgcZ+h2tNY7HI+I47oQOggBRFKEsS2RZhizLvtgTx3GvEm6xWCCKIhRFgTzP
+      kSRJ79JvEkHdPd2FjVKqO4Hd7eORpzxCKYW2ba82xd3Z+9zlf4JzDqVU5/F9Kw/yW38WS9MU
+      dV1jv9//a1O+8Cs/3yml0DTN0yXWlPxKQYUQYIwNvuv/Df4ApVPQRO2xbMcAAAAASUVORK5C
+      YII=
+    </thumbnail>
+    <thumbnail height='96' name='_bn Trans D-1 Mig' width='192'>
+      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
+      /gezy/xsBnIr/gAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='96' name='_bn Trans D-1 NaoMig' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='151' name='_tbl Tipo Trans 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='151' name='_tbl Tipo Trans 2' width='84'>
+      iVBORw0KGgoAAAANSUhEUgAAAFQAAACXCAYAAACLF3zbAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAQdElEQVR4nO2dfVBUV5rGn5lgZogfmyKJH6WzZtmJiSbjrkMvKwyoHctO1t6EUTEaGHEF
+      Z0ISNEpkSkloY5uFBBMwkUyw1EmTAYUpyEbcJq6Muk0Ks2Ib4wcYRLANCLQKk25tEW5XvftH
+      f9Aft7sPeAbrmvuroird9z3vvXm899zb57nvOT8iIoIMN358tw/gXkMWlDOyoJyRBeWMLChn
+      ZEE5IwvKmbBQAUajcSSO457hR/KDPV/kS54zsqCckQXlzAgKOoD22kK8kqhEjEIBRYwSiRsq
+      cGHAM6YOmxUKKHz/NteJpzRX4eUYBRTJJbgcYu/2riPIS1UhXqGAQhEPVWoejnTZvWN6T6FC
+      kwpVvGO/8apUFB7rhX0oMTRCfFOgJvVrxVTXZiOBiKjfTCeKUigu6yDddAWZdJSUXknXmTJa
+      SJ+pJm1pESUl6cgUNFRPmXGJpD3URjaBiAQbtR3SUmJcJuktzpjrn1PGvOWUW32WzP1ERALZ
+      2qopS7WIipvZY0ZMUFNrq0NILwykidKQwf1RQ8p8I1M+iz6T1Np6umnShRT0pj6TlHnHffYv
+      0PE8JWXqnf+c11up1eLf1qRLoiSdiTlmxC75qZGR/g+9Vgu+nzQeDzs/Xr50EbOefCJ0MmsN
+      tvzhQWRnxmI0w75/MmYMhL7bft/f7hMwZsxPHB8eikTkON8IOyzfWzHxkYeZY+7eTcl6Bh+t
+      2YkHs1ZghvOrK9+1waCZ6+w7Y6BUpyLvQAus3g1x5N1P8GB2JmJZ1AQQFrsSq035yD5wCbfs
+      AOy3cOlANvJNq7EyNtBvGzu6arKR/XUiXlUF2pFIDNP1xRWBeuoLaPm8RMqv7xHpBlz0k6Xl
+      EGkT4yhFN9hdWA5nU6K23rvfDdWHEhH1t1DVuoUUFRVFUVFRtHBdFbX0B4ptpvLX1KTOKKfm
+      IcaMrKBCD9XnJ9K85QVU3xNYSi+6yylttpbqiYgsBtIszyejZ1MWQS0G0i55iYpPdLpvSp0n
+      iumlJVoy+PSJ/c3llKFW02vlzRRYy8AxIyiohQwaNaUUnSaRfj0IgzeujtIU9xkm+qcxiGYw
+      5itpbbX/Xi3Va71ugkKrjlLUWaTvDPyPHSom5OAIL6w1W5CP32PvqzPh1687ImC1jsM4343m
+      LlwZNwajAUxOLoEx2Wf75RIkZwO5ZSsxNcC++2/3Iey++/y+v+++MPTd7nd8sDdh58YjePrD
+      PVg4KYAsDDEjdFPqQe2BbixNnRNATAA4hw8SXkTegXPoctw5cOtSLbZmFEFIewFRd7D36IWL
+      ce6DjSgxXoXjd8QArhpLsPGDc1i8MNoRdFqP6ulpSI4Mco4xxIzQGdqMpm+asX+JAjv8tqlR
+      YNyCOYjFpqpwVG0vwMr8M+jtA8IjZkKZsQe7ng907gWgbjMUmXDmBcKi1mPfO1XYvuM3mH+m
+      F30IR8RMJdLe2YclsxwSXPn2HHr0FZit90/3+JoqlK2cyhQjD99xRh4c4YwsKGdkQTkjC8oZ
+      WVDOyIJyRhaUM7KgnJEF5Yw0TbqBdtTmuYyyGCgTN6CsyRZ07ywGHOxdOJK3AsoYx/GtyDsC
+      Hx8PA+21g2ZfvAqphcfQ6xkzlIG0O4GbSSe0ki5FTRm6E06jrJ8sLXVUVd8RuA2LAUc3qV6r
+      IpXmkCOm30yHNCpSeQ5md1dSelwKFZ0wUz8RCbYmKs/wjpGcSXfzYBap841BRvpFYDHgussp
+      bVERNXomFhqpaFEalXc7PoqOq940kEY5GCMxk64HBz8/j39TRw1tmIzBXLOdbIB5vhIzPBOH
+      zYByvhkNJ20AbuP6tUn45UyfRKNjMT++0RkjOZPOhLbmJzGupwQaVz8Wo0TihhKcsYrvRhx/
+      c+36tW5MmTjBL3LCxCnovnYdwE8xdux3aLvs06kiDFMjI50xkJpJZyBNlIpSC6rpbKdPX5xe
+      Sd0suw9grpl0SSTqoBg07m5BMOaTSpVF1a77gGCjzrO1VJSuHHlfHgBg78WxbS9iyQ5gTdU+
+      ZMVGBLl078e4ny9ATlEGRhWXocH9vQLJa57DU5MecLS9fzwUr76B35ir8ZcrwXc/cKECaxZn
+      4quYAny2Yxmm3e+9/eq1Hr82Pdeuuv87LGo99m2OxBfrn8FshQIK5a/xxp+vIGLKI4MxwQ+B
+      J1bUbU3BnvG52L8vkK8kwoRJmCw0OR9v/hHTnjyD8xeAp2d4Bk3D9F9Y0XQzcBp7Wwl+m9mI
+      Zbs+F/WDHn5kIjoumQE85PW9ubsDE//B1cuHISI2HX/4PN0zM+o278YTjzlchRE7Q10m3Y6g
+      Jp3I1x4mHTAZ/xI7ClXVDd7Pj2jC2a8nwvWChx9ucy03oLk2OioaEw4fRZPdu93RwxMQHRXk
+      jQrrIez/PzWecVpTI9SHXqfK9CTSBTXP60nrfFbsdJjnZGtz9qGlHg0tBtKoVJRR3uTw2J19
+      qNrzedEXYz6pNIYQj1oMz6EdtVTqd3xq0niY+yPkKR3D1pi12C+IbVO7zTR77ylUbd+BPUc9
+      TbqNePP5afDs7uy9x7D7zXyUNXSgb9RYTH8+B/lZT8N98vmYdFfKViKhsFH0yFzmmiNxF45s
+      +z22Vp/HDYjktV1CzYdbsb3GeXxTorF4bQ7WPD3J3XfKJh1n5MERzsiCckYWlDOyoJyRBeWM
+      LChnZEE5IwvKGVlQzozgaNMA2ms/Qt7Oapwy3YAwaiwe/VU6cnM9h9HqsFmRCb/XL9UFMG6Z
+      AwCwthzAnsIyfHH2Inr7AIRHYObCLGx5fQF+dr9vQyf2LnxV9jF2/flLnDffgIBRGPvor/Af
+      b2QjeZZzCJElBsDlkmQs2dHss4PHsaaqDCunQmomnUD1H75OxXUt1GtzDHUItjY6pE30zuOL
+      qZxycqvpbLvFWWTQT+YTOsrwNOlYYojIoFFSMNtLciadKMJhyvbMw0jrnhcGTTqmGBPpktKp
+      MogtKzGTThz7hfM4/88z8PiQWlnxbeP3+MX0yUOIuYw261OY/lDgFiPYh/rgNun2ept0O+ZC
+      oQGAURg7YTpU6Zvw6nOPiQxK23HrryY01e7D+3v7sPrjl+BvsYkwYEXHhQbodxah4altKIwW
+      kSBQzJV2mLo+QYriE8fn8Aj8/F+X4LXX0xDjGuMb4lXCgTurpCNyGGqDFXEVdM7C4tIbSOOq
+      Z5q7gt473C5S2MUS4/F/YuukE7oMUqk07gIyaVXS+aaz9VJLnY5yli+g1FKxPlqMfrK0n6Xq
+      gt9SQoJ/JR17jPso6HieklJKHW+uSKqSLiDCadr+78FvFqJH5FNJN9yYu1LezcekC0DYGIx9
+      wIzr/i5wUB4YPQbWa9fhX/gtHmOzWuH7mgNgh7mrC+PGjAEguUq6Y9jxu0IcONcBq/OtPfut
+      LhhLClEhzEd8pHjmyxUaaEq+xMW/3nIKMgDrxVrkfVyHufNi8FPGmO8PrMev1+3Elxetjoq8
+      gaswlqxHzlElVjzruPVLzKQbQHvtH/HBvgM4ed6MGwIcv5SUaVi3YRncrx35mHT23lOoKt6F
+      //rfs7jY2wdgFMY+OgvPvzJosLHEiP7am7UMmW+vRmyEI0I26TgjD45wRhaUM7KgnJEF5Yws
+      KGdkQTkjC8oZWVDOyIJyRnImnSNVO2rf34xtNWfQ2+cw01ZrtyB5BsvcbXac3KbGSxU9UBcY
+      4Upbt1mBTJHJWQDvd0jFfh4vfus9rHHVCwxtwGv43NVKOs/mjUW0NKWUdJoo8aoPL7qpMn0p
+      Fbmqwe7F6S6HVUnnQmikoqUpVGoiMrAI2lxMSz3Lde696S6HWUkHALCjaedbaEjQIplpGigb
+      /mf3Z/jlqoRBr+rem+5y+JV09rZP8W5DArRsagKXK/FpbypWiZl4g1mlPt3lMCvphFbak+K4
+      1F0Ev+QFOp6noqyDAV+duEemuyQDaaKy6bBf02YqXpRCpaL3JYFadamUUektd1BBu8spbVEx
+      NQfYHGy6yx9AJV0DyopP4ytBDUWezya9AnrP95IAAHac/PRP+LvVezFNJFuoirwRO0Mt+kxS
+      awxBHE8LWcQ2dpdTmjKfXPf+5uJFIhNUN1LREF3PgGeoRU+Zap9JX104nxJ0rYGvLomZdMC0
+      F9ch/mgO1lecd8ynPHAVxo/exRfRK/BskFdkWLmwbzcsK1IQJXbt3pPTXY6bg5x9Ydj95iY8
+      s22wkm7XJo8Zw31MOmasNdj5WTR+pxd/qUee7vIuIA+OcEYWlDOyoJyRBeWMLChnZEE5IwvK
+      GVlQzsiCckZyJt2wKukQ2lxjMemYjDz28Zk7465W0jFNdymGj0nHECM5k06UUJV0LNNdiuFr
+      0jHESMykEydkJR3LenN+iJh0LDFMZ8DfAstpKkrxnpWrXjvbY8Gp2TRv4SrKrb4QYFBaIFtv
+      C52o0NLyhE1BF5USa9upzyJ1io4CjhWbdJSUVh787BSJkZhJ52B4lXSutAzrzbGYdAFiJGbS
+      +aQbYiUdy3pz7n0GMemCxfxgKulY1ptzRpIxX02Z+mBHGTjmh1FJxzDd5eBhHMJew1wkqYL4
+      skFiJGbSDa+Sjmm9OSdBTTqGmB9EJR3zdJfWGry+9AyW6Tci4Bs4IWJkk44z8uAIZ2RBOSML
+      yhlZUM7IgnJGFpQzsqCckQXljCwoZyRn0jFX23nAWiU30F6L9zdvQ82ZXvSFR2Dm4rfw3ppY
+      OOdnuRdNOsYYJnwMOIb15ljySM+kG66R54uPucay3hxLHsmZdMM18rzxNdfY1psLnUdylXRs
+      MSHxq5JjXG8uZB5IrZJuODH++xcz11jWm2PJI2mTbkgxnrGiBpxAPfUf08sJcQ5HNW4BrcrR
+      0d63A0wrHCCPxCrp7iAGQPAqudDrzbHkkZhJdwdGHsBmwPnEe603x5KH5Sq5c3itSce4bl0A
+      mosXUVqgZyCG9eZY8oyQoPWknR3l8ZqN59/gc6jQ8zWV56yiBXGObXELVlHOfu+XElhiyKDx
+      yktEjhpOVR4dD9R132wjfa5H3oSXqeBwp/+NLkQe2aTjjDw4whlZUM7IgnJGFpQzsqCckQXl
+      jCwoZ2RBOSMLyhkJmnQsecSwo/dUGXL/U4d60w0I4RGYufBNvLNpDsY7I0KuN4fQRp7kTDqm
+      PCJYDBpSJ2rpkLOdYOuksxUH6RuPmFDrzbEYeZIz6Zjy+NFMxUvTqTJ40VHI9eZYjDzJmXQs
+      efw4uR8VP3sOzwZdYy3UenNsRp7kTDqWPL70mNrwyOQf40jhK0hUxkChUCBelYq8I12Do/zu
+      9eYUjv3Hq7B8w0581eWKYDTygl0Efxt4mXSseRyVd7MTN5KuroUsXtXIKsoXneROfL05FiNP
+      mibdEPOYdEn0wp5Wv+9vHsyiOG0wa897vTkWI0+CJt3Q80x97Al8V/UtbIj08p1GP/Ek/v4v
+      N9AHIFy0ZRgmTJoEu93u/hzKyJOYSceSR4R/ikb8sc/w32bvr22NZ9A1/mGEg229OfHD9jHy
+      2K67O4WXSceSRwyBWnUpFJeYT3XmfnL3oerBaYQ7SlMdz7ctzrWR+83OPlRL9a6HTAYjT2KV
+      dGx5xKe7HMCF6rextbAW528ICJ8yD6u1Gqx0PwaFXm8Otkuo+XArttc4j29KNBav9VyzTq6k
+      487/AwEGPnm3SqoEAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='151' name='_tbl Tipo Trans 3' width='64'>
+      iVBORw0KGgoAAAANSUhEUgAAAEAAAACXCAYAAAClUl1JAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAABTklEQVR4nO3WsRGAMAwEQczQf2XuSZRAxga+jRXcfKQ1M3Md7NYBWgPoAK0BdIDWADpA
+      e74O9t5/dDCrR+hwDaADtAbQAVoD6ACtAXSA1gA6QGsAHaA1gA7QGkAHaA2gA7QG0AFaA+gA
+      rQF0gNYAOkBrAB2gNYAO0BpAB2gNoAO0BtABWgPoAK0BdIDWADpAawAdoDWADtAaQAdoDaAD
+      tAbQAVoD6ACtAXSA1gA6QGsAHaA1gA7QGkAHaA2gA7QG0AFaA+gArQF0gNYAOkBrAB2gNYAO
+      0BpAB2gNoAO0BtABWgPoAK0BdIDWADpAawAdoDWADtAaQAdoDaADtAbQAVoD6ACtAXSA1gA6
+      QGsAHaA1gA7QGkAHaA2gA7QG0AFaA+gArQF0gNYAOkBrAB2gNYAO0BpAB2gNoAO0BtABWgPo
+      AK0BdIDWADpAawAdoL24VwuL721IgQAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>

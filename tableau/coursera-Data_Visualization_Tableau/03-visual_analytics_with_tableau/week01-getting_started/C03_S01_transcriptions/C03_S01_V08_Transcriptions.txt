@@ -1,0 +1,62 @@
+[MUSIC] Next, let's look at
+guidelines regarding maps. When you have any kind of location
+data whether it's postal codes, state abbreviations, country names or
+your own custom geo coding. You've got to see your data on a map. You wouldn't leave home to find
+a new restaurant without a map or GPS anyway, would you? So demand the same informative
+view from your data visualization. Here are guidelines regarding
+maps showing geocoded data. For example use maps to show
+insurance claims by state, product export destinations by country,
+car accidents by zip code. Or custom sales territories. Use maps as a filter for further
+types of charts, graphs, and tables. Combine a map with other relevant data. Then use it as a filter to
+drill into your data for robust investigation and discussion. Layer bubble charts on top of maps. Bubble charts represent the concentration
+of data and their varied sizes, a quick way to understand lots of data. By layering bubbles on top of the map it
+is easy to interpret the geographical impact of different data points quickly. Next, let's look at guidelines
+regarding a scatter plot. Looking to dig a little deeper into
+some data, but no quite sure of how, or if, different pieces
+of information relate? Scatter plots are an effective way
+to give you a quick sense of trends. Concentrations and
+outliers that will direct you to where you want to focus your
+investigation efforts further. Here are guidelines
+regarding scatter plots. Use a scatter plot when investigating the
+relationship between different variables. For example, male versus female likelihood
+of having lung cancer at different ages or purchase patterns of smartphones by
+technology earlier adapters and lighters or skipping shipping costs of different
+product categories to different regions. Consider adding a trend line,
+or line of best fit. By adding a trend line, the correlation among your data
+becomes more clearly defined. Incorporate filters. By adding filters to your scatter plots,
+you can drill down into different views and details
+quickly to identify patterns in your data. Use informative mark types, the story behind some data can be
+enhanced with the relevant shape. Next let's look at guidelines
+regarding a Gantt chart. Gantt charts excel,
+at illustrating the start and finish dates of elements of a project. Hitting deadlines is paramount
+to a project's success, seeing what needs to be accomplished. And by when is essential
+to making this happen. This is where a Gantt chart comes in. While most people associate Gantt charts
+with project management, they can be used to understand how other things such
+as people or machines vary over time. For example, you could use a Gantt
+chart to do resource planning. Or to see how long it took people
+to hit specific milestones, such as a certification level. And how that activity was
+distributed over time. Here are guidelines
+regarding Gantt charts. Use a Gantt chart when displaying
+a product schedule, for example, when illustrating
+key deliverables, owners, and deadlines, showing other
+things in use over time, for example, duration of a machine's use,
+or availability of players on a team. When adding color, changing the color of
+the bars within the Gantt chart quickly informs viewers about key
+aspects of the variable. Combine maps and
+other chart types with Gantt charts. Including Gantt charts in a dashboard with
+other chart types allows filtering and allows you to drill down to
+expand the insight provided. Next, let's look at guidelines
+according bubble charts. Bubbles are not their own type
+of visualization but instead, should be viewed as a technique tool that
+accentuate data on scatter plots or maps. People are drawn to using bubble maps
+because the varied sizes of circles fights meaning about the data. Here are guidelines
+regarding bubble charts. Used when showing the concentration
+of data along two axis. For example, sales concentration
+by product and geography or a class attendance by department and
+time of day. Use bubbles to accentuate
+data on scatter plots. By varying the size and color of data
+points, a scatter plot can be transformed into a rich visualization that
+answers many questions at once. Overlay bubbles on maps. Bubbles quickly inform a viewer about
+relative concentration of data. Using these as an overlay on a map
+puts geographically related data in context quickly and
+effectively for a viewer.

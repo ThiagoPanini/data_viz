@@ -1,0 +1,28 @@
+[MUSIC] Hello, and
+welcome to Visual Analytics with Tableau. I'm Suk Brar, and
+I'll be taking this journey with you. I've been working data visualization for
+my entire life, but in Tableau for the last several years. A long time ago, I realized that visuals
+are much more impactful than tables, so I began creating effective dashboards
+that told the story of the data. My goal for this course is to make you aware of
+some of the analytical tools in Tableau. In the first module, I will showcase the
+different types of charts in Tableau, and how you can make changes. I will teach you how to overlay
+multiple charts onto one another. And you will be able to use
+the Tableau Tooltip feature. I will then spend some time going
+into each chart type for you, and explain what chart types are better
+suited for the type of data you have. In the second module we will spend
+some time on dates in Tableau. You will be able to differentiate between
+discrete and continuous dates, and use Tableau's date hierarchy feature
+to drill down into your timelines. You will also be able to convert
+from one date type to another and create date variables
+using calculated fields. Table calculations are the topic for
+the third module. We will discuss how to create new fields
+and make custom table calculations. I will showcase different types
+of calculations Tableau provides automatically, and
+how each calculation can impact the data. You'll also be able to apply filters and
+create parameters effectively. For the final module, we will turn
+our attention to mapping in Tableau. You will discover the types of
+geographic data recognized by Tableau. And be able to change a map's shapes,
+colors, and sizes. You will customize maps to use location
+data that is not recognized by Tableau. We will finish our lesson on maps by
+overlaying multiple maps known as dual-layer mapping. We have a lot to cover,
+so let's get started.

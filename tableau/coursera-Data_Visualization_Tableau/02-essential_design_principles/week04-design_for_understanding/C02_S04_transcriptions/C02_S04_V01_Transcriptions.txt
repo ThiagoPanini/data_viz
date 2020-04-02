@@ -1,0 +1,61 @@
+[MUSIC] Hello and welcome to this module
+on Design for Understanding. Making sense of large multidimensional
+data sets can be a challenge for anyone. Your task as a designer is to make good
+decisions about encoding, arranging, and presenting data to reveal meaningful
+patterns and stories for your audiences. Throughout the other modules, you've
+already seen how getting the most from data visualization begins with keeping
+a few features of the human brain in mind. Recall that System 1 involves automatic
+and relatively immediate perception. While System 2 is a slower and
+more deliberative thought process. As a data visualization designer, you need
+to work with both of these systems in a way that enhances people's ability
+to both clearly perceive and accurately think about the data. But the process doesn't end there. For this module, let's take these steps
+a bit further and consider visualization strategies tailored for target audiences
+and the types of data that they are using. As you create your visualizations,
+think of yourself as a kind of architect. Your basic building materials include
+visual and coding elements such as color, shape, and size. Your task is to assemble these
+elements into forms that effectively leverage people's
+perceptual abilities. But the story doesn't end there. Just as an architect needs
+to consider factors ranging from construction materials and
+location, to people and the purposes for which the building is intended. You need to consider your materials,
+contexts, audiences, and purposes for your visualizations. Your designs may begin with
+visual perception principles, but need to finish by enabling a clear and accurate understanding of
+the data by your audience. In this lesson, let's explore putting
+together some building blocks. Selecting good visual encoding options
+in combinations is a bit of an art and a science. To illustrate this point, let's start
+with a simple example using encodings for color and shape. In this case,
+we can see there are two primary groups. One orange and the other blue. Within the two groups there
+are two subtypes based on shapes. In this example, circle and squares. You may find that the colors pop out at
+you more immediately then the shapes. But the two kinds of encodings
+don't interfere with each other. How much more can be added to express
+greater depth of information in detail without overloading the user? As we will explore, the answer to
+that will depend on many factors. Shapes, colors, and other design elements
+are kind of visual alphabet that can be mixed and matched to express compact,
+but rich and detailed visual stories. Say with additional colors,
+shapes, or lines. Different kinds of visual encoding options
+have different strengths and weaknesses. For example, as we have seen, colors are a
+powerful way to make patterns stand out. And to distinguish different categories or
+groups. However, it is not the right choice for presenting certain kinds of
+precise quantitative measures. For that kind of precision, attributes
+like length and 2D position are needed. That said, color can be helpful in giving qualitative
+sense of certain kinds of data. One common approach is showing
+a level of intensity or activity with a darker more saturated
+color indicating higher activity. And a lighter less saturated color
+showing lower or less activity. Even one of the simplest elements,
+the line, can be modified to communicate different
+quantitative and qualitative measures. Let's take a pair of lines and
+modify them to see what we can do to make them express different
+aspects of the data. My length can be used to show
+precise quantitive differences. Whereas line thickness can be used to show
+qualitative distinctions in the relative strength of connection between two
+entities in say, a network graph. Line color differentiates
+categories while 2D position can provide a quantitative representation of,
+for example, change over time. How many visual attributes
+can you think of for showing either quantitative or
+qualitative measures? Here is a list of a few common elements. Length, position, 2D position, orientation, line width, size, shape, hue, intensity, and others. We've only scratched
+the surface of this topic. And to learn more, I'd recommend reading
+discussions in books by Colin Ware, Stephen Few, and Jacques Bertin. Now that we've seen and reviewed some
+of the basic encoding elements and combinations for data visualization, let's begin to think about how to put
+them together for target audiences. You should have a sense of who, when,
+and where of your visualizations. And what kind of questions will
+be helpful for you to ask and be able to answer in the process
+of creating your designs. See you next time.

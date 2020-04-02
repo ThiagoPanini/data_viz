@@ -1,0 +1,62 @@
+[MUSIC] Hi, welcome back. Well designed visualizations
+need to work at many levels. Not only the visual elements, but also
+the scale indicators and text used for labeling and describing the data as well. As we have seen in a previous lesson, there are many ways that visual design
+elements can enhance or detract from the ability to correctly interpret
+the meaning in the data visualization. The same applies for
+language and scale decisions. For this final lesson, you will assess
+how your choices in language, labeling, and showing scale in your visualizations
+may affect your audience's interpretation of what is being shown. Let's take a look. Hi, and welcome back. While a picture may be worth 1,000 words,
+sometimes a few key descriptors can really help clarify and
+define what's going on in the picture. Or make the picture more confusing. Let's look at how language,
+labeling, and elements such as scale indicators can make or break the
+interpretation of a data visualization. Word choices and
+descriptors that are familiar, or at least have clearer meanings
+to your target audience, can help ensure that people understand the
+meaning and context of the visualization. Consider that your audiences may have
+very specific ways of wording things or understanding certain terminology
+that may not be universally shared. So, for example, a word such as risk
+might mean one thing to a person in the cyber security industry and
+something entirely different to someone in the financial services or
+insurance sectors. Without a basic awareness of your
+audience's potential industry standard vocabulary, and
+what they understand the words to mean for their particular context, you may be
+throwing them off by labeling alone. Beyond industry specific connotations,
+there can sometimes be substantial, geographical or cultural differences
+within even, say, the English language. Let's say you're designing a dashboard and want to show the new data in
+an area called New Today. The thing is that today maybe a clear and
+simple term but also can be tricky when you
+start to think about it. Many people might be looking at the
+display in different parts of the world. So someone's today might be another
+person's yesterday or tomorrow. On a more culture oriented level,
+if it's cold, you might want to put on a sweater
+in the US, but a jumper in the UK. It's the same kind of apparel,
+but a very different name. In addition to challenges with specific
+word meanings, there are other kinds of labeling problems that can be
+introduced into a visualization. For example, cryptic terminologies,
+unusual data labels, ambiguous data labels or acronyms that
+come from column headers in a source database can get introduced
+into your visualization. If so, these descriptors may not
+be clear to your end users or anyone other than the creators
+of the data table themselves. Along with word choice, considerations
+about scale selection can have a significant impact on users'
+perception of the data. For example, when representing a change
+in amounts, the numerical starting point of the change can have a big
+impact on the visual comparison. As in 1 to 4 versus 81 to 84. Percentage wise, the change from 1
+to 4 is much greater than 81 to 84. So if they're put together and compared,
+it's helpful to see, visually, that change in percentages
+in the right framework. The uptick in both of
+these cases is three, but in the first case the percentage
+change is much larger. Consequently, the slope of the line
+showing the change should be steeper. Depending on the choices of scale of
+the visual impression of the comparative change, it can be either quite clear or
+entirely misleading. Although there are some advanced
+techniques for deriving comparable scales for different types of data, one simple
+rule of thumb is to avoid broken axes. Or, said another way, starting an axis
+not at a zero point to save space. Start your axes at zero when possible. Scale and comparisons can quickly
+lead to visual distortions, so keep it as simple and
+straightforward as possible always. Visualizations are a way to communicate
+meaningful patterns in data. While the visual component is
+generally the most obvious, part of the communication is also,
+often necessarily, words and numbers. If the words and
+numbers are not chosen carefully and thoughtfully, then the visual aspect
+of the design may not be understood. That's something to really think about. See you next time.
